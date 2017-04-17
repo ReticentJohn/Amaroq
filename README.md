@@ -16,4 +16,4 @@ We may be simple now, but there are many plans ahead! If you got any suggestions
 Happy tooting!
 
 
-### [Patchnotes](https://github.com/ReticentJohn/Amaroq/blob/master/Patchnotes)
+### [Patchnotes](https://github.com/ReticentJohn/Amaroq/blob/master/Patchnotes.md)
