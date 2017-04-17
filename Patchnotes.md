@@ -18,6 +18,7 @@ What's new:
 * Minor Awoo Mode fixes
 
 
+
 # Version 1.0.3
 
 Version 1.0.3 brings about more stability improvements and bug fixes, among other minor improvements.
@@ -27,6 +28,7 @@ What's new:
 * You can now access a muted user list in the More tab
 * You can now fine-tune your push notifications via the App Settings in the More tab to turn off individual types of push notifications you can receive
 * Fixed a crash that prevented the ability to report statuses
+
 
 
 # Version 1.0.2
@@ -41,6 +43,7 @@ What's new:
 * Fixed a bug where replying in a toot thread would often self-mention yourself
 * Fixed a bug where many emojis were not being displayed correctly throughout the app
 * Fixed a bug where in some instances web links in toots were being appended to each other, making them inaccessible
+
 
 
 # Version 1.0.1
