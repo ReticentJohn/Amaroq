@@ -11,7 +11,7 @@ Features include but are not limited to:
 * View and participate in threads
 * Gif and video upload support
 
-We may be simple now, but there are many plans ahead! If you got any suggestions to improve Amaroq feel free to toot @eurasierboy@mastodon.social or email amaroq.feedback@gmail.com!
+We may be simple now, but there are many plans ahead! If you got any suggestions to improve Amaroq feel free to toot [@eurasierboy@mastodon.social](https://mastodon.social/@eurasierboy) or email amaroq.feedback@gmail.com!
 
 Happy tooting!
 
