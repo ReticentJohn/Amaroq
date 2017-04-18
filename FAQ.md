@@ -51,6 +51,9 @@ Yes! But not until all devices have adequate functionality first.
 ### Where's the share extension?
 Soon™
 
+### Where's the username autocompletion?
+Soon™
+
 ### Will Amaroq ever have an in-app browser?
 I will be eventually providing an option to open an in-app browser. Just keep in mind that Amaroq will always abide ATS rules, so https only.
 
