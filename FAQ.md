@@ -30,6 +30,9 @@ Maybe! Doesn't hurt to ask. But please consider comparing behaviors with other i
 ### Push notifications aren't working for me, what's wrong?
 Sometimes Amaroq's notification servers belch, and miss a registration or two. Don't panic! Just force-quit your app and restart it. This should re-register you. If notifications continue to not work, make sure you have background refreshing enabled, as the notifications are actually created locally in the background. If you then *still* have issues, I'm afraid there's something wrong with your instance's ability to open websocket connections. Contact your admin and have them make sure their stream API is functional.
 
+### Does Amaroq's notification server see any of the content that it pushes for notifications?
+No. Amaroq's push notifications are actually silent, and they don't contain anything other than a message telling the app that content is available. The notification you see is created locally in the background based on that silent notification.
+
 ### Where's the multi-instance support?
 Soon™
 
