@@ -17,3 +17,5 @@ Happy tooting!
 
 
 ### [Patchnotes](https://github.com/ReticentJohn/Amaroq/blob/master/Patchnotes.md)
+### [Roadmap](https://github.com/ReticentJohn/Amaroq/blob/master/Roadmap.md)
+### [FAQ](https://github.com/ReticentJohn/Amaroq/blob/master/FAQ.md)
