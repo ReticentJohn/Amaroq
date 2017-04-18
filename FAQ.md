@@ -9,6 +9,9 @@ Amaroq is written entirely in Obj-C. Not apposed to mixing Swift in there if nee
 ### Can I beta test Amaroq?
 Yes! If a beta is currently available I will gladly allow anyone to beta test for as long as I have open slots available. Email your Apple ID to amaroq.feedback@gmail.com and I will send invites out when a build is about to be pushed.
 
+### I'd like to contribute. How you got your branches setup?
+Master will always represent what's currently in the store. Staging will always represent what's currently in TestFlight. Develop is your bleeding edge and what you should always send your PR's to.
+
 ### Where is the best place to contact you?
 In the following order you will get the fastest response, but I try to stay on top of things and respond to everyone:
 1. By mentioning me [@eurasierboy@mastodon.social](https://mastodon.social/@eurasierboy)
