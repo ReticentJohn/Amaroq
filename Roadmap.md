@@ -17,6 +17,7 @@
 * Replace the media viewer (no really I hate the current one lol)
 * Share extension
 * In-app web viewer
+* Username autocompletion
 
 ## Way out there
 * iPad support
