@@ -1,0 +1,1 @@
+../../../EmojiOne/lib/ios/src/Emojione.h

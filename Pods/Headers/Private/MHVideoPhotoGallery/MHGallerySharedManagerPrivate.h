@@ -1,0 +1,1 @@
+../../../MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/MHGallerySharedManager/MHGallerySharedManagerPrivate.h
