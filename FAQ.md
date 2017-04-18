@@ -1,7 +1,7 @@
 # FAQ
 
 ### Where's the code? I thought you were going to open source Amaroq?
-Yes, I plan on open sourcing Amaroq. It is not ready to be public-facing at this time (no documentation, local dependencies need cleaning up, I need to finalize a decision on the licensing). But I will be working to do this in the coming weeks. I really do look forward to taking on all the support ya'll are offering, but I gotta get things settled first. I never expected this level of interest this soon. I'll announce when I open things up. Or just wait till the code magically appears here someday.
+It's here. You're welcome. :3
 
 ### What is Amaroq written in?
 Amaroq is written entirely in Obj-C. Not apposed to mixing Swift in there if need be, but I like being verbose.
