@@ -1,0 +1,1 @@
+../../../GMImagePicker/GMImagePicker/GMAlbumsViewCell.h

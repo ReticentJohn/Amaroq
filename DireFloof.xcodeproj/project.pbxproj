@@ -1,0 +1,1347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0408CABF1E7208B3009A893D /* DWAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408CABE1E7208B3009A893D /* DWAboutViewController.m */; };
+		04095B0D1E4A5E880082401A /* MSAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 04095B0C1E4A5E880082401A /* MSAPIClient.m */; };
+		04095B101E4A63C90082401A /* MSAuthStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04095B0F1E4A63C90082401A /* MSAuthStore.m */; };
+		04095B141E4A6D2D0082401A /* MSAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04095B131E4A6D2D0082401A /* MSAppStore.m */; };
+		040C61291E7079E400509F32 /* DWAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C61281E7079E400509F32 /* DWAppSettingsViewController.m */; };
+		040C612C1E707E0900509F32 /* DWSettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C612B1E707E0900509F32 /* DWSettingStore.m */; };
+		040C612F1E7090E300509F32 /* NSString+Awoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C612E1E7090E300509F32 /* NSString+Awoo.m */; };
+		040C61321E70C52300509F32 /* UIViewController+NearestNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C61311E70C52300509F32 /* UIViewController+NearestNavigationController.m */; };
+		0411D15C1E63813900CED5A6 /* DWSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411D15B1E63813900CED5A6 /* DWSearchViewController.m */; };
+		0411D15F1E63815200CED5A6 /* DWSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411D15E1E63815200CED5A6 /* DWSearchTableViewCell.m */; };
+		0411D1621E6397B600CED5A6 /* DWTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411D1611E6397B600CED5A6 /* DWTimelineViewController.m */; };
+		0411D1651E639D2100CED5A6 /* UIApplication+TopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411D1641E639D2100CED5A6 /* UIApplication+TopController.m */; };
+		0411D5C11E64C47A00CED5A6 /* DWProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411D5C01E64C47A00CED5A6 /* DWProfileViewController.m */; };
+		0411D5C41E65002A00CED5A6 /* UIView+Supercell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411D5C31E65002A00CED5A6 /* UIView+Supercell.m */; };
+		0411D5CB1E66038B00CED5A6 /* DWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411D5CA1E66038B00CED5A6 /* DWMenuViewController.m */; };
+		04174E321E5EBF0700BD5835 /* DWComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04174E311E5EBF0600BD5835 /* DWComposeViewController.m */; };
+		043154E31E5005D20066C511 /* MSUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154E21E5005D20066C511 /* MSUserStore.m */; };
+		043154EC1E50EB3D0066C511 /* MSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154EB1E50EB3D0066C511 /* MSStatus.m */; };
+		043154EF1E50EBFD0066C511 /* MSAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154EE1E50EBFD0066C511 /* MSAccount.m */; };
+		043154F21E50F5E20066C511 /* MSMediaAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154F11E50F5E20066C511 /* MSMediaAttachment.m */; };
+		043154F51E50F6C70066C511 /* MSMention.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154F41E50F6C70066C511 /* MSMention.m */; };
+		043154F81E50F7650066C511 /* MSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154F71E50F7650066C511 /* MSApplication.m */; };
+		043154FB1E516D1B0066C511 /* MSTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154FA1E516D1B0066C511 /* MSTimeline.m */; };
+		043154FE1E517B290066C511 /* NSDictionary+Sanitation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043154FD1E517B290066C511 /* NSDictionary+Sanitation.m */; };
+		043155161E52945B0066C511 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155071E5294570066C511 /* Roboto-Black.ttf */; };
+		043155171E52945B0066C511 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155081E5294570066C511 /* Roboto-BlackItalic.ttf */; };
+		043155181E52945B0066C511 /* Roboto-BoldCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155091E5294570066C511 /* Roboto-BoldCondensed.ttf */; };
+		043155191E52945B0066C511 /* Roboto-BoldCondensedItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0431550A1E5294570066C511 /* Roboto-BoldCondensedItalic.ttf */; };
+		0431551A1E52945B0066C511 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0431550B1E5294570066C511 /* Roboto-BoldItalic.ttf */; };
+		0431551B1E52945B0066C511 /* Roboto-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0431550C1E5294570066C511 /* Roboto-Condensed.ttf */; };
+		0431551C1E52945B0066C511 /* Roboto-CondensedItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0431550D1E5294570066C511 /* Roboto-CondensedItalic.ttf */; };
+		0431551D1E52945B0066C511 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0431550E1E5294570066C511 /* Roboto-Italic.ttf */; };
+		0431551E1E52945B0066C511 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0431550F1E5294570066C511 /* Roboto-Light.ttf */; };
+		0431551F1E52945B0066C511 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155101E5294570066C511 /* Roboto-LightItalic.ttf */; };
+		043155201E52945B0066C511 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155111E5294570066C511 /* Roboto-Medium.ttf */; };
+		043155211E52945B0066C511 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155121E5294570066C511 /* Roboto-MediumItalic.ttf */; };
+		043155221E52945B0066C511 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155131E5294570066C511 /* Roboto-Regular.ttf */; };
+		043155231E52945B0066C511 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155141E5294570066C511 /* Roboto-Thin.ttf */; };
+		043155241E52945B0066C511 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 043155151E5294570066C511 /* Roboto-ThinItalic.ttf */; };
+		043155271E53B1990066C511 /* DWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043155261E53B1990066C511 /* DWLoginViewController.m */; };
+		0431552B1E540A7A0066C511 /* DWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431552A1E540A7A0066C511 /* DWTabBarController.m */; };
+		0431552E1E540EB40066C511 /* DWTabItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431552D1E540EB40066C511 /* DWTabItemViewController.m */; };
+		043155321E540FF90066C511 /* DWAppearanceProxies.m in Sources */ = {isa = PBXBuildFile; fileRef = 043155311E540FF90066C511 /* DWAppearanceProxies.m */; };
+		04363AF21E5553C30018A564 /* DWTimelineMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04363AF11E5553C30018A564 /* DWTimelineMediaTableViewCell.m */; };
+		044779FD1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044779FC1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m */; };
+		0459AB1D1E6DBBBB0052E722 /* DWMediaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459AB1C1E6DBBBB0052E722 /* DWMediaStore.m */; };
+		0459AB201E6F793F0052E722 /* DWNotificationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459AB1F1E6F793F0052E722 /* DWNotificationStore.m */; };
+		04610BE41E54E1D80023763D /* DWTimelineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04610BE31E54E1D80023763D /* DWTimelineTableViewCell.m */; };
+		04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 04610BEB1E54F1190023763D /* NSString+HtmlStrip.m */; };
+		0469EA781E75B50200492AF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0469EA771E75B50200492AF5 /* GoogleService-Info.plist */; };
+		046A4C761E8D62BC00F54E15 /* DWNotificationSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A4C751E8D62BC00F54E15 /* DWNotificationSettingsViewController.m */; };
+		046BF20D1E7712EE00F01C50 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2031E7712EE00F01C50 /* OpenSans-Bold.ttf */; };
+		046BF20E1E7712EE00F01C50 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2041E7712EE00F01C50 /* OpenSans-BoldItalic.ttf */; };
+		046BF20F1E7712EE00F01C50 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2051E7712EE00F01C50 /* OpenSans-ExtraBold.ttf */; };
+		046BF2101E7712EE00F01C50 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2061E7712EE00F01C50 /* OpenSans-ExtraBoldItalic.ttf */; };
+		046BF2111E7712EE00F01C50 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2071E7712EE00F01C50 /* OpenSans-Italic.ttf */; };
+		046BF2121E7712EE00F01C50 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2081E7712EE00F01C50 /* OpenSans-Light.ttf */; };
+		046BF2131E7712EE00F01C50 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2091E7712EE00F01C50 /* OpenSans-LightItalic.ttf */; };
+		046BF2141E7712EE00F01C50 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF20A1E7712EE00F01C50 /* OpenSans-Regular.ttf */; };
+		046BF2151E7712EE00F01C50 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF20B1E7712EE00F01C50 /* OpenSans-Semibold.ttf */; };
+		046BF2161E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF20C1E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf */; };
+		047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047ACB5F1E73469600CC092B /* DWNavigationViewController.m */; };
+		0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */; };
+		0485B97D1E55685F0063B2B8 /* DWIntrinsicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */; };
+		04AAFB6A1E726029009E15B2 /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 04AAFB691E726029009E15B2 /* PrivacyPolicy.html */; };
+		04BEC3A21E56869200A62C3B /* MSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC3A11E56869200A62C3B /* MSNotification.m */; };
+		04C935081E4AA9A5004376F3 /* MSTimelineStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C935071E4AA9A5004376F3 /* MSTimelineStore.m */; };
+		04C9350B1E4BB520004376F3 /* MSStatusStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9350A1E4BB520004376F3 /* MSStatusStore.m */; };
+		04C935101E4C25D1004376F3 /* MSNotificationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9350F1E4C25D1004376F3 /* MSNotificationStore.m */; };
+		04DA37F81E665F0B0059A2A6 /* DWBlockedUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA37F71E665F0B0059A2A6 /* DWBlockedUsersViewController.m */; };
+		04E6A2461E7480F200838130 /* UIImage+color.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A2451E7480F200838130 /* UIImage+color.m */; };
+		04E9F09D1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F09C1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m */; };
+		04EC13F11E46A966000E15A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC13F01E46A966000E15A6 /* main.m */; };
+		04EC13F41E46A966000E15A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC13F31E46A966000E15A6 /* AppDelegate.m */; };
+		04EC13FA1E46A966000E15A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC13F81E46A966000E15A6 /* Main.storyboard */; };
+		04EC13FF1E46A966000E15A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EC13FE1E46A966000E15A6 /* Assets.xcassets */; };
+		04EC14021E46A966000E15A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC14001E46A966000E15A6 /* LaunchScreen.storyboard */; };
+		04EC140D1E46A966000E15A6 /* DireFloofTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC140C1E46A966000E15A6 /* DireFloofTests.m */; };
+		04EC14181E46A966000E15A6 /* DireFloofUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC14171E46A966000E15A6 /* DireFloofUITests.m */; };
+		04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */; };
+		04FE35F91E627E5600E34407 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FE35F81E627E5600E34407 /* Settings.bundle */; };
+		4549FEEE336A754F3DD7B9CB /* libPods-DireFloofUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */; };
+		6F81D807974980F1C7131960 /* libPods-DireFloof.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159D03EA22F7441C280496B /* libPods-DireFloof.a */; };
+		7B480A139AE67221ED649A1F /* libPods-DireFloofTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04EC14091E46A966000E15A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EC13E41E46A966000E15A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EC13EB1E46A966000E15A6;
+			remoteInfo = DireFloof;
+		};
+		04EC14141E46A966000E15A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EC13E41E46A966000E15A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EC13EB1E46A966000E15A6;
+			remoteInfo = DireFloof;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0408CABD1E7208B3009A893D /* DWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAboutViewController.h; sourceTree = "<group>"; };
+		0408CABE1E7208B3009A893D /* DWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWAboutViewController.m; sourceTree = "<group>"; };
+		04095B0A1E4A5D850082401A /* Mastodon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mastodon.h; sourceTree = "<group>"; };
+		04095B0B1E4A5E880082401A /* MSAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MSAPIClient.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		04095B0C1E4A5E880082401A /* MSAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAPIClient.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		04095B0E1E4A63C90082401A /* MSAuthStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAuthStore.h; sourceTree = "<group>"; };
+		04095B0F1E4A63C90082401A /* MSAuthStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAuthStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		04095B111E4A65E90082401A /* MastodonConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MastodonConstants.h; sourceTree = "<group>"; };
+		04095B121E4A6D2D0082401A /* MSAppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAppStore.h; sourceTree = "<group>"; };
+		04095B131E4A6D2D0082401A /* MSAppStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAppStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		040C61271E7079E400509F32 /* DWAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAppSettingsViewController.h; sourceTree = "<group>"; };
+		040C61281E7079E400509F32 /* DWAppSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWAppSettingsViewController.m; sourceTree = "<group>"; };
+		040C612A1E707E0900509F32 /* DWSettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSettingStore.h; sourceTree = "<group>"; };
+		040C612B1E707E0900509F32 /* DWSettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSettingStore.m; sourceTree = "<group>"; };
+		040C612D1E7090E300509F32 /* NSString+Awoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Awoo.h"; sourceTree = "<group>"; };
+		040C612E1E7090E300509F32 /* NSString+Awoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Awoo.m"; sourceTree = "<group>"; };
+		040C61301E70C52300509F32 /* UIViewController+NearestNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NearestNavigationController.h"; sourceTree = "<group>"; };
+		040C61311E70C52300509F32 /* UIViewController+NearestNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NearestNavigationController.m"; sourceTree = "<group>"; };
+		0411D15A1E63813900CED5A6 /* DWSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSearchViewController.h; sourceTree = "<group>"; };
+		0411D15B1E63813900CED5A6 /* DWSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWSearchViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0411D15D1E63815200CED5A6 /* DWSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSearchTableViewCell.h; sourceTree = "<group>"; };
+		0411D15E1E63815200CED5A6 /* DWSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWSearchTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0411D1601E6397B600CED5A6 /* DWTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTimelineViewController.h; sourceTree = "<group>"; };
+		0411D1611E6397B600CED5A6 /* DWTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTimelineViewController.m; sourceTree = "<group>"; };
+		0411D1631E639D2100CED5A6 /* UIApplication+TopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TopController.h"; sourceTree = "<group>"; };
+		0411D1641E639D2100CED5A6 /* UIApplication+TopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TopController.m"; sourceTree = "<group>"; };
+		0411D5BF1E64C47A00CED5A6 /* DWProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWProfileViewController.h; sourceTree = "<group>"; };
+		0411D5C01E64C47A00CED5A6 /* DWProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWProfileViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0411D5C21E65002A00CED5A6 /* UIView+Supercell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Supercell.h"; sourceTree = "<group>"; };
+		0411D5C31E65002A00CED5A6 /* UIView+Supercell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Supercell.m"; sourceTree = "<group>"; };
+		0411D5C91E66038B00CED5A6 /* DWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMenuViewController.h; sourceTree = "<group>"; };
+		0411D5CA1E66038B00CED5A6 /* DWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMenuViewController.m; sourceTree = "<group>"; };
+		04174E301E5EBF0600BD5835 /* DWComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWComposeViewController.h; sourceTree = "<group>"; };
+		04174E311E5EBF0600BD5835 /* DWComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWComposeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		043154E11E5005D20066C511 /* MSUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserStore.h; sourceTree = "<group>"; };
+		043154E21E5005D20066C511 /* MSUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSUserStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		043154EA1E50EB3D0066C511 /* MSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStatus.h; sourceTree = "<group>"; };
+		043154EB1E50EB3D0066C511 /* MSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStatus.m; sourceTree = "<group>"; };
+		043154ED1E50EBFD0066C511 /* MSAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccount.h; sourceTree = "<group>"; };
+		043154EE1E50EBFD0066C511 /* MSAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAccount.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		043154F01E50F5E20066C511 /* MSMediaAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMediaAttachment.h; sourceTree = "<group>"; };
+		043154F11E50F5E20066C511 /* MSMediaAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMediaAttachment.m; sourceTree = "<group>"; };
+		043154F31E50F6C70066C511 /* MSMention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMention.h; sourceTree = "<group>"; };
+		043154F41E50F6C70066C511 /* MSMention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMention.m; sourceTree = "<group>"; };
+		043154F61E50F7650066C511 /* MSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSApplication.h; sourceTree = "<group>"; };
+		043154F71E50F7650066C511 /* MSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSApplication.m; sourceTree = "<group>"; };
+		043154F91E516D1B0066C511 /* MSTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimeline.h; sourceTree = "<group>"; };
+		043154FA1E516D1B0066C511 /* MSTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSTimeline.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		043154FC1E517B290066C511 /* NSDictionary+Sanitation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Sanitation.h"; sourceTree = "<group>"; };
+		043154FD1E517B290066C511 /* NSDictionary+Sanitation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Sanitation.m"; sourceTree = "<group>"; };
+		043155071E5294570066C511 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		043155081E5294570066C511 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		043155091E5294570066C511 /* Roboto-BoldCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldCondensed.ttf"; sourceTree = "<group>"; };
+		0431550A1E5294570066C511 /* Roboto-BoldCondensedItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldCondensedItalic.ttf"; sourceTree = "<group>"; };
+		0431550B1E5294570066C511 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0431550C1E5294570066C511 /* Roboto-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Condensed.ttf"; sourceTree = "<group>"; };
+		0431550D1E5294570066C511 /* Roboto-CondensedItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-CondensedItalic.ttf"; sourceTree = "<group>"; };
+		0431550E1E5294570066C511 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		0431550F1E5294570066C511 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		043155101E5294570066C511 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		043155111E5294570066C511 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		043155121E5294570066C511 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		043155131E5294570066C511 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		043155141E5294570066C511 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		043155151E5294570066C511 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		043155251E53B1990066C511 /* DWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWLoginViewController.h; sourceTree = "<group>"; };
+		043155261E53B1990066C511 /* DWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWLoginViewController.m; sourceTree = "<group>"; };
+		043155291E540A7A0066C511 /* DWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBarController.h; sourceTree = "<group>"; };
+		0431552A1E540A7A0066C511 /* DWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBarController.m; sourceTree = "<group>"; };
+		0431552C1E540EB40066C511 /* DWTabItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabItemViewController.h; sourceTree = "<group>"; };
+		0431552D1E540EB40066C511 /* DWTabItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabItemViewController.m; sourceTree = "<group>"; };
+		043155301E540FF90066C511 /* DWAppearanceProxies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAppearanceProxies.h; sourceTree = "<group>"; };
+		043155311E540FF90066C511 /* DWAppearanceProxies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWAppearanceProxies.m; sourceTree = "<group>"; };
+		04363AF01E5553C30018A564 /* DWTimelineMediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTimelineMediaTableViewCell.h; sourceTree = "<group>"; };
+		04363AF11E5553C30018A564 /* DWTimelineMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTimelineMediaTableViewCell.m; sourceTree = "<group>"; };
+		044779FB1E56A36000C2F989 /* DWTimelineFollowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTimelineFollowTableViewCell.h; sourceTree = "<group>"; };
+		044779FC1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWTimelineFollowTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0459AB1B1E6DBBBB0052E722 /* DWMediaStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMediaStore.h; sourceTree = "<group>"; };
+		0459AB1C1E6DBBBB0052E722 /* DWMediaStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMediaStore.m; sourceTree = "<group>"; };
+		0459AB1E1E6F793F0052E722 /* DWNotificationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationStore.h; sourceTree = "<group>"; };
+		0459AB1F1E6F793F0052E722 /* DWNotificationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationStore.m; sourceTree = "<group>"; };
+		04610BE21E54E1D80023763D /* DWTimelineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTimelineTableViewCell.h; sourceTree = "<group>"; };
+		04610BE31E54E1D80023763D /* DWTimelineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWTimelineTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		04610BE51E54E8720023763D /* DWConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWConstants.h; sourceTree = "<group>"; };
+		04610BEA1E54F1190023763D /* NSString+HtmlStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HtmlStrip.h"; sourceTree = "<group>"; };
+		04610BEB1E54F1190023763D /* NSString+HtmlStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HtmlStrip.m"; sourceTree = "<group>"; };
+		0469EA771E75B50200492AF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0469EA791E75B63800492AF5 /* DireFloof.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DireFloof.entitlements; sourceTree = "<group>"; };
+		046A4C741E8D62BC00F54E15 /* DWNotificationSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationSettingsViewController.h; sourceTree = "<group>"; };
+		046A4C751E8D62BC00F54E15 /* DWNotificationSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationSettingsViewController.m; sourceTree = "<group>"; };
+		046BF2031E7712EE00F01C50 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		046BF2041E7712EE00F01C50 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		046BF2051E7712EE00F01C50 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		046BF2061E7712EE00F01C50 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		046BF2071E7712EE00F01C50 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		046BF2081E7712EE00F01C50 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		046BF2091E7712EE00F01C50 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		046BF20A1E7712EE00F01C50 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		046BF20B1E7712EE00F01C50 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		046BF20C1E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		047ACB5E1E73469600CC092B /* DWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNavigationViewController.h; sourceTree = "<group>"; };
+		047ACB5F1E73469600CC092B /* DWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNavigationViewController.m; sourceTree = "<group>"; };
+		0485B9781E5558690063B2B8 /* DWMediaCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMediaCollectionViewCell.h; sourceTree = "<group>"; };
+		0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMediaCollectionViewCell.m; sourceTree = "<group>"; };
+		0485B97B1E55685F0063B2B8 /* DWIntrinsicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWIntrinsicCollectionView.h; sourceTree = "<group>"; };
+		0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWIntrinsicCollectionView.m; sourceTree = "<group>"; };
+		04AAFB691E726029009E15B2 /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
+		04BEC3A01E56869200A62C3B /* MSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNotification.h; sourceTree = "<group>"; };
+		04BEC3A11E56869200A62C3B /* MSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNotification.m; sourceTree = "<group>"; };
+		04C935061E4AA9A5004376F3 /* MSTimelineStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimelineStore.h; sourceTree = "<group>"; };
+		04C935071E4AA9A5004376F3 /* MSTimelineStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSTimelineStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		04C935091E4BB520004376F3 /* MSStatusStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStatusStore.h; sourceTree = "<group>"; };
+		04C9350A1E4BB520004376F3 /* MSStatusStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSStatusStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		04C9350E1E4C25D1004376F3 /* MSNotificationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNotificationStore.h; sourceTree = "<group>"; };
+		04C9350F1E4C25D1004376F3 /* MSNotificationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSNotificationStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		04DA37F61E665F0B0059A2A6 /* DWBlockedUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBlockedUsersViewController.h; sourceTree = "<group>"; };
+		04DA37F71E665F0B0059A2A6 /* DWBlockedUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBlockedUsersViewController.m; sourceTree = "<group>"; };
+		04E6A2441E7480F200838130 /* UIImage+color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+color.h"; sourceTree = "<group>"; };
+		04E6A2451E7480F200838130 /* UIImage+color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+color.m"; sourceTree = "<group>"; };
+		04E9F09B1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTimelineNotificationTableViewCell.h; sourceTree = "<group>"; };
+		04E9F09C1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWTimelineNotificationTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		04EC13EC1E46A966000E15A6 /* DireFloof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DireFloof.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EC13F01E46A966000E15A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04EC13F21E46A966000E15A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04EC13F31E46A966000E15A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04EC13F91E46A966000E15A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04EC13FE1E46A966000E15A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EC14011E46A966000E15A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04EC14031E46A966000E15A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EC14081E46A966000E15A6 /* DireFloofTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DireFloofTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EC140C1E46A966000E15A6 /* DireFloofTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DireFloofTests.m; sourceTree = "<group>"; };
+		04EC140E1E46A966000E15A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EC14131E46A966000E15A6 /* DireFloofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DireFloofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EC14171E46A966000E15A6 /* DireFloofUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DireFloofUITests.m; sourceTree = "<group>"; };
+		04EC14191E46A966000E15A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F425CD1E566DBD001A11C0 /* DWNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationsViewController.h; sourceTree = "<group>"; };
+		04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationsViewController.m; sourceTree = "<group>"; };
+		04FE35F81E627E5600E34407 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloofUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2379964B2057680274665D /* Pods-DireFloofTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		3AA8B4A3626D6C8622613371 /* Pods-DireFloof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.release.xcconfig"; sourceTree = "<group>"; };
+		4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloofTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8159D03EA22F7441C280496B /* libPods-DireFloof.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloof.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A855AC4855853CC23E2334AF /* Pods-DireFloof.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.adhoc.xcconfig"; sourceTree = "<group>"; };
+		C448DA33BB8B254F9A8757CE /* Pods-DireFloof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.debug.xcconfig"; sourceTree = "<group>"; };
+		D5461B0E07A4CFC6E2ADF2E3 /* Pods-DireFloofUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		D7C335A521992C48767534F0 /* Pods-DireFloofTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4A0332E3C43DB011FC8E4DF /* Pods-DireFloofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04EC13E91E46A966000E15A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F81D807974980F1C7131960 /* libPods-DireFloof.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EC14051E46A966000E15A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B480A139AE67221ED649A1F /* libPods-DireFloofTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EC14101E46A966000E15A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4549FEEE336A754F3DD7B9CB /* libPods-DireFloofUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04095B091E4A5C3B0082401A /* Mastodon */ = {
+			isa = PBXGroup;
+			children = (
+				04095B0A1E4A5D850082401A /* Mastodon.h */,
+				04095B111E4A65E90082401A /* MastodonConstants.h */,
+				04095B0B1E4A5E880082401A /* MSAPIClient.h */,
+				04095B0C1E4A5E880082401A /* MSAPIClient.m */,
+				04095B121E4A6D2D0082401A /* MSAppStore.h */,
+				04095B131E4A6D2D0082401A /* MSAppStore.m */,
+				04095B0E1E4A63C90082401A /* MSAuthStore.h */,
+				04095B0F1E4A63C90082401A /* MSAuthStore.m */,
+				04C935061E4AA9A5004376F3 /* MSTimelineStore.h */,
+				04C935071E4AA9A5004376F3 /* MSTimelineStore.m */,
+				04C935091E4BB520004376F3 /* MSStatusStore.h */,
+				04C9350A1E4BB520004376F3 /* MSStatusStore.m */,
+				04C9350E1E4C25D1004376F3 /* MSNotificationStore.h */,
+				04C9350F1E4C25D1004376F3 /* MSNotificationStore.m */,
+				043154E11E5005D20066C511 /* MSUserStore.h */,
+				043154E21E5005D20066C511 /* MSUserStore.m */,
+				043154ED1E50EBFD0066C511 /* MSAccount.h */,
+				043154EE1E50EBFD0066C511 /* MSAccount.m */,
+				043154EA1E50EB3D0066C511 /* MSStatus.h */,
+				043154EB1E50EB3D0066C511 /* MSStatus.m */,
+				043154F01E50F5E20066C511 /* MSMediaAttachment.h */,
+				043154F11E50F5E20066C511 /* MSMediaAttachment.m */,
+				043154F31E50F6C70066C511 /* MSMention.h */,
+				043154F41E50F6C70066C511 /* MSMention.m */,
+				043154F61E50F7650066C511 /* MSApplication.h */,
+				043154F71E50F7650066C511 /* MSApplication.m */,
+				043154F91E516D1B0066C511 /* MSTimeline.h */,
+				043154FA1E516D1B0066C511 /* MSTimeline.m */,
+				04BEC3A01E56869200A62C3B /* MSNotification.h */,
+				04BEC3A11E56869200A62C3B /* MSNotification.m */,
+				043154FC1E517B290066C511 /* NSDictionary+Sanitation.h */,
+				043154FD1E517B290066C511 /* NSDictionary+Sanitation.m */,
+				04610BEA1E54F1190023763D /* NSString+HtmlStrip.h */,
+				04610BEB1E54F1190023763D /* NSString+HtmlStrip.m */,
+			);
+			name = Mastodon;
+			sourceTree = "<group>";
+		};
+		0411D1591E6380FA00CED5A6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0411D15A1E63813900CED5A6 /* DWSearchViewController.h */,
+				0411D15B1E63813900CED5A6 /* DWSearchViewController.m */,
+				0411D15D1E63815200CED5A6 /* DWSearchTableViewCell.h */,
+				0411D15E1E63815200CED5A6 /* DWSearchTableViewCell.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		0411D5C51E66024C00CED5A6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0411D5C91E66038B00CED5A6 /* DWMenuViewController.h */,
+				0411D5CA1E66038B00CED5A6 /* DWMenuViewController.m */,
+				040C61271E7079E400509F32 /* DWAppSettingsViewController.h */,
+				040C61281E7079E400509F32 /* DWAppSettingsViewController.m */,
+				046A4C741E8D62BC00F54E15 /* DWNotificationSettingsViewController.h */,
+				046A4C751E8D62BC00F54E15 /* DWNotificationSettingsViewController.m */,
+				04DA37F61E665F0B0059A2A6 /* DWBlockedUsersViewController.h */,
+				04DA37F71E665F0B0059A2A6 /* DWBlockedUsersViewController.m */,
+				0408CABD1E7208B3009A893D /* DWAboutViewController.h */,
+				0408CABE1E7208B3009A893D /* DWAboutViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		043154FF1E528E820066C511 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				04EC13F21E46A966000E15A6 /* AppDelegate.h */,
+				04EC13F31E46A966000E15A6 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		043155021E528EA70066C511 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				043155251E53B1990066C511 /* DWLoginViewController.h */,
+				043155261E53B1990066C511 /* DWLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		043155031E5293D40066C511 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				04EC13FE1E46A966000E15A6 /* Assets.xcassets */,
+				043155061E5293FF0066C511 /* Fonts */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		043155051E5293F40066C511 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04EC13F81E46A966000E15A6 /* Main.storyboard */,
+				04EC14001E46A966000E15A6 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		043155061E5293FF0066C511 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				046BF2031E7712EE00F01C50 /* OpenSans-Bold.ttf */,
+				046BF2041E7712EE00F01C50 /* OpenSans-BoldItalic.ttf */,
+				046BF2051E7712EE00F01C50 /* OpenSans-ExtraBold.ttf */,
+				046BF2061E7712EE00F01C50 /* OpenSans-ExtraBoldItalic.ttf */,
+				046BF2071E7712EE00F01C50 /* OpenSans-Italic.ttf */,
+				046BF2081E7712EE00F01C50 /* OpenSans-Light.ttf */,
+				046BF2091E7712EE00F01C50 /* OpenSans-LightItalic.ttf */,
+				046BF20A1E7712EE00F01C50 /* OpenSans-Regular.ttf */,
+				046BF20B1E7712EE00F01C50 /* OpenSans-Semibold.ttf */,
+				046BF20C1E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf */,
+				043155071E5294570066C511 /* Roboto-Black.ttf */,
+				043155081E5294570066C511 /* Roboto-BlackItalic.ttf */,
+				043155091E5294570066C511 /* Roboto-BoldCondensed.ttf */,
+				0431550A1E5294570066C511 /* Roboto-BoldCondensedItalic.ttf */,
+				0431550B1E5294570066C511 /* Roboto-BoldItalic.ttf */,
+				0431550C1E5294570066C511 /* Roboto-Condensed.ttf */,
+				0431550D1E5294570066C511 /* Roboto-CondensedItalic.ttf */,
+				0431550E1E5294570066C511 /* Roboto-Italic.ttf */,
+				0431550F1E5294570066C511 /* Roboto-Light.ttf */,
+				043155101E5294570066C511 /* Roboto-LightItalic.ttf */,
+				043155111E5294570066C511 /* Roboto-Medium.ttf */,
+				043155121E5294570066C511 /* Roboto-MediumItalic.ttf */,
+				043155131E5294570066C511 /* Roboto-Regular.ttf */,
+				043155141E5294570066C511 /* Roboto-Thin.ttf */,
+				043155151E5294570066C511 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		043155281E540A400066C511 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				043155291E540A7A0066C511 /* DWTabBarController.h */,
+				0431552A1E540A7A0066C511 /* DWTabBarController.m */,
+				0431552C1E540EB40066C511 /* DWTabItemViewController.h */,
+				0431552D1E540EB40066C511 /* DWTabItemViewController.m */,
+				047ACB5E1E73469600CC092B /* DWNavigationViewController.h */,
+				047ACB5F1E73469600CC092B /* DWNavigationViewController.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		0431552F1E540FCA0066C511 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				043155301E540FF90066C511 /* DWAppearanceProxies.h */,
+				043155311E540FF90066C511 /* DWAppearanceProxies.m */,
+			);
+			name = Styling;
+			sourceTree = "<group>";
+		};
+		0459AB1A1E6DBB8D0052E722 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				0459AB1B1E6DBBBB0052E722 /* DWMediaStore.h */,
+				0459AB1C1E6DBBBB0052E722 /* DWMediaStore.m */,
+				0459AB1E1E6F793F0052E722 /* DWNotificationStore.h */,
+				0459AB1F1E6F793F0052E722 /* DWNotificationStore.m */,
+				040C612A1E707E0900509F32 /* DWSettingStore.h */,
+				040C612B1E707E0900509F32 /* DWSettingStore.m */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		04610BDE1E54E0200023763D /* Timelines */ = {
+			isa = PBXGroup;
+			children = (
+				0411D1601E6397B600CED5A6 /* DWTimelineViewController.h */,
+				0411D1611E6397B600CED5A6 /* DWTimelineViewController.m */,
+				0411D5BF1E64C47A00CED5A6 /* DWProfileViewController.h */,
+				0411D5C01E64C47A00CED5A6 /* DWProfileViewController.m */,
+				04F425CD1E566DBD001A11C0 /* DWNotificationsViewController.h */,
+				04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */,
+				04174E301E5EBF0600BD5835 /* DWComposeViewController.h */,
+				04174E311E5EBF0600BD5835 /* DWComposeViewController.m */,
+				04610BE21E54E1D80023763D /* DWTimelineTableViewCell.h */,
+				04610BE31E54E1D80023763D /* DWTimelineTableViewCell.m */,
+				04363AF01E5553C30018A564 /* DWTimelineMediaTableViewCell.h */,
+				04363AF11E5553C30018A564 /* DWTimelineMediaTableViewCell.m */,
+				04E9F09B1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.h */,
+				04E9F09C1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m */,
+				044779FB1E56A36000C2F989 /* DWTimelineFollowTableViewCell.h */,
+				044779FC1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m */,
+				0485B9781E5558690063B2B8 /* DWMediaCollectionViewCell.h */,
+				0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */,
+				0485B97B1E55685F0063B2B8 /* DWIntrinsicCollectionView.h */,
+				0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */,
+			);
+			name = Timelines;
+			sourceTree = "<group>";
+		};
+		04610BE61E54EE5D0023763D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0411D1631E639D2100CED5A6 /* UIApplication+TopController.h */,
+				0411D1641E639D2100CED5A6 /* UIApplication+TopController.m */,
+				040C61301E70C52300509F32 /* UIViewController+NearestNavigationController.h */,
+				040C61311E70C52300509F32 /* UIViewController+NearestNavigationController.m */,
+				0411D5C21E65002A00CED5A6 /* UIView+Supercell.h */,
+				0411D5C31E65002A00CED5A6 /* UIView+Supercell.m */,
+				040C612D1E7090E300509F32 /* NSString+Awoo.h */,
+				040C612E1E7090E300509F32 /* NSString+Awoo.m */,
+				04E6A2441E7480F200838130 /* UIImage+color.h */,
+				04E6A2451E7480F200838130 /* UIImage+color.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		04EC13E31E46A966000E15A6 = {
+			isa = PBXGroup;
+			children = (
+				04EC13EE1E46A966000E15A6 /* DireFloof */,
+				04EC140B1E46A966000E15A6 /* DireFloofTests */,
+				04EC14161E46A966000E15A6 /* DireFloofUITests */,
+				04EC13ED1E46A966000E15A6 /* Products */,
+				5A954BE4F904688F678B3383 /* Pods */,
+				4C62D2E833405E60BF6DE307 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04EC13ED1E46A966000E15A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04EC13EC1E46A966000E15A6 /* DireFloof.app */,
+				04EC14081E46A966000E15A6 /* DireFloofTests.xctest */,
+				04EC14131E46A966000E15A6 /* DireFloofUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04EC13EE1E46A966000E15A6 /* DireFloof */ = {
+			isa = PBXGroup;
+			children = (
+				0469EA791E75B63800492AF5 /* DireFloof.entitlements */,
+				043154FF1E528E820066C511 /* AppDelegate */,
+				043155031E5293D40066C511 /* Assets */,
+				04610BE61E54EE5D0023763D /* Categories */,
+				043155021E528EA70066C511 /* Login */,
+				04095B091E4A5C3B0082401A /* Mastodon */,
+				0411D5C51E66024C00CED5A6 /* Menu */,
+				043155281E540A400066C511 /* Navigation */,
+				0411D1591E6380FA00CED5A6 /* Search */,
+				0459AB1A1E6DBB8D0052E722 /* Stores */,
+				0431552F1E540FCA0066C511 /* Styling */,
+				04610BDE1E54E0200023763D /* Timelines */,
+				043155051E5293F40066C511 /* Storyboards */,
+				04EC13EF1E46A966000E15A6 /* Supporting Files */,
+			);
+			path = DireFloof;
+			sourceTree = "<group>";
+		};
+		04EC13EF1E46A966000E15A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0469EA771E75B50200492AF5 /* GoogleService-Info.plist */,
+				04EC14031E46A966000E15A6 /* Info.plist */,
+				04EC13F01E46A966000E15A6 /* main.m */,
+				04610BE51E54E8720023763D /* DWConstants.h */,
+				04FE35F81E627E5600E34407 /* Settings.bundle */,
+				04AAFB691E726029009E15B2 /* PrivacyPolicy.html */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04EC140B1E46A966000E15A6 /* DireFloofTests */ = {
+			isa = PBXGroup;
+			children = (
+				04EC140C1E46A966000E15A6 /* DireFloofTests.m */,
+				04EC140E1E46A966000E15A6 /* Info.plist */,
+			);
+			path = DireFloofTests;
+			sourceTree = "<group>";
+		};
+		04EC14161E46A966000E15A6 /* DireFloofUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04EC14171E46A966000E15A6 /* DireFloofUITests.m */,
+				04EC14191E46A966000E15A6 /* Info.plist */,
+			);
+			path = DireFloofUITests;
+			sourceTree = "<group>";
+		};
+		4C62D2E833405E60BF6DE307 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8159D03EA22F7441C280496B /* libPods-DireFloof.a */,
+				6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */,
+				1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A954BE4F904688F678B3383 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C448DA33BB8B254F9A8757CE /* Pods-DireFloof.debug.xcconfig */,
+				3AA8B4A3626D6C8622613371 /* Pods-DireFloof.release.xcconfig */,
+				A855AC4855853CC23E2334AF /* Pods-DireFloof.adhoc.xcconfig */,
+				5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */,
+				D7C335A521992C48767534F0 /* Pods-DireFloofTests.release.xcconfig */,
+				3A2379964B2057680274665D /* Pods-DireFloofTests.adhoc.xcconfig */,
+				E4A0332E3C43DB011FC8E4DF /* Pods-DireFloofUITests.debug.xcconfig */,
+				4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */,
+				D5461B0E07A4CFC6E2ADF2E3 /* Pods-DireFloofUITests.adhoc.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04EC13EB1E46A966000E15A6 /* DireFloof */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EC141C1E46A966000E15A6 /* Build configuration list for PBXNativeTarget "DireFloof" */;
+			buildPhases = (
+				EC763765ABC5C1EEDF66F255 /* [CP] Check Pods Manifest.lock */,
+				04EC13E81E46A966000E15A6 /* Sources */,
+				04EC13E91E46A966000E15A6 /* Frameworks */,
+				04EC13EA1E46A966000E15A6 /* Resources */,
+				04DA37F91E666D6F0059A2A6 /* Build Versioning */,
+				6D67C0BB1102B5D415CD37B8 /* [CP] Embed Pods Frameworks */,
+				4381A7DE5A5AEE78DB68D7D8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DireFloof;
+			productName = DireFloof;
+			productReference = 04EC13EC1E46A966000E15A6 /* DireFloof.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04EC14071E46A966000E15A6 /* DireFloofTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EC141F1E46A966000E15A6 /* Build configuration list for PBXNativeTarget "DireFloofTests" */;
+			buildPhases = (
+				BEAA9B26D18643F2C4E99A5C /* [CP] Check Pods Manifest.lock */,
+				04EC14041E46A966000E15A6 /* Sources */,
+				04EC14051E46A966000E15A6 /* Frameworks */,
+				04EC14061E46A966000E15A6 /* Resources */,
+				94F52F3C563B1D98783E7D36 /* [CP] Embed Pods Frameworks */,
+				D297D8FB7D1786FAD09D00C1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04EC140A1E46A966000E15A6 /* PBXTargetDependency */,
+			);
+			name = DireFloofTests;
+			productName = DireFloofTests;
+			productReference = 04EC14081E46A966000E15A6 /* DireFloofTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04EC14121E46A966000E15A6 /* DireFloofUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EC14221E46A966000E15A6 /* Build configuration list for PBXNativeTarget "DireFloofUITests" */;
+			buildPhases = (
+				C8FE5817A2A75E37F10B7432 /* [CP] Check Pods Manifest.lock */,
+				04EC140F1E46A966000E15A6 /* Sources */,
+				04EC14101E46A966000E15A6 /* Frameworks */,
+				04EC14111E46A966000E15A6 /* Resources */,
+				93A99AA7687A2856DD2EB238 /* [CP] Embed Pods Frameworks */,
+				2547B88AC0EC2B9633FE24DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04EC14151E46A966000E15A6 /* PBXTargetDependency */,
+			);
+			name = DireFloofUITests;
+			productName = DireFloofUITests;
+			productReference = 04EC14131E46A966000E15A6 /* DireFloofUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04EC13E41E46A966000E15A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Keyboard Floofs";
+				TargetAttributes = {
+					04EC13EB1E46A966000E15A6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J8ZUY53AC3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					04EC14071E46A966000E15A6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PVMKAYEWNU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04EC13EB1E46A966000E15A6;
+					};
+					04EC14121E46A966000E15A6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PVMKAYEWNU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04EC13EB1E46A966000E15A6;
+					};
+				};
+			};
+			buildConfigurationList = 04EC13E71E46A966000E15A6 /* Build configuration list for PBXProject "DireFloof" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04EC13E31E46A966000E15A6;
+			productRefGroup = 04EC13ED1E46A966000E15A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04EC13EB1E46A966000E15A6 /* DireFloof */,
+				04EC14071E46A966000E15A6 /* DireFloofTests */,
+				04EC14121E46A966000E15A6 /* DireFloofUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04EC13EA1E46A966000E15A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046BF20D1E7712EE00F01C50 /* OpenSans-Bold.ttf in Resources */,
+				04EC14021E46A966000E15A6 /* LaunchScreen.storyboard in Resources */,
+				046BF2131E7712EE00F01C50 /* OpenSans-LightItalic.ttf in Resources */,
+				046BF2141E7712EE00F01C50 /* OpenSans-Regular.ttf in Resources */,
+				04FE35F91E627E5600E34407 /* Settings.bundle in Resources */,
+				043155211E52945B0066C511 /* Roboto-MediumItalic.ttf in Resources */,
+				043155231E52945B0066C511 /* Roboto-Thin.ttf in Resources */,
+				043155221E52945B0066C511 /* Roboto-Regular.ttf in Resources */,
+				04EC13FF1E46A966000E15A6 /* Assets.xcassets in Resources */,
+				0431551E1E52945B0066C511 /* Roboto-Light.ttf in Resources */,
+				043155241E52945B0066C511 /* Roboto-ThinItalic.ttf in Resources */,
+				0431551B1E52945B0066C511 /* Roboto-Condensed.ttf in Resources */,
+				0431551F1E52945B0066C511 /* Roboto-LightItalic.ttf in Resources */,
+				046BF20F1E7712EE00F01C50 /* OpenSans-ExtraBold.ttf in Resources */,
+				0431551A1E52945B0066C511 /* Roboto-BoldItalic.ttf in Resources */,
+				043155171E52945B0066C511 /* Roboto-BlackItalic.ttf in Resources */,
+				0431551C1E52945B0066C511 /* Roboto-CondensedItalic.ttf in Resources */,
+				046BF2121E7712EE00F01C50 /* OpenSans-Light.ttf in Resources */,
+				043155191E52945B0066C511 /* Roboto-BoldCondensedItalic.ttf in Resources */,
+				04EC13FA1E46A966000E15A6 /* Main.storyboard in Resources */,
+				046BF2111E7712EE00F01C50 /* OpenSans-Italic.ttf in Resources */,
+				046BF2101E7712EE00F01C50 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				046BF20E1E7712EE00F01C50 /* OpenSans-BoldItalic.ttf in Resources */,
+				04AAFB6A1E726029009E15B2 /* PrivacyPolicy.html in Resources */,
+				046BF2151E7712EE00F01C50 /* OpenSans-Semibold.ttf in Resources */,
+				043155201E52945B0066C511 /* Roboto-Medium.ttf in Resources */,
+				043155181E52945B0066C511 /* Roboto-BoldCondensed.ttf in Resources */,
+				0431551D1E52945B0066C511 /* Roboto-Italic.ttf in Resources */,
+				043155161E52945B0066C511 /* Roboto-Black.ttf in Resources */,
+				046BF2161E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				0469EA781E75B50200492AF5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EC14061E46A966000E15A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EC14111E46A966000E15A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04DA37F91E666D6F0059A2A6 /* Build Versioning */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Versioning";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\n#  update_build_number.sh\n#  Usage: `update_build_number.sh [branch]`\n#  Run this script after the 'Copy Bundle Resources' build phase\n#  Ref: http://tgoode.com/2014/06/05/sensible-way-increment-bundle-version-cfbundleversion-xcode/\n\nbranch=${1:-'staging'}\nbuildNumber=$(expr $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))\necho \"Updating build number to $buildNumber using branch '$branch'.\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ -f \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi";
+		};
+		2547B88AC0EC2B9633FE24DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4381A7DE5A5AEE78DB68D7D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D67C0BB1102B5D415CD37B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A99AA7687A2856DD2EB238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94F52F3C563B1D98783E7D36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEAA9B26D18643F2C4E99A5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8FE5817A2A75E37F10B7432 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D297D8FB7D1786FAD09D00C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC763765ABC5C1EEDF66F255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04EC13E81E46A966000E15A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043154FB1E516D1B0066C511 /* MSTimeline.m in Sources */,
+				04174E321E5EBF0700BD5835 /* DWComposeViewController.m in Sources */,
+				0411D5C41E65002A00CED5A6 /* UIView+Supercell.m in Sources */,
+				040C612F1E7090E300509F32 /* NSString+Awoo.m in Sources */,
+				04BEC3A21E56869200A62C3B /* MSNotification.m in Sources */,
+				04C935081E4AA9A5004376F3 /* MSTimelineStore.m in Sources */,
+				043154F21E50F5E20066C511 /* MSMediaAttachment.m in Sources */,
+				0485B97D1E55685F0063B2B8 /* DWIntrinsicCollectionView.m in Sources */,
+				043155271E53B1990066C511 /* DWLoginViewController.m in Sources */,
+				0408CABF1E7208B3009A893D /* DWAboutViewController.m in Sources */,
+				040C61321E70C52300509F32 /* UIViewController+NearestNavigationController.m in Sources */,
+				040C61291E7079E400509F32 /* DWAppSettingsViewController.m in Sources */,
+				043154F51E50F6C70066C511 /* MSMention.m in Sources */,
+				0411D5CB1E66038B00CED5A6 /* DWMenuViewController.m in Sources */,
+				0431552B1E540A7A0066C511 /* DWTabBarController.m in Sources */,
+				04C9350B1E4BB520004376F3 /* MSStatusStore.m in Sources */,
+				04610BE41E54E1D80023763D /* DWTimelineTableViewCell.m in Sources */,
+				043154E31E5005D20066C511 /* MSUserStore.m in Sources */,
+				0459AB1D1E6DBBBB0052E722 /* DWMediaStore.m in Sources */,
+				046A4C761E8D62BC00F54E15 /* DWNotificationSettingsViewController.m in Sources */,
+				04C935101E4C25D1004376F3 /* MSNotificationStore.m in Sources */,
+				04363AF21E5553C30018A564 /* DWTimelineMediaTableViewCell.m in Sources */,
+				0411D5C11E64C47A00CED5A6 /* DWProfileViewController.m in Sources */,
+				04EC13F41E46A966000E15A6 /* AppDelegate.m in Sources */,
+				040C612C1E707E0900509F32 /* DWSettingStore.m in Sources */,
+				04095B101E4A63C90082401A /* MSAuthStore.m in Sources */,
+				04095B141E4A6D2D0082401A /* MSAppStore.m in Sources */,
+				0459AB201E6F793F0052E722 /* DWNotificationStore.m in Sources */,
+				044779FD1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m in Sources */,
+				043154FE1E517B290066C511 /* NSDictionary+Sanitation.m in Sources */,
+				0411D15F1E63815200CED5A6 /* DWSearchTableViewCell.m in Sources */,
+				043154EC1E50EB3D0066C511 /* MSStatus.m in Sources */,
+				0431552E1E540EB40066C511 /* DWTabItemViewController.m in Sources */,
+				043155321E540FF90066C511 /* DWAppearanceProxies.m in Sources */,
+				04095B0D1E4A5E880082401A /* MSAPIClient.m in Sources */,
+				04EC13F11E46A966000E15A6 /* main.m in Sources */,
+				047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */,
+				04E6A2461E7480F200838130 /* UIImage+color.m in Sources */,
+				04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */,
+				0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */,
+				043154F81E50F7650066C511 /* MSApplication.m in Sources */,
+				04DA37F81E665F0B0059A2A6 /* DWBlockedUsersViewController.m in Sources */,
+				0411D1621E6397B600CED5A6 /* DWTimelineViewController.m in Sources */,
+				04E9F09D1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m in Sources */,
+				043154EF1E50EBFD0066C511 /* MSAccount.m in Sources */,
+				0411D1651E639D2100CED5A6 /* UIApplication+TopController.m in Sources */,
+				04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */,
+				0411D15C1E63813900CED5A6 /* DWSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EC14041E46A966000E15A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EC140D1E46A966000E15A6 /* DireFloofTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EC140F1E46A966000E15A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EC14181E46A966000E15A6 /* DireFloofUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04EC140A1E46A966000E15A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04EC13EB1E46A966000E15A6 /* DireFloof */;
+			targetProxy = 04EC14091E46A966000E15A6 /* PBXContainerItemProxy */;
+		};
+		04EC14151E46A966000E15A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04EC13EB1E46A966000E15A6 /* DireFloof */;
+			targetProxy = 04EC14141E46A966000E15A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04EC13F81E46A966000E15A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EC13F91E46A966000E15A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04EC14001E46A966000E15A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EC14011E46A966000E15A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04DA37FA1E6671170059A2A6 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Adhoc;
+		};
+		04DA37FB1E6671170059A2A6 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A855AC4855853CC23E2334AF /* Pods-DireFloof.adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
+				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				INFOPLIST_FILE = DireFloof/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Adhoc;
+		};
+		04DA37FC1E6671170059A2A6 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A2379964B2057680274665D /* Pods-DireFloofTests.adhoc.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PVMKAYEWNU;
+				INFOPLIST_FILE = DireFloofTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.DireFloofTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DireFloof.app/DireFloof";
+			};
+			name = Adhoc;
+		};
+		04DA37FD1E6671170059A2A6 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5461B0E07A4CFC6E2ADF2E3 /* Pods-DireFloofUITests.adhoc.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PVMKAYEWNU;
+				INFOPLIST_FILE = DireFloofUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.DireFloofUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DireFloof;
+			};
+			name = Adhoc;
+		};
+		04EC141A1E46A966000E15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04EC141B1E46A966000E15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04EC141D1E46A966000E15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C448DA33BB8B254F9A8757CE /* Pods-DireFloof.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
+				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				INFOPLIST_FILE = DireFloof/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04EC141E1E46A966000E15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA8B4A3626D6C8622613371 /* Pods-DireFloof.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
+				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				INFOPLIST_FILE = DireFloof/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04EC14201E46A966000E15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PVMKAYEWNU;
+				INFOPLIST_FILE = DireFloofTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.DireFloofTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DireFloof.app/DireFloof";
+			};
+			name = Debug;
+		};
+		04EC14211E46A966000E15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C335A521992C48767534F0 /* Pods-DireFloofTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PVMKAYEWNU;
+				INFOPLIST_FILE = DireFloofTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.DireFloofTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DireFloof.app/DireFloof";
+			};
+			name = Release;
+		};
+		04EC14231E46A966000E15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A0332E3C43DB011FC8E4DF /* Pods-DireFloofUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PVMKAYEWNU;
+				INFOPLIST_FILE = DireFloofUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.DireFloofUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DireFloof;
+			};
+			name = Debug;
+		};
+		04EC14241E46A966000E15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PVMKAYEWNU;
+				INFOPLIST_FILE = DireFloofUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.DireFloofUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DireFloof;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04EC13E71E46A966000E15A6 /* Build configuration list for PBXProject "DireFloof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EC141A1E46A966000E15A6 /* Debug */,
+				04EC141B1E46A966000E15A6 /* Release */,
+				04DA37FA1E6671170059A2A6 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EC141C1E46A966000E15A6 /* Build configuration list for PBXNativeTarget "DireFloof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EC141D1E46A966000E15A6 /* Debug */,
+				04EC141E1E46A966000E15A6 /* Release */,
+				04DA37FB1E6671170059A2A6 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EC141F1E46A966000E15A6 /* Build configuration list for PBXNativeTarget "DireFloofTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EC14201E46A966000E15A6 /* Debug */,
+				04EC14211E46A966000E15A6 /* Release */,
+				04DA37FC1E6671170059A2A6 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EC14221E46A966000E15A6 /* Build configuration list for PBXNativeTarget "DireFloofUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EC14231E46A966000E15A6 /* Debug */,
+				04EC14241E46A966000E15A6 /* Release */,
+				04DA37FD1E6671170059A2A6 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04EC13E41E46A966000E15A6 /* Project object */;
+}
