@@ -1,4 +1,4 @@
-# [Amaroq](https://appsto.re/us/OfFxib.i)
+# Amaroq
 A floofy Mastodon companion for iOS
 
 Amaroq is a lightweight universal client for any Mastodon instance! Simply enter the instance you belong to, log in, and enjoy the all the wonders of the federated social network from your phone.
