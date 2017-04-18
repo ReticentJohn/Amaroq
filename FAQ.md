@@ -12,7 +12,7 @@ Yes! If a beta is currently available I will gladly allow anyone to beta test fo
 ### Where is the best place to contact you?
 In the following order you will get the fastest response, but I try to stay on top of things and respond to everyone:
 1. By mentioning me [@eurasierboy@mastodon.social](https://mastodon.social/@eurasierboy)
-2. Tagging #Amaroq in a public post
+2. Tagging #Amaroq in a public post that will federate to mastodon.social
 3. Creating an issue here, if it regards feedback or bug reports
 4. Emailing amaroq.feedback@gmail.com
 5. Awooing into the void
