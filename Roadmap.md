@@ -14,6 +14,8 @@
   * Danish
   * French
   * German
+  * Korean
+  * Catalan
 * Formal profile edit view
 
 ## Long-term (v1.x-v2.0)
