@@ -108,7 +108,7 @@
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_CLIENT_ID_KEY];
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_CLIENT_SECRET_KEY];
             
-            NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"instance LIKE[cd] %@", self.instance]] firstObject];
+            NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", self.instance]] firstObject];
             
             if (availableInstance) {
                 self.client_id = [availableInstance objectForKey:MS_CLIENT_ID_KEY];
