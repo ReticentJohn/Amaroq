@@ -44,7 +44,14 @@
         [self.loginActivityIndicator stopAnimating];
 
         if (success) {
-            [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+            if (self.addAccount) {
+                // Notify the app to clear all its contents for refresh
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+            else
+            {
+                [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+            }
         }
         else
         {

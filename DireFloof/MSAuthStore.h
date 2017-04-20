@@ -33,4 +33,7 @@
 - (void)logout;
 - (void)registerForRemoteNotificationsWithToken:(NSString *)token;
 - (void)unregisterForRemoteNotifications;
+
+- (void)switchToInstance:(NSString *)instance withCompletion:(void (^)(BOOL success))completion;
+- (void)requestAddInstanceAccount;
 @end
