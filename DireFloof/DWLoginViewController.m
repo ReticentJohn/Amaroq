@@ -22,6 +22,7 @@
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *loginActivityIndicator;
 @property (nonatomic, weak) IBOutlet UILabel *subheaderLabel;
 @property (nonatomic, weak) IBOutlet UIButton *privacyPolicyLabel;
+@property (nonatomic, weak) IBOutlet UIButton *closeButton;
 
 @end
 
@@ -65,6 +66,12 @@
 }
 
 
+- (IBAction)cancelLoginPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 #pragma mark - Observers
 
 - (void)cancelLogin
@@ -89,6 +96,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cancelLogin) name:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
     
     [self adjustFonts];
+    
+    self.closeButton.hidden = !self.addAccount;
 }
 
 
@@ -96,7 +105,7 @@
 {
     [super viewDidAppear:animated];
     
-    if ([[MSAuthStore sharedStore] isLoggedIn]) {
+    if ([[MSAuthStore sharedStore] isLoggedIn] && !self.addAccount) {
         [self performSegueWithIdentifier:@"LoginSegue" sender:self];
     }
 }

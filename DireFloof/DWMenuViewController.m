@@ -23,6 +23,7 @@
 
 typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     DWMenuRowTypeProfile        = 0,
+    DWMenuRowTypeInstances,
     DWMenuRowTypePreferences,
     DWMenuRowTypeAppSettings,
     DWMenuRowTypeFavorites,
@@ -104,6 +105,16 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 }
 
 
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:@"AboutSegue"]) {
+        return  [[self.tableView indexPathForCell:sender] row] == DWMenuRowTypeAppInformation;
+    }
+    
+    return YES;
+}
+
+
 #pragma mark - UITableView Delegate Methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -120,7 +131,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indexPath.row == DWMenuRowTypeAppInformation ? @"AppCell" : @"MenuCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(indexPath.row == DWMenuRowTypeAppInformation || indexPath.row == DWMenuRowTypeInstances) ? @"AppCell" : @"MenuCell"];
     
     [self configureCell:cell atIndexPath:indexPath];
     
@@ -153,6 +164,9 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
                 }];
             }
         }
+            break;
+        case DWMenuRowTypeInstances:
+            [self performSegueWithIdentifier:@"InstanceSegue" sender:[tableView cellForRowAtIndexPath:indexPath]];
             break;
         case DWMenuRowTypePreferences:
             [[MSAuthStore sharedStore] requestPreferences];
@@ -194,6 +208,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 - (void)configureData
 {
     self.menuItems = @[@{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"UserIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"My profile", @"My profile")},
+                       @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"PublicIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"My instances", @"My instances")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"SettingsIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Account preferences", @"Account preferences")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"SettingsIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"App settings", @"App settings")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"FavoriteIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Favorites", @"Favorites")},
@@ -217,6 +232,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     cell.textLabel.numberOfLines = 0;
     cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+    cell.detailTextLabel.numberOfLines = 0;
     
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.detailTextLabel.textColor = DW_LINK_TINT_COLOR;
@@ -226,6 +242,10 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
         NSString *buildVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
         
         cell.detailTextLabel.text = [NSString stringWithFormat:@"v%@ (%@)", appVersion, buildVersion];
+    }
+    else if (indexPath.row == DWMenuRowTypeInstances)
+    {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Currently logged into:", @"Currently logged into:"), [[MSAppStore sharedStore] instance]];
     }
 }
 
