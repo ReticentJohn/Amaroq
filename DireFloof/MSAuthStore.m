@@ -228,7 +228,7 @@
             [self.cancelButton removeFromSuperview];
         }
     }
-    else if (([webView.request.mainDocumentURL.absoluteString containsString:@"/about"] || [webView.request.mainDocumentURL.absoluteString containsString:@"sign_in"]) && [self isLoggedIn])
+    else if (([webView.request.mainDocumentURL.absoluteString containsString:@"/about"] || [webView.request.mainDocumentURL.absoluteString containsString:@"sign_in"]) && [self isLoggedIn] && !self.loginRequest)
     {
         // YOU FOOL YOU'VE LOGGED OUT
         if ([[[[UIApplication sharedApplication] topController] view].subviews containsObject:webView]) {

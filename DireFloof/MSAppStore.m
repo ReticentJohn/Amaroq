@@ -60,13 +60,10 @@
     self = [super init];
     if (self) {
     
-        if (![FCFileManager isFileItemAtPath:[self availableInstancesPath]]) {
+        self.availableInstances = [FCFileManager readFileAtPathAsArray:[self availableInstancesPath]];
+
+        if (!self.availableInstances) {
             self.availableInstances = @[];
-            [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
-        }
-        else
-        {
-            self.availableInstances = [FCFileManager readFileAtPathAsArray:[self availableInstancesPath]];
         }
         
         self.client_id = [[NSUserDefaults standardUserDefaults] objectForKey:MS_CLIENT_ID_KEY];
@@ -117,6 +114,8 @@
                 self.client_id = [availableInstance objectForKey:MS_CLIENT_ID_KEY];
                 self.client_secret = [availableInstance objectForKey:MS_CLIENT_SECRET_KEY];
             }
+            
+            [[MSAuthStore sharedStore] setCredential:nil];
         }
     }
     else
@@ -158,7 +157,7 @@
             [[NSUserDefaults standardUserDefaults] setObject:self.client_id forKey:MS_CLIENT_ID_KEY];
             [[NSUserDefaults standardUserDefaults] setObject:self.client_secret forKey:MS_CLIENT_SECRET_KEY];
             
-            NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"instance LIKE[cd] %@", self.instance]] firstObject];
+            NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", self.instance]] firstObject];
             
             if (!availableInstance) {
                 self.availableInstances = [self.availableInstances arrayByAddingObject:@{MS_CLIENT_ID_KEY: self.client_id,
@@ -187,8 +186,9 @@
 
 - (NSString *)availableInstancesPath
 {
-    NSURL *docsDirectory = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    NSString *instancesPlistPath = [[docsDirectory absoluteString] stringByAppendingPathComponent:@"instances.plist"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *instancesPlistPath = [documentsDirectory stringByAppendingPathComponent:@"instances.plist"];
     
     return instancesPlistPath;
 }

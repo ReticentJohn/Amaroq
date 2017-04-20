@@ -252,11 +252,25 @@
                                     <constraint firstAttribute="bottom" secondItem="u2q-0w-Lvi" secondAttribute="bottom" id="xCH-DR-QhX"/>
                                 </constraints>
                             </scrollView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCP-3d-Nkc">
+                                <rect key="frame" x="335" y="20" width="79" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rCP-3d-Nkc" secondAttribute="height" multiplier="1:1" id="QBp-Xa-FyK"/>
+                                    <constraint firstAttribute="width" constant="79" id="evl-D2-MBN"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="CloseIcon"/>
+                                <connections>
+                                    <action selector="cancelLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3g-4y-60L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.097704626619815826" green="0.10534841567277908" blue="0.13439667224884033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="u2q-0w-Lvi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0mf-9H-QeG"/>
+                            <constraint firstAttribute="trailing" secondItem="rCP-3d-Nkc" secondAttribute="trailing" id="3T2-dg-j8U"/>
                             <constraint firstAttribute="bottom" secondItem="Mg8-Fl-INA" secondAttribute="bottom" id="Icp-xA-Gjp"/>
+                            <constraint firstItem="rCP-3d-Nkc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YSH-ai-Sr9"/>
                             <constraint firstItem="Mg8-Fl-INA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cD8-bI-bil"/>
                             <constraint firstItem="u2q-0w-Lvi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="eST-CY-b20"/>
                             <constraint firstItem="Mg8-Fl-INA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fqy-Kg-ybK"/>
@@ -264,6 +278,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="rCP-3d-Nkc" id="mJq-PA-3yH"/>
                         <outlet property="instanceField" destination="WF3-ZB-vly" id="IU6-AC-fY3"/>
                         <outlet property="loginActivityIndicator" destination="1s4-g3-Kza" id="vvw-6e-IL8"/>
                         <outlet property="loginButton" destination="TbS-Hh-ZI2" id="hl9-YD-EWU"/>
@@ -635,7 +650,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPp-6q-Ga6">
-                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="23.333333333333336" width="89" height="20.000000000000007"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -810,13 +825,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngb-ME-38f">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cte-HL-DZl">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1076,13 +1091,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKU-IQ-Oic">
-                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="9" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu8-SC-60O">
-                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="9" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1816,7 +1831,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ai-vo-Nq4">
-                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="23.333333333333336" width="89" height="20.000000000000007"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1991,13 +2006,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-ho-Fbg">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peC-Z9-8oy">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2526,13 +2541,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS7-He-uip">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAi-jG-h7h">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -3671,7 +3686,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-sp-H4C">
-                                                    <rect key="frame" x="315" y="6.3333333333333321" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="6.6666666666666679" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -4012,7 +4027,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWj-wv-bf7">
-                                                    <rect key="frame" x="315" y="32.333333333333336" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="32.666666666666664" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -4375,6 +4390,7 @@
                         <segue destination="SC5-pn-I3A" kind="show" identifier="BlockedSegue" id="365-gH-9yH"/>
                         <segue destination="CIJ-hS-huU" kind="show" identifier="FavoriteSegue" id="dbR-ZR-DeS"/>
                         <segue destination="0B8-3F-mRu" kind="show" identifier="AppSegue" id="NJI-kw-e2b"/>
+                        <segue destination="pyO-w1-D12" kind="show" identifier="InstanceSegue" id="DfZ-tC-nQm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yU-Lc-BnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4694,7 +4710,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mQ-P9-Kjj">
-                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="23.333333333333336" width="89" height="20.000000000000007"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -4869,13 +4885,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8E-L6-r01">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-uS-EwS">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -5135,13 +5151,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kx-6H-zbn">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuV-g4-hLu">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -6247,7 +6263,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lYZ-Qb-UgT">
-                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="23.333333333333336" width="89" height="20.000000000000007"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -6422,13 +6438,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0f-xA-yAn">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-n9-aZp">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -6688,13 +6704,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-cK-Mj8">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uta-FN-35Y">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -7389,7 +7405,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZVG-ur-eYy">
-                                                    <rect key="frame" x="315" y="23.666666666666664" width="89" height="19.999999999999993"/>
+                                                    <rect key="frame" x="315" y="24" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -7564,13 +7580,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ2-pR-esE">
-                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="9" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-eE-4xG">
-                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="9" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -7830,13 +7846,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vv-FC-uyP">
-                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="9" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qST-R4-uqh">
-                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="9" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -9969,7 +9985,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-6T-r6R">
-                                                    <rect key="frame" x="315" y="23.666666666666664" width="89" height="19.999999999999993"/>
+                                                    <rect key="frame" x="315" y="24" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -10144,13 +10160,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o5-6W-XMp">
-                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="9" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyJ-KV-d5f">
-                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="9" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -10410,13 +10426,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcl-s3-gms">
-                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="9" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Am-cK-PJB">
-                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="9" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -11056,6 +11072,109 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
             </objects>
             <point key="canvasLocation" x="4586" y="2415"/>
         </scene>
+        <!--Instances View Controller-->
+        <scene sceneID="qBS-TQ-qL1">
+            <objects>
+                <viewController id="pyO-w1-D12" customClass="DWInstancesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jpW-Mf-Vnp"/>
+                        <viewControllerLayoutGuide type="bottom" id="vJP-In-Uaa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N3m-G5-NZx">
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4eb-DZ-wXg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                                <color key="backgroundColor" red="0.19149845839999999" green="0.20683670039999999" blue="0.26078334450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="kGx-VO-vql">
+                                    <rect key="frame" x="0.0" y="164" width="414" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuCell" textLabel="2Dw-lx-6PD" imageView="OzS-7f-B6U" style="IBUITableViewCellStyleDefault" id="VSZ-RN-90G">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VSZ-RN-90G" id="c5p-Xe-95H">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Dw-lx-6PD">
+                                                    <rect key="frame" x="56" y="0.0" width="343" height="68"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="UserIcon" id="OzS-7f-B6U">
+                                                    <rect key="frame" x="15" y="21" width="26" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AppCell" textLabel="kDz-Ca-Mch" detailTextLabel="Qql-W6-b53" imageView="q5S-JW-eQh" style="IBUITableViewCellStyleSubtitle" id="edE-5F-DRt">
+                                        <rect key="frame" x="0.0" y="96" width="414" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="edE-5F-DRt" id="CCn-ak-1zp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kDz-Ca-Mch">
+                                                    <rect key="frame" x="56" y="17" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="UserIcon" id="q5S-JW-eQh">
+                                                    <rect key="frame" x="15" y="21" width="26" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qql-W6-b53">
+                                                    <rect key="frame" x="56" y="37" width="44.333333333333336" height="15.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                                    <color key="textColor" red="0.60928755999999995" green="0.68066358569999996" blue="0.784645021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" red="0.1680024266" green="0.56291288139999995" blue="0.84955221410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.1680024266" green="0.56291288139999995" blue="0.84955221410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="pyO-w1-D12" id="3KT-RQ-vUL"/>
+                                    <outlet property="delegate" destination="pyO-w1-D12" id="BMD-Rd-gEC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.097704626619999999" green="0.1053484157" blue="0.13439667220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4eb-DZ-wXg" firstAttribute="top" secondItem="jpW-Mf-Vnp" secondAttribute="bottom" id="fSC-6x-Eep"/>
+                            <constraint firstItem="vJP-In-Uaa" firstAttribute="top" secondItem="4eb-DZ-wXg" secondAttribute="bottom" id="fqP-pL-JIv"/>
+                            <constraint firstAttribute="trailing" secondItem="4eb-DZ-wXg" secondAttribute="trailing" id="i0U-gf-sUC"/>
+                            <constraint firstItem="4eb-DZ-wXg" firstAttribute="leading" secondItem="N3m-G5-NZx" secondAttribute="leading" id="jsG-bE-WEd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="AsteriskIcon" id="YgH-rC-w9s"/>
+                    <navigationItem key="navigationItem" id="UId-JQ-yPr">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="79q-Nl-Dbr"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="4eb-DZ-wXg" id="pvf-6b-9yD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkY-cm-tUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5365" y="2415"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AsteriskIcon" width="25" height="25"/>
@@ -11086,9 +11205,9 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
     <inferredMetricsTieBreakers>
         <segue reference="hcK-jb-PJB"/>
         <segue reference="ljc-yS-Vrl"/>
-        <segue reference="lYx-kT-5gn"/>
-        <segue reference="3t3-om-JN6"/>
-        <segue reference="fAt-kp-Qvw"/>
         <segue reference="yJ5-Jp-tfF"/>
+        <segue reference="qsd-h2-seO"/>
+        <segue reference="mgK-1g-SjE"/>
+        <segue reference="vl5-yr-Xvl"/>
     </inferredMetricsTieBreakers>
 </document>
