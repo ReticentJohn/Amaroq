@@ -298,6 +298,11 @@
     [[MSAppStore sharedStore] setMastodonInstance:instance];
     
     [self login:^(BOOL success) {
+        
+        if (success) {
+            [[DWNotificationStore sharedStore] registerForNotifications];
+        }
+        
         if (completion != nil) {
             completion(success);
         }
