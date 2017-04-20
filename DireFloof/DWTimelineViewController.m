@@ -59,6 +59,8 @@ IB_DESIGNABLE
     
     [self configureViews];
     [self configureData];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 
 
@@ -92,7 +94,7 @@ IB_DESIGNABLE
 {
     [super viewWillDisappear:animated];
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
 }
 
 
@@ -111,6 +113,12 @@ IB_DESIGNABLE
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

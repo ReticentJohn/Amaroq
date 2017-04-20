@@ -6,6 +6,14 @@
 * Multi-instance support
 * Better handling of content warnings in threads (dismissing one dismisses all)
 * Localizations
+  * Spanish
+  * Esperanto
+  * Polish
+  * Japanese
+  * Norwegian
+  * Danish
+  * French
+  * German
 * Formal profile edit view
 
 ## Long-term (v1.x-v2.0)
