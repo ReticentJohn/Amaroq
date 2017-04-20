@@ -2503,11 +2503,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAuthStore.m"
-            timestampString = "514416328.627554"
+            timestampString = "514417027.890698"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
             landmarkName = "-performWebviewLogin"
             landmarkType = "7">
          </BreakpointContent>
@@ -3157,6 +3157,22 @@
             startingLineNumber = "169"
             endingLineNumber = "169"
             landmarkName = "-registerApp:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DireFloof/MSAuthStore.m"
+            timestampString = "514417062.732749"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "-switchToInstance:withCompletion:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

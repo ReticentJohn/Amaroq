@@ -297,16 +297,29 @@
 
     [[MSAppStore sharedStore] setMastodonInstance:instance];
     
-    [self login:^(BOOL success) {
+    if ([self isLoggedIn]) {
         
-        if (success) {
-            [[DWNotificationStore sharedStore] registerForNotifications];
-        }
+        [[MSUserStore sharedStore] getCurrentUserWithCompletion:nil];
+        
+        [[DWNotificationStore sharedStore] registerForNotifications];
         
         if (completion != nil) {
-            completion(success);
+            completion(YES);
         }
-    }];
+    }
+    else
+    {
+        [self login:^(BOOL success) {
+            
+            if (success) {
+                [[DWNotificationStore sharedStore] registerForNotifications];
+            }
+            
+            if (completion != nil) {
+                completion(success);
+            }
+        }];
+    }
 }
 
 
