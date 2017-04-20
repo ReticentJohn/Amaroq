@@ -152,6 +152,24 @@
         
     }]];
     
+    [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Translate text", @"Translate text") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
+        
+        NSString *encodedStatus = [status.content stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSString *url = [NSString stringWithFormat:@"https://translate.google.com/#auto/auto/%@", encodedStatus];
+        
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+            
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+            
+        } else {
+            // iOS 10 or later
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
+        }
+
+    }]];
+    
     if ([self.status.account._id isEqualToString:[[[MSUserStore sharedStore] currentUser] _id]]) {
         
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Delete", @"Delete") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
