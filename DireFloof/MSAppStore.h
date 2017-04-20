@@ -22,7 +22,7 @@
 @property (nonatomic, strong, readonly) NSString *base_api_url_string;
 @property (nonatomic, strong, readonly) NSString *base_media_url_string;
 @property (nonatomic, strong, readonly) NSString *instance;
-
+@property (nonatomic, strong, readonly) NSArray *availableInstances;
 
 #pragma mark - Class Methods
 

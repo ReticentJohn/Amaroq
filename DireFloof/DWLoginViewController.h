@@ -13,4 +13,6 @@
 
 @interface DWLoginViewController : UIViewController
 
+@property (nonatomic, assign) BOOL addAccount;
+
 @end
