@@ -56,6 +56,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     [[NSNotificationCenter defaultCenter] addObserver:self.tableView selector:@selector(reloadData) name:UIContentSizeCategoryDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self.tableView selector:@selector(reloadData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 
 

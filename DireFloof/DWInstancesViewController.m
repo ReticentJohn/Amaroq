@@ -8,6 +8,7 @@
 
 #import "DWInstancesViewController.h"
 #import "Mastodon.h"
+#import "DWConstants.h"
 
 @interface DWInstancesViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -91,6 +92,7 @@
         
         [[MSAuthStore sharedStore] switchToInstance:[availableInstance objectForKey:MS_INSTANCE_KEY] withCompletion:^(BOOL success) {
             [self.tableView reloadData];
+            [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
         }];
     }
     
