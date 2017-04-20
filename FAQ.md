@@ -1,13 +1,16 @@
 # FAQ
 
 ### Where's the code? I thought you were going to open source Amaroq?
-Yes, I plan on open sourcing Amaroq. It is not ready to be public-facing at this time (no documentation, local dependencies need cleaning up, I need to finalize a decision on the licensing). But I will be working to do this in the coming weeks. I really do look forward to taking on all the support ya'll are offering, but I gotta get things settled first. I never expected this level of interest this soon. I'll announce when I open things up. Or just wait till the code magically appears here someday.
+It's here. You're welcome. :3
 
 ### What is Amaroq written in?
 Amaroq is written entirely in Obj-C. Not apposed to mixing Swift in there if need be, but I like being verbose.
 
 ### Can I beta test Amaroq?
 Yes! If a beta is currently available I will gladly allow anyone to beta test for as long as I have open slots available. Email your Apple ID to amaroq.feedback@gmail.com and I will send invites out when a build is about to be pushed.
+
+### I'd like to contribute. How you got your branches setup?
+Master will always represent what's currently in the store. Staging will always represent what's currently in TestFlight. Develop is your bleeding edge and what you should always send your PR's to.
 
 ### Where is the best place to contact you?
 In the following order you will get the fastest response, but I try to stay on top of things and respond to everyone:

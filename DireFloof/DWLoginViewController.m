@@ -22,6 +22,7 @@
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *loginActivityIndicator;
 @property (nonatomic, weak) IBOutlet UILabel *subheaderLabel;
 @property (nonatomic, weak) IBOutlet UIButton *privacyPolicyLabel;
+@property (nonatomic, weak) IBOutlet UIButton *closeButton;
 
 @end
 
@@ -44,7 +45,14 @@
         [self.loginActivityIndicator stopAnimating];
 
         if (success) {
-            [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+            if (self.addAccount) {
+                // Notify the app to clear all its contents for refresh
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+            else
+            {
+                [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+            }
         }
         else
         {
@@ -55,6 +63,12 @@
             [self presentViewController:alertController animated:YES completion:nil];
         }
     }];
+}
+
+
+- (IBAction)cancelLoginPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -82,6 +96,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cancelLogin) name:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
     
     [self adjustFonts];
+    
+    self.closeButton.hidden = !self.addAccount;
 }
 
 
@@ -89,7 +105,7 @@
 {
     [super viewDidAppear:animated];
     
-    if ([[MSAuthStore sharedStore] isLoggedIn]) {
+    if ([[MSAuthStore sharedStore] isLoggedIn] && !self.addAccount) {
         [self performSegueWithIdentifier:@"LoginSegue" sender:self];
     }
 }

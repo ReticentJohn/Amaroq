@@ -19,6 +19,7 @@
 #import "UIApplication+TopController.h"
 #import "DWNotificationStore.h"
 #import "DWConstants.h"
+#import "DWLoginViewController.h"
 
 @interface MSAuthStore () <UIWebViewDelegate>
 
@@ -227,7 +228,7 @@
             [self.cancelButton removeFromSuperview];
         }
     }
-    else if (([webView.request.mainDocumentURL.absoluteString containsString:@"/about"] || [webView.request.mainDocumentURL.absoluteString containsString:@"sign_in"]) && [self isLoggedIn])
+    else if (([webView.request.mainDocumentURL.absoluteString containsString:@"/about"] || [webView.request.mainDocumentURL.absoluteString containsString:@"sign_in"]) && [self isLoggedIn] && !self.loginRequest)
     {
         // YOU FOOL YOU'VE LOGGED OUT
         if ([[[[UIApplication sharedApplication] topController] view].subviews containsObject:webView]) {
@@ -276,10 +277,60 @@
         [AFOAuthCredential deleteCredentialWithIdentifier:[[MSAppStore sharedStore] base_api_url_string]];
         [[[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] requestSerializer] setAuthorizationHeaderFieldWithCredential:nil];
         
+        for (NSDictionary *instance in [[MSAppStore sharedStore] availableInstances]) {
+            [AFOAuthCredential deleteCredentialWithIdentifier:[instance objectForKey:MS_BASE_API_URL_STRING_KEY]];
+        }
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:YES completion:nil];
         });
     }];
+}
+
+
+- (void)switchToInstance:(NSString *)instance withCompletion:(void (^)(BOOL))completion
+{
+    [[DWNotificationStore sharedStore] stopNotificationRefresh];
+    
+    self.credential = nil;
+    [[[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] requestSerializer] setAuthorizationHeaderFieldWithCredential:nil];
+
+    [[MSAppStore sharedStore] setMastodonInstance:instance];
+    
+    if ([self isLoggedIn]) {
+        
+        [[MSUserStore sharedStore] getCurrentUserWithCompletion:nil];
+        
+        [[DWNotificationStore sharedStore] registerForNotifications];
+        
+        if (completion != nil) {
+            completion(YES);
+        }
+    }
+    else
+    {
+        [self login:^(BOOL success) {
+            
+            if (success) {
+                [[DWNotificationStore sharedStore] registerForNotifications];
+            }
+            
+            if (completion != nil) {
+                completion(success);
+            }
+        }];
+    }
+}
+
+
+- (void)requestAddInstanceAccount
+{
+    DWLoginViewController *loginController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    loginController.addAccount = YES;
+    loginController.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    loginController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    [[[UIApplication sharedApplication] topController] presentViewController:loginController animated:YES completion:nil];
 }
 
 
