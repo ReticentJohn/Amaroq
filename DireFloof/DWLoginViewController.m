@@ -23,7 +23,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *subheaderLabel;
 @property (nonatomic, weak) IBOutlet UIButton *privacyPolicyLabel;
 @property (nonatomic, weak) IBOutlet UIButton *closeButton;
-
+@property (nonatomic, strong) NSString *lastInstance;
 @end
 
 @implementation DWLoginViewController
@@ -36,6 +36,7 @@
     [self.loginActivityIndicator startAnimating];
     self.loginButton.hidden = YES;
     
+    self.lastInstance = [[[MSAppStore sharedStore] instance] copy];
     [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
     
     [[MSAuthStore sharedStore] login:^(BOOL success) {
@@ -47,6 +48,7 @@
         if (success) {
             if (self.addAccount) {
                 // Notify the app to clear all its contents for refresh
+                [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
             else
@@ -68,6 +70,11 @@
 
 - (IBAction)cancelLoginPressed:(id)sender
 {
+    if (self.lastInstance) {
+        [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
+        [[MSAuthStore sharedStore] isLoggedIn];
+    }
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
