@@ -28,12 +28,21 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
 @interface DWTabBarController ()
 @property (nonatomic, strong) UIView *notificationBadge;
+@property (nonatomic, strong) UIView *centerTabOverlay;
 
 @property (nonatomic, assign) NSUInteger previousSelectedIndex;
 
 @end
 
 @implementation DWTabBarController
+
+#pragma mark - Actions
+
+- (void)composeButtonPressed
+{
+    [self performSegueWithIdentifier:@"ComposeSegue" sender:self];
+}
+
 
 #pragma mark - View Lifecycle
 
@@ -133,6 +142,10 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
 - (void)configureViews
 {
+    for (UITabBarItem *item in self.tabBar.items) {
+        item.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    }
+    
     if (!self.notificationBadge) {
         self.notificationBadge = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
         self.notificationBadge.clipsToBounds = YES;
@@ -145,7 +158,33 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         
         [self.notificationBadge autoSetDimensionsToSize:CGSizeMake(10, 10)];
         [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar withOffset:8.0f + self.tabBar.bounds.size.width/5.0f];
-        [self.notificationBadge autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-15.0f];
+        [self.notificationBadge autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-12.0f];
+    }
+    
+    if (!self.centerTabOverlay) {
+        self.centerTabOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tabBar.bounds.size.width/5.0f, self.tabBar.bounds.size.height)];
+        self.centerTabOverlay.backgroundColor = [UIColor clearColor];
+        
+        UIView *buttonBackground = [[UIView alloc] initWithFrame:CGRectMake(10.0f, 5.0f, self.tabBar.bounds.size.width/5.0f - 20.0f, self.tabBar.bounds.size.height - 10.0f)];
+        buttonBackground.backgroundColor = DW_BLUE_COLOR;
+        buttonBackground.clipsToBounds = YES;
+        buttonBackground.layer.cornerRadius = 4.0f;
+        [self.centerTabOverlay addSubview:buttonBackground];
+        [buttonBackground autoSetDimensionsToSize:CGSizeMake(self.tabBar.bounds.size.width/5.0f - 20.0f, self.tabBar.bounds.size.height - 10.0f)];
+        [buttonBackground autoCenterInSuperview];
+        
+        UIButton *composeButton = [[UIButton alloc] initWithFrame:self.centerTabOverlay.bounds];
+        composeButton.backgroundColor = [UIColor clearColor];
+        [composeButton setImage:[[UIImage imageNamed:@"ComposeIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+        [composeButton addTarget:self action:@selector(composeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        composeButton.tintColor = self.tabBar.barTintColor;
+        [self.centerTabOverlay addSubview:composeButton];
+        [composeButton autoPinEdgesToSuperviewEdges];
+        
+        [self.tabBar addSubview:self.centerTabOverlay];
+        [self.centerTabOverlay autoSetDimensionsToSize:CGSizeMake(self.tabBar.bounds.size.width/5.0f, self.tabBar.bounds.size.height)];
+        [self.centerTabOverlay autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar];
+        [self.centerTabOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar];
     }
 }
 

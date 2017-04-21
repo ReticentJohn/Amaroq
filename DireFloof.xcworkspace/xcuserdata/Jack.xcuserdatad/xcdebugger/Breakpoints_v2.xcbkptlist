@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/DWTabBarController.m"
-            timestampString = "514227125.30801"
+            timestampString = "514490719.790757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -1361,11 +1361,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/DWTabBarController.m"
-            timestampString = "514227125.30801"
+            timestampString = "514490719.790757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "-tabBar:didSelectItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1585,11 +1585,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/DWTabBarController.m"
-            timestampString = "514227125.30801"
+            timestampString = "514490719.790757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-viewWillAppear:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1759,11 +1759,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/DWTabBarController.m"
-            timestampString = "514227125.30801"
+            timestampString = "514490719.790757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "-tabBar:didSelectItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2063,11 +2063,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/DWTabBarController.m"
-            timestampString = "514227125.30801"
+            timestampString = "514490719.790757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-tabBar:didSelectItem:"
             landmarkType = "7">
          </BreakpointContent>
@@ -3255,6 +3255,22 @@
             startingLineNumber = "110"
             endingLineNumber = "110"
             landmarkName = "-setMastodonInstance:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DireFloof/DWTabBarController.m"
+            timestampString = "514491384.805022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "-configureViews"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
