@@ -154,11 +154,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514414246.653326"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200">
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "-availableInstancesPath"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2364,11 +2366,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514411626.672914"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "-registerApp:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2380,11 +2382,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514411626.672914"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "-registerApp:"
             landmarkType = "7">
             <Locations>
@@ -2473,13 +2475,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514411626.672914"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "@implementation MSAppStore"
-            landmarkType = "3">
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "-registerApp:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2489,11 +2491,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514414246.653326"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206">
+            startingLineNumber = "210"
+            endingLineNumber = "210">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3007,11 +3009,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514411626.672914"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "-registerApp:"
             landmarkType = "7">
          </BreakpointContent>
@@ -3039,12 +3041,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514414246.653326"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "-availableInstancesPath"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-registerApp:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3151,11 +3153,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DireFloof/MSAppStore.m"
-            timestampString = "514413713.162061"
+            timestampString = "514433234.555963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "-registerApp:"
             landmarkType = "7">
          </BreakpointContent>
@@ -3173,6 +3175,86 @@
             startingLineNumber = "302"
             endingLineNumber = "302"
             landmarkName = "-switchToInstance:withCompletion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DireFloof/DWLoginViewController.m"
+            timestampString = "514432593.220162"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-viewDidAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DireFloof/MSAuthStore.m"
+            timestampString = "514432620.881866"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-isLoggedIn"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DireFloof/MSAppStore.m"
+            timestampString = "514432649.366941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-isRegistered"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DireFloof/MSAppStore.m"
+            timestampString = "514432673.040173"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-init"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DireFloof/MSAppStore.m"
+            timestampString = "514433114.507109"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-setMastodonInstance:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

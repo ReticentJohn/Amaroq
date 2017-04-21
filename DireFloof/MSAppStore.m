@@ -121,6 +121,9 @@
             if (availableInstance) {
                 self.client_id = [availableInstance objectForKey:MS_CLIENT_ID_KEY];
                 self.client_secret = [availableInstance objectForKey:MS_CLIENT_SECRET_KEY];
+                
+                [[NSUserDefaults standardUserDefaults] setObject:self.client_id forKey:MS_CLIENT_ID_KEY];
+                [[NSUserDefaults standardUserDefaults] setObject:self.client_secret forKey:MS_CLIENT_SECRET_KEY];
             }
             
             [[MSAuthStore sharedStore] setCredential:nil];
@@ -164,6 +167,7 @@
             
             [[NSUserDefaults standardUserDefaults] setObject:self.client_id forKey:MS_CLIENT_ID_KEY];
             [[NSUserDefaults standardUserDefaults] setObject:self.client_secret forKey:MS_CLIENT_SECRET_KEY];
+            [[NSUserDefaults standardUserDefaults] synchronize];
             
             NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", self.instance]] firstObject];
             
