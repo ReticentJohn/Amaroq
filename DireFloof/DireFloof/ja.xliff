@@ -1084,11 +1084,11 @@
       <trans-unit id="h78-Az-YOY.text">
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!
 
-Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
         <target>Amaroqはイヌイットの伝説の巨大オオカミの名前に由来していて、名前も機能もマストドンの仲間としてはぴったりのアプリです！ ２匹の叫びが宇宙を連合させますように！
 
-AmaroqはMastodonの愛あるアイデアで開発され、支えられています。サポートや提案、バグの報告がある場合は amarok.feedback@gmail.com か、Mastodon.socialの@eurasierboyまでお問い合せください！よいトゥートを！</target>
-        <note>Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY";</note>
+AmaroqはMastodonの愛あるアイデアで開発され、支えられています。サポートや提案、バグの報告がある場合は amaroq.feedback@gmail.com か、Mastodon.socialの@eurasierboyまでお問い合せください！よいトゥートを！</target>
+        <note>Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY";</note>
       </trans-unit>
       <trans-unit id="hCN-Nu-RJv.text">
         <source>Warning Tag</source>
