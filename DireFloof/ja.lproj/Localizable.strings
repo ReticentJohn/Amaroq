@@ -1,0 +1,265 @@
+/* or 1 video */
+" or 1 video" = "または1件の動画";
+
+/* ACCOUNT */
+"ACCOUNT" = "アカウント";
+
+/* About Amaroq */
+"About Amaroq" = "Amaroqについて";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "サーバー情報";
+
+/* Account preferences */
+"Account preferences" = "ユーザー設定";
+
+/* Add instance */
+"Add instance" = "インスタンス追加";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroqはイヌイットの伝説の巨大オオカミの名前に由来していて、名前も機能もマストドンの仲間としてはぴったりのアプリです！ ２匹の叫びが宇宙を連合させますように！
+
+AmaroqはMastodonの愛あるアイデアで開発され、支えられています。サポートや提案、バグの報告がある場合は amarok.feedback@gmail.com か、Mastodon.socialの@eurasierboyまでお問い合せください！よいトゥートを！";
+
+/* App settings */
+"App settings" = "アプリ設定";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "通知を消去してもよろしいですか？";
+
+/* Awoo mode */
+"Awoo mode" = "ウォーン・モード";
+
+/* Back */
+"Back" = "戻る";
+
+/* Block */
+"Block" = "ブロック";
+
+/* Blocked users */
+"Blocked users" = "ブロックしたユーザー";
+
+/* Cancel */
+"Cancel" = "キャンセル";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "通知の種類を変更";
+
+/* Clear cache */
+"Clear cache" = "キャッシュ消去";
+
+/* Copy text */
+"Copy text" = "テキストをコピー";
+
+/* Currently logged into: */
+"Currently logged into:" = "ログイン中:";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "350ドルの罰金が課せられます";
+
+/* Default posts to private */
+"Default posts to private" = "デフォルの公開範囲を「非公開」にする";
+
+/* Default posts to public */
+"Default posts to public" = "デフォルトの公開範囲を「公開」にする";
+
+/* Delete */
+"Delete" = "削除";
+
+/* Direct */
+"Direct" = "ダイレクト";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "ダイレクト: メンションしたユーザーだけに公開";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "GIFアニメの自動再生を無効化";
+
+/* Done */
+"Done" = "完了";
+
+/* Edit Profile */
+"Edit Profile" = "プロフィール編集";
+
+/* Error */
+"Error" = "エラー";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "ユーザーのブロックに失敗しました:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "通知の消去に失敗しました:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "投稿の削除に失敗しました:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "ユーザー情報の読み込みに失敗しました:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "ユーザーのミュートに失敗しました:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "投稿に失敗しました:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "投稿の報告に失敗しました:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "プロフィールの取得に失敗しました:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "ユーザーのブロック解除に失敗しました:";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "ユーザーのフォロー解除に失敗しました:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "ユーザーのミュート解除に失敗しました:";
+
+/* Favorites */
+"Favorites" = "お気に入り";
+
+/* Follow requests */
+"Follow requests" = "フォローリクエスト";
+
+/* HASHTAG */
+"HASHTAG" = "ハッシュタグ";
+
+/* Hold to show */
+"Hold to show" = "長押しで表示";
+
+/* Login request failed */
+"Login request failed" = "ログインリクエストに失敗しました";
+
+/* Logout */
+"Logout" = "ログアウト";
+
+/* Mention */
+"Mention" = "メンション";
+
+/* Mute */
+"Mute" = "ミュート";
+
+/* Muted users */
+"Muted users" = "ミュートしたユーザー";
+
+/* My instances */
+"My instances" = "インスタンス一覧";
+
+/* My profile */
+"My profile" = "プロフィール";
+
+/* Notification settings */
+"Notification settings" = "通知設置";
+
+/* Only show to followers */
+"Only show to followers" = "フォロワーだけに公開";
+
+/* Open in Safari */
+"Open in Safari" = "Safariで開く";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "動画の長さを30秒以内に収めてください";
+
+/* Private */
+"Private" = "非公開";
+
+/* Private: Only visible to you, @mentioned users, and followers on your instance */
+"Private: Only visible to you, @mentioned users, and followers on your instance" = "非公開: フォロワーとメンションしたユーザーだけに公開";
+
+/* Public */
+"Public" = "公開";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "公開: すべてのユーザーに公開";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "ブーストされた際に通知を受け取る";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "お気に入り登録された際に通知を受け取る";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "メンションされた際に通知を受け取る";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "フォローされた際に通知を受け取る";
+
+/* Report */
+"Report" = "報告";
+
+/* Select */
+"Select" = "";
+
+/* Select a privacy level */
+"Select a privacy level" = "公開範囲を選択";
+
+/* Sensitive content */
+"Sensitive content" = "要注意コンテンツ";
+
+/* Share */
+"Share" = "共有";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "連合/ローカルタイムラインで表示";
+
+/* This can help older devices */
+"This can help older devices" = "古いデバイスへの最適化";
+
+/* Translate text */
+"Translate text" = "テキストを翻訳";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "Mastodonインスタンスへの接続に失敗しました。後でもう一度お試し頂くか、別のインスタンスでお試しください。";
+
+/* Unblock */
+"Unblock" = "ブロック解除";
+
+/* Unlisted */
+"Unlisted" = "未収載";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "未収載: トゥートはすべてのユーザーに公開するが、連合/ローカルタイムラインには表示しない";
+
+/* Unmute */
+"Unmute" = "ミュート解除";
+
+/* Video too long */
+"Video too long" = "動画が長すぎます";
+
+/* You have */
+"You have" = "";
+
+/* boosted */
+"boosted" = "ブーストしました";
+
+/* boosted your status */
+"boosted your status" = "さんがあなたの投稿をブーストしました";
+
+/* favorited your status */
+"favorited your status" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* followed you */
+"followed you" = "さんにフォローされました";
+
+/* image */
+"image" = "画像";
+
+/* images */
+"images" = "画像";
+
+/* mentioned you */
+"mentioned you" = "さんがあなた宛にトゥートしました";
+
+/* new notifications */
+"new notifications" = "件の新しい通知";
+
+/* replied */
+"replied" = "リプライしました";
+
+/* replied to */
+"replied to" = "リプライしました";
+

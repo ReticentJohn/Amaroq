@@ -1,0 +1,959 @@
+/* Class = "UIViewController"; title = "App Settings"; ObjectID = "0B8-3F-mRu"; */
+"0B8-3F-mRu.title" = "アプリ設定";
+
+/* Class = "UINavigationItem"; title = "App Settings"; ObjectID = "0QU-bc-7sH"; */
+"0QU-bc-7sH.title" = "アプリ設定";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "1H7-Fb-CNb"; */
+"1H7-Fb-CNb.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "1aa-Ze-AvU"; */
+"1aa-Ze-AvU.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn"; */
+"1kx-6H-zbn.text" = "John~";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "2Dw-lx-6PD"; */
+"2Dw-lx-6PD.text" = "Title";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "2dk-Mu-Vt7"; */
+"2dk-Mu-Vt7.text" = "Subtitle";
+
+/* Class = "UITextField"; placeholder = "Content warning"; ObjectID = "2kN-ah-4CU"; */
+"2kN-ah-4CU.placeholder" = "閲覧注意";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "2wk-Fg-cKQ"; */
+"2wk-Fg-cKQ.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "2wk-Fg-cKQ"; */
+"2wk-Fg-cKQ.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "3gH-Tw-ONr"; */
+"3gH-Tw-ONr.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "3wl-9a-M82"; */
+"3wl-9a-M82.text" = "John~";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "4Am-cK-PJB"; */
+"4Am-cK-PJB.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "4Mt-w0-BJS"; */
+"4Mt-w0-BJS.text" = "Warning Tag";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "4N5-p8-KC5"; */
+"4N5-p8-KC5.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "4N5-p8-KC5"; */
+"4N5-p8-KC5.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "4pO-Jy-jDk"; */
+"4pO-Jy-jDk.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "5EO-Fj-BWX"; */
+"5EO-Fj-BWX.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "5LR-56-GYi"; */
+"5LR-56-GYi.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "5Y2-Nq-dW4"; */
+"5Y2-Nq-dW4.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "5Zj-uu-jgp"; */
+"5Zj-uu-jgp.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "5rl-8A-C4j"; */
+"5rl-8A-C4j.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "5xv-bU-bM3"; */
+"5xv-bU-bM3.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "6NJ-69-Nnn"; */
+"6NJ-69-Nnn.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "6nh-XX-15u"; */
+"6nh-XX-15u.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "6o5-6W-XMp"; */
+"6o5-6W-XMp.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "7vv-FC-uyP"; */
+"7vv-FC-uyP.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8E4-Vf-356"; */
+"8E4-Vf-356.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8Hv-6F-dr5"; */
+"8Hv-6F-dr5.text" = "@eurasierboy";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "9Mu-se-m9q"; */
+"9Mu-se-m9q.title" = "ホーム";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "9WA-oA-2ny"; */
+"9WA-oA-2ny.placeholder" = "検索";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "9ai-vo-Nq4"; */
+"9ai-vo-Nq4.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "9mQ-P9-Kjj"; */
+"9mQ-P9-Kjj.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "50"; ObjectID = "9qQ-NP-VQx"; */
+"9qQ-NP-VQx.text" = "50";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "9ru-jP-1tk"; */
+"9ru-jP-1tk.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "9tR-Gk-auO"; */
+"9tR-Gk-auO.text" = "John~";
+
+/* Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC"; */
+"10V-B3-wiC.text" = "フォロー";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "16m-xl-Ak4"; */
+"16m-xl-Ak4.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "057-x5-u8D"; */
+"057-x5-u8D.text" = "6";
+
+/* Class = "UILabel"; text = "eurasierboy"; ObjectID = "61c-hL-yoB"; */
+"61c-hL-yoB.text" = "eurasierboy";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "79q-Nl-Dbr"; */
+"79q-Nl-Dbr.title" = "メニュー";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "85G-PL-200"; */
+"85G-PL-200.text" = "13 時間前";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "935-jO-6OF"; */
+"935-jO-6OF.title" = "メニュー";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "AAl-Jl-kUT"; */
+"AAl-Jl-kUT.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "AKw-Un-AzJ"; */
+"AKw-Un-AzJ.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "AWD-gj-Zbx"; */
+"AWD-gj-Zbx.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "AXN-qb-ISl"; */
+"AXN-qb-ISl.text" = "Warning Tag";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "Aii-Z7-ThC"; */
+"Aii-Z7-ThC.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "Aii-Z7-ThC"; */
+"Aii-Z7-ThC.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Am6-x3-fe1"; */
+"Am6-x3-fe1.text" = "John~";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Awh-eD-fRz"; */
+"Awh-eD-fRz.text" = "Label";
+
+/* Class = "UILabel"; text = "Hide text behind warning"; ObjectID = "BPA-eB-mCR"; */
+"BPA-eB-mCR.text" = "テキストを注意文で隠す";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Bb0-EI-Ll2"; */
+"Bb0-EI-Ll2.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "Bmc-uS-EwS"; */
+"Bmc-uS-EwS.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "C2B-wS-Gh4"; */
+"C2B-wS-Gh4.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "C5h-Jy-9VQ"; */
+"C5h-Jy-9VQ.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "C5h-Jy-9VQ"; */
+"C5h-Jy-9VQ.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "C5m-P3-Aoc"; */
+"C5m-P3-Aoc.text" = "John~";
+
+/* Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU"; */
+"CIJ-hS-huU.title" = "お気に入り";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "CZ7-QU-McT"; */
+"CZ7-QU-McT.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "CZ7-QU-McT"; */
+"CZ7-QU-McT.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "CcB-VU-xOW"; */
+"CcB-VU-xOW.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "CyJ-KV-d5f"; */
+"CyJ-KV-d5f.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UINavigationItem"; title = "Notification Settings"; ObjectID = "D2e-YU-71m"; */
+"D2e-YU-71m.title" = "通知設定";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "DL6-Pz-Zxu"; */
+"DL6-Pz-Zxu.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "DLI-MU-2NY"; */
+"DLI-MU-2NY.text" = "John~";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "DuJ-e8-NnY"; */
+"DuJ-e8-NnY.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "DuJ-e8-NnY"; */
+"DuJ-e8-NnY.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "DzY-wh-eiA"; */
+"DzY-wh-eiA.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "EGI-V6-mw6"; */
+"EGI-V6-mw6.text" = "@eurasierboy";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "ETp-6B-z8P"; */
+"ETp-6B-z8P.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "ETp-6B-z8P"; */
+"ETp-6B-z8P.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "Eqe-8A-XUJ"; */
+"Eqe-8A-XUJ.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "Eu8-SC-60O"; */
+"Eu8-SC-60O.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "*floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs*"; ObjectID = "F2M-wt-Xn3"; */
+"F2M-wt-Xn3.text" = "*floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs*";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "F4c-TG-HLb"; */
+"F4c-TG-HLb.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "F42-jL-fOm"; */
+"F42-jL-fOm.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "F90-mQ-WXp"; */
+"F90-mQ-WXp.normalTitle" = "送信";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "FRy-sB-TMs"; */
+"FRy-sB-TMs.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "G6Y-hr-aDj"; */
+"G6Y-hr-aDj.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "GG6-pV-8kq"; */
+"GG6-pV-8kq.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "GHf-rN-8KO"; */
+"GHf-rN-8KO.text" = "13 時間前";
+
+/* Class = "UITextField"; text = "mastodon.social"; ObjectID = "Gl1-oi-VeZ"; */
+"Gl1-oi-VeZ.text" = "mastodon.social";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "GuV-g4-hLu"; */
+"GuV-g4-hLu.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "H73-bm-2lF"; */
+"H73-bm-2lF.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "Hog-5H-gCk"; */
+"Hog-5H-gCk.text" = "Subtitle";
+
+/* Class = "UIViewController"; title = "Hashtag"; ObjectID = "I8t-xs-eqf"; */
+"I8t-xs-eqf.title" = "ハッシュタグ";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "IGI-ME-0dH"; */
+"IGI-ME-0dH.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "IYS-fn-TAY"; */
+"IYS-fn-TAY.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "IeS-ex-7Ue"; */
+"IeS-ex-7Ue.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "IfX-ak-Ifc"; */
+"IfX-ak-Ifc.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "J9b-bk-mjW"; */
+"J9b-bk-mjW.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "JAi-jG-h7h"; */
+"JAi-jG-h7h.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "JWr-0E-evS"; */
+"JWr-0E-evS.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "Jpg-Pi-oGX"; */
+"Jpg-Pi-oGX.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "K0W-Wq-7bO"; */
+"K0W-Wq-7bO.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "K0i-eE-4xG"; */
+"K0i-eE-4xG.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "KH6-XY-QeM"; */
+"KH6-XY-QeM.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "KW7-Ar-h36"; */
+"KW7-Ar-h36.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Kag-4G-y2a"; */
+"Kag-4G-y2a.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "LIw-6T-r6R"; */
+"LIw-6T-r6R.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "LKA-zX-56r"; */
+"LKA-zX-56r.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "LbU-Pp-4SM"; */
+"LbU-Pp-4SM.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp"; */
+"LvM-n9-aZp.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "M2T-fh-Qub"; */
+"M2T-fh-Qub.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "M5t-3n-kwk"; */
+"M5t-3n-kwk.text" = "John~";
+
+/* Class = "UILabel"; text = "451"; ObjectID = "MEd-N4-Ivt"; */
+"MEd-N4-Ivt.text" = "451";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "MHd-1A-k9R"; */
+"MHd-1A-k9R.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "MHd-1A-k9R"; */
+"MHd-1A-k9R.selectedTitle" = "非表示";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "MKC-rh-002"; */
+"MKC-rh-002.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "MKC-rh-002"; */
+"MKC-rh-002.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "MNX-aW-Wrt"; */
+"MNX-aW-Wrt.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "N6w-ha-lRk"; */
+"N6w-ha-lRk.text" = "13 時間前";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "N9I-Vd-eQj"; */
+"N9I-Vd-eQj.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "N9I-Vd-eQj"; */
+"N9I-Vd-eQj.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHJ-pn-iCS"; */
+"NHJ-pn-iCS.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHj-8J-Z2C"; */
+"NHj-8J-Z2C.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Nb0-tl-aQV"; */
+"Nb0-tl-aQV.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Ngb-ME-38f"; */
+"Ngb-ME-38f.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Npn-R5-GGf"; */
+"Npn-R5-GGf.text" = "@eurasierboy";
+
+/* Class = "UITabBarItem"; title = "Notifications"; ObjectID = "NsL-fZ-ToP"; */
+"NsL-fZ-ToP.title" = "通知";
+
+/* Class = "UIButton"; normalTitle = "FOLLOWS YOU"; ObjectID = "OAS-Mr-yP8"; */
+"OAS-Mr-yP8.normalTitle" = "フォローされています";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "OrQ-f9-Jf4"; */
+"OrQ-f9-Jf4.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "OrQ-f9-Jf4"; */
+"OrQ-f9-Jf4.selectedTitle" = "非表示";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "P5a-iM-rWf"; */
+"P5a-iM-rWf.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "P5a-iM-rWf"; */
+"P5a-iM-rWf.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "PAQ-sp-H4C"; */
+"PAQ-sp-H4C.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "PTn-cK-Mj8"; */
+"PTn-cK-Mj8.text" = "John~";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "Pcl-ES-eXC"; */
+"Pcl-ES-eXC.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Q7D-xK-caT"; */
+"Q7D-xK-caT.text" = "Title";
+
+/* Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT"; */
+"QE0-ao-uwT.text" = "フォロー";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "QJ6-Tw-gvd"; */
+"QJ6-Tw-gvd.text" = "@eurasierboy";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "Qhg-Jh-unk"; */
+"Qhg-Jh-unk.title" = "ホーム";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Qyb-fS-d4v"; */
+"Qyb-fS-d4v.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO"; */
+"ROI-ge-hOO.text" = "投稿";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "ROn-S9-Y64"; */
+"ROn-S9-Y64.text" = "Title";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "RQ1-uA-2Jy"; */
+"RQ1-uA-2Jy.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Rhn-c1-Ohh"; */
+"Rhn-c1-Ohh.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Rov-nd-kOl"; */
+"Rov-nd-kOl.text" = "John~";
+
+/* Class = "UIViewController"; title = "Blocked users"; ObjectID = "SC5-pn-I3A"; */
+"SC5-pn-I3A.title" = "ブロックしたユーザー";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "SL8-hc-mta"; */
+"SL8-hc-mta.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "SWj-wv-bf7"; */
+"SWj-wv-bf7.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Amaroq"; ObjectID = "TP0-ZC-qMQ"; */
+"TP0-ZC-qMQ.text" = "Amaroq";
+
+/* Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "TbS-Hh-ZI2"; */
+"TbS-Hh-ZI2.normalTitle" = "ログイン";
+
+/* Class = "UILabel"; text = "Log into any Mastodon instance!"; ObjectID = "ToH-v6-fqC"; */
+"ToH-v6-fqC.text" = "Mastodonインスタンスにログインしよう!";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "Tya-6c-9UJ"; */
+"Tya-6c-9UJ.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "Tya-6c-9UJ"; */
+"Tya-6c-9UJ.selectedTitle" = "非表示";
+
+/* Class = "UIButton"; normalTitle = "Unlisted"; ObjectID = "U0R-AN-OS2"; */
+"U0R-AN-OS2.normalTitle" = "未収載";
+
+/* Class = "UIButton"; normalTitle = "TOOT"; ObjectID = "U01-1d-dos"; */
+"U01-1d-dos.normalTitle" = "トゥート";
+
+/* Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "U01-1d-dos"; */
+"U01-1d-dos.selectedTitle" = "トゥート!";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "U5S-Ed-nnI"; */
+"U5S-Ed-nnI.text" = "Warning Tag";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "UDH-Pt-ySX"; */
+"UDH-Pt-ySX.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "UDH-Pt-ySX"; */
+"UDH-Pt-ySX.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?"; ObjectID = "UgZ-zj-ANn"; */
+"UgZ-zj-ANn.text" = "この投稿はメンションした他のインスタンスのユーザーにも公開されます。ユーザーを信頼しますか?";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "V0f-xA-yAn"; */
+"V0f-xA-yAn.text" = "John~";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "VbQ-Ih-SwT"; */
+"VbQ-Ih-SwT.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "VbQ-Ih-SwT"; */
+"VbQ-Ih-SwT.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Vc7-dh-ewO"; */
+"Vc7-dh-ewO.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Vcl-s3-gms"; */
+"Vcl-s3-gms.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Vcw-cT-YLQ"; */
+"Vcw-cT-YLQ.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIViewController"; title = "Notification Settings"; ObjectID = "Vt2-9J-A4e"; */
+"Vt2-9J-A4e.title" = "通知設定";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Vyk-xr-Q4C"; */
+"Vyk-xr-Q4C.text" = "John~";
+
+/* Class = "UILabel"; text = "Mar 02, 2017, 13:32 • Web •"; ObjectID = "WJY-1v-Bfg"; */
+"WJY-1v-Bfg.text" = "Mar 02, 2017, 13:32 • Web •";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "WS7-He-uip"; */
+"WS7-He-uip.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "X9K-Re-Na8"; */
+"X9K-Re-Na8.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "50"; ObjectID = "XDD-bM-ob9"; */
+"XDD-bM-ob9.text" = "50";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "XLW-GT-pSq"; */
+"XLW-GT-pSq.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "XdS-9l-Z53"; */
+"XdS-9l-Z53.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "Xir-yL-tTD"; */
+"Xir-yL-tTD.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "YQ3-g1-jeJ"; */
+"YQ3-g1-jeJ.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "Yia-wZ-WSk"; */
+"Yia-wZ-WSk.text" = "6";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "ZVG-ur-eYy"; */
+"ZVG-ur-eYy.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Zdw-QQ-XxH"; */
+"Zdw-QQ-XxH.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "a7k-Fc-wBM"; */
+"a7k-Fc-wBM.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "aI4-ho-Fbg"; */
+"aI4-ho-Fbg.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "aam-jg-MZf"; */
+"aam-jg-MZf.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "apg-ib-Pr1"; */
+"apg-ib-Pr1.text" = "13 時間前";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "arn-Dq-Que"; */
+"arn-Dq-Que.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "arn-Dq-Que"; */
+"arn-Dq-Que.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "v1.0.0 (1)"; ObjectID = "auH-Rs-SrF"; */
+"auH-Rs-SrF.text" = "v1.0.0 (1)";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "b5F-NF-v7Y"; */
+"b5F-NF-v7Y.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "bQK-gk-5GE"; */
+"bQK-gk-5GE.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "bVs-1e-rdN"; */
+"bVs-1e-rdN.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "bfJ-yc-2cN"; */
+"bfJ-yc-2cN.text" = "Warning Tag";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "bpa-6G-0UK"; */
+"bpa-6G-0UK.title" = "戻る";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "cIT-j6-x98"; */
+"cIT-j6-x98.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "cIT-j6-x98"; */
+"cIT-j6-x98.selectedTitle" = "非表示";
+
+/* Class = "UITabBarItem"; title = "Federated"; ObjectID = "cJ1-eF-Qod"; */
+"cJ1-eF-Qod.title" = "連合";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "cjU-gd-4Il"; */
+"cjU-gd-4Il.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "cte-HL-DZl"; */
+"cte-HL-DZl.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD"; */
+"cym-bd-fdD.text" = "メディアを注意を要するコンテンツとしてマークする";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "d5t-m0-R2A"; */
+"d5t-m0-R2A.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "d5t-m0-R2A"; */
+"d5t-m0-R2A.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "d7e-VT-75D"; */
+"d7e-VT-75D.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "dJe-wm-mbS"; */
+"dJe-wm-mbS.text" = "13 時間前";
+
+/* Class = "UITabBarItem"; title = "Local"; ObjectID = "dPe-vw-PnL"; */
+"dPe-vw-PnL.title" = "ローカル";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "dUK-lH-2U2"; */
+"dUK-lH-2U2.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "dUK-lH-2U2"; */
+"dUK-lH-2U2.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "0 •"; ObjectID = "det-mp-6Q0"; */
+"det-mp-6Q0.text" = "0 •";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "eKU-IQ-Oic"; */
+"eKU-IQ-Oic.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "fEs-ss-mJR"; */
+"fEs-ss-mJR.text" = "John~";
+
+/* Class = "UINavigationItem"; title = "Hashtag"; ObjectID = "fFk-fN-lz7"; */
+"fFk-fN-lz7.title" = "ハッシュタグ";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "fNM-WH-WTn"; */
+"fNM-WH-WTn.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "Reporting"; ObjectID = "fQI-2Z-e0M"; */
+"fQI-2Z-e0M.text" = "報告作成";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "fVY-zu-rYc"; */
+"fVY-zu-rYc.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Mar 02, 2017, 13:32 • Web •"; ObjectID = "fb7-h8-3PG"; */
+"fb7-h8-3PG.text" = "Mar 02, 2017, 13:32 • Web •";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "fmy-pu-s9i"; */
+"fmy-pu-s9i.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "frn-zx-RKJ"; */
+"frn-zx-RKJ.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "g1A-sT-Nl6"; */
+"g1A-sT-Nl6.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "gF1-TK-WEy"; */
+"gF1-TK-WEy.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "gRK-sW-MQn"; */
+"gRK-sW-MQn.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "gu4-Uv-TNQ"; */
+"gu4-Uv-TNQ.text" = "@eurasierboy";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "gvB-UZ-XYz"; */
+"gvB-UZ-XYz.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "gvB-UZ-XYz"; */
+"gvB-UZ-XYz.selectedTitle" = "非表示";
+
+/* Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY"; */
+"h78-Az-YOY.text" = "Amaroqはイヌイットの伝説の巨大オオカミの名前に由来していて、名前も機能もマストドンの仲間としてはぴったりのアプリです！ ２匹の叫びが宇宙を連合させますように！
+
+AmaroqはMastodonの愛あるアイデアで開発され、支えられています。サポートや提案、バグの報告がある場合は amarok.feedback@gmail.com か、Mastodon.socialの@eurasierboyまでお問い合せください！よいトゥートを！";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "hCN-Nu-RJv"; */
+"hCN-Nu-RJv.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "hnO-sI-rxq"; */
+"hnO-sI-rxq.text" = "John~";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "hsg-1n-ke8"; */
+"hsg-1n-ke8.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "hsg-1n-ke8"; */
+"hsg-1n-ke8.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "i1i-yX-yu7"; */
+"i1i-yX-yu7.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "iGb-ZS-4cX"; */
+"iGb-ZS-4cX.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "iOl-rQ-XFO"; */
+"iOl-rQ-XFO.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "iZ2-pR-esE"; */
+"iZ2-pR-esE.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "ir9-aS-JTO"; */
+"ir9-aS-JTO.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "What is on your mind?"; ObjectID = "jeI-4q-Be1"; */
+"jeI-4q-Be1.text" = "今なにしてる?";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "jfu-2R-0N7"; */
+"jfu-2R-0N7.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "jmn-GI-Die"; */
+"jmn-GI-Die.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "k0V-mc-tdV"; */
+"k0V-mc-tdV.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "k7X-HD-8aK"; */
+"k7X-HD-8aK.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "kBm-Du-SWq"; */
+"kBm-Du-SWq.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "kMe-1a-7DV"; */
+"kMe-1a-7DV.text" = "John~";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "kSi-W1-Ybn"; */
+"kSi-W1-Ybn.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "kSi-W1-Ybn"; */
+"kSi-W1-Ybn.selectedTitle" = "非表示";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "kX5-nY-cOB"; */
+"kX5-nY-cOB.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "kX5-nY-cOB"; */
+"kX5-nY-cOB.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "kek-Fh-oZh"; */
+"kek-Fh-oZh.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "kls-DA-sj1"; */
+"kls-DA-sj1.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "kls-DA-sj1"; */
+"kls-DA-sj1.selectedTitle" = "非表示";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "ks9-ML-CSt"; */
+"ks9-ML-CSt.title" = "ホーム";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "l8E-L6-r01"; */
+"l8E-L6-r01.text" = "John~";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "lYZ-Qb-UgT"; */
+"lYZ-Qb-UgT.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "lgH-Oi-0b4"; */
+"lgH-Oi-0b4.text" = "Title";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "ltF-Mj-5Wb"; */
+"ltF-Mj-5Wb.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "mJx-sb-qbk"; */
+"mJx-sb-qbk.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "mKu-wM-hgl"; */
+"mKu-wM-hgl.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "mKu-wM-hgl"; */
+"mKu-wM-hgl.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "followed you"; ObjectID = "mWy-B9-rVa"; */
+"mWy-B9-rVa.text" = "さんにフォローされました";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "mZB-dP-2fB"; */
+"mZB-dP-2fB.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "n2Z-Jd-mTV"; */
+"n2Z-Jd-mTV.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "n6A-5e-v6Y"; */
+"n6A-5e-v6Y.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "njG-CO-WZ7"; */
+"njG-CO-WZ7.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "nk8-xq-hBR"; */
+"nk8-xq-hBR.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "oAN-DB-XkU"; */
+"oAN-DB-XkU.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIBarButtonItem"; title = "Search"; ObjectID = "oBT-7l-gom"; */
+"oBT-7l-gom.title" = "検索";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "oIN-jw-YDe"; */
+"oIN-jw-YDe.text" = "@eurasierboy";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "oLn-2m-0yg"; */
+"oLn-2m-0yg.normalTitle" = "プライバシーポリシー";
+
+/* Class = "UIButton"; selectedTitle = "About Amaroq"; ObjectID = "oLn-2m-0yg"; */
+"oLn-2m-0yg.selectedTitle" = "Amaroqについて";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "p8o-Rd-3Y9"; */
+"p8o-Rd-3Y9.text" = "Title";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "pFj-zL-Wd9"; */
+"pFj-zL-Wd9.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "pHi-Ra-ccv"; */
+"pHi-Ra-ccv.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "pSN-zu-1NL"; */
+"pSN-zu-1NL.text" = "John~";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "peC-Z9-8oy"; */
+"peC-Z9-8oy.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "pf1-ws-wpH"; */
+"pf1-ws-wpH.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "pf1-ws-wpH"; */
+"pf1-ws-wpH.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "pfp-fF-EQA"; */
+"pfp-fF-EQA.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "qL1-Cc-jhG"; */
+"qL1-Cc-jhG.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "qOR-ZG-qeO"; */
+"qOR-ZG-qeO.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "qST-R4-uqh"; */
+"qST-R4-uqh.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "qYM-J0-btz"; */
+"qYM-J0-btz.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "qdH-oc-wQ8"; */
+"qdH-oc-wQ8.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "qdw-BL-Qh6"; */
+"qdw-BL-Qh6.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "qvb-3d-eGC"; */
+"qvb-3d-eGC.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "0 •"; ObjectID = "r1g-xo-uUC"; */
+"r1g-xo-uUC.text" = "0 •";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "rjX-Ma-KFp"; */
+"rjX-Ma-KFp.normalTitle" = "プライバシーポリシー";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "s1z-SI-cBc"; */
+"s1z-SI-cBc.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "s8X-8f-cG8"; */
+"s8X-8f-cG8.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "sAL-De-fKG"; */
+"sAL-De-fKG.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UITabBarItem"; title = "More"; ObjectID = "sB4-xf-wkz"; */
+"sB4-xf-wkz.title" = "その他";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "sIR-7z-4Xv"; */
+"sIR-7z-4Xv.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "sPp-6q-Ga6"; */
+"sPp-6q-Ga6.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "sWl-4B-wUq"; */
+"sWl-4B-wUq.text" = "John~";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "smm-Ui-WXb"; */
+"smm-Ui-WXb.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "t1x-Mz-oa5"; */
+"t1x-Mz-oa5.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "t7H-2P-vOR"; */
+"t7H-2P-vOR.text" = "Warning Tag";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "t7Z-ba-Vne"; */
+"t7Z-ba-Vne.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "t7Z-ba-Vne"; */
+"t7Z-ba-Vne.selectedTitle" = "非表示";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "t36-72-bYZ"; */
+"t36-72-bYZ.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "t36-72-bYZ"; */
+"t36-72-bYZ.selectedTitle" = "非表示";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "tAJ-lN-D3y"; */
+"tAJ-lN-D3y.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "tAJ-lN-D3y"; */
+"tAJ-lN-D3y.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "tCB-12-WzG"; */
+"tCB-12-WzG.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "tPs-CE-wpY"; */
+"tPs-CE-wpY.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "tc5-81-C7W"; */
+"tc5-81-C7W.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "ttQ-Ul-q7w"; */
+"ttQ-Ul-q7w.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "uK4-3J-910"; */
+"uK4-3J-910.text" = "John~";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "un5-wW-eie"; */
+"un5-wW-eie.text" = "Label";
+
+/* Class = "UILabel"; text = "Additional comments"; ObjectID = "uol-Ta-62W"; */
+"uol-Ta-62W.text" = "コメントを追加";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "uta-FN-35Y"; */
+"uta-FN-35Y.text" = "さんがあなたの投稿をお気に入り登録しました";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "v3J-FO-VYz"; */
+"v3J-FO-VYz.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Amaroq"; ObjectID = "v3S-aW-ZxL"; */
+"v3S-aW-ZxL.text" = "Amaroq";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "v28-8Q-zAZ"; */
+"v28-8Q-zAZ.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "vJm-tQ-6Xd"; */
+"vJm-tQ-6Xd.text" = "13 時間前";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "vPp-nb-9cR"; */
+"vPp-nb-9cR.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "wyB-BS-E5R"; */
+"wyB-BS-E5R.text" = "Warning Tag";
+
+/* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "xBc-J3-UJK"; */
+"xBc-J3-UJK.normalTitle" = "表示";
+
+/* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "xBc-J3-UJK"; */
+"xBc-J3-UJK.selectedTitle" = "非表示";
+
+/* Class = "UILabel"; text = "eurasierboy"; ObjectID = "xU0-be-BKd"; */
+"xU0-be-BKd.text" = "eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "xqD-wM-Q8V"; */
+"xqD-wM-Q8V.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "xv4-c8-EjX"; */
+"xv4-c8-EjX.text" = "Warning Tag";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "xxU-1B-tQh"; */
+"xxU-1B-tQh.title" = "ホーム";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "yOd-ew-524"; */
+"yOd-ew-524.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "yyI-bk-cqq"; */
+"yyI-bk-cqq.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "z1H-8a-n5g"; */
+"z1H-8a-n5g.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "z4r-lb-uhi"; */
+"z4r-lb-uhi.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "z8r-Dp-U6h"; */
+"z8r-Dp-U6h.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "50"; ObjectID = "z9I-DW-y6S"; */
+"z9I-DW-y6S.text" = "50";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "zLO-VU-rhZ"; */
+"zLO-VU-rhZ.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "zqA-C3-m9y"; */
+"zqA-C3-m9y.text" = "John~";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "zsT-Ew-UkL"; */
+"zsT-Ew-UkL.title" = "メニュー";
+
