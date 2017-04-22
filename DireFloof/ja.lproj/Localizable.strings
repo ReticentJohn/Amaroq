@@ -13,9 +13,6 @@
 /* Account preferences */
 "Account preferences" = "ユーザー設定";
 
-/* Add instance */
-"Add instance" = "インスタンス追加";
-
 /* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
 "Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
@@ -53,17 +50,14 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 /* Copy text */
 "Copy text" = "テキストをコピー";
 
-/* Currently logged into: */
-"Currently logged into:" = "ログイン中:";
-
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "350ドルの罰金が課せられます";
 
 /* Default posts to private */
-"Default posts to private" = "デフォルの公開範囲を「非公開」にする";
+"Default posts to private" = "デフォルの公開範囲を非公開にする";
 
 /* Default posts to public */
-"Default posts to public" = "デフォルトの公開範囲を「公開」にする";
+"Default posts to public" = "デフォルトの公開範囲を公開にする";
 
 /* Delete */
 "Delete" = "削除";
@@ -146,14 +140,11 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 /* Muted users */
 "Muted users" = "ミュートしたユーザー";
 
-/* My instances */
-"My instances" = "インスタンス一覧";
-
 /* My profile */
 "My profile" = "プロフィール";
 
 /* Notification settings */
-"Notification settings" = "通知設置";
+"Notification settings" = "通知設定";
 
 /* Only show to followers */
 "Only show to followers" = "フォロワーだけに公開";
@@ -209,9 +200,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 /* This can help older devices */
 "This can help older devices" = "古いデバイスへの最適化";
 
-/* Translate text */
-"Translate text" = "テキストを翻訳";
-
 /* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
 "Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "Mastodonインスタンスへの接続に失敗しました。後でもう一度お試し頂くか、別のインスタンスでお試しください。";
 
@@ -246,10 +234,10 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 "followed you" = "さんにフォローされました";
 
 /* image */
-"image" = "画像";
+"image" = "件の画像";
 
 /* images */
-"images" = "画像";
+"images" = "件の画像";
 
 /* mentioned you */
 "mentioned you" = "さんがあなた宛にトゥートしました";
