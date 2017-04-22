@@ -13,9 +13,6 @@
 /* Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn"; */
 "1kx-6H-zbn.text" = "John~";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "2Dw-lx-6PD"; */
-"2Dw-lx-6PD.text" = "Title";
-
 /* Class = "UILabel"; text = "Subtitle"; ObjectID = "2dk-Mu-Vt7"; */
 "2dk-Mu-Vt7.text" = "Subtitle";
 
@@ -117,9 +114,6 @@
 
 /* Class = "UILabel"; text = "eurasierboy"; ObjectID = "61c-hL-yoB"; */
 "61c-hL-yoB.text" = "eurasierboy";
-
-/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "79q-Nl-Dbr"; */
-"79q-Nl-Dbr.title" = "メニュー";
 
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "85G-PL-200"; */
 "85G-PL-200.text" = "13 時間前";
