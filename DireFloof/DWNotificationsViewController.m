@@ -85,6 +85,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_REFRESH_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 
@@ -398,6 +399,14 @@
         }
 
     }];
+}
+
+
+
+- (void)clearData
+{
+    [[DWNotificationStore sharedStore] setNotificationTimeline:nil];
+    [self.tableView reloadData];
 }
 
 
