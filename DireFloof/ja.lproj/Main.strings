@@ -13,6 +13,9 @@
 /* Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn"; */
 "1kx-6H-zbn.text" = "John~";
 
+/* Class = "UILabel"; text = "Title"; ObjectID = "2Dw-lx-6PD"; */
+"2Dw-lx-6PD.text" = "Title";
+
 /* Class = "UILabel"; text = "Subtitle"; ObjectID = "2dk-Mu-Vt7"; */
 "2dk-Mu-Vt7.text" = "Subtitle";
 
@@ -114,6 +117,9 @@
 
 /* Class = "UILabel"; text = "eurasierboy"; ObjectID = "61c-hL-yoB"; */
 "61c-hL-yoB.text" = "eurasierboy";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "79q-Nl-Dbr"; */
+"79q-Nl-Dbr.title" = "メニュー";
 
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "85G-PL-200"; */
 "85G-PL-200.text" = "13 時間前";
@@ -634,11 +640,6 @@
 /* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "gvB-UZ-XYz"; */
 "gvB-UZ-XYz.selectedTitle" = "非表示";
 
-/* Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY"; */
-"h78-Az-YOY.text" = "Amaroqはイヌイットの伝説の巨大オオカミの名前に由来していて、名前も機能もマストドンの仲間としてはぴったりのアプリです！ ２匹の叫びが宇宙を連合させますように！
-
-AmaroqはMastodonの愛あるアイデアで開発され、支えられています。サポートや提案、バグの報告がある場合は amaroq.feedback@gmail.com か、Mastodon.socialの@eurasierboyまでお問い合せください！よいトゥートを！";
-
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "hCN-Nu-RJv"; */
 "hCN-Nu-RJv.text" = "Warning Tag";
 
@@ -950,3 +951,4 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 
 /* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "zsT-Ew-UkL"; */
 "zsT-Ew-UkL.title" = "メニュー";
+
