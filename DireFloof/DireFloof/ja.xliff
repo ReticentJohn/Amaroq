@@ -1734,12 +1734,12 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="Default posts to private">
         <source>Default posts to private</source>
-        <target>デフォルの公開範囲を「非公開」にする</target>
+        <target>デフォルの公開範囲を非公開にする</target>
         <note>Default posts to private</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
         <source>Default posts to public</source>
-        <target>デフォルトの公開範囲を「公開」にする</target>
+        <target>デフォルトの公開範囲を公開にする</target>
         <note>Default posts to public</note>
       </trans-unit>
       <trans-unit id="Delete">
@@ -1889,7 +1889,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="Notification settings">
         <source>Notification settings</source>
-        <target>通知設置</target>
+        <target>通知設定</target>
         <note>Notification settings</note>
       </trans-unit>
       <trans-unit id="OK">
@@ -2028,7 +2028,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="boosted">
         <source>boosted</source>
-        <target>ブーストしました</target><!-- -->
+        <target>さんがブーストしました</target><!-- -->
         <note>boosted</note>
       </trans-unit>
       <trans-unit id="boosted your status">
@@ -2048,12 +2048,12 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="image">
         <source>image</source>
-        <target>画像</target>
+        <target>件の画像</target>
         <note>image</note>
       </trans-unit>
       <trans-unit id="images">
         <source>images</source>
-        <target>画像</target>
+        <target>件の画像</target>
         <note>images</note>
       </trans-unit>
       <trans-unit id="mentioned you">
@@ -2068,7 +2068,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="replied">
         <source>replied</source>
-        <target>リプライしました</target>
+        <target>さんがリプライしました</target>
         <note>replied</note>
       </trans-unit>
       <trans-unit id="replied to">
