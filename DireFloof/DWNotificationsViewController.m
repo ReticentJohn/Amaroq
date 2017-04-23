@@ -407,6 +407,7 @@
 
 - (void)clearData
 {
+    [self.navigationController popToRootViewControllerAnimated:NO];
     [[DWNotificationStore sharedStore] setNotificationTimeline:nil];
     [self.tableView reloadData];
 }

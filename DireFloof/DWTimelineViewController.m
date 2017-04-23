@@ -634,6 +634,7 @@ IB_DESIGNABLE
 
 - (void)clearData
 {
+    [self.navigationController popToRootViewControllerAnimated:NO];
     self.timeline = nil;
     [self.tableView reloadData];
 }
