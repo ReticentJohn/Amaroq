@@ -17,6 +17,7 @@
 #import "UIView+Supercell.h"
 #import "DWProfileViewController.h"
 #import "UIViewController+NearestNavigationController.h"
+#import "DWSettingStore.h"
 
 IB_DESIGNABLE
 @interface DWTimelineViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>
@@ -27,6 +28,9 @@ IB_DESIGNABLE
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *pageLoadingView;
+
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *publicTimelineSwitch;
+@property (nonatomic, weak) IBOutlet UINavigationItem *publicTimelineNavigationItem;
 
 @property (nonatomic, strong) MSTimeline *timeline;
 @property (nonatomic, assign) BOOL loadingNextPage;
@@ -48,6 +52,28 @@ IB_DESIGNABLE
     if ([self.tableView numberOfRowsInSection:0]) {
         [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
     }
+}
+
+
+- (IBAction)timelineSwitchPressed:(id)sender
+{
+    [[DWSettingStore sharedStore] setShowLocalTimeline:![[DWSettingStore sharedStore] showLocalTimeline]];
+    
+    if ([[DWSettingStore sharedStore] showLocalTimeline]) {
+        self.publicTimelineSwitch.image = [UIImage imageNamed:@"PublicIcon"];
+        self.publicTimelineNavigationItem.title = NSLocalizedString(@"Local", @"Local");
+    }
+    else
+    {
+        self.publicTimelineSwitch.image = [UIImage imageNamed:@"LocalIcon"];
+        self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
+    }
+    
+    [self.tabBarItem setImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+    [self.tabBarItem setSelectedImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+    
+        [self clearData];
+    [self configureData];
 }
 
 
@@ -429,6 +455,16 @@ IB_DESIGNABLE
     if (self.hashtag) {
         self.title = [NSString stringWithFormat:@"#%@", self.hashtag];
     }
+    
+    if ([[DWSettingStore sharedStore] showLocalTimeline]) {
+        self.publicTimelineSwitch.image = [UIImage imageNamed:@"PublicIcon"];
+        self.publicTimelineNavigationItem.title = NSLocalizedString(@"Local", @"Local");
+    }
+    else
+    {
+        self.publicTimelineSwitch.image = [UIImage imageNamed:@"LocalIcon"];
+        self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
+    }
 }
 
 
@@ -533,7 +569,7 @@ IB_DESIGNABLE
     }
     else
     {
-        [[MSTimelineStore sharedStore] getTimelineForTimelineType:(self.isPublic ? MSTimelineTypePublic : self.isLocal ? MSTimelineTypeLocal : MSTimelineTypeHome) withCompletion:^(BOOL success, MSTimeline *timeline, NSError *error) {
+        [[MSTimelineStore sharedStore] getTimelineForTimelineType:(self.isPublic ? ([[DWSettingStore sharedStore] showLocalTimeline] ? MSTimelineTypeLocal : MSTimelineTypePublic) : MSTimelineTypeHome) withCompletion:^(BOOL success, MSTimeline *timeline, NSError *error) {
             
             if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
                 UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];

@@ -22,8 +22,8 @@
 
 typedef NS_ENUM(NSUInteger, DWTabItem) {
     DWTabItemHome = 0,
-    DWTabItemLocal,
-    DWTabItemFederated,
+    DWTabItemPublic,
+    DWTabItemBlank,
     DWTabItemNotifications,
     DWTabItemMenu,
 };
@@ -120,7 +120,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
     if (self.previousSelectedIndex == index) {
         
-        if (index == DWTabItemHome || index == DWTabItemLocal || index == DWTabItemFederated) {
+        if (index == DWTabItemHome || index == DWTabItemPublic) {
             
             DWTimelineViewController *currentController = [self.viewControllers objectAtIndex:index];
             [currentController scrollToTop:nil];
@@ -155,6 +155,12 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 {
     for (UITabBarItem *item in self.tabBar.items) {
         item.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+        
+        if ([self.tabBar.items indexOfObject:item] == DWTabItemPublic) {
+            [item setImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+            [item setSelectedImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+
+        }
     }
     
     if (!self.notificationBadge) {
