@@ -182,7 +182,7 @@
             selectedAccount = selectedNotification.account;
         }
         
-        DWProfileViewController *destinationViewController = segue.destinationViewController;
+        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
         destinationViewController.account = selectedAccount;
     }
     else if ([segue.identifier isEqualToString:@"ThreadSegue"])
