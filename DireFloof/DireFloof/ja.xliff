@@ -1734,7 +1734,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="Default posts to private">
         <source>Default posts to private</source>
-        <target>デフォルの公開範囲を非公開にする</target>
+        <target>デフォルトの公開範囲を非公開にする</target>
         <note>Default posts to private</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
