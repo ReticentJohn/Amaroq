@@ -82,7 +82,7 @@
         
         MSAccount *selectedAccount = [self.blockedUsers objectAtIndex:selectedIndex.row];
         
-        DWProfileViewController *destinationViewController = segue.destinationViewController;
+        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
         destinationViewController.account = selectedAccount;
     }
 }

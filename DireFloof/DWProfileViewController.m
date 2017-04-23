@@ -73,7 +73,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 
 - (IBAction)closeButtonPressed:(id)sender
 {
-    [self.nearestPresentingNavigationController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -388,6 +388,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 {
     [super viewWillAppear:animated];
     
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    
     [self configureViews];
 }
 
@@ -554,7 +556,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             }
         }
         
-        DWProfileViewController *destinationViewController = segue.destinationViewController;
+        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
         destinationViewController.account = selectedAccount;
     }
     else if ([segue.identifier isEqualToString:@"ThreadSegue"])

@@ -89,7 +89,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     
     if ([segue.identifier isEqualToString:@"ProfileSegue"]) {
         
-        DWProfileViewController *destinationViewController = segue.destinationViewController;
+        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
         destinationViewController.account = [[MSUserStore sharedStore] currentUser];
     }
     else if ([segue.identifier isEqualToString:@"FavoriteSegue"])

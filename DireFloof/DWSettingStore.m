@@ -48,6 +48,7 @@
         self.favoriteNotifications = ![[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_FAVORITES_OFF_KEY];
         self.mentionNotifications = ![[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_MENTIONS_OFF_KEY];
         self.boostNotifications = ![[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_BOOSTS_OFF_KEY];
+        self.showLocalTimeline = [[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_PUBLIC_SHOW_LOCAL_KEY];
     }
     
     return self;
@@ -135,6 +136,14 @@
     
     [[NSUserDefaults standardUserDefaults] setBool:!boostNotifications forKey:DW_SETTING_BOOSTS_OFF_KEY];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+- (void)setShowLocalTimeline:(BOOL)showLocalTimeline
+{
+    _showLocalTimeline = showLocalTimeline;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:showLocalTimeline forKey:DW_SETTING_PUBLIC_SHOW_LOCAL_KEY];
 }
 
 

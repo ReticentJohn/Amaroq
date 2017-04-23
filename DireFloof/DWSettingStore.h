@@ -23,6 +23,7 @@
 @property (nonatomic, assign) BOOL favoriteNotifications;
 @property (nonatomic, assign) BOOL mentionNotifications;
 @property (nonatomic, assign) BOOL boostNotifications;
+@property (nonatomic, assign) BOOL showLocalTimeline;
 
 
 #pragma mark - Class Methods

@@ -122,6 +122,9 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 /* Favorites */
 "Favorites" = "お気に入り";
 
+/* Federated */
+"Federated" = "連合";
+
 /* Follow requests */
 "Follow requests" = "フォローリクエスト";
 
@@ -130,6 +133,9 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 
 /* Hold to show */
 "Hold to show" = "長押しで表示";
+
+/* Local */
+"Local" = "ローカル";
 
 /* Login request failed */
 "Login request failed" = "ログインリクエストに失敗しました";
