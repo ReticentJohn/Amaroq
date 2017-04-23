@@ -3217,7 +3217,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lgH-Oi-0b4">
-                                                    <rect key="frame" x="56" y="14.000000000000002" width="33.666666666666664" height="22.666666666666668"/>
+                                                    <rect key="frame" x="56" y="17" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3229,7 +3229,7 @@
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hog-5H-gCk">
-                                                    <rect key="frame" x="56" y="36.666666666666671" width="45.333333333333336" height="17.333333333333332"/>
+                                                    <rect key="frame" x="56" y="37" width="44.333333333333336" height="15.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.60928755999999995" green="0.68066358569999996" blue="0.784645021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -9660,7 +9660,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q7D-xK-caT">
-                                                    <rect key="frame" x="56" y="14.000000000000002" width="33.666666666666664" height="22.666666666666668"/>
+                                                    <rect key="frame" x="56" y="17" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -9672,7 +9672,7 @@
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2dk-Mu-Vt7">
-                                                    <rect key="frame" x="56" y="36.666666666666671" width="45.333333333333336" height="17.333333333333332"/>
+                                                    <rect key="frame" x="56" y="37" width="44.333333333333336" height="15.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.60928755999999995" green="0.68066358569999996" blue="0.784645021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -9881,7 +9881,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ROn-S9-Y64">
-                                                    <rect key="frame" x="56" y="14.000000000000002" width="33.666666666666664" height="22.666666666666668"/>
+                                                    <rect key="frame" x="56" y="17" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -9893,7 +9893,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yOd-ew-524">
-                                                    <rect key="frame" x="56" y="36.666666666666671" width="45.333333333333336" height="17.333333333333332"/>
+                                                    <rect key="frame" x="56" y="37" width="44.333333333333336" height="15.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                     <color key="textColor" red="0.60928755999999995" green="0.68066358569999996" blue="0.784645021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

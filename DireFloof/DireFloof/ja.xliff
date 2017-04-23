@@ -126,11 +126,6 @@
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "5xv-bU-bM3";</note>
       </trans-unit>
-      <trans-unit id="6NJ-69-Nnn.text">
-        <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
-        <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
-        <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "6NJ-69-Nnn";</note>
-      </trans-unit>
       <trans-unit id="6nh-XX-15u.text">
         <source>13 hours ago</source>
         <target>13 時間前</target>
@@ -155,11 +150,6 @@
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8Hv-6F-dr5";</note>
-      </trans-unit>
-      <trans-unit id="9Mu-se-m9q.title">
-        <source>Home</source>
-        <target>ホーム</target>
-        <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "9Mu-se-m9q";</note>
       </trans-unit>
       <trans-unit id="9WA-oA-2ny.placeholder">
         <source>Search</source>
@@ -306,16 +296,6 @@
         <target>お気に入り</target>
         <note>Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU";</note>
       </trans-unit>
-      <trans-unit id="CZ7-QU-McT.normalTitle">
-        <source>SHOW</source>
-        <target>表示</target>
-        <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "CZ7-QU-McT";</note>
-      </trans-unit>
-      <trans-unit id="CZ7-QU-McT.selectedTitle">
-        <source>HIDE</source>
-        <target>非表示</target>
-        <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "CZ7-QU-McT";</note>
-      </trans-unit>
       <trans-unit id="CcB-VU-xOW.text">
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
@@ -376,11 +356,6 @@
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "Eqe-8A-XUJ";</note>
       </trans-unit>
-      <trans-unit id="Eu8-SC-60O.text">
-        <source>favourited your status</source>
-        <target>さんがあなたの投稿をお気に入り登録しました</target>
-        <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "Eu8-SC-60O";</note>
-      </trans-unit>
       <trans-unit id="F2M-wt-Xn3.text">
         <source>*floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs*</source>
         <target>*floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs*</target>
@@ -406,15 +381,14 @@
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "FRy-sB-TMs";</note>
       </trans-unit>
+      <trans-unit id="Fjl-TP-l3I.title">
+        <source>Federated</source>
+        <note>Class = "UINavigationItem"; title = "Federated"; ObjectID = "Fjl-TP-l3I";</note>
+      </trans-unit>
       <trans-unit id="G6Y-hr-aDj.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "G6Y-hr-aDj";</note>
-      </trans-unit>
-      <trans-unit id="GG6-pV-8kq.text">
-        <source>Warning Tag</source>
-        <target>Warning Tag</target>
-        <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "GG6-pV-8kq";</note>
       </trans-unit>
       <trans-unit id="GHf-rN-8KO.text">
         <source>13 hours ago</source>
@@ -516,11 +490,6 @@
         <target>13 時間前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "LIw-6T-r6R";</note>
       </trans-unit>
-      <trans-unit id="LKA-zX-56r.text">
-        <source>@eurasierboy</source>
-        <target>@eurasierboy</target>
-        <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "LKA-zX-56r";</note>
-      </trans-unit>
       <trans-unit id="LbU-Pp-4SM.text">
         <source>Warning Tag</source>
         <target>Warning Tag</target>
@@ -530,11 +499,6 @@
         <source>favourited your status</source>
         <target>さんがあなたの投稿をお気に入り登録しました</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp";</note>
-      </trans-unit>
-      <trans-unit id="M2T-fh-Qub.text">
-        <source>John~</source>
-        <target>John~</target>
-        <note>Class = "UILabel"; text = "John~"; ObjectID = "M2T-fh-Qub";</note>
       </trans-unit>
       <trans-unit id="M5t-3n-kwk.text">
         <source>John~</source>
@@ -571,11 +535,6 @@
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "MNX-aW-Wrt";</note>
       </trans-unit>
-      <trans-unit id="N6w-ha-lRk.text">
-        <source>13 hours ago</source>
-        <target>13 時間前</target>
-        <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "N6w-ha-lRk";</note>
-      </trans-unit>
       <trans-unit id="N9I-Vd-eQj.normalTitle">
         <source>SHOW</source>
         <target>表示</target>
@@ -601,35 +560,15 @@
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "Nb0-tl-aQV";</note>
       </trans-unit>
-      <trans-unit id="Ngb-ME-38f.text">
-        <source>John~</source>
-        <target>John~</target>
-        <note>Class = "UILabel"; text = "John~"; ObjectID = "Ngb-ME-38f";</note>
-      </trans-unit>
       <trans-unit id="Npn-R5-GGf.text">
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Npn-R5-GGf";</note>
       </trans-unit>
-      <trans-unit id="NsL-fZ-ToP.title">
-        <source>Notifications</source>
-        <target>通知</target>
-        <note>Class = "UITabBarItem"; title = "Notifications"; ObjectID = "NsL-fZ-ToP";</note>
-      </trans-unit>
       <trans-unit id="OAS-Mr-yP8.normalTitle">
         <source>FOLLOWS YOU</source>
         <target>フォローされています</target>
         <note>Class = "UIButton"; normalTitle = "FOLLOWS YOU"; ObjectID = "OAS-Mr-yP8";</note>
-      </trans-unit>
-      <trans-unit id="OrQ-f9-Jf4.normalTitle">
-        <source>SHOW</source>
-        <target>表示</target>
-        <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "OrQ-f9-Jf4";</note>
-      </trans-unit>
-      <trans-unit id="OrQ-f9-Jf4.selectedTitle">
-        <source>HIDE</source>
-        <target>非表示</target>
-        <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "OrQ-f9-Jf4";</note>
       </trans-unit>
       <trans-unit id="P5a-iM-rWf.normalTitle">
         <source>SHOW</source>
@@ -691,20 +630,10 @@
         <target>Title</target>
         <note>Class = "UILabel"; text = "Title"; ObjectID = "ROn-S9-Y64";</note>
       </trans-unit>
-      <trans-unit id="RQ1-uA-2Jy.text">
-        <source>John~</source>
-        <target>John~</target>
-        <note>Class = "UILabel"; text = "John~"; ObjectID = "RQ1-uA-2Jy";</note>
-      </trans-unit>
       <trans-unit id="Rhn-c1-Ohh.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Rhn-c1-Ohh";</note>
-      </trans-unit>
-      <trans-unit id="Rov-nd-kOl.text">
-        <source>John~</source>
-        <target>John~</target>
-        <note>Class = "UILabel"; text = "John~"; ObjectID = "Rov-nd-kOl";</note>
       </trans-unit>
       <trans-unit id="SC5-pn-I3A.title">
         <source>Blocked users</source>
@@ -871,11 +800,6 @@
         <target>13 時間前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "ZVG-ur-eYy";</note>
       </trans-unit>
-      <trans-unit id="Zdw-QQ-XxH.text">
-        <source>@eurasierboy</source>
-        <target>@eurasierboy</target>
-        <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Zdw-QQ-XxH";</note>
-      </trans-unit>
       <trans-unit id="a7k-Fc-wBM.text">
         <source>John~</source>
         <target>John~</target>
@@ -911,16 +835,6 @@
         <target>v1.0.0 (1)</target>
         <note>Class = "UILabel"; text = "v1.0.0 (1)"; ObjectID = "auH-Rs-SrF";</note>
       </trans-unit>
-      <trans-unit id="b5F-NF-v7Y.text">
-        <source>@eurasierboy</source>
-        <target>@eurasierboy</target>
-        <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "b5F-NF-v7Y";</note>
-      </trans-unit>
-      <trans-unit id="bQK-gk-5GE.text">
-        <source>@eurasierboy</source>
-        <target>@eurasierboy</target>
-        <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "bQK-gk-5GE";</note>
-      </trans-unit>
       <trans-unit id="bVs-1e-rdN.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
@@ -946,35 +860,15 @@
         <target>非表示</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "cIT-j6-x98";</note>
       </trans-unit>
-      <trans-unit id="cJ1-eF-Qod.title">
-        <source>Federated</source>
-        <target>連合</target>
-        <note>Class = "UITabBarItem"; title = "Federated"; ObjectID = "cJ1-eF-Qod";</note>
-      </trans-unit>
       <trans-unit id="cjU-gd-4Il.text">
         <source>13 hours ago</source>
         <target>13 時間前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "cjU-gd-4Il";</note>
       </trans-unit>
-      <trans-unit id="cte-HL-DZl.text">
-        <source>favourited your status</source>
-        <target>さんがあなたの投稿をお気に入り登録しました</target>
-        <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "cte-HL-DZl";</note>
-      </trans-unit>
       <trans-unit id="cym-bd-fdD.text">
         <source>Mark media as sensitive</source>
         <target>メディアを注意を要するコンテンツとしてマークする</target>
         <note>Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD";</note>
-      </trans-unit>
-      <trans-unit id="d5t-m0-R2A.normalTitle">
-        <source>SHOW</source>
-        <target>表示</target>
-        <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "d5t-m0-R2A";</note>
-      </trans-unit>
-      <trans-unit id="d5t-m0-R2A.selectedTitle">
-        <source>HIDE</source>
-        <target>非表示</target>
-        <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "d5t-m0-R2A";</note>
       </trans-unit>
       <trans-unit id="d7e-VT-75D.text">
         <source>Warning Tag</source>
@@ -985,11 +879,6 @@
         <source>13 hours ago</source>
         <target>13 時間前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "dJe-wm-mbS";</note>
-      </trans-unit>
-      <trans-unit id="dPe-vw-PnL.title">
-        <source>Local</source>
-        <target>ローカル</target>
-        <note>Class = "UITabBarItem"; title = "Local"; ObjectID = "dPe-vw-PnL";</note>
       </trans-unit>
       <trans-unit id="dUK-lH-2U2.normalTitle">
         <source>SHOW</source>
@@ -1005,11 +894,6 @@
         <source>0 •</source>
         <target>0 •</target>
         <note>Class = "UILabel"; text = "0 •"; ObjectID = "det-mp-6Q0";</note>
-      </trans-unit>
-      <trans-unit id="eKU-IQ-Oic.text">
-        <source>John~</source>
-        <target>John~</target>
-        <note>Class = "UILabel"; text = "John~"; ObjectID = "eKU-IQ-Oic";</note>
       </trans-unit>
       <trans-unit id="fEs-ss-mJR.text">
         <source>John~</source>
@@ -1056,39 +940,16 @@
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "g1A-sT-Nl6";</note>
       </trans-unit>
-      <trans-unit id="gF1-TK-WEy.text">
-        <source>13 hours ago</source>
-        <target>13 時間前</target>
-        <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "gF1-TK-WEy";</note>
-      </trans-unit>
-      <trans-unit id="gRK-sW-MQn.text">
-        <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
-        <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
-        <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "gRK-sW-MQn";</note>
-      </trans-unit>
       <trans-unit id="gu4-Uv-TNQ.text">
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "gu4-Uv-TNQ";</note>
       </trans-unit>
-      <trans-unit id="gvB-UZ-XYz.normalTitle">
-        <source>SHOW</source>
-        <target>表示</target>
-        <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "gvB-UZ-XYz";</note>
-      </trans-unit>
-      <trans-unit id="gvB-UZ-XYz.selectedTitle">
-        <source>HIDE</source>
-        <target>非表示</target>
-        <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "gvB-UZ-XYz";</note>
-      </trans-unit>
       <trans-unit id="h78-Az-YOY.text">
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!
 
-Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
-        <target>Amaroqはイヌイットの伝説の巨大オオカミの名前に由来していて、名前も機能もマストドンの仲間としてはぴったりのアプリです！ ２匹の叫びが宇宙を連合させますように！
-
-AmaroqはMastodonの愛あるアイデアで開発され、支えられています。サポートや提案、バグの報告がある場合は amaroq.feedback@gmail.com か、Mastodon.socialの@eurasierboyまでお問い合せください！よいトゥートを！</target>
-        <note>Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY";</note>
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
+        <note>Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY";</note>
       </trans-unit>
       <trans-unit id="hCN-Nu-RJv.text">
         <source>Warning Tag</source>
@@ -1129,11 +990,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>John~</source>
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "iZ2-pR-esE";</note>
-      </trans-unit>
-      <trans-unit id="ir9-aS-JTO.text">
-        <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
-        <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
-        <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "ir9-aS-JTO";</note>
       </trans-unit>
       <trans-unit id="jeI-4q-Be1.text">
         <source>What is on your mind?</source>
@@ -1230,11 +1086,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "ltF-Mj-5Wb";</note>
       </trans-unit>
-      <trans-unit id="mJx-sb-qbk.text">
-        <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
-        <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
-        <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "mJx-sb-qbk";</note>
-      </trans-unit>
       <trans-unit id="mKu-wM-hgl.normalTitle">
         <source>SHOW</source>
         <target>表示</target>
@@ -1254,11 +1105,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>Warning Tag</source>
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "mZB-dP-2fB";</note>
-      </trans-unit>
-      <trans-unit id="n2Z-Jd-mTV.text">
-        <source>13 hours ago</source>
-        <target>13 時間前</target>
-        <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "n2Z-Jd-mTV";</note>
       </trans-unit>
       <trans-unit id="n6A-5e-v6Y.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
@@ -1400,20 +1246,10 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "sAL-De-fKG";</note>
       </trans-unit>
-      <trans-unit id="sB4-xf-wkz.title">
-        <source>More</source>
-        <target>その他</target>
-        <note>Class = "UITabBarItem"; title = "More"; ObjectID = "sB4-xf-wkz";</note>
-      </trans-unit>
       <trans-unit id="sIR-7z-4Xv.text">
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "sIR-7z-4Xv";</note>
-      </trans-unit>
-      <trans-unit id="sPp-6q-Ga6.text">
-        <source>13 hours ago</source>
-        <target>13 時間前</target>
-        <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "sPp-6q-Ga6";</note>
       </trans-unit>
       <trans-unit id="sWl-4B-wUq.text">
         <source>John~</source>
@@ -1424,11 +1260,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>13 hours ago</source>
         <target>13 時間前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "smm-Ui-WXb";</note>
-      </trans-unit>
-      <trans-unit id="t1x-Mz-oa5.text">
-        <source>Warning Tag</source>
-        <target>Warning Tag</target>
-        <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "t1x-Mz-oa5";</note>
       </trans-unit>
       <trans-unit id="t7H-2P-vOR.text">
         <source>Warning Tag</source>
@@ -1485,11 +1316,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "ttQ-Ul-q7w";</note>
       </trans-unit>
-      <trans-unit id="uK4-3J-910.text">
-        <source>John~</source>
-        <target>John~</target>
-        <note>Class = "UILabel"; text = "John~"; ObjectID = "uK4-3J-910";</note>
-      </trans-unit>
       <trans-unit id="un5-wW-eie.text">
         <source>Label</source>
         <target>Label</target>
@@ -1530,11 +1356,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "vPp-nb-9cR";</note>
       </trans-unit>
-      <trans-unit id="wyB-BS-E5R.text">
-        <source>Warning Tag</source>
-        <target>Warning Tag</target>
-        <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "wyB-BS-E5R";</note>
-      </trans-unit>
       <trans-unit id="xBc-J3-UJK.normalTitle">
         <source>SHOW</source>
         <target>表示</target>
@@ -1554,16 +1375,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>Warning Tag</source>
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "xqD-wM-Q8V";</note>
-      </trans-unit>
-      <trans-unit id="xv4-c8-EjX.text">
-        <source>Warning Tag</source>
-        <target>Warning Tag</target>
-        <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "xv4-c8-EjX";</note>
-      </trans-unit>
-      <trans-unit id="xxU-1B-tQh.title">
-        <source>Home</source>
-        <target>ホーム</target>
-        <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "xxU-1B-tQh";</note>
       </trans-unit>
       <trans-unit id="yOd-ew-524.text">
         <source>Subtitle</source>
@@ -1599,6 +1410,11 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "zLO-VU-rhZ";</note>
+      </trans-unit>
+      <trans-unit id="zNY-AT-2Dh.title">
+        <source>Notifications</source>
+        <target>通知</target>
+        <note>Class = "UINavigationItem"; title = "Notifications"; ObjectID = "zNY-AT-2Dh";</note>
       </trans-unit>
       <trans-unit id="zqA-C3-m9y.text">
         <source>John~</source>
@@ -1670,7 +1486,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>Amaroqはイヌイットの伝説の巨大オオカミの名前に由来していて、名前も機能もマストドンの仲間としてはぴったりのアプリです！ ２匹の叫びが宇宙を連合させますように！
 
 AmaroqはMastodonの愛あるアイデアで開発され、支えられています。サポートや提案、バグの報告がある場合は amaroq.feedback@gmail.com か、Mastodon.socialの@eurasierboyまでお問い合せください！よいトゥートを！</target>
-      <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
+        <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
       </trans-unit>
       <trans-unit id="App settings">
         <source>App settings</source>
@@ -1837,6 +1653,11 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>お気に入り</target>
         <note>Favorites</note>
       </trans-unit>
+      <trans-unit id="Federated">
+        <source>Federated</source>
+        <target>連合</target>
+        <note>Federated</note>
+      </trans-unit>
       <trans-unit id="Follow requests">
         <source>Follow requests</source>
         <target>フォローリクエスト</target>
@@ -1851,6 +1672,11 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>Hold to show</source>
         <target>長押しで表示</target>
         <note>Hold to show</note>
+      </trans-unit>
+      <trans-unit id="Local">
+        <source>Local</source>
+        <target>ローカル</target>
+        <note>Local</note>
       </trans-unit>
       <trans-unit id="Login request failed">
         <source>Login request failed</source>
@@ -1958,7 +1784,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="Select">
         <source>Select</source>
-        <target></target>
+        <target/>
         <note>Select</note>
       </trans-unit>
       <trans-unit id="Select a privacy level">
@@ -2023,12 +1849,12 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="You have">
         <source>You have</source>
-        <target></target><!-- -->
+        <target/>
         <note>You have</note>
       </trans-unit>
       <trans-unit id="boosted">
         <source>boosted</source>
-        <target>さんがブーストしました</target><!-- -->
+        <target>さんがブーストしました</target>
         <note>boosted</note>
       </trans-unit>
       <trans-unit id="boosted your status">
@@ -2063,7 +1889,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="new notifications">
         <source>new notifications</source>
-        <target>件の新しい通知</target><!-- -->
+        <target>件の新しい通知</target>
         <note>new notifications</note>
       </trans-unit>
       <trans-unit id="replied">
@@ -2073,7 +1899,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="replied to">
         <source>replied to</source>
-        <target>リプライしました</target><!-- 主語があとに来るので無理 -->
+        <target>リプライしました</target>
         <note>replied to</note>
       </trans-unit>
     </body>
