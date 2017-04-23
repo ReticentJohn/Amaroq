@@ -60,7 +60,7 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 "DON'T AWOO $350 PENALTY" = "350ドルの罰金が課せられます";
 
 /* Default posts to private */
-"Default posts to private" = "デフォルの公開範囲を非公開にする";
+"Default posts to private" = "デフォルトの公開範囲を非公開にする";
 
 /* Default posts to public */
 "Default posts to public" = "デフォルトの公開範囲を公開にする";
