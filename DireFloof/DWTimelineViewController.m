@@ -60,6 +60,7 @@ IB_DESIGNABLE
     [self configureViews];
     [self configureData];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 
@@ -576,6 +577,13 @@ IB_DESIGNABLE
         [self.tableView.refreshControl beginRefreshing];
     }
     [self configureData];
+}
+
+
+- (void)clearData
+{
+    self.timeline = nil;
+    [self.tableView reloadData];
 }
 
 

@@ -87,6 +87,10 @@
 		04EC14021E46A966000E15A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC14001E46A966000E15A6 /* LaunchScreen.storyboard */; };
 		04EC140D1E46A966000E15A6 /* DireFloofTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC140C1E46A966000E15A6 /* DireFloofTests.m */; };
 		04EC14181E46A966000E15A6 /* DireFloofUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC14171E46A966000E15A6 /* DireFloofUITests.m */; };
+		04F0D6E41EABD09F00DFF8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6E61EABD09F00DFF8BB /* InfoPlist.strings */; };
+		04F0D6E91EABD0A000DFF8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6EB1EABD0A000DFF8BB /* InfoPlist.strings */; };
+		04F0D6EE1EABD0A100DFF8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6F01EABD0A100DFF8BB /* InfoPlist.strings */; };
+		04F0D6F31EABD0A100DFF8BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6F51EABD0A100DFF8BB /* Localizable.strings */; };
 		04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */; };
 		04FE35F91E627E5600E34407 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FE35F81E627E5600E34407 /* Settings.bundle */; };
 		4549FEEE336A754F3DD7B9CB /* libPods-DireFloofUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */; };
@@ -249,6 +253,12 @@
 		04EC14131E46A966000E15A6 /* DireFloofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DireFloofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EC14171E46A966000E15A6 /* DireFloofUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DireFloofUITests.m; sourceTree = "<group>"; };
 		04EC14191E46A966000E15A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F0D6DE1EABD07700DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		04F0D6DF1EABD07800DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04F0D6E51EABD09F00DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04F0D6EA1EABD0A000DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04F0D6EF1EABD0A100DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04F0D6F41EABD0A100DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04F425CD1E566DBD001A11C0 /* DWNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationsViewController.h; sourceTree = "<group>"; };
 		04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationsViewController.m; sourceTree = "<group>"; };
 		04FE35F81E627E5600E34407 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -558,6 +568,8 @@
 		04EC13EF1E46A966000E15A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04F0D6F51EABD0A100DFF8BB /* Localizable.strings */,
+				04F0D6E61EABD09F00DFF8BB /* InfoPlist.strings */,
 				0469EA771E75B50200492AF5 /* GoogleService-Info.plist */,
 				04EC14031E46A966000E15A6 /* Info.plist */,
 				04EC13F01E46A966000E15A6 /* main.m */,
@@ -571,6 +583,7 @@
 		04EC140B1E46A966000E15A6 /* DireFloofTests */ = {
 			isa = PBXGroup;
 			children = (
+				04F0D6EB1EABD0A000DFF8BB /* InfoPlist.strings */,
 				04EC140C1E46A966000E15A6 /* DireFloofTests.m */,
 				04EC140E1E46A966000E15A6 /* Info.plist */,
 			);
@@ -580,6 +593,7 @@
 		04EC14161E46A966000E15A6 /* DireFloofUITests */ = {
 			isa = PBXGroup;
 			children = (
+				04F0D6F01EABD0A100DFF8BB /* InfoPlist.strings */,
 				04EC14171E46A966000E15A6 /* DireFloofUITests.m */,
 				04EC14191E46A966000E15A6 /* Info.plist */,
 			);
@@ -755,6 +769,7 @@
 				046BF20F1E7712EE00F01C50 /* OpenSans-ExtraBold.ttf in Resources */,
 				0431551A1E52945B0066C511 /* Roboto-BoldItalic.ttf in Resources */,
 				043155171E52945B0066C511 /* Roboto-BlackItalic.ttf in Resources */,
+				04F0D6F31EABD0A100DFF8BB /* Localizable.strings in Resources */,
 				0431551C1E52945B0066C511 /* Roboto-CondensedItalic.ttf in Resources */,
 				046BF2121E7712EE00F01C50 /* OpenSans-Light.ttf in Resources */,
 				043155191E52945B0066C511 /* Roboto-BoldCondensedItalic.ttf in Resources */,
@@ -769,6 +784,7 @@
 				0431551D1E52945B0066C511 /* Roboto-Italic.ttf in Resources */,
 				043155161E52945B0066C511 /* Roboto-Black.ttf in Resources */,
 				046BF2161E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				04F0D6E41EABD09F00DFF8BB /* InfoPlist.strings in Resources */,
 				0469EA781E75B50200492AF5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -777,6 +793,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F0D6E91EABD0A000DFF8BB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +801,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F0D6EE1EABD0A100DFF8BB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1034,6 +1052,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04EC13F91E46A966000E15A6 /* Base */,
+				04F0D6DE1EABD07700DFF8BB /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1042,8 +1061,41 @@
 			isa = PBXVariantGroup;
 			children = (
 				04EC14011E46A966000E15A6 /* Base */,
+				04F0D6DF1EABD07800DFF8BB /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04F0D6E61EABD09F00DFF8BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6E51EABD09F00DFF8BB /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04F0D6EB1EABD0A000DFF8BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6EA1EABD0A000DFF8BB /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04F0D6F01EABD0A100DFF8BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6EF1EABD0A100DFF8BB /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04F0D6F51EABD0A100DFF8BB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6F41EABD0A100DFF8BB /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
