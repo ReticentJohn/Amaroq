@@ -121,12 +121,12 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         
         if (index == DWTabItemHome || index == DWTabItemPublic) {
             
-            DWTimelineViewController *currentController = [self.viewControllers objectAtIndex:index];
+            DWTimelineViewController *currentController = [[[self.viewControllers objectAtIndex:index] viewControllers] firstObject];
             [currentController scrollToTop:nil];
         }
         else if (index == DWTabItemNotifications)
         {
-            DWNotificationsViewController *currentController = [self.viewControllers objectAtIndex:index];
+            DWNotificationsViewController *currentController = [[[self.viewControllers objectAtIndex:index] viewControllers] firstObject];
             [currentController scrollToTop:nil];
         }
     }
@@ -134,7 +134,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     {
         self.previousSelectedIndex = index;
         [[NSNotificationCenter defaultCenter] postNotificationName:DW_WILL_PURGE_CACHE_NOTIFICATION object:nil];
-        [[self.viewControllers objectAtIndex:index] viewDidAppear:NO];
+        [[[[self.viewControllers objectAtIndex:index] viewControllers] firstObject] viewDidAppear:NO];
     }
 }
 
