@@ -53,7 +53,6 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self configureViews];
     
     self.previousSelectedIndex = 0;
     
@@ -69,7 +68,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     [super viewWillAppear:animated];
     
     // Refresh the current user
-    [[MSUserStore sharedStore] getCurrentUserWithCompletion:nil];
+    [self configureViews];
 }
 
 

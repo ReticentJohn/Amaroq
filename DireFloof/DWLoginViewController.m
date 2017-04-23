@@ -13,6 +13,7 @@
 #import "Mastodon.h"
 #import "DWAboutViewController.h"
 #import "DWConstants.h"
+#import "DWNotificationStore.h"
 
 @interface DWLoginViewController () <UITextFieldDelegate>
 
@@ -49,6 +50,7 @@
             if (self.addAccount) {
                 // Notify the app to clear all its contents for refresh
                 [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
+                [[DWNotificationStore sharedStore] registerForNotifications];
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
             else
@@ -72,6 +74,7 @@
 {
     if (self.lastInstance) {
         [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
+        [[DWNotificationStore sharedStore] registerForNotifications];
         [[MSAuthStore sharedStore] isLoggedIn];
     }
     

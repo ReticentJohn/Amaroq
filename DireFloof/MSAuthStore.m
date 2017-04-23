@@ -330,6 +330,7 @@
     loginController.modalPresentationStyle = UIModalPresentationOverFullScreen;
     loginController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
+    [[DWNotificationStore sharedStore] stopNotificationRefresh];
     [[[UIApplication sharedApplication] topController] presentViewController:loginController animated:YES completion:nil];
 }
 

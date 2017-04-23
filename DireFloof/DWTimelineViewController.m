@@ -69,8 +69,8 @@ IB_DESIGNABLE
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
     }
     
-    [self.tabBarItem setImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
-    [self.tabBarItem setSelectedImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+    [self.navigationController.tabBarItem setImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+    [self.navigationController.tabBarItem setSelectedImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
     
         [self clearData];
     [self configureData];
@@ -95,8 +95,12 @@ IB_DESIGNABLE
 {
     [super viewWillAppear:animated];
     
-    if (self.favorites) {
+    if (self.favorites || self.threadStatus) {
         [self.navigationController setNavigationBarHidden:NO animated:animated];
+    }
+    else if (!self.hashtag)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:animated];
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
@@ -250,6 +254,20 @@ IB_DESIGNABLE
 }
 
 
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:@"ThreadSegue"] && self.threadStatus) {
+        NSIndexPath *selectedIndex = [self.tableView indexPathForCell:sender];
+        MSStatus *selectedStatus = [self.timeline.statuses objectAtIndex:selectedIndex.row];
+        
+        if ([selectedStatus._id isEqual:self.threadStatus._id]) {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 
 #pragma mark - UITableView Delegate Methods
 
@@ -351,11 +369,9 @@ IB_DESIGNABLE
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.threadStatus) {
-        return;
+    if (!self.threadStatus) {
+        [self performSegueWithIdentifier:@"ThreadSegue" sender:[tableView cellForRowAtIndexPath:indexPath]];
     }
-    
-    [self performSegueWithIdentifier:@"ThreadSegue" sender:[tableView cellForRowAtIndexPath:indexPath]];
 }
 
 
