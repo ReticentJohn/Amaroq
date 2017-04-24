@@ -1,5 +1,5 @@
 /* or 1 video */
-" or 1 video" = "eller 1 video";
+" or 1 video" = " eller 1 video";
 
 /* ACCOUNT */
 "ACCOUNT" = "KONTO";
@@ -21,7 +21,7 @@
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq er navngivet efter inuitlegenden om en kæmpe ulv, som er en passende følgesvend til vores ven mastodonten. Må vi all hyle på tværs af fediverset!
 
-Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som virkeligt har haft brug for et mobilt værktøj til vores iOS-venner. Har du et forslag, fundet en fejl, eller vil du bare give udtryk for din støtte? Du kan nå us på amaroq.feedback@gmail.com. Eller sig dav til udvikleren, @eurasierboy på mastodon-social-instancen. Trut løs!";
+Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som virkelig har haft brug for et mobilt værktøj til vores iOS-venner. Har du et forslag, fundet en fejl, eller vil du bare give udtryk for din støtte? Du kan nå us på amaroq.feedback@gmail.com. Eller sig dav til udvikleren, @eurasierboy, på mastodon.social-instancen. Trut løs!";
 
 /* App settings */
 "App settings" = "App-indstillinger";
@@ -48,7 +48,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Change how you receive push notifications" = "Ændr på hvordan du modtager push-notifikationer";
 
 /* Clear cache */
-"Clear cache" = "Fjern cachen";
+"Clear cache" = "Slet cachen";
 
 /* Copy text */
 "Copy text" = "Kopiér tekst";
@@ -78,7 +78,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Disable gif auto-playback" = "Slå automatisk gif-afspilning fra";
 
 /* Done */
-"Done" = "Færdig";
+"Done" = "Vælg";
 
 /* Edit Profile */
 "Edit Profile" = "Redigér Profil";
@@ -99,7 +99,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Failed to load user with error:" = "Kunne ikke indlæse bruger pga. fejlen:";
 
 /* Failed to mute user with error: */
-"Failed to mute user with error:" = "***Kunne ikke mute bruger pga. fejlen:";
+"Failed to mute user with error:" = "Kunne ikke mute bruger pga. fejlen:";
 
 /* Failed to post status with error: */
 "Failed to post status with error:" = "Kunne ikke sende statusopdatering pga. fejlen:";
@@ -114,16 +114,16 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Failed to unblock user with error:" = "Kunne ikke fjerne brugers blokering pga. fejlen:";
 
 /* Failed to unfollow user with error: */
-"Failed to unfollow user with error:" = "***Kunne ikke stoppe med at følge bruger pga. fejlen:";
+"Failed to unfollow user with error:" = "Kunne ikke stoppe med at følge bruger pga. fejlen:";
 
 /* Failed to unmute user with error: */
-"Failed to unmute user with error:" = "***Kunne ikke mute:";
+"Failed to unmute user with error:" = "Kunne ikke mute pga. fejlen:";
 
 /* Favorites */
-"Favorites" = "***Favoritter";
+"Favorites" = "Favoritter";
 
 /* Federated */
-"Federated" = "Føderale";
+"Federated" = "Fødereret";
 
 /* Follow requests */
 "Follow requests" = "Følgeanmodninger";
@@ -147,10 +147,10 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Mention" = "Omtal";
 
 /* Mute */
-"Mute" = "***Mute";
+"Mute" = "Mute";
 
 /* Muted users */
-"Muted users" = "***Mutede brugere";
+"Muted users" = "Mutede brugere";
 
 /* My instances */
 "My instances" = "Mine instanser";
@@ -180,13 +180,13 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Public" = "Offentlig";
 
 /* Public: Visible to everyone on local and federated timelines */
-"Public: Visible to everyone on local and federated timelines" = "Offentlig: Vises kun til alle i lokale og føderale tidslinjer";
+"Public: Visible to everyone on local and federated timelines" = "Offentlig: Vises kun til alle i lokale og fødererede tidslinjer";
 
 /* Receive boost notifications */
 "Receive boost notifications" = "Modtag boost-notifikationer";
 
 /* Receive favorite notifications */
-"Receive favorite notifications" = "***Modtag favoritnotifikationer";
+"Receive favorite notifications" = "Modtag favenotifikationer";
 
 /* Receive mention notifications */
 "Receive mention notifications" = "Modtag omtalenotifikationer";
@@ -204,13 +204,13 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Select a privacy level" = "Vælg privacy-niveau";
 
 /* Sensitive content */
-"Sensitive content" = "***Følsomt indhold";
+"Sensitive content" = "Følsomt indhold";
 
 /* Share */
 "Share" = "Del";
 
 /* Shows on local/federated timelines */
-"Shows on local/federated timelines" = "Vises i lokale/føderale tidslinjer";
+"Shows on local/federated timelines" = "Vises i lokale/fødererede tidslinjer";
 
 /* This can help older devices */
 "This can help older devices" = "Dette kan hjælpe ældre enheder";
@@ -228,10 +228,10 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "Unlisted" = "Skjult";
 
 /* Unlisted: Visible to everyone, but not shown on local or federated timelines */
-"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Skjult: Synlig for alle, men ikke vist i lokale eller føderale tidslinjer";
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Skjult: Synlig for alle, men ikke vist i lokale eller fødererede tidslinjer";
 
 /* Unmute */
-"Unmute" = "***Unmute";
+"Unmute" = "Unmute";
 
 /* Video too long */
 "Video too long" = "Video er for lang";
@@ -240,13 +240,13 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
 "You have" = "";
 
 /* boosted */
-"boosted" = "boosted";
+"boosted" = "boostede";
 
 /* boosted your status */
 "boosted your status" = "boostede din statusopdatering";
 
 /* favorited your status */
-"favorited your status" = "***favede din statusopdatering";
+"favorited your status" = "favede din statusopdatering";
 
 /* followed you */
 "followed you" = "fulgte dig";

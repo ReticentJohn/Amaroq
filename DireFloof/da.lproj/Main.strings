@@ -20,7 +20,7 @@
 "2dk-Mu-Vt7.text" = "Undertekst";
 
 /* Class = "UITextField"; placeholder = "Content warning"; ObjectID = "2kN-ah-4CU"; */
-"2kN-ah-4CU.placeholder" = "***Indholdsadvarsel";
+"2kN-ah-4CU.placeholder" = "Indholdsadvarsel";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "3gH-Tw-ONr"; */
 "3gH-Tw-ONr.text" = "@eurasierboy";
@@ -29,7 +29,7 @@
 "3wl-9a-M82.text" = "John~";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "4Am-cK-PJB"; */
-"4Am-cK-PJB.text" = "***favede din statusopdatering";
+"4Am-cK-PJB.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "4Mt-w0-BJS"; */
 "4Mt-w0-BJS.text" = "Advarsels-tag";
@@ -146,7 +146,7 @@
 "Bb0-EI-Ll2.text" = "@eurasierboy";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "Bmc-uS-EwS"; */
-"Bmc-uS-EwS.text" = "***favede din statusopdatering";
+"Bmc-uS-EwS.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "C2B-wS-Gh4"; */
 "C2B-wS-Gh4.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
@@ -167,7 +167,7 @@
 "CcB-VU-xOW.text" = "@eurasierboy";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "CyJ-KV-d5f"; */
-"CyJ-KV-d5f.text" = "***favede din statusopdatering";
+"CyJ-KV-d5f.text" = "favede din statusopdatering";
 
 /* Class = "UINavigationItem"; title = "Notification Settings"; ObjectID = "D2e-YU-71m"; */
 "D2e-YU-71m.title" = "Notifikationsindstillinger";
@@ -224,7 +224,7 @@
 "Gl1-oi-VeZ.text" = "mastodon.social";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "GuV-g4-hLu"; */
-"GuV-g4-hLu.text" = "***favede din statusopdatering";
+"GuV-g4-hLu.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "H73-bm-2lF"; */
 "H73-bm-2lF.text" = "Advarsels-tag";
@@ -251,7 +251,7 @@
 "J9b-bk-mjW.text" = "13 timer siden";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "JAi-jG-h7h"; */
-"JAi-jG-h7h.text" = "***favede din statusopdatering";
+"JAi-jG-h7h.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "JWr-0E-evS"; */
 "JWr-0E-evS.text" = "@eurasierboy";
@@ -263,7 +263,7 @@
 "K0W-Wq-7bO.text" = "@eurasierboy";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "K0i-eE-4xG"; */
-"K0i-eE-4xG.text" = "***favede din statusopdatering";
+"K0i-eE-4xG.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "KH6-XY-QeM"; */
 "KH6-XY-QeM.text" = "John~";
@@ -281,7 +281,7 @@
 "LbU-Pp-4SM.text" = "Advarsels-tag";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp"; */
-"LvM-n9-aZp.text" = "***favede din statusopdatering";
+"LvM-n9-aZp.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "M5t-3n-kwk"; */
 "M5t-3n-kwk.text" = "John~";
@@ -350,7 +350,7 @@
 "QJ6-Tw-gvd.text" = "@eurasierboy";
 
 /* Class = "UITabBarItem"; title = "Home"; ObjectID = "Qhg-Jh-unk"; */
-"Qhg-Jh-unk.title" = "***Hjem";
+"Qhg-Jh-unk.title" = "Hjem";
 
 /* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Qyb-fS-d4v"; */
 "Qyb-fS-d4v.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
@@ -503,7 +503,7 @@
 "cjU-gd-4Il.text" = "13 timer siden";
 
 /* Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD"; */
-"cym-bd-fdD.text" = "***Markér medie som følsomt";
+"cym-bd-fdD.text" = "Markér medie som følsomt";
 
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "d7e-VT-75D"; */
 "d7e-VT-75D.text" = "Advarsels-tag";
@@ -530,7 +530,7 @@
 "fNM-WH-WTn.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
 
 /* Class = "UILabel"; text = "Reporting"; ObjectID = "fQI-2Z-e0M"; */
-"fQI-2Z-e0M.text" = "Indrapportering";
+"fQI-2Z-e0M.text" = "Indrapporterer";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "fVY-zu-rYc"; */
 "fVY-zu-rYc.text" = "@eurasierboy";
@@ -581,7 +581,7 @@
 "jfu-2R-0N7.text" = "@eurasierboy";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "jmn-GI-Die"; */
-"jmn-GI-Die.text" = "***favede din statusopdatering";
+"jmn-GI-Die.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "k0V-mc-tdV"; */
 "k0V-mc-tdV.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
@@ -617,7 +617,7 @@
 "kls-DA-sj1.selectedTitle" = "SKJUL";
 
 /* Class = "UITabBarItem"; title = "Home"; ObjectID = "ks9-ML-CSt"; */
-"ks9-ML-CSt.title" = "***Hjem";
+"ks9-ML-CSt.title" = "Hjem";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "l8E-L6-r01"; */
 "l8E-L6-r01.text" = "John~";
@@ -680,7 +680,7 @@
 "pSN-zu-1NL.text" = "John~";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "peC-Z9-8oy"; */
-"peC-Z9-8oy.text" = "***favede din statusopdatering";
+"peC-Z9-8oy.text" = "favede din statusopdatering";
 
 /* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "pf1-ws-wpH"; */
 "pf1-ws-wpH.normalTitle" = "VIS";
@@ -698,7 +698,7 @@
 "qOR-ZG-qeO.text" = "Advarsels-tag";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "qST-R4-uqh"; */
-"qST-R4-uqh.text" = "***favede din statusopdatering";
+"qST-R4-uqh.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "qYM-J0-btz"; */
 "qYM-J0-btz.text" = "John~";
@@ -776,7 +776,7 @@
 "uol-Ta-62W.text" = "Yderlige kommentarer";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "uta-FN-35Y"; */
-"uta-FN-35Y.text" = "***favede din statusopdatering";
+"uta-FN-35Y.text" = "favede din statusopdatering";
 
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "v3J-FO-VYz"; */
 "v3J-FO-VYz.text" = "13 timer siden";
