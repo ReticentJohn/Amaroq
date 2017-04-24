@@ -5,10 +5,14 @@
 //  Created by John Gabelmann on 4/20/17.
 //  Copyright © 2017 Keyboard Floofs. All rights reserved.
 //
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #import "DWInstancesViewController.h"
 #import "Mastodon.h"
 #import "DWConstants.h"
+#import "DWMenuTableViewCell.h"
 
 @interface DWInstancesViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -82,7 +86,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
+    DWMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
     
     [self configureCell:cell atIndexPath:indexPath];
     
@@ -110,7 +114,7 @@
 
 #pragma mark - Private Methods
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(DWMenuTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSString *instanceItem = @"";
     
@@ -128,14 +132,14 @@
         cell.accessoryType = [[[MSAppStore sharedStore] instance] isEqualToString:instanceItem] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
     }
     
-    cell.imageView.image = nil;
-    cell.textLabel.text = instanceItem;
-    cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-    cell.textLabel.numberOfLines = 0;
-    cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-    cell.detailTextLabel.numberOfLines = 0;
+    cell.titleImageView.image = nil;
+    cell.titleLabel.text = instanceItem;
+    cell.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    cell.titleLabel.numberOfLines = 0;
+    cell.detailTitleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+    cell.detailTitleLabel.numberOfLines = 0;
     
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.titleLabel.textColor = [UIColor whiteColor];
 }
 
 
