@@ -222,6 +222,12 @@
 		0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMediaCollectionViewCell.m; sourceTree = "<group>"; };
 		0485B97B1E55685F0063B2B8 /* DWIntrinsicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWIntrinsicCollectionView.h; sourceTree = "<group>"; };
 		0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWIntrinsicCollectionView.m; sourceTree = "<group>"; };
+		049967761EAE53770091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
+		049967771EAE53780091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967781EAE53790091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		049967791EAE53790091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0499677A1EAE537A0091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0499677B1EAE537A0091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04AAFB691E726029009E15B2 /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
 		04AE6A9D1EA9437C00E64477 /* DWInstancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWInstancesViewController.h; sourceTree = "<group>"; };
 		04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWInstancesViewController.m; sourceTree = "<group>"; };
@@ -1053,6 +1059,7 @@
 			children = (
 				04EC13F91E46A966000E15A6 /* Base */,
 				04F0D6DE1EABD07700DFF8BB /* ja */,
+				049967761EAE53770091D17B /* da */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1062,6 +1069,7 @@
 			children = (
 				04EC14011E46A966000E15A6 /* Base */,
 				04F0D6DF1EABD07800DFF8BB /* ja */,
+				049967781EAE53790091D17B /* da */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1070,6 +1078,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04F0D6E51EABD09F00DFF8BB /* ja */,
+				049967771EAE53780091D17B /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1078,6 +1087,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04F0D6EA1EABD0A000DFF8BB /* ja */,
+				049967791EAE53790091D17B /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1086,6 +1096,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04F0D6EF1EABD0A100DFF8BB /* ja */,
+				0499677A1EAE537A0091D17B /* da */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1094,6 +1105,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04F0D6F41EABD0A100DFF8BB /* ja */,
+				0499677B1EAE537A0091D17B /* da */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
