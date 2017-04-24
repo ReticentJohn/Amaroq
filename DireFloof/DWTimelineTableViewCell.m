@@ -299,6 +299,12 @@
     self.contentWarningGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(warningTagButtonPressed:)];
     [self.warningTagView addGestureRecognizer:self.contentWarningGestureRecognizer];
     
+    
+    [self.warningTagButton setTitle:@"" forState:UIControlStateNormal];
+    [self.warningTagButton setTitle:@"" forState:UIControlStateSelected];
+    [self.warningTagButton setImage:[[UIImage imageNamed:@"HideIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [self.warningTagButton setImage:[[UIImage imageNamed:@"ShowIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateSelected];
+    
     [self configureForReuse];
 }
 
@@ -427,7 +433,6 @@
                 [self.avatarImageView stopAnimating];
             }
         } failure:nil];
-       // [self.avatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? status.account.avatar_static : status.account.avatar]];
     }
     
     if (author.display_name) {
