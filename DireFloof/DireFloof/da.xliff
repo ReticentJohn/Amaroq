@@ -48,7 +48,7 @@
       </trans-unit>
       <trans-unit id="2kN-ah-4CU.placeholder">
         <source>Content warning</source>
-        <target>***Indholdsadvarsel</target>
+        <target>Indholdsadvarsel</target>
         <note>Class = "UITextField"; placeholder = "Content warning"; ObjectID = "2kN-ah-4CU";</note>
       </trans-unit>
       <trans-unit id="2wk-Fg-cKQ.normalTitle">
@@ -73,7 +73,7 @@
       </trans-unit>
       <trans-unit id="4Am-cK-PJB.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "4Am-cK-PJB";</note>
       </trans-unit>
       <trans-unit id="4Mt-w0-BJS.text">
@@ -268,7 +268,7 @@
       </trans-unit>
       <trans-unit id="Bmc-uS-EwS.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "Bmc-uS-EwS";</note>
       </trans-unit>
       <trans-unit id="C2B-wS-Gh4.text">
@@ -303,7 +303,7 @@
       </trans-unit>
       <trans-unit id="CyJ-KV-d5f.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "CyJ-KV-d5f";</note>
       </trans-unit>
       <trans-unit id="D2e-YU-71m.title">
@@ -402,7 +402,7 @@
       </trans-unit>
       <trans-unit id="GuV-g4-hLu.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "GuV-g4-hLu";</note>
       </trans-unit>
       <trans-unit id="H73-bm-2lF.text">
@@ -447,7 +447,7 @@
       </trans-unit>
       <trans-unit id="JAi-jG-h7h.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "JAi-jG-h7h";</note>
       </trans-unit>
       <trans-unit id="JWr-0E-evS.text">
@@ -467,7 +467,7 @@
       </trans-unit>
       <trans-unit id="K0i-eE-4xG.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "K0i-eE-4xG";</note>
       </trans-unit>
       <trans-unit id="KH6-XY-QeM.text">
@@ -497,7 +497,7 @@
       </trans-unit>
       <trans-unit id="LvM-n9-aZp.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp";</note>
       </trans-unit>
       <trans-unit id="M5t-3n-kwk.text">
@@ -612,7 +612,7 @@
       </trans-unit>
       <trans-unit id="Qhg-Jh-unk.title">
         <source>Home</source>
-        <target>***Hjem</target>
+        <target>Hjem</target>
         <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "Qhg-Jh-unk";</note>
       </trans-unit>
       <trans-unit id="Qyb-fS-d4v.text">
@@ -867,7 +867,7 @@
       </trans-unit>
       <trans-unit id="cym-bd-fdD.text">
         <source>Mark media as sensitive</source>
-        <target>***Markér medie som følsomt</target>
+        <target>Markér medie som følsomt</target>
         <note>Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD";</note>
       </trans-unit>
       <trans-unit id="d7e-VT-75D.text">
@@ -912,7 +912,7 @@
       </trans-unit>
       <trans-unit id="fQI-2Z-e0M.text">
         <source>Reporting</source>
-        <target>Indrapportering</target>
+        <target>Indrapporterer</target>
         <note>Class = "UILabel"; text = "Reporting"; ObjectID = "fQI-2Z-e0M";</note>
       </trans-unit>
       <trans-unit id="fVY-zu-rYc.text">
@@ -1003,7 +1003,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="jmn-GI-Die.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "jmn-GI-Die";</note>
       </trans-unit>
       <trans-unit id="k0V-mc-tdV.text">
@@ -1063,7 +1063,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="ks9-ML-CSt.title">
         <source>Home</source>
-        <target>***Hjem</target>
+        <target>Hjem</target>
         <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "ks9-ML-CSt";</note>
       </trans-unit>
       <trans-unit id="l8E-L6-r01.text">
@@ -1168,7 +1168,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="peC-Z9-8oy.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "peC-Z9-8oy";</note>
       </trans-unit>
       <trans-unit id="pf1-ws-wpH.normalTitle">
@@ -1198,7 +1198,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="qST-R4-uqh.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "qST-R4-uqh";</note>
       </trans-unit>
       <trans-unit id="qYM-J0-btz.text">
@@ -1328,7 +1328,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="uta-FN-35Y.text">
         <source>favourited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "uta-FN-35Y";</note>
       </trans-unit>
       <trans-unit id="v3J-FO-VYz.text">
@@ -1451,7 +1451,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
     <body>
       <trans-unit id=" or 1 video">
         <source> or 1 video</source>
-        <target>eller 1 video</target>
+        <target> eller 1 video</target>
         <note>or 1 video</note>
       </trans-unit>
       <trans-unit id="ACCOUNT">
@@ -1485,7 +1485,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
         <target>Amaroq er navngivet efter inuitlegenden om en kæmpe ulv, som er en passende følgesvend til vores ven mastodonten. Må vi all hyle på tværs af fediverset!
 
-Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som virkeligt har haft brug for et mobilt værktøj til vores iOS-venner. Har du et forslag, fundet en fejl, eller vil du bare give udtryk for din støtte? Du kan nå us på amaroq.feedback@gmail.com. Eller sig dav til udvikleren, @eurasierboy på mastodon-social-instancen. Trut løs!</target>
+Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som virkelig har haft brug for et mobilt værktøj til vores iOS-venner. Har du et forslag, fundet en fejl, eller vil du bare give udtryk for din støtte? Du kan nå us på amaroq.feedback@gmail.com. Eller sig dav til udvikleren, @eurasierboy, på mastodon.social-instancen. Trut løs!</target>
         <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
       </trans-unit>
       <trans-unit id="App settings">
@@ -1530,7 +1530,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Clear cache">
         <source>Clear cache</source>
-        <target>Fjern cachen</target>
+        <target>Slet cachen</target>
         <note>Clear cache</note>
       </trans-unit>
       <trans-unit id="Copy text">
@@ -1580,7 +1580,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Done">
         <source>Done</source>
-        <target>Færdig</target>
+        <target>Vælg</target>
         <note>Done</note>
       </trans-unit>
       <trans-unit id="Edit Profile">
@@ -1615,7 +1615,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Failed to mute user with error:">
         <source>Failed to mute user with error:</source>
-        <target>***Kunne ikke mute bruger pga. fejlen:</target>
+        <target>Kunne ikke mute bruger pga. fejlen:</target>
         <note>Failed to mute user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to post status with error:">
@@ -1640,22 +1640,22 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Failed to unfollow user with error:">
         <source>Failed to unfollow user with error:</source>
-        <target>***Kunne ikke stoppe med at følge bruger pga. fejlen:</target>
+        <target>Kunne ikke stoppe med at følge bruger pga. fejlen:</target>
         <note>Failed to unfollow user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to unmute user with error:">
         <source>Failed to unmute user with error:</source>
-        <target>***Kunne ikke mute:</target>
+        <target>Kunne ikke mute pga. fejlen:</target>
         <note>Failed to unmute user with error:</note>
       </trans-unit>
       <trans-unit id="Favorites">
         <source>Favorites</source>
-        <target>***Favoritter</target>
+        <target>Favoritter</target>
         <note>Favorites</note>
       </trans-unit>
       <trans-unit id="Federated">
         <source>Federated</source>
-        <target>Føderale</target>
+        <target>Fødereret</target>
         <note>Federated</note>
       </trans-unit>
       <trans-unit id="Follow requests">
@@ -1695,12 +1695,12 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Mute">
         <source>Mute</source>
-        <target>***Mute</target>
+        <target>Mute</target>
         <note>Mute</note>
       </trans-unit>
       <trans-unit id="Muted users">
         <source>Muted users</source>
-        <target>***Mutede brugere</target>
+        <target>Mutede brugere</target>
         <note>Muted users</note>
       </trans-unit>
       <trans-unit id="My instances">
@@ -1754,7 +1754,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Public: Visible to everyone on local and federated timelines">
         <source>Public: Visible to everyone on local and federated timelines</source>
-        <target>Offentlig: Vises kun til alle i lokale og føderale tidslinjer</target>
+        <target>Offentlig: Vises kun til alle i lokale og fødererede tidslinjer</target>
         <note>Public: Visible to everyone on local and federated timelines</note>
       </trans-unit>
       <trans-unit id="Receive boost notifications">
@@ -1764,7 +1764,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
         <source>Receive favorite notifications</source>
-        <target>***Modtag favoritnotifikationer</target>
+        <target>Modtag favenotifikationer</target>
         <note>Receive favorite notifications</note>
       </trans-unit>
       <trans-unit id="Receive mention notifications">
@@ -1794,7 +1794,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Sensitive content">
         <source>Sensitive content</source>
-        <target>***Følsomt indhold</target>
+        <target>Følsomt indhold</target>
         <note>Sensitive content</note>
       </trans-unit>
       <trans-unit id="Share">
@@ -1804,7 +1804,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Shows on local/federated timelines">
         <source>Shows on local/federated timelines</source>
-        <target>Vises i lokale/føderale tidslinjer</target>
+        <target>Vises i lokale/fødererede tidslinjer</target>
         <note>Shows on local/federated timelines</note>
       </trans-unit>
       <trans-unit id="This can help older devices">
@@ -1834,12 +1834,12 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">
         <source>Unlisted: Visible to everyone, but not shown on local or federated timelines</source>
-        <target>Skjult: Synlig for alle, men ikke vist i lokale eller føderale tidslinjer</target>
+        <target>Skjult: Synlig for alle, men ikke vist i lokale eller fødererede tidslinjer</target>
         <note>Unlisted: Visible to everyone, but not shown on local or federated timelines</note>
       </trans-unit>
       <trans-unit id="Unmute">
         <source>Unmute</source>
-        <target>***Unmute</target>
+        <target>Unmute</target>
         <note>Unmute</note>
       </trans-unit>
       <trans-unit id="Video too long">
@@ -1854,7 +1854,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="boosted">
         <source>boosted</source>
-        <target>boosted</target>
+        <target>boostede</target>
         <note>boosted</note>
       </trans-unit>
       <trans-unit id="boosted your status">
@@ -1864,7 +1864,7 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="favorited your status">
         <source>favorited your status</source>
-        <target>***favede din statusopdatering</target>
+        <target>favede din statusopdatering</target>
         <note>favorited your status</note>
       </trans-unit>
       <trans-unit id="followed you">
