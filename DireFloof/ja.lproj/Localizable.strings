@@ -267,5 +267,5 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 "replied" = "さんがリプライしました";
 
 /* replied to */
-"replied to" = "リプライしました";
+"replied to" = "さんがリプライしました";
 
