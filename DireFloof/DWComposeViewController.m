@@ -443,8 +443,8 @@ static NSInteger mediaUploadLimit = 4;
                 [self.avatarImageView stopAnimating];
             }
         } failure:nil];
-        //[self.avatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? currentUser.avatar_static : currentUser.avatar]];
-        self.usernameLabel.text = currentUser.acct;
+
+        self.usernameLabel.text = [[MSAppStore sharedStore] instance];
     }
     else
     {
