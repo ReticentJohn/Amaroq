@@ -231,6 +231,12 @@
 		0499677B1EAE537A0091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0499677C1EAE94AE0091D17B /* DWMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMenuTableViewCell.h; sourceTree = "<group>"; };
 		0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMenuTableViewCell.m; sourceTree = "<group>"; };
+		0499677F1EAEACA50091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
+		049967801EAEACA60091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967811EAEACA70091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		049967821EAEACA70091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967831EAEACA80091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967841EAEACA80091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04AAFB691E726029009E15B2 /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
 		04AE6A9D1EA9437C00E64477 /* DWInstancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWInstancesViewController.h; sourceTree = "<group>"; };
 		04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWInstancesViewController.m; sourceTree = "<group>"; };
@@ -1066,6 +1072,7 @@
 				04EC13F91E46A966000E15A6 /* Base */,
 				04F0D6DE1EABD07700DFF8BB /* ja */,
 				049967761EAE53770091D17B /* da */,
+				0499677F1EAEACA50091D17B /* sv */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1076,6 +1083,7 @@
 				04EC14011E46A966000E15A6 /* Base */,
 				04F0D6DF1EABD07800DFF8BB /* ja */,
 				049967781EAE53790091D17B /* da */,
+				049967811EAEACA70091D17B /* sv */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1085,6 +1093,7 @@
 			children = (
 				04F0D6E51EABD09F00DFF8BB /* ja */,
 				049967771EAE53780091D17B /* da */,
+				049967801EAEACA60091D17B /* sv */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1094,6 +1103,7 @@
 			children = (
 				04F0D6EA1EABD0A000DFF8BB /* ja */,
 				049967791EAE53790091D17B /* da */,
+				049967821EAEACA70091D17B /* sv */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1103,6 +1113,7 @@
 			children = (
 				04F0D6EF1EABD0A100DFF8BB /* ja */,
 				0499677A1EAE537A0091D17B /* da */,
+				049967831EAEACA80091D17B /* sv */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1112,6 +1123,7 @@
 			children = (
 				04F0D6F41EABD0A100DFF8BB /* ja */,
 				0499677B1EAE537A0091D17B /* da */,
+				049967841EAEACA80091D17B /* sv */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -56,7 +56,6 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     
     self.previousSelectedIndex = 0;
     
-    [[DWNotificationStore sharedStore] setNotificationBadge:self.notificationBadge];
     [[DWNotificationStore sharedStore] registerForNotifications];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(configureViews) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
@@ -175,6 +174,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         [self.notificationBadge autoSetDimensionsToSize:CGSizeMake(10, 10)];
         [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar withOffset:8.0f + self.tabBar.bounds.size.width/5.0f];
         [self.notificationBadge autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-12.0f];
+        [[DWNotificationStore sharedStore] setNotificationBadge:self.notificationBadge];
     }
     
     if (!self.centerTabOverlay) {
