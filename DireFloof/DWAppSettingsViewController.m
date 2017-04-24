@@ -12,6 +12,7 @@
 #import "DWAppSettingsViewController.h"
 #import "DWSettingStore.h"
 #import "DWConstants.h"
+#import "DWMenuTableViewCell.h"
 
 #define DW_MENU_ITEM_TITLE_KEY @"title"
 #define DW_MENU_ITEM_SUB_KEY   @"subtitle"
@@ -96,7 +97,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
+    DWMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
     
     [self configureCell:cell atIndexPath:indexPath];
     
@@ -148,30 +149,30 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 }
 
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(DWMenuTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *menuItem = [self.menuItems objectAtIndex:indexPath.row];
-    cell.imageView.image = [menuItem objectForKey:DW_MENU_ITEM_IMAGE_KEY];
-    cell.textLabel.text = [menuItem objectForKey:DW_MENU_ITEM_TITLE_KEY];
+    cell.titleImageView.image = [menuItem objectForKey:DW_MENU_ITEM_IMAGE_KEY];
+    cell.titleLabel.text = [menuItem objectForKey:DW_MENU_ITEM_TITLE_KEY];
     
-    cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-    cell.textLabel.numberOfLines = 0;
-    cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-    cell.detailTextLabel.numberOfLines = 0;
+    cell.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    cell.titleLabel.numberOfLines = 0;
+    cell.detailTitleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+    cell.detailTitleLabel.numberOfLines = 0;
     
-    cell.textLabel.textColor = [UIColor whiteColor];
-    cell.detailTextLabel.textColor = DW_LINK_TINT_COLOR;
+    cell.titleLabel.textColor = [UIColor whiteColor];
+    cell.detailTitleLabel.textColor = DW_LINK_TINT_COLOR;
     
     if (indexPath.row == DWMenuRowTypeCache) {
-        cell.detailTextLabel.text = [[DWSettingStore sharedStore] cacheSizeString];
+        cell.detailTitleLabel.text = [[DWSettingStore sharedStore] cacheSizeString];
     }
     else if (indexPath.row == DWMenuRowTypeNotifications)
     {
-        cell.detailTextLabel.text = nil;
+        cell.detailTitleLabel.text = nil;
     }
     else
     {
-        cell.detailTextLabel.text = [menuItem objectForKey:DW_MENU_ITEM_SUB_KEY];
+        cell.detailTitleLabel.text = [menuItem objectForKey:DW_MENU_ITEM_SUB_KEY];
     }
     
     switch (indexPath.row) {

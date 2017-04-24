@@ -17,6 +17,7 @@
 #import "DWNotificationStore.h"
 #import "DWBlockedUsersViewController.h"
 #import "DWConstants.h"
+#import "DWMenuTableViewCell.h"
 
 #define DW_MENU_ITEM_TITLE_KEY @"title"
 #define DW_MENU_ITEM_IMAGE_KEY @"image"
@@ -132,7 +133,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(indexPath.row == DWMenuRowTypeAppInformation || indexPath.row == DWMenuRowTypeInstances) ? @"AppCell" : @"MenuCell"];
+    DWMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(indexPath.row == DWMenuRowTypeAppInformation || indexPath.row == DWMenuRowTypeInstances) ? @"AppCell" : @"MenuCell"];
     
     [self configureCell:cell atIndexPath:indexPath];
     
@@ -224,29 +225,31 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 }
 
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(DWMenuTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *menuItem = [self.menuItems objectAtIndex:indexPath.row];
-    cell.imageView.image = [menuItem objectForKey:DW_MENU_ITEM_IMAGE_KEY];
-    cell.textLabel.text = [menuItem objectForKey:DW_MENU_ITEM_TITLE_KEY];
+    cell.titleImageView.image = nil;
+    cell.titleImageView.image = [menuItem objectForKey:DW_MENU_ITEM_IMAGE_KEY];
     
-    cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-    cell.textLabel.numberOfLines = 0;
-    cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-    cell.detailTextLabel.numberOfLines = 0;
+    cell.titleLabel.text = [menuItem objectForKey:DW_MENU_ITEM_TITLE_KEY];
     
-    cell.textLabel.textColor = [UIColor whiteColor];
-    cell.detailTextLabel.textColor = DW_LINK_TINT_COLOR;
+    cell.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    cell.titleLabel.numberOfLines = 0;
+    cell.detailTitleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+    cell.detailTitleLabel.numberOfLines = 0;
+
+    cell.titleLabel.textColor = [UIColor whiteColor];
+    cell.detailTitleLabel.textColor = DW_LINK_TINT_COLOR;
     
     if (indexPath.row == DWMenuRowTypeAppInformation) {
         NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
         NSString *buildVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
         
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"v%@ (%@)", appVersion, buildVersion];
+        cell.detailTitleLabel.text = [NSString stringWithFormat:@"v%@ (%@)", appVersion, buildVersion];
     }
     else if (indexPath.row == DWMenuRowTypeInstances)
     {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Currently logged into:", @"Currently logged into:"), [[MSAppStore sharedStore] instance]];
+        cell.detailTitleLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Currently logged into:", @"Currently logged into:"), [[MSAppStore sharedStore] instance]];
     }
 }
 

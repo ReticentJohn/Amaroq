@@ -1,8 +1,8 @@
 //
-//  DWInstancesViewController.h
+//  DWMenuTableViewCell.h
 //  DireFloof
 //
-//  Created by John Gabelmann on 4/20/17.
+//  Created by John Gabelmann on 4/24/17.
 //  Copyright © 2017 Keyboard Floofs. All rights reserved.
 //
 /* This Source Code Form is subject to the terms of the Mozilla Public
@@ -11,6 +11,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DWInstancesViewController : UIViewController
+@interface DWMenuTableViewCell : UITableViewCell
+
+@property (nonatomic, weak) IBOutlet UIImageView *titleImageView;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *detailTitleLabel;
 
 @end

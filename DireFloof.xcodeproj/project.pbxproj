@@ -71,6 +71,7 @@
 		047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047ACB5F1E73469600CC092B /* DWNavigationViewController.m */; };
 		0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */; };
 		0485B97D1E55685F0063B2B8 /* DWIntrinsicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */; };
+		0499677E1EAE94AE0091D17B /* DWMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */; };
 		04AAFB6A1E726029009E15B2 /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 04AAFB691E726029009E15B2 /* PrivacyPolicy.html */; };
 		04AE6A9F1EA9437C00E64477 /* DWInstancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */; };
 		04BEC3A21E56869200A62C3B /* MSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC3A11E56869200A62C3B /* MSNotification.m */; };
@@ -228,6 +229,8 @@
 		049967791EAE53790091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0499677A1EAE537A0091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0499677B1EAE537A0091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0499677C1EAE94AE0091D17B /* DWMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMenuTableViewCell.h; sourceTree = "<group>"; };
+		0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMenuTableViewCell.m; sourceTree = "<group>"; };
 		04AAFB691E726029009E15B2 /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
 		04AE6A9D1EA9437C00E64477 /* DWInstancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWInstancesViewController.h; sourceTree = "<group>"; };
 		04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWInstancesViewController.m; sourceTree = "<group>"; };
@@ -377,6 +380,8 @@
 				0408CABE1E7208B3009A893D /* DWAboutViewController.m */,
 				04AE6A9D1EA9437C00E64477 /* DWInstancesViewController.h */,
 				04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */,
+				0499677C1EAE94AE0091D17B /* DWMenuTableViewCell.h */,
+				0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -1011,6 +1016,7 @@
 				04E6A2461E7480F200838130 /* UIImage+color.m in Sources */,
 				04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */,
 				0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */,
+				0499677E1EAE94AE0091D17B /* DWMenuTableViewCell.m in Sources */,
 				043154F81E50F7650066C511 /* MSApplication.m in Sources */,
 				04DA37F81E665F0B0059A2A6 /* DWBlockedUsersViewController.m in Sources */,
 				0411D1621E6397B600CED5A6 /* DWTimelineViewController.m in Sources */,
