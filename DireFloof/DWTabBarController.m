@@ -207,7 +207,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         UIView *menuOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 21.0f, 21.0f)];
         menuOverlay.clipsToBounds = YES;
         menuOverlay.layer.cornerRadius = 4.0f;
-        menuOverlay.backgroundColor = DW_BACKGROUND_COLOR;
+        menuOverlay.backgroundColor = self.tabBar.barTintColor;
         menuOverlay.userInteractionEnabled = NO;
         menuOverlay.layer.borderWidth = 2.0f;
         menuOverlay.layer.borderColor = self.tabBar.barTintColor.CGColor;
@@ -215,7 +215,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         self.avatarImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 21.0f, 21.0f)];
         self.avatarImageView.contentMode = UIViewContentModeScaleAspectFill;
         self.avatarImageView.clipsToBounds = YES;
-        self.avatarImageView.backgroundColor = DW_BACKGROUND_COLOR;
+        self.avatarImageView.backgroundColor = [UIColor clearColor];
         
         [menuOverlay addSubview:self.avatarImageView];
         [self.avatarImageView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(2, 2, 2, 2)];
