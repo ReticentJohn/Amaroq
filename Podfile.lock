@@ -108,7 +108,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DateTools:
-    :commit: 2dfe9baeff0f8df60853800492965abe4f19513c
+    :commit: 1bf3770ba8d7bf78f0282e3ff74ef4872d214d61
     :git: https://github.com/ReticentJohn/DateTools.git
   EmojiOne:
     :commit: 233b51f39209579ee35290734195dbf5494637d4
