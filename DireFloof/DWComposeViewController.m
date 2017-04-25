@@ -178,39 +178,27 @@ static NSInteger mediaUploadLimit = 4;
 
 - (IBAction)imageButtonSelected:(id)sender
 {
-    NSInteger imageLimitRemaining = mediaUploadLimit - self.imagesToUpload.count;
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
     
-    if (imageLimitRemaining < 0) {
+    if (status == PHAuthorizationStatusDenied) {
         return;
     }
     
-    GMImagePickerController *picker = [[GMImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsMultipleSelection = YES;
-    picker.showCameraButton = YES;
-    picker.autoSelectCameraImages = YES;
-    picker.displaySelectionInfoToolbar = YES;
-    picker.mediaTypes = @[@(PHAssetMediaTypeImage), @(PHAssetMediaTypeVideo)];
-    picker.pickerBackgroundColor = DW_BACKGROUND_COLOR;
-    picker.pickerTextColor = DW_LINK_TINT_COLOR;
-    picker.toolbarBarTintColor = DW_BAR_TINT_COLOR;
-    picker.toolbarTextColor = DW_LINK_TINT_COLOR;
-    picker.toolbarTintColor = DW_LINK_TINT_COLOR;
-    picker.navigationBarBarTintColor = DW_BAR_TINT_COLOR;
-    picker.navigationBarTextColor = [UIColor whiteColor];
-    picker.navigationBarTintColor = DW_LINK_TINT_COLOR;
-    picker.pickerFontName = @"Roboto-Regular";
-    picker.pickerBoldFontName = @"Roboto-Medium";
-    picker.pickerFontNormalSize = 15.0f;
-    picker.pickerFontHeaderSize = 17.0f;
-    picker.useCustomFontForNavigationBar = YES;
+    if (status == PHAuthorizationStatusNotDetermined) {
+        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+            if (status == PHAuthorizationStatusAuthorized)
+            {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self presentImagePicker];
+                });
+            }
+        }];
+    }
+    
+    if (status == PHAuthorizationStatusAuthorized || status == PHAuthorizationStatusRestricted) {
+        [self presentImagePicker];
+    }
 
-    picker.title = [NSString stringWithFormat:@"%@ %li %@%@", NSLocalizedString(@"Select", @"Select"), (long)imageLimitRemaining, imageLimitRemaining == 1 ? NSLocalizedString(@"image", @"image") : NSLocalizedString(@"images", @"images"), imageLimitRemaining == 4 ? NSLocalizedString(@" or 1 video", @" or 1 video") : @""];
-    
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Back", @"Back") style:UIBarButtonItemStylePlain target:nil action:nil];
-    picker.navigationController.navigationBar.topItem.backBarButtonItem = backButton;
-    
-    [self presentViewController:picker animated:YES completion:nil];
 }
 
 
@@ -673,6 +661,46 @@ static NSInteger mediaUploadLimit = 4;
         
         [imageView setImage:result];
     }];
+}
+
+
+- (void)presentImagePicker
+{
+    [self.view endEditing:YES];
+    
+    NSInteger imageLimitRemaining = mediaUploadLimit - self.imagesToUpload.count;
+    
+    if (imageLimitRemaining < 0) {
+        return;
+    }
+    
+    GMImagePickerController *picker = [[GMImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsMultipleSelection = YES;
+    picker.showCameraButton = YES;
+    picker.autoSelectCameraImages = YES;
+    picker.displaySelectionInfoToolbar = YES;
+    picker.mediaTypes = @[@(PHAssetMediaTypeImage), @(PHAssetMediaTypeVideo)];
+    picker.pickerBackgroundColor = DW_BACKGROUND_COLOR;
+    picker.pickerTextColor = DW_LINK_TINT_COLOR;
+    picker.toolbarBarTintColor = DW_BAR_TINT_COLOR;
+    picker.toolbarTextColor = DW_LINK_TINT_COLOR;
+    picker.toolbarTintColor = DW_LINK_TINT_COLOR;
+    picker.navigationBarBarTintColor = DW_BAR_TINT_COLOR;
+    picker.navigationBarTextColor = [UIColor whiteColor];
+    picker.navigationBarTintColor = DW_LINK_TINT_COLOR;
+    picker.pickerFontName = @"Roboto-Regular";
+    picker.pickerBoldFontName = @"Roboto-Medium";
+    picker.pickerFontNormalSize = 15.0f;
+    picker.pickerFontHeaderSize = 17.0f;
+    picker.useCustomFontForNavigationBar = YES;
+    
+    picker.title = [NSString stringWithFormat:@"%@ %li %@%@", NSLocalizedString(@"Select", @"Select"), (long)imageLimitRemaining, imageLimitRemaining == 1 ? NSLocalizedString(@"image", @"image") : NSLocalizedString(@"images", @"images"), imageLimitRemaining == 4 ? NSLocalizedString(@" or 1 video", @" or 1 video") : @""];
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Back", @"Back") style:UIBarButtonItemStylePlain target:nil action:nil];
+    picker.navigationController.navigationBar.topItem.backBarButtonItem = backButton;
+    
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 @end
