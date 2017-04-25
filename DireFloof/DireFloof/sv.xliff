@@ -1451,7 +1451,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
     <body>
       <trans-unit id=" or 1 video">
         <source> or 1 video</source>
-        <target>eller 1 video</target>
+        <target> eller 1 video</target>
         <note>or 1 video</note>
       </trans-unit>
       <trans-unit id="ACCOUNT">
@@ -1569,8 +1569,8 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
         <note>Direct</note>
       </trans-unit>
       <trans-unit id="Direct: Only visible to you and @mentioned users">
-        <source>Direkt: Only visible to you and @mentioned users</source>
-        <target>Direkt: Bara synliga för dig och @nämnda användare</target>
+        <source>Direct: Only visible to you and @mentioned users</source>
+        <target>Direkt: Bara synlig för dig och @nämnda användare</target>
         <note>Direct: Only visible to you and @mentioned users</note>
       </trans-unit>
       <trans-unit id="Disable gif auto-playback">
@@ -1774,7 +1774,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       </trans-unit>
       <trans-unit id="Receive new follower notifications">
         <source>Receive new follower notifications</source>
-        <target>Ta emot notis nya följare</target>
+        <target>Ta emot notis om nya följare</target>
         <note>Receive new follower notifications</note>
       </trans-unit>
       <trans-unit id="Report">
@@ -1854,7 +1854,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       </trans-unit>
       <trans-unit id="boosted">
         <source>boosted</source>
-        <target>boostad</target>
+        <target>boostade</target>
         <note>boosted</note>
       </trans-unit>
       <trans-unit id="boosted your status">
