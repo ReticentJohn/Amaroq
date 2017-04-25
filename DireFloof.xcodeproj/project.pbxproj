@@ -217,6 +217,12 @@
 		046BF20A1E7712EE00F01C50 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		046BF20B1E7712EE00F01C50 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		046BF20C1E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		04762BA41EAF97BD0045A75E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		04762BA51EAF97BE0045A75E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04762BA61EAF97BE0045A75E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04762BA71EAF97BE0045A75E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04762BA81EAF97BF0045A75E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04762BA91EAF97BF0045A75E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		047ACB5E1E73469600CC092B /* DWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNavigationViewController.h; sourceTree = "<group>"; };
 		047ACB5F1E73469600CC092B /* DWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNavigationViewController.m; sourceTree = "<group>"; };
 		0485B9781E5558690063B2B8 /* DWMediaCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMediaCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1080,6 +1086,7 @@
 				049967761EAE53770091D17B /* da */,
 				0499677F1EAEACA50091D17B /* sv */,
 				049967851EAEB1140091D17B /* nb */,
+				04762BA41EAF97BD0045A75E /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1092,6 +1099,7 @@
 				049967781EAE53790091D17B /* da */,
 				049967811EAEACA70091D17B /* sv */,
 				049967871EAEB1150091D17B /* nb */,
+				04762BA51EAF97BE0045A75E /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1103,6 +1111,7 @@
 				049967771EAE53780091D17B /* da */,
 				049967801EAEACA60091D17B /* sv */,
 				049967861EAEB1150091D17B /* nb */,
+				04762BA61EAF97BE0045A75E /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1114,6 +1123,7 @@
 				049967791EAE53790091D17B /* da */,
 				049967821EAEACA70091D17B /* sv */,
 				049967881EAEB1150091D17B /* nb */,
+				04762BA71EAF97BE0045A75E /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1125,6 +1135,7 @@
 				0499677A1EAE537A0091D17B /* da */,
 				049967831EAEACA80091D17B /* sv */,
 				049967891EAEB1160091D17B /* nb */,
+				04762BA81EAF97BF0045A75E /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1136,6 +1147,7 @@
 				0499677B1EAE537A0091D17B /* da */,
 				049967841EAEACA80091D17B /* sv */,
 				0499678A1EAEB1160091D17B /* nb */,
+				04762BA91EAF97BF0045A75E /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
