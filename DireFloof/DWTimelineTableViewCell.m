@@ -445,12 +445,14 @@
     
     if (status.created_at) {
         self.dateLabel.text = self.isThreadStatus ? [NSString stringWithFormat:@"%@ •%@", [status.created_at formattedDateWithFormat:@"MMM dd, yyyy, HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at shortTimeAgoSinceNow];
+        self.dateLabel.accessibilityLabel = self.isThreadStatus ? [NSString stringWithFormat:@"%@ •%@", [status.created_at formattedDateWithFormat:@"MMM dd, yyyy, HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at timeAgoSinceNow];
     }
     
     if (status.content) {
         self.contentLabel.text = status.content;
         [self highlightUsersInContentLabel:self.contentLabel forStatus:status];
         [self.contentLabel setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];
+        self.dateLabel.accessibilityLabel = [self.dateLabel.accessibilityLabel stringByAppendingFormat:@". %@", status.content];
     }
     
     self.retootButton.enabled = ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_PRIVATE] && ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT];
