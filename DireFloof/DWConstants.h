@@ -31,6 +31,7 @@
 #define DW_DID_PURGE_CACHE_NOTIFICATION                     @"DW_DID_PURGE_CACHE_NOTIFICATION"
 #define DW_DID_ANSWER_FOLLOW_REQUEST_NOTIFICATION           @"DW_DID_ANSWER_FOLLOW_REQUEST_NOTIFICATION"
 #define DW_DID_CANCEL_LOGIN_NOTIFICATION                    @"DW_DID_CANCEL_LOGIN_NOTIFICATION"
+#define DW_DID_SWITCH_INSTANCES_NOTIFICATION                @"DW_DID_SWITCH_INSTANCES_NOTIFICATION"
 
 #define DW_SETTING_ALWAYS_PRIVATE_KEY                       @"DW_SETTING_ALWAYS_PRIVATE"
 #define DW_SETTING_ALWAYS_PUBLIC_KEY                        @"DW_SETTING_ALWAYS_PUBLIC"
@@ -40,6 +41,7 @@
 #define DW_SETTING_FAVORITES_OFF_KEY                        @"DW_SETTING_FAVORITES_OFF_KEY"
 #define DW_SETTING_MENTIONS_OFF_KEY                         @"DW_SETTING_MENTIONS_OFF_KEY"
 #define DW_SETTING_BOOSTS_OFF_KEY                           @"DW_SETTING_BOOSTS_OFF_KEY"
+#define DW_SETTING_PUBLIC_SHOW_LOCAL_KEY                    @"DW_SETTING_PUBLIC_SHOW_LOCAL_KEY"
 
 #define DW_PRIVACY_URL                                      @"http://www.iubenda.com/api/privacy-policy/8066189/no-markup"
 #endif /* DWConstants_h */

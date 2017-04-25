@@ -8,7 +8,7 @@ target 'DireFloof' do
   # Pods for DireFloof
   pod 'AFNetworking', '~> 3.0'
   pod 'AFOAuth2Manager', '~> 3.0'
-  pod 'DateTools'
+  pod 'DateTools', git: 'https://github.com/ReticentJohn/DateTools.git', branch: 'master'
   pod 'SDWebImage', '3.8.2'
   pod 'TTTAttributedLabel'
   pod 'AnimatedGIFImageSerialization'

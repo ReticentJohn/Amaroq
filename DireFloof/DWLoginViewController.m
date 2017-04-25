@@ -13,6 +13,7 @@
 #import "Mastodon.h"
 #import "DWAboutViewController.h"
 #import "DWConstants.h"
+#import "DWNotificationStore.h"
 
 @interface DWLoginViewController () <UITextFieldDelegate>
 
@@ -22,7 +23,8 @@
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *loginActivityIndicator;
 @property (nonatomic, weak) IBOutlet UILabel *subheaderLabel;
 @property (nonatomic, weak) IBOutlet UIButton *privacyPolicyLabel;
-
+@property (nonatomic, weak) IBOutlet UIButton *closeButton;
+@property (nonatomic, strong) NSString *lastInstance;
 @end
 
 @implementation DWLoginViewController
@@ -35,6 +37,7 @@
     [self.loginActivityIndicator startAnimating];
     self.loginButton.hidden = YES;
     
+    self.lastInstance = [[[MSAppStore sharedStore] instance] copy];
     [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
     
     [[MSAuthStore sharedStore] login:^(BOOL success) {
@@ -44,7 +47,16 @@
         [self.loginActivityIndicator stopAnimating];
 
         if (success) {
-            [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+            if (self.addAccount) {
+                // Notify the app to clear all its contents for refresh
+                [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
+                [[DWNotificationStore sharedStore] registerForNotifications];
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+            else
+            {
+                [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+            }
         }
         else
         {
@@ -55,6 +67,18 @@
             [self presentViewController:alertController animated:YES completion:nil];
         }
     }];
+}
+
+
+- (IBAction)cancelLoginPressed:(id)sender
+{
+    if (self.lastInstance) {
+        [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
+        [[DWNotificationStore sharedStore] registerForNotifications];
+        [[MSAuthStore sharedStore] isLoggedIn];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -82,6 +106,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cancelLogin) name:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
     
     [self adjustFonts];
+    
+    self.closeButton.hidden = !self.addAccount;
 }
 
 
@@ -89,7 +115,7 @@
 {
     [super viewDidAppear:animated];
     
-    if ([[MSAuthStore sharedStore] isLoggedIn]) {
+    if ([[MSAuthStore sharedStore] isLoggedIn] && !self.addAccount) {
         [self performSegueWithIdentifier:@"LoginSegue" sender:self];
     }
 }

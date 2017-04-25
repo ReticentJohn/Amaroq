@@ -1,0 +1,271 @@
+/* or 1 video */
+" or 1 video" = " eller 1 video";
+
+/* ACCOUNT */
+"ACCOUNT" = "KONTO";
+
+/* About Amaroq */
+"About Amaroq" = "Om Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "Om din Mastodon-instans";
+
+/* Account preferences */
+"Account preferences" = "Kontopræferencer";
+
+/* Add instance */
+"Add instance" = "Tilføj instans";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq er navngivet efter inuitlegenden om en kæmpe ulv, som er en passende følgesvend til vores ven mastodonten. Må vi all hyle på tværs af fediverset!
+
+Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som virkelig har haft brug for et mobilt værktøj til vores iOS-venner. Har du et forslag, fundet en fejl, eller vil du bare give udtryk for din støtte? Du kan nå os på amaroq.feedback@gmail.com. Eller kontakt udvikleren, @eurasierboy, på mastodon.social-instancen. Trut løs!";
+
+/* App settings */
+"App settings" = "App-indstillinger";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "Er du sikker på, at du vil fjerne alle dine notifikationer?";
+
+/* Awoo mode */
+"Awoo mode" = "Awoo mode";
+
+/* Back */
+"Back" = "Tilbage";
+
+/* Block */
+"Block" = "Blokér";
+
+/* Blocked users */
+"Blocked users" = "Blokerede brugere";
+
+/* Cancel */
+"Cancel" = "Afbryd";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "Ændr på hvordan du modtager push-notifikationer";
+
+/* Clear cache */
+"Clear cache" = "Slet cachen";
+
+/* Copy text */
+"Copy text" = "Kopiér tekst";
+
+/* Currently logged into: */
+"Currently logged into:" = "I øjeblikket logget ind på";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "BØDE PÅ $350 FOR INGEN AWOO";
+
+/* Default posts to private */
+"Default posts to private" = "Opdateringer er private som udgangspunkt";
+
+/* Default posts to public */
+"Default posts to public" = "Opdateringer er offentlige som udgangspunkt";
+
+/* Delete */
+"Delete" = "Slet";
+
+/* Direct */
+"Direct" = "Direkte";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "Direkte: Kun synlig for dig og @omtalte brugere";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "Slå automatisk gif-afspilning fra";
+
+/* Done */
+"Done" = "Vælg";
+
+/* Edit Profile */
+"Edit Profile" = "Redigér Profil";
+
+/* Error */
+"Error" = "Fejl";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "Kunne ikke blokere bruger pga. fejlen:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "Kunne ikke fjerne notifikationer pga. fejlen:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "Kunne ikke slette statusopdatering pga. fejlen:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "Kunne ikke indlæse bruger pga. fejlen:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "Kunne ikke mute bruger pga. fejlen:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "Kunne ikke sende statusopdatering pga. fejlen:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "Kunne ikke indrapportere statusopdatering pga. fejlen:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "Kunne ikke hente din profil pga. fejlen:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "Kunne ikke fjerne brugers blokering pga. fejlen:";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "Kunne ikke stoppe med at følge bruger pga. fejlen:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "Kunne ikke mute pga. fejlen:";
+
+/* Favorites */
+"Favorites" = "Favoritter";
+
+/* Federated */
+"Federated" = "Fødereret";
+
+/* Follow requests */
+"Follow requests" = "Følgeanmodninger";
+
+/* HASHTAG */
+"HASHTAG" = "HASHTAG";
+
+/* Hold to show */
+"Hold to show" = "Hold for at vise";
+
+/* Local */
+"Local" = "Lokal";
+
+/* Login request failed */
+"Login request failed" = "ログインリクエストに失敗しました";
+
+/* Logout */
+"Logout" = "Log ud";
+
+/* Mention */
+"Mention" = "Omtal";
+
+/* Mute */
+"Mute" = "Mute";
+
+/* Muted users */
+"Muted users" = "Mutede brugere";
+
+/* My instances */
+"My instances" = "Mine instanser";
+
+/* My profile */
+"My profile" = "Min profil";
+
+/* Notification settings */
+"Notification settings" = "Notifikationsindstillinger";
+
+/* Only show to followers */
+"Only show to followers" = "Vis kun til følgere";
+
+/* Open in Safari */
+"Open in Safari" = "Åbn i Safari";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "Begræns venligst videoer til 30 sekunder";
+
+/* Private */
+"Private" = "Privat";
+
+/* Private: Only visible to you, @mentioned users, and followers on your instance */
+"Private: Only visible to you, @mentioned users, and followers on your instance" = "Privat: Kun synlig for dig, @omtalte brugere og følgere på din instans";
+
+/* Public */
+"Public" = "Offentlig";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "Offentlig: Vises kun til alle i lokale og fødererede tidslinjer";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "Modtag boost-notifikationer";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "Modtag favenotifikationer";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "Modtag omtalenotifikationer";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "Modtag notifikationer om nye følgere";
+
+/* Report */
+"Report" = "Indrapportér";
+
+/* Select */
+"Select" = "";
+
+/* Select a privacy level */
+"Select a privacy level" = "Vælg privacy-niveau";
+
+/* Sensitive content */
+"Sensitive content" = "Følsomt indhold";
+
+/* Share */
+"Share" = "Del";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "Vises i lokale/fødererede tidslinjer";
+
+/* This can help older devices */
+"This can help older devices" = "Dette kan hjælpe ældre enheder";
+
+/* Translate text */
+"Translate text" = "Oversæt tekst";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "Ikke i stand til at forbidnde til Mastodon-instansen. Prøv venligst senere eller med en anden instans.";
+
+/* Unblock */
+"Unblock" = "Fjern blokering";
+
+/* Unlisted */
+"Unlisted" = "Skjult";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Skjult: Synlig for alle, men ikke vist i lokale eller fødererede tidslinjer";
+
+/* Unmute */
+"Unmute" = "Unmute";
+
+/* Video too long */
+"Video too long" = "Video er for lang";
+
+/* You have */
+"You have" = "";
+
+/* boosted */
+"boosted" = "boostede";
+
+/* boosted your status */
+"boosted your status" = "boostede din statusopdatering";
+
+/* favorited your status */
+"favorited your status" = "favede din statusopdatering";
+
+/* followed you */
+"followed you" = "fulgte dig";
+
+/* image */
+"image" = "billede";
+
+/* images */
+"images" = "billeder";
+
+/* mentioned you */
+"mentioned you" = "omtalte dig";
+
+/* new notifications */
+"new notifications" = "nye notifikationer";
+
+/* replied */
+"replied" = "svarede";
+
+/* replied to */
+"replied to" = "svarede på";
+

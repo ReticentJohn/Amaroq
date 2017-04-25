@@ -10,6 +10,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #import <PureLayout/PureLayout.h>
+#import <UIImageView+AFNetworking.h>
 #import "DWTabBarController.h"
 #import "Mastodon.h"
 #import "DWNotificationStore.h"
@@ -17,17 +18,20 @@
 #import "DWTimelineViewController.h"
 #import "DWNotificationsViewController.h"
 #import "DWAppearanceProxies.h"
+#import "DWSettingStore.h"
 
 typedef NS_ENUM(NSUInteger, DWTabItem) {
     DWTabItemHome = 0,
-    DWTabItemLocal,
-    DWTabItemFederated,
+    DWTabItemPublic,
+    DWTabItemBlank,
     DWTabItemNotifications,
     DWTabItemMenu,
 };
 
 @interface DWTabBarController ()
 @property (nonatomic, strong) UIView *notificationBadge;
+@property (nonatomic, strong) UIView *centerTabOverlay;
+@property (nonatomic, strong) UIImageView *avatarImageView;
 
 @property (nonatomic, assign) NSUInteger previousSelectedIndex;
 
@@ -35,18 +39,26 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
 @implementation DWTabBarController
 
+#pragma mark - Actions
+
+- (void)composeButtonPressed
+{
+    [self performSegueWithIdentifier:@"ComposeSegue" sender:self];
+}
+
+
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self configureViews];
     
     self.previousSelectedIndex = 0;
     
-    [[DWNotificationStore sharedStore] setNotificationBadge:self.notificationBadge];
     [[DWNotificationStore sharedStore] registerForNotifications];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(configureViews) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 
 
@@ -55,7 +67,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     [super viewWillAppear:animated];
     
     // Refresh the current user
-    [[MSUserStore sharedStore] getCurrentUserWithCompletion:nil];
+    [self configureViews];
 }
 
 
@@ -85,6 +97,12 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 }
 
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+
 #pragma mark - Navigation
 /*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -100,14 +118,14 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
     if (self.previousSelectedIndex == index) {
         
-        if (index == DWTabItemHome || index == DWTabItemLocal || index == DWTabItemFederated) {
+        if (index == DWTabItemHome || index == DWTabItemPublic) {
             
-            DWTimelineViewController *currentController = [self.viewControllers objectAtIndex:index];
+            DWTimelineViewController *currentController = [[[self.viewControllers objectAtIndex:index] viewControllers] firstObject];
             [currentController scrollToTop:nil];
         }
         else if (index == DWTabItemNotifications)
         {
-            DWNotificationsViewController *currentController = [self.viewControllers objectAtIndex:index];
+            DWNotificationsViewController *currentController = [[[self.viewControllers objectAtIndex:index] viewControllers] firstObject];
             [currentController scrollToTop:nil];
         }
     }
@@ -115,7 +133,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     {
         self.previousSelectedIndex = index;
         [[NSNotificationCenter defaultCenter] postNotificationName:DW_WILL_PURGE_CACHE_NOTIFICATION object:nil];
-        [[self.viewControllers objectAtIndex:index] viewDidAppear:NO];
+        [[[[self.viewControllers objectAtIndex:index] viewControllers] firstObject] viewDidAppear:NO];
     }
 }
 
@@ -133,6 +151,16 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
 - (void)configureViews
 {
+    for (UITabBarItem *item in self.tabBar.items) {
+        item.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+        
+        if ([self.tabBar.items indexOfObject:item] == DWTabItemPublic) {
+            [item setImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+            [item setSelectedImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
+
+        }
+    }
+    
     if (!self.notificationBadge) {
         self.notificationBadge = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
         self.notificationBadge.clipsToBounds = YES;
@@ -145,8 +173,68 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         
         [self.notificationBadge autoSetDimensionsToSize:CGSizeMake(10, 10)];
         [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar withOffset:8.0f + self.tabBar.bounds.size.width/5.0f];
-        [self.notificationBadge autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-15.0f];
+        [self.notificationBadge autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-12.0f];
+        [[DWNotificationStore sharedStore] setNotificationBadge:self.notificationBadge];
     }
+    
+    if (!self.centerTabOverlay) {
+        self.centerTabOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tabBar.bounds.size.width/5.0f, self.tabBar.bounds.size.height)];
+        self.centerTabOverlay.backgroundColor = [UIColor clearColor];
+        
+        UIView *buttonBackground = [[UIView alloc] initWithFrame:CGRectMake(10.0f, 5.0f, self.tabBar.bounds.size.width/5.0f - 20.0f, self.tabBar.bounds.size.height - 10.0f)];
+        buttonBackground.backgroundColor = DW_BLUE_COLOR;
+        buttonBackground.clipsToBounds = YES;
+        buttonBackground.layer.cornerRadius = 4.0f;
+        [self.centerTabOverlay addSubview:buttonBackground];
+        [buttonBackground autoSetDimensionsToSize:CGSizeMake(self.tabBar.bounds.size.width/5.0f - 20.0f, self.tabBar.bounds.size.height - 10.0f)];
+        [buttonBackground autoCenterInSuperview];
+        
+        UIButton *composeButton = [[UIButton alloc] initWithFrame:self.centerTabOverlay.bounds];
+        composeButton.backgroundColor = [UIColor clearColor];
+        [composeButton setImage:[[UIImage imageNamed:@"ComposeIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+        [composeButton addTarget:self action:@selector(composeButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        composeButton.tintColor = self.tabBar.barTintColor;
+        [self.centerTabOverlay addSubview:composeButton];
+        [composeButton autoPinEdgesToSuperviewEdges];
+        
+        [self.tabBar addSubview:self.centerTabOverlay];
+        [self.centerTabOverlay autoSetDimensionsToSize:CGSizeMake(self.tabBar.bounds.size.width/5.0f, self.tabBar.bounds.size.height)];
+        [self.centerTabOverlay autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar];
+        [self.centerTabOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar];
+    }
+    
+    if (!self.avatarImageView) {
+        UIView *menuOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 21.0f, 21.0f)];
+        menuOverlay.clipsToBounds = YES;
+        menuOverlay.layer.cornerRadius = 4.0f;
+        menuOverlay.backgroundColor = self.tabBar.barTintColor;
+        menuOverlay.userInteractionEnabled = NO;
+        menuOverlay.layer.borderWidth = 2.0f;
+        menuOverlay.layer.borderColor = self.tabBar.barTintColor.CGColor;
+        
+        self.avatarImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 21.0f, 21.0f)];
+        self.avatarImageView.contentMode = UIViewContentModeScaleAspectFill;
+        self.avatarImageView.clipsToBounds = YES;
+        self.avatarImageView.backgroundColor = [UIColor clearColor];
+        
+        [menuOverlay addSubview:self.avatarImageView];
+        [self.avatarImageView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(2, 2, 2, 2)];
+
+        [self.tabBar addSubview:menuOverlay];
+        [menuOverlay autoSetDimensionsToSize:CGSizeMake(21.0f, 21.0f)];
+        [menuOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-6.0f];
+        [menuOverlay autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:self.tabBar.bounds.size.width/10.0f - 20.0f];
+    }
+    
+    __block UIImageView *__avatarImageView = self.avatarImageView;
+    [[MSUserStore sharedStore] getCurrentUserWithCompletion:^(BOOL success, MSAccount *user, NSError *error) {
+        [self.avatarImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? user.avatar_static : user.avatar]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+            __avatarImageView.image = image;
+            if ([[DWSettingStore sharedStore] disableGifPlayback]) {
+                [__avatarImageView stopAnimating];
+            }
+        } failure:nil];
+    }];
 }
 
 @end

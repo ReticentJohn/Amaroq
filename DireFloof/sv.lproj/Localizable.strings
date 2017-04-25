@@ -1,0 +1,271 @@
+/* or 1 video */
+" or 1 video" = " eller 1 video";
+
+/* ACCOUNT */
+"ACCOUNT" = "Konto";
+
+/* About Amaroq */
+"About Amaroq" = "Om Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "Om din Mastodon instans";
+
+/* Account preferences */
+"Account preferences" = "Kontoinställningar";
+
+/* Add instance */
+"Add instance" = "Lägg till instans";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq är namngiven efter en Inuitisk legend om en gigantisk varg, vilket är en passande kompanjon till vår vän mastodonten. Må vi alla yla över fediverset!
+
+Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verkligen behövde en mobil lösning för våra vänner med iOS. Har du ett förslag, har hittat en bugg eller behöver lite support? Då kan du nå oss på amaroq.feedback@gmail.com eller sök reda på utvecklaren @eurasierboy på instansen mastodon.social. Glad tooting!  ";
+
+/* App settings */
+"App settings" = "Appinställningar";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "Är du säker på att du vill rensa alla dina notiser?";
+
+/* Awoo mode */
+"Awoo mode" = "Awoo läge";
+
+/* Back */
+"Back" = "Tillbaka";
+
+/* Block */
+"Block" = "Blockera";
+
+/* Blocked users */
+"Blocked users" = "Blockerade användare";
+
+/* Cancel */
+"Cancel" = "Avbryt";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "Förändra hur du tar emot pushnotiser";
+
+/* Clear cache */
+"Clear cache" = "Rensa cache";
+
+/* Copy text */
+"Copy text" = "Kopiera text";
+
+/* Currently logged into: */
+"Currently logged into:" = "Just nu inloggad på:";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "YLA INTE - 350$ I BÖTER";
+
+/* Default posts to private */
+"Default posts to private" = "Privata poster som standard";
+
+/* Default posts to public */
+"Default posts to public" = "Publika poster som standard";
+
+/* Delete */
+"Delete" = "Radera";
+
+/* Direct */
+"Direct" = "Direkt";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "Direkt: Bara synlig för dig och @nämnda användare";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "Stäng av GIF autouppspelning";
+
+/* Done */
+"Done" = "Klar";
+
+/* Edit Profile */
+"Edit Profile" = "Redigera profil";
+
+/* Error */
+"Error" = "Error";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "Misslyckades med att blockera användare med felet:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "Misslyckades med att rensa notiser med felet:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "Misslyckades med att radera status med felet:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "Misslyckades med att ladda användare med felet:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "Misslyckades med att tysta användare med felet:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "Misslyckades med att posta status med felet:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "Misslyckades med att rapportera status med felet:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "Misslyckades med att hämta din profil med status:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "Misslyckades med att avblockera användaren med felet:";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "Misslyckades med att avfölja användare med felet:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "Misslyckades med att avtysta användare med felet:";
+
+/* Favorites */
+"Favorites" = "Favoriter";
+
+/* Federated */
+"Federated" = "Federerade";
+
+/* Follow requests */
+"Follow requests" = "Följ förfrågningar";
+
+/* HASHTAG */
+"HASHTAG" = "Hashtag";
+
+/* Hold to show */
+"Hold to show" = "Tryck för att visa";
+
+/* Local */
+"Local" = "Lokal";
+
+/* Login request failed */
+"Login request failed" = "Loginbegäran misslyckades";
+
+/* Logout */
+"Logout" = "Logga ut";
+
+/* Mention */
+"Mention" = "Nämn";
+
+/* Mute */
+"Mute" = "Tysta";
+
+/* Muted users */
+"Muted users" = "Tystade användare";
+
+/* My instances */
+"My instances" = "Mina instanser";
+
+/* My profile */
+"My profile" = "Min profil";
+
+/* Notification settings */
+"Notification settings" = "Notifikationsinställningar";
+
+/* Only show to followers */
+"Only show to followers" = "Visa endast för följare";
+
+/* Open in Safari */
+"Open in Safari" = "Öppna i Safari";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "Håll videos upp till 30 sekunder långa";
+
+/* Private */
+"Private" = "Privat";
+
+/* Private: Only visible to you, @mentioned users, and followers on your instance */
+"Private: Only visible to you, @mentioned users, and followers on your instance" = "Privat: Enbart synlig för dig, @nämnda användare och följare på din instans.";
+
+/* Public */
+"Public" = "Publik";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "Pubik: Synliga för alla på lokala och federala tidslinjer";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "Ta emot notis om boostmarkerad";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "Ta emot notis om favoritmarkerad";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "Ta emot notis om omnämnande";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "Ta emot notis om nya följare";
+
+/* Report */
+"Report" = "Rapporterar";
+
+/* Select */
+"Select" = "";
+
+/* Select a privacy level */
+"Select a privacy level" = "Välj intigiretsnivå";
+
+/* Sensitive content */
+"Sensitive content" = "Känsligt innehåll";
+
+/* Share */
+"Share" = "Dela";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "Visas på lokala och federala tidslinjer";
+
+/* This can help older devices */
+"This can help older devices" = "Detta kan förbättra upplevelsen på äldre enheter";
+
+/* Translate text */
+"Translate text" = "Översätt text";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "Kan inte ansluta till denna Mastodon instans. Prova en annan.";
+
+/* Unblock */
+"Unblock" = "Avblockera";
+
+/* Unlisted */
+"Unlisted" = "Olistad";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Olistad: Synlig för alla men inte på lokala eller federala tidslinjer";
+
+/* Unmute */
+"Unmute" = "Avtysta";
+
+/* Video too long */
+"Video too long" = "Video är för lång";
+
+/* You have */
+"You have" = "";
+
+/* boosted */
+"boosted" = "boostade";
+
+/* boosted your status */
+"boosted your status" = "boostade din status";
+
+/* favorited your status */
+"favorited your status" = "markerade din status som favorit";
+
+/* followed you */
+"followed you" = "följer dig";
+
+/* image */
+"image" = "bild";
+
+/* images */
+"images" = "bilder";
+
+/* mentioned you */
+"mentioned you" = "nämnde dig";
+
+/* new notifications */
+"new notifications" = "nya notiser";
+
+/* replied */
+"replied" = "svarade";
+
+/* replied to */
+"replied to" = "svarade till";
+

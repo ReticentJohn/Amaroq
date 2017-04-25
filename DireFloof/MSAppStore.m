@@ -9,6 +9,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+#import <FCFileManager/FCFileManager.h>
 #import "MSAppStore.h"
 #import "MastodonConstants.h"
 #import "MSAPIClient.h"
@@ -23,6 +24,7 @@
 @property (nonatomic, strong, readwrite) NSString *base_api_url_string;
 @property (nonatomic, strong, readwrite) NSString *base_media_url_string;
 @property (nonatomic, strong, readwrite) NSString *instance;
+@property (nonatomic, strong, readwrite) NSArray *availableInstances;
 
 @end
 
@@ -64,6 +66,20 @@
         self.base_api_url_string = [[NSUserDefaults standardUserDefaults] objectForKey:MS_BASE_API_URL_STRING_KEY];
         self.base_media_url_string = [[NSUserDefaults standardUserDefaults] objectForKey:MS_BASE_MEDIA_URL_STRING_KEY];
         self.instance = [[NSUserDefaults standardUserDefaults] objectForKey:MS_INSTANCE_KEY];
+    
+        self.availableInstances = [FCFileManager readFileAtPathAsArray:[self availableInstancesPath]];
+
+        if (!self.availableInstances) {
+            
+            if (self.client_id && self.client_secret && self.base_url_string && self.base_api_url_string && self.base_media_url_string && self.instance) {
+                self.availableInstances = [self.availableInstances arrayByAddingObject:@{MS_CLIENT_ID_KEY: self.client_id,
+                                                                                         MS_CLIENT_SECRET_KEY: self.client_secret,
+                                                                                         MS_BASE_URL_STRING_KEY: self.base_url_string,
+                                                                                         MS_BASE_API_URL_STRING_KEY: self.base_api_url_string,
+                                                                                         MS_BASE_MEDIA_URL_STRING_KEY: self.base_media_url_string,
+                                                                                         MS_INSTANCE_KEY: self.instance}];
+            }
+        }
     }
     
     return self;
@@ -99,6 +115,18 @@
             
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_CLIENT_ID_KEY];
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_CLIENT_SECRET_KEY];
+            
+            NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", self.instance]] firstObject];
+            
+            if (availableInstance) {
+                self.client_id = [availableInstance objectForKey:MS_CLIENT_ID_KEY];
+                self.client_secret = [availableInstance objectForKey:MS_CLIENT_SECRET_KEY];
+                
+                [[NSUserDefaults standardUserDefaults] setObject:self.client_id forKey:MS_CLIENT_ID_KEY];
+                [[NSUserDefaults standardUserDefaults] setObject:self.client_secret forKey:MS_CLIENT_SECRET_KEY];
+            }
+            
+            [[MSAuthStore sharedStore] setCredential:nil];
         }
     }
     else
@@ -139,6 +167,29 @@
             
             [[NSUserDefaults standardUserDefaults] setObject:self.client_id forKey:MS_CLIENT_ID_KEY];
             [[NSUserDefaults standardUserDefaults] setObject:self.client_secret forKey:MS_CLIENT_SECRET_KEY];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            
+            NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", self.instance]] firstObject];
+            
+            if (!availableInstance) {
+                
+                availableInstance = @{MS_CLIENT_ID_KEY: self.client_id,
+                                      MS_CLIENT_SECRET_KEY: self.client_secret,
+                                      MS_BASE_URL_STRING_KEY: self.base_url_string,
+                                      MS_BASE_API_URL_STRING_KEY: self.base_api_url_string,
+                                      MS_BASE_MEDIA_URL_STRING_KEY: self.base_media_url_string,
+                                      MS_INSTANCE_KEY: self.instance};
+                
+                if (self.availableInstances) {
+                    self.availableInstances = [self.availableInstances arrayByAddingObject:availableInstance];
+                }
+                else
+                {
+                    self.availableInstances = @[availableInstance];
+                }
+                
+                [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
+            }
             
             if (completion != nil) {
                 completion(self.isRegistered);
@@ -151,6 +202,16 @@
             }
         }];
     }
+}
+
+
+- (NSString *)availableInstancesPath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *instancesPlistPath = [documentsDirectory stringByAppendingPathComponent:@"instances.plist"];
+    
+    return instancesPlistPath;
 }
 
 @end

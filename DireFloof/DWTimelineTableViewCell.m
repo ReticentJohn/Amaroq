@@ -152,6 +152,24 @@
         
     }]];
     
+    [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Translate text", @"Translate text") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
+        
+        NSString *encodedStatus = [status.content stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSString *url = [NSString stringWithFormat:@"https://translate.google.com/#auto/auto/%@", encodedStatus];
+        
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+            
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+            
+        } else {
+            // iOS 10 or later
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
+        }
+
+    }]];
+    
     if ([self.status.account._id isEqualToString:[[[MSUserStore sharedStore] currentUser] _id]]) {
         
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Delete", @"Delete") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
@@ -281,6 +299,12 @@
     self.contentWarningGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(warningTagButtonPressed:)];
     [self.warningTagView addGestureRecognizer:self.contentWarningGestureRecognizer];
     
+    
+    [self.warningTagButton setTitle:@"" forState:UIControlStateNormal];
+    [self.warningTagButton setTitle:@"" forState:UIControlStateSelected];
+    [self.warningTagButton setImage:[[UIImage imageNamed:@"HideIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [self.warningTagButton setImage:[[UIImage imageNamed:@"ShowIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateSelected];
+    
     [self configureForReuse];
 }
 
@@ -409,7 +433,6 @@
                 [self.avatarImageView stopAnimating];
             }
         } failure:nil];
-       // [self.avatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? status.account.avatar_static : status.account.avatar]];
     }
     
     if (author.display_name) {
@@ -422,12 +445,14 @@
     
     if (status.created_at) {
         self.dateLabel.text = self.isThreadStatus ? [NSString stringWithFormat:@"%@ •%@", [status.created_at formattedDateWithFormat:@"MMM dd, yyyy, HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at shortTimeAgoSinceNow];
+        self.dateLabel.accessibilityLabel = self.isThreadStatus ? [NSString stringWithFormat:@"%@ •%@", [status.created_at formattedDateWithFormat:@"MMM dd, yyyy, HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at timeAgoSinceNow];
     }
     
     if (status.content) {
         self.contentLabel.text = status.content;
         [self highlightUsersInContentLabel:self.contentLabel forStatus:status];
         [self.contentLabel setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];
+        self.dateLabel.accessibilityLabel = [self.dateLabel.accessibilityLabel stringByAppendingFormat:@". %@", status.content];
     }
     
     self.retootButton.enabled = ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_PRIVATE] && ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT];

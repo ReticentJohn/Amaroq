@@ -23,21 +23,22 @@ PODS:
   - DateTools (2.0.0)
   - EmojiOne (2.2.7)
   - FCFileManager (1.0.18)
-  - Firebase/Core (3.15.0):
-    - FirebaseAnalytics (= 3.7.0)
-    - FirebaseCore (= 3.5.2)
-  - Firebase/Messaging (3.15.0):
+  - Firebase/Core (3.16.0):
+    - FirebaseAnalytics (= 3.8.0)
+    - FirebaseCore (= 3.6.0)
+  - Firebase/Messaging (3.16.0):
     - Firebase/Core
-    - FirebaseMessaging (= 1.2.2)
-  - FirebaseAnalytics (3.7.0):
-    - FirebaseCore (~> 3.5)
+    - FirebaseMessaging (= 1.2.3)
+  - FirebaseAnalytics (3.8.0):
+    - FirebaseCore (~> 3.6)
     - FirebaseInstanceID (~> 1.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseCore (3.5.2):
+  - FirebaseCore (3.6.0):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseInstanceID (1.0.9)
-  - FirebaseMessaging (1.2.2):
-    - FirebaseAnalytics (~> 3.7)
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - FirebaseMessaging (1.2.3):
+    - FirebaseAnalytics (~> 3.8)
     - FirebaseInstanceID (~> 1.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - Protobuf (~> 3.1)
@@ -71,7 +72,7 @@ DEPENDENCIES:
   - AFOAuth2Manager (~> 3.0)
   - AnimatedGIFImageSerialization
   - CHTCollectionViewWaterfallLayout
-  - DateTools
+  - DateTools (from `https://github.com/ReticentJohn/DateTools.git`, branch `master`)
   - EmojiOne (from `DireFloof/Vendor/Emojione/emojione.podspec`)
   - FCFileManager
   - Firebase/Core
@@ -88,6 +89,9 @@ DEPENDENCIES:
   - YLProgressBar (~> 3.10.1)
 
 EXTERNAL SOURCES:
+  DateTools:
+    :branch: master
+    :git: https://github.com/ReticentJohn/DateTools.git
   EmojiOne:
     :podspec: DireFloof/Vendor/Emojione/emojione.podspec
   GMImagePicker:
@@ -103,6 +107,9 @@ EXTERNAL SOURCES:
     :podspec: https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec
 
 CHECKOUT OPTIONS:
+  DateTools:
+    :commit: 2dfe9baeff0f8df60853800492965abe4f19513c
+    :git: https://github.com/ReticentJohn/DateTools.git
   EmojiOne:
     :commit: 233b51f39209579ee35290734195dbf5494637d4
     :git: https://github.com/ReticentJohn/emojione.git
@@ -127,11 +134,11 @@ SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   EmojiOne: 2d4072ac074090afdf7af9a1d47a757407a57882
   FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
-  Firebase: 2b1cdfba1cda8589f32904a697cc753322bff9d8
-  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
-  FirebaseCore: a024587e43778508700af8c6b1209f7c4516ba02
-  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
-  FirebaseMessaging: df8267f378580a24174ce7861233aa11d5c90109
+  Firebase: 21bf4a89d3f01bfbe11adc3a5d934a4a3d3a5fd6
+  FirebaseAnalytics: 920e46455f27b0a52a80907a6d9b73ee4bd1c635
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  FirebaseMessaging: 753d05a925e9eb8eadd09a0ffc9b808578b72fac
   GMImagePicker: 6438a6764d6280b1dbf19b59140313f5a73daeeb
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GPUImage: bd7e201b9aa91e85f401ed7a6d9867a07a404693
@@ -147,6 +154,6 @@ SPEC CHECKSUMS:
   twitter-text: 7041d00e0f61ed58ab9413e72950f098de858b5c
   YLProgressBar: 763ad9be70b8de5ab98a3fab27953f3771869e3d
 
-PODFILE CHECKSUM: 5e74a98c0d644af6be930e6947f5a41bd2806045
+PODFILE CHECKSUM: 016dbda5f0aeb3624ef9cbc187867dc3ee539f51
 
 COCOAPODS: 1.2.0

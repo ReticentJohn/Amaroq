@@ -71,7 +71,9 @@
 		047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047ACB5F1E73469600CC092B /* DWNavigationViewController.m */; };
 		0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */; };
 		0485B97D1E55685F0063B2B8 /* DWIntrinsicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */; };
+		0499677E1EAE94AE0091D17B /* DWMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */; };
 		04AAFB6A1E726029009E15B2 /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 04AAFB691E726029009E15B2 /* PrivacyPolicy.html */; };
+		04AE6A9F1EA9437C00E64477 /* DWInstancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */; };
 		04BEC3A21E56869200A62C3B /* MSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEC3A11E56869200A62C3B /* MSNotification.m */; };
 		04C935081E4AA9A5004376F3 /* MSTimelineStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C935071E4AA9A5004376F3 /* MSTimelineStore.m */; };
 		04C9350B1E4BB520004376F3 /* MSStatusStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9350A1E4BB520004376F3 /* MSStatusStore.m */; };
@@ -86,6 +88,10 @@
 		04EC14021E46A966000E15A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC14001E46A966000E15A6 /* LaunchScreen.storyboard */; };
 		04EC140D1E46A966000E15A6 /* DireFloofTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC140C1E46A966000E15A6 /* DireFloofTests.m */; };
 		04EC14181E46A966000E15A6 /* DireFloofUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC14171E46A966000E15A6 /* DireFloofUITests.m */; };
+		04F0D6E41EABD09F00DFF8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6E61EABD09F00DFF8BB /* InfoPlist.strings */; };
+		04F0D6E91EABD0A000DFF8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6EB1EABD0A000DFF8BB /* InfoPlist.strings */; };
+		04F0D6EE1EABD0A100DFF8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6F01EABD0A100DFF8BB /* InfoPlist.strings */; };
+		04F0D6F31EABD0A100DFF8BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6F51EABD0A100DFF8BB /* Localizable.strings */; };
 		04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */; };
 		04FE35F91E627E5600E34407 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FE35F81E627E5600E34407 /* Settings.bundle */; };
 		4549FEEE336A754F3DD7B9CB /* libPods-DireFloofUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */; };
@@ -217,7 +223,29 @@
 		0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMediaCollectionViewCell.m; sourceTree = "<group>"; };
 		0485B97B1E55685F0063B2B8 /* DWIntrinsicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWIntrinsicCollectionView.h; sourceTree = "<group>"; };
 		0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWIntrinsicCollectionView.m; sourceTree = "<group>"; };
+		049967761EAE53770091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
+		049967771EAE53780091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967781EAE53790091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		049967791EAE53790091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0499677A1EAE537A0091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0499677B1EAE537A0091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0499677C1EAE94AE0091D17B /* DWMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMenuTableViewCell.h; sourceTree = "<group>"; };
+		0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMenuTableViewCell.m; sourceTree = "<group>"; };
+		0499677F1EAEACA50091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
+		049967801EAEACA60091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967811EAEACA70091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		049967821EAEACA70091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967831EAEACA80091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967841EAEACA80091D17B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		049967851EAEB1140091D17B /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Main.strings; sourceTree = "<group>"; };
+		049967861EAEB1150091D17B /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967871EAEB1150091D17B /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		049967881EAEB1150091D17B /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		049967891EAEB1160091D17B /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0499678A1EAEB1160091D17B /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04AAFB691E726029009E15B2 /* PrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PrivacyPolicy.html; sourceTree = "<group>"; };
+		04AE6A9D1EA9437C00E64477 /* DWInstancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWInstancesViewController.h; sourceTree = "<group>"; };
+		04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWInstancesViewController.m; sourceTree = "<group>"; };
 		04BEC3A01E56869200A62C3B /* MSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNotification.h; sourceTree = "<group>"; };
 		04BEC3A11E56869200A62C3B /* MSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNotification.m; sourceTree = "<group>"; };
 		04C935061E4AA9A5004376F3 /* MSTimelineStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimelineStore.h; sourceTree = "<group>"; };
@@ -246,6 +274,12 @@
 		04EC14131E46A966000E15A6 /* DireFloofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DireFloofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EC14171E46A966000E15A6 /* DireFloofUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DireFloofUITests.m; sourceTree = "<group>"; };
 		04EC14191E46A966000E15A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F0D6DE1EABD07700DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		04F0D6DF1EABD07800DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04F0D6E51EABD09F00DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04F0D6EA1EABD0A000DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04F0D6EF1EABD0A100DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04F0D6F41EABD0A100DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04F425CD1E566DBD001A11C0 /* DWNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationsViewController.h; sourceTree = "<group>"; };
 		04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationsViewController.m; sourceTree = "<group>"; };
 		04FE35F81E627E5600E34407 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -356,6 +390,10 @@
 				04DA37F71E665F0B0059A2A6 /* DWBlockedUsersViewController.m */,
 				0408CABD1E7208B3009A893D /* DWAboutViewController.h */,
 				0408CABE1E7208B3009A893D /* DWAboutViewController.m */,
+				04AE6A9D1EA9437C00E64477 /* DWInstancesViewController.h */,
+				04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */,
+				0499677C1EAE94AE0091D17B /* DWMenuTableViewCell.h */,
+				0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -553,6 +591,8 @@
 		04EC13EF1E46A966000E15A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04F0D6F51EABD0A100DFF8BB /* Localizable.strings */,
+				04F0D6E61EABD09F00DFF8BB /* InfoPlist.strings */,
 				0469EA771E75B50200492AF5 /* GoogleService-Info.plist */,
 				04EC14031E46A966000E15A6 /* Info.plist */,
 				04EC13F01E46A966000E15A6 /* main.m */,
@@ -566,6 +606,7 @@
 		04EC140B1E46A966000E15A6 /* DireFloofTests */ = {
 			isa = PBXGroup;
 			children = (
+				04F0D6EB1EABD0A000DFF8BB /* InfoPlist.strings */,
 				04EC140C1E46A966000E15A6 /* DireFloofTests.m */,
 				04EC140E1E46A966000E15A6 /* Info.plist */,
 			);
@@ -575,6 +616,7 @@
 		04EC14161E46A966000E15A6 /* DireFloofUITests */ = {
 			isa = PBXGroup;
 			children = (
+				04F0D6F01EABD0A100DFF8BB /* InfoPlist.strings */,
 				04EC14171E46A966000E15A6 /* DireFloofUITests.m */,
 				04EC14191E46A966000E15A6 /* Info.plist */,
 			);
@@ -750,6 +792,7 @@
 				046BF20F1E7712EE00F01C50 /* OpenSans-ExtraBold.ttf in Resources */,
 				0431551A1E52945B0066C511 /* Roboto-BoldItalic.ttf in Resources */,
 				043155171E52945B0066C511 /* Roboto-BlackItalic.ttf in Resources */,
+				04F0D6F31EABD0A100DFF8BB /* Localizable.strings in Resources */,
 				0431551C1E52945B0066C511 /* Roboto-CondensedItalic.ttf in Resources */,
 				046BF2121E7712EE00F01C50 /* OpenSans-Light.ttf in Resources */,
 				043155191E52945B0066C511 /* Roboto-BoldCondensedItalic.ttf in Resources */,
@@ -764,6 +807,7 @@
 				0431551D1E52945B0066C511 /* Roboto-Italic.ttf in Resources */,
 				043155161E52945B0066C511 /* Roboto-Black.ttf in Resources */,
 				046BF2161E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				04F0D6E41EABD09F00DFF8BB /* InfoPlist.strings in Resources */,
 				0469EA781E75B50200492AF5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,6 +816,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F0D6E91EABD0A000DFF8BB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +824,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F0D6EE1EABD0A100DFF8BB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,7 +843,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\n#  update_build_number.sh\n#  Usage: `update_build_number.sh [branch]`\n#  Run this script after the 'Copy Bundle Resources' build phase\n#  Ref: http://tgoode.com/2014/06/05/sensible-way-increment-bundle-version-cfbundleversion-xcode/\n\nbranch=${1:-'staging'}\nbuildNumber=$(expr $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))\necho \"Updating build number to $buildNumber using branch '$branch'.\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ -f \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi";
+			shellScript = "#!/bin/bash\n\n#  update_build_number.sh\n#  Usage: `update_build_number.sh [branch]`\n#  Run this script after the 'Copy Bundle Resources' build phase\n#  Ref: http://tgoode.com/2014/06/05/sensible-way-increment-bundle-version-cfbundleversion-xcode/\n\nbranch=${1:-'staging'}\nbuildNumber=$(expr 311 + $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))\necho \"Updating build number to $buildNumber using branch '$branch'.\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ -f \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi";
 		};
 		2547B88AC0EC2B9633FE24DD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -956,6 +1002,7 @@
 				043154F51E50F6C70066C511 /* MSMention.m in Sources */,
 				0411D5CB1E66038B00CED5A6 /* DWMenuViewController.m in Sources */,
 				0431552B1E540A7A0066C511 /* DWTabBarController.m in Sources */,
+				04AE6A9F1EA9437C00E64477 /* DWInstancesViewController.m in Sources */,
 				04C9350B1E4BB520004376F3 /* MSStatusStore.m in Sources */,
 				04610BE41E54E1D80023763D /* DWTimelineTableViewCell.m in Sources */,
 				043154E31E5005D20066C511 /* MSUserStore.m in Sources */,
@@ -981,6 +1028,7 @@
 				04E6A2461E7480F200838130 /* UIImage+color.m in Sources */,
 				04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */,
 				0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */,
+				0499677E1EAE94AE0091D17B /* DWMenuTableViewCell.m in Sources */,
 				043154F81E50F7650066C511 /* MSApplication.m in Sources */,
 				04DA37F81E665F0B0059A2A6 /* DWBlockedUsersViewController.m in Sources */,
 				0411D1621E6397B600CED5A6 /* DWTimelineViewController.m in Sources */,
@@ -1028,6 +1076,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				04EC13F91E46A966000E15A6 /* Base */,
+				04F0D6DE1EABD07700DFF8BB /* ja */,
+				049967761EAE53770091D17B /* da */,
+				0499677F1EAEACA50091D17B /* sv */,
+				049967851EAEB1140091D17B /* nb */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1036,8 +1088,56 @@
 			isa = PBXVariantGroup;
 			children = (
 				04EC14011E46A966000E15A6 /* Base */,
+				04F0D6DF1EABD07800DFF8BB /* ja */,
+				049967781EAE53790091D17B /* da */,
+				049967811EAEACA70091D17B /* sv */,
+				049967871EAEB1150091D17B /* nb */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04F0D6E61EABD09F00DFF8BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6E51EABD09F00DFF8BB /* ja */,
+				049967771EAE53780091D17B /* da */,
+				049967801EAEACA60091D17B /* sv */,
+				049967861EAEB1150091D17B /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04F0D6EB1EABD0A000DFF8BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6EA1EABD0A000DFF8BB /* ja */,
+				049967791EAE53790091D17B /* da */,
+				049967821EAEACA70091D17B /* sv */,
+				049967881EAEB1150091D17B /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04F0D6F01EABD0A100DFF8BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6EF1EABD0A100DFF8BB /* ja */,
+				0499677A1EAE537A0091D17B /* da */,
+				049967831EAEACA80091D17B /* sv */,
+				049967891EAEB1160091D17B /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04F0D6F51EABD0A100DFF8BB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6F41EABD0A100DFF8BB /* ja */,
+				0499677B1EAE537A0091D17B /* da */,
+				049967841EAEACA80091D17B /* sv */,
+				0499678A1EAEB1160091D17B /* nb */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

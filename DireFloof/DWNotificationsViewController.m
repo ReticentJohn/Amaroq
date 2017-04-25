@@ -83,8 +83,12 @@
 {
     [super viewWillAppear:animated];
     
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_REFRESH_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 
 
@@ -104,13 +108,21 @@
 {
     [super viewWillDisappear:animated];
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:DW_NEEDS_REFRESH_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
+
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 
@@ -170,7 +182,7 @@
             selectedAccount = selectedNotification.account;
         }
         
-        DWProfileViewController *destinationViewController = segue.destinationViewController;
+        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
         destinationViewController.account = selectedAccount;
     }
     else if ([segue.identifier isEqualToString:@"ThreadSegue"])
@@ -389,6 +401,15 @@
         }
 
     }];
+}
+
+
+
+- (void)clearData
+{
+    [self.navigationController popToRootViewControllerAnimated:NO];
+    [[DWNotificationStore sharedStore] setNotificationTimeline:nil];
+    [self.tableView reloadData];
 }
 
 

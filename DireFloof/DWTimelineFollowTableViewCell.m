@@ -54,6 +54,7 @@
                 if (success) {
                     self.followButton.selected = YES;
                     self.followButton.tintColor = DW_BLUE_COLOR;
+                    self.followButton.accessibilityLabel = NSLocalizedString(@"Unmute", @"Unmute");
                 }
                 else
                 {
@@ -76,6 +77,7 @@
                 if (success) {
                     self.followButton.selected = NO;
                     self.followButton.tintColor = DW_LINK_TINT_COLOR;
+                    self.followButton.accessibilityLabel = NSLocalizedString(@"Mute", @"Mute");
                 }
                 else
                 {
@@ -103,6 +105,7 @@
 
                     self.followButton.selected = YES;
                     self.followButton.tintColor = DW_BLUE_COLOR;
+                    self.followButton.accessibilityLabel = NSLocalizedString(@"Unfollow", @"Unfollow");
                 }
                 else
                 {
@@ -120,6 +123,10 @@
                             
                             if (requested) {
                                 [self.followButton setImage:[UIImage imageNamed:@"HourglassIcon"] forState:UIControlStateNormal];
+                            }
+                            else
+                            {
+                                self.followButton.accessibilityLabel = following ? NSLocalizedString(@"Unfollow", @"Unfollow") : NSLocalizedString(@"Follow", @"Follow");
                             }
                         }
                         else
@@ -141,6 +148,7 @@
                         if (success) {
                             self.followButton.selected = YES;
                             self.followButton.tintColor = DW_BLUE_COLOR;
+                            self.followButton.accessibilityLabel = NSLocalizedString(@"Unfollow", @"Unfollow");
                         }
                         else
                         {
@@ -157,6 +165,10 @@
                                     
                                     if (requested) {
                                         [self.followButton setImage:[UIImage imageNamed:@"HourglassIcon"] forState:UIControlStateNormal];
+                                    }
+                                    else
+                                    {
+                                        self.followButton.accessibilityLabel = following ? NSLocalizedString(@"Unfollow", @"Unfollow") : NSLocalizedString(@"Follow", @"Follow");
                                     }
                                 }
                                 else
@@ -182,6 +194,10 @@
                             
                             if (requested) {
                                 [self.followButton setImage:[UIImage imageNamed:@"HourglassIcon"] forState:UIControlStateNormal];
+                            }
+                            else
+                            {
+                                self.followButton.accessibilityLabel = following ? NSLocalizedString(@"Unfollow", @"Unfollow") : NSLocalizedString(@"Follow", @"Follow");
                             }
                         }
                         else
@@ -209,7 +225,8 @@
                         self.followButton.tintColor = following || blocking ? DW_BLUE_COLOR : DW_LINK_TINT_COLOR;
                         [self.followButton setImage:(blocking ? [UIImage imageNamed:@"UnblockIcon"] : [UIImage imageNamed:@"UnfollowUserIcon"]) forState:UIControlStateSelected];
                         [self.followButton setImage:[UIImage imageNamed:@"FollowUserIcon"] forState:UIControlStateNormal];
-                        
+                        self.followButton.accessibilityLabel = blocking ? NSLocalizedString(@"Unblock", @"Unblock") : following ? NSLocalizedString(@"Follow", @"Follow") : NSLocalizedString(@"Unfollow", @"Unfollow");
+
                         self.loadedFollowStatus = YES;
                     }
                 }];
@@ -236,6 +253,7 @@
             if (success) {
                 self.followButton.selected = NO;
                 self.followButton.tintColor = DW_LINK_TINT_COLOR;
+                self.followButton.accessibilityLabel = NSLocalizedString(@"Follow", @"Follow");
             }
             else
             {
@@ -365,6 +383,7 @@
                         self.followButton.selected = following || blocking;
                         self.followButton.tintColor = following || blocking ? DW_BLUE_COLOR : DW_LINK_TINT_COLOR;
                         [self.followButton setImage:(blocking ? [UIImage imageNamed:@"UnblockIcon"] : [UIImage imageNamed:@"UnfollowUserIcon"]) forState:UIControlStateSelected];
+                        self.followButton.accessibilityLabel = blocking ? NSLocalizedString(@"Unblock", @"Unblock") : following ? NSLocalizedString(@"Follow", @"Follow") : NSLocalizedString(@"Unfollow", @"Unfollow");
                     }
                     
                     self.loadedFollowStatus = YES;
@@ -380,6 +399,7 @@
         self.followButton.selected = YES;
         [self.followButton setImage:[UIImage imageNamed:@"MuteIcon"] forState:UIControlStateSelected];
         [self.followButton setImage:[UIImage imageNamed:@"UnmuteIcon"] forState:UIControlStateNormal];
+        self.followButton.accessibilityLabel = NSLocalizedString(@"Unmute", @"Unmute");
         self.loadedFollowStatus = YES;
     }
     else if (!self.isRequest)
@@ -387,6 +407,7 @@
         self.followButton.tintColor = DW_BLUE_COLOR;
         self.followButton.selected = YES;
         [self.followButton setImage:[UIImage imageNamed:@"UnblockIcon"] forState:UIControlStateSelected];
+        self.followButton.accessibilityLabel = NSLocalizedString(@"Unblock", @"Unblock");
         self.loadedFollowStatus = YES;
         self.isBlocked = YES;
     }

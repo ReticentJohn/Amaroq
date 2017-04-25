@@ -32,7 +32,7 @@
             if ([tmp isEqualToString:@"<br /"] || [tmp isEqualToString:@"<br"])
                 [pureStr appendString:@"\n"];
             if ([tmp isEqualToString:@"</p"] && scanner.scanLocation + 1 != self.length) {
-                [pureStr appendString:@"\n"];
+                [pureStr appendString:@"\n\n"];
             }
         }
         

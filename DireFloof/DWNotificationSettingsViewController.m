@@ -12,6 +12,7 @@
 #import "DWNotificationSettingsViewController.h"
 #import "DWSettingStore.h"
 #import "DWConstants.h"
+#import "DWMenuTableViewCell.h"
 
 typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     DWMenuRowTypeFollowers = 0,
@@ -81,7 +82,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
+    DWMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuCell"];
     
     [self configureCell:cell atIndexPath:indexPath];
     
@@ -125,19 +126,19 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
 }
 
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(DWMenuTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    cell.imageView.image = nil;
-    cell.textLabel.text = [self.menuItems objectAtIndex:indexPath.row];
-    cell.detailTextLabel.text = nil;
+    cell.titleImageView.image = nil;
+    cell.titleLabel.text = [self.menuItems objectAtIndex:indexPath.row];
+    cell.detailTitleLabel.text = nil;
     
-    cell.textLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-    cell.textLabel.numberOfLines = 0;
-    cell.detailTextLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-    cell.detailTextLabel.numberOfLines = 0;
+    cell.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    cell.titleLabel.numberOfLines = 0;
+    cell.detailTitleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+    cell.detailTitleLabel.numberOfLines = 0;
     
-    cell.textLabel.textColor = [UIColor whiteColor];
-    cell.detailTextLabel.textColor = DW_LINK_TINT_COLOR;
+    cell.titleLabel.textColor = [UIColor whiteColor];
+    cell.detailTitleLabel.textColor = DW_LINK_TINT_COLOR;
     
     switch (indexPath.row) {
         case DWMenuRowTypeFollowers:
