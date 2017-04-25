@@ -1,5 +1,5 @@
 /* or 1 video */
-" or 1 video" = "eller 1 video";
+" or 1 video" = " eller 1 video";
 
 /* ACCOUNT */
 "ACCOUNT" = "Konto";
@@ -70,6 +70,9 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
 
 /* Direct */
 "Direct" = "Direkt";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "Direkt: Bara synlig för dig och @nämnda användare";
 
 /* Disable gif auto-playback */
 "Disable gif auto-playback" = "Stäng av GIF autouppspelning";
@@ -189,7 +192,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
 "Receive mention notifications" = "Ta emot notis om omnämnande";
 
 /* Receive new follower notifications */
-"Receive new follower notifications" = "Ta emot notis nya följare";
+"Receive new follower notifications" = "Ta emot notis om nya följare";
 
 /* Report */
 "Report" = "Rapporterar";
@@ -237,7 +240,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
 "You have" = "";
 
 /* boosted */
-"boosted" = "boostad";
+"boosted" = "boostade";
 
 /* boosted your status */
 "boosted your status" = "boostade din status";
