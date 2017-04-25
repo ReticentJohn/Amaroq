@@ -1,30 +1,30 @@
 /* No comment provided by engineer. */
- "%d days ago" = "%d dage siden";
- 
- /* No comment provided by engineer. */
- "%d hours ago" = "%d timer siden";
- 
- /* No comment provided by engineer. */
- "%d minutes ago" = "%d minutter siden";
- 
- /* No comment provided by engineer. */
- "%d months ago" = "%d måneder siden";
- 
- /* No comment provided by engineer. */
- "%d seconds ago" = "%d sekunder siden";
- 
- /* No comment provided by engineer. */
- "%d weeks ago" = "%d uger siden";
- 
- /* No comment provided by engineer. */
- "%d years ago" = "%d år siden";
- 
- /* No comment provided by engineer. */
- "A minute ago" = "Et minut siden";
- 
- /* No comment provided by engineer. */
- "An hour ago" = "En time siden";
- 
+"%d dage siden" = "%d dage siden";
+
+/* No comment provided by engineer. */
+"%d timer siden" = "%d timer siden";
+
+/* No comment provided by engineer. */
+"%d minutter siden" = "%d minutter siden";
+
+/* No comment provided by engineer. */
+"%d måneder siden" = "%d måneder siden";
+
+/* No comment provided by engineer. */
+"%d seconds siden" = "%d sekunder siden";
+
+/* No comment provided by engineer. */
+"%d weeks siden" = "%d uger siden";
+
+/* No comment provided by engineer. */
+"%d years siden" = "%d år siden";
+
+/* No comment provided by engineer. */
+"A minute siden" = "Et minut siden";
+
+/* No comment provided by engineer. */
+"An hour siden" = "En time siden";
+
 /* No comment provided by engineer. */
 "Just now" = "Lige nu";
 
@@ -32,7 +32,7 @@
 "Last month" = "Sidste måned";
 
 /* No comment provided by engineer. */
-"Last week" = "Sidste uge";
+"Last week" = "Sidste måned";
 
 /* No comment provided by engineer. */
 "Last year" = "Sidste år";
@@ -41,22 +41,31 @@
 "Yesterday" = "I går";
 
 /* No comment provided by engineer. */
-"1 year ago" = "1 år siden";
+"1 year siden" = "1 år siden";
 
 /* No comment provided by engineer. */
-"1 month ago" = "1 måned siden";
+"1 måned siden" = "1 måned siden";
 
 /* No comment provided by engineer. */
-"1 week ago" = "1 uge siden";
+"1 week siden" = "1 uge siden";
 
 /* No comment provided by engineer. */
-"1 day ago" = "1 dag siden";
+"1 day siden" = "1 dag siden";
 
 /* No comment provided by engineer. */
-"This morning" = "Her til morgen";
+"1 hour siden" = "1 time siden";
 
 /* No comment provided by engineer. */
-"This afternoon" = "Her til eftermiddag";
+"1 minute siden" = "1 minut siden";
+
+/* No comment provided by engineer. */
+"1 second siden" = "1 sekund siden";
+
+/* No comment provided by engineer. */
+"This morning" = "I morges";
+
+/* No comment provided by engineer. */
+"This afternoon" = "I eftermiddags";
 
 /* No comment provided by engineer. */
 "Today" = "I dag";
@@ -68,4 +77,22 @@
 "This month" = "Denne måned";
 
 /* No comment provided by engineer. */
-"This year" = "Dette år";
+"This year" = "I år";
+
+/* Short format for */
+"%dy" = "%då"; // year
+"%dM" = "%dM"; // month
+"%dw" = "%du"; // week
+"%dd" = "%dd"; // day
+"%dh" = "%dt"; // hour
+"%dm" = "%dm"; // minute
+"%ds" = "%ds"; // second
+
+/* Week format for */
+"Mon" = "Man";
+"Tue" = "Tir";
+"Wed" = "Ons";
+"Thu" = "Tor";
+"Fri" = "Fre";
+"Sat" = "Lør";
+"Sun" = "Søn";

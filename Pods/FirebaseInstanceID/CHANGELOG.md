@@ -1,3 +1,10 @@
+# 2017-03-31 -- v1.0.10
+
+- Improvements to token-fetching logic
+- Fixed some warnings in Instance ID
+- Improved error messages if Instance ID couldn't be initialized properly
+- Improvements to console logging
+
 # 2017-01-31 -- v1.0.9
 
 - Removed an error being mistakenly logged to the console.
