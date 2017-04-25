@@ -270,11 +270,21 @@
                     self.progressBlock(totalProgress);
                 }
                 
+                NSString *extension = @"";
+                if ([info objectForKey:@"PHImageFileURLKey"]) {
+                    NSURL *path = [info objectForKey:@"PHImageFileURLKey"];
+                    extension = [path pathExtension];
+                }
+                
+                NSString *filename = @"file";
+                if (extension.length) {
+                    filename = [filename stringByAppendingPathExtension:extension];
+                }
                 NSString *MIME = (__bridge NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)dataUTI, kUTTagClassMIMEType);
                 
                 [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:@"media" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                     
-                    [formData appendPartWithFileData:imageData name:@"file" fileName:@"file" mimeType:MIME];
+                    [formData appendPartWithFileData:imageData name:@"file" fileName:filename mimeType:MIME];
                 } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                     
                     totalProgress += 1.0f/(CGFloat)numberToUpload * 0.5f;
