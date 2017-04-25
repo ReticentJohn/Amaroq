@@ -61,18 +61,20 @@ IB_DESIGNABLE
     
     if ([[DWSettingStore sharedStore] showLocalTimeline]) {
         self.publicTimelineSwitch.image = [UIImage imageNamed:@"PublicIcon"];
+        self.publicTimelineSwitch.accessibilityLabel = NSLocalizedString(@"Federated timeline", @"Federated timeline");
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Local", @"Local");
     }
     else
     {
         self.publicTimelineSwitch.image = [UIImage imageNamed:@"LocalIcon"];
+        self.publicTimelineSwitch.accessibilityLabel = NSLocalizedString(@"Local timeline", @"Local timeline");
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
     }
     
     [self.navigationController.tabBarItem setImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
     [self.navigationController.tabBarItem setSelectedImage:[[DWSettingStore sharedStore] showLocalTimeline] ? [UIImage imageNamed:@"LocalIcon"] : [UIImage imageNamed:@"PublicIcon"]];
     
-        [self clearData];
+    [self clearData];
     [self configureData];
 }
 
@@ -474,11 +476,13 @@ IB_DESIGNABLE
     
     if ([[DWSettingStore sharedStore] showLocalTimeline]) {
         self.publicTimelineSwitch.image = [UIImage imageNamed:@"PublicIcon"];
+        self.publicTimelineSwitch.accessibilityLabel = NSLocalizedString(@"Federated timeline", @"Federated timeline");
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Local", @"Local");
     }
     else
     {
         self.publicTimelineSwitch.image = [UIImage imageNamed:@"LocalIcon"];
+        self.publicTimelineSwitch.accessibilityLabel = NSLocalizedString(@"Local timeline", @"Local timeline");
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
     }
 }
