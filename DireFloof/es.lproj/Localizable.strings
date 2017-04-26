@@ -1,0 +1,264 @@
+/* ACCOUNT */
+"ACCOUNT" = "CUENTA";
+
+/* About Amaroq */
+"About Amaroq" = "Acerca de Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "Acerca de tu instancia de Mastodon";
+
+/* Account preferences */
+"Account preferences" = "Prefrencias de la cuenta";
+
+/* Add instance */
+"Add instance" = "Agregar instancia";
+
+/* App settings */
+"App settings" = "Preferencias";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "¿Estás seguro de querer borrar todas tus notificaciones?";
+
+/* Awoo mode */
+"Awoo mode" = "Modo Awoo";
+
+/* Back */
+"Back" = "Volver";
+
+/* Block */
+"Block" = "Bloquear";
+
+/* Blocked users */
+"Blocked users" = "Usuarios bloqueados";
+
+/* Cancel */
+"Cancel" = "Cancelar";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "Cambia como recibes las notificaciones push";
+
+/* Clear cache */
+"Clear cache" = "Eliminar cache";
+
+/* Copy text */
+"Copy text" = "Copiar texto";
+
+/* Currently logged into: */
+"Currently logged into:" = "Sesión iniciada como:";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "NO AWOO, PENALIZACIÓN DE $350";
+
+/* Default posts to private */
+"Default posts to private" = "Estados en privado por defecto";
+
+/* Default posts to public */
+"Default posts to public" = "Estados en público por defecto";
+
+/* Delete */
+"Delete" = "Borrar";
+
+/* Direct */
+"Direct" = "Directo";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "Directo: Solo visible por ti y los usuarios @mencionados";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "Desactivar auto-reproducción de GIFs";
+
+/* Done */
+"Done" = "Hecho";
+
+/* Edit Profile */
+"Edit Profile" = "Editar perfil";
+
+/* Error */
+"Error" = "Error";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "Error al bloquear al usuario:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "Error al eliminar las notificaciones:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "Error al borrar estado:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "Error al cargar usuario:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "Error al silenciar usuario:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "Error al enviar estado:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "Error al reportar estado:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "Error al cargar tu perfil:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "Error al desbloquear usuario:";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "Error al dejar de seguir:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "Error al quitar el silencio al usuario:";
+
+/* Favorites */
+"Favorites" = "Favoritos";
+
+/* Federated */
+"Federated" = "Federado";
+
+/* Follow requests */
+"Follow requests" = "Peticiones de seguimiento";
+
+/* HASHTAG */
+"HASHTAG" = "HASHTAG";
+
+/* Hold to show */
+"Hold to show" = "Manten presionado para mostrar";
+
+/* Local */
+"Local" = "Local";
+
+/* Login request failed */
+"Login request failed" = "Fallo al iniciar sesión";
+
+/* Logout */
+"Logout" = "Cerrar sesión";
+
+/* Mention */
+"Mention" = "Mención";
+
+/* Mute */
+"Mute" = "Silenciar";
+
+/* Muted users */
+"Muted users" = "Usuarios silenciados";
+
+/* My instances */
+"My instances" = "Mis instancias";
+
+/* My profile */
+"My profile" = "Mi perfil";
+
+/* Notification settings */
+"Notification settings" = "Preferencias de notificaciones";
+
+/* OK */
+"OK" = "OK";
+
+/* Only show to followers */
+"Only show to followers" = "Solo mostrar a seguidores";
+
+/* Open in Safari */
+"Open in Safari" = "Abrir en Safari";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "Mantener para videos hasta 30 segundos de largo";
+
+/* Private */
+"Private" = "Privado";
+
+/* Private: Only visible to you, @mentioned users, and followers on your instance */
+"Private: Only visible to you, @mentioned users, and followers on your instance" = "Privado: Solo visible para ti, usuarios que @menciones y seguidores en tu instancia";
+
+/* Public */
+"Public" = "Público";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "Público: Visible a todos en el timeline local y federado";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "Recibir notificaciones de retoots";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "Recibir notificaciones de favoritos";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "Recibir notificaciones de menciones";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "Recibir notificaciones de nuevos seguidores";
+
+/* Report */
+"Report" = "Reportar";
+
+/* Select */
+"Select" = "Seleccionar";
+
+/* Select a privacy level */
+"Select a privacy level" = "Seleccionar un nivel de privacidad";
+
+/* Sensitive content */
+"Sensitive content" = "Contenido sensible";
+
+/* Share */
+"Share" = "Compartir";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "Se muestra en la historia local/federada";
+
+/* This can help older devices */
+"This can help older devices" = "Esto puede ayudar en dispositivos antíguos";
+
+/* Translate text */
+"Translate text" = "Traducir texto";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "No ha sido posible conectar a la instancia de Mastodon. Por favor prueba mas tarde o usa una instancia diferente.";
+
+/* Unblock */
+"Unblock" = "Desbloquear";
+
+/* Unlisted */
+"Unlisted" = "No listados";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "No listados: Visibles para todos, pero no se muestran en las historias local y federadas";
+
+/* Unmute */
+"Unmute" = "Dejar de silenciar";
+
+/* Video too long */
+"Video too long" = "Video demasiado largo";
+
+/* You have */
+"You have" = "Tienes";
+
+/* boosted */
+"boosted" = "retooteado";
+
+/* boosted your status */
+"boosted your status" = "ha retooteado tu estado";
+
+/* favorited your status */
+"favorited your status" = "marcó tu estado como favorito";
+
+/* followed you */
+"followed you" = "te empezó a seguir";
+
+/* image */
+"image" = "imagen";
+
+/* images */
+"images" = "imágenes";
+
+/* mentioned you */
+"mentioned you" = "te ha mencionado";
+
+/* new notifications */
+"new notifications" = "nuevas notificaciones";
+
+/* replied */
+"replied" = "respondido";
+
+/* replied to */
+"replied to" = "respondido a";
+
