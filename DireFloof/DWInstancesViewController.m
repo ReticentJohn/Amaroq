@@ -18,6 +18,8 @@
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
+@property (nonatomic, assign) BOOL isSwitchingInstances;
+
 @end
 
 @implementation DWInstancesViewController
@@ -96,6 +98,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.isSwitchingInstances) {
+        return;
+    }
+    
     if (indexPath.row >= [[[MSAppStore sharedStore] availableInstances] count]) {
         [[MSAuthStore sharedStore] requestAddInstanceAccount];
     }
@@ -103,7 +109,10 @@
     {
         NSDictionary *availableInstance = [[[MSAppStore sharedStore] availableInstances] objectAtIndex:indexPath.row];
         
+        self.isSwitchingInstances = YES;
+        
         [[MSAuthStore sharedStore] switchToInstance:[availableInstance objectForKey:MS_INSTANCE_KEY] withCompletion:^(BOOL success) {
+            self.isSwitchingInstances = NO;
             [self.tableView reloadData];
             [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
         }];

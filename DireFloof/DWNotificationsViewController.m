@@ -357,16 +357,17 @@
     [self.pageLoadingView startAnimating];
     
     [[MSNotificationStore sharedStore] getNotificationsSinceId:nil withCompletion:^(BOOL success, MSTimeline *notifications, NSError *error) {
-        
-        if (success) {
-            [self.pageLoadingView stopAnimating];
-            
-            [[DWNotificationStore sharedStore] setNotificationTimeline:notifications];
-            [self.tableView reloadData];
-        }
-        else
-        {
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (success) {
+                [self.pageLoadingView stopAnimating];
+                
+                [[DWNotificationStore sharedStore] setNotificationTimeline:notifications];
+                [self.tableView reloadData];
+            }
+            else
+            {
+            }
+        });
     }];
 }
 
@@ -382,24 +383,24 @@
         [self.tableView.refreshControl beginRefreshing];
     }
     [[MSNotificationStore sharedStore] getNotificationsSinceId:nil withCompletion:^(BOOL success, MSTimeline *notifications, NSError *error) {
-        
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-            UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
-            [refreshControl endRefreshing];
-        }
-        else
-        {
-            [self.tableView.refreshControl endRefreshing];
-        }
-        
-        if (success) {
-            [[DWNotificationStore sharedStore] setNotificationTimeline:notifications];
-            [self.tableView reloadData];
-        }
-        else
-        {
-        }
-
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                [refreshControl endRefreshing];
+            }
+            else
+            {
+                [self.tableView.refreshControl endRefreshing];
+            }
+            
+            if (success) {
+                [[DWNotificationStore sharedStore] setNotificationTimeline:notifications];
+                [self.tableView reloadData];
+            }
+            else
+            {
+            }
+        });
     }];
 }
 
@@ -421,15 +422,18 @@
         
         [[[DWNotificationStore sharedStore] notificationTimeline] loadNextPageWithCompletion:^(BOOL success, NSError *error) {
             
-            [self.pageLoadingView stopAnimating];
-            self.loadingNextPage = NO;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.pageLoadingView stopAnimating];
+                self.loadingNextPage = NO;
+                
+                if (success) {
+                    [self.tableView reloadData];
+                }
+                else
+                {
+                }
+            });
             
-            if (success) {
-                [self.tableView reloadData];
-            }
-            else
-            {
-            }
         }];
     }
     

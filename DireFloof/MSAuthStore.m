@@ -151,6 +151,10 @@
 
 - (void)unregisterForRemoteNotifications
 {
+    if (![[MSAppStore sharedStore] base_url_string] || !self.credential.accessToken) {
+        return;
+    }
+    
     NSDictionary *params = @{@"instance_url": [[MSAppStore sharedStore] base_url_string],
                              @"access_token": self.credential.accessToken};
     

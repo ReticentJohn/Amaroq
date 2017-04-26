@@ -228,12 +228,25 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     
     __block UIImageView *__avatarImageView = self.avatarImageView;
     [[MSUserStore sharedStore] getCurrentUserWithCompletion:^(BOOL success, MSAccount *user, NSError *error) {
-        [self.avatarImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? user.avatar_static : user.avatar]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
-            __avatarImageView.image = image;
-            if ([[DWSettingStore sharedStore] disableGifPlayback]) {
-                [__avatarImageView stopAnimating];
-            }
-        } failure:nil];
+        if (success) {
+            [self.avatarImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? user.avatar_static : user.avatar]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+                
+                if (image) {
+                    __avatarImageView.image = image;
+                    if ([[DWSettingStore sharedStore] disableGifPlayback]) {
+                        [__avatarImageView stopAnimating];
+                    }
+                }
+                
+            } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
+                [self configureViews];
+            }];
+        }
+        else
+        {
+            [self configureViews];
+        }
+        
     }];
 }
 
