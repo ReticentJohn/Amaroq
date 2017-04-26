@@ -216,12 +216,9 @@
             [self.cancelButton removeFromSuperview];
         }
         
-        [[MSUserStore sharedStore] getCurrentUserWithCompletion:^(BOOL success, MSAccount *user, NSError *error) {
-            if (self.loginBlock != nil) {
-                self.loginBlock([self isLoggedIn]);
-            }
-        }];
-        
+        if (self.loginBlock != nil) {
+            self.loginBlock([self isLoggedIn]);
+        }
     }
     else if ([webView.request.mainDocumentURL.absoluteString isEqualToString:[[MSAppStore sharedStore] base_url_string]] && [self isLoggedIn])
     {
@@ -302,8 +299,6 @@
     [[MSAppStore sharedStore] setMastodonInstance:instance];
     
     if ([self isLoggedIn]) {
-        
-        [[MSUserStore sharedStore] getCurrentUserWithCompletion:nil];
         
         [[DWNotificationStore sharedStore] registerForNotifications];
         

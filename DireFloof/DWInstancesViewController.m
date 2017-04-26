@@ -109,10 +109,7 @@
     {
         NSDictionary *availableInstance = [[[MSAppStore sharedStore] availableInstances] objectAtIndex:indexPath.row];
         
-        self.isSwitchingInstances = YES;
-        
         [[MSAuthStore sharedStore] switchToInstance:[availableInstance objectForKey:MS_INSTANCE_KEY] withCompletion:^(BOOL success) {
-            self.isSwitchingInstances = NO;
             [self.tableView reloadData];
             [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
         }];

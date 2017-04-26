@@ -42,30 +42,33 @@
     
     [[MSAuthStore sharedStore] login:^(BOOL success) {
         
-        self.loginButton.hidden = NO;
-        
-        [self.loginActivityIndicator stopAnimating];
-
-        if (success) {
-            if (self.addAccount) {
-                // Notify the app to clear all its contents for refresh
-                [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
-                [[DWNotificationStore sharedStore] registerForNotifications];
-                [self dismissViewControllerAnimated:YES completion:nil];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.loginButton.hidden = NO;
+            
+            [self.loginActivityIndicator stopAnimating];
+            
+            if (success) {
+                if (self.addAccount) {
+                    // Notify the app to clear all its contents for refresh
+                    [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
+                    [[DWNotificationStore sharedStore] registerForNotifications];
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                }
+                else
+                {
+                    [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+                }
             }
             else
             {
-                [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Login request failed", @"Login request failed") message:NSLocalizedString(@"Unable to connect to the Mastodon instance. Please try again later or with a different instance.", @"Unable to connect to the Mastodon instance. Please try again later or with a different instance.") preferredStyle:UIAlertControllerStyleAlert];
+                
+                [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
+                
+                [self presentViewController:alertController animated:YES completion:nil];
             }
-        }
-        else
-        {
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Login request failed", @"Login request failed") message:NSLocalizedString(@"Unable to connect to the Mastodon instance. Please try again later or with a different instance.", @"Unable to connect to the Mastodon instance. Please try again later or with a different instance.") preferredStyle:UIAlertControllerStyleAlert];
-            
-            [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
-            
-            [self presentViewController:alertController animated:YES completion:nil];
-        }
+        });
+        
     }];
 }
 
