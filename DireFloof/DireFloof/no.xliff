@@ -1540,7 +1540,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Currently logged into:">
         <source>Currently logged into:</source>
-        <target>For tiden innlogget på:</target>
+        <target>Nå pålogget:</target>
         <note>Currently logged into:</note>
       </trans-unit>
       <trans-unit id="DON'T AWOO $350 PENALTY">
@@ -1570,7 +1570,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Direct: Only visible to you and @mentioned users">
         <source>Direct: Only visible to you and @mentioned users</source>
-        <target>Direkte: Bare synlig til deg og @navngitte brukere</target>
+        <target>Direkte: Bare synlig til deg og @nevnte brukere</target>
         <note>Direct: Only visible to you and @mentioned users</note>
       </trans-unit>
       <trans-unit id="Disable gif auto-playback">
@@ -1700,7 +1700,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Muted users">
         <source>Muted users</source>
-        <target>Dempet brukere</target>
+        <target>Dempede brukere</target>
         <note>Muted users</note>
       </trans-unit>
       <trans-unit id="My instances">
