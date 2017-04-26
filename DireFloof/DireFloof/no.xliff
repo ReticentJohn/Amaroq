@@ -1580,7 +1580,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Done">
         <source>Done</source>
-        <target>Ferdig完了</target>
+        <target>Ferdig</target>
         <note>Done</note>
       </trans-unit>
       <trans-unit id="Edit Profile">
