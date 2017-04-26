@@ -1,5 +1,5 @@
 /* or 1 video */
-" or 1 video" = "eller 1 video";
+" or 1 video" = " eller 1 video";
 
 /* ACCOUNT */
 "ACCOUNT" = "KONTO";
@@ -54,7 +54,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Copy text" = "Kopier tekst";
 
 /* Currently logged into: */
-"Currently logged into:" = "For tiden innlogget på:";
+"Currently logged into:" = "Nå pålogget:";
 
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "IKKE AWOO STRAFF $350";
@@ -72,13 +72,13 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Direct" = "Direkte";
 
 /* Direct: Only visible to you and @mentioned users */
-"Direct: Only visible to you and @mentioned users" = "Direkte: Bare synlig til deg og @navngitte brukere";
+"Direct: Only visible to you and @mentioned users" = "Direkte: Bare synlig til deg og @nevnte brukere";
 
 /* Disable gif auto-playback */
 "Disable gif auto-playback" = "Slå av gif autospilling";
 
 /* Done */
-"Done" = "Ferdig完了";
+"Done" = "Ferdig";
 
 /* Edit Profile */
 "Edit Profile" = "Rediger Profil";
@@ -129,7 +129,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Follow requests" = "Følgeetterspørseler";
 
 /* HASHTAG */
-"HASHTAG" = "Emneknagg";
+"HASHTAG" = "EMNEKNAGG";
 
 /* Hold to show */
 "Hold to show" = "Hold for å vise mer";
@@ -150,7 +150,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Mute" = "Demp";
 
 /* Muted users */
-"Muted users" = "Dempet brukere";
+"Muted users" = "Dempede brukere";
 
 /* My instances */
 "My instances" = "Mine instanser";
@@ -174,7 +174,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Private" = "Private";
 
 /* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "Private: BAre synlig for deg, @nevnte brukere, og følgere på din insans";
+"Private: Only visible to you, @mentioned users, and followers on your instance" = "Private: Bare synlig for deg, @nevnte brukere, og følgere på din insans";
 
 /* Public */
 "Public" = "Offentlig";
