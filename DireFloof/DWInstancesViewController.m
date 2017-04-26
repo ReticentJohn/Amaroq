@@ -18,6 +18,8 @@
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
+@property (nonatomic, assign) BOOL isSwitchingInstances;
+
 @end
 
 @implementation DWInstancesViewController
@@ -34,9 +36,7 @@
     self.title = NSLocalizedString(@"My instances", @"My instances");
     
     [[NSNotificationCenter defaultCenter] addObserver:self.tableView selector:@selector(reloadData) name:UIContentSizeCategoryDidChangeNotification object:nil];
-
-    
-    [self.tableView reloadData];
+    [[NSNotificationCenter defaultCenter] addObserver:self.tableView selector:@selector(reloadData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 
 
@@ -45,6 +45,7 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [self.tableView reloadData];
 }
 
 
@@ -56,7 +57,7 @@
 
 - (void)dealloc
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self.tableView];
 }
 
 /*
@@ -96,6 +97,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.isSwitchingInstances) {
+        return;
+    }
+    
     if (indexPath.row >= [[[MSAppStore sharedStore] availableInstances] count]) {
         [[MSAuthStore sharedStore] requestAddInstanceAccount];
     }
@@ -104,7 +109,6 @@
         NSDictionary *availableInstance = [[[MSAppStore sharedStore] availableInstances] objectAtIndex:indexPath.row];
         
         [[MSAuthStore sharedStore] switchToInstance:[availableInstance objectForKey:MS_INSTANCE_KEY] withCompletion:^(BOOL success) {
-            [self.tableView reloadData];
             [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
         }];
     }

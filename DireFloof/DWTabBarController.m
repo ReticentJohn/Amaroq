@@ -226,14 +226,28 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         [menuOverlay autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:self.tabBar.bounds.size.width/10.0f - 20.0f];
     }
     
-    __block UIImageView *__avatarImageView = self.avatarImageView;
+    __weak UIImageView *__avatarImageView = self.avatarImageView;
+    __weak DWTabBarController *__self = self;
     [[MSUserStore sharedStore] getCurrentUserWithCompletion:^(BOOL success, MSAccount *user, NSError *error) {
-        [self.avatarImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? user.avatar_static : user.avatar]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
-            __avatarImageView.image = image;
-            if ([[DWSettingStore sharedStore] disableGifPlayback]) {
-                [__avatarImageView stopAnimating];
-            }
-        } failure:nil];
+        if (success) {
+            [self.avatarImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? user.avatar_static : user.avatar]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+                
+                if (image) {
+                    __avatarImageView.image = image;
+                    if ([[DWSettingStore sharedStore] disableGifPlayback]) {
+                        [__avatarImageView stopAnimating];
+                    }
+                }
+                
+            } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
+                [__self configureViews];
+            }];
+        }
+        else
+        {
+            [self configureViews];
+        }
+        
     }];
 }
 

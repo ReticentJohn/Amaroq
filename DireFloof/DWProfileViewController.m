@@ -234,6 +234,19 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 {
     UIAlertController *optionController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
+    [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Open in Safari", @"Open in Safari") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+            
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.account.url]];
+            
+        } else {
+            // iOS 10 or later
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.account.url] options:@{} completionHandler:nil];
+        }
+        
+    }]];
+    
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Share", @"Share") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         NSArray *activityItems = [NSArray arrayWithObject:[NSURL URLWithString:self.account.url]];
@@ -887,76 +900,89 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     
     [[MSUserStore sharedStore] getUserWithId:self.account._id withCompletion:^(BOOL success, MSAccount *user, NSError *error) {
         
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-            UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
-            [refreshControl endRefreshing];
-        }
-        else
-        {
-            [self.tableView.refreshControl endRefreshing];
-        }
-        [self.pageLoadingView stopAnimating];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                [refreshControl endRefreshing];
+            }
+            else
+            {
+                [self.tableView.refreshControl endRefreshing];
+            }
+            [self.pageLoadingView stopAnimating];
+            
+            if (success) {
+                self.account = user;
+                [self configureViews];
+            }
+            else
+            {
+            }
+        });
         
-        if (success) {
-            self.account = user;
-            [self configureViews];
-        }
-        else
-        {
-        }
         
     }];
     
     [[MSTimelineStore sharedStore] getStatusesForUserId:self.account._id withCompletion:^(BOOL success, MSTimeline *statuses, NSError *error) {
         
-        if (success) {
-            BOOL firstLoad = self.timeline == nil;
-            self.timeline = statuses;
-            
-            if (self.currentSection == DWProfileSectionTypePosts) {
-                [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (success) {
+                BOOL firstLoad = self.timeline == nil;
+                self.timeline = statuses;
                 
-                if (firstLoad) {
-                    [UIView setAnimationsEnabled:NO];
-                    [self.tableView beginUpdates];
-                    [self.tableView endUpdates];
-                    [UIView setAnimationsEnabled:YES];
+                if (self.currentSection == DWProfileSectionTypePosts) {
+                    [self.tableView reloadData];
+                    
+                    if (firstLoad) {
+                        [UIView setAnimationsEnabled:NO];
+                        [self.tableView beginUpdates];
+                        [self.tableView endUpdates];
+                        [UIView setAnimationsEnabled:YES];
+                    }
+                    
                 }
-
             }
-        }
-        else
-        {
-        }
+            else
+            {
+            }
+        });
+        
     }];
     
     [[MSUserStore sharedStore] getFollowersForUserWithId:self.account._id withCompletion:^(BOOL success, NSArray *followers, NSString *nextPageUrl, NSError *error) {
         
-        if (success) {
-            self.followers = followers;
-            self.followersNextUrl = nextPageUrl;
-            
-            if (self.currentSection == DWProfileSectionTypeFollowers) {
-                [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (success) {
+                self.followers = followers;
+                self.followersNextUrl = nextPageUrl;
+                
+                if (self.currentSection == DWProfileSectionTypeFollowers) {
+                    [self.tableView reloadData];
+                }
             }
-        }
-        else
-        {
-        }
+            else
+            {
+            }
+        });
+
     }];
     
     [[MSUserStore sharedStore] getFollowingForUserWithId:self.account._id withCompletion:^(BOOL success, NSArray *following, NSString *nextPageUrl, NSError *error) {
-        if (success) {
-            self.following = following;
-            self.followingNextUrl = nextPageUrl;
-            
-            if (self.currentSection == DWProfileSectionTypeFollowing) {
-                [self.tableView reloadData];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (success) {
+                self.following = following;
+                self.followingNextUrl = nextPageUrl;
+                
+                if (self.currentSection == DWProfileSectionTypeFollowing) {
+                    [self.tableView reloadData];
+                }
             }
-        }
-        else
-        {
-        }
+            else
+            {
+            }
+        });
+        
     }];
 }
 
@@ -987,15 +1013,18 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 
                 [self.timeline loadNextPageWithCompletion:^(BOOL success, NSError *error) {
                     
-                    [self.pageLoadingView stopAnimating];
-                    self.loadingNextTimelinePage = NO;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.pageLoadingView stopAnimating];
+                        self.loadingNextTimelinePage = NO;
+                        
+                        if (success && self.currentSection == DWProfileSectionTypePosts) {
+                            [self.tableView reloadData];
+                        }
+                        else
+                        {
+                        }
+                    });
                     
-                    if (success && self.currentSection == DWProfileSectionTypePosts) {
-                        [self.tableView reloadData];
-                    }
-                    else
-                    {
-                    }
                 }];
             }
         }
@@ -1009,20 +1038,23 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 
                 [MSUserStore loadNextPage:self.followingNextUrl withCompletion:^(NSArray *users, NSString *nextPageUrl, NSError *error) {
                     
-                    [self.pageLoadingView stopAnimating];
-                    self.loadingNextFollowingPage = NO;
-                    
-                    if (!error) {
-                        self.following = [self.following arrayByAddingObjectsFromArray:users];
-                        self.followingNextUrl = nextPageUrl;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.pageLoadingView stopAnimating];
+                        self.loadingNextFollowingPage = NO;
                         
-                        if (self.currentSection == DWProfileSectionTypeFollowing) {
-                            [self.tableView reloadData];
+                        if (!error) {
+                            self.following = [self.following arrayByAddingObjectsFromArray:users];
+                            self.followingNextUrl = nextPageUrl;
+                            
+                            if (self.currentSection == DWProfileSectionTypeFollowing) {
+                                [self.tableView reloadData];
+                            }
                         }
-                    }
-                    else
-                    {
-                    }
+                        else
+                        {
+                        }
+                    });
+                    
                 }];
             }
         }
@@ -1036,20 +1068,23 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 
                 [MSUserStore loadNextPage:self.followersNextUrl withCompletion:^(NSArray *users, NSString *nextPageUrl, NSError *error) {
                     
-                    self.loadingNextFollowersPage = NO;
-                    [self.pageLoadingView stopAnimating];
-                    
-                    if (!error) {
-                        self.followers = [self.followers arrayByAddingObjectsFromArray:users];
-                        self.followersNextUrl = nextPageUrl;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.loadingNextFollowersPage = NO;
+                        [self.pageLoadingView stopAnimating];
                         
-                        if (self.currentSection == DWProfileSectionTypeFollowers) {
-                            [self.tableView reloadData];
+                        if (!error) {
+                            self.followers = [self.followers arrayByAddingObjectsFromArray:users];
+                            self.followersNextUrl = nextPageUrl;
+                            
+                            if (self.currentSection == DWProfileSectionTypeFollowers) {
+                                [self.tableView reloadData];
+                            }
                         }
-                    }
-                    else
-                    {
-                    }
+                        else
+                        {
+                        }
+                    });
+                    
                 }];
             }
         }

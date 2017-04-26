@@ -495,128 +495,137 @@ IB_DESIGNABLE
     if (self.hashtag) {
         
         [[MSTimelineStore sharedStore] getHashtagTimelineWithHashtag:self.hashtag withCompletion:^(BOOL success, MSTimeline *timeline, NSError *error) {
-            
-            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-                UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
-                [refreshControl endRefreshing];
-            }
-            else
-            {
-                [self.tableView.refreshControl endRefreshing];
-            }
-            [self.pageLoadingView stopAnimating];
-
-            if (success) {
-                BOOL firstLoad = self.timeline == nil;
-                self.timeline = timeline;
-                [self.tableView reloadData];
-                
-                if (firstLoad) {
-                    [UIView setAnimationsEnabled:NO];
-                    [self.tableView beginUpdates];
-                    [self.tableView endUpdates];
-                    [UIView setAnimationsEnabled:YES];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                    UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                    [refreshControl endRefreshing];
                 }
-
-            }
-            else
-            {
-            }
+                else
+                {
+                    [self.tableView.refreshControl endRefreshing];
+                }
+                [self.pageLoadingView stopAnimating];
+                
+                if (success) {
+                    BOOL firstLoad = self.timeline == nil;
+                    self.timeline = timeline;
+                    [self.tableView reloadData];
+                    
+                    if (firstLoad) {
+                        [UIView setAnimationsEnabled:NO];
+                        [self.tableView beginUpdates];
+                        [self.tableView endUpdates];
+                        [UIView setAnimationsEnabled:YES];
+                    }
+                    
+                }
+                else
+                {
+                }
+            });
         }];
     }
     else if (self.favorites)
     {
         [[MSTimelineStore sharedStore] getFavoriteStatusesWithCompletion:^(BOOL success, MSTimeline *favoriteStatuses, NSError *error) {
             
-            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-                UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
-                [refreshControl endRefreshing];
-            }
-            else
-            {
-                [self.tableView.refreshControl endRefreshing];
-            }
-            [self.pageLoadingView stopAnimating];
-
-            if (success) {
-                BOOL firstLoad = self.timeline == nil;
-                self.timeline = favoriteStatuses;
-                [self.tableView reloadData];
-                
-                if (firstLoad) {
-                    [UIView setAnimationsEnabled:NO];
-                    [self.tableView beginUpdates];
-                    [self.tableView endUpdates];
-                    [UIView setAnimationsEnabled:YES];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                    UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                    [refreshControl endRefreshing];
                 }
+                else
+                {
+                    [self.tableView.refreshControl endRefreshing];
+                }
+                [self.pageLoadingView stopAnimating];
                 
-            }
-            else
-            {
-            }
+                if (success) {
+                    BOOL firstLoad = self.timeline == nil;
+                    self.timeline = favoriteStatuses;
+                    [self.tableView reloadData];
+                    
+                    if (firstLoad) {
+                        [UIView setAnimationsEnabled:NO];
+                        [self.tableView beginUpdates];
+                        [self.tableView endUpdates];
+                        [UIView setAnimationsEnabled:YES];
+                    }
+                    
+                }
+                else
+                {
+                }
+            });
+            
         }];
     }
     else if (self.threadStatus)
     {
         [[MSTimelineStore sharedStore] getThreadForStatus:self.threadStatus withCompletion:^(BOOL success, MSTimeline *statusThread, NSError *error) {
-            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-                UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
-                [refreshControl endRefreshing];
-            }
-            else
-            {
-                [self.tableView.refreshControl endRefreshing];
-            }
-            [self.pageLoadingView stopAnimating];
-            
-            if (success) {
-                BOOL firstLoad = self.timeline == nil;
-                self.timeline = statusThread;
-                [self.tableView reloadData];
-                
-                if (firstLoad) {
-                    [UIView setAnimationsEnabled:NO];
-                    [self.tableView beginUpdates];
-                    [self.tableView endUpdates];
-                    [UIView setAnimationsEnabled:YES];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                    UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                    [refreshControl endRefreshing];
                 }
+                else
+                {
+                    [self.tableView.refreshControl endRefreshing];
+                }
+                [self.pageLoadingView stopAnimating];
                 
-            }
-            else
-            {
-            }
+                if (success) {
+                    BOOL firstLoad = self.timeline == nil;
+                    self.timeline = statusThread;
+                    [self.tableView reloadData];
+                    
+                    if (firstLoad) {
+                        [UIView setAnimationsEnabled:NO];
+                        [self.tableView beginUpdates];
+                        [self.tableView endUpdates];
+                        [UIView setAnimationsEnabled:YES];
+                    }
+                    
+                }
+                else
+                {
+                }
+            });
         }];
     }
     else
     {
         [[MSTimelineStore sharedStore] getTimelineForTimelineType:(self.isPublic ? ([[DWSettingStore sharedStore] showLocalTimeline] ? MSTimelineTypeLocal : MSTimelineTypePublic) : MSTimelineTypeHome) withCompletion:^(BOOL success, MSTimeline *timeline, NSError *error) {
             
-            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-                UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
-                [refreshControl endRefreshing];
-            }
-            else
-            {
-                [self.tableView.refreshControl endRefreshing];
-            }
-            [self.pageLoadingView stopAnimating];
-
-            if (success) {
-                BOOL firstLoad = self.timeline == nil;
-                self.timeline = timeline;
-                [self.tableView reloadData];
-                
-                if (firstLoad) {
-                    [UIView setAnimationsEnabled:NO];
-                    [self.tableView beginUpdates];
-                    [self.tableView endUpdates];
-                    [UIView setAnimationsEnabled:YES];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                    UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                    [refreshControl endRefreshing];
                 }
-
-            }
-            else
-            {
-            }
+                else
+                {
+                    [self.tableView.refreshControl endRefreshing];
+                }
+                [self.pageLoadingView stopAnimating];
+                
+                if (success) {
+                    BOOL firstLoad = self.timeline == nil;
+                    self.timeline = timeline;
+                    [self.tableView reloadData];
+                    
+                    if (firstLoad) {
+                        [UIView setAnimationsEnabled:NO];
+                        [self.tableView beginUpdates];
+                        [self.tableView endUpdates];
+                        [UIView setAnimationsEnabled:YES];
+                    }
+                    
+                }
+                else
+                {
+                }
+            });
+           
         }];
     }
 }
@@ -652,16 +661,19 @@ IB_DESIGNABLE
         
         [self.timeline loadNextPageWithCompletion:^(BOOL success, NSError *error) {
             
-            [self.pageLoadingView stopAnimating];
-            self.loadingNextPage = NO;
-            
-            if (success) {
-                [self.tableView reloadData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.pageLoadingView stopAnimating];
+                self.loadingNextPage = NO;
                 
-            }
-            else
-            {
-            }
+                if (success) {
+                    [self.tableView reloadData];
+                    
+                }
+                else
+                {
+                }
+            });
+            
         }];
     }
     

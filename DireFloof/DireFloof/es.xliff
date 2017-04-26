@@ -868,11 +868,11 @@
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName">
-        <source>Amaroq</source> <target/></trans-unit>
+        <source>Amaroq</source></trans-unit>
       <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source> <target/></trans-unit>
+        <source>$(PRODUCT_NAME)</source></trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.1.0</source> <target></target></trans-unit>
+        <source>1.1.0</source></trans-unit>
     </body>
   </file>
   <file original="DireFloof/Localizable.strings" source-language="en" datatype="plaintext" target-language="es">
@@ -1158,9 +1158,9 @@
     </header>
     <body>
       <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source> <target></target></trans-unit>
+        <source>$(PRODUCT_NAME)</source></trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.0</source> <target></target></trans-unit>
+        <source>1.0</source></trans-unit>
     </body>
   </file>
   <file original="DireFloofUITests/Info.plist" source-language="en" datatype="plaintext" target-language="es">
@@ -1169,9 +1169,9 @@
     </header>
     <body>
       <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source> <target></target></trans-unit>
+        <source>$(PRODUCT_NAME)</source></trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.0</source> <target></target></trans-unit>
+        <source>1.0</source></trans-unit>
     </body>
   </file>
 </xliff>
