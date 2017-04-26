@@ -183,7 +183,7 @@
       </trans-unit>
       <trans-unit id="10V-B3-wiC.text">
         <source>FOLLOWS</source>
-        <target>FØLGINGER</target>
+        <target>FØLGER</target>
         <note>Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC";</note>
       </trans-unit>
       <trans-unit id="16m-xl-Ak4.text">
@@ -1451,7 +1451,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
     <body>
       <trans-unit id=" or 1 video">
         <source> or 1 video</source>
-        <target>eller 1 video</target>
+        <target> eller 1 video</target>
         <note>or 1 video</note>
       </trans-unit>
       <trans-unit id="ACCOUNT">
@@ -1540,7 +1540,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Currently logged into:">
         <source>Currently logged into:</source>
-        <target>For tiden innlogget på:</target>
+        <target>Nå pålogget:</target>
         <note>Currently logged into:</note>
       </trans-unit>
       <trans-unit id="DON'T AWOO $350 PENALTY">
@@ -1570,7 +1570,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Direct: Only visible to you and @mentioned users">
         <source>Direct: Only visible to you and @mentioned users</source>
-        <target>Direkte: Bare synlig til deg og @navngitte brukere</target>
+        <target>Direkte: Bare synlig til deg og @nevnte brukere</target>
         <note>Direct: Only visible to you and @mentioned users</note>
       </trans-unit>
       <trans-unit id="Disable gif auto-playback">
@@ -1580,7 +1580,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Done">
         <source>Done</source>
-        <target>Ferdig完了</target>
+        <target>Ferdig</target>
         <note>Done</note>
       </trans-unit>
       <trans-unit id="Edit Profile">
@@ -1665,7 +1665,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="HASHTAG">
         <source>HASHTAG</source>
-        <target>Emneknagg</target>
+        <target>EMNEKNAGG</target>
         <note>HASHTAG</note>
       </trans-unit>
       <trans-unit id="Hold to show">
@@ -1700,7 +1700,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Muted users">
         <source>Muted users</source>
-        <target>Dempet brukere</target>
+        <target>Dempede brukere</target>
         <note>Muted users</note>
       </trans-unit>
       <trans-unit id="My instances">
@@ -1744,7 +1744,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Private: Only visible to you, @mentioned users, and followers on your instance">
         <source>Private: Only visible to you, @mentioned users, and followers on your instance</source>
-        <target>Private: BAre synlig for deg, @nevnte brukere, og følgere på din insans</target>
+        <target>Private: Bare synlig for deg, @nevnte brukere, og følgere på din insans</target>
         <note>Private: Only visible to you, @mentioned users, and followers on your instance</note>
       </trans-unit>
       <trans-unit id="Public">
