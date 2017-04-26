@@ -1665,7 +1665,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="HASHTAG">
         <source>HASHTAG</source>
-        <target>Emneknagg</target>
+        <target>EMNEKNAGG</target>
         <note>HASHTAG</note>
       </trans-unit>
       <trans-unit id="Hold to show">
@@ -1744,7 +1744,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Private: Only visible to you, @mentioned users, and followers on your instance">
         <source>Private: Only visible to you, @mentioned users, and followers on your instance</source>
-        <target>Private: BAre synlig for deg, @nevnte brukere, og følgere på din insans</target>
+        <target>Private: Bare synlig for deg, @nevnte brukere, og følgere på din insans</target>
         <note>Private: Only visible to you, @mentioned users, and followers on your instance</note>
       </trans-unit>
       <trans-unit id="Public">
