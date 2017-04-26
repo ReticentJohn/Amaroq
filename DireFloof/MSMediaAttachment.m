@@ -65,7 +65,7 @@
         [params setObject:self.remote_url forKey:@"remote_url"];
     }
     
-    [params setObject:self.type == MSMediaTypeImage ? @"image" : @"video" forKey:@"type"];
+    [params setObject:self.type == MSMediaTypeImage ? @"image" : self.type == MSMediaTypeGifv ? @"gifv" : @"video" forKey:@"type"];
         
     return params;
 }
