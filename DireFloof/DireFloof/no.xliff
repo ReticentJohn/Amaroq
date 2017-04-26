@@ -183,7 +183,7 @@
       </trans-unit>
       <trans-unit id="10V-B3-wiC.text">
         <source>FOLLOWS</source>
-        <target>FØLGINGER</target>
+        <target>FØLGER</target>
         <note>Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC";</note>
       </trans-unit>
       <trans-unit id="16m-xl-Ak4.text">
