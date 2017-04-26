@@ -1451,7 +1451,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
     <body>
       <trans-unit id=" or 1 video">
         <source> or 1 video</source>
-        <target>eller 1 video</target>
+        <target> eller 1 video</target>
         <note>or 1 video</note>
       </trans-unit>
       <trans-unit id="ACCOUNT">
