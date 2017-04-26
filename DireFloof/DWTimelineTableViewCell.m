@@ -124,20 +124,24 @@
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Open in Safari", @"Open in Safari") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
+        MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
+        
         if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
             
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.status.url]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:status.url]];
             
         } else {
             // iOS 10 or later
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.status.url] options:@{} completionHandler:nil];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:status.url] options:@{} completionHandler:nil];
         }
         
     }]];
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Share", @"Share") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
-        NSArray *activityItems = [NSArray arrayWithObject:[NSURL URLWithString:self.status.url]];
+        MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
+
+        NSArray *activityItems = [NSArray arrayWithObject:[NSURL URLWithString:status.url]];
         UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
         
         [[[UIApplication sharedApplication] topController] presentViewController:activityViewController animated:YES completion:nil];
