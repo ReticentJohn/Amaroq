@@ -1,0 +1,271 @@
+/* or 1 video */
+" or 1 video" = " oder 1 Video";
+
+/* ACCOUNT */
+"ACCOUNT" = "KONTO";
+
+/* About Amaroq */
+"About Amaroq" = "Über Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "Über Deine Mastodon Instanz";
+
+/* Account preferences */
+"Account preferences" = "Konto-Einstellungen";
+
+/* Add instance */
+"Add instance" = "Instanz hinzufügen";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq wurde nach der Inuit Legende eines gigantischen Wolfes benannt, was zu unserem Freund, dem Mastodon, passt. Mögen wir alle durchs Fediversum heulen!
+
+Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dringend eine mobile Anwendung für unsere iOS Freunde gebraucht hat. Hast Du einen Verbesserungsvorschlag oder einen Fehler gefunden? Brauchst Du Unterstüzung? Du kannst uns unter amaroq.feedback@gmail.com erreichen. Der Entwickler ist unter @eurasierboy auf der mastodon.social Instanz erreichbar. Fröhliches Tröten!";
+
+/* App settings */
+"App settings" = "App Einstellungen";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "Möchtest Du wirklich alle Einstellungen löschen?";
+
+/* Awoo mode */
+"Awoo mode" = "Awoo Modus";
+
+/* Back */
+"Back" = "Zurück";
+
+/* Block */
+"Block" = "Blockieren";
+
+/* Blocked users */
+"Blocked users" = "Blockierte User";
+
+/* Cancel */
+"Cancel" = "Abbrechen";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "Ändern der Push Benachrichtigungen";
+
+/* Clear cache */
+"Clear cache" = "Cache löschen";
+
+/* Copy text */
+"Copy text" = "Text kopieren";
+
+/* Currently logged into: */
+"Currently logged into:" = "Zur Zeit angemeldete Benutzer:";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "DON'T AWOO $350 PENALTY";
+
+/* Default posts to private */
+"Default posts to private" = "Beiträge immer privat posten";
+
+/* Default posts to public */
+"Default posts to public" = "Beiträge immer öffentlich posten";
+
+/* Delete */
+"Delete" = "Löschen";
+
+/* Direct */
+"Direct" = "Direkt";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "Direkt: Nur für Dich und @Benutzer sichtbar";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "Automatische GIF Wiedergabe abschalten";
+
+/* Done */
+"Done" = "Fertig";
+
+/* Edit Profile */
+"Edit Profile" = "Profil bearbeiten";
+
+/* Error */
+"Error" = "Fehler";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "Blocken des Users fehlgeschlagen. Fehler:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "Benachrichtigungen leeren fehlgeschlagen. Fehler:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "Status löschen fehlgeschlagen. Fehler:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "Lades des Benutzers ist fehlgeschlagen. Fehler:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "Stumm schalten des Benutzers ist fehlgeschlagen. Fehler:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "Veröffentlichen des Status ist fehlgeschlagen. Fehler:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "Konnte Status nicht melden. Fehler:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "Konnte das Profil nicht abrufen. Fehler:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "Konnte die Benutzer-Sperre nicht aufheben. Fehler:";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "Konnte dem User nicht entfolgen. Fehler:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "Konnte die Stumm-Schaltung des Users nicht aufheben. Fehler:";
+
+/* Favorites */
+"Favorites" = "Favoriten";
+
+/* Federated */
+"Federated" = "Öffentlich";
+
+/* Follow requests */
+"Follow requests" = "Follow Anfragen";
+
+/* HASHTAG */
+"HASHTAG" = "HASHTAG";
+
+/* Hold to show */
+"Hold to show" = "Gedrückt halten zum Anzeigen";
+
+/* Local */
+"Local" = "Lokal";
+
+/* Login request failed */
+"Login request failed" = "Anmeldeversuch fehlgeschlagen";
+
+/* Logout */
+"Logout" = "Abmelden";
+
+/* Mention */
+"Mention" = "Erwähnung";
+
+/* Mute */
+"Mute" = "Stumm";
+
+/* Muted users */
+"Muted users" = "Stumme Benutzer";
+
+/* My instances */
+"My instances" = "Meine Instanzen";
+
+/* My profile */
+"My profile" = "Mein Profil";
+
+/* Notification settings */
+"Notification settings" = "Benachrichtigungs Einstellungen";
+
+/* Only show to followers */
+"Only show to followers" = "Nur den Followern anzeigen";
+
+/* Open in Safari */
+"Open in Safari" = "In Safari öffnen";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "Bitte verwende nur Videos mit bis zu 30 Sekunden";
+
+/* Private */
+"Private" = "Privat";
+
+/* Private: Only visible to you, @mentioned users, and followers on your instance */
+"Private: Only visible to you, @mentioned users, and followers on your instance" = "Privat: Nur für Dich sichtbar, @Benutzer und Follower auf Deiner Instanz";
+
+/* Public */
+"Public" = "Öffentlich";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "Öffentlich: Für alle in der lokalen und öffentlichen Timeline sichtbar";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "Benachrichtigung über Boost erhalten";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "Benachrichtigung über Favorit erhalten";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "Benachrichtigung für Erwähnung erhalten";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "Benachrichtigung für neue Follower erhalten";
+
+/* Report */
+"Report" = "Melden";
+
+/* Select */
+"Select" = "";
+
+/* Select a privacy level */
+"Select a privacy level" = "Privatsphären Einstellung auswählen";
+
+/* Sensitive content */
+"Sensitive content" = "Heikler Inhalt";
+
+/* Share */
+"Share" = "Teilen";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "In lokaler/öffentlicher Timeline anzeigen";
+
+/* This can help older devices */
+"This can help older devices" = "Das kann auf älteren Geräten helfen";
+
+/* Translate text */
+"Translate text" = "Text übersetzen";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "Verbindung zur Mastodon Instanz nicht möglich. Bitte versuche es später nochmal, oder auf einer anderen Instanz.";
+
+/* Unblock */
+"Unblock" = "Block entfernen";
+
+/* Unlisted */
+"Unlisted" = "Listing entfernen";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Nicht gelisted: Sichtbar für alle, aber nicht in der lokalen oder öffentlichen Timeline";
+
+/* Unmute */
+"Unmute" = "Stumm entfernen";
+
+/* Video too long */
+"Video too long" = "Video zu lang";
+
+/* You have */
+"You have" = "";
+
+/* boosted */
+"boosted" = "boosted";
+
+/* boosted your status */
+"boosted your status" = "boosted Deinen Status";
+
+/* favorited your status */
+"favorited your status" = "gefällt Dein Status";
+
+/* followed you */
+"followed you" = "folgt Dir";
+
+/* image */
+"image" = "Bild";
+
+/* images */
+"images" = "Bilder";
+
+/* mentioned you */
+"mentioned you" = "erwähnte Dich";
+
+/* new notifications */
+"new notifications" = "neue Benachrichtigung";
+
+/* replied */
+"replied" = "antwortete";
+
+/* replied to */
+"replied to" = "antwortete auf";
+
