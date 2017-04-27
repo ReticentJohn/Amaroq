@@ -151,6 +151,12 @@
 		0411D5CA1E66038B00CED5A6 /* DWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMenuViewController.m; sourceTree = "<group>"; };
 		04174E301E5EBF0600BD5835 /* DWComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWComposeViewController.h; sourceTree = "<group>"; };
 		04174E311E5EBF0600BD5835 /* DWComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWComposeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		042A64D11EB2AF97007C93CA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		042A64D21EB2AF98007C93CA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		042A64D31EB2AF98007C93CA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		042A64D41EB2AF99007C93CA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		042A64D51EB2AF99007C93CA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		042A64D61EB2AF9A007C93CA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		043154E11E5005D20066C511 /* MSUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUserStore.h; sourceTree = "<group>"; };
 		043154E21E5005D20066C511 /* MSUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSUserStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		043154EA1E50EB3D0066C511 /* MSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStatus.h; sourceTree = "<group>"; };
@@ -1101,6 +1107,7 @@
 				04762BA41EAF97BD0045A75E /* ko */,
 				04EE29D41EB0E98400DF123F /* de */,
 				04EE29DA1EB0EAA700DF123F /* es */,
+				042A64D11EB2AF97007C93CA /* pl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1116,6 +1123,7 @@
 				04762BA51EAF97BE0045A75E /* ko */,
 				04EE29D61EB0E98400DF123F /* de */,
 				04EE29DC1EB0EAA800DF123F /* es */,
+				042A64D31EB2AF98007C93CA /* pl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1130,6 +1138,7 @@
 				04762BA61EAF97BE0045A75E /* ko */,
 				04EE29D51EB0E98400DF123F /* de */,
 				04EE29DB1EB0EAA800DF123F /* es */,
+				042A64D21EB2AF98007C93CA /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1144,6 +1153,7 @@
 				04762BA71EAF97BE0045A75E /* ko */,
 				04EE29D71EB0E98400DF123F /* de */,
 				04EE29DD1EB0EAA900DF123F /* es */,
+				042A64D51EB2AF99007C93CA /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1158,6 +1168,7 @@
 				04762BA81EAF97BF0045A75E /* ko */,
 				04EE29D81EB0E98500DF123F /* de */,
 				04EE29DE1EB0EAA900DF123F /* es */,
+				042A64D41EB2AF99007C93CA /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1172,6 +1183,7 @@
 				04762BA91EAF97BF0045A75E /* ko */,
 				04EE29D91EB0E98500DF123F /* de */,
 				04EE29DF1EB0EAA900DF123F /* es */,
+				042A64D61EB2AF9A007C93CA /* pl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

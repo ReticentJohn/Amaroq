@@ -100,7 +100,7 @@ typedef NS_ENUM(NSUInteger, DWSearchSectionType) {
         NSIndexPath *selectedIndex = [self.tableView indexPathForCell:sender];
         MSAccount *selectedAccount = [self.accountSearchResults objectAtIndex:selectedIndex.row];
     
-        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
+        DWProfileViewController *destinationViewController = segue.destinationViewController;
         destinationViewController.account = selectedAccount;
     }
 }

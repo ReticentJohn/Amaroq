@@ -11,16 +11,60 @@
 
 #import "DWNavigationViewController.h"
 
-@interface DWNavigationViewController ()
+
+@interface InteractivePopGestureDelegate : NSObject <UIGestureRecognizerDelegate>
+
+@property (nonatomic, weak) UINavigationController *navigationController;
+@property (nonatomic, weak) id<UIGestureRecognizerDelegate> originalDelegate;
 
 @end
+
+@implementation InteractivePopGestureDelegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    if (self.navigationController.navigationBarHidden && self.navigationController.viewControllers.count > 1) {
+        return YES;
+    } else {
+        return [self.originalDelegate gestureRecognizer:gestureRecognizer shouldReceiveTouch:touch];
+    }
+}
+
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    if (aSelector == @selector(gestureRecognizer:shouldReceiveTouch:)) {
+        return YES;
+    } else {
+        return [self.originalDelegate respondsToSelector:aSelector];
+    }
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
+    return self.originalDelegate;
+}
+
+@end
+
+
+@interface DWNavigationViewController ()
+
+@property (nonatomic) InteractivePopGestureDelegate *interactivePopGestureDelegate;
+
+@end
+
 
 @implementation DWNavigationViewController
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.interactivePopGestureDelegate = [InteractivePopGestureDelegate new];
+    self.interactivePopGestureDelegate.navigationController = self;
+    self.interactivePopGestureDelegate.originalDelegate = self.interactivePopGestureRecognizer.delegate;
+    self.interactivePopGestureRecognizer.delegate = self.interactivePopGestureDelegate;
 }
 
 
@@ -42,14 +86,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion

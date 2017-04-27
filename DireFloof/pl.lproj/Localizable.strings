@@ -1,0 +1,267 @@
+/* or 1 video */
+" or 1 video" = " lub jeden filmik";
+
+/* ACCOUNT */
+"ACCOUNT" = "KONTO";
+
+/* About Amaroq */
+"About Amaroq" = "O programie Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "Wizytówka bieżącego serwera";
+
+/* Account preferences */
+"Account preferences" = "Ustawienia konta";
+
+/* Add instance */
+"Add instance" = "Podłącz się do kolejnego serwera";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Nazwa programu Amaroq wywodzi się z eskimoskiej legendy o olbrzymim wilku, który być może towarzyszył pradawnym przodkom mamutów. Niech zawyje nasz rozproszony świat!\\n\\nProgram Amaroq powstał z umiłowania dla wizji rozproszonej sieci mastodonów, z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS. Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Albo złap autora, @eurasierboy na serwerze mastodon.social. Miłego tututuuu!
+";
+
+/* App settings */
+"App settings" = "Ustawenia programu";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "Skasować wszystkie powiadomienia?";
+
+/* Awoo mode */
+"Awoo mode" = "Włącz wycie";
+
+/* Back */
+"Back" = "Wróć";
+
+/* Block */
+"Block" = "zablokuj";
+
+/* Blocked users */
+"Blocked users" = "Kto został zablokowany";
+
+/* Cancel */
+"Cancel" = "Zostaw";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "Zmień ustawienia powiadomień na ekran";
+
+/* Clear cache */
+"Clear cache" = "Skasuj pamięć podręczną";
+
+/* Copy text */
+"Copy text" = "Skopiuj";
+
+/* Currently logged into: */
+"Currently logged into:" = "Jesteś na serwerze:";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "WYCIE PODLEGA KARZE GRZYWNY DO 3500 ZŁOTYCH!";
+
+/* Default posts to private */
+"Default posts to private" = "Najczęściej wysyłam wiadomości tylko do wybranych";
+
+/* Default posts to public */
+"Default posts to public" = "Najczęściej wysyłam wiadomości do wszystkich";
+
+/* Delete */
+"Delete" = "Skasuj";
+
+/* Direct */
+"Direct" = "szeptem";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "szeptem: Wiadomość będzie widoczna tylko dla ciebie i @adresatów";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "Nie pokazuj od razu animacji";
+
+/* Done */
+"Done" = "Gotowe";
+
+/* Edit Profile */
+"Edit Profile" = "Zmień wizytówkę";
+
+/* Error */
+"Error" = "Błąd";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "Próba zablokownia nie powiodła się:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "Nie udało się wyzerować powiadomień:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "Wiadomość nie mogła zostać skasowana:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "Nie udało się pobrać danych użytkownika:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "Wyciszenie nie udało się:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "Nie udało się wysłać wiadomości:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "Nie udało się wysłać skargi:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "Nie udało się pobrać wizytówki:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "Próba odblokowania nie powiodła się:";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "Zaprzestanie obserwowania nie udało się:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "Wyłączenie wyciszania nie udało się:";
+
+/* Favorites */
+"Favorites" = "Spodobały się";
+
+/* Federated */
+"Federated" = "Międzymiastowa";
+
+/* Follow requests */
+"Follow requests" = "Osoby, które chcą cię obserwować";
+
+/* HASHTAG */
+"HASHTAG" = "HASHTAG";
+
+/* Hold to show */
+"Hold to show" = "Przytrzymaj aby zobaczyć";
+
+/* Local */
+"Local" = "Miejscowa";
+
+/* Login request failed */
+"Login request failed" = "Nie udało się zalogować";
+
+/* Logout */
+"Logout" = "Wyloguj się";
+
+/* Mention */
+"Mention" = "wywołaj";
+
+/* Mute */
+"Mute" = "wycisz";
+
+/* Muted users */
+"Muted users" = "Kto został wyciszony";
+
+/* My instances */
+"My instances" = "Moje konta";
+
+/* My profile */
+"My profile" = "Wizytówka";
+
+/* Notification settings */
+"Notification settings" = "Powiadomienia";
+
+/* Only show to followers */
+"Only show to followers" = "pokaż tylko obserwującym cię";
+
+/* Open in Safari */
+"Open in Safari" = "otwórz w Safari";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "Prosimy nie ładować nagrań dłuższych niż pół minuty";
+
+/* Private */
+"Private" = "dla wybranych";
+
+/* Private: Only visible to you, @mentioned users, and followers on your instance */
+"Private: Only visible to you, @mentioned users, and followers on your instance" = "dla wybranych: Tylko Ty, @adresaci oraz obserwujący cię na twoim serwerzrze mogą ją przeczytać";
+
+/* Public */
+"Public" = "do wszystkich";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "do wszystkich: wiadomość wszędzie widoczna";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "Chcę wiedzieć, gdy ktoś poda mój tekst dalej";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "Chcę wiedzieć, gdy komuś spodoba się mój tekst";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "Chcę wiedzieć, kiedy ktoś zaadresuje do mnie wiadomość";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "Chcę wiedzieć, kiedy ktoś zacznie mnie obserwować";
+
+/* Report */
+"Report" = "poskarż się";
+
+/* Select */
+"Select" = "wybierz";
+
+/* Select a privacy level */
+"Select a privacy level" = "Jak daleko ma dotrzeć wiadomość?";
+
+/* Sensitive content */
+"Sensitive content" = "Ostrożnie z zawartością";
+
+/* Share */
+"Share" = "podziel się";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "Można zobaczyć na linii miejscowej i międzymiastowej";
+
+/* This can help older devices */
+"This can help older devices" = "Starszy sprzęt może działać lepiej";
+
+/* Translate text */
+"Translate text" = "przetłumacz";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "Nie można połączyć się wybranym serwerem. Można spróbować podłączyć się do innego albo poczekać, aż zacznie znowu działać.";
+
+/* Unblock */
+"Unblock" = "oblokuj";
+
+/* Unlisted */
+"Unlisted" = "poza listami";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "poza listami: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na miejscowej i międzymiastowej.";
+
+/* Unmute */
+"Unmute" = "wyłącz wyciszanie";
+
+/* Video too long */
+"Video too long" = "Nagranie jest zbyt długie";
+
+/* boosted */
+"boosted" = "podaje dalej";
+
+/* boosted your status */
+"boosted your status" = "podaje dalej twój tekst";
+
+/* favorited your status */
+"favorited your status" = "spodobało się";
+
+/* followed you */
+"followed you" = "zaczyna cię obserwować";
+
+/* image */
+"image" = "obrazek";
+
+/* images */
+"images" = "obrazki";
+
+/* mentioned you */
+"mentioned you" = "wspomina o Tobie";
+
+/* new notifications */
+"new notifications" = "nowe powiadomienia";
+
+/* replied */
+"replied" = "odpowiada";
+
+/* replied to */
+"replied to" = "odpowiada na";
+
