@@ -144,6 +144,15 @@
 }
 
 
+- (void)removeMastodonInstance:(NSString *)instance
+{
+    NSArray *availableInstances = [self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"!(MS_INSTANCE_KEY LIKE[cd] %@)", instance]];
+    self.availableInstances = availableInstances;
+    
+    [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
+}
+
+
 - (void)registerApp:(void (^)(BOOL))completion
 {
     if (self.isRegistered) {

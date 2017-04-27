@@ -32,6 +32,7 @@
 #pragma mark - Instance Methods
 
 - (void)setMastodonInstance:(NSString *)instance;
+- (void)removeMastodonInstance:(NSString *)instance;
 - (void)registerApp:(void (^)(BOOL success))completion;
 
 @end
