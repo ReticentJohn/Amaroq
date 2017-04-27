@@ -24,7 +24,18 @@
 
 @implementation DWInstancesViewController
 
-#pragma mark
+#pragma mark - Actions
+
+- (IBAction)editButtonPressed:(id)sender
+{
+    [self.tableView setEditing:!self.tableView.isEditing animated:YES];
+    
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:self.tableView.isEditing ? UIBarButtonSystemItemDone : UIBarButtonSystemItemEdit target:self action:@selector(editButtonPressed:)]];
+    
+    [self.tableView reloadData];
+}
+
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -81,7 +92,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[[MSAppStore sharedStore] availableInstances] count] + 1;
+    return [[[MSAppStore sharedStore] availableInstances] count] + (tableView.isEditing ? 0 : 1);
 }
 
 
@@ -113,6 +124,36 @@
         }];
     }
     
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row >= [[[MSAppStore sharedStore] availableInstances] count]) {
+        return NO;
+    }
+    
+    NSDictionary *availableInstance = [[[MSAppStore sharedStore] availableInstances] objectAtIndex:indexPath.row];
+    
+    return ![[availableInstance objectForKey:MS_INSTANCE_KEY] isEqualToString:[[MSAppStore sharedStore] instance]];
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return NO;
+}
+
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        NSDictionary *availableInstance = [[[MSAppStore sharedStore] availableInstances] objectAtIndex:indexPath.row];
+
+        [[MSAuthStore sharedStore] logoutOfInstance:[availableInstance objectForKey:MS_INSTANCE_KEY]];
+        [self.tableView reloadData];
+    }
 }
 
 

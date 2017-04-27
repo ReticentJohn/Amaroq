@@ -37,7 +37,6 @@
     [self.loginActivityIndicator startAnimating];
     self.loginButton.hidden = YES;
     
-    self.lastInstance = [[[MSAppStore sharedStore] instance] copy];
     [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
     
     [[MSAuthStore sharedStore] login:^(BOOL success) {
@@ -76,7 +75,7 @@
 - (IBAction)cancelLoginPressed:(id)sender
 {
     if (self.lastInstance) {
-        [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
+        [[MSAppStore sharedStore] setMastodonInstance:self.lastInstance];
         [[DWNotificationStore sharedStore] registerForNotifications];
         [[MSAuthStore sharedStore] isLoggedIn];
     }
@@ -100,6 +99,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.lastInstance = [[[MSAppStore sharedStore] instance] copy];
     
     self.instanceField.text = [[MSAppStore sharedStore] instance];
     

@@ -51,4 +51,13 @@
 }
 */
 
+
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion
+{
+    if (self.presentedViewController || ![self.view viewWithTag:1337])
+    {
+        [super dismissViewControllerAnimated:flag completion:completion];
+    }
+}
+
 @end

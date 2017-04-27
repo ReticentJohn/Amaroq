@@ -280,12 +280,35 @@
         
         for (NSDictionary *instance in [[MSAppStore sharedStore] availableInstances]) {
             [AFOAuthCredential deleteCredentialWithIdentifier:[instance objectForKey:MS_BASE_API_URL_STRING_KEY]];
+            [[MSAppStore sharedStore] removeMastodonInstance:[instance objectForKey:MS_INSTANCE_KEY]];
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:YES completion:nil];
         });
     }];
+}
+
+
+- (void)logoutOfInstance:(NSString *)instance
+{
+    NSDictionary *instanceToRemove = [[[[MSAppStore sharedStore] availableInstances] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", instance]] firstObject];
+    
+    if (instanceToRemove) {
+        
+        NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+        for (NSHTTPCookie *cookie in [storage cookies]) {
+            
+            if ([cookie.domain isEqualToString:instance]) {
+                [storage deleteCookie:cookie];
+            }
+        }
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        [AFOAuthCredential deleteCredentialWithIdentifier:[instanceToRemove objectForKey:MS_BASE_API_URL_STRING_KEY]];
+        [[[MSAPIClient sharedClientWithBaseAPI:[instanceToRemove objectForKey:MS_BASE_API_URL_STRING_KEY]] requestSerializer] setAuthorizationHeaderFieldWithCredential:nil];
+        [[MSAppStore sharedStore] removeMastodonInstance:instance];
+    }
 }
 
 
@@ -379,6 +402,10 @@
     [self.cancelButton removeFromSuperview];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
+    
+    if ([[MSAppStore sharedStore] instance]) {
+        [[MSAppStore sharedStore] removeMastodonInstance:[[MSAppStore sharedStore] instance]];
+    }
 }
 
 
