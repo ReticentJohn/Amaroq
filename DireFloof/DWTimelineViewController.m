@@ -227,7 +227,7 @@ IB_DESIGNABLE
             selectedAccount = selectedStatus.reblog ? selectedStatus.reblog.account : selectedStatus.account;
         }
         
-        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
+        DWProfileViewController *destinationViewController = segue.destinationViewController;
         destinationViewController.account = selectedAccount;
     }
     else if ([segue.identifier isEqualToString:@"ThreadSegue"])

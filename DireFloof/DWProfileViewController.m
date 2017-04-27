@@ -73,7 +73,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 
 - (IBAction)closeButtonPressed:(id)sender
 {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
@@ -569,7 +569,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             }
         }
         
-        DWProfileViewController *destinationViewController = [[segue.destinationViewController viewControllers] firstObject];
+        DWProfileViewController *destinationViewController = segue.destinationViewController;
         destinationViewController.account = selectedAccount;
     }
     else if ([segue.identifier isEqualToString:@"ThreadSegue"])

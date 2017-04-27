@@ -52,20 +52,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amaroq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TP0-ZC-qMQ">
-                                                <rect key="frame" x="108.66666666666669" y="151.66666666666666" width="197" height="66"/>
+                                                <rect key="frame" x="108.66666666666669" y="151" width="197" height="66"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="50"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DireWolfLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CLb-e8-Cex">
-                                                <rect key="frame" x="172.66666666666666" y="90.333333333333343" width="68.666666666666686" height="68.333333333333343"/>
+                                                <rect key="frame" x="172.66666666666666" y="89.666666666666686" width="68.666666666666686" height="68.333333333333314"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="CLb-e8-Cex" secondAttribute="height" multiplier="1:1" id="Ys6-pW-Yc7"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OYz-OS-7Et">
-                                                <rect key="frame" x="83.666666666666686" y="224.66666666666669" width="246.66666666666663" height="33.000000000000057"/>
+                                                <rect key="frame" x="83.666666666666686" y="224" width="246.66666666666663" height="33"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="a">
                                                         <attributes>
@@ -106,14 +106,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBc-es-WXc">
-                                                <rect key="frame" x="10" y="277.66666666666674" width="394" height="448.33333333333326"/>
+                                                <rect key="frame" x="10" y="277" width="394" height="449"/>
                                                 <subviews>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1s4-g3-Kza">
-                                                        <rect key="frame" x="179" y="132" width="37" height="37"/>
+                                                        <rect key="frame" x="178" y="132.66666666666669" width="37" height="37"/>
                                                         <color key="color" red="0.16706696152687073" green="0.57544779777526855" blue="0.83728832006454468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </activityIndicatorView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbS-Hh-ZI2">
-                                                        <rect key="frame" x="156" y="130" width="84" height="43"/>
+                                                        <rect key="frame" x="155.33333333333334" y="130" width="84" height="43"/>
                                                         <color key="backgroundColor" red="0.16706696152687073" green="0.57544779777526855" blue="0.83728832006454468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
                                                         <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
@@ -176,7 +176,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pf7-uY-cYC">
-                                                        <rect key="frame" x="144" y="402.33333333333331" width="106" height="36"/>
+                                                        <rect key="frame" x="144" y="403" width="106" height="36"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjX-Ma-KFp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="106" height="36"/>
@@ -323,11 +323,11 @@
                         <viewControllerLayoutGuide type="bottom" id="GZn-ts-vcH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Q1-1V-KRg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tHl-cz-5Tq">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
                                 <color key="backgroundColor" red="0.15623295307159424" green="0.17170935869216919" blue="0.21736863255500793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -342,20 +342,21 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="04f-a0-A9f">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poj-MF-TNF">
-                                            <rect key="frame" x="335" y="0.0" width="79" height="79"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poj-MF-TNF">
+                                            <rect key="frame" x="0.0" y="0.0" width="79" height="79"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="poj-MF-TNF" secondAttribute="height" multiplier="1:1" id="K33-M6-iwl"/>
                                                 <constraint firstAttribute="width" constant="79" id="kM7-lM-RfW"/>
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <state key="normal" image="CloseIcon"/>
+                                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="BackIcon"/>
                                             <connections>
                                                 <action selector="closeButtonPressed:" destination="vVH-Cz-Pj6" eventType="touchUpInside" id="KrF-3k-psY"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-kO-Rmp">
-                                            <rect key="frame" x="0.0" y="0.0" width="79" height="79"/>
+                                            <rect key="frame" x="335" y="0.0" width="79" height="79"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="3dw-kO-Rmp" secondAttribute="height" multiplier="1:1" id="rC7-rk-anB"/>
                                                 <constraint firstAttribute="width" constant="79" id="yxH-aX-aiD"/>
@@ -409,7 +410,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2M-wt-Xn3" customClass="TTTAttributedLabel">
-                                            <rect key="frame" x="11.333333333333343" y="195.33333333333337" width="392" height="19.666666666666657"/>
+                                            <rect key="frame" x="11" y="195.33333333333337" width="392" height="19.666666666666657"/>
                                             <string key="text">*floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs*</string>
                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -538,13 +539,11 @@
                                         <constraint firstItem="10V-B3-wiC" firstAttribute="top" secondItem="vvp-4M-w8S" secondAttribute="top" constant="8" id="C1N-L1-7os"/>
                                         <constraint firstItem="04f-a0-A9f" firstAttribute="top" secondItem="DBS-eK-lMN" secondAttribute="top" id="C9q-nd-Z8N"/>
                                         <constraint firstItem="L7J-xn-s36" firstAttribute="top" secondItem="5Id-KN-tkB" secondAttribute="bottom" id="CU6-qR-iln"/>
-                                        <constraint firstItem="3dw-kO-Rmp" firstAttribute="leading" secondItem="DBS-eK-lMN" secondAttribute="leading" id="Fpy-DX-cXP"/>
                                         <constraint firstItem="mgb-Th-c4c" firstAttribute="top" secondItem="OAS-Mr-yP8" secondAttribute="bottom" constant="5" id="GxR-s2-v6O"/>
                                         <constraint firstAttribute="bottom" secondItem="vvp-4M-w8S" secondAttribute="bottom" id="HrX-eY-juw"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F2M-wt-Xn3" secondAttribute="trailing" constant="10" id="ICF-Iz-bym"/>
                                         <constraint firstItem="vvp-4M-w8S" firstAttribute="width" secondItem="4pB-AG-qON" secondAttribute="width" id="IXM-ak-zFO"/>
                                         <constraint firstItem="OAS-Mr-yP8" firstAttribute="top" secondItem="DBS-eK-lMN" secondAttribute="top" constant="10" id="JKV-Nt-Ulg"/>
-                                        <constraint firstAttribute="trailing" secondItem="poj-MF-TNF" secondAttribute="trailing" id="KWd-rE-poz"/>
                                         <constraint firstItem="poj-MF-TNF" firstAttribute="width" secondItem="poj-MF-TNF" secondAttribute="height" multiplier="1:1" id="KjC-Jh-emz"/>
                                         <constraint firstAttribute="bottom" secondItem="4pB-AG-qON" secondAttribute="bottom" id="KuN-zS-ekD"/>
                                         <constraint firstItem="Cpw-1s-jZz" firstAttribute="trailing" secondItem="04f-a0-A9f" secondAttribute="trailing" id="L8t-oz-I5X"/>
@@ -571,6 +570,7 @@
                                         <constraint firstItem="z9I-DW-y6S" firstAttribute="bottom" secondItem="4JJ-Yl-atQ" secondAttribute="bottom" constant="-8" id="bET-Zb-CYt"/>
                                         <constraint firstItem="RQz-DC-TUc" firstAttribute="leading" secondItem="Qtp-s9-bED" secondAttribute="trailing" id="bdD-QM-oy9"/>
                                         <constraint firstItem="4JJ-Yl-atQ" firstAttribute="leading" secondItem="vvp-4M-w8S" secondAttribute="trailing" id="cVL-I5-gXS"/>
+                                        <constraint firstAttribute="trailing" secondItem="3dw-kO-Rmp" secondAttribute="trailing" id="dPT-8Y-5KB"/>
                                         <constraint firstAttribute="trailing" secondItem="5Y2-Nq-dW4" secondAttribute="trailing" constant="10" id="eux-w1-6ia"/>
                                         <constraint firstAttribute="trailing" secondItem="4JJ-Yl-atQ" secondAttribute="trailing" id="gay-Kj-Oam"/>
                                         <constraint firstItem="poj-MF-TNF" firstAttribute="top" secondItem="DBS-eK-lMN" secondAttribute="top" id="hOS-74-ddv"/>
@@ -591,6 +591,7 @@
                                         <constraint firstItem="9qQ-NP-VQx" firstAttribute="bottom" secondItem="vvp-4M-w8S" secondAttribute="bottom" constant="-8" id="tIh-gG-awt"/>
                                         <constraint firstItem="ibD-hm-3kw" firstAttribute="top" secondItem="5Id-KN-tkB" secondAttribute="bottom" id="uR6-ow-ceU"/>
                                         <constraint firstAttribute="trailing" secondItem="5Id-KN-tkB" secondAttribute="trailing" id="vdu-2X-eYs"/>
+                                        <constraint firstItem="poj-MF-TNF" firstAttribute="leading" secondItem="DBS-eK-lMN" secondAttribute="leading" id="vxQ-Ir-lEB"/>
                                         <constraint firstItem="QE0-ao-uwT" firstAttribute="top" secondItem="4JJ-Yl-atQ" secondAttribute="top" constant="8" id="vyV-Za-IGu"/>
                                         <constraint firstItem="L7J-xn-s36" firstAttribute="leading" secondItem="vvp-4M-w8S" secondAttribute="trailing" id="wd5-7m-gcY"/>
                                         <constraint firstItem="5Y2-Nq-dW4" firstAttribute="top" secondItem="C5m-P3-Aoc" secondAttribute="bottom" constant="-2" id="wkd-xO-KPT"/>
@@ -649,9 +650,6 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMM-u9-Wtb">
                                                     <rect key="frame" x="17" y="39" width="46" height="30"/>
-                                                    <connections>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="RPy-cN-fh6"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -673,7 +671,6 @@
                                             <outlet property="followerAvatarImageView" destination="0U6-BK-2Ek" id="4ae-pV-gCs"/>
                                             <outlet property="followerDisplayNameLabel" destination="hnO-sI-rxq" id="acK-QS-uXw"/>
                                             <outlet property="followerUsernameLabel" destination="sIR-7z-4Xv" id="wUo-vj-cws"/>
-                                            <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="olW-RT-E3w"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimelineMediaReblogCell" rowHeight="127" id="hfy-Jd-EVG" customClass="DWTimelineMediaTableViewCell">
@@ -708,7 +705,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ai-vo-Nq4">
-                                                    <rect key="frame" x="315" y="23.333333333333336" width="89" height="20.000000000000007"/>
+                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -775,7 +772,6 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="hfy-Jd-EVG" eventType="touchUpInside" id="jwF-UZ-wuu"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" id="u1E-fi-RbE"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kls-DA-sj1">
@@ -883,13 +879,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-ho-Fbg">
-                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peC-Z9-8oy">
-                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1077,7 +1073,6 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="awu-Sl-yL4" eventType="touchUpInside" id="irL-LI-yGT"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="WKT-xB-QhH"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAJ-lN-D3y">
@@ -1346,7 +1341,6 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="hp9-IU-aYO" eventType="touchUpInside" id="CBT-gs-MDo"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="A5m-GM-y6D"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-EG-YnR">
@@ -1418,13 +1412,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS7-He-uip">
-                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAi-jG-h7h">
-                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1599,7 +1593,6 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="a1M-wI-Viv" eventType="touchUpInside" id="Agv-0z-GBd"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="vjE-PI-UnA"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsL-h7-g2B">
@@ -1732,7 +1725,7 @@
                                 <color key="barTintColor" red="0.19149845839999999" green="0.20683670039999999" blue="0.26078334450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem id="ddD-Vh-39M">
-                                        <barButtonItem key="rightBarButtonItem" image="CloseIcon" id="WXA-Iz-me6">
+                                        <barButtonItem key="leftBarButtonItem" image="BackIcon" id="WXA-Iz-me6">
                                             <color key="tintColor" red="0.60928755999999995" green="0.68066358569999996" blue="0.784645021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="closeButtonPressed:" destination="vVH-Cz-Pj6" id="KL0-jD-33d"/>
@@ -1772,6 +1765,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="Phq-KO-WBt"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="avatarImageView" destination="mgb-Th-c4c" id="Hpq-As-od0"/>
                         <outlet property="bioLabel" destination="F2M-wt-Xn3" id="DfM-x3-Mrx"/>
@@ -1797,7 +1791,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ofp-G0-f4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3796" y="-276"/>
+            <point key="canvasLocation" x="4586" y="1088"/>
         </scene>
         <!--Compose View Controller-->
         <scene sceneID="307-UH-uSk">
@@ -1855,13 +1849,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eurasierboy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU0-be-BKd">
-                                                        <rect key="frame" x="59" y="30" width="266" height="20"/>
+                                                        <rect key="frame" x="59" y="30.333333333333332" width="266" height="19.999999999999996"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12u-Vk-fYa">
-                                                        <rect key="frame" x="59" y="48" width="345" height="0.0"/>
+                                                        <rect key="frame" x="59" y="48.333333333333329" width="345" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                         <color key="textColor" red="0.6092875599861145" green="0.6806635856628418" blue="0.78464502096176147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1948,13 +1942,13 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tR-Gk-auO">
-                                                                <rect key="frame" x="39" y="12" width="44.333333333333329" height="20"/>
+                                                                <rect key="frame" x="39" y="12.333333333333343" width="44.333333333333329" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@eurasierboy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIN-jw-YDe">
-                                                                <rect key="frame" x="88.333333333333343" y="12" width="91.000000000000028" height="20"/>
+                                                                <rect key="frame" x="88.333333333333343" y="12.333333333333343" width="91.000000000000028" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -2571,7 +2565,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-sp-H4C">
-                                                    <rect key="frame" x="315" y="6.6666666666666679" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="6.3333333333333321" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2638,19 +2632,19 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="hWF-Ll-LGk" eventType="touchUpInside" id="ZcA-qv-5fb"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="iwa-eT-e8O"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="p34-zw-w3z"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZm-YD-S5z">
                                                     <rect key="frame" x="68" y="27.666666666666664" width="336" height="62.333333333333336"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DW7-sV-9wj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="336" height="62"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="336" height="62.333333333333336"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVJ-wb-2d5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="336" height="62.333333333333329"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b8Q-zZ-oAK">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="62"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="62.333333333333329"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning Tag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LbU-Pp-4SM">
@@ -2806,7 +2800,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM3-VD-Ucr">
                                                     <rect key="frame" x="22" y="36" width="36" height="36"/>
                                                     <connections>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" id="i27-Cr-Aom"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="8Tb-QJ-Ho4"/>
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FollowUserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="C7J-xL-xZ3">
@@ -2912,7 +2906,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWj-wv-bf7">
-                                                    <rect key="frame" x="315" y="32.666666666666664" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="32.333333333333336" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2979,19 +2973,19 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="7Xl-cZ-Uqg" eventType="touchUpInside" id="eMW-jl-KtD"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="4ec-RO-4Ve"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="oEr-Hc-B5P"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybk-0K-eKJ">
                                                     <rect key="frame" x="68" y="53.666666666666657" width="336" height="60.333333333333343"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UDM-9y-a5m">
-                                                        <rect key="frame" x="0.0" y="0.0" width="336" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="336" height="60.333333333333343"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-m1-5zR">
                                                                 <rect key="frame" x="0.0" y="0.0" width="336" height="60.333333333333336"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RSm-Rb-boj">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="60"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="336" height="60.333333333333336"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning Tag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DL6-Pz-Zxu">
@@ -3063,9 +3057,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="rSd-Il-rdu"/>
                                                     </constraints>
-                                                    <connections>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" id="Wsi-tL-0b0"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -3299,11 +3290,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="hjq-cH-L19" id="Y2x-3H-H0h"/>
-                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" id="yJ5-Jp-tfF"/>
                         <segue destination="SC5-pn-I3A" kind="show" identifier="BlockedSegue" id="365-gH-9yH"/>
                         <segue destination="CIJ-hS-huU" kind="show" identifier="FavoriteSegue" id="dbR-ZR-DeS"/>
                         <segue destination="0B8-3F-mRu" kind="show" identifier="AppSegue" id="NJI-kw-e2b"/>
                         <segue destination="pyO-w1-D12" kind="show" identifier="InstanceSegue" id="DfZ-tC-nQm"/>
+                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="KRA-Zj-DYM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yU-Lc-BnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3389,7 +3380,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozX-bM-T6r">
                                                     <rect key="frame" x="17" y="39" width="46" height="30"/>
                                                     <connections>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="jFe-1K-aot"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="o53-I1-hbU"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -3417,6 +3408,7 @@
                                             <outlet property="followerAvatarImageView" destination="Uth-bn-Qdx" id="by5-gT-7KR"/>
                                             <outlet property="followerDisplayNameLabel" destination="qL1-Cc-jhG" id="XFo-aX-ClQ"/>
                                             <outlet property="followerUsernameLabel" destination="3gH-Tw-ONr" id="b2J-Im-EbC"/>
+                                            <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="nvs-Ka-oDS"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountRequestCell" rowHeight="133" id="2u1-St-CAG" customClass="DWTimelineFollowTableViewCell">
@@ -3474,6 +3466,9 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqT-KT-TcY">
                                                     <rect key="frame" x="22" y="48.333333333333329" width="36" height="35.999999999999986"/>
+                                                    <connections>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="uBG-7g-WDZ"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -3502,6 +3497,7 @@
                                             <outlet property="followerAvatarImageView" destination="Y8m-0P-Ocq" id="7fw-ux-nez"/>
                                             <outlet property="followerDisplayNameLabel" destination="DLI-MU-2NY" id="BB0-Ki-PxJ"/>
                                             <outlet property="followerUsernameLabel" destination="frn-zx-RKJ" id="M9z-nc-8pl"/>
+                                            <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="mpc-wd-qjP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -3618,7 +3614,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mQ-P9-Kjj">
-                                                    <rect key="frame" x="315" y="23.333333333333336" width="89" height="20.000000000000007"/>
+                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -3685,7 +3681,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="RxR-XK-leN" eventType="touchUpInside" id="Vzp-m6-A51"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="dCF-CX-A1z"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="si5-ef-SSB"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arn-Dq-Que">
@@ -3793,13 +3789,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8E-L6-r01">
-                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-uS-EwS">
-                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -3987,7 +3983,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="Jvc-DH-Wie" eventType="touchUpInside" id="GRe-E4-BCX"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" id="K1a-Hw-HtS"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="7TA-SQ-5f8"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zz8-sI-MEE">
@@ -4059,13 +4055,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kx-6H-zbn">
-                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuV-g4-hLu">
-                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -4240,7 +4236,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="4Z0-Fu-cqj" eventType="touchUpInside" id="nDm-D3-aJH"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="KGL-gB-Jsv"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="4SA-Sa-3md"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuJ-e8-NnY">
@@ -4509,7 +4505,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="aBK-sS-tTu" eventType="touchUpInside" id="PCr-Ll-w2W"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="v7B-cM-MYv"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="TTB-uV-5D5"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udt-kv-IJm">
@@ -4704,7 +4700,7 @@
         <scene sceneID="q3p-nq-6QP">
             <objects>
                 <navigationController id="nDL-Xg-cvj" customClass="DWNavigationViewController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="9J6-Jc-F3y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="9J6-Jc-F3y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.26167112588882446" green="0.28890621662139893" blue="0.35948395729064941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4789,7 +4785,7 @@
                                             <outlet property="avatarImageView" destination="Gly-ek-vWK" id="yPu-mk-Sgk"/>
                                             <outlet property="displayNameLabel" destination="2Eq-J9-JE9" id="6xl-Ut-l12"/>
                                             <outlet property="usernameLabel" destination="dqV-5g-P7n" id="WFR-Yr-Z2g"/>
-                                            <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="Ah2-aU-bNe"/>
+                                            <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="nAP-f0-gIM"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HashtagCell" id="rRJ-W2-WdP" customClass="DWSearchTableViewCell">
@@ -5176,7 +5172,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lYZ-Qb-UgT">
-                                                    <rect key="frame" x="315" y="23.333333333333336" width="89" height="20.000000000000007"/>
+                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -5243,7 +5239,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="69E-2f-taz" eventType="touchUpInside" id="p7g-SV-agK"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="k5S-PB-WV0"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="sCT-Zo-bIx"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf1-ws-wpH">
@@ -5351,13 +5347,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0f-xA-yAn">
-                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-n9-aZp">
-                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -5545,7 +5541,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="PVI-dh-3Uh" eventType="touchUpInside" id="rL8-lN-hQP"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="dRm-Rc-Xfz"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="sWr-Bh-mRs"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fO-df-ybw">
@@ -5617,13 +5613,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-cK-Mj8">
-                                                    <rect key="frame" x="68" y="8.3333333333333357" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uta-FN-35Y">
-                                                    <rect key="frame" x="117.33333333333331" y="8.3333333333333357" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -5798,7 +5794,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="dGN-ce-tw5" eventType="touchUpInside" id="cLG-LL-LwN"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="Y9B-Kg-MPL"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="cUe-Th-VyX"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-1n-ke8">
@@ -6067,7 +6063,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="rS8-v5-OUl" eventType="touchUpInside" id="iDN-Rw-a6Z"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="EXI-xf-NYj"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="Nhx-bR-JWJ"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrO-Ty-GWh">
@@ -6229,9 +6225,9 @@
         <!--Menu-->
         <scene sceneID="pOj-Ao-cMf">
             <objects>
-                <navigationController id="pvJ-vC-XRP" sceneMemberID="viewController">
+                <navigationController id="pvJ-vC-XRP" customClass="DWNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Menu" image="MenuIcon" id="sB4-xf-wkz"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="R9f-GD-p08">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="R9f-GD-p08">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.26167112588882446" green="0.28890621662139893" blue="0.35948395729064941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6318,7 +6314,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZVG-ur-eYy">
-                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="23.666666666666664" width="89" height="19.999999999999993"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -6385,7 +6381,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="Ctm-Ok-N3W" eventType="touchUpInside" id="kMT-Js-XCG"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="a3b-ET-d1K"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="aVo-nK-blP"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5h-Jy-9VQ">
@@ -6493,13 +6489,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ2-pR-esE">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-eE-4xG">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -6687,7 +6683,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="9J0-9S-5nn" eventType="touchUpInside" id="yKe-UG-yna"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="fPg-u3-7kJ"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="MTS-X2-mAv"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72z-ds-l0C">
@@ -6759,13 +6755,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vv-FC-uyP">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qST-R4-uqh">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -6940,7 +6936,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="6Zw-DE-dhp" eventType="touchUpInside" id="XNU-7K-V0m"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="e2f-tm-MZM"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="8F6-Uk-oIU"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4N5-p8-KC5">
@@ -7209,7 +7205,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="nvL-RA-8Gh" eventType="touchUpInside" id="7a0-Oq-Bn2"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="LYa-4w-Ycb"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="3jW-SY-Uts"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-Z7-BKu">
@@ -7481,7 +7477,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="JR8-g2-fjL" eventType="touchUpInside" id="FVn-mG-bFN"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="EJ1-ek-8Is"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="nwZ-mh-Oe8"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBc-J3-UJK">
@@ -7805,7 +7801,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="N3L-np-07A" eventType="touchUpInside" id="Us3-cz-I12"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" id="oWO-0g-REn"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="UAX-uw-h68"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5a-iM-rWf">
@@ -8091,7 +8087,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="ItR-PH-zdt" eventType="touchUpInside" id="UAU-EW-QKZ"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="QHT-yr-N8w"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="6XG-QF-tVx"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-lH-2U2">
@@ -8361,7 +8357,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="1WD-uX-yuA" eventType="touchUpInside" id="pYB-Fy-tqF"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="HAu-yL-C2G"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="aqD-CA-IHQ"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjd-DP-SSZ">
@@ -8679,7 +8675,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="YUS-u4-AsC" eventType="touchUpInside" id="Kyl-D7-ojs"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="M1M-SU-1CU"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="eQa-U1-dNE"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wk-Fg-cKQ">
@@ -8881,7 +8877,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="13 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-6T-r6R">
-                                                    <rect key="frame" x="315" y="23" width="89" height="20"/>
+                                                    <rect key="frame" x="315" y="23.666666666666664" width="89" height="19.999999999999993"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -8948,7 +8944,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="q9x-ag-X14" eventType="touchUpInside" id="Ke3-zS-Kcq"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="Ihw-Ae-pkF"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="R41-uP-QgA"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aii-Z7-ThC">
@@ -9056,13 +9052,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o5-6W-XMp">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyJ-KV-d5f">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -9250,7 +9246,7 @@
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="uJz-ro-uod" eventType="touchUpInside" id="hWQ-n4-8Xz"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" id="4bs-wT-MxE"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="YZj-h1-AbK"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muR-GD-2eA">
@@ -9322,13 +9318,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="John~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcl-s3-gms">
-                                                    <rect key="frame" x="68" y="8" width="44.333333333333329" height="20"/>
+                                                    <rect key="frame" x="68" y="8.6666666666666643" width="44.333333333333329" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="favourited your status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Am-cK-PJB">
-                                                    <rect key="frame" x="117.33333333333331" y="8" width="148.33333333333337" height="20"/>
+                                                    <rect key="frame" x="117.33333333333331" y="8.6666666666666643" width="148.33333333333337" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     <color key="textColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -9503,7 +9499,7 @@
                                                     <rect key="frame" x="10" y="10" width="48" height="48"/>
                                                     <connections>
                                                         <action selector="avatarButtonPressed:" destination="A9L-kw-eBB" eventType="touchUpInside" id="eU7-Vu-hab"/>
-                                                        <segue destination="APy-9V-a11" kind="presentation" identifier="ProfileSegue" modalPresentationStyle="overFullScreen" id="Y9q-Zf-OOW"/>
+                                                        <segue destination="vVH-Cz-Pj6" kind="show" identifier="ProfileSegue" id="mjR-7H-uI0"/>
                                                     </connections>
                                                 </button>
                                                 <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86K-Ih-odU">
@@ -9779,29 +9775,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amaroq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v3S-aW-ZxL">
-                                <rect key="frame" x="103.66666666666669" y="152" width="207" height="66"/>
+                                <rect key="frame" x="103.66666666666669" y="151.33333333333334" width="207" height="66"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DireWolfLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pyV-Uu-XVe">
-                                <rect key="frame" x="170.66666666666666" y="86.666666666666686" width="72.666666666666686" height="72.333333333333314"/>
+                                <rect key="frame" x="170.66666666666666" y="86" width="72.666666666666686" height="72.333333333333343"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pyV-Uu-XVe" secondAttribute="height" multiplier="1:1" id="IPA-BO-yJ2"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0.0 (1)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="auH-Rs-SrF">
-                                <rect key="frame" x="77.666666666666686" y="225" width="258.66666666666663" height="20"/>
+                                <rect key="frame" x="77.666666666666686" y="224.33333333333334" width="258.66666666666663" height="20"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                 <color key="textColor" red="0.64866644144058228" green="0.71612668037414551" blue="0.81181150674819946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-ZA-ghe">
-                                <rect key="frame" x="10" y="265" width="394" height="461"/>
+                                <rect key="frame" x="10" y="264.33333333333326" width="394" height="461.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LS7-3x-QeW">
-                                        <rect key="frame" x="144" y="415" width="106" height="36"/>
+                                        <rect key="frame" x="144" y="415.66666666666669" width="106" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-2m-0yg">
                                                 <rect key="frame" x="0.0" y="0.0" width="106" height="36"/>
@@ -9828,7 +9824,7 @@
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h78-Az-YOY">
-                                        <rect key="frame" x="2" y="2" width="390" height="403"/>
+                                        <rect key="frame" x="2" y="2" width="390" height="403.66666666666669"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.62134832139999996" green="0.68481719490000004" blue="0.77633661030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!
@@ -9840,7 +9836,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
                                     <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDL-9t-RoU">
-                                        <rect key="frame" x="2" y="2" width="390" height="403"/>
+                                        <rect key="frame" x="2" y="2" width="390" height="403.66666666666669"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.1680024266" green="0.56291288139999995" blue="0.84955221410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </webView>
@@ -10063,9 +10059,9 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <!--Home timeline-->
         <scene sceneID="vYe-dD-diU">
             <objects>
-                <navigationController navigationBarHidden="YES" id="qAu-Os-Hnl" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="qAu-Os-Hnl" customClass="DWNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home timeline" image="HomeIcon" id="blm-y0-hTt"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="bCn-a5-mEF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="bCn-a5-mEF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.26167112590000002" green="0.28890621659999999" blue="0.35948395729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -10090,9 +10086,9 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <!--Public timeline-->
         <scene sceneID="K7v-r5-q9T">
             <objects>
-                <navigationController navigationBarHidden="YES" id="46K-p3-fd5" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="46K-p3-fd5" customClass="DWNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Public timeline" image="PublicIcon" id="tae-bS-eCU"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ZEw-yw-f5L">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ZEw-yw-f5L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.26167112590000002" green="0.28890621659999999" blue="0.35948395729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -10117,9 +10113,9 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <!--Notifications-->
         <scene sceneID="HYx-zd-BWv">
             <objects>
-                <navigationController navigationBarHidden="YES" id="a1u-FJ-tdP" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="a1u-FJ-tdP" customClass="DWNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notifications" image="NotificationsIcon" id="IUN-9p-nd2"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Bg4-dT-n4n">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Bg4-dT-n4n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.26167112590000002" green="0.28890621659999999" blue="0.35948395729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -10141,26 +10137,9 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
             </objects>
             <point key="canvasLocation" x="1477" y="1389"/>
         </scene>
-        <!--Navigation View Controller-->
-        <scene sceneID="Ikq-X3-O1b">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="APy-9V-a11" customClass="DWNavigationViewController" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uKM-lK-xBV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vVH-Cz-Pj6" kind="relationship" relationship="rootViewController" id="IOg-sT-00s"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bmg-WE-SSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3028" y="-276"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="BackIcon" width="25" height="25"/>
         <image name="BlockIcon" width="25" height="25"/>
         <image name="CheckmarkIcon" width="25" height="25"/>
         <image name="CloseIcon" width="25" height="25"/>
@@ -10185,11 +10164,11 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <image name="UserIcon" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ljc-yS-Vrl"/>
         <segue reference="IWd-CB-tep"/>
-        <segue reference="yPF-eR-8hV"/>
-        <segue reference="gmH-CL-72j"/>
-        <segue reference="zYp-Uo-tj2"/>
-        <segue reference="Y9q-Zf-OOW"/>
+        <segue reference="mpc-wd-qjP"/>
+        <segue reference="qsd-h2-seO"/>
+        <segue reference="mgK-1g-SjE"/>
+        <segue reference="vl5-yr-Xvl"/>
+        <segue reference="ljc-yS-Vrl"/>
     </inferredMetricsTieBreakers>
 </document>
