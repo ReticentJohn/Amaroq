@@ -149,6 +149,7 @@
     NSArray *availableInstances = [self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"!(MS_INSTANCE_KEY LIKE[cd] %@)", instance]];
     self.availableInstances = availableInstances;
     
+    [FCFileManager removeItemAtPath:[self availableInstancesPath]];
     [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
 }
 
@@ -197,6 +198,7 @@
                     self.availableInstances = @[availableInstance];
                 }
                 
+                [FCFileManager removeItemAtPath:[self availableInstancesPath]];
                 [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
             }
             

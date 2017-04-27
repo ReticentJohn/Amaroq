@@ -225,7 +225,7 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
 "Unblock" = "Block entfernen";
 
 /* Unlisted */
-"Unlisted" = "Listing entfernen";
+"Unlisted" = "Kein Listing";
 
 /* Unlisted: Visible to everyone, but not shown on local or federated timelines */
 "Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Nicht gelisted: Sichtbar für alle, aber nicht in der lokalen oder öffentlichen Timeline";

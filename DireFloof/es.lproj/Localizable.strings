@@ -8,10 +8,17 @@
 "About your Mastodon instance" = "Acerca de tu instancia de Mastodon";
 
 /* Account preferences */
-"Account preferences" = "Prefrencias de la cuenta";
+"Account preferences" = "Preferencias de la cuenta";
 
 /* Add instance */
 "Add instance" = "Agregar instancia";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "El nombre de Amaroq proviene de una leyenda esquimal sobre un lobo gigante, el cual es un compañero apropiado para nuestro amigo el mastodonte. ¡Todos aullaremos a traves del espacio federado!
+
+Amaroq esta desarrollado y mantenido mediante el amor del movimiento Mastodon, que necesitaba apoyo para nuestros amigos de iOS. ¿Tienes alguna sugerencia, encontraste un error o solo quieres soporte? Puees contactaros en amaroq.feedback@gmail.com. O contacta con el desarrollador @eurasierboy en la instancia mastodon.social. ¡Feliz tooting!";
 
 /* App settings */
 "App settings" = "Preferencias";
@@ -261,4 +268,3 @@
 
 /* replied to */
 "replied to" = "respondido a";
-

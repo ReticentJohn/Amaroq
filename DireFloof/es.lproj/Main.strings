@@ -95,7 +95,7 @@
 "9tR-Gk-auO.text" = "John~";
 
 /* Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC"; */
-"10V-B3-wiC.text" = "SEGUIDORES";
+"10V-B3-wiC.text" = "SIGUIENDO";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "16m-xl-Ak4"; */
 "16m-xl-Ak4.text" = "@eurasierboy";
@@ -422,7 +422,7 @@
 "Vcw-cT-YLQ.text" = "Haciendo progresos :T La navegación por pestañas esta lista, empezando ahora con la vista del timeline. Estoy usando una caseta para perros como icono del inicio, los lobos tambien pueden usarla.";
 
 /* Class = "UIViewController"; title = "Notification Settings"; ObjectID = "Vt2-9J-A4e"; */
-"Vt2-9J-A4e.title" = "Preferencia de notificaciones";
+"Vt2-9J-A4e.title" = "Preferencias de notificaciones";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "Vyk-xr-Q4C"; */
 "Vyk-xr-Q4C.text" = "John~";
