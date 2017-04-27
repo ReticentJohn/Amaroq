@@ -11,7 +11,7 @@
 "About your Mastodon instance" = "Über Deine Mastodon Instanz";
 
 /* Account preferences */
-"Account preferences" = "Konto-Einstellungen";
+"Account preferences" = "Konto Einstellungen";
 
 /* Add instance */
 "Add instance" = "Instanz hinzufügen";
@@ -39,7 +39,7 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
 "Block" = "Blockieren";
 
 /* Blocked users */
-"Blocked users" = "Blockierte User";
+"Blocked users" = "Blockierte Benutzer";
 
 /* Cancel */
 "Cancel" = "Abbrechen";
@@ -87,7 +87,7 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
 "Error" = "Fehler";
 
 /* Failed to block user with error: */
-"Failed to block user with error:" = "Blocken des Users fehlgeschlagen. Fehler:";
+"Failed to block user with error:" = "Blocken des Benutzers fehlgeschlagen. Fehler:";
 
 /* Failed to clear notifications with error: */
 "Failed to clear notifications with error:" = "Benachrichtigungen leeren fehlgeschlagen. Fehler:";
@@ -114,10 +114,10 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
 "Failed to unblock user with error:" = "Konnte die Benutzer-Sperre nicht aufheben. Fehler:";
 
 /* Failed to unfollow user with error: */
-"Failed to unfollow user with error:" = "Konnte dem User nicht entfolgen. Fehler:";
+"Failed to unfollow user with error:" = "Konnte dem Benutzer nicht entfolgen. Fehler:";
 
 /* Failed to unmute user with error: */
-"Failed to unmute user with error:" = "Konnte die Stumm-Schaltung des Users nicht aufheben. Fehler:";
+"Failed to unmute user with error:" = "Konnte die Stumm-Schaltung des Benutzers nicht aufheben. Fehler:";
 
 /* Favorites */
 "Favorites" = "Favoriten";

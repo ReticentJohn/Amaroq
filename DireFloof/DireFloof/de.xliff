@@ -637,7 +637,7 @@
       </trans-unit>
       <trans-unit id="SC5-pn-I3A.title">
         <source>Blocked users</source>
-<target>Blockierte User</target>
+<target>Blockierte Benutzer</target>
         <note>Class = "UIViewController"; title = "Blocked users"; ObjectID = "SC5-pn-I3A";</note>
       </trans-unit>
       <trans-unit id="SL8-hc-mta.text">
@@ -1471,7 +1471,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Account preferences">
         <source>Account preferences</source>
-<target>Konto-Einstellungen</target>
+<target>Konto Einstellungen</target>
         <note>Account preferences</note>
       </trans-unit>
       <trans-unit id="Add instance">
@@ -1515,7 +1515,7 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
       </trans-unit>
       <trans-unit id="Blocked users">
         <source>Blocked users</source>
-<target>Blockierte User</target>
+<target>Blockierte Benutzer</target>
         <note>Blocked users</note>
       </trans-unit>
       <trans-unit id="Cancel">
@@ -1595,7 +1595,7 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
       </trans-unit>
       <trans-unit id="Failed to block user with error:">
         <source>Failed to block user with error:</source>
-<target>Blocken des Users fehlgeschlagen. Fehler:</target>
+<target>Blocken des Benutzers fehlgeschlagen. Fehler:</target>
         <note>Failed to block user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to clear notifications with error:">
@@ -1640,12 +1640,12 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
       </trans-unit>
       <trans-unit id="Failed to unfollow user with error:">
         <source>Failed to unfollow user with error:</source>
-<target>Konnte dem User nicht entfolgen. Fehler:</target>
+<target>Konnte dem Benutzer nicht entfolgen. Fehler:</target>
         <note>Failed to unfollow user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to unmute user with error:">
         <source>Failed to unmute user with error:</source>
-<target>Konnte die Stumm-Schaltung des Users nicht aufheben. Fehler:</target>
+<target>Konnte die Stumm-Schaltung des Benutzers nicht aufheben. Fehler:</target>
         <note>Failed to unmute user with error:</note>
       </trans-unit>
       <trans-unit id="Favorites">
