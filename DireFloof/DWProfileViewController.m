@@ -277,8 +277,11 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 [[MSUserStore sharedStore] muteUserWithId:self.account._id withCompletion:^(BOOL success, NSError *error) {
                     
                     if (success) {
-                        self.muting = YES;
-                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.account];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            self.muting = YES;
+                            [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.account];
+                        });
+                        
                     }
                     else
                     {
@@ -312,9 +315,12 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 [[MSUserStore sharedStore] blockUserWithId:self.account._id withCompletion:^(BOOL success, NSError *error) {
                     
                     if (success) {
-                        self.blocking = YES;
-                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.account];
-                        [self.navigationController popViewControllerAnimated:YES];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            self.blocking = YES;
+                            [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.account];
+                            [self.navigationController popViewControllerAnimated:YES];
+                        });
+                        
                     }
                     else
                     {

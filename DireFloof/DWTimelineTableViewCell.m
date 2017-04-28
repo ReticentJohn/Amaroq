@@ -210,8 +210,10 @@
             [[MSUserStore sharedStore] muteUserWithId:self.status.account._id withCompletion:^(BOOL success, NSError *error) {
                 
                 if (success) {
-                    [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status.account];
-                    [self.delegate timelineCell:self didBlockUser:self.status.account];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status.account];
+                        [self.delegate timelineCell:self didBlockUser:self.status.account];
+                    });
                 }
                 else
                 {
@@ -231,8 +233,12 @@
             [[MSUserStore sharedStore] blockUserWithId:self.status.account._id withCompletion:^(BOOL success, NSError *error) {
                 
                 if (success) {
-                    [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status.account];
-                    [self.delegate timelineCell:self didBlockUser:self.status.account];
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status.account];
+                        [self.delegate timelineCell:self didBlockUser:self.status.account];
+                    });
+
                 }
                 else
                 {
@@ -246,8 +252,11 @@
         
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Report", @"Report") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
             
-            [self.delegate timelineCell:self didReportStatus:self.status];
-            [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.delegate timelineCell:self didReportStatus:self.status];
+                [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status];
+            });
+            
         }]];
     }
     
