@@ -111,6 +111,10 @@
 {
     NSString *mediaIdentifier = [[[[mediaURL absoluteString] componentsSeparatedByString:@"?"] lastObject] stringByAppendingString:@".mp4"];
     
+    if ([mediaIdentifier containsString:@"/"]) {
+        mediaIdentifier = [[mediaURL.path componentsSeparatedByString:@"/"] componentsJoinedByString:@""];
+    }
+    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *cachePath = [paths objectAtIndex:0];
     BOOL isDir = NO;
