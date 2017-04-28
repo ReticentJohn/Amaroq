@@ -16,6 +16,10 @@
         <target>앱 설정</target>
         <note>Class = "UIViewController"; title = "App Settings"; ObjectID = "0B8-3F-mRu";</note>
       </trans-unit>
+      <trans-unit id="0FK-Hb-mdQ.text">
+        <source>Title</source>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "0FK-Hb-mdQ";</note>
+      </trans-unit>
       <trans-unit id="0QU-bc-7sH.title">
         <source>App Settings</source>
         <target>앱 설정</target>
@@ -36,15 +40,9 @@
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn";</note>
       </trans-unit>
-      <trans-unit id="2Dw-lx-6PD.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "2Dw-lx-6PD";</note>
-      </trans-unit>
-      <trans-unit id="2dk-Mu-Vt7.text">
-        <source>Subtitle</source>
-        <target>Subtitle</target>
-        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "2dk-Mu-Vt7";</note>
+      <trans-unit id="2kN-ah-4CU.accessibilityLabel">
+        <source>Content warning</source>
+        <note>Class = "UITextField"; accessibilityLabel = "Content warning"; ObjectID = "2kN-ah-4CU";</note>
       </trans-unit>
       <trans-unit id="2kN-ah-4CU.placeholder">
         <source>Content warning</source>
@@ -150,6 +148,10 @@
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8Hv-6F-dr5";</note>
+      </trans-unit>
+      <trans-unit id="9Mu-se-m9q.title">
+        <source>Home timeline</source>
+        <note>Class = "UITabBarItem"; title = "Home timeline"; ObjectID = "9Mu-se-m9q";</note>
       </trans-unit>
       <trans-unit id="9WA-oA-2ny.placeholder">
         <source>Search</source>
@@ -410,11 +412,6 @@
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "H73-bm-2lF";</note>
       </trans-unit>
-      <trans-unit id="Hog-5H-gCk.text">
-        <source>Subtitle</source>
-        <target>Subtitle</target>
-        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "Hog-5H-gCk";</note>
-      </trans-unit>
       <trans-unit id="I8t-xs-eqf.title">
         <source>Hashtag</source>
         <target>해시태그</target>
@@ -424,6 +421,10 @@
         <source>John~</source>
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "IGI-ME-0dH";</note>
+      </trans-unit>
+      <trans-unit id="IUN-9p-nd2.title">
+        <source>Notifications</source>
+        <note>Class = "UITabBarItem"; title = "Notifications"; ObjectID = "IUN-9p-nd2";</note>
       </trans-unit>
       <trans-unit id="IYS-fn-TAY.text">
         <source>Warning Tag</source>
@@ -439,6 +440,10 @@
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "IfX-ak-Ifc";</note>
+      </trans-unit>
+      <trans-unit id="J6K-ac-ptQ.text">
+        <source>Title</source>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "J6K-ac-ptQ";</note>
       </trans-unit>
       <trans-unit id="J9b-bk-mjW.text">
         <source>13 hours ago</source>
@@ -494,6 +499,10 @@
         <source>Warning Tag</source>
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "LbU-Pp-4SM";</note>
+      </trans-unit>
+      <trans-unit id="LlD-0o-d3D.accessibilityLabel">
+        <source>Search</source>
+        <note>Class = "UIView"; accessibilityLabel = "Search"; ObjectID = "LlD-0o-d3D";</note>
       </trans-unit>
       <trans-unit id="LvM-n9-aZp.text">
         <source>favourited your status</source>
@@ -555,6 +564,10 @@
         <target>13시간 전</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHj-8J-Z2C";</note>
       </trans-unit>
+      <trans-unit id="NNs-pP-Q8t.text">
+        <source>Title</source>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "NNs-pP-Q8t";</note>
+      </trans-unit>
       <trans-unit id="Nb0-tl-aQV.text">
         <source>John~</source>
         <target>John~</target>
@@ -564,6 +577,10 @@
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Npn-R5-GGf";</note>
+      </trans-unit>
+      <trans-unit id="NsL-fZ-ToP.title">
+        <source>Notifications</source>
+        <note>Class = "UITabBarItem"; title = "Notifications"; ObjectID = "NsL-fZ-ToP";</note>
       </trans-unit>
       <trans-unit id="OAS-Mr-yP8.normalTitle">
         <source>FOLLOWS YOU</source>
@@ -595,11 +612,6 @@
         <target>13시간 전</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "Pcl-ES-eXC";</note>
       </trans-unit>
-      <trans-unit id="Q7D-xK-caT.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "Q7D-xK-caT";</note>
-      </trans-unit>
       <trans-unit id="QE0-ao-uwT.text">
         <source>FOLLOWERS</source>
         <target>팔로워</target>
@@ -624,11 +636,6 @@
         <source>POSTS</source>
         <target>글</target>
         <note>Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO";</note>
-      </trans-unit>
-      <trans-unit id="ROn-S9-Y64.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "ROn-S9-Y64";</note>
       </trans-unit>
       <trans-unit id="Rhn-c1-Ohh.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
@@ -664,6 +671,10 @@
         <source>Log into any Mastodon instance!</source>
         <target>Mastodon 인스턴스에 로그인하세요!</target>
         <note>Class = "UILabel"; text = "Log into any Mastodon instance!"; ObjectID = "ToH-v6-fqC";</note>
+      </trans-unit>
+      <trans-unit id="Tt3-hS-LOv.accessibilityLabel">
+        <source>Close</source>
+        <note>Class = "UIButton"; accessibilityLabel = "Close"; ObjectID = "Tt3-hS-LOv";</note>
       </trans-unit>
       <trans-unit id="Tya-6c-9UJ.normalTitle">
         <source>SHOW</source>
@@ -810,6 +821,10 @@
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "aI4-ho-Fbg";</note>
       </trans-unit>
+      <trans-unit id="aZc-lv-edf.text">
+        <source>Subtitle</source>
+        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "aZc-lv-edf";</note>
+      </trans-unit>
       <trans-unit id="aam-jg-MZf.text">
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
@@ -845,6 +860,10 @@
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "bfJ-yc-2cN";</note>
       </trans-unit>
+      <trans-unit id="blm-y0-hTt.title">
+        <source>Home timeline</source>
+        <note>Class = "UITabBarItem"; title = "Home timeline"; ObjectID = "blm-y0-hTt";</note>
+      </trans-unit>
       <trans-unit id="bpa-6G-0UK.title">
         <source>Back</source>
         <target>뒤로</target>
@@ -859,6 +878,10 @@
         <source>HIDE</source>
         <target>숨기기</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "cIT-j6-x98";</note>
+      </trans-unit>
+      <trans-unit id="cJ1-eF-Qod.title">
+        <source>Compose status</source>
+        <note>Class = "UITabBarItem"; title = "Compose status"; ObjectID = "cJ1-eF-Qod";</note>
       </trans-unit>
       <trans-unit id="cjU-gd-4Il.text">
         <source>13 hours ago</source>
@@ -879,6 +902,10 @@
         <source>13 hours ago</source>
         <target>13시간 전</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "dJe-wm-mbS";</note>
+      </trans-unit>
+      <trans-unit id="dPe-vw-PnL.title">
+        <source>Public timeline</source>
+        <note>Class = "UITabBarItem"; title = "Public timeline"; ObjectID = "dPe-vw-PnL";</note>
       </trans-unit>
       <trans-unit id="dUK-lH-2U2.normalTitle">
         <source>SHOW</source>
@@ -924,6 +951,10 @@
         <source>Mar 02, 2017, 13:32 • Web •</source>
         <target>Mar 02, 2017, 13:32 • Web •</target>
         <note>Class = "UILabel"; text = "Mar 02, 2017, 13:32 • Web •"; ObjectID = "fb7-h8-3PG";</note>
+      </trans-unit>
+      <trans-unit id="fin-fd-APT.text">
+        <source>Title</source>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "fin-fd-APT";</note>
       </trans-unit>
       <trans-unit id="fmy-pu-s9i.text">
         <source>@eurasierboy</source>
@@ -990,6 +1021,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>John~</source>
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "iZ2-pR-esE";</note>
+      </trans-unit>
+      <trans-unit id="izx-3l-fkf.text">
+        <source>Title</source>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "izx-3l-fkf";</note>
       </trans-unit>
       <trans-unit id="jeI-4q-Be1.text">
         <source>What is on your mind?</source>
@@ -1076,11 +1111,6 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>13시간 전</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "lYZ-Qb-UgT";</note>
       </trans-unit>
-      <trans-unit id="lgH-Oi-0b4.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "lgH-Oi-0b4";</note>
-      </trans-unit>
       <trans-unit id="ltF-Mj-5Wb.text">
         <source>John~</source>
         <target>John~</target>
@@ -1145,11 +1175,6 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>About Amaroq</source>
         <target>Amaroq에 대하여</target>
         <note>Class = "UIButton"; selectedTitle = "About Amaroq"; ObjectID = "oLn-2m-0yg";</note>
-      </trans-unit>
-      <trans-unit id="p8o-Rd-3Y9.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "p8o-Rd-3Y9";</note>
       </trans-unit>
       <trans-unit id="pFj-zL-Wd9.text">
         <source>John~</source>
@@ -1226,6 +1251,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>0 •</target>
         <note>Class = "UILabel"; text = "0 •"; ObjectID = "r1g-xo-uUC";</note>
       </trans-unit>
+      <trans-unit id="rQZ-Ld-pnT.accessibilityLabel">
+        <source>Scroll to top</source>
+        <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "rQZ-Ld-pnT";</note>
+      </trans-unit>
       <trans-unit id="rjX-Ma-KFp.normalTitle">
         <source>Privacy Policy</source>
         <target>개인정보 보호 정책</target>
@@ -1245,6 +1274,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "sAL-De-fKG";</note>
+      </trans-unit>
+      <trans-unit id="sB4-xf-wkz.title">
+        <source>Menu</source>
+        <note>Class = "UITabBarItem"; title = "Menu"; ObjectID = "sB4-xf-wkz";</note>
       </trans-unit>
       <trans-unit id="sIR-7z-4Xv.text">
         <source>@eurasierboy</source>
@@ -1306,6 +1339,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "tPs-CE-wpY";</note>
       </trans-unit>
+      <trans-unit id="tae-bS-eCU.title">
+        <source>Public timeline</source>
+        <note>Class = "UITabBarItem"; title = "Public timeline"; ObjectID = "tae-bS-eCU";</note>
+      </trans-unit>
       <trans-unit id="tc5-81-C7W.text">
         <source>John~</source>
         <target>John~</target>
@@ -1315,6 +1352,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>Warning Tag</source>
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "ttQ-Ul-q7w";</note>
+      </trans-unit>
+      <trans-unit id="uTQ-ew-25R.accessibilityLabel">
+        <source>Scroll to top</source>
+        <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "uTQ-ew-25R";</note>
       </trans-unit>
       <trans-unit id="un5-wW-eie.text">
         <source>Label</source>
@@ -1371,15 +1412,18 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>eurasierboy</target>
         <note>Class = "UILabel"; text = "eurasierboy"; ObjectID = "xU0-be-BKd";</note>
       </trans-unit>
+      <trans-unit id="xUp-Q0-vli.accessibilityLabel">
+        <source>Scroll to top</source>
+        <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "xUp-Q0-vli";</note>
+      </trans-unit>
       <trans-unit id="xqD-wM-Q8V.text">
         <source>Warning Tag</source>
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "xqD-wM-Q8V";</note>
       </trans-unit>
-      <trans-unit id="yOd-ew-524.text">
-        <source>Subtitle</source>
-        <target>Subtitle</target>
-        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "yOd-ew-524";</note>
+      <trans-unit id="xwi-18-c7c.title">
+        <source>Menu</source>
+        <note>Class = "UITabBarItem"; title = "Menu"; ObjectID = "xwi-18-c7c";</note>
       </trans-unit>
       <trans-unit id="yyI-bk-cqq.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
@@ -1405,6 +1449,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>50</source>
         <target>50</target>
         <note>Class = "UILabel"; text = "50"; ObjectID = "z9I-DW-y6S";</note>
+      </trans-unit>
+      <trans-unit id="zBm-cJ-8j1.text">
+        <source>Subtitle</source>
+        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "zBm-cJ-8j1";</note>
       </trans-unit>
       <trans-unit id="zLO-VU-rhZ.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
@@ -1440,7 +1488,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.1.0</source>
+        <source>1.1.1</source>
       </trans-unit>
     </body>
   </file>
@@ -1548,10 +1596,9 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
         <target>늑대소리 금지 350만원 과태료</target>
         <note>DON'T AWOO $350 PENALTY</note>
       </trans-unit>
-      <trans-unit id="Default posts to private">
-        <source>Default posts to private</source>
-        <target>공개범위 기본값을 비공개로 하기</target>
-        <note>Default posts to private</note>
+      <trans-unit id="Default posts to followers-only">
+        <source>Default posts to followers-only</source>
+        <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
         <source>Default posts to public</source>
@@ -1658,10 +1705,26 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
         <target>전세계</target>
         <note>Federated</note>
       </trans-unit>
+      <trans-unit id="Federated timeline">
+        <source>Federated timeline</source>
+        <note>Federated timeline</note>
+      </trans-unit>
+      <trans-unit id="Follow">
+        <source>Follow</source>
+        <note>Follow</note>
+      </trans-unit>
       <trans-unit id="Follow requests">
         <source>Follow requests</source>
         <target>팔로우 요청</target>
         <note>Follow requests</note>
+      </trans-unit>
+      <trans-unit id="Followers-only">
+        <source>Followers-only</source>
+        <note>Followers-only</note>
+      </trans-unit>
+      <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
+        <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
+        <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
         <source>HASHTAG</source>
@@ -1677,6 +1740,10 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
         <source>Local</source>
         <target>로컬</target>
         <note>Local</note>
+      </trans-unit>
+      <trans-unit id="Local timeline">
+        <source>Local timeline</source>
+        <note>Local timeline</note>
       </trans-unit>
       <trans-unit id="Login request failed">
         <source>Login request failed</source>
@@ -1741,11 +1808,6 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
         <source>Private</source>
         <target>비공개</target>
         <note>Private</note>
-      </trans-unit>
-      <trans-unit id="Private: Only visible to you, @mentioned users, and followers on your instance">
-        <source>Private: Only visible to you, @mentioned users, and followers on your instance</source>
-        <target>비공개: 팔로워와 멘션한 사용자에게만 공개</target>
-        <note>Private: Only visible to you, @mentioned users, and followers on your instance</note>
       </trans-unit>
       <trans-unit id="Public">
         <source>Public</source>
@@ -1826,6 +1888,10 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
         <source>Unblock</source>
         <target>차단 해제</target>
         <note>Unblock</note>
+      </trans-unit>
+      <trans-unit id="Unfollow">
+        <source>Unfollow</source>
+        <note>Unfollow</note>
       </trans-unit>
       <trans-unit id="Unlisted">
         <source>Unlisted</source>
