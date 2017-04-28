@@ -181,26 +181,23 @@
             
             NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", self.instance]] firstObject];
             
-            if (!availableInstance) {
-                
-                availableInstance = @{MS_CLIENT_ID_KEY: self.client_id,
-                                      MS_CLIENT_SECRET_KEY: self.client_secret,
-                                      MS_BASE_URL_STRING_KEY: self.base_url_string,
-                                      MS_BASE_API_URL_STRING_KEY: self.base_api_url_string,
-                                      MS_BASE_MEDIA_URL_STRING_KEY: self.base_media_url_string,
-                                      MS_INSTANCE_KEY: self.instance};
-                
-                if (self.availableInstances) {
-                    self.availableInstances = [self.availableInstances arrayByAddingObject:availableInstance];
-                }
-                else
-                {
-                    self.availableInstances = @[availableInstance];
-                }
-                
-                [FCFileManager removeItemAtPath:[self availableInstancesPath]];
-                [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
+            availableInstance = @{MS_CLIENT_ID_KEY: self.client_id,
+                                  MS_CLIENT_SECRET_KEY: self.client_secret,
+                                  MS_BASE_URL_STRING_KEY: self.base_url_string,
+                                  MS_BASE_API_URL_STRING_KEY: self.base_api_url_string,
+                                  MS_BASE_MEDIA_URL_STRING_KEY: self.base_media_url_string,
+                                  MS_INSTANCE_KEY: self.instance};
+            
+            if (self.availableInstances) {
+                self.availableInstances = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"!(MS_INSTANCE_KEY LIKE[cd] %@)", self.instance]] arrayByAddingObject:availableInstance];
             }
+            else
+            {
+                self.availableInstances = @[availableInstance];
+            }
+            
+            [FCFileManager removeItemAtPath:[self availableInstancesPath]];
+            [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
             
             if (completion != nil) {
                 completion(self.isRegistered);
