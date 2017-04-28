@@ -677,7 +677,7 @@
       </trans-unit>
       <trans-unit id="U0R-AN-OS2.normalTitle">
         <source>Unlisted</source>
-<target>Kein Listing</target>
+<target>Nicht gelisted</target>
         <note>Class = "UIButton"; normalTitle = "Unlisted"; ObjectID = "U0R-AN-OS2";</note>
       </trans-unit>
       <trans-unit id="U01-1d-dos.normalTitle">
@@ -1829,7 +1829,7 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
       </trans-unit>
       <trans-unit id="Unlisted">
         <source>Unlisted</source>
-<target>Kein Listing</target>
+<target>Nicht gelisted</target>
         <note>Unlisted</note>
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">

@@ -90,6 +90,7 @@ IB_DESIGNABLE
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
 }
 
 
@@ -105,7 +106,6 @@ IB_DESIGNABLE
         [self.navigationController setNavigationBarHidden:YES animated:animated];
     }
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
 }
 
 
@@ -127,7 +127,6 @@ IB_DESIGNABLE
 {
     [super viewWillDisappear:animated];
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
 }
 
 
