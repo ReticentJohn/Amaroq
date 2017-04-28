@@ -567,7 +567,7 @@ static NSInteger mediaUploadLimit = 4;
     }
     else if ([self.privacyState isEqualToString:MS_VISIBILITY_TYPE_PRIVATE])
     {
-        privacyString = NSLocalizedString(@"Private", @"Private");
+        privacyString = NSLocalizedString(@"Followers-only", @"Followers-only");
     }
     else if ([self.privacyState isEqualToString:MS_VISIBILITY_TYPE_UNLISTED])
     {
