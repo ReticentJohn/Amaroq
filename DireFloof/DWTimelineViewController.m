@@ -386,7 +386,7 @@ IB_DESIGNABLE
     
     if (self.threadStatus) {
         if ([status._id isEqual:self.threadStatus._id]) {
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self.navigationController popViewControllerAnimated:YES];
         }
     }
 }
@@ -399,7 +399,7 @@ IB_DESIGNABLE
     
     if (self.threadStatus) {
         if ([user._id isEqual:self.threadStatus.account._id]) {
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self.navigationController popViewControllerAnimated:YES];
         }
     }
 }

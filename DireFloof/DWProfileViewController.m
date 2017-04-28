@@ -314,7 +314,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                     if (success) {
                         self.blocking = YES;
                         [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.account];
-                        [self dismissViewControllerAnimated:YES completion:nil];
+                        [self.navigationController popViewControllerAnimated:YES];
                     }
                     else
                     {
