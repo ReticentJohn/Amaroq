@@ -1720,10 +1720,12 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
+        <target>フォロワーのみ</target>
         <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
+        <target>フォロワーのみ: フォロワーとメンションしたユーザーだけに公開</target>
         <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">

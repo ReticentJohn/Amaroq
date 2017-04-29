@@ -1531,7 +1531,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
-        <target>Amaroq는 이누이트 전설에 등장하는 거대한 늑대의 이름에서 유래했습니다. 이름도 기능도 마스토돈의 친구로 딱 좋은 앱입니다. 우리의 울음이 세계를 가로지르길!
+        <target>Amaroq는 이누이트 전설에 등장하는 거대한 늑대의 이름에서 유래했습니다. 이름도 기능도 마스토돈의 친구로 딱 좋은 앱입니다. 전세계가 우리의 울음소리로 가득차길!
 
 Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있습니다. 우리 iOS 친구들에게 이 도구가 몹시 필요했거든요. 제안, 오류 제보, 또는 의견이 있으신가요? amaroq.feedback@gmail.com으로 연락주시거나, 개발자 @eurasierboy를 mastodon.social 인스턴스에서 찾아주세요. 해피 투팅!</target>
         <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
@@ -1593,11 +1593,12 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="DON'T AWOO $350 PENALTY">
         <source>DON'T AWOO $350 PENALTY</source>
-        <target>늑대소리 금지 350만원 과태료</target>
+        <target>울음소리 금지 과태료 350만원</target>
         <note>DON'T AWOO $350 PENALTY</note>
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
+        <target>공개범위 기본값을 팔로워로 하기</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
@@ -1720,10 +1721,12 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
+        <target>팔로워</target>
         <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
+        <target>팔로워: 당신과 멘션된 사용자, 당신의 팔로워만 볼 수 있습니다</target>
         <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
@@ -1816,7 +1819,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="Public: Visible to everyone on local and federated timelines">
         <source>Public: Visible to everyone on local and federated timelines</source>
-        <target>공개: 모든 사용자에게 공개</target>
+        <target>공개: 모든 사용자에게 공개합니다</target>
         <note>Public: Visible to everyone on local and federated timelines</note>
       </trans-unit>
       <trans-unit id="Receive boost notifications">
@@ -1826,7 +1829,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
         <source>Receive favorite notifications</source>
-        <target>관심글로 등록되었을 때 알림 받기</target>
+        <target>관심글에 등록되었을 때 알림 받기</target>
         <note>Receive favorite notifications</note>
       </trans-unit>
       <trans-unit id="Receive mention notifications">
@@ -1851,7 +1854,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="Select a privacy level">
         <source>Select a privacy level</source>
-        <target>공개범위를 선택</target>
+        <target>공개범위를 선택해주세요</target>
         <note>Select a privacy level</note>
       </trans-unit>
       <trans-unit id="Sensitive content">
@@ -1866,7 +1869,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="Shows on local/federated timelines">
         <source>Shows on local/federated timelines</source>
-        <target>전세계/로컬 타임라인에서 표시</target>
+        <target>전세계/로컬 타임라인에 표시됨</target>
         <note>Shows on local/federated timelines</note>
       </trans-unit>
       <trans-unit id="This can help older devices">
@@ -1900,7 +1903,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">
         <source>Unlisted: Visible to everyone, but not shown on local or federated timelines</source>
-        <target>미등록: 투트는 모든 사용자에게 공개하지만, 전세계/로컬 타임라인에는 표시되지 않음</target>
+        <target>미등록: 모든 사용자에게 공개되지만, 전세계/로컬 타임라인에는 표시되지 않습니다</target>
         <note>Unlisted: Visible to everyone, but not shown on local or federated timelines</note>
       </trans-unit>
       <trans-unit id="Unmute">
@@ -1965,7 +1968,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
       </trans-unit>
       <trans-unit id="replied to">
         <source>replied to</source>
-        <target>답글을 달았습니다</target>
+        <target>님의 답글 →</target>
         <note>replied to</note>
       </trans-unit>
     </body>

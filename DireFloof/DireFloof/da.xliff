@@ -1596,11 +1596,12 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
+        <target>Opdateringer kun synlige for følgere som udgangspunkt</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
         <source>Default posts to public</source>
-        <target>Opdateringer er offentlige som udgangspunkt</target>
+        <target>Opdateringer offentlige som udgangspunkt</target>
         <note>Default posts to public</note>
       </trans-unit>
       <trans-unit id="Delete">
@@ -1718,10 +1719,12 @@ Amaroq er bygget og vedligeholdt af en kærlighed til idéen om Mastodon, som vi
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
+        <target>Kun følgere</target>
         <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
+        <target>Kun følgere: Kun synlig for dig, @omtalte brugere og dine følgere</target>
         <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
