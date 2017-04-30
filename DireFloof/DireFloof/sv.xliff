@@ -1598,6 +1598,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
+		<target>Enbart följare poster som standard </target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
@@ -1707,6 +1708,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       </trans-unit>
       <trans-unit id="Federated timeline">
         <source>Federated timeline</source>
+		<target>Federerade</target>
         <note>Federated timeline</note>
       </trans-unit>
       <trans-unit id="Follow">
@@ -1715,16 +1717,18 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       </trans-unit>
       <trans-unit id="Follow requests">
         <source>Follow requests</source>
-        <target>Följ förfrågningar</target>
+        <target>Följförfrågningar</target>
         <note>Follow requests</note>
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
-        <note>Followers-only</note>
+        <target>Enbart följare</target>
+		<note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
-        <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
+        <target>Enbart följare: Visas bara för dig, @nämnda användare samt dina följare</target>
+		<note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
         <source>HASHTAG</source>

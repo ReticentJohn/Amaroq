@@ -59,8 +59,8 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "YLA INTE - 350$ I BÖTER";
 
-/* Default posts to private */
-"Default posts to private" = "Privata poster som standard";
+/* Default posts to followers-only */
+"Default posts to followers-only" = "Enbart följare poster som standard ";
 
 /* Default posts to public */
 "Default posts to public" = "Publika poster som standard";
@@ -125,8 +125,17 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
 /* Federated */
 "Federated" = "Federerade";
 
+/* Federated timeline */
+"Federated timeline" = "Federerade";
+
 /* Follow requests */
-"Follow requests" = "Följ förfrågningar";
+"Follow requests" = "Följförfrågningar";
+
+/* Followers-only */
+"Followers-only" = "Enbart följare";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "Enbart följare: Visas bara för dig, @nämnda användare samt dina följare";
 
 /* HASHTAG */
 "HASHTAG" = "Hashtag";
@@ -169,12 +178,6 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "Håll videos upp till 30 sekunder långa";
-
-/* Private */
-"Private" = "Privat";
-
-/* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "Privat: Enbart synlig för dig, @nämnda användare och följare på din instans.";
 
 /* Public */
 "Public" = "Publik";
