@@ -492,11 +492,8 @@ static NSInteger mediaUploadLimit = 4;
     
     if (self.replyToStatus) {
         
-        if ([self.replyToStatus.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT]) {
-            
-            self.privacyState = MS_VISIBILITY_TYPE_DIRECT;
-            self.privacyButton.userInteractionEnabled = NO;
-        }
+        self.privacyState = self.replyToStatus.visibility;
+        self.privacyButton.userInteractionEnabled = ![self.replyToStatus.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT];
         
         if (self.replyToStatus.spoiler_text.length) {
             self.contentWarningField.text = self.replyToStatus.spoiler_text;
@@ -513,9 +510,7 @@ static NSInteger mediaUploadLimit = 4;
                 [self.replyToAvatarImageView stopAnimating];
             }
         } failure:nil];
-        
-        //[self.replyToAvatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? self.replyToStatus.account.avatar_static : self.replyToStatus.account.avatar]];
-        
+                
         NSString *replyToText = [self.replyToStatus.account.acct isEqualToString:[[MSUserStore sharedStore] currentAccountString]] ? @"" : [NSString stringWithFormat:@"@%@ ", self.replyToStatus.account.acct];
                 
         for (MSMention *entity in self.replyToStatus.mentions) {
