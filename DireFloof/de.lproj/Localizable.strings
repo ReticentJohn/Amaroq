@@ -59,9 +59,6 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "DON'T AWOO $350 PENALTY";
 
-/* Default posts to private */
-"Default posts to private" = "Beiträge immer privat posten";
-
 /* Default posts to public */
 "Default posts to public" = "Beiträge immer öffentlich posten";
 
@@ -125,8 +122,20 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
 /* Federated */
 "Federated" = "Öffentlich";
 
+/* Federated timeline */
+"Federated timeline" = "Öffentliche Timeline";
+
+/* Follow */
+"Follow" = "Folgen";
+
 /* Follow requests */
-"Follow requests" = "Follow Anfragen";
+"Follow requests" = "Folge Anfragen";
+
+/* Followers-only */
+"Followers-only" = "Nur für Follower";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "Nur für Follower: Nur sichtbar für Dich, @Benutzer und Deine Follower";
 
 /* HASHTAG */
 "HASHTAG" = "HASHTAG";
@@ -169,12 +178,6 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "Bitte verwende nur Videos mit bis zu 30 Sekunden";
-
-/* Private */
-"Private" = "Privat";
-
-/* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "Privat: Nur für Dich sichtbar, @Benutzer und Follower auf Deiner Instanz";
 
 /* Public */
 "Public" = "Öffentlich";

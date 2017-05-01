@@ -1707,23 +1707,27 @@ Amaroq wurde im Geist der Mastodon Idee entwickelt und weiterentwickelt, die dri
       </trans-unit>
       <trans-unit id="Federated timeline">
         <source>Federated timeline</source>
+	<target>Öffentliche Timeline</target>
         <note>Federated timeline</note>
       </trans-unit>
       <trans-unit id="Follow">
         <source>Follow</source>
+	<target>Folgen</target>
         <note>Follow</note>
       </trans-unit>
       <trans-unit id="Follow requests">
         <source>Follow requests</source>
-        <target>Follow Anfragen</target>
+        <target>Folge Anfragen</target>
         <note>Follow requests</note>
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
+	<target>Nur für Follower</target>
         <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
+	<target>Nur für Follower: Nur sichtbar für Dich, @Benutzer und Deine Follower</target>
         <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
