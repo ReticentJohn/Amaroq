@@ -19,7 +19,7 @@
 /* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
 "Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
-Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq는 이누이트 전설에 등장하는 거대한 늑대의 이름에서 유래했습니다. 이름도 기능도 마스토돈의 친구로 딱 좋은 앱입니다. 우리의 울음이 세계를 가로지르길!
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq는 이누이트 전설에 등장하는 거대한 늑대의 이름에서 유래했습니다. 이름도 기능도 마스토돈의 친구로 딱 좋은 앱입니다. 전세계가 우리의 울음소리로 가득차길!
 
 Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있습니다. 우리 iOS 친구들에게 이 도구가 몹시 필요했거든요. 제안, 오류 제보, 또는 의견이 있으신가요? amaroq.feedback@gmail.com으로 연락주시거나, 개발자 @eurasierboy를 mastodon.social 인스턴스에서 찾아주세요. 해피 투팅!";
 
@@ -57,10 +57,10 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
 "Currently logged into:" = "로그인 중:";
 
 /* DON'T AWOO $350 PENALTY */
-"DON'T AWOO $350 PENALTY" = "늑대소리 금지 350만원 과태료";
+"DON'T AWOO $350 PENALTY" = "울음소리 금지 과태료 350만원";
 
-/* Default posts to private */
-"Default posts to private" = "공개범위 기본값을 비공개로 하기";
+/* Default posts to followers-only */
+"Default posts to followers-only" = "공개범위 기본값을 팔로워로 하기";
 
 /* Default posts to public */
 "Default posts to public" = "공개범위 기본값을 공개로 하기";
@@ -128,6 +128,12 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
 /* Follow requests */
 "Follow requests" = "팔로우 요청";
 
+/* Followers-only */
+"Followers-only" = "팔로워";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "팔로워: 당신과 멘션된 사용자, 당신의 팔로워만 볼 수 있습니다";
+
 /* HASHTAG */
 "HASHTAG" = "해시태그";
 
@@ -170,23 +176,17 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "동영상의 최대 길이는 30초입니다";
 
-/* Private */
-"Private" = "비공개";
-
-/* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "비공개: 팔로워와 멘션한 사용자에게만 공개";
-
 /* Public */
 "Public" = "공개";
 
 /* Public: Visible to everyone on local and federated timelines */
-"Public: Visible to everyone on local and federated timelines" = "공개: 모든 사용자에게 공개";
+"Public: Visible to everyone on local and federated timelines" = "공개: 모든 사용자에게 공개합니다";
 
 /* Receive boost notifications */
 "Receive boost notifications" = "부스트되었을 때 알림 받기";
 
 /* Receive favorite notifications */
-"Receive favorite notifications" = "관심글로 등록되었을 때 알림 받기";
+"Receive favorite notifications" = "관심글에 등록되었을 때 알림 받기";
 
 /* Receive mention notifications */
 "Receive mention notifications" = "멘션되었을 때 알림 받기";
@@ -201,7 +201,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
 "Select" = "";
 
 /* Select a privacy level */
-"Select a privacy level" = "공개범위를 선택";
+"Select a privacy level" = "공개범위를 선택해주세요";
 
 /* Sensitive content */
 "Sensitive content" = "민감한 컨텐츠";
@@ -210,7 +210,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
 "Share" = "공유";
 
 /* Shows on local/federated timelines */
-"Shows on local/federated timelines" = "전세계/로컬 타임라인에서 표시";
+"Shows on local/federated timelines" = "전세계/로컬 타임라인에 표시됨";
 
 /* This can help older devices */
 "This can help older devices" = "오래된 디바이스에 최적화";
@@ -228,7 +228,7 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
 "Unlisted" = "미등록";
 
 /* Unlisted: Visible to everyone, but not shown on local or federated timelines */
-"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "미등록: 투트는 모든 사용자에게 공개하지만, 전세계/로컬 타임라인에는 표시되지 않음";
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "미등록: 모든 사용자에게 공개되지만, 전세계/로컬 타임라인에는 표시되지 않습니다";
 
 /* Unmute */
 "Unmute" = "뮤트 해제";
@@ -267,5 +267,5 @@ Amaroq는 Mastodon을 사랑하는 마음으로 만들어지고 관리되고 있
 "replied" = "님이 답글을 달았습니다";
 
 /* replied to */
-"replied to" = "답글을 달았습니다";
+"replied to" = "님의 답글 →";
 

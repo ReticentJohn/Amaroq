@@ -13,12 +13,6 @@
 /* Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn"; */
 "1kx-6H-zbn.text" = "John~";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "2Dw-lx-6PD"; */
-"2Dw-lx-6PD.text" = "Title";
-
-/* Class = "UILabel"; text = "Subtitle"; ObjectID = "2dk-Mu-Vt7"; */
-"2dk-Mu-Vt7.text" = "Subtitle";
-
 /* Class = "UITextField"; placeholder = "Content warning"; ObjectID = "2kN-ah-4CU"; */
 "2kN-ah-4CU.placeholder" = "閲覧注意";
 
@@ -235,9 +229,6 @@
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "H73-bm-2lF"; */
 "H73-bm-2lF.text" = "Warning Tag";
 
-/* Class = "UILabel"; text = "Subtitle"; ObjectID = "Hog-5H-gCk"; */
-"Hog-5H-gCk.text" = "Subtitle";
-
 /* Class = "UIViewController"; title = "Hashtag"; ObjectID = "I8t-xs-eqf"; */
 "I8t-xs-eqf.title" = "ハッシュタグ";
 
@@ -346,9 +337,6 @@
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "Pcl-ES-eXC"; */
 "Pcl-ES-eXC.text" = "13 時間前";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "Q7D-xK-caT"; */
-"Q7D-xK-caT.text" = "Title";
-
 /* Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT"; */
 "QE0-ao-uwT.text" = "フォロワー";
 
@@ -363,9 +351,6 @@
 
 /* Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO"; */
 "ROI-ge-hOO.text" = "投稿";
-
-/* Class = "UILabel"; text = "Title"; ObjectID = "ROn-S9-Y64"; */
-"ROn-S9-Y64.text" = "Title";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Rhn-c1-Ohh"; */
 "Rhn-c1-Ohh.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
@@ -631,9 +616,6 @@
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "lYZ-Qb-UgT"; */
 "lYZ-Qb-UgT.text" = "13 時間前";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "lgH-Oi-0b4"; */
-"lgH-Oi-0b4.text" = "Title";
-
 /* Class = "UILabel"; text = "John~"; ObjectID = "ltF-Mj-5Wb"; */
 "ltF-Mj-5Wb.text" = "John~";
 
@@ -672,9 +654,6 @@
 
 /* Class = "UIButton"; selectedTitle = "About Amaroq"; ObjectID = "oLn-2m-0yg"; */
 "oLn-2m-0yg.selectedTitle" = "Amaroqについて";
-
-/* Class = "UILabel"; text = "Title"; ObjectID = "p8o-Rd-3Y9"; */
-"p8o-Rd-3Y9.text" = "Title";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "pFj-zL-Wd9"; */
 "pFj-zL-Wd9.text" = "John~";
@@ -810,9 +789,6 @@
 
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "xqD-wM-Q8V"; */
 "xqD-wM-Q8V.text" = "Warning Tag";
-
-/* Class = "UILabel"; text = "Subtitle"; ObjectID = "yOd-ew-524"; */
-"yOd-ew-524.text" = "Subtitle";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "yyI-bk-cqq"; */
 "yyI-bk-cqq.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
