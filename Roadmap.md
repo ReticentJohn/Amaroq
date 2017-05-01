@@ -1,6 +1,6 @@
 # Roadmap
 
-## Near-term (v1.1)
+## Near-term (v1.1.x)
 * VoiceOver support
 * Navigation overhaul (cleaning up many of the nonsensical modals, adding left/right swiping)
 * Multi-instance support
