@@ -69,7 +69,7 @@
     
         self.availableInstances = [FCFileManager readFileAtPathAsArray:[self availableInstancesPath]];
 
-        if (!self.availableInstances) {
+        if (!self.availableInstances.count) {
             
             self.availableInstances = @[];
             
