@@ -101,7 +101,7 @@
 "9tR-Gk-auO.text" = "John~";
 
 /* Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC"; */
-"10V-B3-wiC.text" = "INNYCH";
+"10V-B3-wiC.text" = "OBSERWOWANI";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "16m-xl-Ak4"; */
 "16m-xl-Ak4.text" = "@eurasierboy";
@@ -167,7 +167,7 @@
 "C5m-P3-Aoc.text" = "John~";
 
 /* Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU"; */
-"CIJ-hS-huU.title" = "Spodobały się";
+"CIJ-hS-huU.title" = "Twoje ulubione";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "CcB-VU-xOW"; */
 "CcB-VU-xOW.text" = "@eurasierboy";
@@ -359,7 +359,7 @@
 "Pcl-ES-eXC.text" = "13 godzin temu";
 
 /* Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT"; */
-"QE0-ao-uwT.text" = "INNI";
+"QE0-ao-uwT.text" = "OBSERWUJĄCY";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "QJ6-Tw-gvd"; */
 "QJ6-Tw-gvd.text" = "@eurasierboy";
@@ -443,7 +443,7 @@
 "Vcw-cT-YLQ.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
 
 /* Class = "UIViewController"; title = "Notification Settings"; ObjectID = "Vt2-9J-A4e"; */
-"Vt2-9J-A4e.title" = "Powiadom mnie, kiedy...";
+"Vt2-9J-A4e.title" = "Powiadomienia";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "Vyk-xr-Q4C"; */
 "Vyk-xr-Q4C.text" = "John~";
@@ -521,7 +521,7 @@
 "cjU-gd-4Il.text" = "13 godzin temu";
 
 /* Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD"; */
-"cym-bd-fdD.text" = "Załączony obrazek może być niestosowny";
+"cym-bd-fdD.text" = "Niestosowne obrazki";
 
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "d7e-VT-75D"; */
 "d7e-VT-75D.text" = "Ostrzeżenie";

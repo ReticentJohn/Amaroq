@@ -19,11 +19,11 @@
 /* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
 "Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
-Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Nazwa programu Amaroq wywodzi się z eskimoskiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech zawyje w naszym rozproszonym świecie!
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Nazwa programu Amaroq wywodzi się z inuickiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech wilk zawyje w naszym rozproszonym świecie!
 
 Program Amaroq powstał z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS.
 
-Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Albo złap autora pisząc do @eurasierboy na serwerze mastodon.social. Miłego tututuuu!
+Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Możesz go też złapać pisząc do @eurasierboy na serwerze mastodon.social. Miłego srututuuu!
 ";
 
 /* App settings */
@@ -42,7 +42,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Block" = "zablokuj";
 
 /* Blocked users */
-"Blocked users" = "Kogo blokujesz";
+"Blocked users" = "Kto został zablokowany";
 
 /* Cancel */
 "Cancel" = "nie teraz";
@@ -63,10 +63,10 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "DON'T AWOO $350 PENALTY" = "WYCIE PODLEGA GRZYWNIE DO 3500 ZŁ!";
 
 /* Default posts to followers-only */
-"Default posts to followers-only" = "Wiadomości idą do swoich";
+"Default posts to followers-only" = "Domyślnie wysyłaj tylko do swoich";
 
 /* Default posts to public */
-"Default posts to public" = "Wiadomości idą na cały świat";
+"Default posts to public" = "Domyślnie wysyłaj na cały świat";
 
 /* Delete */
 "Delete" = "skasuj";
@@ -132,7 +132,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Federated timeline" = "Rozmowa międzymiastowa";
 
 /* Follow requests */
-"Follow requests" = "Kto chce mnie obserwować";
+"Follow requests" = "Kto chce ciebie obserwować";
 
 /* Followers-only */
 "Followers-only" = "swoi";
@@ -159,7 +159,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Logout" = "Wyloguj się";
 
 /* Mention */
-"Mention" = "wywołaj";
+"Mention" = "@napisz";
 
 /* Mute */
 "Mute" = "wycisz";
@@ -177,7 +177,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Notification settings" = "Powiadomienia";
 
 /* Only show to followers */
-"Only show to followers" = "pokaż tylko obserwującym cię";
+"Only show to followers" = "Pokaż tylko obserwującym cię";
 
 /* Open in Safari */
 "Open in Safari" = "otwórz w Safari";
@@ -192,16 +192,16 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Public: Visible to everyone on local and federated timelines" = "świat: wiadomość wszędzie widoczna wszędzie";
 
 /* Receive boost notifications */
-"Receive boost notifications" = "ktoś poda mój tekst dalej";
+"Receive boost notifications" = "Ktoś podał mój tekst dalej";
 
 /* Receive favorite notifications */
-"Receive favorite notifications" = "komuś spodoba się mój tekst";
+"Receive favorite notifications" = "Komuś spodobał się mój tekst";
 
 /* Receive mention notifications */
-"Receive mention notifications" = "ktoś zaadresuje do mnie wiadomość";
+"Receive mention notifications" = "Ktoś napisze do mnie";
 
 /* Receive new follower notifications */
-"Receive new follower notifications" = "ktoś zacznie mnie obserwować";
+"Receive new follower notifications" = "Ktoś zaczął mnie obserwować";
 
 /* Report */
 "Report" = "poskarż się";
@@ -216,10 +216,10 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Sensitive content" = "Ostrożnie z zawartością";
 
 /* Share */
-"Share" = "podziel się";
+"Share" = "przekaż dalej";
 
 /* Shows on local/federated timelines */
-"Shows on local/federated timelines" = "Będą się pojawiać na miejscowej i międzymiastowej";
+"Shows on local/federated timelines" = "Bierzesz udział w publicznej rozmowie";
 
 /* This can help older devices */
 "This can help older devices" = "Sprzęt może lepiej działać";
@@ -240,7 +240,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Unlisted" = "poza";
 
 /* Unlisted: Visible to everyone, but not shown on local or federated timelines */
-"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "poza: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na miejscowej i międzymiastowej.";
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "poza: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na rozmowie miejscowej i międzymiastowej.";
 
 /* Unmute */
 "Unmute" = "wyłącz wyciszanie";

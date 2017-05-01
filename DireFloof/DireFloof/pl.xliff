@@ -187,7 +187,7 @@
       </trans-unit>
       <trans-unit id="10V-B3-wiC.text">
         <source>FOLLOWS</source>
-        <target>INNYCH</target>
+        <target>OBSERWOWANI</target>
         <note>Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC";</note>
       </trans-unit>
       <trans-unit id="16m-xl-Ak4.text">
@@ -297,7 +297,7 @@
       </trans-unit>
       <trans-unit id="CIJ-hS-huU.title">
         <source>Favorites</source>
-        <target>Spodobały się</target>
+        <target>Twoje ulubione</target>
         <note>Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU";</note>
       </trans-unit>
       <trans-unit id="CcB-VU-xOW.text">
@@ -621,7 +621,7 @@
       </trans-unit>
       <trans-unit id="QE0-ao-uwT.text">
         <source>FOLLOWERS</source>
-        <target>INNI</target>
+        <target>OBSERWUJĄCY</target>
         <note>Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT";</note>
       </trans-unit>
       <trans-unit id="QJ6-Tw-gvd.text">
@@ -761,7 +761,7 @@
       </trans-unit>
       <trans-unit id="Vt2-9J-A4e.title">
         <source>Notification Settings</source>
-        <target>Powiadom mnie, kiedy...</target>
+        <target>Powiadomienia</target>
         <note>Class = "UIViewController"; title = "Notification Settings"; ObjectID = "Vt2-9J-A4e";</note>
       </trans-unit>
       <trans-unit id="Vyk-xr-Q4C.text">
@@ -899,7 +899,7 @@
       </trans-unit>
       <trans-unit id="cym-bd-fdD.text">
         <source>Mark media as sensitive</source>
-        <target>Załączony obrazek może być niestosowny</target>
+        <target>Niestosowne obrazki</target>
         <note>Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD";</note>
       </trans-unit>
       <trans-unit id="d7e-VT-75D.text">
@@ -1546,11 +1546,11 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
-<target>Nazwa programu Amaroq wywodzi się z eskimoskiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech zawyje w naszym rozproszonym świecie!
+<target>Nazwa programu Amaroq wywodzi się z inuickiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech wilk zawyje w naszym rozproszonym świecie!
 
 Program Amaroq powstał z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS.
 
-Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Albo złap autora pisząc do @eurasierboy na serwerze mastodon.social. Miłego tututuuu!
+Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Możesz go też złapać pisząc do @eurasierboy na serwerze mastodon.social. Miłego srututuuu!
 </target>
         <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
       </trans-unit>
@@ -1581,7 +1581,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Blocked users">
         <source>Blocked users</source>
-        <target>Kogo blokujesz</target>
+        <target>Kto został zablokowany</target>
         <note>Blocked users</note>
       </trans-unit>
       <trans-unit id="Cancel">
@@ -1616,12 +1616,12 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
-        <target>Wiadomości idą do swoich</target>
+        <target>Domyślnie wysyłaj tylko do swoich</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
         <source>Default posts to public</source>
-        <target>Wiadomości idą na cały świat</target>
+        <target>Domyślnie wysyłaj na cały świat</target>
         <note>Default posts to public</note>
       </trans-unit>
       <trans-unit id="Delete">
@@ -1736,7 +1736,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Follow requests">
         <source>Follow requests</source>
-        <target>Kto chce mnie obserwować</target>
+        <target>Kto chce ciebie obserwować</target>
         <note>Follow requests</note>
       </trans-unit>
       <trans-unit id="Followers-only">
@@ -1781,7 +1781,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Mention">
         <source>Mention</source>
-        <target>wywołaj</target>
+        <target>@napisz</target>
         <note>Mention</note>
       </trans-unit>
       <trans-unit id="Mute">
@@ -1815,7 +1815,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Only show to followers">
         <source>Only show to followers</source>
-        <target>pokaż tylko obserwującym cię</target>
+        <target>Pokaż tylko obserwującym cię</target>
         <note>Only show to followers</note>
       </trans-unit>
       <trans-unit id="Open in Safari">
@@ -1845,22 +1845,22 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Receive boost notifications">
         <source>Receive boost notifications</source>
-        <target>ktoś poda mój tekst dalej</target>
+        <target>Ktoś podał mój tekst dalej</target>
         <note>Receive boost notifications</note>
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
         <source>Receive favorite notifications</source>
-        <target>komuś spodoba się mój tekst</target>
+        <target>Komuś spodobał się mój tekst</target>
         <note>Receive favorite notifications</note>
       </trans-unit>
       <trans-unit id="Receive mention notifications">
         <source>Receive mention notifications</source>
-        <target>ktoś zaadresuje do mnie wiadomość</target>
+        <target>Ktoś napisze do mnie</target>
         <note>Receive mention notifications</note>
       </trans-unit>
       <trans-unit id="Receive new follower notifications">
         <source>Receive new follower notifications</source>
-        <target>ktoś zacznie mnie obserwować</target>
+        <target>Ktoś zaczął mnie obserwować</target>
         <note>Receive new follower notifications</note>
       </trans-unit>
       <trans-unit id="Report">
@@ -1885,12 +1885,12 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Share">
         <source>Share</source>
-        <target>podziel się</target>
+        <target>przekaż dalej</target>
         <note>Share</note>
       </trans-unit>
       <trans-unit id="Shows on local/federated timelines">
         <source>Shows on local/federated timelines</source>
-        <target>Będą się pojawiać na miejscowej i międzymiastowej</target>
+        <target>Bierzesz udział w publicznej rozmowie</target>
         <note>Shows on local/federated timelines</note>
       </trans-unit>
       <trans-unit id="This can help older devices">
@@ -1925,7 +1925,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">
         <source>Unlisted: Visible to everyone, but not shown on local or federated timelines</source>
-        <target>poza: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na miejscowej i międzymiastowej.</target>
+        <target>poza: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na rozmowie miejscowej i międzymiastowej.</target>
         <note>Unlisted: Visible to everyone, but not shown on local or federated timelines</note>
       </trans-unit>
       <trans-unit id="Unmute">

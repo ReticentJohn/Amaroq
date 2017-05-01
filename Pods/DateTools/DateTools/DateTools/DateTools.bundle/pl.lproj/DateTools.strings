@@ -69,3 +69,21 @@
 
 /* No comment provided by engineer. */
 "This year" = "W tym roku";
+
+/* Short format for */
+"%dy" = "%d lat(a)"; // year
+"%dM" = "%d m-c(y)"; // month
+"%dw" = "%d tyg"; // week
+"%dd" = "%dd"; // day
+"%dh" = "%dh"; // hour
+"%dm" = "%dm"; // minute
+"%ds" = "%ds"; // second
+
+/* Week format for */
+"Mon" = "pon.";
+"Tue" = "wt.";
+"Wed" = "śr.";
+"Thu" = "czw.";
+"Fri" = "piątek";
+"Sat" = "sob.";
+"Sun" = "nd.";
