@@ -94,7 +94,7 @@
 
 - (void)setMastodonInstance:(NSString *)instance
 {
-    NSString *instanceName = [[instance componentsSeparatedByString:@"//"] lastObject];
+    NSString *instanceName = [[[[instance componentsSeparatedByString:@"//"] lastObject] componentsSeparatedByString:@"@"] lastObject];
     
     if (!instanceName.length) {
         instanceName = @"mastodon.social";
