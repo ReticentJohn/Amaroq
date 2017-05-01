@@ -98,7 +98,7 @@ IB_DESIGNABLE
 {
     [super viewWillAppear:animated];
     
-    if (self.favorites || self.threadStatus) {
+    if (self.favorites || self.threadStatus || self.hashtag) {
         [self.navigationController setNavigationBarHidden:NO animated:animated];
     }
     else if (!self.hashtag)
