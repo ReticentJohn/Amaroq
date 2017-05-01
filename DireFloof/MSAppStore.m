@@ -71,6 +71,8 @@
 
         if (!self.availableInstances) {
             
+            self.availableInstances = @[];
+            
             if (self.client_id && self.client_secret && self.base_url_string && self.base_api_url_string && self.base_media_url_string && self.instance) {
                 self.availableInstances = [self.availableInstances arrayByAddingObject:@{MS_CLIENT_ID_KEY: self.client_id,
                                                                                          MS_CLIENT_SECRET_KEY: self.client_secret,
@@ -78,6 +80,8 @@
                                                                                          MS_BASE_API_URL_STRING_KEY: self.base_api_url_string,
                                                                                          MS_BASE_MEDIA_URL_STRING_KEY: self.base_media_url_string,
                                                                                          MS_INSTANCE_KEY: self.instance}];
+                
+                [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
             }
         }
     }
