@@ -23,7 +23,7 @@
       </trans-unit>
       <trans-unit id="0QU-bc-7sH.title">
         <source>App Settings</source>
-        <target>Ustawienia aplikacji</target>
+        <target>Ustawienia programu</target>
         <note>Class = "UINavigationItem"; title = "App Settings"; ObjectID = "0QU-bc-7sH";</note>
       </trans-unit>
       <trans-unit id="1H7-Fb-CNb.text">
@@ -187,7 +187,7 @@
       </trans-unit>
       <trans-unit id="10V-B3-wiC.text">
         <source>FOLLOWS</source>
-        <target>OBSERWOWANI</target>
+        <target>Obserwuje</target>
         <note>Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC";</note>
       </trans-unit>
       <trans-unit id="16m-xl-Ak4.text">
@@ -297,7 +297,7 @@
       </trans-unit>
       <trans-unit id="CIJ-hS-huU.title">
         <source>Favorites</source>
-        <target>Twoje ulubione</target>
+        <target>Wpisy oznaczone gwiazdką</target>
         <note>Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU";</note>
       </trans-unit>
       <trans-unit id="CcB-VU-xOW.text">
@@ -621,7 +621,7 @@
       </trans-unit>
       <trans-unit id="QE0-ao-uwT.text">
         <source>FOLLOWERS</source>
-        <target>OBSERWUJĄCY</target>
+        <target>Obserwowani</target>
         <note>Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT";</note>
       </trans-unit>
       <trans-unit id="QJ6-Tw-gvd.text">
@@ -641,7 +641,7 @@
       </trans-unit>
       <trans-unit id="ROI-ge-hOO.text">
         <source>POSTS</source>
-        <target>POSTY</target>
+        <target>Wpisy</target>
         <note>Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO";</note>
       </trans-unit>
       <trans-unit id="Rhn-c1-Ohh.text">
@@ -1651,7 +1651,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Edit Profile">
         <source>Edit Profile</source>
-        <target>Zmień wizytówkę</target>
+        <target>zmień wizytówkę</target>
         <note>Edit Profile</note>
       </trans-unit>
       <trans-unit id="Error">
@@ -1716,7 +1716,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Favorites">
         <source>Favorites</source>
-        <target>Spodobały się</target>
+        <target>Wpisy oznaczone gwiazdką</target>
         <note>Favorites</note>
       </trans-unit>
       <trans-unit id="Federated">
@@ -1815,7 +1815,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Only show to followers">
         <source>Only show to followers</source>
-        <target>Pokaż tylko obserwującym cię</target>
+        <target>Pokaż wpisy tylko obserwującym cię</target>
         <note>Only show to followers</note>
       </trans-unit>
       <trans-unit id="Open in Safari">
@@ -1855,7 +1855,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Receive mention notifications">
         <source>Receive mention notifications</source>
-        <target>Ktoś napisze do mnie</target>
+        <target>Ktoś napisał do mnie</target>
         <note>Receive mention notifications</note>
       </trans-unit>
       <trans-unit id="Receive new follower notifications">
@@ -1955,7 +1955,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="favorited your status">
         <source>favorited your status</source>
-        <target>spodobało się</target>
+        <target>oznacza wpis gwiazdką</target>
         <note>favorited your status</note>
       </trans-unit>
       <trans-unit id="followed you">

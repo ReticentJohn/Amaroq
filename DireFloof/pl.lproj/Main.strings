@@ -5,7 +5,7 @@
 "0FK-Hb-mdQ.text" = "Tytuł";
 
 /* Class = "UINavigationItem"; title = "App Settings"; ObjectID = "0QU-bc-7sH"; */
-"0QU-bc-7sH.title" = "Ustawienia aplikacji";
+"0QU-bc-7sH.title" = "Ustawienia programu";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "1H7-Fb-CNb"; */
 "1H7-Fb-CNb.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
@@ -101,7 +101,7 @@
 "9tR-Gk-auO.text" = "John~";
 
 /* Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC"; */
-"10V-B3-wiC.text" = "OBSERWOWANI";
+"10V-B3-wiC.text" = "Obserwuje";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "16m-xl-Ak4"; */
 "16m-xl-Ak4.text" = "@eurasierboy";
@@ -167,7 +167,7 @@
 "C5m-P3-Aoc.text" = "John~";
 
 /* Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU"; */
-"CIJ-hS-huU.title" = "Twoje ulubione";
+"CIJ-hS-huU.title" = "Wpisy oznaczone gwiazdką";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "CcB-VU-xOW"; */
 "CcB-VU-xOW.text" = "@eurasierboy";
@@ -359,7 +359,7 @@
 "Pcl-ES-eXC.text" = "13 godzin temu";
 
 /* Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT"; */
-"QE0-ao-uwT.text" = "OBSERWUJĄCY";
+"QE0-ao-uwT.text" = "Obserwowani";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "QJ6-Tw-gvd"; */
 "QJ6-Tw-gvd.text" = "@eurasierboy";
@@ -371,7 +371,7 @@
 "Qyb-fS-d4v.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
 
 /* Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO"; */
-"ROI-ge-hOO.text" = "POSTY";
+"ROI-ge-hOO.text" = "Wpisy";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Rhn-c1-Ohh"; */
 "Rhn-c1-Ohh.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";

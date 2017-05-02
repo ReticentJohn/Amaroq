@@ -84,7 +84,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Done" = "gotowe";
 
 /* Edit Profile */
-"Edit Profile" = "Zmień wizytówkę";
+"Edit Profile" = "zmień wizytówkę";
 
 /* Error */
 "Error" = "Błąd";
@@ -123,7 +123,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Failed to unmute user with error:" = "Wyłączenie wyciszania nie udało się:";
 
 /* Favorites */
-"Favorites" = "Spodobały się";
+"Favorites" = "Wpisy oznaczone gwiazdką";
 
 /* Federated */
 "Federated" = "Międzymiastowa";
@@ -177,7 +177,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Notification settings" = "Powiadomienia";
 
 /* Only show to followers */
-"Only show to followers" = "Pokaż tylko obserwującym cię";
+"Only show to followers" = "Pokaż wpisy tylko obserwującym cię";
 
 /* Open in Safari */
 "Open in Safari" = "otwórz w Safari";
@@ -198,7 +198,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Receive favorite notifications" = "Komuś spodobał się mój tekst";
 
 /* Receive mention notifications */
-"Receive mention notifications" = "Ktoś napisze do mnie";
+"Receive mention notifications" = "Ktoś napisał do mnie";
 
 /* Receive new follower notifications */
 "Receive new follower notifications" = "Ktoś zaczął mnie obserwować";
@@ -258,7 +258,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "boosted your status" = "podaje dalej twój tekst";
 
 /* favorited your status */
-"favorited your status" = "spodobało się";
+"favorited your status" = "oznacza wpis gwiazdką";
 
 /* followed you */
 "followed you" = "zaczyna cię obserwować";
