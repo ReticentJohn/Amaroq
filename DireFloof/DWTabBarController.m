@@ -116,7 +116,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 {
     NSUInteger index = [tabBar.items indexOfObject:item];
 
-    if (self.previousSelectedIndex == index) {
+    if (self.previousSelectedIndex == index && [[[self.viewControllers objectAtIndex:index] viewControllers] count] == 1) {
         
         if (index == DWTabItemHome || index == DWTabItemPublic) {
             
