@@ -1598,11 +1598,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
+        <target>Innlegg vises til bare følgere som standard</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
         <source>Default posts to public</source>
-        <target>Offentlig poster som standard</target>
+        <target>Innlegg vises offentlig som standard</target>
         <note>Default posts to public</note>
       </trans-unit>
       <trans-unit id="Delete">
@@ -1720,10 +1721,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
+        <target>Bare følgere</target>
         <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
+        <target>Bare følgere: Bare synlig for deg, @nevnte brukere, og dine følgere</target>
         <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
@@ -1806,7 +1809,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Private">
         <source>Private</source>
-        <target>Private</target>
+        <target>Privat</target>
         <note>Private</note>
       </trans-unit>
       <trans-unit id="Public">

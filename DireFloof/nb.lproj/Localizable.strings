@@ -59,11 +59,11 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "IKKE AWOO STRAFF $350";
 
-/* Default posts to private */
-"Default posts to private" = "Private poster som standard";
+/* Default posts to followers-only */
+"Default posts to followers-only" = "Innlegg vises til bare følgere som standard";
 
 /* Default posts to public */
-"Default posts to public" = "Offentlig poster som standard";
+"Default posts to public" = "Innlegg vises offentlig som standard";
 
 /* Delete */
 "Delete" = "Slett";
@@ -128,6 +128,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 /* Follow requests */
 "Follow requests" = "Følgeetterspørseler";
 
+/* Followers-only */
+"Followers-only" = "Bare følgere";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "Bare følgere: Bare synlig for deg, @nevnte brukere, og dine følgere";
+
 /* HASHTAG */
 "HASHTAG" = "EMNEKNAGG";
 
@@ -169,12 +175,6 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "Vennligst begrens videoer til 30 sekunder";
-
-/* Private */
-"Private" = "Private";
-
-/* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "Private: Bare synlig for deg, @nevnte brukere, og følgere på din insans";
 
 /* Public */
 "Public" = "Offentlig";
