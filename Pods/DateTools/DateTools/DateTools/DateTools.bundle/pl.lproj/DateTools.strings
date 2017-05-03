@@ -72,7 +72,7 @@
 
 /* Short format for */
 "%dy" = "%d lat(a)"; // year
-"%dM" = "%d m-c(y)"; // month
+"%dM" = "%d m-c"; // month
 "%dw" = "%d tyg"; // week
 "%dd" = "%dd"; // day
 "%dh" = "%dh"; // hour
