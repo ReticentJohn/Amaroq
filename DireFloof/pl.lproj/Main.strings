@@ -167,7 +167,7 @@
 "C5m-P3-Aoc.text" = "John~";
 
 /* Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU"; */
-"CIJ-hS-huU.title" = "Wpisy oznaczone gwiazdką";
+"CIJ-hS-huU.title" = "Twoje ulubione wpisy";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "CcB-VU-xOW"; */
 "CcB-VU-xOW.text" = "@eurasierboy";
@@ -359,7 +359,7 @@
 "Pcl-ES-eXC.text" = "13 godzin temu";
 
 /* Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT"; */
-"QE0-ao-uwT.text" = "Obserwowani";
+"QE0-ao-uwT.text" = "Obserwują";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "QJ6-Tw-gvd"; */
 "QJ6-Tw-gvd.text" = "@eurasierboy";
@@ -422,7 +422,7 @@
 "UDH-Pt-ySX.selectedTitle" = "SCHOWAJ";
 
 /* Class = "UILabel"; text = "This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?"; ObjectID = "UgZ-zj-ANn"; */
-"UgZ-zj-ANn.text" = "Wiadomość zostanie wysłana do adresatów na innym serwerze. Czy oni na pewno nie pokażą tej wiadomości innym?";
+"UgZ-zj-ANn.text" = "Wiadomość zostanie wysłana do adresatów na innym serwerze. Adresaci mogą nie wiedzieć, że Twój wpis nie jest przeznaczony dla wszystkich i mogą go ujawnić!";
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "V0f-xA-yAn"; */
 "V0f-xA-yAn.text" = "John~";

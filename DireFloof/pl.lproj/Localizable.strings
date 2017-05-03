@@ -123,7 +123,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "Failed to unmute user with error:" = "Wyłączenie wyciszania nie udało się:";
 
 /* Favorites */
-"Favorites" = "Wpisy oznaczone gwiazdką";
+"Favorites" = "Twoje ulubione wpisy";
 
 /* Federated */
 "Federated" = "Międzymiastowa";
@@ -258,7 +258,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
 "boosted your status" = "podaje dalej twój tekst";
 
 /* favorited your status */
-"favorited your status" = "oznacza wpis gwiazdką";
+"favorited your status" = "spodobało się";
 
 /* followed you */
 "followed you" = "zaczyna cię obserwować";
