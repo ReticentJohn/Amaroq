@@ -1488,7 +1488,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.1.1</source>
+        <source>1.1.2</source>
       </trans-unit>
     </body>
   </file>
@@ -1805,11 +1805,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>Please keep to videos up to 30 seconds long</source>
         <target>動画の長さを30秒以内に収めてください</target>
         <note>Please keep to videos up to 30 seconds long</note>
-      </trans-unit>
-      <trans-unit id="Private">
-        <source>Private</source>
-        <target>非公開</target>
-        <note>Private</note>
       </trans-unit>
       <trans-unit id="Public">
         <source>Public</source>

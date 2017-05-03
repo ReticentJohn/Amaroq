@@ -1488,7 +1488,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.1.1</source>
+        <source>1.1.2</source>
       </trans-unit>
     </body>
   </file>
@@ -1598,7 +1598,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
-		<target>Enbart följare poster som standard </target>
+        <target>Enbart följare poster som standard </target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
@@ -1708,7 +1708,7 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       </trans-unit>
       <trans-unit id="Federated timeline">
         <source>Federated timeline</source>
-		<target>Federerade</target>
+        <target>Federerade</target>
         <note>Federated timeline</note>
       </trans-unit>
       <trans-unit id="Follow">
@@ -1723,12 +1723,12 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
         <target>Enbart följare</target>
-		<note>Followers-only</note>
+        <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
         <target>Enbart följare: Visas bara för dig, @nämnda användare samt dina följare</target>
-		<note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
+        <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
         <source>HASHTAG</source>
@@ -1807,11 +1807,6 @@ Amaroq byggs och underhålls av kärleken till idén kring Mastodon som verklige
         <source>Please keep to videos up to 30 seconds long</source>
         <target>Håll videos upp till 30 sekunder långa</target>
         <note>Please keep to videos up to 30 seconds long</note>
-      </trans-unit>
-      <trans-unit id="Private">
-        <source>Private</source>
-        <target>Privat</target>
-        <note>Private</note>
       </trans-unit>
       <trans-unit id="Public">
         <source>Public</source>

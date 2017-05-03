@@ -1503,7 +1503,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.1.1</source>
+        <source>1.1.2</source>
       </trans-unit>
     </body>
   </file>
@@ -1546,7 +1546,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
-<target>Nazwa programu Amaroq wywodzi się z inuickiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech wilk zawyje w naszym rozproszonym świecie!
+        <target>Nazwa programu Amaroq wywodzi się z inuickiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech wilk zawyje w naszym rozproszonym świecie!
 
 Program Amaroq powstał z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS.
 
@@ -1731,7 +1731,6 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Follow">
         <source>Follow</source>
-        <source>obserwuj</source>
         <note>Follow</note>
       </trans-unit>
       <trans-unit id="Follow requests">
@@ -1827,11 +1826,6 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
         <source>Please keep to videos up to 30 seconds long</source>
         <target>Prosimy nie ładować nagrań dłuższych niż pół minuty</target>
         <note>Please keep to videos up to 30 seconds long</note>
-      </trans-unit>
-      <trans-unit id="Private">
-        <source>Private</source>
-        <target>dla wybranych</target>
-        <note>Private</note>
       </trans-unit>
       <trans-unit id="Public">
         <source>Public</source>
