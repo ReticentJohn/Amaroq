@@ -185,7 +185,7 @@
       </trans-unit>
       <trans-unit id="10V-B3-wiC.text">
         <source>FOLLOWS</source>
-        <target>SEGUEIX</target>
+        <target>SEGUINT</target>
         <note>Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC";</note>
       </trans-unit>
       <trans-unit id="16m-xl-Ak4.text">
@@ -1598,7 +1598,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
-        <target>Default posts to followers-only</target>
+        <target>Per defecte missatges només a seguidors</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
@@ -1721,12 +1721,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
-        <target>Followers-only</target>
+        <target>Només seguidors</target>
         <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
-        <target>Followers-only: Only visible to you, @mentioned users, and your followers</target>
+        <target>Només seguidors: Només visible per tu, usuaris @mencionats i els teus seguidors</target>
         <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
@@ -1799,7 +1799,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Open in Safari">
         <source>Open in Safari</source>
-        <target>Obri a Safariで開く</target>
+        <target>Obrir a Safariく</target>
         <note>Open in Safari</note>
       </trans-unit>
       <trans-unit id="Please keep to videos up to 30 seconds long">
@@ -1819,7 +1819,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Receive boost notifications">
         <source>Receive boost notifications</source>
-        <target>Rebre notificaciones de retoots</target>
+        <target>Rebre notificacions de retoots</target>
         <note>Receive boost notifications</note>
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
@@ -1918,7 +1918,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="boosted">
         <source>boosted</source>
-        <target>retootejat</target>
+        <target>ha retootejat</target>
         <note>boosted</note>
       </trans-unit>
       <trans-unit id="boosted your status">

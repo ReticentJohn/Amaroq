@@ -59,6 +59,9 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "NO AWOO, PENALITZACIÓ DE $350";
 
+/* Default posts to followers-only */
+"Default posts to followers-only" = "Per defecte missatges només a seguidors";
+
 /* Default posts to public */
 "Default posts to public" = "Missatges públics per defecte";
 
@@ -125,6 +128,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 /* Follow requests */
 "Follow requests" = "Sol·licituds de seguiment";
 
+/* Followers-only */
+"Followers-only" = "Només seguidors";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "Només seguidors: Només visible per tu, usuaris @mencionats i els teus seguidors";
+
 /* HASHTAG */
 "HASHTAG" = "ETIQUETA";
 
@@ -162,7 +171,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Only show to followers" = "Només mostrar a seguidors";
 
 /* Open in Safari */
-"Open in Safari" = "Obri a Safariで開く";
+"Open in Safari" = "Obrir a Safariく";
 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "Si us plau els vídeos fins 30 segons de durada";
@@ -174,7 +183,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Public: Visible to everyone on local and federated timelines" = "Públic: Visible per tothom en local i federats";
 
 /* Receive boost notifications */
-"Receive boost notifications" = "Rebre notificaciones de retoots";
+"Receive boost notifications" = "Rebre notificacions de retoots";
 
 /* Receive favorite notifications */
 "Receive favorite notifications" = "Rebre notificacions de favorits";
@@ -231,7 +240,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "You have" = "";
 
 /* boosted */
-"boosted" = "retootejat";
+"boosted" = "ha retootejat";
 
 /* boosted your status */
 "boosted your status" = "ha retootejat el teu estat";
