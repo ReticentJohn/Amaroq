@@ -115,6 +115,13 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
     NSUInteger index = [tabBar.items indexOfObject:item];
+    
+    if (index == DWTabItemBlank) {
+        [self setSelectedIndex:self.previousSelectedIndex];
+        [self setSelectedViewController:[self.viewControllers objectAtIndex:self.previousSelectedIndex]];
+        [self composeButtonPressed];
+        return;
+    }
 
     if (self.previousSelectedIndex == index && [[[self.viewControllers objectAtIndex:index] viewControllers] count] == 1) {
         
