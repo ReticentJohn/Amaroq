@@ -56,8 +56,8 @@ Amaroq esta desarrollado y mantenido mediante el amor del movimiento Mastodon, q
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "NO AWOO, PENALIZACIÓN DE $350";
 
-/* Default posts to private */
-"Default posts to private" = "Estados en privado por defecto";
+/* Default posts to followers-only */
+"Default posts to followers-only" = "Por defecto mostrar estados solo a seguidores";
 
 /* Default posts to public */
 "Default posts to public" = "Estados en público por defecto";
@@ -122,8 +122,20 @@ Amaroq esta desarrollado y mantenido mediante el amor del movimiento Mastodon, q
 /* Federated */
 "Federated" = "Federado";
 
+/* Federated timeline */
+"Federated timeline" = "Historia federada";
+
+/* Follow */
+"Follow" = "Seguir";
+
 /* Follow requests */
 "Follow requests" = "Peticiones de seguimiento";
+
+/* Followers-only */
+"Followers-only" = "Solo para seguidores";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "Solo para seguidores: Solo visible para ti, usuarios @mencionados y tus seguidores";
 
 /* HASHTAG */
 "HASHTAG" = "HASHTAG";
@@ -133,6 +145,9 @@ Amaroq esta desarrollado y mantenido mediante el amor del movimiento Mastodon, q
 
 /* Local */
 "Local" = "Local";
+
+/* Local timeline */
+"Local timeline" = "Historia local";
 
 /* Login request failed */
 "Login request failed" = "Fallo al iniciar sesión";
@@ -169,12 +184,6 @@ Amaroq esta desarrollado y mantenido mediante el amor del movimiento Mastodon, q
 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "Mantener para videos hasta 30 segundos de largo";
-
-/* Private */
-"Private" = "Privado";
-
-/* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "Privado: Solo visible para ti, usuarios que @menciones y seguidores en tu instancia";
 
 /* Public */
 "Public" = "Público";
@@ -224,6 +233,9 @@ Amaroq esta desarrollado y mantenido mediante el amor del movimiento Mastodon, q
 /* Unblock */
 "Unblock" = "Desbloquear";
 
+/* Unfollow */
+"Unfollow" = "Dejar de seguir";
+
 /* Unlisted */
 "Unlisted" = "No listados";
 
@@ -268,3 +280,4 @@ Amaroq esta desarrollado y mantenido mediante el amor del movimiento Mastodon, q
 
 /* replied to */
 "replied to" = "respondido a";
+
