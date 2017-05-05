@@ -454,7 +454,7 @@ static NSInteger mediaUploadLimit = 4;
     self.warningLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     self.contentWarningField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     
-    self.privacyButton.titleLabel.numberOfLines = 0;
+    self.privacyButton.titleLabel.numberOfLines = 2;
     self.contentWarningField.text = @"";
     self.contentField.text = @"";
     self.contentLengthLabel.text = [NSString stringWithFormat:@"%li", (long)contentLengthLimit];
