@@ -260,7 +260,7 @@
       </trans-unit>
       <trans-unit id="BPA-eB-mCR.text">
         <source>Hide text behind warning</source>
-        <target>Amagar test darrera l'advertència'</target>
+        <target>Amagar text darrera l'advertència'</target>
         <note>Class = "UILabel"; text = "Hide text behind warning"; ObjectID = "BPA-eB-mCR";</note>
       </trans-unit>
       <trans-unit id="Bb0-EI-Ll2.text">
@@ -1499,7 +1499,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
     <body>
       <trans-unit id=" or 1 video">
         <source> or 1 video</source>
-        <target>o 1 vídeo</target>
+        <target> o 1 vídeo</target>
         <note>or 1 video</note>
       </trans-unit>
       <trans-unit id="ACCOUNT">
@@ -1533,7 +1533,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
         <target>Amaroq porta el nom d'una llegenda Inuit d'un llop gegant, que és l'apropiat company del nostre amic el mastodont. Tots a udolar a través de la fediverse!
             
-            Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar un missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!</target>
+        Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar un missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!</target>
         <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
       </trans-unit>
       <trans-unit id="App settings">
@@ -1558,7 +1558,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Block">
         <source>Block</source>
-        <target>Bloqueig</target>
+        <target>Bloquejar</target>
         <note>Block</note>
       </trans-unit>
       <trans-unit id="Blocked users">
@@ -1618,7 +1618,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Direct: Only visible to you and @mentioned users">
         <source>Direct: Only visible to you and @mentioned users</source>
-        <target>Directe: Visible només per tu i el usuaris @mencionats</target>
+        <target>Directe: Visible només per tu i els usuaris @mencionats</target>
         <note>Direct: Only visible to you and @mentioned users</note>
       </trans-unit>
       <trans-unit id="Disable gif auto-playback">
@@ -1703,7 +1703,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Federated">
         <source>Federated</source>
-        <target>Federat</target>
+        <target>Federada</target>
         <note>Federated</note>
       </trans-unit>
       <trans-unit id="Federated timeline">
@@ -1760,7 +1760,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Mention">
         <source>Mention</source>
-        <target>Esment</target>
+        <target>Esmentar</target>
         <note>Mention</note>
       </trans-unit>
       <trans-unit id="Mute">
@@ -1814,7 +1814,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Public: Visible to everyone on local and federated timelines">
         <source>Public: Visible to everyone on local and federated timelines</source>
-        <target>Públic: Visible per tothom en local i federats</target>
+        <target>Públic: Visible per tothom en local i federada</target>
         <note>Public: Visible to everyone on local and federated timelines</note>
       </trans-unit>
       <trans-unit id="Receive boost notifications">
@@ -1898,7 +1898,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">
         <source>Unlisted: Visible to everyone, but not shown on local or federated timelines</source>
-        <target>No llistat: Visible per a tothom, però no es mostra en línies de temps local o federada</target>
+        <target>No llistat: Visible per a tothom, però no es mostra en les línies de temps local o federada</target>
         <note>Unlisted: Visible to everyone, but not shown on local or federated timelines</note>
       </trans-unit>
       <trans-unit id="Unmute">

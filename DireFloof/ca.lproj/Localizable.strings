@@ -1,5 +1,5 @@
 /* or 1 video */
-" or 1 video" = "o 1 vídeo";
+" or 1 video" = " o 1 vídeo";
 
 /* ACCOUNT */
 "ACCOUNT" = "COMPTE";
@@ -21,7 +21,7 @@
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq porta el nom d'una llegenda Inuit d'un llop gegant, que és l'apropiat company del nostre amic el mastodont. Tots a udolar a través de la fediverse!
             
-            Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar un missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!";
+        Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar un missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!";
 
 /* App settings */
 "App settings" = "Preferències";
@@ -36,7 +36,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Back" = "Enrere";
 
 /* Block */
-"Block" = "Bloqueig";
+"Block" = "Bloquejar";
 
 /* Blocked users */
 "Blocked users" = "Usuaris bloquejats";
@@ -72,7 +72,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Direct" = "Directe";
 
 /* Direct: Only visible to you and @mentioned users */
-"Direct: Only visible to you and @mentioned users" = "Directe: Visible només per tu i el usuaris @mencionats";
+"Direct: Only visible to you and @mentioned users" = "Directe: Visible només per tu i els usuaris @mencionats";
 
 /* Disable gif auto-playback */
 "Disable gif auto-playback" = "Desactivar auto-reproducció dels GIF";
@@ -123,7 +123,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Favorites" = "Favorits";
 
 /* Federated */
-"Federated" = "Federat";
+"Federated" = "Federada";
 
 /* Follow requests */
 "Follow requests" = "Sol·licituds de seguiment";
@@ -150,7 +150,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Logout" = "Tancar sessió";
 
 /* Mention */
-"Mention" = "Esment";
+"Mention" = "Esmentar";
 
 /* Mute */
 "Mute" = "Apagar";
@@ -180,7 +180,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Public" = "Públic";
 
 /* Public: Visible to everyone on local and federated timelines */
-"Public: Visible to everyone on local and federated timelines" = "Públic: Visible per tothom en local i federats";
+"Public: Visible to everyone on local and federated timelines" = "Públic: Visible per tothom en local i federada";
 
 /* Receive boost notifications */
 "Receive boost notifications" = "Rebre notificacions de retoots";
@@ -228,7 +228,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Unlisted" = "No llistat";
 
 /* Unlisted: Visible to everyone, but not shown on local or federated timelines */
-"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "No llistat: Visible per a tothom, però no es mostra en línies de temps local o federada";
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "No llistat: Visible per a tothom, però no es mostra en les línies de temps local o federada";
 
 /* Unmute */
 "Unmute" = "No silenciat";
