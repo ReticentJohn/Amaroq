@@ -1533,7 +1533,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
         <target>Amaroq porta el nom d'una llegenda Inuit d'un llop gegant, que és l'apropiat company del nostre amic el mastodont. Tots a udolar a través de la fediverse!
             
-            Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error, o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!</target>
+            Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar un missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!</target>
         <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
       </trans-unit>
       <trans-unit id="App settings">
@@ -1588,7 +1588,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Currently logged into:">
         <source>Currently logged into:</source>
-        <target>Registrar actualment en:</target>
+        <target>Registrat actualment en:</target>
         <note>Currently logged into:</note>
       </trans-unit>
       <trans-unit id="DON'T AWOO $350 PENALTY">
@@ -1799,7 +1799,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Open in Safari">
         <source>Open in Safari</source>
-        <target>Obrir a Safariく</target>
+        <target>Obrir a Safari</target>
         <note>Open in Safari</note>
       </trans-unit>
       <trans-unit id="Please keep to videos up to 30 seconds long">
@@ -1839,7 +1839,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Report">
         <source>Report</source>
-        <target>Informe</target>
+        <target>Informar</target>
         <note>Report</note>
       </trans-unit>
       <trans-unit id="Select">

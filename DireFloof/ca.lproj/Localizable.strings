@@ -21,7 +21,7 @@
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq porta el nom d'una llegenda Inuit d'un llop gegant, que és l'apropiat company del nostre amic el mastodont. Tots a udolar a través de la fediverse!
             
-            Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error, o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!";
+            Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar un missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!";
 
 /* App settings */
 "App settings" = "Preferències";
@@ -54,7 +54,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Copy text" = "Copiar text";
 
 /* Currently logged into: */
-"Currently logged into:" = "Registrar actualment en:";
+"Currently logged into:" = "Registrat actualment en:";
 
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "NO AWOO, PENALITZACIÓ DE $350";
@@ -171,7 +171,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Only show to followers" = "Només mostrar a seguidors";
 
 /* Open in Safari */
-"Open in Safari" = "Obrir a Safariく";
+"Open in Safari" = "Obrir a Safari";
 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "Si us plau els vídeos fins 30 segons de durada";
@@ -195,7 +195,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Receive new follower notifications" = "Rebre notificacions de nous seguidors";
 
 /* Report */
-"Report" = "Informe";
+"Report" = "Informar";
 
 /* Select */
 "Select" = "";
