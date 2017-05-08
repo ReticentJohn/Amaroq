@@ -1,0 +1,271 @@
+/* or 1 video */
+" or 1 video" = " o 1 vídeo";
+
+/* ACCOUNT */
+"ACCOUNT" = "COMPTE";
+
+/* About Amaroq */
+"About Amaroq" = "Quant a Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "Quant a la teva instància Mastodon";
+
+/* Account preferences */
+"Account preferences" = "Preferències del compte";
+
+/* Add instance */
+"Add instance" = "Afegir instància";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq porta el nom d'una llegenda Inuit d'un llop gegant, que és l'apropiat company del nostre amic el mastodont. Tots a udolar a través de la fediverse!
+            
+        Amaroq està construït i mantingut per amor a la idea de Mastodon, que ha necessitat urgentment una applicació mòbil per als nostres amics de IOS. Tens un suggeriment, has trobat un error o simplement vols expressar algun tipus de suport? Ens pots trobar a amaroq.feedback@gmail.com. O enviar un missatge al desenvolupador @eurasierboy de la instància mastodon.social. Feliços Toots!";
+
+/* App settings */
+"App settings" = "Preferències";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "Estàs segur que vols suprimir totes les notificacions？";
+
+/* Awoo mode */
+"Awoo mode" = "Mode Awoo";
+
+/* Back */
+"Back" = "Enrere";
+
+/* Block */
+"Block" = "Bloquejar";
+
+/* Blocked users */
+"Blocked users" = "Usuaris bloquejats";
+
+/* Cancel */
+"Cancel" = "Cancel·lar";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "Canvia la forma de rebre les notificacions push";
+
+/* Clear cache */
+"Clear cache" = "Netejar memòria cau";
+
+/* Copy text */
+"Copy text" = "Copiar text";
+
+/* Currently logged into: */
+"Currently logged into:" = "Registrat actualment en:";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "NO AWOO, PENALITZACIÓ DE $350";
+
+/* Default posts to followers-only */
+"Default posts to followers-only" = "Per defecte missatges només a seguidors";
+
+/* Default posts to public */
+"Default posts to public" = "Missatges públics per defecte";
+
+/* Delete */
+"Delete" = "Esborrar";
+
+/* Direct */
+"Direct" = "Directe";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "Directe: Visible només per tu i els usuaris @mencionats";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "Desactivar auto-reproducció dels GIF";
+
+/* Done */
+"Done" = "Fet";
+
+/* Edit Profile */
+"Edit Profile" = "Editar perfil";
+
+/* Error */
+"Error" = "Error";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "No s'ha pogut bloquejar l'usuari amb error:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "No s'ha pogut netejar les notificacions amb error:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "No s'ha pogut esborrar l'estat amb error:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "No s'ha pogut carregar l'usuari amb error:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "No s'ha pogut silenciar l'usuari amb error:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "No s'ha pogut publicar l'estat amb error:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "No s'ha pogut notificar l'estat amb error:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "No s'ha pogut recuperar el teu estat amb error:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "No s'ha pogut desbloquejar l'usuari amb error':";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "No s'ha pogut deixar de seguir l'usuari amb error:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "No s'ha pogut treure el silenci del usuari amb error:";
+
+/* Favorites */
+"Favorites" = "Favorits";
+
+/* Federated */
+"Federated" = "Federada";
+
+/* Follow requests */
+"Follow requests" = "Sol·licituds de seguiment";
+
+/* Followers-only */
+"Followers-only" = "Només seguidors";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "Només seguidors: Només visible per tu, usuaris @mencionats i els teus seguidors";
+
+/* HASHTAG */
+"HASHTAG" = "ETIQUETA";
+
+/* Hold to show */
+"Hold to show" = "Manté premut per mostrar";
+
+/* Local */
+"Local" = "Local";
+
+/* Login request failed */
+"Login request failed" = "Inici de sessió fallida";
+
+/* Logout */
+"Logout" = "Tancar sessió";
+
+/* Mention */
+"Mention" = "Esmentar";
+
+/* Mute */
+"Mute" = "Apagar";
+
+/* Muted users */
+"Muted users" = "Usuaris apagats";
+
+/* My instances */
+"My instances" = "Les meves instàncies";
+
+/* My profile */
+"My profile" = "El meu perfil";
+
+/* Notification settings */
+"Notification settings" = "Preferències de Notificacions";
+
+/* Only show to followers */
+"Only show to followers" = "Només mostrar a seguidors";
+
+/* Open in Safari */
+"Open in Safari" = "Obrir a Safari";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "Si us plau els vídeos fins 30 segons de durada";
+
+/* Public */
+"Public" = "Públic";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "Públic: Visible per tothom en local i federada";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "Rebre notificacions de retoots";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "Rebre notificacions de favorits";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "Rebre notificacions de esments";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "Rebre notificacions de nous seguidors";
+
+/* Report */
+"Report" = "Informar";
+
+/* Select */
+"Select" = "";
+
+/* Select a privacy level */
+"Select a privacy level" = "Seleccionar un nivell de privacitat";
+
+/* Sensitive content */
+"Sensitive content" = "Contingut sensible";
+
+/* Share */
+"Share" = "Compartir";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "Mostra en línies de temps local/federada";
+
+/* This can help older devices */
+"This can help older devices" = "Això pot ajudar els dispositius més antics";
+
+/* Translate text */
+"Translate text" = "Traduïr text";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "No es pot connectar a la instància de Mastodon. Si us plau, proveu-ho més tard o amb una instància diferent.";
+
+/* Unblock */
+"Unblock" = "Desbloquejar";
+
+/* Unlisted */
+"Unlisted" = "No llistat";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "No llistat: Visible per a tothom, però no es mostra en les línies de temps local o federada";
+
+/* Unmute */
+"Unmute" = "No silenciat";
+
+/* Video too long */
+"Video too long" = "Vídeo massa llarg";
+
+/* You have */
+"You have" = "";
+
+/* boosted */
+"boosted" = "ha retootejat";
+
+/* boosted your status */
+"boosted your status" = "ha retootejat el teu estat";
+
+/* favorited your status */
+"favorited your status" = "ha afavorit el teu estat";
+
+/* followed you */
+"followed you" = "t'ha seguit";
+
+/* image */
+"image" = "imatge";
+
+/* images */
+"images" = "imatges";
+
+/* mentioned you */
+"mentioned you" = "t'ha esmentat";
+
+/* new notifications */
+"new notifications" = "noves notificacions";
+
+/* replied */
+"replied" = "respost";
+
+/* replied to */
+"replied to" = "ha respost a";
+

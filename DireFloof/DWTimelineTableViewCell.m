@@ -457,8 +457,8 @@
     }
     
     if (status.created_at) {
-        self.dateLabel.text = self.isThreadStatus ? [NSString stringWithFormat:@"%@ •%@", [status.created_at formattedDateWithFormat:@"MMM dd, yyyy, HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at shortTimeAgoSinceNow];
-        self.dateLabel.accessibilityLabel = self.isThreadStatus ? [NSString stringWithFormat:@"%@ •%@", [status.created_at formattedDateWithFormat:@"MMM dd, yyyy, HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at timeAgoSinceNow];
+        self.dateLabel.text = self.isThreadStatus ? [NSString stringWithFormat:@"%@ %@ •%@", [status.created_at formattedDateWithStyle:NSDateFormatterMediumStyle], [status.created_at formattedDateWithFormat:@"HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at shortTimeAgoSinceNow];
+        self.dateLabel.accessibilityLabel = self.isThreadStatus ? [NSString stringWithFormat:@"%@ %@ •%@", [status.created_at formattedDateWithStyle:NSDateFormatterMediumStyle], [status.created_at formattedDateWithFormat:@"HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at timeAgoSinceNow];
     }
     
     if (status.content) {

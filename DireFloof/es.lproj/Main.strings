@@ -1,6 +1,9 @@
 /* Class = "UIViewController"; title = "App Settings"; ObjectID = "0B8-3F-mRu"; */
 "0B8-3F-mRu.title" = "Preferencias";
 
+/* Class = "UILabel"; text = "Title"; ObjectID = "0FK-Hb-mdQ"; */
+"0FK-Hb-mdQ.text" = "Título";
+
 /* Class = "UINavigationItem"; title = "App Settings"; ObjectID = "0QU-bc-7sH"; */
 "0QU-bc-7sH.title" = "Preferencias";
 
@@ -12,6 +15,9 @@
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn"; */
 "1kx-6H-zbn.text" = "John~";
+
+/* Class = "UITextField"; accessibilityLabel = "Content warning"; ObjectID = "2kN-ah-4CU"; */
+"2kN-ah-4CU.accessibilityLabel" = "Contenido explícito";
 
 /* Class = "UITextField"; placeholder = "Content warning"; ObjectID = "2kN-ah-4CU"; */
 "2kN-ah-4CU.placeholder" = "Contenido explícito";
@@ -75,6 +81,9 @@
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8Hv-6F-dr5"; */
 "8Hv-6F-dr5.text" = "@eurasierboy";
+
+/* Class = "UITabBarItem"; title = "Home timeline"; ObjectID = "9Mu-se-m9q"; */
+"9Mu-se-m9q.title" = "Historia";
 
 /* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "9WA-oA-2ny"; */
 "9WA-oA-2ny.placeholder" = "Buscar";
@@ -238,6 +247,9 @@
 /* Class = "UILabel"; text = "John~"; ObjectID = "IGI-ME-0dH"; */
 "IGI-ME-0dH.text" = "John~";
 
+/* Class = "UITabBarItem"; title = "Notifications"; ObjectID = "IUN-9p-nd2"; */
+"IUN-9p-nd2.title" = "Notificaciones";
+
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "IYS-fn-TAY"; */
 "IYS-fn-TAY.text" = "Etiqueta de advertencia";
 
@@ -246,6 +258,9 @@
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "IfX-ak-Ifc"; */
 "IfX-ak-Ifc.text" = "Haciendo progresos :T La navegación por pestañas esta lista, empezando ahora con la vista del timeline. Estoy usando una caseta para perros como icono del inicio, los lobos tambien pueden usarla.";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "J6K-ac-ptQ"; */
+"J6K-ac-ptQ.text" = "Título";
 
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "J9b-bk-mjW"; */
 "J9b-bk-mjW.text" = "Hace 13 horas";
@@ -279,6 +294,9 @@
 
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "LbU-Pp-4SM"; */
 "LbU-Pp-4SM.text" = "Etiqueta de advertencia";
+
+/* Class = "UIView"; accessibilityLabel = "Search"; ObjectID = "LlD-0o-d3D"; */
+"LlD-0o-d3D.accessibilityLabel" = "Buscar";
 
 /* Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp"; */
 "LvM-n9-aZp.text" = "marcó tu estado como favorito";
@@ -316,11 +334,17 @@
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHj-8J-Z2C"; */
 "NHj-8J-Z2C.text" = "hace 13 horas";
 
+/* Class = "UILabel"; text = "Title"; ObjectID = "NNs-pP-Q8t"; */
+"NNs-pP-Q8t.text" = "Título";
+
 /* Class = "UILabel"; text = "John~"; ObjectID = "Nb0-tl-aQV"; */
 "Nb0-tl-aQV.text" = "John~";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Npn-R5-GGf"; */
 "Npn-R5-GGf.text" = "@eurasierboy";
+
+/* Class = "UITabBarItem"; title = "Notifications"; ObjectID = "NsL-fZ-ToP"; */
+"NsL-fZ-ToP.title" = "Notificaciones";
 
 /* Class = "UIButton"; normalTitle = "FOLLOWS YOU"; ObjectID = "OAS-Mr-yP8"; */
 "OAS-Mr-yP8.normalTitle" = "TE SIGUE";
@@ -375,6 +399,9 @@
 
 /* Class = "UILabel"; text = "Log into any Mastodon instance!"; ObjectID = "ToH-v6-fqC"; */
 "ToH-v6-fqC.text" = "¡Inicia sesión en cualquier instancia de Mastodon!";
+
+/* Class = "UIButton"; accessibilityLabel = "Close"; ObjectID = "Tt3-hS-LOv"; */
+"Tt3-hS-LOv.accessibilityLabel" = "Cerrar";
 
 /* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "Tya-6c-9UJ"; */
 "Tya-6c-9UJ.normalTitle" = "MOSTRAR";
@@ -463,6 +490,9 @@
 /* Class = "UILabel"; text = "John~"; ObjectID = "aI4-ho-Fbg"; */
 "aI4-ho-Fbg.text" = "John~";
 
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "aZc-lv-edf"; */
+"aZc-lv-edf.text" = "Subtítulo";
+
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "aam-jg-MZf"; */
 "aam-jg-MZf.text" = "@eurasierboy";
 
@@ -484,6 +514,9 @@
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "bfJ-yc-2cN"; */
 "bfJ-yc-2cN.text" = "Etiqueta de advertencia";
 
+/* Class = "UITabBarItem"; title = "Home timeline"; ObjectID = "blm-y0-hTt"; */
+"blm-y0-hTt.title" = "Historia";
+
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "bpa-6G-0UK"; */
 "bpa-6G-0UK.title" = "Atrás";
 
@@ -492,6 +525,9 @@
 
 /* Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "cIT-j6-x98"; */
 "cIT-j6-x98.selectedTitle" = "MOSTRAR";
+
+/* Class = "UITabBarItem"; title = "Compose status"; ObjectID = "cJ1-eF-Qod"; */
+"cJ1-eF-Qod.title" = "";
 
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "cjU-gd-4Il"; */
 "cjU-gd-4Il.text" = "hace 13 horas";
@@ -504,6 +540,9 @@
 
 /* Class = "UILabel"; text = "13 hours ago"; ObjectID = "dJe-wm-mbS"; */
 "dJe-wm-mbS.text" = "hace 13 horas";
+
+/* Class = "UITabBarItem"; title = "Public timeline"; ObjectID = "dPe-vw-PnL"; */
+"dPe-vw-PnL.title" = "Historia";
 
 /* Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "dUK-lH-2U2"; */
 "dUK-lH-2U2.normalTitle" = "MOSTRAR";
@@ -567,6 +606,9 @@
 
 /* Class = "UILabel"; text = "John~"; ObjectID = "iZ2-pR-esE"; */
 "iZ2-pR-esE.text" = "John~";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "izx-3l-fkf"; */
+"izx-3l-fkf.text" = "Título";
 
 /* Class = "UILabel"; text = "What is on your mind?"; ObjectID = "jeI-4q-Be1"; */
 "jeI-4q-Be1.text" = "¿En que estás pensando?";
@@ -703,6 +745,9 @@
 /* Class = "UILabel"; text = "0 •"; ObjectID = "r1g-xo-uUC"; */
 "r1g-xo-uUC.text" = "0 •";
 
+/* Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "rQZ-Ld-pnT"; */
+"rQZ-Ld-pnT.accessibilityLabel" = "Volver arriba";
+
 /* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "rjX-Ma-KFp"; */
 "rjX-Ma-KFp.normalTitle" = "Política de privacidad";
 
@@ -714,6 +759,9 @@
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "sAL-De-fKG"; */
 "sAL-De-fKG.text" = "Haciendo progresos :T La navegación por pestañas esta lista, empezando ahora con la vista del timeline. Estoy usando una caseta para perros como icono del inicio, los lobos tambien pueden usarla.";
+
+/* Class = "UITabBarItem"; title = "Menu"; ObjectID = "sB4-xf-wkz"; */
+"sB4-xf-wkz.title" = "Menú";
 
 /* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "sIR-7z-4Xv"; */
 "sIR-7z-4Xv.text" = "@eurasierboy";
@@ -751,11 +799,17 @@
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "tPs-CE-wpY"; */
 "tPs-CE-wpY.text" = "Haciendo progresos :T La navegación por pestañas esta lista, empezando ahora con la vista del timeline. Estoy usando una caseta para perros como icono del inicio, los lobos tambien pueden usarla.";
 
+/* Class = "UITabBarItem"; title = "Public timeline"; ObjectID = "tae-bS-eCU"; */
+"tae-bS-eCU.title" = "Historia publica";
+
 /* Class = "UILabel"; text = "John~"; ObjectID = "tc5-81-C7W"; */
 "tc5-81-C7W.text" = "John~";
 
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "ttQ-Ul-q7w"; */
 "ttQ-Ul-q7w.text" = "Etiqueta de advertencia";
+
+/* Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "uTQ-ew-25R"; */
+"uTQ-ew-25R.accessibilityLabel" = "Volver arriba";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "un5-wW-eie"; */
 "un5-wW-eie.text" = "Etiqueta";
@@ -790,8 +844,14 @@
 /* Class = "UILabel"; text = "eurasierboy"; ObjectID = "xU0-be-BKd"; */
 "xU0-be-BKd.text" = "eurasierboy";
 
+/* Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "xUp-Q0-vli"; */
+"xUp-Q0-vli.accessibilityLabel" = "Volver arriba";
+
 /* Class = "UILabel"; text = "Warning Tag"; ObjectID = "xqD-wM-Q8V"; */
 "xqD-wM-Q8V.text" = "Etiqueta de advertencia";
+
+/* Class = "UITabBarItem"; title = "Menu"; ObjectID = "xwi-18-c7c"; */
+"xwi-18-c7c.title" = "Menú";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "yyI-bk-cqq"; */
 "yyI-bk-cqq.text" = "Haciendo progresos :T La navegación por pestañas esta lista, empezando ahora con la vista del timeline. Estoy usando una caseta para perros como icono del inicio, los lobos tambien pueden usarla.";
@@ -807,6 +867,9 @@
 
 /* Class = "UILabel"; text = "50"; ObjectID = "z9I-DW-y6S"; */
 "z9I-DW-y6S.text" = "50";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "zBm-cJ-8j1"; */
+"zBm-cJ-8j1.text" = "Subtítulo";
 
 /* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "zLO-VU-rhZ"; */
 "zLO-VU-rhZ.text" = "Haciendo progresos :T La navegación por pestañas esta lista, empezando ahora con la vista del timeline. Estoy usando una caseta para perros como icono del inicio, los lobos tambien pueden usarla";

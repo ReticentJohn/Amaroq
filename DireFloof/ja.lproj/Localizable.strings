@@ -59,9 +59,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "350ドルの罰金が課せられます";
 
-/* Default posts to private */
-"Default posts to private" = "デフォルトの公開範囲を非公開にする";
-
 /* Default posts to public */
 "Default posts to public" = "デフォルトの公開範囲を公開にする";
 
@@ -128,6 +125,12 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 /* Follow requests */
 "Follow requests" = "フォローリクエスト";
 
+/* Followers-only */
+"Followers-only" = "フォロワーのみ";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "フォロワーのみ: フォロワーとメンションしたユーザーだけに公開";
+
 /* HASHTAG */
 "HASHTAG" = "ハッシュタグ";
 
@@ -169,12 +172,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "動画の長さを30秒以内に収めてください";
-
-/* Private */
-"Private" = "非公開";
-
-/* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "非公開: フォロワーとメンションしたユーザーだけに公開";
 
 /* Public */
 "Public" = "公開";

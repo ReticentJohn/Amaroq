@@ -129,7 +129,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row >= [[[MSAppStore sharedStore] availableInstances] count]) {
+    if (indexPath.row >= [[[MSAppStore sharedStore] availableInstances] count] || !tableView.isEditing) {
         return NO;
     }
     

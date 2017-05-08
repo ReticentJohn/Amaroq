@@ -14,16 +14,20 @@
 "Account preferences" = "Ustawienia konta";
 
 /* Add instance */
-"Add instance" = "Podłącz się do kolejnego serwera";
+"Add instance" = "Podłącz kolejny serwer";
 
 /* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
 "Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
-Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Nazwa programu Amaroq wywodzi się z eskimoskiej legendy o olbrzymim wilku, który być może towarzyszył pradawnym przodkom mamutów. Niech zawyje nasz rozproszony świat!\\n\\nProgram Amaroq powstał z umiłowania dla wizji rozproszonej sieci mastodonów, z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS. Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Albo złap autora, @eurasierboy na serwerze mastodon.social. Miłego tututuuu!
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Nazwa programu Amaroq wywodzi się z inuickiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech wilk zawyje w naszym rozproszonym świecie!
+
+Program Amaroq powstał z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS.
+
+Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Możesz go też złapać pisząc do @eurasierboy na serwerze mastodon.social. Miłego srututuuu!
 ";
 
 /* App settings */
-"App settings" = "Ustawenia programu";
+"App settings" = "Ustawienia programu";
 
 /* Are you sure you want to clear all your notifications? */
 "Are you sure you want to clear all your notifications?" = "Skasować wszystkie powiadomienia?";
@@ -41,46 +45,46 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Blocked users" = "Kto został zablokowany";
 
 /* Cancel */
-"Cancel" = "Zostaw";
+"Cancel" = "nie teraz";
 
 /* Change how you receive push notifications */
-"Change how you receive push notifications" = "Zmień ustawienia powiadomień na ekran";
+"Change how you receive push notifications" = "Powiadomienia na ekran";
 
 /* Clear cache */
 "Clear cache" = "Skasuj pamięć podręczną";
 
 /* Copy text */
-"Copy text" = "Skopiuj";
+"Copy text" = "skopiuj";
 
 /* Currently logged into: */
-"Currently logged into:" = "Jesteś na serwerze:";
+"Currently logged into:" = "Wybrany serwer:";
 
 /* DON'T AWOO $350 PENALTY */
-"DON'T AWOO $350 PENALTY" = "WYCIE PODLEGA KARZE GRZYWNY DO 3500 ZŁOTYCH!";
+"DON'T AWOO $350 PENALTY" = "WYCIE PODLEGA GRZYWNIE DO 3500 ZŁ!";
 
-/* Default posts to private */
-"Default posts to private" = "Najczęściej wysyłam wiadomości tylko do wybranych";
+/* Default posts to followers-only */
+"Default posts to followers-only" = "Domyślnie wysyłaj tylko do swoich";
 
 /* Default posts to public */
-"Default posts to public" = "Najczęściej wysyłam wiadomości do wszystkich";
+"Default posts to public" = "Domyślnie wysyłaj na cały świat";
 
 /* Delete */
-"Delete" = "Skasuj";
+"Delete" = "skasuj";
 
 /* Direct */
-"Direct" = "szeptem";
+"Direct" = "szept";
 
 /* Direct: Only visible to you and @mentioned users */
-"Direct: Only visible to you and @mentioned users" = "szeptem: Wiadomość będzie widoczna tylko dla ciebie i @adresatów";
+"Direct: Only visible to you and @mentioned users" = "szept: Wiadomość będzie widoczna tylko dla ciebie i @adresatów";
 
 /* Disable gif auto-playback */
-"Disable gif auto-playback" = "Nie pokazuj od razu animacji";
+"Disable gif auto-playback" = "Zatrzymaj animacje";
 
 /* Done */
-"Done" = "Gotowe";
+"Done" = "gotowe";
 
 /* Edit Profile */
-"Edit Profile" = "Zmień wizytówkę";
+"Edit Profile" = "zmień wizytówkę";
 
 /* Error */
 "Error" = "Błąd";
@@ -119,22 +123,34 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Failed to unmute user with error:" = "Wyłączenie wyciszania nie udało się:";
 
 /* Favorites */
-"Favorites" = "Spodobały się";
+"Favorites" = "Twoje ulubione wpisy";
 
 /* Federated */
 "Federated" = "Międzymiastowa";
 
+/* Federated timeline */
+"Federated timeline" = "Rozmowa międzymiastowa";
+
 /* Follow requests */
-"Follow requests" = "Osoby, które chcą cię obserwować";
+"Follow requests" = "Kto chce ciebie obserwować";
+
+/* Followers-only */
+"Followers-only" = "swoi";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "swoi: Tylko ty, @adresaci i twoi obserwujący";
 
 /* HASHTAG */
 "HASHTAG" = "HASHTAG";
 
 /* Hold to show */
-"Hold to show" = "Przytrzymaj aby zobaczyć";
+"Hold to show" = "Przytrzymaj, aby zobaczyć";
 
 /* Local */
 "Local" = "Miejscowa";
+
+/* Local timeline */
+"Local timeline" = "Rozmowa miejscowa";
 
 /* Login request failed */
 "Login request failed" = "Nie udało się zalogować";
@@ -143,7 +159,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Logout" = "Wyloguj się";
 
 /* Mention */
-"Mention" = "wywołaj";
+"Mention" = "@napisz";
 
 /* Mute */
 "Mute" = "wycisz";
@@ -161,7 +177,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Notification settings" = "Powiadomienia";
 
 /* Only show to followers */
-"Only show to followers" = "pokaż tylko obserwującym cię";
+"Only show to followers" = "Pokaż wpisy tylko obserwującym cię";
 
 /* Open in Safari */
 "Open in Safari" = "otwórz w Safari";
@@ -169,29 +185,23 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 /* Please keep to videos up to 30 seconds long */
 "Please keep to videos up to 30 seconds long" = "Prosimy nie ładować nagrań dłuższych niż pół minuty";
 
-/* Private */
-"Private" = "dla wybranych";
-
-/* Private: Only visible to you, @mentioned users, and followers on your instance */
-"Private: Only visible to you, @mentioned users, and followers on your instance" = "dla wybranych: Tylko Ty, @adresaci oraz obserwujący cię na twoim serwerzrze mogą ją przeczytać";
-
 /* Public */
-"Public" = "do wszystkich";
+"Public" = "świat";
 
 /* Public: Visible to everyone on local and federated timelines */
-"Public: Visible to everyone on local and federated timelines" = "do wszystkich: wiadomość wszędzie widoczna";
+"Public: Visible to everyone on local and federated timelines" = "świat: wiadomość wszędzie widoczna wszędzie";
 
 /* Receive boost notifications */
-"Receive boost notifications" = "Chcę wiedzieć, gdy ktoś poda mój tekst dalej";
+"Receive boost notifications" = "Ktoś podał mój tekst dalej";
 
 /* Receive favorite notifications */
-"Receive favorite notifications" = "Chcę wiedzieć, gdy komuś spodoba się mój tekst";
+"Receive favorite notifications" = "Komuś spodobał się mój tekst";
 
 /* Receive mention notifications */
-"Receive mention notifications" = "Chcę wiedzieć, kiedy ktoś zaadresuje do mnie wiadomość";
+"Receive mention notifications" = "Ktoś napisał do mnie";
 
 /* Receive new follower notifications */
-"Receive new follower notifications" = "Chcę wiedzieć, kiedy ktoś zacznie mnie obserwować";
+"Receive new follower notifications" = "Ktoś zaczął mnie obserwować";
 
 /* Report */
 "Report" = "poskarż się";
@@ -206,13 +216,13 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Sensitive content" = "Ostrożnie z zawartością";
 
 /* Share */
-"Share" = "podziel się";
+"Share" = "przekaż dalej";
 
 /* Shows on local/federated timelines */
-"Shows on local/federated timelines" = "Można zobaczyć na linii miejscowej i międzymiastowej";
+"Shows on local/federated timelines" = "Bierzesz udział w publicznej rozmowie";
 
 /* This can help older devices */
-"This can help older devices" = "Starszy sprzęt może działać lepiej";
+"This can help older devices" = "Sprzęt może lepiej działać";
 
 /* Translate text */
 "Translate text" = "przetłumacz";
@@ -223,17 +233,23 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 /* Unblock */
 "Unblock" = "oblokuj";
 
+/* Unfollow */
+"Unfollow" = "nie obserwuj";
+
 /* Unlisted */
-"Unlisted" = "poza listami";
+"Unlisted" = "poza";
 
 /* Unlisted: Visible to everyone, but not shown on local or federated timelines */
-"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "poza listami: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na miejscowej i międzymiastowej.";
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "poza: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na rozmowie miejscowej i międzymiastowej.";
 
 /* Unmute */
 "Unmute" = "wyłącz wyciszanie";
 
 /* Video too long */
 "Video too long" = "Nagranie jest zbyt długie";
+
+/* You have */
+"You have" = "Twoje konto";
 
 /* boosted */
 "boosted" = "podaje dalej";
@@ -254,14 +270,14 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "images" = "obrazki";
 
 /* mentioned you */
-"mentioned you" = "wspomina o Tobie";
+"mentioned you" = "wspomina o tobie";
 
 /* new notifications */
 "new notifications" = "nowe powiadomienia";
 
 /* replied */
-"replied" = "odpowiada";
+"replied" = "opowiada";
 
 /* replied to */
-"replied to" = "odpowiada na";
+"replied to" = "odpowiada";
 

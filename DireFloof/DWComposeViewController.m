@@ -244,7 +244,7 @@ static NSInteger mediaUploadLimit = 4;
     
     RMPickerViewController *pickerController = [RMPickerViewController actionControllerWithStyle:RMActionControllerStyleDefault selectAction:selectAction andCancelAction:cancelAction];
     pickerController.title = NSLocalizedString(@"Select a privacy level", @"Select a privacy level");
-    pickerController.message = [NSString stringWithFormat:@"\n%@\n\n%@\n\n%@\n\n%@", NSLocalizedString(@"Direct: Only visible to you and @mentioned users", @"Direct: Only visible to you and @mentioned users"), NSLocalizedString(@"Private: Only visible to you, @mentioned users, and followers on your instance", @"Private: Only visible to you, @mentioned users, and followers on your instance"), NSLocalizedString(@"Unlisted: Visible to everyone, but not shown on local or federated timelines", @"Unlisted: Visible to everyone, but not shown on local or federated timelines"), NSLocalizedString(@"Public: Visible to everyone on local and federated timelines", @"Public: Visible to everyone on local and federated timelines")];
+    pickerController.message = [NSString stringWithFormat:@"\n%@\n\n%@\n\n%@\n\n%@", NSLocalizedString(@"Direct: Only visible to you and @mentioned users", @"Direct: Only visible to you and @mentioned users"), NSLocalizedString(@"Followers-only: Only visible to you, @mentioned users, and your followers", @"Followers-only: Only visible to you, @mentioned users, and your followers"), NSLocalizedString(@"Unlisted: Visible to everyone, but not shown on local or federated timelines", @"Unlisted: Visible to everyone, but not shown on local or federated timelines"), NSLocalizedString(@"Public: Visible to everyone on local and federated timelines", @"Public: Visible to everyone on local and federated timelines")];
     pickerController.disableBlurEffects = YES;
     pickerController.picker.dataSource = self;
     pickerController.picker.delegate = self;
@@ -277,7 +277,7 @@ static NSInteger mediaUploadLimit = 4;
     
     self.imagesToUpload = [@[] mutableCopy];
     self.privacyOptions = @[NSLocalizedString(@"Direct", @"Direct"),
-                            NSLocalizedString(@"Private", @"Private"),
+                            NSLocalizedString(@"Followers-only", @"Followers-only"),
                             NSLocalizedString(@"Unlisted", @"Unlisted"),
                             NSLocalizedString(@"Public", @"Public")];
     [self configureViews];
@@ -454,7 +454,7 @@ static NSInteger mediaUploadLimit = 4;
     self.warningLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     self.contentWarningField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     
-    self.privacyButton.titleLabel.numberOfLines = 0;
+    self.privacyButton.titleLabel.numberOfLines = 2;
     self.contentWarningField.text = @"";
     self.contentField.text = @"";
     self.contentLengthLabel.text = [NSString stringWithFormat:@"%li", (long)contentLengthLimit];
@@ -492,11 +492,8 @@ static NSInteger mediaUploadLimit = 4;
     
     if (self.replyToStatus) {
         
-        if ([self.replyToStatus.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT]) {
-            
-            self.privacyState = MS_VISIBILITY_TYPE_DIRECT;
-            self.privacyButton.userInteractionEnabled = NO;
-        }
+        self.privacyState = self.replyToStatus.visibility;
+        self.privacyButton.userInteractionEnabled = ![self.replyToStatus.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT];
         
         if (self.replyToStatus.spoiler_text.length) {
             self.contentWarningField.text = self.replyToStatus.spoiler_text;
@@ -513,9 +510,7 @@ static NSInteger mediaUploadLimit = 4;
                 [self.replyToAvatarImageView stopAnimating];
             }
         } failure:nil];
-        
-        //[self.replyToAvatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? self.replyToStatus.account.avatar_static : self.replyToStatus.account.avatar]];
-        
+                
         NSString *replyToText = [self.replyToStatus.account.acct isEqualToString:[[MSUserStore sharedStore] currentAccountString]] ? @"" : [NSString stringWithFormat:@"@%@ ", self.replyToStatus.account.acct];
                 
         for (MSMention *entity in self.replyToStatus.mentions) {
@@ -567,7 +562,7 @@ static NSInteger mediaUploadLimit = 4;
     }
     else if ([self.privacyState isEqualToString:MS_VISIBILITY_TYPE_PRIVATE])
     {
-        privacyString = NSLocalizedString(@"Private", @"Private");
+        privacyString = NSLocalizedString(@"Followers-only", @"Followers-only");
     }
     else if ([self.privacyState isEqualToString:MS_VISIBILITY_TYPE_UNLISTED])
     {

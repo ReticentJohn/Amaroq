@@ -69,7 +69,9 @@
     
         self.availableInstances = [FCFileManager readFileAtPathAsArray:[self availableInstancesPath]];
 
-        if (!self.availableInstances) {
+        if (!self.availableInstances.count) {
+            
+            self.availableInstances = @[];
             
             if (self.client_id && self.client_secret && self.base_url_string && self.base_api_url_string && self.base_media_url_string && self.instance) {
                 self.availableInstances = [self.availableInstances arrayByAddingObject:@{MS_CLIENT_ID_KEY: self.client_id,
@@ -78,6 +80,8 @@
                                                                                          MS_BASE_API_URL_STRING_KEY: self.base_api_url_string,
                                                                                          MS_BASE_MEDIA_URL_STRING_KEY: self.base_media_url_string,
                                                                                          MS_INSTANCE_KEY: self.instance}];
+                
+                [FCFileManager writeFileAtPath:[self availableInstancesPath] content:self.availableInstances];
             }
         }
     }
@@ -90,7 +94,7 @@
 
 - (void)setMastodonInstance:(NSString *)instance
 {
-    NSString *instanceName = [[instance componentsSeparatedByString:@"//"] lastObject];
+    NSString *instanceName = [[[[instance componentsSeparatedByString:@"//"] lastObject] componentsSeparatedByString:@"@"] lastObject];
     
     if (!instanceName.length) {
         instanceName = @"mastodon.social";

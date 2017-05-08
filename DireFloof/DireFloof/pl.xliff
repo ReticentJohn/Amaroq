@@ -13,12 +13,17 @@
     <body>
       <trans-unit id="0B8-3F-mRu.title">
         <source>App Settings</source>
-        <target>Ustawienia aplikacji</target>
+        <target>Ustawienia programu</target>
         <note>Class = "UIViewController"; title = "App Settings"; ObjectID = "0B8-3F-mRu";</note>
+      </trans-unit>
+      <trans-unit id="0FK-Hb-mdQ.text">
+        <source>Title</source>
+        <target>Tytuł</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "0FK-Hb-mdQ";</note>
       </trans-unit>
       <trans-unit id="0QU-bc-7sH.title">
         <source>App Settings</source>
-        <target>Ustawienia aplikacji</target>
+        <target>Ustawienia programu</target>
         <note>Class = "UINavigationItem"; title = "App Settings"; ObjectID = "0QU-bc-7sH";</note>
       </trans-unit>
       <trans-unit id="1H7-Fb-CNb.text">
@@ -36,15 +41,9 @@
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn";</note>
       </trans-unit>
-      <trans-unit id="2Dw-lx-6PD.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "2Dw-lx-6PD";</note>
-      </trans-unit>
-      <trans-unit id="2dk-Mu-Vt7.text">
-        <source>Subtitle</source>
-        <target>Subtitle</target>
-        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "2dk-Mu-Vt7";</note>
+      <trans-unit id="2kN-ah-4CU.accessibilityLabel">
+        <source>Content warning</source>
+        <note>Class = "UITextField"; accessibilityLabel = "Content warning"; ObjectID = "2kN-ah-4CU";</note>
       </trans-unit>
       <trans-unit id="2kN-ah-4CU.placeholder">
         <source>Content warning</source>
@@ -78,7 +77,7 @@
       </trans-unit>
       <trans-unit id="4Mt-w0-BJS.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "4Mt-w0-BJS";</note>
       </trans-unit>
       <trans-unit id="4N5-p8-KC5.normalTitle">
@@ -98,7 +97,7 @@
       </trans-unit>
       <trans-unit id="5EO-Fj-BWX.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "5EO-Fj-BWX";</note>
       </trans-unit>
       <trans-unit id="5LR-56-GYi.text">
@@ -113,7 +112,7 @@
       </trans-unit>
       <trans-unit id="5Zj-uu-jgp.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "5Zj-uu-jgp";</note>
       </trans-unit>
       <trans-unit id="5rl-8A-C4j.text">
@@ -151,6 +150,11 @@
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8Hv-6F-dr5";</note>
       </trans-unit>
+      <trans-unit id="9Mu-se-m9q.title">
+        <source>Home timeline</source>
+        <target>Moje wiadomości</target>
+        <note>Class = "UITabBarItem"; title = "Home timeline"; ObjectID = "9Mu-se-m9q";</note>
+      </trans-unit>
       <trans-unit id="9WA-oA-2ny.placeholder">
         <source>Search</source>
         <target>Szukaj</target>
@@ -183,7 +187,7 @@
       </trans-unit>
       <trans-unit id="10V-B3-wiC.text">
         <source>FOLLOWS</source>
-        <target>OBSERWUJE</target>
+        <target>Obserwuje</target>
         <note>Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC";</note>
       </trans-unit>
       <trans-unit id="16m-xl-Ak4.text">
@@ -233,7 +237,7 @@
       </trans-unit>
       <trans-unit id="AXN-qb-ISl.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "AXN-qb-ISl";</note>
       </trans-unit>
       <trans-unit id="Aii-Z7-ThC.normalTitle">
@@ -293,7 +297,7 @@
       </trans-unit>
       <trans-unit id="CIJ-hS-huU.title">
         <source>Favorites</source>
-        <target>Spodobały się</target>
+        <target>Twoje ulubione wpisy</target>
         <note>Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU";</note>
       </trans-unit>
       <trans-unit id="CcB-VU-xOW.text">
@@ -313,7 +317,7 @@
       </trans-unit>
       <trans-unit id="DL6-Pz-Zxu.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "DL6-Pz-Zxu";</note>
       </trans-unit>
       <trans-unit id="DLI-MU-2NY.text">
@@ -353,7 +357,7 @@
       </trans-unit>
       <trans-unit id="Eqe-8A-XUJ.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "Eqe-8A-XUJ";</note>
       </trans-unit>
       <trans-unit id="F2M-wt-Xn3.text">
@@ -378,7 +382,7 @@
       </trans-unit>
       <trans-unit id="FRy-sB-TMs.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "FRy-sB-TMs";</note>
       </trans-unit>
       <trans-unit id="Fjl-TP-l3I.title">
@@ -407,13 +411,8 @@
       </trans-unit>
       <trans-unit id="H73-bm-2lF.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "H73-bm-2lF";</note>
-      </trans-unit>
-      <trans-unit id="Hog-5H-gCk.text">
-        <source>Subtitle</source>
-        <target>Subtitle</target>
-        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "Hog-5H-gCk";</note>
       </trans-unit>
       <trans-unit id="I8t-xs-eqf.title">
         <source>Hashtag</source>
@@ -425,9 +424,14 @@
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "IGI-ME-0dH";</note>
       </trans-unit>
+      <trans-unit id="IUN-9p-nd2.title">
+        <source>Notifications</source>
+        <target>Powiadomienia</target>
+        <note>Class = "UITabBarItem"; title = "Notifications"; ObjectID = "IUN-9p-nd2";</note>
+      </trans-unit>
       <trans-unit id="IYS-fn-TAY.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "IYS-fn-TAY";</note>
       </trans-unit>
       <trans-unit id="IeS-ex-7Ue.text">
@@ -439,6 +443,11 @@
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "IfX-ak-Ifc";</note>
+      </trans-unit>
+      <trans-unit id="J6K-ac-ptQ.text">
+        <source>Title</source>
+        <target>Tytuł</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "J6K-ac-ptQ";</note>
       </trans-unit>
       <trans-unit id="J9b-bk-mjW.text">
         <source>13 hours ago</source>
@@ -457,7 +466,7 @@
       </trans-unit>
       <trans-unit id="Jpg-Pi-oGX.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "Jpg-Pi-oGX";</note>
       </trans-unit>
       <trans-unit id="K0W-Wq-7bO.text">
@@ -492,8 +501,13 @@
       </trans-unit>
       <trans-unit id="LbU-Pp-4SM.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "LbU-Pp-4SM";</note>
+      </trans-unit>
+      <trans-unit id="LlD-0o-d3D.accessibilityLabel">
+        <source>Search</source>
+        <target>Szukaj</target>
+        <note>Class = "UIView"; accessibilityLabel = "Search"; ObjectID = "LlD-0o-d3D";</note>
       </trans-unit>
       <trans-unit id="LvM-n9-aZp.text">
         <source>favourited your status</source>
@@ -555,6 +569,11 @@
         <target>13 godzin temu</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHj-8J-Z2C";</note>
       </trans-unit>
+      <trans-unit id="NNs-pP-Q8t.text">
+        <source>Title</source>
+        <target>Tytuł</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "NNs-pP-Q8t";</note>
+      </trans-unit>
       <trans-unit id="Nb0-tl-aQV.text">
         <source>John~</source>
         <target>John~</target>
@@ -564,6 +583,11 @@
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
         <note>Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Npn-R5-GGf";</note>
+      </trans-unit>
+      <trans-unit id="NsL-fZ-ToP.title">
+        <source>Notifications</source>
+        <target>Powiadomienia</target>
+        <note>Class = "UITabBarItem"; title = "Notifications"; ObjectID = "NsL-fZ-ToP";</note>
       </trans-unit>
       <trans-unit id="OAS-Mr-yP8.normalTitle">
         <source>FOLLOWS YOU</source>
@@ -595,14 +619,9 @@
         <target>13 godzin temu</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "Pcl-ES-eXC";</note>
       </trans-unit>
-      <trans-unit id="Q7D-xK-caT.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "Q7D-xK-caT";</note>
-      </trans-unit>
       <trans-unit id="QE0-ao-uwT.text">
         <source>FOLLOWERS</source>
-        <target>OBSERWUJĄCY</target>
+        <target>Obserwują</target>
         <note>Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT";</note>
       </trans-unit>
       <trans-unit id="QJ6-Tw-gvd.text">
@@ -622,13 +641,8 @@
       </trans-unit>
       <trans-unit id="ROI-ge-hOO.text">
         <source>POSTS</source>
-        <target>WIADOMOŚCI</target>
+        <target>Wpisy</target>
         <note>Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO";</note>
-      </trans-unit>
-      <trans-unit id="ROn-S9-Y64.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "ROn-S9-Y64";</note>
       </trans-unit>
       <trans-unit id="Rhn-c1-Ohh.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
@@ -662,8 +676,13 @@
       </trans-unit>
       <trans-unit id="ToH-v6-fqC.text">
         <source>Log into any Mastodon instance!</source>
-        <target>Z którym serwerem Mastodona będziemy się łączyć</target>
+        <target>Wchodzimy na serwer</target>
         <note>Class = "UILabel"; text = "Log into any Mastodon instance!"; ObjectID = "ToH-v6-fqC";</note>
+      </trans-unit>
+      <trans-unit id="Tt3-hS-LOv.accessibilityLabel">
+        <source>Close</source>
+        <target>zamknij</target>
+        <note>Class = "UIButton"; accessibilityLabel = "Close"; ObjectID = "Tt3-hS-LOv";</note>
       </trans-unit>
       <trans-unit id="Tya-6c-9UJ.normalTitle">
         <source>SHOW</source>
@@ -677,7 +696,7 @@
       </trans-unit>
       <trans-unit id="U0R-AN-OS2.normalTitle">
         <source>Unlisted</source>
-        <target>poza listami</target>
+        <target>poza</target>
         <note>Class = "UIButton"; normalTitle = "Unlisted"; ObjectID = "U0R-AN-OS2";</note>
       </trans-unit>
       <trans-unit id="U01-1d-dos.normalTitle">
@@ -692,7 +711,7 @@
       </trans-unit>
       <trans-unit id="U5S-Ed-nnI.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "U5S-Ed-nnI";</note>
       </trans-unit>
       <trans-unit id="UDH-Pt-ySX.normalTitle">
@@ -707,7 +726,7 @@
       </trans-unit>
       <trans-unit id="UgZ-zj-ANn.text">
         <source>This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?</source>
-        <target>Wiadomość zostanie wysłana do adresatów na innym serwerze. Czy oni na pewno nie pokażą tej wiadomości innym?</target>
+        <target>Wiadomość zostanie wysłana do adresatów na innym serwerze. Adresaci mogą nie wiedzieć, że Twój wpis nie jest przeznaczony dla wszystkich i mogą go ujawnić!</target>
         <note>Class = "UILabel"; text = "This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?"; ObjectID = "UgZ-zj-ANn";</note>
       </trans-unit>
       <trans-unit id="V0f-xA-yAn.text">
@@ -762,7 +781,7 @@
       </trans-unit>
       <trans-unit id="X9K-Re-Na8.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "X9K-Re-Na8";</note>
       </trans-unit>
       <trans-unit id="XDD-bM-ob9.text">
@@ -782,7 +801,7 @@
       </trans-unit>
       <trans-unit id="Xir-yL-tTD.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "Xir-yL-tTD";</note>
       </trans-unit>
       <trans-unit id="YQ3-g1-jeJ.text">
@@ -809,6 +828,10 @@
         <source>John~</source>
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "aI4-ho-Fbg";</note>
+      </trans-unit>
+      <trans-unit id="aZc-lv-edf.text">
+        <source>Subtitle</source>
+        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "aZc-lv-edf";</note>
       </trans-unit>
       <trans-unit id="aam-jg-MZf.text">
         <source>@eurasierboy</source>
@@ -842,8 +865,12 @@
       </trans-unit>
       <trans-unit id="bfJ-yc-2cN.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "bfJ-yc-2cN";</note>
+      </trans-unit>
+      <trans-unit id="blm-y0-hTt.title">
+        <source>Home timeline</source>
+        <note>Class = "UITabBarItem"; title = "Home timeline"; ObjectID = "blm-y0-hTt";</note>
       </trans-unit>
       <trans-unit id="bpa-6G-0UK.title">
         <source>Back</source>
@@ -860,6 +887,11 @@
         <target>SCHOWAJ</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "cIT-j6-x98";</note>
       </trans-unit>
+      <trans-unit id="cJ1-eF-Qod.title">
+        <source>Compose status</source>
+        <target>Napisz wiadomość</target>
+        <note>Class = "UITabBarItem"; title = "Compose status"; ObjectID = "cJ1-eF-Qod";</note>
+      </trans-unit>
       <trans-unit id="cjU-gd-4Il.text">
         <source>13 hours ago</source>
         <target>13 godzin temu</target>
@@ -867,18 +899,23 @@
       </trans-unit>
       <trans-unit id="cym-bd-fdD.text">
         <source>Mark media as sensitive</source>
-        <target>Załączony obrazek może być niestosowny</target>
+        <target>Niestosowne obrazki</target>
         <note>Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD";</note>
       </trans-unit>
       <trans-unit id="d7e-VT-75D.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "d7e-VT-75D";</note>
       </trans-unit>
       <trans-unit id="dJe-wm-mbS.text">
         <source>13 hours ago</source>
         <target>13 godzin temu</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "dJe-wm-mbS";</note>
+      </trans-unit>
+      <trans-unit id="dPe-vw-PnL.title">
+        <source>Public timeline</source>
+        <target>Rozmowy</target>
+        <note>Class = "UITabBarItem"; title = "Public timeline"; ObjectID = "dPe-vw-PnL";</note>
       </trans-unit>
       <trans-unit id="dUK-lH-2U2.normalTitle">
         <source>SHOW</source>
@@ -925,6 +962,10 @@
         <target>Mar 02, 2017, 13:32 • Web •</target>
         <note>Class = "UILabel"; text = "Mar 02, 2017, 13:32 • Web •"; ObjectID = "fb7-h8-3PG";</note>
       </trans-unit>
+      <trans-unit id="fin-fd-APT.text">
+        <source>Title</source>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "fin-fd-APT";</note>
+      </trans-unit>
       <trans-unit id="fmy-pu-s9i.text">
         <source>@eurasierboy</source>
         <target>@eurasierboy</target>
@@ -953,7 +994,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="hCN-Nu-RJv.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "hCN-Nu-RJv";</note>
       </trans-unit>
       <trans-unit id="hnO-sI-rxq.text">
@@ -973,7 +1014,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="i1i-yX-yu7.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "i1i-yX-yu7";</note>
       </trans-unit>
       <trans-unit id="iGb-ZS-4cX.text">
@@ -990,6 +1031,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>John~</source>
         <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "iZ2-pR-esE";</note>
+      </trans-unit>
+      <trans-unit id="izx-3l-fkf.text">
+        <source>Title</source>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "izx-3l-fkf";</note>
       </trans-unit>
       <trans-unit id="jeI-4q-Be1.text">
         <source>What is on your mind?</source>
@@ -1018,7 +1063,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="kBm-Du-SWq.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "kBm-Du-SWq";</note>
       </trans-unit>
       <trans-unit id="kMe-1a-7DV.text">
@@ -1076,11 +1121,6 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>13 godzin temu</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "lYZ-Qb-UgT";</note>
       </trans-unit>
-      <trans-unit id="lgH-Oi-0b4.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "lgH-Oi-0b4";</note>
-      </trans-unit>
       <trans-unit id="ltF-Mj-5Wb.text">
         <source>John~</source>
         <target>John~</target>
@@ -1103,7 +1143,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="mZB-dP-2fB.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "mZB-dP-2fB";</note>
       </trans-unit>
       <trans-unit id="n6A-5e-v6Y.text">
@@ -1145,11 +1185,6 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>About Amaroq</source>
         <target>O programie Amaroq</target>
         <note>Class = "UIButton"; selectedTitle = "About Amaroq"; ObjectID = "oLn-2m-0yg";</note>
-      </trans-unit>
-      <trans-unit id="p8o-Rd-3Y9.text">
-        <source>Title</source>
-        <target>Title</target>
-        <note>Class = "UILabel"; text = "Title"; ObjectID = "p8o-Rd-3Y9";</note>
       </trans-unit>
       <trans-unit id="pFj-zL-Wd9.text">
         <source>John~</source>
@@ -1193,7 +1228,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="qOR-ZG-qeO.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "qOR-ZG-qeO";</note>
       </trans-unit>
       <trans-unit id="qST-R4-uqh.text">
@@ -1226,6 +1261,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>0 •</target>
         <note>Class = "UILabel"; text = "0 •"; ObjectID = "r1g-xo-uUC";</note>
       </trans-unit>
+      <trans-unit id="rQZ-Ld-pnT.accessibilityLabel">
+        <source>Scroll to top</source>
+        <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "rQZ-Ld-pnT";</note>
+      </trans-unit>
       <trans-unit id="rjX-Ma-KFp.normalTitle">
         <source>Privacy Policy</source>
         <target>Zasady ochrony danych osobowych</target>
@@ -1238,13 +1277,18 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="s8X-8f-cG8.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "s8X-8f-cG8";</note>
       </trans-unit>
       <trans-unit id="sAL-De-fKG.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "sAL-De-fKG";</note>
+      </trans-unit>
+      <trans-unit id="sB4-xf-wkz.title">
+        <source>Menu</source>
+        <target>Menu</target>
+        <note>Class = "UITabBarItem"; title = "Menu"; ObjectID = "sB4-xf-wkz";</note>
       </trans-unit>
       <trans-unit id="sIR-7z-4Xv.text">
         <source>@eurasierboy</source>
@@ -1263,7 +1307,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="t7H-2P-vOR.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "t7H-2P-vOR";</note>
       </trans-unit>
       <trans-unit id="t7Z-ba-Vne.normalTitle">
@@ -1306,6 +1350,11 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "tPs-CE-wpY";</note>
       </trans-unit>
+      <trans-unit id="tae-bS-eCU.title">
+        <source>Public timeline</source>
+        <target>Rozmowy</target>
+        <note>Class = "UITabBarItem"; title = "Public timeline"; ObjectID = "tae-bS-eCU";</note>
+      </trans-unit>
       <trans-unit id="tc5-81-C7W.text">
         <source>John~</source>
         <target>John~</target>
@@ -1313,8 +1362,13 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="ttQ-Ul-q7w.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "ttQ-Ul-q7w";</note>
+      </trans-unit>
+      <trans-unit id="uTQ-ew-25R.accessibilityLabel">
+        <source>Scroll to top</source>
+        <target>Do samej góry</target>
+        <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "uTQ-ew-25R";</note>
       </trans-unit>
       <trans-unit id="un5-wW-eie.text">
         <source>Label</source>
@@ -1353,7 +1407,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="vPp-nb-9cR.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "vPp-nb-9cR";</note>
       </trans-unit>
       <trans-unit id="xBc-J3-UJK.normalTitle">
@@ -1371,15 +1425,20 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>eurasierboy</target>
         <note>Class = "UILabel"; text = "eurasierboy"; ObjectID = "xU0-be-BKd";</note>
       </trans-unit>
+      <trans-unit id="xUp-Q0-vli.accessibilityLabel">
+        <source>Scroll to top</source>
+        <target>Do samej góry</target>
+        <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "xUp-Q0-vli";</note>
+      </trans-unit>
       <trans-unit id="xqD-wM-Q8V.text">
         <source>Warning Tag</source>
-        <target>Warning Tag</target>
+        <target>Ostrzeżenie</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "xqD-wM-Q8V";</note>
       </trans-unit>
-      <trans-unit id="yOd-ew-524.text">
-        <source>Subtitle</source>
-        <target>Subtitle</target>
-        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "yOd-ew-524";</note>
+      <trans-unit id="xwi-18-c7c.title">
+        <source>Menu</source>
+        <target>Menu</target>
+        <note>Class = "UITabBarItem"; title = "Menu"; ObjectID = "xwi-18-c7c";</note>
       </trans-unit>
       <trans-unit id="yyI-bk-cqq.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
@@ -1405,6 +1464,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>50</source>
         <target>50</target>
         <note>Class = "UILabel"; text = "50"; ObjectID = "z9I-DW-y6S";</note>
+      </trans-unit>
+      <trans-unit id="zBm-cJ-8j1.text">
+        <source>Subtitle</source>
+        <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "zBm-cJ-8j1";</note>
       </trans-unit>
       <trans-unit id="zLO-VU-rhZ.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
@@ -1440,7 +1503,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
       <trans-unit id="CFBundleShortVersionString">
-        <source>1.1.0</source>
+        <source>1.1.2</source>
       </trans-unit>
     </body>
   </file>
@@ -1476,20 +1539,24 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Add instance">
         <source>Add instance</source>
-        <target>Podłącz się do kolejnego serwera</target>
+        <target>Podłącz kolejny serwer</target>
         <note>Add instance</note>
       </trans-unit>
       <trans-unit id="Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!">
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
-        <target>Nazwa programu Amaroq wywodzi się z eskimoskiej legendy o olbrzymim wilku, który być może towarzyszył pradawnym przodkom mamutów. Niech zawyje nasz rozproszony świat!\n\nProgram Amaroq powstał z umiłowania dla wizji rozproszonej sieci mastodonów, z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS. Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Albo złap autora, @eurasierboy na serwerze mastodon.social. Miłego tututuuu!
+        <target>Nazwa programu Amaroq wywodzi się z inuickiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech wilk zawyje w naszym rozproszonym świecie!
+
+Program Amaroq powstał z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS.
+
+Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Możesz go też złapać pisząc do @eurasierboy na serwerze mastodon.social. Miłego srututuuu!
 </target>
         <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
       </trans-unit>
       <trans-unit id="App settings">
         <source>App settings</source>
-        <target>Ustawenia programu</target>
+        <target>Ustawienia programu</target>
         <note>App settings</note>
       </trans-unit>
       <trans-unit id="Are you sure you want to clear all your notifications?">
@@ -1519,12 +1586,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Cancel">
         <source>Cancel</source>
-        <target>Zostaw</target>
+        <target>nie teraz</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Change how you receive push notifications">
         <source>Change how you receive push notifications</source>
-        <target>Zmień ustawienia powiadomień na ekran</target>
+        <target>Powiadomienia na ekran</target>
         <note>Change how you receive push notifications</note>
       </trans-unit>
       <trans-unit id="Clear cache">
@@ -1534,57 +1601,57 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Copy text">
         <source>Copy text</source>
-        <target>Skopiuj</target>
+        <target>skopiuj</target>
         <note>Copy text</note>
       </trans-unit>
       <trans-unit id="Currently logged into:">
         <source>Currently logged into:</source>
-        <target>Jesteś na serwerze:</target>
+        <target>Wybrany serwer:</target>
         <note>Currently logged into:</note>
       </trans-unit>
       <trans-unit id="DON'T AWOO $350 PENALTY">
         <source>DON'T AWOO $350 PENALTY</source>
-        <target>WYCIE PODLEGA KARZE GRZYWNY DO 3500 ZŁOTYCH!</target>
+        <target>WYCIE PODLEGA GRZYWNIE DO 3500 ZŁ!</target>
         <note>DON'T AWOO $350 PENALTY</note>
       </trans-unit>
-      <trans-unit id="Default posts to private">
-        <source>Default posts to private</source>
-        <target>Najczęściej wysyłam wiadomości tylko do wybranych</target>
-        <note>Default posts to private</note>
+      <trans-unit id="Default posts to followers-only">
+        <source>Default posts to followers-only</source>
+        <target>Domyślnie wysyłaj tylko do swoich</target>
+        <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
         <source>Default posts to public</source>
-        <target>Najczęściej wysyłam wiadomości do wszystkich</target>
+        <target>Domyślnie wysyłaj na cały świat</target>
         <note>Default posts to public</note>
       </trans-unit>
       <trans-unit id="Delete">
         <source>Delete</source>
-        <target>Skasuj</target>
+        <target>skasuj</target>
         <note>Delete</note>
       </trans-unit>
       <trans-unit id="Direct">
         <source>Direct</source>
-        <target>szeptem</target>
+        <target>szept</target>
         <note>Direct</note>
       </trans-unit>
       <trans-unit id="Direct: Only visible to you and @mentioned users">
         <source>Direct: Only visible to you and @mentioned users</source>
-        <target>szeptem: Wiadomość będzie widoczna tylko dla ciebie i @adresatów</target>
+        <target>szept: Wiadomość będzie widoczna tylko dla ciebie i @adresatów</target>
         <note>Direct: Only visible to you and @mentioned users</note>
       </trans-unit>
       <trans-unit id="Disable gif auto-playback">
         <source>Disable gif auto-playback</source>
-        <target>Nie pokazuj od razu animacji</target>
+        <target>Zatrzymaj animacje</target>
         <note>Disable gif auto-playback</note>
       </trans-unit>
       <trans-unit id="Done">
         <source>Done</source>
-        <target>Gotowe</target>
+        <target>gotowe</target>
         <note>Done</note>
       </trans-unit>
       <trans-unit id="Edit Profile">
         <source>Edit Profile</source>
-        <target>Zmień wizytówkę</target>
+        <target>zmień wizytówkę</target>
         <note>Edit Profile</note>
       </trans-unit>
       <trans-unit id="Error">
@@ -1649,7 +1716,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Favorites">
         <source>Favorites</source>
-        <target>Spodobały się</target>
+        <target>Twoje ulubione wpisy</target>
         <note>Favorites</note>
       </trans-unit>
       <trans-unit id="Federated">
@@ -1657,10 +1724,29 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>Międzymiastowa</target>
         <note>Federated</note>
       </trans-unit>
+      <trans-unit id="Federated timeline">
+        <source>Federated timeline</source>
+        <target>Rozmowa międzymiastowa</target>
+        <note>Federated timeline</note>
+      </trans-unit>
+      <trans-unit id="Follow">
+        <source>Follow</source>
+        <note>Follow</note>
+      </trans-unit>
       <trans-unit id="Follow requests">
         <source>Follow requests</source>
-        <target>Osoby, które chcą cię obserwować</target>
+        <target>Kto chce ciebie obserwować</target>
         <note>Follow requests</note>
+      </trans-unit>
+      <trans-unit id="Followers-only">
+        <source>Followers-only</source>
+        <target>swoi</target>
+        <note>Followers-only</note>
+      </trans-unit>
+      <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
+        <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
+        <target>swoi: Tylko ty, @adresaci i twoi obserwujący</target>
+        <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
         <source>HASHTAG</source>
@@ -1669,13 +1755,18 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Hold to show">
         <source>Hold to show</source>
-        <target>Przytrzymaj aby zobaczyć</target>
+        <target>Przytrzymaj, aby zobaczyć</target>
         <note>Hold to show</note>
       </trans-unit>
       <trans-unit id="Local">
         <source>Local</source>
         <target>Miejscowa</target>
         <note>Local</note>
+      </trans-unit>
+      <trans-unit id="Local timeline">
+        <source>Local timeline</source>
+        <target>Rozmowa miejscowa</target>
+        <note>Local timeline</note>
       </trans-unit>
       <trans-unit id="Login request failed">
         <source>Login request failed</source>
@@ -1689,7 +1780,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Mention">
         <source>Mention</source>
-        <target>wywołaj</target>
+        <target>@napisz</target>
         <note>Mention</note>
       </trans-unit>
       <trans-unit id="Mute">
@@ -1723,7 +1814,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Only show to followers">
         <source>Only show to followers</source>
-        <target>pokaż tylko obserwującym cię</target>
+        <target>Pokaż wpisy tylko obserwującym cię</target>
         <note>Only show to followers</note>
       </trans-unit>
       <trans-unit id="Open in Safari">
@@ -1736,44 +1827,34 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>Prosimy nie ładować nagrań dłuższych niż pół minuty</target>
         <note>Please keep to videos up to 30 seconds long</note>
       </trans-unit>
-      <trans-unit id="Private">
-        <source>Private</source>
-        <target>dla wybranych</target>
-        <note>Private</note>
-      </trans-unit>
-      <trans-unit id="Private: Only visible to you, @mentioned users, and followers on your instance">
-        <source>Private: Only visible to you, @mentioned users, and followers on your instance</source>
-        <target>dla wybranych: Tylko Ty, @adresaci oraz obserwujący cię na twoim serwerzrze mogą ją przeczytać</target>
-        <note>Private: Only visible to you, @mentioned users, and followers on your instance</note>
-      </trans-unit>
       <trans-unit id="Public">
         <source>Public</source>
-        <target>do wszystkich</target>
+        <target>świat</target>
         <note>Public</note>
       </trans-unit>
       <trans-unit id="Public: Visible to everyone on local and federated timelines">
         <source>Public: Visible to everyone on local and federated timelines</source>
-        <target>do wszystkich: wiadomość wszędzie widoczna</target>
+        <target>świat: wiadomość wszędzie widoczna wszędzie</target>
         <note>Public: Visible to everyone on local and federated timelines</note>
       </trans-unit>
       <trans-unit id="Receive boost notifications">
         <source>Receive boost notifications</source>
-        <target>Chcę wiedzieć, gdy ktoś poda mój tekst dalej</target>
+        <target>Ktoś podał mój tekst dalej</target>
         <note>Receive boost notifications</note>
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
         <source>Receive favorite notifications</source>
-        <target>Chcę wiedzieć, gdy komuś spodoba się mój tekst</target>
+        <target>Komuś spodobał się mój tekst</target>
         <note>Receive favorite notifications</note>
       </trans-unit>
       <trans-unit id="Receive mention notifications">
         <source>Receive mention notifications</source>
-        <target>Chcę wiedzieć, kiedy ktoś zaadresuje do mnie wiadomość</target>
+        <target>Ktoś napisał do mnie</target>
         <note>Receive mention notifications</note>
       </trans-unit>
       <trans-unit id="Receive new follower notifications">
         <source>Receive new follower notifications</source>
-        <target>Chcę wiedzieć, kiedy ktoś zacznie mnie obserwować</target>
+        <target>Ktoś zaczął mnie obserwować</target>
         <note>Receive new follower notifications</note>
       </trans-unit>
       <trans-unit id="Report">
@@ -1798,17 +1879,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Share">
         <source>Share</source>
-        <target>podziel się</target>
+        <target>przekaż dalej</target>
         <note>Share</note>
       </trans-unit>
       <trans-unit id="Shows on local/federated timelines">
         <source>Shows on local/federated timelines</source>
-        <target>Można zobaczyć na linii miejscowej i międzymiastowej</target>
+        <target>Bierzesz udział w publicznej rozmowie</target>
         <note>Shows on local/federated timelines</note>
       </trans-unit>
       <trans-unit id="This can help older devices">
         <source>This can help older devices</source>
-        <target>Starszy sprzęt może działać lepiej</target>
+        <target>Sprzęt może lepiej działać</target>
         <note>This can help older devices</note>
       </trans-unit>
       <trans-unit id="Translate text">
@@ -1826,14 +1907,19 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>oblokuj</target>
         <note>Unblock</note>
       </trans-unit>
+      <trans-unit id="Unfollow">
+        <source>Unfollow</source>
+        <target>nie obserwuj</target>
+        <note>Unfollow</note>
+      </trans-unit>
       <trans-unit id="Unlisted">
         <source>Unlisted</source>
-        <target>poza listami</target>
+        <target>poza</target>
         <note>Unlisted</note>
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">
         <source>Unlisted: Visible to everyone, but not shown on local or federated timelines</source>
-        <target>poza listami: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na miejscowej i międzymiastowej.</target>
+        <target>poza: Wszyscy mogą przeczytać wiadomość. Nie będzie ona jednak widoczna na rozmowie miejscowej i międzymiastowej.</target>
         <note>Unlisted: Visible to everyone, but not shown on local or federated timelines</note>
       </trans-unit>
       <trans-unit id="Unmute">
@@ -1847,8 +1933,8 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <note>Video too long</note>
       </trans-unit>
       <trans-unit id="You have">
-        <source>Twoje konto</source>
-        <target/>
+        <source>You have</source>
+        <target>Twoje konto</target>
         <note>You have</note>
       </trans-unit>
       <trans-unit id="boosted">
@@ -1883,7 +1969,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="mentioned you">
         <source>mentioned you</source>
-        <target>wspomina o Tobie</target>
+        <target>wspomina o tobie</target>
         <note>mentioned you</note>
       </trans-unit>
       <trans-unit id="new notifications">
@@ -1893,12 +1979,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="replied">
         <source>replied</source>
-        <target>odpowiada</target>
+        <target>opowiada</target>
         <note>replied</note>
       </trans-unit>
       <trans-unit id="replied to">
         <source>replied to</source>
-        <target>odpowiada na</target>
+        <target>odpowiada</target>
         <note>replied to</note>
       </trans-unit>
     </body>

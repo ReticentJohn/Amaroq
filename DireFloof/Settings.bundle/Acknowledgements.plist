@@ -624,7 +624,7 @@ standalone and requires a support library to be linked with it.  This
 support library is itself covered by the above license.
 </string>
 			<key>License</key>
-			<string>New BSD</string>
+			<string>3-Clause BSD License</string>
 			<key>Title</key>
 			<string>Protobuf</string>
 			<key>Type</key>
