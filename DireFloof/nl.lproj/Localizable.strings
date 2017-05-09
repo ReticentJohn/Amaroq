@@ -1,0 +1,266 @@
+/* or 1 video */
+" or 1 video" = "of 1 video";
+
+/* ACCOUNT */
+"ACCOUNT" = "ACCOUNT";
+
+/* About Amaroq */
+"About Amaroq" = "Over Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "Over jouw Mastodon";
+
+/* Account preferences */
+"Account preferences" = "Account-instellingen";
+
+/* Add instance */
+"Add instance" = "Voeg een server toe";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq is ontwikkeld en onderhouden door een liefde aan het idee van Mastodon, die in nood was van een mobiele optie voor iOS-gebruikers. Heb je een suggestie, een bug gevonden of wil je gewoon wat ondersteuning? Je kunt ons bereiken via amaroq.feedback@gmail.com. Je kunt ook de ontwikkelaar via Mastodon bereiken op @eurasierboy op de mastodon.social-server. Veel plezier met tooten!";
+
+/* App settings */
+"App settings" = "App-instellingen";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "Weet je zeker dat je al je notificaties wilt verwijderen?";
+
+/* Awoo mode */
+"Awoo mode" = "Awoo-modus";
+
+/* Back */
+"Back" = "Terug";
+
+/* Block */
+"Block" = "Blokkeer";
+
+/* Blocked users */
+"Blocked users" = "Geblokkeerde gebruikers";
+
+/* Cancel */
+"Cancel" = "Annuleer";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "Verander hoe je push notificaties ontvangt";
+
+/* Clear cache */
+"Clear cache" = "Verwijder tijdelijke bestanden";
+
+/* Copy text */
+"Copy text" = "Kopieer tekst";
+
+/* Currently logged into: */
+"Currently logged into:" = "`Op dit moment ingelogd bij:";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "HUILEN ALS EEN WOLF = $350 BOETE!";
+
+/* Default posts to public */
+"Default posts to public" = "Maak posts standaard openbaar";
+
+/* Delete */
+"Delete" = "Verwijder";
+
+/* Direct */
+"Direct" = "Direct";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "Direct: Alleen zichtbaar voor jou en je @genoemde gebruikers";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "Zet het automatisch afpelen van gif-afbeeldingen uit";
+
+/* Done */
+"Done" = "Klaar";
+
+/* Edit Profile */
+"Edit Profile" = "Wijzig profiel";
+
+/* Error */
+"Error" = "Fout";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "Het blokkeren is van deze gebruiker is mislukt door deze fout:";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "Het verwijderen van je notificaties is mislukt door deze fout:";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "Het verwijderen van je status is mislukt door deze fout:";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "Het laden van deze gebruiker is mislukt door deze fout:";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "Het dempen van de gebruiker is mislukt door deze fout:";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "Het posten van je status is mislukt door deze fout:";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "Het rapporteren van de status mislukt door deze fout:";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "Het ophalen van je profiel is mislukt door deze fout:";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "Deblokkeren van gebruiker mislukt door deze fout:";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "Stoppen met het volgen van de gebruiker mislukt door deze fout:";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "Demping van gebruiker ongedaan maken mislukt door deze fout:";
+
+/* Favorites */
+"Favorites" = "Favorieten";
+
+/* Federated */
+"Federated" = "Globaal";
+
+/* Follow requests */
+"Follow requests" = "Verzoeken om je te volgen";
+
+/* Followers-only */
+"Followers-only" = "Alleen volgers";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "Alleen volgers: Alleen zichtbaar voor jou, @genoemde gebruikers en je volgers.";
+
+/* HASHTAG */
+"HASHTAG" = "HASHTAG";
+
+/* Hold to show */
+"Hold to show" = "Houd ingedrukt om zichtbaar te maken";
+
+/* Local */
+"Local" = "Lokaal";
+
+/* Login request failed */
+"Login request failed" = "Verzoek om in te loggen mislukt";
+
+/* Logout */
+"Logout" = "ロUitloggen";
+
+/* Mention */
+"Mention" = "Noem";
+
+/* Mute */
+"Mute" = "Demp";
+
+/* Muted users */
+"Muted users" = "Gedempte gebruikers";
+
+/* My instances */
+"My instances" = "Mijn servers";
+
+/* My profile */
+"My profile" = "Mijn profiel";
+
+/* Notification settings */
+"Notification settings" = "Notificatie-instellingen";
+
+/* Only show to followers */
+"Only show to followers" = "Maak alleen zichtbaar voor volgers";
+
+/* Open in Safari */
+"Open in Safari" = "Open in Safari";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "Maak video’s niet langer dan 30 seconden";
+
+/* Public */
+"Public" = "Openbaar";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "Openbaar: Zichtbaar voor iedereen op lokale en internationale tijdlijnen.";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "Ontvang notificaties wanneer iemand je een boost geeft.";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "Ontvang een notificatie wanneer iemand je bericht aan zijn/haar favorieten toegevoegd heeft.";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "Ontvang een notificatie wanneer iemand je noemt";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "Ontvang notificaties over nieuwe volgers";
+
+/* Report */
+"Report" = "Rapporteer";
+
+/* Select */
+"Select" = "";
+
+/* Select a privacy level */
+"Select a privacy level" = "Selecteer een privacy-level";
+
+/* Sensitive content */
+"Sensitive content" = "Gevoelige content";
+
+/* Share */
+"Share" = "Deel";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "Zichtbaar op lokale/internationale tijdlijnen";
+
+/* This can help older devices */
+"This can help older devices" = "Dit kan handig zijn voor oudere apparaten";
+
+/* Translate text */
+"Translate text" = "Vertaal tekst";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "Kan geen verbinding maken met de Mastodon-server. Probeer het later opnieuw of met een andere server.";
+
+/* Unblock */
+"Unblock" = "Deblokkeer";
+
+/* Unlisted */
+"Unlisted" = "Verborgen";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Verborgen: Zichtbaar voor iedereen, maar niet op lokale en internationale tijdlijnen.";
+
+/* Unmute */
+"Unmute" = "Maak dempen omgedaan";
+
+/* Video too long */
+"Video too long" = "Video te lang";
+
+/* You have */
+"You have" = "";
+
+/* boosted */
+"boosted" = "boostte";
+
+/* boosted your status */
+"boosted your status" = "heeft je status geboost";
+
+/* favorited your status */
+"favorited your status" = "heeft je status als favoriet toegevoegd";
+
+/* followed you */
+"followed you" = "volgde je";
+
+/* image */
+"image" = "afbeelding";
+
+/* images */
+"images" = "afbeeldingen";
+
+/* mentioned you */
+"mentioned you" = "heeft je genoemd";
+
+/* new notifications */
+"new notifications" = "nieuwe notificaties";
+
+/* replied */
+"replied" = "さんがリプライしました";
+
+/* replied to */
+"replied to" = "さんがリプライしました";
+

@@ -149,6 +149,12 @@
 		0411D5C31E65002A00CED5A6 /* UIView+Supercell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Supercell.m"; sourceTree = "<group>"; };
 		0411D5C91E66038B00CED5A6 /* DWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMenuViewController.h; sourceTree = "<group>"; };
 		0411D5CA1E66038B00CED5A6 /* DWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMenuViewController.m; sourceTree = "<group>"; };
+		041702E41EC28B5C006FD1F3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		041702E51EC28B5C006FD1F3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		041702E61EC28B5C006FD1F3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		041702E71EC28B5C006FD1F3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		041702E81EC28B5D006FD1F3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		041702E91EC28B5D006FD1F3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04174E301E5EBF0600BD5835 /* DWComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWComposeViewController.h; sourceTree = "<group>"; };
 		04174E311E5EBF0600BD5835 /* DWComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWComposeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		042A64D11EB2AF97007C93CA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -1115,6 +1121,7 @@
 				04EE29DA1EB0EAA700DF123F /* es */,
 				042A64D11EB2AF97007C93CA /* pl */,
 				0474087B1EB97849000ECD0B /* ca */,
+				041702E41EC28B5C006FD1F3 /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1132,6 +1139,7 @@
 				04EE29DC1EB0EAA800DF123F /* es */,
 				042A64D31EB2AF98007C93CA /* pl */,
 				0474087D1EB9784A000ECD0B /* ca */,
+				041702E51EC28B5C006FD1F3 /* nl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1148,6 +1156,7 @@
 				04EE29DB1EB0EAA800DF123F /* es */,
 				042A64D21EB2AF98007C93CA /* pl */,
 				0474087C1EB9784A000ECD0B /* ca */,
+				041702E61EC28B5C006FD1F3 /* nl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1164,6 +1173,7 @@
 				04EE29DD1EB0EAA900DF123F /* es */,
 				042A64D51EB2AF99007C93CA /* pl */,
 				0474087E1EB9784A000ECD0B /* ca */,
+				041702E71EC28B5C006FD1F3 /* nl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1180,6 +1190,7 @@
 				04EE29DE1EB0EAA900DF123F /* es */,
 				042A64D41EB2AF99007C93CA /* pl */,
 				0474087F1EB9784B000ECD0B /* ca */,
+				041702E81EC28B5D006FD1F3 /* nl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1196,6 +1207,7 @@
 				04EE29DF1EB0EAA900DF123F /* es */,
 				042A64D61EB2AF9A007C93CA /* pl */,
 				047408801EB9784B000ECD0B /* ca */,
+				041702E91EC28B5D006FD1F3 /* nl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
