@@ -175,13 +175,13 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Public" = "Openbaar";
 
 /* Public: Visible to everyone on local and federated timelines */
-"Public: Visible to everyone on local and federated timelines" = "Openbaar: Zichtbaar voor iedereen op lokale en internationale tijdlijnen.";
+"Public: Visible to everyone on local and federated timelines" = "Openbaar: Zichtbaar voor iedereen op lokale en globale tijdlijnen.";
 
 /* Receive boost notifications */
 "Receive boost notifications" = "Ontvang notificaties wanneer iemand je een boost geeft.";
 
 /* Receive favorite notifications */
-"Receive favorite notifications" = "Ontvang een notificatie wanneer iemand je bericht aan zijn/haar favorieten toegevoegd heeft.";
+"Receive favorite notifications" = "Ontvang een notificatie wanneer iemand je bericht leuk vindt.";
 
 /* Receive mention notifications */
 "Receive mention notifications" = "Ontvang een notificatie wanneer iemand je noemt";
@@ -205,7 +205,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Share" = "Deel";
 
 /* Shows on local/federated timelines */
-"Shows on local/federated timelines" = "Zichtbaar op lokale/internationale tijdlijnen";
+"Shows on local/federated timelines" = "Zichtbaar op lokale/globale tijdlijnen";
 
 /* This can help older devices */
 "This can help older devices" = "Dit kan handig zijn voor oudere apparaten";
@@ -223,7 +223,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Unlisted" = "Verborgen";
 
 /* Unlisted: Visible to everyone, but not shown on local or federated timelines */
-"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Verborgen: Zichtbaar voor iedereen, maar niet op lokale en internationale tijdlijnen.";
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "Verborgen: Zichtbaar voor iedereen, maar niet op lokale en globale tijdlijnen.";
 
 /* Unmute */
 "Unmute" = "Maak dempen omgedaan";
@@ -241,7 +241,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "boosted your status" = "heeft je status geboost";
 
 /* favorited your status */
-"favorited your status" = "heeft je status als favoriet toegevoegd";
+"favorited your status" = "vindt je status leuk";
 
 /* followed you */
 "followed you" = "volgde je";
@@ -259,8 +259,8 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "new notifications" = "nieuwe notificaties";
 
 /* replied */
-"replied" = "さんがリプライしました";
+"replied" = "heeft gereageerd";
 
 /* replied to */
-"replied to" = "さんがリプライしました";
+"replied to" = "heeft gereageerd op";
 

@@ -51,12 +51,12 @@
       </trans-unit>
       <trans-unit id="2wk-Fg-cKQ.normalTitle">
         <source>SHOW</source>
-        <target>表示</target>
+        <target>TOON</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "2wk-Fg-cKQ";</note>
       </trans-unit>
       <trans-unit id="2wk-Fg-cKQ.selectedTitle">
         <source>HIDE</source>
-        <target>非表示</target>
+        <target>VERBERG</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "2wk-Fg-cKQ";</note>
       </trans-unit>
       <trans-unit id="3gH-Tw-ONr.text">
@@ -71,7 +71,7 @@
       </trans-unit>
       <trans-unit id="4Am-cK-PJB.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "4Am-cK-PJB";</note>
       </trans-unit>
       <trans-unit id="4Mt-w0-BJS.text">
@@ -270,7 +270,7 @@
       </trans-unit>
       <trans-unit id="Bmc-uS-EwS.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "Bmc-uS-EwS";</note>
       </trans-unit>
       <trans-unit id="C2B-wS-Gh4.text">
@@ -305,7 +305,7 @@
       </trans-unit>
       <trans-unit id="CyJ-KV-d5f.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "CyJ-KV-d5f";</note>
       </trans-unit>
       <trans-unit id="D2e-YU-71m.title">
@@ -404,7 +404,7 @@
       </trans-unit>
       <trans-unit id="GuV-g4-hLu.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "GuV-g4-hLu";</note>
       </trans-unit>
       <trans-unit id="H73-bm-2lF.text">
@@ -452,7 +452,7 @@
       </trans-unit>
       <trans-unit id="JAi-jG-h7h.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "JAi-jG-h7h";</note>
       </trans-unit>
       <trans-unit id="JWr-0E-evS.text">
@@ -472,7 +472,7 @@
       </trans-unit>
       <trans-unit id="K0i-eE-4xG.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "K0i-eE-4xG";</note>
       </trans-unit>
       <trans-unit id="KH6-XY-QeM.text">
@@ -506,7 +506,7 @@
       </trans-unit>
       <trans-unit id="LvM-n9-aZp.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp";</note>
       </trans-unit>
       <trans-unit id="M5t-3n-kwk.text">
@@ -634,7 +634,7 @@
       </trans-unit>
       <trans-unit id="ROI-ge-hOO.text">
         <source>POSTS</source>
-        <target>投稿</target>
+        <target>POSTS</target>
         <note>Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO";</note>
       </trans-unit>
       <trans-unit id="Rhn-c1-Ohh.text">
@@ -939,7 +939,7 @@
       </trans-unit>
       <trans-unit id="fQI-2Z-e0M.text">
         <source>Reporting</source>
-        <target>報告作成</target>
+        <target>Rapportereb</target>
         <note>Class = "UILabel"; text = "Reporting"; ObjectID = "fQI-2Z-e0M";</note>
       </trans-unit>
       <trans-unit id="fVY-zu-rYc.text">
@@ -1038,7 +1038,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="jmn-GI-Die.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "jmn-GI-Die";</note>
       </trans-unit>
       <trans-unit id="k0V-mc-tdV.text">
@@ -1088,17 +1088,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="kls-DA-sj1.normalTitle">
         <source>SHOW</source>
-        <target>表示</target>
+        <target>TOON</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "kls-DA-sj1";</note>
       </trans-unit>
       <trans-unit id="kls-DA-sj1.selectedTitle">
         <source>HIDE</source>
-        <target>非表示</target>
+        <target>VERBERG</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "kls-DA-sj1";</note>
       </trans-unit>
       <trans-unit id="ks9-ML-CSt.title">
         <source>Home</source>
-        <target>ホーム</target>
+        <target>Thuis</target>
         <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "ks9-ML-CSt";</note>
       </trans-unit>
       <trans-unit id="l8E-L6-r01.text">
@@ -1118,17 +1118,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="mKu-wM-hgl.normalTitle">
         <source>SHOW</source>
-        <target>表示</target>
+        <target>TOON</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "mKu-wM-hgl";</note>
       </trans-unit>
       <trans-unit id="mKu-wM-hgl.selectedTitle">
         <source>HIDE</source>
-        <target>非表示</target>
+        <target>VERBERG</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "mKu-wM-hgl";</note>
       </trans-unit>
       <trans-unit id="mWy-B9-rVa.text">
         <source>followed you</source>
-        <target>さんにフォローされました</target>
+        <target>volgt je</target>
         <note>Class = "UILabel"; text = "followed you"; ObjectID = "mWy-B9-rVa";</note>
       </trans-unit>
       <trans-unit id="mZB-dP-2fB.text">
@@ -1158,7 +1158,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="oBT-7l-gom.title">
         <source>Search</source>
-        <target>検索</target>
+        <target>Zoek</target>
         <note>Class = "UIBarButtonItem"; title = "Search"; ObjectID = "oBT-7l-gom";</note>
       </trans-unit>
       <trans-unit id="oIN-jw-YDe.text">
@@ -1168,7 +1168,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="oLn-2m-0yg.normalTitle">
         <source>Privacy Policy</source>
-        <target>プライバシーポリシー</target>
+        <target>Privacybeleid</target>
         <note>Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "oLn-2m-0yg";</note>
       </trans-unit>
       <trans-unit id="oLn-2m-0yg.selectedTitle">
@@ -1193,17 +1193,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="peC-Z9-8oy.text">
         <source>favourited your status</source>
-        <target>さんがあなたの投稿をお気に入り登録しました</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "peC-Z9-8oy";</note>
       </trans-unit>
       <trans-unit id="pf1-ws-wpH.normalTitle">
         <source>SHOW</source>
-        <target>表示</target>
+        <target>TOON</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "pf1-ws-wpH";</note>
       </trans-unit>
       <trans-unit id="pf1-ws-wpH.selectedTitle">
         <source>HIDE</source>
-        <target>非表示</target>
+        <target>VERBERG</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "pf1-ws-wpH";</note>
       </trans-unit>
       <trans-unit id="pfp-fF-EQA.text">
@@ -1223,7 +1223,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="qST-R4-uqh.text">
         <source>favourited your status</source>
-        <target>heeft je status aan zijn/haar favorieten toegevoegd.</target>
+        <target>vindt je status leuk</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "qST-R4-uqh";</note>
       </trans-unit>
       <trans-unit id="qYM-J0-btz.text">
@@ -1364,7 +1364,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="uol-Ta-62W.text">
         <source>Additional comments</source>
-        <target>コメントを追加</target>
+        <target>extra reacties</target>
         <note>Class = "UILabel"; text = "Additional comments"; ObjectID = "uol-Ta-62W";</note>
       </trans-unit>
       <trans-unit id="uta-FN-35Y.text">
@@ -1374,7 +1374,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="v3J-FO-VYz.text">
         <source>13 hours ago</source>
-        <target>13 時間前</target>
+        <target>13 uur geleden</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "v3J-FO-VYz";</note>
       </trans-unit>
       <trans-unit id="v3S-aW-ZxL.text">
@@ -1389,7 +1389,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="vJm-tQ-6Xd.text">
         <source>13 hours ago</source>
-        <target>13 時間前</target>
+        <target>13 uur geleden</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "vJm-tQ-6Xd";</note>
       </trans-unit>
       <trans-unit id="vPp-nb-9cR.text">
@@ -1399,12 +1399,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="xBc-J3-UJK.normalTitle">
         <source>SHOW</source>
-        <target>表示</target>
+        <target>TOON</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "xBc-J3-UJK";</note>
       </trans-unit>
       <trans-unit id="xBc-J3-UJK.selectedTitle">
         <source>HIDE</source>
-        <target>非表示</target>
+        <target>VERBERG</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "xBc-J3-UJK";</note>
       </trans-unit>
       <trans-unit id="xU0-be-BKd.text">
@@ -1471,7 +1471,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="zsT-Ew-UkL.title">
         <source>Menu</source>
-        <target>メニュー</target>
+        <target>Menu</target>
         <note>Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "zsT-Ew-UkL";</note>
       </trans-unit>
     </body>
@@ -1811,7 +1811,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Public: Visible to everyone on local and federated timelines">
         <source>Public: Visible to everyone on local and federated timelines</source>
-        <target>Openbaar: Zichtbaar voor iedereen op lokale en internationale tijdlijnen.</target>
+        <target>Openbaar: Zichtbaar voor iedereen op lokale en globale tijdlijnen.</target>
         <note>Public: Visible to everyone on local and federated timelines</note>
       </trans-unit>
       <trans-unit id="Receive boost notifications">
@@ -1821,7 +1821,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
         <source>Receive favorite notifications</source>
-        <target>Ontvang een notificatie wanneer iemand je bericht aan zijn/haar favorieten toegevoegd heeft.</target>
+        <target>Ontvang een notificatie wanneer iemand je bericht leuk vindt.</target>
         <note>Receive favorite notifications</note>
       </trans-unit>
       <trans-unit id="Receive mention notifications">
@@ -1861,7 +1861,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Shows on local/federated timelines">
         <source>Shows on local/federated timelines</source>
-        <target>Zichtbaar op lokale/internationale tijdlijnen</target>
+        <target>Zichtbaar op lokale/globale tijdlijnen</target>
         <note>Shows on local/federated timelines</note>
       </trans-unit>
       <trans-unit id="This can help older devices">
@@ -1895,7 +1895,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">
         <source>Unlisted: Visible to everyone, but not shown on local or federated timelines</source>
-        <target>Verborgen: Zichtbaar voor iedereen, maar niet op lokale en internationale tijdlijnen.</target>
+        <target>Verborgen: Zichtbaar voor iedereen, maar niet op lokale en globale tijdlijnen.</target>
         <note>Unlisted: Visible to everyone, but not shown on local or federated timelines</note>
       </trans-unit>
       <trans-unit id="Unmute">
@@ -1925,7 +1925,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="favorited your status">
         <source>favorited your status</source>
-        <target>heeft je status als favoriet toegevoegd</target>
+        <target>vindt je status leuk</target>
         <note>favorited your status</note>
       </trans-unit>
       <trans-unit id="followed you">
@@ -1955,12 +1955,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="replied">
         <source>replied</source>
-        <target>さんがリプライしました</target>
+        <target>heeft gereageerd</target>
         <note>replied</note>
       </trans-unit>
       <trans-unit id="replied to">
         <source>replied to</source>
-        <target>さんがリプライしました</target>
+        <target>heeft gereageerd op</target>
         <note>replied to</note>
       </trans-unit>
     </body>
