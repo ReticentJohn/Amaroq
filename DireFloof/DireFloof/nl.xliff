@@ -693,12 +693,12 @@
       </trans-unit>
       <trans-unit id="U01-1d-dos.normalTitle">
         <source>TOOT</source>
-        <target>トゥート</target>
+        <target>TOOT</target>
         <note>Class = "UIButton"; normalTitle = "TOOT"; ObjectID = "U01-1d-dos";</note>
       </trans-unit>
       <trans-unit id="U01-1d-dos.selectedTitle">
         <source>TOOT!</source>
-        <target>トゥート!</target>
+        <target>TOOT!</target>
         <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "U01-1d-dos";</note>
       </trans-unit>
       <trans-unit id="U5S-Ed-nnI.text">
@@ -1028,7 +1028,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="jeI-4q-Be1.text">
         <source>What is on your mind?</source>
-        <target>今なにしてる?</target>
+        <target>Waar denk je op dit moment aan?</target>
         <note>Class = "UILabel"; text = "What is on your mind?"; ObjectID = "jeI-4q-Be1";</note>
       </trans-unit>
       <trans-unit id="jfu-2R-0N7.text">
@@ -1586,7 +1586,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Currently logged into:">
         <source>Currently logged into:</source>
-        <target>`Op dit moment ingelogd bij:</target>
+        <target>Op dit moment ingelogd bij:</target>
         <note>Currently logged into:</note>
       </trans-unit>
       <trans-unit id="DON'T AWOO $350 PENALTY">
@@ -1596,6 +1596,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
+        <target>Maak posts standaard alleen voor volgers</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
@@ -1752,7 +1753,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Logout">
         <source>Logout</source>
-        <target>ロUitloggen</target>
+        <target>Uitloggen</target>
         <note>Logout</note>
       </trans-unit>
       <trans-unit id="Mention">
@@ -1816,12 +1817,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Receive boost notifications">
         <source>Receive boost notifications</source>
-        <target>Ontvang notificaties wanneer iemand je een boost geeft.</target>
+        <target>Ontvang notificaties wanneer iemand je een boost geeft</target>
         <note>Receive boost notifications</note>
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
         <source>Receive favorite notifications</source>
-        <target>Ontvang een notificatie wanneer iemand je bericht leuk vindt.</target>
+        <target>Ontvang een notificatie wanneer iemand je bericht leuk vindt</target>
         <note>Receive favorite notifications</note>
       </trans-unit>
       <trans-unit id="Receive mention notifications">

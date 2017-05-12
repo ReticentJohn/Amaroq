@@ -52,10 +52,13 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Copy text" = "Kopieer tekst";
 
 /* Currently logged into: */
-"Currently logged into:" = "`Op dit moment ingelogd bij:";
+"Currently logged into:" = "Op dit moment ingelogd bij:";
 
 /* DON'T AWOO $350 PENALTY */
 "DON'T AWOO $350 PENALTY" = "HUILEN ALS EEN WOLF = $350 BOETE!";
+
+/* Default posts to followers-only */
+"Default posts to followers-only" = "Maak posts standaard alleen voor volgers";
 
 /* Default posts to public */
 "Default posts to public" = "Maak posts standaard openbaar";
@@ -142,7 +145,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Login request failed" = "Verzoek om in te loggen mislukt";
 
 /* Logout */
-"Logout" = "ロUitloggen";
+"Logout" = "Uitloggen";
 
 /* Mention */
 "Mention" = "Noem";
@@ -178,10 +181,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Public: Visible to everyone on local and federated timelines" = "Openbaar: Zichtbaar voor iedereen op lokale en globale tijdlijnen.";
 
 /* Receive boost notifications */
-"Receive boost notifications" = "Ontvang notificaties wanneer iemand je een boost geeft.";
+"Receive boost notifications" = "Ontvang notificaties wanneer iemand je een boost geeft";
 
 /* Receive favorite notifications */
-"Receive favorite notifications" = "Ontvang een notificatie wanneer iemand je bericht leuk vindt.";
+"Receive favorite notifications" = "Ontvang een notificatie wanneer iemand je bericht leuk vindt";
 
 /* Receive mention notifications */
 "Receive mention notifications" = "Ontvang een notificatie wanneer iemand je noemt";
