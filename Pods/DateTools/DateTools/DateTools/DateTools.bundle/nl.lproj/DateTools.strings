@@ -69,3 +69,21 @@
 
 /* No comment provided by engineer. */
 "This year" = "Dit jaar";
+
+/* Short format for */
+"%dy" = "%dy"; // year
+"%dM" = "%dM"; // month
+"%dw" = "%dw"; // week
+"%dd" = "%dd"; // day
+"%dh" = "%du”; // hour
+"%dm" = "%dm"; // minute
+"%ds" = "%ds"; // second
+
+/* Week format for */
+"Mon" = “Ma”;
+"Tue" = “Di”;
+"Wed" = “Wo”;
+"Thu" = “Do”;
+"Fri" = “Vr”;
+"Sat" = “Za”;
+"Sun" = “Zo”;

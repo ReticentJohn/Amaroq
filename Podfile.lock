@@ -108,7 +108,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DateTools:
-    :commit: e27c85009de4e651b61afca0d3b571ae2a1a4a2a
+    :commit: 1e005b3ad6768980507a31629321c2ba22d5d1c0
     :git: https://github.com/ReticentJohn/DateTools.git
   EmojiOne:
     :commit: 233b51f39209579ee35290734195dbf5494637d4
@@ -156,4 +156,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 016dbda5f0aeb3624ef9cbc187867dc3ee539f51
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
