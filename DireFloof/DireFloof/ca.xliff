@@ -260,7 +260,7 @@
       </trans-unit>
       <trans-unit id="BPA-eB-mCR.text">
         <source>Hide text behind warning</source>
-        <target>Amagar text darrera l'advertència'</target>
+        <target>Amagar text darrera l'advertència</target>
         <note>Class = "UILabel"; text = "Hide text behind warning"; ObjectID = "BPA-eB-mCR";</note>
       </trans-unit>
       <trans-unit id="Bb0-EI-Ll2.text">
@@ -1829,7 +1829,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Receive mention notifications">
         <source>Receive mention notifications</source>
-        <target>Rebre notificacions de esments</target>
+        <target>Rebre notificacions d'esments</target>
         <note>Receive mention notifications</note>
       </trans-unit>
       <trans-unit id="Receive new follower notifications">
@@ -1933,7 +1933,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="followed you">
         <source>followed you</source>
-        <target>t'ha seguit</target>
+        <target>et segueix</target>
         <note>followed you</note>
       </trans-unit>
       <trans-unit id="image">
@@ -1958,7 +1958,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="replied">
         <source>replied</source>
-        <target>respost</target>
+        <target>ha respost</target>
         <note>replied</note>
       </trans-unit>
       <trans-unit id="replied to">

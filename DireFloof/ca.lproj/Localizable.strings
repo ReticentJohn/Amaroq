@@ -189,7 +189,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Receive favorite notifications" = "Rebre notificacions de favorits";
 
 /* Receive mention notifications */
-"Receive mention notifications" = "Rebre notificacions de esments";
+"Receive mention notifications" = "Rebre notificacions d'esments";
 
 /* Receive new follower notifications */
 "Receive new follower notifications" = "Rebre notificacions de nous seguidors";
@@ -249,7 +249,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "favorited your status" = "ha afavorit el teu estat";
 
 /* followed you */
-"followed you" = "t'ha seguit";
+"followed you" = "et segueix";
 
 /* image */
 "image" = "imatge";
@@ -264,7 +264,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "new notifications" = "noves notificacions";
 
 /* replied */
-"replied" = "respost";
+"replied" = "ha respost";
 
 /* replied to */
 "replied to" = "ha respost a";
