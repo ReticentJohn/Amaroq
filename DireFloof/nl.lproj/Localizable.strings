@@ -58,7 +58,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "DON'T AWOO $350 PENALTY" = "HUILEN ALS EEN WOLF = $350 BOETE!";
 
 /* Default posts to followers-only */
-"Default posts to followers-only" = "Maak posts standaard alleen voor volgers";
+"Default posts to followers-only" = "Maak posts standaard alleen voor volgers zichtbaar";
 
 /* Default posts to public */
 "Default posts to public" = "Maak posts standaard openbaar";
@@ -166,7 +166,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Notification settings" = "Notificatie-instellingen";
 
 /* Only show to followers */
-"Only show to followers" = "Maak alleen zichtbaar voor volgers";
+"Only show to followers" = "Alleen volgers krijgen je posts te zien";
 
 /* Open in Safari */
 "Open in Safari" = "Open in Safari";

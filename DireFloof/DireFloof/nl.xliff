@@ -1596,7 +1596,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
-        <target>Maak posts standaard alleen voor volgers</target>
+        <target>Maak posts standaard alleen voor volgers zichtbaar</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
@@ -1792,7 +1792,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Only show to followers">
         <source>Only show to followers</source>
-        <target>Maak alleen zichtbaar voor volgers</target>
+        <target>Alleen volgers krijgen je posts te zien</target>
         <note>Only show to followers</note>
       </trans-unit>
       <trans-unit id="Open in Safari">
