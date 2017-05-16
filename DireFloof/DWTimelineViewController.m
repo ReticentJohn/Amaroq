@@ -18,6 +18,7 @@
 #import "DWProfileViewController.h"
 #import "UIViewController+NearestNavigationController.h"
 #import "DWSettingStore.h"
+#import "UIViewController+WebNavigation.h"
 
 IB_DESIGNABLE
 @interface DWTimelineViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>
@@ -430,6 +431,11 @@ IB_DESIGNABLE
             [self presentViewController:alertController animated:YES completion:nil];
         }
     }];
+}
+
+- (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectURL:(NSURL *)url
+{
+    [self openWebURL:url];
 }
 
 

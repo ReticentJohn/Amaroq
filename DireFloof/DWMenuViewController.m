@@ -18,6 +18,7 @@
 #import "DWBlockedUsersViewController.h"
 #import "DWConstants.h"
 #import "DWMenuTableViewCell.h"
+#import "UIViewController+WebNavigation.h"
 
 #define DW_MENU_ITEM_TITLE_KEY @"title"
 #define DW_MENU_ITEM_IMAGE_KEY @"image"
@@ -186,14 +187,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
             break;
         case DWMenuRowTypeInformation:
         {
-            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-                
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@about/more", [[MSAppStore sharedStore] base_url_string]]]];
-                
-            } else {
-                // iOS 10 or later
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@about/more", [[MSAppStore sharedStore] base_url_string]]] options:@{} completionHandler:nil];
-            }
+            [self openWebURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@about/more", [[MSAppStore sharedStore] base_url_string]]]];
         }
             break;
         case DWMenuRowTypeLogout:
