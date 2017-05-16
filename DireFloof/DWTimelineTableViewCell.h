@@ -20,6 +20,7 @@
 - (void)timelineCell:(DWTimelineTableViewCell *)cell didReportStatus:(MSStatus *)status;
 - (void)timelineCell:(DWTimelineTableViewCell *)cell didMentionUser:(NSString *)user;
 - (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectUser:(NSString *)user;
+- (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectURL:(NSURL *)url;
 
 @end
 

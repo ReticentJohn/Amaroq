@@ -125,16 +125,7 @@
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Open in Safari", @"Open in Safari") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
-        
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-            
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:status.url]];
-            
-        } else {
-            // iOS 10 or later
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:status.url] options:@{} completionHandler:nil];
-        }
-        
+        [self.delegate timelineCell:self didSelectURL:[NSURL URLWithString:status.url]];
     }]];
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Share", @"Share") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -163,15 +154,7 @@
         NSString *encodedStatus = [status.content stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         NSString *url = [NSString stringWithFormat:@"https://translate.google.com/#auto/auto/%@", encodedStatus];
         
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-            
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-            
-        } else {
-            // iOS 10 or later
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
-        }
-
+        [self.delegate timelineCell:self didSelectURL:[NSURL URLWithString:url]];
     }]];
     
     if ([self.status.account._id isEqualToString:[[[MSUserStore sharedStore] currentUser] _id]]) {
@@ -386,14 +369,7 @@
     }
     else
     {
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-            
-            [[UIApplication sharedApplication] openURL:url];
-            
-        } else {
-            // iOS 10 or later
-            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
-        }
+        [self.delegate timelineCell:self didSelectURL:url];
     }
 }
 
