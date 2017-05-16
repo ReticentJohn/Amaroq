@@ -20,6 +20,7 @@
 #import "DWProfileViewController.h"
 #import "DWTimelineViewController.h"
 #import "DWNotificationStore.h"
+#import "UIViewController+WebNavigation.m"
 
 @interface DWNotificationsViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>
 
@@ -315,6 +316,11 @@
             [self presentViewController:alertController animated:YES completion:nil];
         }
     }];
+}
+
+- (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectURL:(NSURL *)url
+{
+    [self openWebURL:url];
 }
 
 

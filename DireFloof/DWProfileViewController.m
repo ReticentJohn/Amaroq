@@ -22,6 +22,7 @@
 #import "DWTimelineViewController.h"
 #import "UIViewController+NearestNavigationController.h"
 #import "DWSettingStore.h"
+#import "UIViewController+WebNavigation.h"
 
 typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     DWProfileSectionTypePosts                = 0,
@@ -235,16 +236,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     UIAlertController *optionController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Open in Safari", @"Open in Safari") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-            
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.account.url]];
-            
-        } else {
-            // iOS 10 or later
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.account.url] options:@{} completionHandler:nil];
-        }
-        
+        [self openWebURL:[NSURL URLWithString:self.account.url]];
     }]];
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Share", @"Share") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -762,19 +754,17 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     }];
 }
 
+- (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectURL:(NSURL *)url
+{
+    [self openWebURL:url];
+}
+
 
 #pragma mark - TTTAttributedLabel Delegate Methods
 
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url
 {
-    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-        
-        [[UIApplication sharedApplication] openURL:url];
-        
-    } else {
-        // iOS 10 or later
-        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
-    }
+    [self openWebURL:url];
 }
 
 

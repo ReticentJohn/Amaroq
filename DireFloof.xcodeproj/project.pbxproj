@@ -94,6 +94,8 @@
 		04F0D6F31EABD0A100DFF8BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6F51EABD0A100DFF8BB /* Localizable.strings */; };
 		04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */; };
 		04FE35F91E627E5600E34407 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FE35F81E627E5600E34407 /* Settings.bundle */; };
+		22B3306B1EC6002B0022BB78 /* UIViewController+WebNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */; };
+		22B3306D1EC600590022BB78 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3306C1EC600590022BB78 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4549FEEE336A754F3DD7B9CB /* libPods-DireFloofUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */; };
 		6F81D807974980F1C7131960 /* libPods-DireFloof.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159D03EA22F7441C280496B /* libPods-DireFloof.a */; };
 		7B480A139AE67221ED649A1F /* libPods-DireFloofTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */; };
@@ -320,6 +322,9 @@
 		04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationsViewController.m; sourceTree = "<group>"; };
 		04FE35F81E627E5600E34407 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloofUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B330691EC6002B0022BB78 /* UIViewController+WebNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WebNavigation.h"; sourceTree = "<group>"; };
+		22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WebNavigation.m"; sourceTree = "<group>"; };
+		22B3306C1EC600590022BB78 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		3A2379964B2057680274665D /* Pods-DireFloofTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		3AA8B4A3626D6C8622613371 /* Pods-DireFloof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.release.xcconfig"; sourceTree = "<group>"; };
 		4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -338,6 +343,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B3306D1EC600590022BB78 /* SafariServices.framework in Frameworks */,
 				6F81D807974980F1C7131960 /* libPods-DireFloof.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +577,8 @@
 				0411D1641E639D2100CED5A6 /* UIApplication+TopController.m */,
 				040C61301E70C52300509F32 /* UIViewController+NearestNavigationController.h */,
 				040C61311E70C52300509F32 /* UIViewController+NearestNavigationController.m */,
+				22B330691EC6002B0022BB78 /* UIViewController+WebNavigation.h */,
+				22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */,
 				0411D5C21E65002A00CED5A6 /* UIView+Supercell.h */,
 				0411D5C31E65002A00CED5A6 /* UIView+Supercell.m */,
 				040C612D1E7090E300509F32 /* NSString+Awoo.h */,
@@ -662,6 +670,7 @@
 		4C62D2E833405E60BF6DE307 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22B3306C1EC600590022BB78 /* SafariServices.framework */,
 				8159D03EA22F7441C280496B /* libPods-DireFloof.a */,
 				6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */,
 				1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */,
@@ -1073,6 +1082,7 @@
 				0411D1651E639D2100CED5A6 /* UIApplication+TopController.m in Sources */,
 				04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */,
 				0411D15C1E63813900CED5A6 /* DWSearchViewController.m in Sources */,
+				22B3306B1EC6002B0022BB78 /* UIViewController+WebNavigation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,7 +36,7 @@ Sometimes Amaroq's notification servers belch, and miss a registration or two. D
 ### Does Amaroq's notification server see any of the content that it pushes for notifications?
 No. Amaroq's push notifications are actually silent, and they don't contain anything other than a message telling the app that content is available. The notification you see is created locally in the background based on that silent notification.
 
-### Where's the multi-instance support?
+### Why can't I log into multiple accounts on the same instance?
 Soon™
 
 ### Where's the translation support?
