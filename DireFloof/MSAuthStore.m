@@ -287,12 +287,7 @@
 
 - (void)requestPreferences
 {
-    // Remove this, testing only
-    [[NSURLSession sharedSession] resetWithCompletionHandler:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self performOtherWebviewRequestWithUrl:[NSString stringWithFormat:@"%@settings/preferences", [[MSAppStore sharedStore] base_url_string]]];
-        });
-    }];
+    [self performOtherWebviewRequestWithUrl:[NSString stringWithFormat:@"%@settings/preferences", [[MSAppStore sharedStore] base_url_string]]];
 }
 
 
