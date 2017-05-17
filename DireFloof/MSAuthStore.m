@@ -220,6 +220,18 @@
             self.loginBlock([self isLoggedIn]);
         }
     }
+    else if ([html containsString:@"Throttled"])
+    {
+        if ([[[[UIApplication sharedApplication] topController] view].subviews containsObject:webView]) {
+            webView.delegate = nil;
+            [webView removeFromSuperview];
+            [self.cancelButton removeFromSuperview];
+        }
+        
+        if (self.loginBlock != nil) {
+            self.loginBlock([self isLoggedIn]);
+        }
+    }
     else if ([webView.request.mainDocumentURL.absoluteString isEqualToString:[[MSAppStore sharedStore] base_url_string]] && [self isLoggedIn])
     {
         // we have gone too far
@@ -231,14 +243,25 @@
     }
     else if (([webView.request.mainDocumentURL.absoluteString containsString:@"/about"] || [webView.request.mainDocumentURL.absoluteString containsString:@"sign_in"]) && [self isLoggedIn] && !self.loginRequest)
     {
-        // YOU FOOL YOU'VE LOGGED OUT
-        if ([[[[UIApplication sharedApplication] topController] view].subviews containsObject:webView]) {
-            webView.delegate = nil;
-            [webView removeFromSuperview];
-            [self.cancelButton removeFromSuperview];
+        // YOU FOOL YOU'VE LOGGED OUT, well maybe it could be worse, let them relog or cancel
+        
+        if (!self.cancelButton) {
+            self.cancelButton = [[UIButton alloc] initWithFrame:CGRectMake([UIApplication sharedApplication].keyWindow.bounds.size.width - 79, 0, 79, 79)];
+            self.cancelButton.tintColor = [UIColor whiteColor];
+            [self.cancelButton setImage:[UIImage imageNamed:@"CloseIcon"] forState:UIControlStateNormal];
+            [self.cancelButton addTarget:self action:@selector(cancelWebviewLogin) forControlEvents:UIControlEventTouchUpInside];
         }
         
-        [[MSAuthStore sharedStore] logout];
+        if (![[[[[UIApplication sharedApplication] topController] view] subviews] containsObject:self.cancelButton]) {
+            [[[[UIApplication sharedApplication] topController] view] addSubview:self.cancelButton];
+        }
+        
+        [[[[UIApplication sharedApplication] topController] view] bringSubviewToFront:self.cancelButton];
+        
+        webView.hidden = NO;
+        self.cancelButton.hidden = NO;
+        webView.alpha = 1.0f;
+        self.cancelButton.alpha = 1.0f;
     }
     else if (![webView.request.mainDocumentURL.absoluteString containsString:@"/auth"] && ![webView.request.mainDocumentURL.absoluteString containsString:@"/settings"])
     {
@@ -264,7 +287,12 @@
 
 - (void)requestPreferences
 {
-    [self performOtherWebviewRequestWithUrl:[NSString stringWithFormat:@"%@settings/preferences", [[MSAppStore sharedStore] base_url_string]]];
+    // Remove this, testing only
+    [[NSURLSession sharedSession] resetWithCompletionHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self performOtherWebviewRequestWithUrl:[NSString stringWithFormat:@"%@settings/preferences", [[MSAppStore sharedStore] base_url_string]]];
+        });
+    }];
 }
 
 
@@ -403,7 +431,7 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
     
-    if ([[MSAppStore sharedStore] instance]) {
+    if ([[MSAppStore sharedStore] instance] && self.loginRequest) {
         [[MSAppStore sharedStore] removeMastodonInstance:[[MSAppStore sharedStore] instance]];
     }
 }
