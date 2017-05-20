@@ -236,14 +236,18 @@
 {
     NSDictionary *params = @{@"q":query, @"limit":@(5)};
     
-    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"accounts/search" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"search" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSMutableArray *accounts = [@[] mutableCopy];
-        
-        for (NSDictionary *accountJSON in responseObject) {
-            MSAccount *account = [[MSAccount alloc] initWithParams:accountJSON];
+
+        id responseAccounts = [responseObject objectForKey:@"accounts"];
+
+        if (responseAccounts != nil) {
+            for (NSDictionary *accountJSON in responseAccounts) {
+                MSAccount *account = [[MSAccount alloc] initWithParams:accountJSON];
             
-            [accounts addObject:account];
+                [accounts addObject:account];
+            }
         }
         
         if (completion != nil) {
