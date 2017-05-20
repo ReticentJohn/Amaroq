@@ -234,7 +234,7 @@
 
 - (void)searchForUsersWithQuery:(NSString *)query withCompletion:(void (^)(BOOL, NSArray *, NSError *))completion
 {
-    NSDictionary *params = @{@"q":query, @"limit":@(5)};
+    NSDictionary *params = @{@"q":query, @"resolve":@"true"};
     
     [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"search" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
