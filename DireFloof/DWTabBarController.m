@@ -209,7 +209,12 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         [self.centerTabOverlay autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar];
         [self.centerTabOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar];
     }
-    
+
+    // We don't need the avatar icon, user already knows what account is being used
+    if ([[[MSAppStore sharedStore] availableInstances] count] == 1) {
+        return;
+    }
+
     if (!self.avatarImageView) {
         UIView *menuOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 21.0f, 21.0f)];
         menuOverlay.clipsToBounds = YES;
