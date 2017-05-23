@@ -222,6 +222,38 @@
 }
 
 
+- (void)muteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL, NSError *))completion
+{
+    NSString *requestUrl = [NSString stringWithFormat:@"statuses/%@/mute", statusId];
+    
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:requestUrl parameters:nil constructingBodyWithBlock:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (completion != nil) {
+            completion(YES, nil);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (completion != nil) {
+            completion(NO, error);
+        }
+    }];
+}
+
+
+- (void)unmuteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL, NSError *))completion
+{
+    NSString *requestUrl = [NSString stringWithFormat:@"statuses/%@/unmute", statusId];
+    
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:requestUrl parameters:nil constructingBodyWithBlock:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (completion != nil) {
+            completion(YES, nil);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (completion != nil) {
+            completion(NO, error);
+        }
+    }];
+}
+
+
 #pragma mark - Private Methods
 
 - (void)postStatusWithParameters:(NSDictionary *)params withCompletion:(void (^)(BOOL, NSDictionary *, NSError *))completion

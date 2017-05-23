@@ -30,4 +30,6 @@
 - (void)favoriteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL success, NSError *error))completion;
 - (void)unfavoriteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL success, NSError *error))completion;
 - (void)reportStatus:(MSStatus *)status withComments:(NSString *)comments withCompletion:(void (^)(BOOL success, NSError *error))completion;
+- (void)muteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL success, NSError *error))completion;
+- (void)unmuteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL success, NSError *error))completion;
 @end

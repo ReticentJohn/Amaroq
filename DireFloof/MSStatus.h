@@ -36,6 +36,7 @@
 @property (nonatomic, strong, readonly) NSArray *media_attachments;
 @property (nonatomic, strong, readonly) NSArray *mentions;
 @property (nonatomic, strong, readonly) MSApplication *application;
+@property (nonatomic, assign) BOOL muted;
 
 
 #pragma mark - Initializers

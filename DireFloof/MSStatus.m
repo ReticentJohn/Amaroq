@@ -80,6 +80,7 @@
         self.reblogged = [[params objectForKey:@"reblogged"] boolValue];
         self.favourited = [[params objectForKey:@"favourited"] boolValue];
         self.sensitive = [[params objectForKey:@"sensitive"] boolValue];
+        self.muted = [[params objectForKey:@"muted"] boolValue];
         
         NSString *spoiler_text = [params objectForKey:@"spoiler_text"];
         
@@ -204,6 +205,7 @@
     [params setObject:@(self.reblogged) forKey:@"reblogged"];
     [params setObject:@(self.favourited) forKey:@"favourited"];
     [params setObject:@(self.sensitive) forKey:@"sensitive"];
+    [params setObject:@(self.muted) forKey:@"muted"];
     
     if (self.spoiler_text) {
         [params setObject:self.spoiler_text forKey:@"spoiler_text"];

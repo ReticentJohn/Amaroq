@@ -157,6 +157,33 @@
         [self.delegate timelineCell:self didSelectURL:[NSURL URLWithString:url]];
     }]];
     
+    MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
+    
+    if (!status.muted) {
+        
+        [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Mute notifications", @"Mute notifications") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+            [[MSStatusStore sharedStore] muteStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
+                
+                if (success) {
+                    status.muted = YES;
+                }
+            }];
+        }]];
+    }
+    else
+    {
+        [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Unmute notifications", @"Unmute notifications") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+            [[MSStatusStore sharedStore] unmuteStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
+                
+                if (success) {
+                    status.muted = NO;
+                }
+            }];
+        }]];
+    }
+    
     if ([self.status.account._id isEqualToString:[[[MSUserStore sharedStore] currentUser] _id]]) {
         
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Delete", @"Delete") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
