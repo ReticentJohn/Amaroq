@@ -445,6 +445,7 @@
     }
     
     self.retootButton.enabled = ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_PRIVATE] && ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT];
+    self.contentView.backgroundColor = [status.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT] ? DW_BAR_TINT_COLOR : [UIColor clearColor];
     
     if ([status.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT]) {
         [self.retootButton setImage:[UIImage imageNamed:@"DirectMessageIcon"] forState:UIControlStateDisabled];
