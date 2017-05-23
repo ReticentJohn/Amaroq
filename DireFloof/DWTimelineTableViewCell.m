@@ -161,7 +161,7 @@
     
     if (!status.muted) {
         
-        [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Mute notifications", @"Mute notifications") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Mute conversation", @"Mute conversation") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
             [[MSStatusStore sharedStore] muteStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
                 
@@ -173,7 +173,7 @@
     }
     else
     {
-        [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Unmute notifications", @"Unmute notifications") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Unmute conversation", @"Unmute conversation") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
             [[MSStatusStore sharedStore] unmuteStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
                 

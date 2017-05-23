@@ -217,6 +217,61 @@
 }
 
 
+- (void)getBlockedInstancesWithCompletion:(void (^)(BOOL, NSArray *, NSError *))completion
+{
+    NSString *requestUrl = @"domain_blocks";
+    
+    [[MSAPIClient sharedClientWithBaseAPI:self.base_api_url_string] GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (completion) {
+            completion(YES, responseObject, nil);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (completion) {
+            completion(NO, nil, error);
+        }
+    }];
+}
+
+
+- (void)blockMastodonInstance:(NSString *)instance withCompletion:(void (^)(BOOL, NSError *))completion
+{
+    NSDictionary *params = @{@"domain": instance};
+    NSString *requestUrl = @"domain_blocks";
+    
+    [[MSAPIClient sharedClientWithBaseAPI:self.base_api_url_string] POST:requestUrl parameters:params constructingBodyWithBlock:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (completion != nil) {
+            completion(YES, nil);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (completion != nil) {
+            completion(NO, error);
+        }
+    }];
+}
+
+
+- (void)unblockMastodonInstance:(NSString *)instance withCompletion:(void (^)(BOOL, NSError *))completion
+{
+    NSDictionary *params = @{@"domain": instance};
+    NSString *requestUrl = @"domain_blocks";
+    
+    [[MSAPIClient sharedClientWithBaseAPI:self.base_api_url_string] DELETE:requestUrl parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (completion != nil) {
+            completion(YES, nil);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (completion != nil) {
+            completion(NO, error);
+        }
+    }];
+}
+
+
+#pragma mark - Private Methods
+
 - (NSString *)availableInstancesPath
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
