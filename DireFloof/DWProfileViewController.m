@@ -66,7 +66,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 @property (nonatomic, assign) BOOL loadedFollowedStatus;
 @property (nonatomic, assign) BOOL blocking;
 @property (nonatomic, assign) BOOL muting;
-@property (nonatomic, assign) BOOL instanceBlocking;
 @end
 
 @implementation DWProfileViewController
@@ -341,49 +340,32 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             }
         }]];
         
-        if (![self.account.display_name isEqualToString:self.account.acct]) {
+        NSArray *domainComponents = [self.account.acct componentsSeparatedByString:@"@"];
+        
+        if (domainComponents.count > 1) {
             
-            NSString *domain = [[self.account.acct componentsSeparatedByString:@"@"] lastObject];
+            NSString *domain = [domainComponents lastObject];
             
-            if (!self.instanceBlocking) {
-                [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Block entire domain", @"Block entire domain") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Block entire domain", @"Block entire domain") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                
+                [[MSAppStore sharedStore] blockMastodonInstance:domain withCompletion:^(BOOL success, NSError *error) {
                     
-                    [[MSAppStore sharedStore] blockMastodonInstance:domain withCompletion:^(BOOL success, NSError *error) {
+                    if (success) {
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Blocked domain", @"Blocked domain") message:NSLocalizedString(@"Users of this domain will no longer show in public or local timelines.", @"Users of this domain will no longer show in public or local timelines.") preferredStyle:UIAlertControllerStyleAlert];
                         
-                        if (success) {
-                            self.instanceBlocking = YES;
-                        }
-                        else
-                        {
-                            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Failed to block domain with error:", @"Failed to block domain with error:"), error.localizedFailureReason] preferredStyle:UIAlertControllerStyleAlert];
-                            
-                            [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
-                            [self presentViewController:alertController animated:YES completion:nil];
-                        }
-                    }];
-                    
-                }]];
-            }
-            else
-            {
-                [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Unblock domain", @"Unblock domain") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-                    
-                    [[MSAppStore sharedStore] unblockMastodonInstance:domain withCompletion:^(BOOL success, NSError *error) {
+                        [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
+                        [self presentViewController:alertController animated:YES completion:nil];
+                    }
+                    else
+                    {
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Failed to block domain with error:", @"Failed to block domain with error:"), error.localizedFailureReason] preferredStyle:UIAlertControllerStyleAlert];
                         
-                        if (success) {
-                            self.instanceBlocking = NO;
-                        }
-                        else
-                        {
-                            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Failed to unblock domain with error:", @"Failed to block domain with error:"), error.localizedFailureReason] preferredStyle:UIAlertControllerStyleAlert];
-                            
-                            [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
-                            [self presentViewController:alertController animated:YES completion:nil];
-                        }
-                    }];
-                    
-                }]];
-            }
+                        [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
+                        [self presentViewController:alertController animated:YES completion:nil];
+                    }
+                }];
+                
+            }]];
         }
 
     }
@@ -1027,22 +1009,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
         });
         
     }];
-    
-    if ([self.account.display_name isEqualToString:self.account.acct]) {
-        self.instanceBlocking = NO;
-    }
-    else
-    {
-        [[MSAppStore sharedStore] getBlockedInstancesWithCompletion:^(BOOL success, NSArray *instances, NSError *error) {
-            
-            if (success) {
-                
-                NSString *domain = [[self.account.acct componentsSeparatedByString:@"@"] lastObject];
-                
-                self.instanceBlocking = [instances containsObject:domain];
-            }
-        }];
-    }
 }
 
 

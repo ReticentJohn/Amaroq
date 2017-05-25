@@ -35,7 +35,7 @@
 - (void)removeMastodonInstance:(NSString *)instance;
 - (void)registerApp:(void (^)(BOOL success))completion;
 
-- (void)getBlockedInstancesWithCompletion:(void (^)(BOOL success, NSArray *instances, NSError *error))completion;
+- (void)getBlockedInstancesWithCompletion:(void (^)(BOOL success, NSArray *instances, NSString *nextPageUrl, NSError *error))completion;
 - (void)blockMastodonInstance:(NSString *)instance withCompletion:(void (^)(BOOL success, NSError *error))completion;
 - (void)unblockMastodonInstance:(NSString *)instance withCompletion:(void (^)(BOOL success, NSError *error))completion;
 @end

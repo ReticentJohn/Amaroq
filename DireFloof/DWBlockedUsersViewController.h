@@ -15,5 +15,6 @@
 
 @property (nonatomic, assign) BOOL mutes;
 @property (nonatomic, assign) BOOL requests;
+@property (nonatomic, assign) BOOL domains;
 
 @end

@@ -31,6 +31,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     DWMenuRowTypeFavorites,
     DWMenuRowTypeFollowRequests,
     DWMenuRowTypeBlocked,
+    DWMenuRowTypeDomainBlocks,
     DWMenuRowTypeMuted,
     DWMenuRowTypeAppInformation,
     DWMenuRowTypeInformation,
@@ -104,6 +105,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
         DWBlockedUsersViewController *destinationViewController = segue.destinationViewController;
         destinationViewController.mutes = [[self.tableView indexPathForCell:sender] row] == DWMenuRowTypeMuted;
         destinationViewController.requests = [[self.tableView indexPathForCell:sender] row] == DWMenuRowTypeFollowRequests;
+        destinationViewController.domains = [[self.tableView indexPathForCell:sender] row] == DWMenuRowTypeDomainBlocks;
     }
 }
 
@@ -181,6 +183,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
             [self performSegueWithIdentifier:@"FavoriteSegue" sender:[tableView cellForRowAtIndexPath:indexPath]];
             break;
         case DWMenuRowTypeBlocked:
+        case DWMenuRowTypeDomainBlocks:
         case DWMenuRowTypeMuted:
         case DWMenuRowTypeFollowRequests:
             [self performSegueWithIdentifier:@"BlockedSegue" sender:[tableView cellForRowAtIndexPath:indexPath]];
@@ -210,6 +213,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"FavoriteIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Favorites", @"Favorites")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"LocalIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Follow requests", @"Follow requests")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"BlockIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Blocked users", @"Blocked users")},
+                       @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"BlockIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Blocked domains", @"Blocked domains")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"MuteIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Muted users", @"Muted users")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"DireWolfLogoSmall"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"About Amaroq", @"About Amaroq")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"InformationIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"About your Mastodon instance", @"About your Mastodon instance")},

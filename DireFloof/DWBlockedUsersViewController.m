@@ -15,6 +15,7 @@
 #import "Mastodon.h"
 #import "UIView+Supercell.h"
 #import "DWConstants.h"
+#import "DWMenuTableViewCell.h"
 
 @interface DWBlockedUsersViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -29,6 +30,33 @@
 @end
 
 @implementation DWBlockedUsersViewController
+
+#pragma mark - Actions
+
+- (IBAction)unblockDomain:(id)sender
+{
+    UITableViewCell *selectedCell = [sender supercell];
+    NSIndexPath *selectedIndex = [self.tableView indexPathForCell:selectedCell];
+    
+    NSString *selectedDomain = [self.blockedUsers objectAtIndex:selectedIndex.row];
+    
+    [[MSAppStore sharedStore] unblockMastodonInstance:selectedDomain withCompletion:^(BOOL success, NSError *error) {
+        if (success) {
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.blockedUsers = [self.blockedUsers filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"NOT SELF LIKE[cd] %@", selectedDomain]];
+                [self.tableView reloadData];
+            });
+        }
+        else
+        {
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Failed to unblock domain with error:", @"Failed to block domain with error:"), error.localizedFailureReason] preferredStyle:UIAlertControllerStyleAlert];
+            
+            [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
+            [self presentViewController:alertController animated:YES completion:nil];
+        }
+    }];
+}
 
 #pragma mark - View Lifecycle
 
@@ -104,13 +132,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self tableView:tableView userCellForRowAtIndexPath:indexPath];
+    return self.domains ? [self tableView:tableView domainCellForRowAtIndexPath:indexPath] : [self tableView:tableView userCellForRowAtIndexPath:indexPath];
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"ProfileSegue" sender:[tableView cellForRowAtIndexPath:indexPath]];
+    if (!self.domains) {
+        [self performSegueWithIdentifier:@"ProfileSegue" sender:[tableView cellForRowAtIndexPath:indexPath]];
+    }
 }
 
 
@@ -145,6 +175,10 @@
     else if (self.requests)
     {
         self.title = NSLocalizedString(@"Follow requests", @"Follow requests");
+    }
+    else if (self.domains)
+    {
+        self.title = NSLocalizedString(@"Blocked domains", @"Blocked domains");
     }
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -207,6 +241,28 @@
                 
                 [self.pageLoadingView stopAnimating];
                 self.blockedUsers = requests;
+                self.nextPageUrl = nextPageUrl;
+                
+                [self.tableView reloadData];
+            }
+        }];
+    }
+    else if (self.domains)
+    {
+        [[MSAppStore sharedStore] getBlockedInstancesWithCompletion:^(BOOL success, NSArray *instances, NSString *nextPageUrl, NSError *error) {
+            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                [refreshControl endRefreshing];
+            }
+            else
+            {
+                [self.tableView.refreshControl endRefreshing];
+            }
+            
+            if (success) {
+                
+                [self.pageLoadingView stopAnimating];
+                self.blockedUsers = instances;
                 self.nextPageUrl = nextPageUrl;
                 
                 [self.tableView reloadData];
@@ -291,6 +347,22 @@
     
     cell.account = account;
     
+    return cell;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView domainCellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *domain = [self.blockedUsers objectAtIndex:indexPath.row];
+    
+    DWMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DomainCell"];
+    
+    cell.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    cell.titleLabel.numberOfLines = 0;
+    cell.titleLabel.textColor = [UIColor whiteColor];
+    
+    cell.titleLabel.text = domain;
+
     return cell;
 }
 

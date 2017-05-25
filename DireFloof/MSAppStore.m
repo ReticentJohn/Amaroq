@@ -217,20 +217,23 @@
 }
 
 
-- (void)getBlockedInstancesWithCompletion:(void (^)(BOOL, NSArray *, NSError *))completion
+- (void)getBlockedInstancesWithCompletion:(void (^)(BOOL, NSArray *, NSString *, NSError *))completion
 {
     NSString *requestUrl = @"domain_blocks";
     
     [[MSAPIClient sharedClientWithBaseAPI:self.base_api_url_string] GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
+        NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
+        NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        
         if (completion) {
-            completion(YES, responseObject, nil);
+            completion(YES, responseObject, nextPageUrl, nil);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         if (completion) {
-            completion(NO, nil, error);
+            completion(NO, nil, nil, error);
         }
     }];
 }
