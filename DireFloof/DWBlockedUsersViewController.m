@@ -317,21 +317,41 @@
         self.loadingNextPage = YES;
         [self.pageLoadingView startAnimating];
         
-        [MSUserStore loadNextPage:self.nextPageUrl withCompletion:^(NSArray *users, NSString *nextPageUrl, NSError *error) {
-            
-            self.loadingNextPage = NO;
-            [self.pageLoadingView stopAnimating];
-            
-            if (!error) {
-                self.blockedUsers = [self.blockedUsers arrayByAddingObjectsFromArray:users];
-                self.nextPageUrl = nextPageUrl;
+        if (self.domains) {
+            [MSAppStore loadNextPage:self.nextPageUrl withCompletion:^(NSArray *domains, NSString *nextPageUrl, NSError *error) {
+                self.loadingNextPage = NO;
+                [self.pageLoadingView stopAnimating];
                 
-                [self.tableView reloadData];
-            }
-            else
-            {
-            }
-        }];
+                if (!error) {
+                    self.blockedUsers = [self.blockedUsers arrayByAddingObjectsFromArray:domains];
+                    self.nextPageUrl = nextPageUrl;
+                    
+                    [self.tableView reloadData];
+                }
+                else
+                {
+                }
+            }];
+        }
+        else
+        {
+            [MSUserStore loadNextPage:self.nextPageUrl withCompletion:^(NSArray *users, NSString *nextPageUrl, NSError *error) {
+                
+                self.loadingNextPage = NO;
+                [self.pageLoadingView stopAnimating];
+                
+                if (!error) {
+                    self.blockedUsers = [self.blockedUsers arrayByAddingObjectsFromArray:users];
+                    self.nextPageUrl = nextPageUrl;
+                    
+                    [self.tableView reloadData];
+                }
+                else
+                {
+                }
+            }];
+        }
+        
     }
 }
 

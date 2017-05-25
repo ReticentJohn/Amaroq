@@ -53,6 +53,26 @@
 }
 
 
++ (void)loadNextPage:(NSString *)nextPageUrl withCompletion:(void (^)(NSArray *, NSString *, NSError *))completion
+{
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:[nextPageUrl stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
+        NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        
+        if (completion != nil) {
+            completion(responseObject, nextPageUrl, nil);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (completion != nil) {
+            completion(nil, nil, error);
+        }
+    }];
+}
+
+
 #pragma mark - Initializers
 
 - (id)init

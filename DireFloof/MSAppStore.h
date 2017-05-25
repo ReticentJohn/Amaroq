@@ -27,6 +27,7 @@
 #pragma mark - Class Methods
 
 + (MSAppStore *)sharedStore;
++ (void)loadNextPage:(NSString *)nextPageUrl withCompletion:(void (^)(NSArray *domains, NSString *nextPageUrl, NSError *error))completion;
 
 
 #pragma mark - Instance Methods
