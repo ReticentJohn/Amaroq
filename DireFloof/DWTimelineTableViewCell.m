@@ -211,18 +211,18 @@
         
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Mention", @"Mention") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
-            [self.delegate timelineCell:self didMentionUser:self.status.account.acct];
+            [self.delegate timelineCell:self didMentionUser:status.account.acct];
             
         }]];
         
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Mute", @"Mute") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
-            [[MSUserStore sharedStore] muteUserWithId:self.status.account._id withCompletion:^(BOOL success, NSError *error) {
+            [[MSUserStore sharedStore] muteUserWithId:status.account._id withCompletion:^(BOOL success, NSError *error) {
                 
                 if (success) {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status.account];
-                        [self.delegate timelineCell:self didBlockUser:self.status.account];
+                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:status.account];
+                        [self.delegate timelineCell:self didBlockUser:status.account];
                     });
                 }
                 else
@@ -240,13 +240,13 @@
         
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Block", @"Block") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
             
-            [[MSUserStore sharedStore] blockUserWithId:self.status.account._id withCompletion:^(BOOL success, NSError *error) {
+            [[MSUserStore sharedStore] blockUserWithId:status.account._id withCompletion:^(BOOL success, NSError *error) {
                 
                 if (success) {
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status.account];
-                        [self.delegate timelineCell:self didBlockUser:self.status.account];
+                        [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:status.account];
+                        [self.delegate timelineCell:self didBlockUser:status.account];
                     });
 
                 }
@@ -263,8 +263,8 @@
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Report", @"Report") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self.delegate timelineCell:self didReportStatus:self.status];
-                [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.status];
+                [self.delegate timelineCell:self didReportStatus:status];
+                [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:status];
             });
             
         }]];
