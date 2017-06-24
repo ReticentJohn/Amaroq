@@ -35,5 +35,6 @@
 
 - (NSString *)cacheSizeString;
 - (void)purgeCaches;
+- (void)performSettingMaintenance;
 
 @end

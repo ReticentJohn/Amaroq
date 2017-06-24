@@ -367,8 +367,6 @@ static NSInteger mediaUploadLimit = 4;
             location--;
         }
         
-        NSLog(@"Control char: %@", controlChar);
-        
         if ([controlChar isEqualToString:@"@"]) {
             UITextPosition *beginning = textView.beginningOfDocument;
             UITextPosition *start = [textView positionFromPosition:beginning offset:location];
@@ -376,8 +374,6 @@ static NSInteger mediaUploadLimit = 4;
             
             UITextRange *textRange = [textView textRangeFromPosition:start toPosition:end];
             NSString *queryText = [textView textInRange:textRange];
-            
-            NSLog(@"Query text: %@", queryText);
             
             if (queryText.length) {
                 self.currentQueryRange = textRange;
@@ -582,7 +578,6 @@ static NSInteger mediaUploadLimit = 4;
     [[MSUserStore sharedStore] searchForUsersWithQuery:query withCompletion:^(BOOL success, NSArray *users, NSError *error) {
         
         if (success) {
-            NSLog(@"successful response");
             self.accountSearchResults = self.currentQueryRange ? users : @[];
             [self.tableView reloadData];
         }

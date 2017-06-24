@@ -199,4 +199,18 @@
 }
 
 
+- (void)performSettingMaintenance
+{
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:DW_MAINTENANCE_FLAG_1_1_4]) {
+        
+        if (!self.alwaysPublic && !self.alwaysPrivate) {
+            self.alwaysPublic = YES;
+        }
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DW_MAINTENANCE_FLAG_1_1_4];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
+
+
 @end

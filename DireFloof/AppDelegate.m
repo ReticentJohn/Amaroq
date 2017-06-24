@@ -18,6 +18,7 @@
 #import "DWConstants.h"
 #import "UIApplication+TopController.h"
 #import "DWLoginViewController.h"
+#import "DWSettingStore.h"
 
 @interface AppDelegate ()
 
@@ -38,6 +39,7 @@
     [FIRApp configure];
     
     [DWAppearanceProxies configureAppearanceProxies];
+    [[DWSettingStore sharedStore] performSettingMaintenance];
     
     // Kicks the notification store to initialize the notification delegate on launch
     [DWNotificationStore sharedStore];
