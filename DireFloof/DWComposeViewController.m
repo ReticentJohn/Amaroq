@@ -17,6 +17,7 @@
 #import "DWComposeViewController.h"
 #import "DWConstants.h"
 #import "DWSettingStore.h"
+#import "DWSearchTableViewCell.h"
 
 typedef NS_ENUM(NSUInteger, DWPrivacyType) {
     DWPrivacyTypeDirect        = 0,
@@ -25,7 +26,7 @@ typedef NS_ENUM(NSUInteger, DWPrivacyType) {
     DWPrivacyTypePublic,
 };
 
-@interface DWComposeViewController () <UITextViewDelegate, UITextFieldDelegate, GMImagePickerControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
+@interface DWComposeViewController () <UITextViewDelegate, UITextFieldDelegate, GMImagePickerControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) IBOutlet UIImageView *avatarImageView;
 @property (nonatomic, weak) IBOutlet UILabel *usernameLabel;
@@ -61,11 +62,18 @@ typedef NS_ENUM(NSUInteger, DWPrivacyType) {
 
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *statusUploadingIndicator;
 
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
 @property (nonatomic, strong) NSMutableArray *imagesToUpload;
 
 @property (nonatomic, assign) BOOL videoSelected;
 @property (nonatomic, strong) NSString *privacyState;
 @property (nonatomic, strong) NSArray *privacyOptions;
+
+@property (nonatomic, strong) NSArray *accountSearchResults;
+@property (nonatomic, strong) NSString *pendingQueryString;
+@property (nonatomic, strong) UITextRange *currentQueryRange;
+@property (nonatomic, assign) BOOL pendingQuery;
 
 @end
 
@@ -333,8 +341,65 @@ static NSInteger mediaUploadLimit = 4;
             }];
         }
     }
+    
+    if (textView.text.length > 0) {
+        NSRange selectedRange = textView.selectedRange;
+        NSInteger location = selectedRange.location;
+        NSString *controlChar = @"";
+        
+        while (location > 0 && ![controlChar isEqualToString:@" "]) {
+            controlChar = [textView.text substringWithRange:NSMakeRange(location - 1, 1)];
+            
+            if ([controlChar isEqualToString:@"@"]) {
+                
+                if (location > 1)
+                {
+                    if ([[textView.text substringWithRange:NSMakeRange(location - 2, 1)] isEqualToString:@" "]) {
+                        break;
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+            
+            location--;
+        }
+        
+        NSLog(@"Control char: %@", controlChar);
+        
+        if ([controlChar isEqualToString:@"@"]) {
+            UITextPosition *beginning = textView.beginningOfDocument;
+            UITextPosition *start = [textView positionFromPosition:beginning offset:location];
+            UITextPosition *end = [textView positionFromPosition:start offset:selectedRange.location - location];
+            
+            UITextRange *textRange = [textView textRangeFromPosition:start toPosition:end];
+            NSString *queryText = [textView textInRange:textRange];
+            
+            NSLog(@"Query text: %@", queryText);
+            
+            if (queryText.length) {
+                self.currentQueryRange = textRange;
+                [self searchWithQuery:queryText];
+                
+            }
+            else
+            {
+                self.currentQueryRange = nil;
+                [self searchWithQuery:nil];
+            }
+        }
+        else
+        {
+            self.currentQueryRange = nil;
+            [self searchWithQuery:nil];
+        }
+    }
 }
 
+
+#pragma mark - UITextField Delegate Methods
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
@@ -418,7 +483,121 @@ static NSInteger mediaUploadLimit = 4;
 }
 
 
+#pragma mark - UITableView Delegate Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    NSInteger numberOfSections = 0;
+    
+    numberOfSections = 1;
+    
+    return numberOfSections;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (!self.accountSearchResults.count && !tableView.superview.hidden) {
+        tableView.superview.hidden = YES;
+    }
+    else if (tableView.superview.hidden && self.accountSearchResults.count)
+    {
+        tableView.superview.hidden = NO;
+    }
+    
+    return self.accountSearchResults.count;
+}
+
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return nil;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DWSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
+    
+    [self configureAccountCell:cell atIndexPath:indexPath];
+    
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    MSAccount *account = [self.accountSearchResults objectAtIndex:indexPath.row];
+    
+    [self.contentField replaceRange:self.currentQueryRange withText:account.acct];
+    
+    self.currentQueryRange = nil;
+    [self searchWithQuery:nil];
+}
+
+
 #pragma mark - Private Methods
+
+- (void)configureAccountCell:(DWSearchTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    MSAccount *account = [self.accountSearchResults objectAtIndex:indexPath.row];
+    
+    [cell.avatarImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? account.avatar_static : account.avatar]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+        cell.avatarImageView.image = image;
+        if ([[DWSettingStore sharedStore] disableGifPlayback]) {
+            [cell.avatarImageView stopAnimating];
+        }
+    } failure:nil];
+    
+    if (account.display_name) {
+        cell.displayNameLabel.text = account.display_name.length ? account.display_name : account.username;
+    }
+    
+    if (account.acct) {
+        cell.usernameLabel.text = account.acct;
+    }
+}
+
+
+- (void)searchWithQuery:(NSString *)query
+{
+    if (query == nil || !self.accountSearchResults) {
+        self.accountSearchResults = @[];
+        [self.tableView reloadData];
+        return;
+    }
+    
+    if (self.pendingQuery) {
+        self.pendingQueryString = query;
+        return;
+    }
+    else
+    {
+        self.pendingQueryString = nil;
+    }
+    
+    self.pendingQuery = YES;
+    [[MSUserStore sharedStore] searchForUsersWithQuery:query withCompletion:^(BOOL success, NSArray *users, NSError *error) {
+        
+        if (success) {
+            NSLog(@"successful response");
+            self.accountSearchResults = self.currentQueryRange ? users : @[];
+            [self.tableView reloadData];
+        }
+        else
+        {
+        }
+        
+        self.pendingQuery = NO;
+        
+        if (self.pendingQueryString) {
+            [self searchWithQuery:[self.pendingQueryString copy]];
+        }
+    }];
+}
+
 
 - (void)configureViews
 {
