@@ -211,14 +211,12 @@ typedef NS_ENUM(NSUInteger, DWSearchSectionType) {
         }
     } failure:nil];
     
-    //[cell.avatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? account.avatar_static : account.avatar]];
-    
     if (account.display_name) {
         cell.displayNameLabel.text = account.display_name.length ? account.display_name : account.username;
     }
     
     if (account.acct) {
-        cell.usernameLabel.text = account.acct;
+        cell.usernameLabel.text = [NSString stringWithFormat:@"@%@", account.acct];
     }
 }
 

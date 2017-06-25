@@ -552,7 +552,7 @@ static NSInteger mediaUploadLimit = 4;
     }
     
     if (account.acct) {
-        cell.usernameLabel.text = account.acct;
+        cell.usernameLabel.text = [NSString stringWithFormat:@"@%@", account.acct];
     }
 }
 
