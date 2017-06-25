@@ -267,12 +267,25 @@
         if ([notification.type isEqualToString:MS_NOTIFICATION_TYPE_REBLOG]) {
             
             title = [title stringByAppendingString:[NSString stringWithFormat:@" %@", NSLocalizedString(@"boosted your status", @"boosted your status")]];
-            body = notification.status.content;
+            
+            if (notification.status.spoiler_text.length) {
+                body = notification.status.spoiler_text;
+            }
+            else
+            {
+                body = notification.status.content;
+            }
         }
         else if ([notification.type isEqualToString:MS_NOTIFICATION_TYPE_FAVORITE])
         {
             title = [title stringByAppendingString:[NSString stringWithFormat:@" %@", NSLocalizedString(@"favorited your status", @"favorited your status")]];
-            body = notification.status.content;
+            if (notification.status.spoiler_text.length) {
+                body = notification.status.spoiler_text;
+            }
+            else
+            {
+                body = notification.status.content;
+            }
         }
         else if ([notification.type isEqualToString:MS_NOTIFICATION_TYPE_FOLLOW])
         {
@@ -283,7 +296,13 @@
         {
             title = [title stringByAppendingString:[NSString stringWithFormat:@" %@", NSLocalizedString(@"mentioned you", @"mentioned you")]];
             
-            body = notification.status.content;
+            if (notification.status.spoiler_text.length) {
+                body = notification.status.spoiler_text;
+            }
+            else
+            {
+                body = notification.status.content;
+            }
         }
     }
     
