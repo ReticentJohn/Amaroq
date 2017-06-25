@@ -18,6 +18,7 @@
 #import "DWConstants.h"
 #import "DWSettingStore.h"
 #import "DWSearchTableViewCell.h"
+#import "DWDraftStore.h"
 
 typedef NS_ENUM(NSUInteger, DWPrivacyType) {
     DWPrivacyTypeDirect        = 0,
@@ -176,6 +177,10 @@ static NSInteger mediaUploadLimit = 4;
 
 - (IBAction)cancelButtonPressed:(id)sender
 {
+    if (!self.reporting) {
+        [[DWDraftStore sharedStore] setDraft:self.contentField.text forPostId:self.replyToStatus ? self.replyToStatus._id : self.mentionedUser];
+    }
+    
     if (self.postCompleteBlock) {
         self.postCompleteBlock(NO);
     }
@@ -708,6 +713,14 @@ static NSInteger mediaUploadLimit = 4;
     else
     {
         self.replyToView.hidden = YES;
+    }
+    
+    if (!self.reporting) {
+        NSString *draftText = [[DWDraftStore sharedStore] draftForPostId:self.replyToStatus ? self.replyToStatus._id : self.mentionedUser];
+        
+        if (draftText) {
+            self.contentField.text = draftText;
+        }
     }
     
     [self.contentField becomeFirstResponder];

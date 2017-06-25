@@ -93,6 +93,7 @@
 		04F0D6EE1EABD0A100DFF8BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6F01EABD0A100DFF8BB /* InfoPlist.strings */; };
 		04F0D6F31EABD0A100DFF8BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6F51EABD0A100DFF8BB /* Localizable.strings */; };
 		04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */; };
+		04F56C3F1F0051D50053FC84 /* DWDraftStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F56C3E1F0051D50053FC84 /* DWDraftStore.m */; };
 		04FE35F91E627E5600E34407 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FE35F81E627E5600E34407 /* Settings.bundle */; };
 		22B3306B1EC6002B0022BB78 /* UIViewController+WebNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */; };
 		22B3306D1EC600590022BB78 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3306C1EC600590022BB78 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -320,6 +321,8 @@
 		04F0D6F41EABD0A100DFF8BB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04F425CD1E566DBD001A11C0 /* DWNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationsViewController.h; sourceTree = "<group>"; };
 		04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationsViewController.m; sourceTree = "<group>"; };
+		04F56C3D1F0051D50053FC84 /* DWDraftStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDraftStore.h; sourceTree = "<group>"; };
+		04F56C3E1F0051D50053FC84 /* DWDraftStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWDraftStore.m; sourceTree = "<group>"; };
 		04FE35F81E627E5600E34407 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloofUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B330691EC6002B0022BB78 /* UIViewController+WebNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WebNavigation.h"; sourceTree = "<group>"; };
@@ -539,6 +542,8 @@
 				0459AB1F1E6F793F0052E722 /* DWNotificationStore.m */,
 				040C612A1E707E0900509F32 /* DWSettingStore.h */,
 				040C612B1E707E0900509F32 /* DWSettingStore.m */,
+				04F56C3D1F0051D50053FC84 /* DWDraftStore.h */,
+				04F56C3E1F0051D50053FC84 /* DWDraftStore.m */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -1070,6 +1075,7 @@
 				04095B0D1E4A5E880082401A /* MSAPIClient.m in Sources */,
 				04EC13F11E46A966000E15A6 /* main.m in Sources */,
 				047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */,
+				04F56C3F1F0051D50053FC84 /* DWDraftStore.m in Sources */,
 				04E6A2461E7480F200838130 /* UIImage+color.m in Sources */,
 				04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */,
 				0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */,
