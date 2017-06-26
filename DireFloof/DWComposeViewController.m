@@ -532,7 +532,7 @@ static NSInteger mediaUploadLimit = 4;
     
     MSAccount *account = [self.accountSearchResults objectAtIndex:indexPath.row];
     
-    [self.contentField replaceRange:self.currentQueryRange withText:account.acct];
+    [self.contentField replaceRange:self.currentQueryRange withText:[NSString stringWithFormat:@"%@ ", account.acct]];
     
     self.currentQueryRange = nil;
     [self searchWithQuery:nil];
