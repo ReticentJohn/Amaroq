@@ -58,7 +58,7 @@ Soon™
 Soon™
 
 ### Will Amaroq ever have an in-app browser?
-I will be eventually providing an option to open an in-app browser. Just keep in mind that Amaroq will always abide ATS rules, so https only.
+Yes! It does now. You're welcome. :)
 
 ### My server has no SSL cert and won't connect to Amaroq. Can you allow it?
 Amaroq will always abide ATS rules, so https only I'm afraid.
