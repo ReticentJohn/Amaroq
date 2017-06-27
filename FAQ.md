@@ -55,7 +55,7 @@ Yes! But not until all devices have adequate functionality first.
 Soon™
 
 ### Where's the username autocompletion?
-Soon™
+You can haz it in v1.1.4
 
 ### Will Amaroq ever have an in-app browser?
 Yes! It does now. You're welcome. :)
