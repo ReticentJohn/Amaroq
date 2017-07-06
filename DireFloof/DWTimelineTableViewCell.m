@@ -151,7 +151,10 @@
         
         MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
         
-        NSString *encodedStatus = [status.content stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSMutableCharacterSet *allowedCharacters = [[NSCharacterSet URLPathAllowedCharacterSet] mutableCopy];
+        [allowedCharacters removeCharactersInString:@"/"];
+
+        NSString *encodedStatus = [status.content stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
         NSString *url = [NSString stringWithFormat:@"https://translate.google.com/#auto/auto/%@", encodedStatus];
         
         [self.delegate timelineCell:self didSelectURL:[NSURL URLWithString:url]];
