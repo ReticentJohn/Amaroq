@@ -16,10 +16,11 @@
 {
     NSString *const scheme = url.scheme.lowercaseString;
     const BOOL isWebLink = [scheme isEqualToString:@"http"] || [scheme isEqualToString:@"https"];
-    if (isWebLink && [SFSafariViewController class]) {
+    
+    if ([SFSafariViewController class]) {
         // iOS 9 or later
         // SFSafariViewController crashes for non-HTTP(s) links, which is why we validate above.
-        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
+        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:isWebLink ? url : [NSURL URLWithString:[NSString stringWithFormat:@"https://%@", scheme.length ? [url.absoluteString stringByReplacingOccurrencesOfString:scheme withString:@""] : url.absoluteString]]];
         
         if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
             safariViewController.view.tintColor = DW_BACKGROUND_COLOR;
