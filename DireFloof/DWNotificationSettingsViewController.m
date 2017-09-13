@@ -13,6 +13,7 @@
 #import "DWSettingStore.h"
 #import "DWConstants.h"
 #import "DWMenuTableViewCell.h"
+#import "DWNotificationStore.h"
 
 typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     DWMenuRowTypeFollowers = 0,
@@ -110,6 +111,9 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     }
     
     [self.tableView reloadData];
+    
+    [[DWNotificationStore sharedStore] stopNotificationRefresh];
+    [[DWNotificationStore sharedStore] registerForNotifications];
 }
 
 
