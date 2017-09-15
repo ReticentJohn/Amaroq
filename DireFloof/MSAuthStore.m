@@ -20,6 +20,7 @@
 #import "DWNotificationStore.h"
 #import "DWConstants.h"
 #import "DWLoginViewController.h"
+#import "DWSettingStore.h"
 
 @interface MSAuthStore () <UIWebViewDelegate>
 
@@ -131,7 +132,12 @@
     
     NSDictionary *params = @{@"instance_url": [[MSAppStore sharedStore] base_url_string],
                              @"access_token": self.credential.accessToken,
-                             @"device_token": token};
+                             @"device_token": token,
+                             @"followers": @([[DWSettingStore sharedStore] newFollowerNotifications]),
+                             @"favorites": @([[DWSettingStore sharedStore] favoriteNotifications]),
+                             @"mentions": @([[DWSettingStore sharedStore] mentionNotifications]),
+                             @"boosts": @([[DWSettingStore sharedStore] boostNotifications])
+                             };
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
