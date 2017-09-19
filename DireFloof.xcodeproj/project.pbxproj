@@ -330,6 +330,12 @@
 		22B3306C1EC600590022BB78 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		3A2379964B2057680274665D /* Pods-DireFloofTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		3AA8B4A3626D6C8622613371 /* Pods-DireFloof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.release.xcconfig"; sourceTree = "<group>"; };
+		3C75D7D21F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3C75D7D31F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3C75D7D41F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3C75D7D51F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3C75D7D61F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3C75D7D71F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloofTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -808,6 +814,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 04EC13E31E46A966000E15A6;
 			productRefGroup = 04EC13ED1E46A966000E15A6 /* Products */;
@@ -1138,6 +1145,7 @@
 				042A64D11EB2AF97007C93CA /* pl */,
 				0474087B1EB97849000ECD0B /* ca */,
 				041702E41EC28B5C006FD1F3 /* nl */,
+				3C75D7D21F6D9CF0006D4FFD /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1156,6 +1164,7 @@
 				042A64D31EB2AF98007C93CA /* pl */,
 				0474087D1EB9784A000ECD0B /* ca */,
 				041702E51EC28B5C006FD1F3 /* nl */,
+				3C75D7D31F6D9CF0006D4FFD /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1173,6 +1182,7 @@
 				042A64D21EB2AF98007C93CA /* pl */,
 				0474087C1EB9784A000ECD0B /* ca */,
 				041702E61EC28B5C006FD1F3 /* nl */,
+				3C75D7D51F6D9CF0006D4FFD /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1190,6 +1200,7 @@
 				042A64D51EB2AF99007C93CA /* pl */,
 				0474087E1EB9784A000ECD0B /* ca */,
 				041702E71EC28B5C006FD1F3 /* nl */,
+				3C75D7D61F6D9CF0006D4FFD /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1207,6 +1218,7 @@
 				042A64D41EB2AF99007C93CA /* pl */,
 				0474087F1EB9784B000ECD0B /* ca */,
 				041702E81EC28B5D006FD1F3 /* nl */,
+				3C75D7D71F6D9CF0006D4FFD /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1224,6 +1236,7 @@
 				042A64D61EB2AF9A007C93CA /* pl */,
 				047408801EB9784B000ECD0B /* ca */,
 				041702E91EC28B5D006FD1F3 /* nl */,
+				3C75D7D41F6D9CF0006D4FFD /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

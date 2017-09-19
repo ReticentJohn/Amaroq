@@ -1,0 +1,267 @@
+/* or 1 video */
+" or 1 video" = "或者一部视频";
+
+/* ACCOUNT */
+"ACCOUNT" = "账号";
+
+/* About Amaroq */
+"About Amaroq" = "关于Amaroq";
+
+/* About your Mastodon instance */
+"About your Mastodon instance" = "关于本实例";
+
+/* Account preferences */
+"Account preferences" = "账号设定";
+
+/* Add instance */
+"Add instance" = "添加实例";
+
+/* Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting! */
+"Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
+
+Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!" = "Amaroq是根据因纽特传说中的巨狼命名的，很适合做长毛象的小伙伴。 让我们一起嚎叫吧！
+
+Amaroq是出于对长毛象项目理念的热爱及急需iOS客户端的朋友们共同构建的。意见、建议以及bug，或者需要帮助的话请发邮件至amaroq.feedback@gmail.com。或者@eurasierboy@mastodon.social。嘟嘟愉快！";
+
+/* App settings */
+"App settings" = "App设置";
+
+/* Are you sure you want to clear all your notifications? */
+"Are you sure you want to clear all your notifications?" = "确定要清除所有通知吗？";
+
+/* Awoo mode */
+"Awoo mode" = "Awoo模式";
+
+/* Back */
+"Back" = "返回";
+
+/* Block */
+"Block" = "屏蔽";
+
+/* Blocked users */
+"Blocked users" = "黑名单用户";
+
+/* Cancel */
+"Cancel" = "取消";
+
+/* Change how you receive push notifications */
+"Change how you receive push notifications" = "改变接受推送通知的方式";
+
+/* Clear cache */
+"Clear cache" = "删除缓存";
+
+/* Copy text */
+"Copy text" = "复制内容";
+
+/* Currently logged into: */
+"Currently logged into:" = "目前登录于：";
+
+/* DON'T AWOO $350 PENALTY */
+"DON'T AWOO $350 PENALTY" = "Awoo罚350美刀";
+
+/* Default posts to public */
+"Default posts to public" = "默认发送公开嘟文";
+
+/* Delete */
+"Delete" = "删除";
+
+/* Direct */
+"Direct" = "私信";
+
+/* Direct: Only visible to you and @mentioned users */
+"Direct: Only visible to you and @mentioned users" = "私信：仅被@的用户可见";
+
+/* Disable gif auto-playback */
+"Disable gif auto-playback" = "禁止自动播放GIF动图";
+
+/* Done */
+"Done" = "完成";
+
+/* Edit Profile */
+"Edit Profile" = "修改资料";
+
+/* Error */
+"Error" = "错误";
+
+/* Failed to block user with error: */
+"Failed to block user with error:" = "屏蔽用户失败：";
+
+/* Failed to clear notifications with error: */
+"Failed to clear notifications with error:" = "清除通知失败：";
+
+/* Failed to delete status with error: */
+"Failed to delete status with error:" = "删除嘟文失败：";
+
+/* Failed to load user with error: */
+"Failed to load user with error:" = "读取用户失败：";
+
+/* Failed to mute user with error: */
+"Failed to mute user with error:" = "静音用户失败：";
+
+/* Failed to post status with error: */
+"Failed to post status with error:" = "嘟文发送失败：";
+
+/* Failed to report status with error: */
+"Failed to report status with error:" = "发送报告失败：";
+
+/* Failed to retrieve your profile with error: */
+"Failed to retrieve your profile with error:" = "获取用户资料失败：";
+
+/* Failed to unblock user with error: */
+"Failed to unblock user with error:" = "取消屏蔽失败：";
+
+/* Failed to unfollow user with error: */
+"Failed to unfollow user with error:" = "取消关注失败：";
+
+/* Failed to unmute user with error: */
+"Failed to unmute user with error:" = "取消静音失败：";
+
+/* Favorites */
+"Favorites" = "收藏";
+
+/* Federated */
+"Federated" = "跨站";
+
+/* Follow requests */
+"Follow requests" = "关注请求";
+
+/* Followers-only */
+"Followers-only" = "仅粉丝";
+
+/* Followers-only: Only visible to you, @mentioned users, and your followers */
+"Followers-only: Only visible to you, @mentioned users, and your followers" = "只有你，你@的人及你的粉丝可见";
+
+/* HASHTAG */
+"HASHTAG" = "话题";
+
+/* Hold to show */
+"Hold to show" = "长按显示";
+
+/* Local */
+"Local" = "本地";
+
+/* Login request failed */
+"Login request failed" = "登录请求失败";
+
+/* Logout */
+"Logout" = "注销";
+
+/* Mention */
+"Mention" = "提到";
+
+/* Mute */
+"Mute" = "静音";
+
+/* Muted users */
+"Muted users" = "静音用户";
+
+/* My instances */
+"My instances" = "我的实例";
+
+/* My profile */
+"My profile" = "我的资料";
+
+/* Notification settings */
+"Notification settings" = "通知设定";
+
+/* Only show to followers */
+"Only show to followers" = "仅粉丝可见";
+
+/* Open in Safari */
+"Open in Safari" = "在Safari中打开";
+
+/* Please keep to videos up to 30 seconds long */
+"Please keep to videos up to 30 seconds long" = "请将动画保持在30秒内";
+
+/* Public */
+"Public" = "公开";
+
+/* Public: Visible to everyone on local and federated timelines */
+"Public: Visible to everyone on local and federated timelines" = "公开：所有本地及跨站用户可见";
+
+/* Receive boost notifications */
+"Receive boost notifications" = "接收转发通知";
+
+/* Receive favorite notifications */
+"Receive favorite notifications" = "接收点赞通知";
+
+/* Receive mention notifications */
+"Receive mention notifications" = "接收@通知";
+
+/* Receive new follower notifications */
+"Receive new follower notifications" = "接收新粉丝通知";
+
+/* Report */
+"Report" = "举报";
+
+/* Select */
+"Select" = "选择";
+
+/* Select a privacy level */
+"Select a privacy level" = "选择隐私级别";
+
+/* Sensitive content */
+"Sensitive content" = "敏感内容";
+
+/* Share */
+"Share" = "分享";
+
+/* Shows on local/federated timelines */
+"Shows on local/federated timelines" = "显示在本地及跨站时间轴上";
+
+/* This can help older devices */
+"This can help older devices" = "适用于较老设备";
+
+/* Translate text */
+"Translate text" = "翻译";
+
+/* Unable to connect to the Mastodon instance. Please try again later or with a different instance. */
+"Unable to connect to the Mastodon instance. Please try again later or with a different instance." = "无法连接到指定实例。请稍候再试或更换到其他实例。";
+
+/* Unblock */
+"Unblock" = "取消屏蔽";
+
+/* Unlisted */
+"Unlisted" = "不公布";
+
+/* Unlisted: Visible to everyone, but not shown on local or federated timelines */
+"Unlisted: Visible to everyone, but not shown on local or federated timelines" = "不公布：所有人可见，但不显示在本地或跨站时间轴上";
+
+/* Unmute */
+"Unmute" = "取消静音";
+
+/* Video too long */
+"Video too long" = "视频时间太长";
+
+/* You have */
+"You have" = "你有";
+
+/* boosted */
+"boosted" = "转发了";
+
+/* boosted your status */
+"boosted your status" = "转发了你的嘟文";
+
+/* favorited your status */
+"favorited your status" = "赞了你的嘟文";
+
+/* followed you */
+"followed you" = "关注了你";
+
+/* image */
+"image" = "张图片";
+
+/* images */
+"images" = "张图片";
+
+/* mentioned you */
+"mentioned you" = "提到了你";
+
+/* new notifications */
+"new notifications" = "条新通知";
+
+/* replied */
+"replied" = "回复了";
+
+/* replied to */
+"replied to" = "回复了";
