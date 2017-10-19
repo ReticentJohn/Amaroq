@@ -44,6 +44,7 @@
 #define DW_SETTING_PUBLIC_SHOW_LOCAL_KEY                    @"DW_SETTING_PUBLIC_SHOW_LOCAL_KEY"
 
 #define DW_MAINTENANCE_FLAG_1_1_4                           @"DW_MAINTENANCE_FLAG_1_1_4"
+#define DW_MAINTENANCE_FLAG_1_1_6                           @"DW_MAINTENANCE_FLAG_1_1_6"
 
 #define DW_PRIVACY_URL                                      @"http://www.iubenda.com/api/privacy-policy/8066189/no-markup"
 #endif /* DWConstants_h */

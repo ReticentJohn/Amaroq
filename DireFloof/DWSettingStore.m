@@ -14,6 +14,7 @@
 #import <FCFileManager/FCFileManager.h>
 #import "DWSettingStore.h"
 #import "DWConstants.h"
+#import "MastodonConstants.h"
 
 @implementation DWSettingStore
 
@@ -208,6 +209,24 @@
         }
         
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DW_MAINTENANCE_FLAG_1_1_4];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:DW_MAINTENANCE_FLAG_1_1_6]) {
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths firstObject];
+        NSString *instancesPlistPath = [documentsDirectory stringByAppendingPathComponent:@"instances.plist"];
+        
+        [FCFileManager removeItemAtPath:instancesPlistPath];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_CLIENT_ID_KEY];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_CLIENT_SECRET_KEY];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_BASE_URL_STRING_KEY];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_BASE_API_URL_STRING_KEY];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_BASE_MEDIA_URL_STRING_KEY];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_INSTANCE_KEY];
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DW_MAINTENANCE_FLAG_1_1_6];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
