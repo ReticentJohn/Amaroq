@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OAuthRequestController">
+            <connections>
+                <outlet property="indicator" destination="Abh-pj-4Rz" id="QCE-YY-XAx"/>
+                <outlet property="view" destination="4" id="9"/>
+                <outlet property="webView" destination="7" id="8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items>
+                        <navigationItem title="Authorize" id="6">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="qdn-Uk-plx">
+                                <connections>
+                                    <action selector="btnCancelTouched:" destination="-1" id="YqT-Ut-k37"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                    <rect key="frame" x="0.0" y="44" width="320" height="531"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </webView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-pj-4Rz">
+                    <rect key="frame" x="150" y="300" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5" firstAttribute="top" secondItem="4" secondAttribute="top" id="5gx-mr-s62"/>
+                <constraint firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="Ejp-jF-O8T"/>
+                <constraint firstAttribute="bottom" secondItem="7" secondAttribute="bottom" constant="-7" id="INb-Si-mlX"/>
+                <constraint firstAttribute="centerY" secondItem="Abh-pj-4Rz" secondAttribute="centerY" constant="-26" id="P94-6y-bgK"/>
+                <constraint firstItem="7" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="RHK-2v-MWK"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="5" secondAttribute="bottom" id="Ze5-Eq-cLj"/>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="dtv-ok-nq3"/>
+                <constraint firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="jHy-TP-wBJ"/>
+                <constraint firstAttribute="centerX" secondItem="Abh-pj-4Rz" secondAttribute="centerX" id="lqp-Hi-EPW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

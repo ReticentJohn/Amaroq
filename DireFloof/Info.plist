@@ -25,7 +25,7 @@
 			<string>com.keyboardfloofs.amarok</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>amarok</string>
+				<string>amaroq</string>
 			</array>
 		</dict>
 	</array>
@@ -52,9 +52,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>We'd like to access your camera in order to allow you to take a picture to upload</string>
+	<string>We&apos;d like to access your camera in order to allow you to take a picture to upload</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We'd like access to your photo library in order to upload your photo selections</string>
+	<string>We&apos;d like access to your photo library in order to upload your photo selections</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Black.ttf</string>

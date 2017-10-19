@@ -25,6 +25,7 @@ target 'DireFloof' do
   pod 'Firebase/Messaging'
   pod 'EmojiOne', podspec: 'DireFloof/Vendor/Emojione/emojione.podspec'
   pod 'RMPickerViewController', '~> 2.2.1'
+  pod 'OAuth2'
 
 post_install do | installer |
     require 'fileutils'

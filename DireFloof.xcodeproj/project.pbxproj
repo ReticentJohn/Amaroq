@@ -923,9 +923,69 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-resources.sh",
+				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMEmptyFolder@1x.png",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMEmptyFolder@2x.png",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMSelected.png",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMSelected@2x.png",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMVideoIcon.png",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMVideoIcon@2x.png",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/Base.lproj",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/ca.lproj",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/de.lproj",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/en.lproj",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/es.lproj",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/fr.lproj",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/it.lproj",
+				"${PODS_ROOT}/GMImagePicker/GMImagePicker/pt.lproj",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/activityMH.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/activtyMH@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControl.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControl@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControlSelected.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControlSelected@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/error.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/error@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/facebookMH.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/facebookMH@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/ic_square.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/ic_square@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/left_arrow.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/left_arrow@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/mailMH.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/mailMH@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/messageMH.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/messageMH@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/pause.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/pause@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/play.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/play@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/playButton.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/playButton@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/right_arrow.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/right_arrow@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/saveMH@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/sliderPoint.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/sliderPoint@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/twitterMH.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/twitterMH@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/unplay.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/unplay@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/videoIcon.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/videoIcon@2x.png",
+				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/MHGallery.bundle",
+				"${PODS_ROOT}/OAuth2/Pod/Classes/OAuthRequestController.xib",
+				$PODS_CONFIGURATION_BUILD_DIR/OAuth2/OAuth2.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -983,13 +1043,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DireFloofTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8FE5817A2A75E37F10B7432 /* [CP] Check Pods Manifest.lock */ = {
@@ -998,13 +1061,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DireFloofUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D297D8FB7D1786FAD09D00C1 /* [CP] Copy Pods Resources */ = {
@@ -1028,13 +1094,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DireFloof-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

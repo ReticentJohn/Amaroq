@@ -188,7 +188,7 @@
     else
     {
         NSDictionary *params = @{@"client_name": @"Amaroq",
-                                 @"redirect_uris": @"urn:ietf:wg:oauth:2.0:oob",
+                                 @"redirect_uris": @"amaroq://authorize",
                                  @"scopes": @"read write follow",
                                  @"website": @"https://appsto.re/us/OfFxib.i"};
         

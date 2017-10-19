@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '22E9E9E5597320287877790A778C962A'
+               BlueprintIdentifier = '37332B4494CE2D0D8A03818F8DBCFC43'
                BlueprintName = 'Pods-DireFloof'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-DireFloof.a'>

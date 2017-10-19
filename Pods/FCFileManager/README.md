@@ -3,19 +3,19 @@ FCFileManager ![Pod version](http://img.shields.io/cocoapods/v/FCFileManager.svg
 
 **iOS File Manager on top of NSFileManager for simplifying files management.** It provides many static methods for executing most common operations with few lines of code. It works by default in the Documents directory to allow use of relative paths, but it's possible to work easily on any other directory.
 
-##Requirements
+## Requirements
 - iOS >= 5.0
 - ARC enabled
 
-##Installation
+## Installation
 
-####CocoaPods:
+#### CocoaPods:
 `pod 'FCFileManager'`
 
-####Manual install:
+#### Manual install:
 Copy `FCFileManager.h` and `FCFileManager.m` to your project.
 
-##Features
+## Features
 - **Build paths** relative to absolute directories *(FCFileManager works by default in the Documents directory, so you must build absolute paths only if you need to work outside of the Documents directory)*
 - **Copy** files/directories
 - **Create** files/directories
@@ -33,7 +33,7 @@ Copy `FCFileManager.h` and `FCFileManager.m` to your project.
 
 See [FCFileManager.h](https://github.com/fabiocaccamo/FCFileManager/blob/master/FCFileManager/FCFileManager.h) for all of the methods.
 
-##Usage examples
+## Usage examples
 
 **Build path:**
 ```objc
@@ -142,31 +142,10 @@ NSNumber *directorySize = [FCFileManager sizeOfDirectoryAtPath:@"/a/"];
 NSString *fileSizeFormatted = [FCFileManager sizeFormattedOfFileAtPath:@"test.txt"];
 ```
 
-##Donate
-Do you want to support me?
+## Support development
+[![Donate](https://pledgie.com/campaigns/32215.png?skin_name=chrome "Click here to lend your support to: Fabio Caccamo - Open Source Projects and make a donation at pledgie.com !")](https://pledgie.com/campaigns/32215)
 
-[![Donate](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png "Buy me a beer! - C.R.E.A.M.")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=fabio%2ecaccamo%40gmail%2ecom&lc=IT&item_name=Fabio%20Caccamo%20%2d%20Open%20Source%20Projects&item_number=FCFileManager&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted "Buy me a beer! - C.R.E.A.M.")
+[![Donate](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=fabio%2ecaccamo%40gmail%2ecom&lc=IT&item_name=Fabio%20Caccamo%20%2d%20Open%20Source%20Projects&item_number=FCFileManager&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
 
-##License
-The MIT License (MIT)
-
-Copyright (c) 2016 Fabio Caccamo - fabio.caccamo@gmail.com
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
+## License
+Released under [MIT License](LICENSE).
