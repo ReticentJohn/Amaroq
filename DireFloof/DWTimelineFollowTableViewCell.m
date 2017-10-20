@@ -302,6 +302,8 @@
 
 - (void)prepareForReuse
 {
+    [super prepareForReuse];
+    
     [self configureForReuse];
 }
 

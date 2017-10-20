@@ -90,7 +90,7 @@
         }];
         
         // For iOS 10 data message (sent via FCM)
-        [FIRMessaging messaging].remoteMessageDelegate = self;
+        [FIRMessaging messaging].delegate = self;
 #endif
     }
     
@@ -208,7 +208,7 @@
 }
 
 //Handle notification messages after display notification is tapped by the user.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler
 {
     NSDictionary *userInfo = response.notification.request.content.userInfo;
     if (userInfo[kGCMMessageIDKey]) {
@@ -228,6 +228,13 @@
 {
     //NSLog(@"%@", remoteMessage.appData);
 }
+
+
+- (void)messaging:(nonnull FIRMessaging *)messaging didRefreshRegistrationToken:(nonnull NSString *)fcmToken
+{
+    [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:fcmToken];
+}
+
 
 
 #pragma mark - Observers
@@ -358,15 +365,8 @@
     }
     
     // Disconnect previous FCM connection if it exists.
-    [[FIRMessaging messaging] disconnect];
-    
-    [[FIRMessaging messaging] connectWithCompletion:^(NSError * _Nullable error) {
-        if (error != nil) {
-           // NSLog(@"Unable to connect to FCM. %@", error);
-        } else {
-           // NSLog(@"Connected to FCM.");
-        }
-    }];
+    [[FIRMessaging messaging] setShouldEstablishDirectChannel:NO];
+    [[FIRMessaging messaging] setShouldEstablishDirectChannel:YES];
 }
 
 @end
