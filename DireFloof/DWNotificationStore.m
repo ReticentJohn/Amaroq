@@ -70,7 +70,6 @@
 - (void)stopNotificationRefresh
 {
     [[MSAuthStore sharedStore] unregisterForRemoteNotifications];
-    [[UIApplication sharedApplication] unregisterForRemoteNotifications];
 }
 
 
@@ -94,7 +93,16 @@
 #endif
     }
     
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    // If we're already registered for whatever reason, we won't hit our delegate, but we also know we already have a token. Use it and treat the app as already registered - because it is.
+    if ([[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
+        [self connectToFcm];
+        
+        [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:[[FIRInstanceID instanceID] token]];
+    }
+    else
+    {
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
 }
 
 
@@ -232,6 +240,7 @@
 
 - (void)messaging:(nonnull FIRMessaging *)messaging didRefreshRegistrationToken:(nonnull NSString *)fcmToken
 {
+    [self connectToFcm];
     [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:fcmToken];
 }
 
