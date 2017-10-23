@@ -99,7 +99,7 @@ static NSInteger mediaUploadLimit = 4;
 {
     [self.view endEditing:YES];
     
-    NSInteger charactersRemaining = contentLengthLimit - self.contentField.text.length - (self.contentWarningSwitch.on ? self.contentWarningField.text.length : 0);
+    NSInteger charactersRemaining = contentLengthLimit - [self lengthOfToot:self.contentField.text] - (self.contentWarningSwitch.on ? self.contentWarningField.text.length : 0);
     
     if (charactersRemaining < 0) {
         return;
@@ -331,7 +331,7 @@ static NSInteger mediaUploadLimit = 4;
 {
     self.contentFieldPlaceholderLabel.hidden = textView.text.length;
     
-    NSInteger charactersRemaining = contentLengthLimit - textView.text.length - (self.contentWarningSwitch.on ? self.contentWarningField.text.length : 0);
+    NSInteger charactersRemaining = contentLengthLimit - [self lengthOfToot:textView.text] - (self.contentWarningSwitch.on ? self.contentWarningField.text.length : 0);
     
     self.contentLengthLabel.text = [NSString stringWithFormat:@"%li", (long)charactersRemaining];
     
@@ -404,13 +404,34 @@ static NSInteger mediaUploadLimit = 4;
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    NSInteger charactersRemaining = contentLengthLimit - self.contentField.text.length - (self.contentWarningSwitch.on ? [[textField.text stringByReplacingCharactersInRange:range withString:string] length] : 0);
+    NSInteger charactersRemaining = contentLengthLimit - [self lengthOfToot:self.contentField.text] - (self.contentWarningSwitch.on ? [[textField.text stringByReplacingCharactersInRange:range withString:string] length] : 0);
     
     self.contentLengthLabel.text = [NSString stringWithFormat:@"%li", (long)charactersRemaining];
     
     return YES;
 }
 
+- (NSInteger)lengthOfToot:(NSString *)text {
+    
+    NSError *detectorError;
+    NSDataDetector* linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:&detectorError];
+    
+    // This shouldn't happen but we'll spit out some kind of warning
+    if (detectorError != nil) {
+        NSLog(@"WARNING: Length of toot link data detector failed: %@", detectorError.description);
+        return text.length;
+    }
+    
+    NSArray<NSTextCheckingResult *> * matches = [linkDetector matchesInString:text options:0 range:NSMakeRange(0, text.length)];
+    
+    NSInteger subtractedLength = 0;
+    
+    for (NSTextCheckingResult* match in matches) {
+        subtractedLength += match.range.length - 23;
+    }
+    
+    return text.length - subtractedLength;
+}
 
 #pragma mark - GMImagePickerController Delegate Methods
 
