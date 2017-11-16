@@ -509,14 +509,13 @@
 
 - (void)highlightUsersInContentLabel:(TTTAttributedLabel *)attributedLabel forStatus:(MSStatus *)status
 {
-    NSArray *URLs = [TwitterText URLsInText:status.content];
+    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+    NSArray<NSTextCheckingResult *> *URLs = [detector matchesInString:status.content options:0 range:NSMakeRange(0, status.content.length)];
     NSArray *mentions = [TwitterText mentionedScreenNamesInText:status.content];
     NSArray *hashtags = [TwitterText hashtagsInText:status.content checkingURLOverlap:YES];
     
-    for (TwitterTextEntity *entity in URLs) {
-        
-        NSURL *url = [NSURL URLWithString:[status.content substringWithRange:entity.range]];
-        [attributedLabel addLinkToURL:url withRange:entity.range];
+    for (NSTextCheckingResult *result in URLs) {
+        [attributedLabel addLinkToURL:result.URL withRange:result.range];
     }
     
     for (TwitterTextEntity *entity in mentions) {
