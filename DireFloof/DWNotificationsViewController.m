@@ -28,6 +28,8 @@
 
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *pageLoadingView;
 
+@property (nonatomic, strong) NSMutableDictionary *cachedEstimatedHeights;
+
 @property (nonatomic, assign) BOOL loadingNextPage;
 
 @end
@@ -74,6 +76,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.cachedEstimatedHeights = [NSMutableDictionary dictionary];
     
     [self configureViews];
     [self configureData];
@@ -114,6 +117,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    [self.cachedEstimatedHeights removeAllObjects];
 }
 
 
@@ -227,6 +231,19 @@
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MSNotification *notification = [[[DWNotificationStore sharedStore] notificationTimeline].statuses objectAtIndex:indexPath.row];
+
+    NSNumber *cachedHeight = [self.cachedEstimatedHeights objectForKey:notification._id];
+    if (cachedHeight) {
+        return cachedHeight.floatValue;
+    }
+    
+    return 96.0f;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MSNotification *notification = [[[DWNotificationStore sharedStore] notificationTimeline].statuses objectAtIndex:indexPath.row];
@@ -260,6 +277,9 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    MSNotification *notification = [[[DWNotificationStore sharedStore] notificationTimeline].statuses objectAtIndex:indexPath.row];
+    [self.cachedEstimatedHeights setObject:@(cell.bounds.size.height) forKey:notification._id];
+    
     if (indexPath.row >= [[DWNotificationStore sharedStore] notificationTimeline].statuses.count - 10 && [[DWNotificationStore sharedStore] notificationTimeline].nextPageUrl) {
         [self loadNextPage];
     }
@@ -337,7 +357,7 @@
 - (void)configureViews
 {
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 96.0f;
+    //self.tableView.estimatedRowHeight = 96.0f*6.0f; // 96.0 is the original estimated height, for whatever reason iOS11 has become a hell of a lot more sensitive to a smaller estimated height, causing the scrollview offset to jump on page loads if there's a number of cells larger than 96.0. Usually excessive media posts.
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [UIColor whiteColor];

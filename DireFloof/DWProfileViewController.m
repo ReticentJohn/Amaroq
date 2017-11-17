@@ -60,6 +60,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 @property (nonatomic, strong) NSString *followersNextUrl;
 @property (nonatomic, strong) NSString *followingNextUrl;
 
+@property (nonatomic, strong) NSMutableDictionary *cachedEstimatedHeights;
+
 @property (nonatomic, assign) BOOL loadingNextTimelinePage;
 @property (nonatomic, assign) BOOL loadingNextFollowersPage;
 @property (nonatomic, assign) BOOL loadingNextFollowingPage;
@@ -395,11 +397,12 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.cachedEstimatedHeights = [NSMutableDictionary dictionary];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(adjustFonts) name:UIContentSizeCategoryDidChangeNotification object:nil];
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 96.0f;
+    //self.tableView.estimatedRowHeight = 96.0f*6.0f; // 96.0 is the original estimated height, for whatever reason iOS11 has become a hell of a lot more sensitive to a smaller estimated height, causing the scrollview offset to jump on page loads if there's a number of cells larger than 96.0. Usually excessive media posts.
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [UIColor whiteColor];
@@ -467,6 +470,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    [self.cachedEstimatedHeights removeAllObjects];
 }
 
 
@@ -662,6 +667,21 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.currentSection == DWProfileSectionTypePosts) {
+        MSStatus *status = [self.timeline.statuses objectAtIndex:indexPath.row];
+        
+        NSNumber *cachedHeight = [self.cachedEstimatedHeights objectForKey:status._id];
+        if (cachedHeight) {
+            return cachedHeight.floatValue;
+        }
+    }
+    
+    return 96.0f;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.currentSection == DWProfileSectionTypePosts) {
@@ -679,6 +699,9 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     switch (self.currentSection) {
         case DWProfileSectionTypePosts:
         {
+            MSStatus *status = [self.timeline.statuses objectAtIndex:indexPath.row];
+            [self.cachedEstimatedHeights setObject:@(cell.bounds.size.height) forKey:status._id];
+            
             if (indexPath.row >= self.timeline.statuses.count - 10 && self.timeline.nextPageUrl) {
                 [self loadNextPage];
             }

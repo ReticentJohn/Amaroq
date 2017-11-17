@@ -36,6 +36,8 @@ IB_DESIGNABLE
 @property (nonatomic, strong) MSTimeline *timeline;
 @property (nonatomic, assign) BOOL loadingNextPage;
 
+@property (nonatomic, strong) NSMutableDictionary *cachedEstimatedHeights;
+
 @end
 
 @implementation DWTimelineViewController
@@ -85,6 +87,7 @@ IB_DESIGNABLE
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.cachedEstimatedHeights = [NSMutableDictionary dictionary];
     
     [self configureViews];
     [self configureData];
@@ -146,6 +149,7 @@ IB_DESIGNABLE
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    [self.cachedEstimatedHeights removeAllObjects];
 }
 
 
@@ -289,6 +293,19 @@ IB_DESIGNABLE
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MSStatus *status = [self.timeline.statuses objectAtIndex:indexPath.row];
+    
+    NSNumber *cachedHeight = [self.cachedEstimatedHeights objectForKey:status._id];
+    if (cachedHeight) {
+        return cachedHeight.floatValue;
+    }
+    
+    return 96.0f;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MSStatus *status = [self.timeline.statuses objectAtIndex:indexPath.row];
@@ -363,6 +380,9 @@ IB_DESIGNABLE
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    MSStatus *status = [self.timeline.statuses objectAtIndex:indexPath.row];
+    [self.cachedEstimatedHeights setObject:@(cell.bounds.size.height) forKey:status._id];
+    
     if (indexPath.row >= self.timeline.statuses.count - 10 && self.timeline.nextPageUrl) {
         [self loadNextPage];
     }
@@ -460,7 +480,7 @@ IB_DESIGNABLE
 - (void)configureViews
 {
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 96.0f;
+    //self.tableView.estimatedRowHeight = 96.0f*6.0f; // 96.0 is the original estimated height, for whatever reason iOS11 has become a hell of a lot more sensitive to a smaller estimated height, causing the scrollview offset to jump on page loads if there's a number of cells larger than 96.0. Usually excessive media posts.
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [UIColor whiteColor];
