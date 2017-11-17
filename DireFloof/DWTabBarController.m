@@ -179,8 +179,8 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         [self.tabBar addSubview:self.notificationBadge];
         
         [self.notificationBadge autoSetDimensionsToSize:CGSizeMake(10, 10)];
+        [self.notificationBadge autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self.tabBar withOffset:10.0f];
         [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar withOffset:8.0f + self.tabBar.bounds.size.width/5.0f];
-        [self.notificationBadge autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-12.0f];
         [[DWNotificationStore sharedStore] setNotificationBadge:self.notificationBadge];
     }
     

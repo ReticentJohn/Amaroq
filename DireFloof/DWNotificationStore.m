@@ -207,7 +207,7 @@
     if (userInfo[kGCMMessageIDKey]) {
        // NSLog(@"Message ID: %@", userInfo[kGCMMessageIDKey]);
     }
-    
+    self.notificationBadge.hidden = NO;
     // Print full message.
     //NSLog(@"%@", userInfo);
     
