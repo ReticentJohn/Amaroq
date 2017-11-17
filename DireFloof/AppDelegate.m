@@ -73,7 +73,7 @@
     [DWAppearanceProxies configureAppearanceProxies];
     
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
-    [[DWNotificationStore sharedStore] connectToFcm];
+    [[DWNotificationStore sharedStore] registerForNotifications];
     
     // Kicks the login screen if we're resuming from suspension
     if ([[[UIApplication sharedApplication] topController] isKindOfClass:[DWLoginViewController class]]) {
@@ -90,7 +90,8 @@
 
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-    [[DWNotificationStore sharedStore] checkForNotificationsWithCompletionHandler:completionHandler];
+    completionHandler(UIBackgroundFetchResultNoData);
+    //[[DWNotificationStore sharedStore] checkForNotificationsWithCompletionHandler:completionHandler];
 }
 
 
