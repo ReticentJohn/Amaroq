@@ -10,7 +10,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #import <PureLayout/PureLayout.h>
-#import <UIImageView+AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 #import "DWTabBarController.h"
 #import "Mastodon.h"
 #import "DWNotificationStore.h"

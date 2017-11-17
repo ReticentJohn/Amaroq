@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '43F60242D246F5D67C751C2260E69BF5'
+               BlueprintIdentifier = 'DECE5CCE346A53998046893E52B61850'
                BlueprintName = 'MHVideoPhotoGallery'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMHVideoPhotoGallery.a'>
+               BuildableName = 'MHVideoPhotoGallery.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

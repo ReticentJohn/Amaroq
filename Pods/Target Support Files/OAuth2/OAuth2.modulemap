@@ -1,0 +1,6 @@
+framework module OAuth2 {
+  umbrella header "OAuth2-umbrella.h"
+
+  export *
+  module * { export * }
+}

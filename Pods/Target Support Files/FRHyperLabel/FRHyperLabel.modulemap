@@ -1,0 +1,6 @@
+framework module FRHyperLabel {
+  umbrella header "FRHyperLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

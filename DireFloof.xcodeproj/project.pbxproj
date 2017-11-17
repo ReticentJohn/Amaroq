@@ -71,6 +71,8 @@
 		047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047ACB5F1E73469600CC092B /* DWNavigationViewController.m */; };
 		0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */; };
 		0485B97D1E55685F0063B2B8 /* DWIntrinsicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */; };
+		048902EE1FBE6F3700ED07A6 /* MSEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 048902ED1FBE6F3700ED07A6 /* MSEmoji.m */; };
+		048902F11FBE77F900ED07A6 /* InlineImageHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 048902F01FBE77F900ED07A6 /* InlineImageHelpers.m */; };
 		0499677E1EAE94AE0091D17B /* DWMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */; };
 		04AAFB6A1E726029009E15B2 /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 04AAFB691E726029009E15B2 /* PrivacyPolicy.html */; };
 		04AE6A9F1EA9437C00E64477 /* DWInstancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */; };
@@ -97,9 +99,9 @@
 		04FE35F91E627E5600E34407 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FE35F81E627E5600E34407 /* Settings.bundle */; };
 		22B3306B1EC6002B0022BB78 /* UIViewController+WebNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */; };
 		22B3306D1EC600590022BB78 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3306C1EC600590022BB78 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4549FEEE336A754F3DD7B9CB /* libPods-DireFloofUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */; };
-		6F81D807974980F1C7131960 /* libPods-DireFloof.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159D03EA22F7441C280496B /* libPods-DireFloof.a */; };
-		7B480A139AE67221ED649A1F /* libPods-DireFloofTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */; };
+		27A353FD7A3B9282A0D71F49 /* Pods_DireFloofUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1BFD1C11A0545006ADFCA3 /* Pods_DireFloofUITests.framework */; };
+		7B0E8E1673FE3F94B3199858 /* Pods_DireFloofTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770CBB42E4136BF25294E8D6 /* Pods_DireFloofTests.framework */; };
+		927EEBC2D08B7054EBA0F270 /* Pods_DireFloof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D851A76E1374683F33CF17 /* Pods_DireFloof.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +252,10 @@
 		0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMediaCollectionViewCell.m; sourceTree = "<group>"; };
 		0485B97B1E55685F0063B2B8 /* DWIntrinsicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWIntrinsicCollectionView.h; sourceTree = "<group>"; };
 		0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWIntrinsicCollectionView.m; sourceTree = "<group>"; };
+		048902EC1FBE6F3700ED07A6 /* MSEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSEmoji.h; sourceTree = "<group>"; };
+		048902ED1FBE6F3700ED07A6 /* MSEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSEmoji.m; sourceTree = "<group>"; };
+		048902EF1FBE77F900ED07A6 /* InlineImageHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InlineImageHelpers.h; sourceTree = "<group>"; };
+		048902F01FBE77F900ED07A6 /* InlineImageHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InlineImageHelpers.m; sourceTree = "<group>"; };
 		049967761EAE53770091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
 		049967771EAE53780091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		049967781EAE53790091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -324,7 +330,6 @@
 		04F56C3D1F0051D50053FC84 /* DWDraftStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDraftStore.h; sourceTree = "<group>"; };
 		04F56C3E1F0051D50053FC84 /* DWDraftStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWDraftStore.m; sourceTree = "<group>"; };
 		04FE35F81E627E5600E34407 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloofUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B330691EC6002B0022BB78 /* UIViewController+WebNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WebNavigation.h"; sourceTree = "<group>"; };
 		22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WebNavigation.m"; sourceTree = "<group>"; };
 		22B3306C1EC600590022BB78 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -338,8 +343,9 @@
 		3C75D7D71F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloofTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8159D03EA22F7441C280496B /* libPods-DireFloof.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DireFloof.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1BFD1C11A0545006ADFCA3 /* Pods_DireFloofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770CBB42E4136BF25294E8D6 /* Pods_DireFloofTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloofTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D851A76E1374683F33CF17 /* Pods_DireFloof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A855AC4855853CC23E2334AF /* Pods-DireFloof.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.adhoc.xcconfig"; sourceTree = "<group>"; };
 		C448DA33BB8B254F9A8757CE /* Pods-DireFloof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.debug.xcconfig"; sourceTree = "<group>"; };
 		D5461B0E07A4CFC6E2ADF2E3 /* Pods-DireFloofUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
@@ -353,7 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3306D1EC600590022BB78 /* SafariServices.framework in Frameworks */,
-				6F81D807974980F1C7131960 /* libPods-DireFloof.a in Frameworks */,
+				927EEBC2D08B7054EBA0F270 /* Pods_DireFloof.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +367,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B480A139AE67221ED649A1F /* libPods-DireFloofTests.a in Frameworks */,
+				7B0E8E1673FE3F94B3199858 /* Pods_DireFloofTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +375,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4549FEEE336A754F3DD7B9CB /* libPods-DireFloofUITests.a in Frameworks */,
+				27A353FD7A3B9282A0D71F49 /* Pods_DireFloofUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +415,8 @@
 				043154FA1E516D1B0066C511 /* MSTimeline.m */,
 				04BEC3A01E56869200A62C3B /* MSNotification.h */,
 				04BEC3A11E56869200A62C3B /* MSNotification.m */,
+				048902EC1FBE6F3700ED07A6 /* MSEmoji.h */,
+				048902ED1FBE6F3700ED07A6 /* MSEmoji.m */,
 				043154FC1E517B290066C511 /* NSDictionary+Sanitation.h */,
 				043154FD1E517B290066C511 /* NSDictionary+Sanitation.m */,
 				04610BEA1E54F1190023763D /* NSString+HtmlStrip.h */,
@@ -596,6 +604,8 @@
 				040C612E1E7090E300509F32 /* NSString+Awoo.m */,
 				04E6A2441E7480F200838130 /* UIImage+color.h */,
 				04E6A2451E7480F200838130 /* UIImage+color.m */,
+				048902EF1FBE77F900ED07A6 /* InlineImageHelpers.h */,
+				048902F01FBE77F900ED07A6 /* InlineImageHelpers.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -682,9 +692,9 @@
 			isa = PBXGroup;
 			children = (
 				22B3306C1EC600590022BB78 /* SafariServices.framework */,
-				8159D03EA22F7441C280496B /* libPods-DireFloof.a */,
-				6D3F96BE380DC49806B9EB1E /* libPods-DireFloofTests.a */,
-				1B58F2B202458DABD4BFAA9E /* libPods-DireFloofUITests.a */,
+				93D851A76E1374683F33CF17 /* Pods_DireFloof.framework */,
+				770CBB42E4136BF25294E8D6 /* Pods_DireFloofTests.framework */,
+				5B1BFD1C11A0545006ADFCA3 /* Pods_DireFloofUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -944,42 +954,6 @@
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/activityMH.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/activtyMH@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControl.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControl@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControlSelected.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/EditControlSelected@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/error.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/error@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/facebookMH.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/facebookMH@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/ic_square.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/ic_square@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/left_arrow.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/left_arrow@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/mailMH.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/mailMH@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/messageMH.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/messageMH@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/pause.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/pause@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/play.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/play@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/playButton.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/playButton@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/right_arrow.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/right_arrow@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/saveMH@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/sliderPoint.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/sliderPoint@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/twitterMH.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/twitterMH@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/unplay.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/unplay@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/videoIcon.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/Images/videoIcon@2x.png",
-				"${PODS_ROOT}/MHVideoPhotoGallery/MHVideoPhotoGallery/MMHVideoPhotoGallery/MHGallery.bundle",
 				"${PODS_ROOT}/OAuth2/Pod/Classes/OAuthRequestController.xib",
 				$PODS_CONFIGURATION_BUILD_DIR/OAuth2/OAuth2.bundle,
 			);
@@ -998,9 +972,60 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AFOAuth2Manager/AFOAuth2Manager.framework",
+				"${BUILT_PRODUCTS_DIR}/ActiveLabel/ActiveLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/AnimatedGIFImageSerialization/AnimatedGIFImageSerialization.framework",
+				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
+				"${BUILT_PRODUCTS_DIR}/EmojiOne/EmojiOne.framework",
+				"${BUILT_PRODUCTS_DIR}/FCFileManager/FCFileManager.framework",
+				"${BUILT_PRODUCTS_DIR}/FRHyperLabel/FRHyperLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/GMImagePicker/GMImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MHVideoPhotoGallery/MHVideoPhotoGallery.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuth2/OAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework",
+				"${BUILT_PRODUCTS_DIR}/RMPickerViewController/RMPickerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFOAuth2Manager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActiveLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedGIFImageSerialization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmojiOne.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCFileManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRHyperLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MHVideoPhotoGallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMActionController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMPickerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/twitter_text.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1138,6 +1163,7 @@
 				04363AF21E5553C30018A564 /* DWTimelineMediaTableViewCell.m in Sources */,
 				0411D5C11E64C47A00CED5A6 /* DWProfileViewController.m in Sources */,
 				04EC13F41E46A966000E15A6 /* AppDelegate.m in Sources */,
+				048902F11FBE77F900ED07A6 /* InlineImageHelpers.m in Sources */,
 				040C612C1E707E0900509F32 /* DWSettingStore.m in Sources */,
 				04095B101E4A63C90082401A /* MSAuthStore.m in Sources */,
 				04095B141E4A6D2D0082401A /* MSAppStore.m in Sources */,
@@ -1164,6 +1190,7 @@
 				0411D1651E639D2100CED5A6 /* UIApplication+TopController.m in Sources */,
 				04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */,
 				0411D15C1E63813900CED5A6 /* DWSearchViewController.m in Sources */,
+				048902EE1FBE6F3700ED07A6 /* MSEmoji.m in Sources */,
 				22B3306B1EC6002B0022BB78 /* UIViewController+WebNavigation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

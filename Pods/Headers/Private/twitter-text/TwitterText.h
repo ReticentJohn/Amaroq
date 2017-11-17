@@ -1,1 +1,0 @@
-../../../twitter-text/objc/lib/TwitterText.h

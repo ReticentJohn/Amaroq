@@ -1,0 +1,6 @@
+framework module Pods_DireFloofUITests {
+  umbrella header "Pods-DireFloofUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

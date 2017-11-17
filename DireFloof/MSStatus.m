@@ -14,6 +14,7 @@
 #import "MSStatus.h"
 #import "MSMediaAttachment.h"
 #import "MSMention.h"
+#import "MSEmoji.h"
 #import "NSDictionary+Sanitation.h"
 #import "NSString+HtmlStrip.h"
 #import "DWSettingStore.h"
@@ -39,6 +40,7 @@
 @property (nonatomic, strong, readwrite) NSArray *mentions;
 @property (nonatomic, strong, readwrite) MSApplication *application;
 @property (nonatomic, strong, readwrite) NSString *visibility;
+@property (nonatomic, strong, readwrite) NSArray *emojis;
 
 @end
 
@@ -121,6 +123,21 @@
         }
         
         self.application = [params objectForKey:@"application"] ? [[MSApplication alloc] initWithParams:[params objectForKey:@"application"]] : nil;
+        
+        NSArray *emojisJSON = [params objectForKey:@"emojis"];
+        
+        if (emojisJSON) {
+            
+            NSMutableArray *emojis = [@[] mutableCopy];
+            
+            for (NSDictionary *emojiJSON in emojisJSON) {
+                
+                MSEmoji *emoji = [[MSEmoji alloc] initWithParams:emojiJSON];
+                [emojis addObject:emoji];
+            }
+            
+            self.emojis = emojis;
+        }
         
     }
     
@@ -238,6 +255,16 @@
     
     if (self.application) {
         [params setObject:[self.application toJSON] forKey:@"application"];
+    }
+    
+    if (self.emojis) {
+        NSMutableArray *emojisJSON = [@[] mutableCopy];
+        
+        for (MSEmoji *emoji in self.emojis) {
+            [emojisJSON addObject:[emoji toJSON]];
+        }
+        
+        [params setObject:emojisJSON forKey:@"emojis"];
     }
     
     return params;

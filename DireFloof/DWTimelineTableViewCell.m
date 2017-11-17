@@ -9,9 +9,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#import <twitter-text/TwitterText.h>
-#import <TTTAttributedLabel/TTTAttributedLabel.h>
+#import <ActiveLabel/ActiveLabel-Swift.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import <AFNetworking/AFImageDownloader.h>
 #import <DateTools/DateTools.h>
 #import "DWTimelineTableViewCell.h"
 #import "DWConstants.h"
@@ -19,14 +19,15 @@
 #import "DWTimelineViewController.h"
 #import "DWNavigationViewController.h"
 #import "DWSettingStore.h"
+#import "InlineImageHelpers.h"
 
-@interface DWTimelineTableViewCell () <TTTAttributedLabelDelegate>
+@interface DWTimelineTableViewCell ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *avatarImageView;
 @property (nonatomic, weak) IBOutlet UILabel *displayLabel;
 @property (nonatomic, weak) IBOutlet UILabel *usernameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
-@property (nonatomic, weak) IBOutlet TTTAttributedLabel *contentLabel;
+@property (nonatomic, weak) IBOutlet ActiveLabel *contentLabel;
 @property (nonatomic, weak) IBOutlet UIButton *retootButton;
 @property (nonatomic, weak) IBOutlet UIButton *favoriteButton;
 @property (nonatomic, weak) IBOutlet UIButton *warningTagButton;
@@ -38,6 +39,9 @@
 @property (nonatomic, weak) IBOutlet UIImageView *favoriteCountImage;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *warningTagTopLabelConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *warningTagTopMediaConstraint;
+
+@property (nonatomic, strong) NSMutableArray *emojiImageViews;
+
 @property (nonatomic, assign, readwrite) BOOL isThreadStatus;
 
 @property (nonatomic, strong) UILongPressGestureRecognizer *contentWarningGestureRecognizer;
@@ -305,10 +309,36 @@
     [super awakeFromNib];
     // Initialization code
     
-    self.contentLabel.delegate = self;
-    self.contentLabel.linkAttributes = @{(id)kCTForegroundColorAttributeName: DW_LINK_TINT_COLOR};
-    self.contentLabel.activeLinkAttributes = @{(id)kCTForegroundColorAttributeName: DW_BASE_ICON_TINT_COLOR};
-    self.contentLabel.inactiveLinkAttributes = @{(id)kCTForegroundColorAttributeName: DW_BASE_ICON_TINT_COLOR};
+    self.emojiImageViews = [NSMutableArray array];
+    
+    [self.contentLabel customize:^(ActiveLabel *label) {
+        label.mentionColor = DW_LINK_TINT_COLOR;
+        label.mentionSelectedColor =  DW_BASE_ICON_TINT_COLOR;
+        label.hashtagColor = DW_LINK_TINT_COLOR;
+        label.hashtagSelectedColor = DW_BASE_ICON_TINT_COLOR;
+        label.URLColor = DW_LINK_TINT_COLOR;
+        label.URLSelectedColor = DW_BASE_ICON_TINT_COLOR;
+        
+        [label handleURLTap:^(NSURL *url) {
+            [self.delegate timelineCell:self didSelectURL:url];
+        }];
+        
+        [label handleHashtagTap:^(NSString *tag) {
+            DWTimelineViewController *hashtagController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"HashtagController"];
+            hashtagController.hashtag = tag;
+            DWNavigationViewController *navController = [[DWNavigationViewController alloc] initWithRootViewController:hashtagController];
+            
+            [[[UIApplication sharedApplication] topController] presentViewController:navController animated:YES completion:nil];
+        }];
+        
+        [label handleMentionTap:^(NSString *user) {
+            MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
+            
+            MSMention *selectedAccount = [[status.mentions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"acct CONTAINS[cd] %@", user]] firstObject];
+            
+            [self.delegate timelineCell:self didSelectUser:selectedAccount._id];
+        }];
+    }];
     
     if (self.retootCountImage) {
         UIImage *retootImage = self.retootCountImage.image;
@@ -376,40 +406,13 @@
 }
 
 
-#pragma mark - TTTAttributedLabel Delegate Methods
-
-- (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url
-{
-    if ([url.scheme isEqualToString:@"user"]) {
-        
-        MSStatus *status = self.status.reblog ? self.status.reblog : self.status;
-        
-        MSMention *selectedAccount = [[status.mentions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"acct CONTAINS[cd] %@", [url.host substringFromIndex:1]]] firstObject];
-        
-        [self.delegate timelineCell:self didSelectUser:selectedAccount._id];
-    }
-    else if ([url.scheme isEqualToString:@"hashtag"])
-    {
-        DWTimelineViewController *hashtagController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"HashtagController"];
-        hashtagController.hashtag = [[[url.resourceSpecifier substringFromIndex:1] stringByRemovingPercentEncoding] substringFromIndex:2];
-        DWNavigationViewController *navController = [[DWNavigationViewController alloc] initWithRootViewController:hashtagController];
-        
-        [[[UIApplication sharedApplication] topController] presentViewController:navController animated:YES completion:nil];
-        
-    }
-    else
-    {
-        [self.delegate timelineCell:self didSelectURL:url];
-    }
-}
-
-
 #pragma mark - Private Methods
 
 - (void)configureForReuse
 {
     _notification = nil;
     _status = nil;
+    [self.emojiImageViews removeAllObjects];
     self.avatarImageView.image = nil;
     self.displayLabel.text = @"";
     self.usernameLabel.text = @"";
@@ -469,8 +472,8 @@
     
     if (status.content) {
         self.contentLabel.text = status.content;
-        [self highlightUsersInContentLabel:self.contentLabel forStatus:status];
         [self.contentLabel setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];
+        
         self.dateLabel.accessibilityLabel = [self.dateLabel.accessibilityLabel stringByAppendingFormat:@". %@", status.content];
     }
     
@@ -497,37 +500,24 @@
         self.warningTagLabel.text = [NSString stringWithFormat:@"%@\n%@", status.spoiler_text.length ? status.spoiler_text : NSLocalizedString(@"Sensitive content", @"Sensitive content"), NSLocalizedString(@"Hold to show", @"Hold to show")];
     }
     
+    for (MSEmoji *emoji in status.emojis) {
+        
+        [[AFImageDownloader defaultInstance] downloadImageForURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:emoji.static_url]] success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull responseObject) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSAttributedString *contentStringWithImage = [self.contentLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
+                self.contentLabel.attributedText = contentStringWithImage;
+                NSAttributedString *warningStringWithImage = [self.warningTagLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
+                self.warningTagLabel.attributedText = warningStringWithImage;
+            });
+        } failure:nil];
+    }
+    
     if (!status.spoiler_text.length && status.sensitive && status.media_attachments.count) {
         
         self.warningTagTopLabelConstraint.active = NO;
         self.warningTagTopMediaConstraint.active = YES;
         
         [self.contentView layoutIfNeeded];
-    }
-}
-
-
-- (void)highlightUsersInContentLabel:(TTTAttributedLabel *)attributedLabel forStatus:(MSStatus *)status
-{
-    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
-    NSArray<NSTextCheckingResult *> *URLs = [detector matchesInString:status.content options:0 range:NSMakeRange(0, status.content.length)];
-    NSArray *mentions = [TwitterText mentionedScreenNamesInText:status.content];
-    NSArray *hashtags = [TwitterText hashtagsInText:status.content checkingURLOverlap:YES];
-    
-    for (NSTextCheckingResult *result in URLs) {
-        [attributedLabel addLinkToURL:result.URL withRange:result.range];
-    }
-    
-    for (TwitterTextEntity *entity in mentions) {
-        
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"user://%@", [status.content substringWithRange:entity.range]]];
-        [attributedLabel addLinkToURL:url withRange:entity.range];
-    }
-    
-    for (TwitterTextEntity *entity in hashtags) {
-        
-        NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:@"hashtag://%@", [status.content substringWithRange:entity.range]] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
-        [attributedLabel addLinkToURL:url withRange:entity.range];
     }
 }
 

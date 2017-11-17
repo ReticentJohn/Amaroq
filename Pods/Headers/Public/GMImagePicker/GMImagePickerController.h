@@ -1,1 +1,0 @@
-../../../GMImagePicker/GMImagePicker/GMImagePickerController.h

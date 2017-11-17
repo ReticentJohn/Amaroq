@@ -9,7 +9,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#import <TTTAttributedLabel/TTTAttributedLabel.h>
+#import <ActiveLabel/ActiveLabel-Swift.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import "DWProfileViewController.h"
 #import "DWTimelineTableViewCell.h"
@@ -23,6 +23,7 @@
 #import "UIViewController+NearestNavigationController.h"
 #import "DWSettingStore.h"
 #import "UIViewController+WebNavigation.h"
+#import "DWNavigationViewController.h"
 
 typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     DWProfileSectionTypePosts                = 0,
@@ -30,7 +31,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     DWProfileSectionTypeFollowers            = 2,
 };
 
-@interface DWProfileViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate, TTTAttributedLabelDelegate>
+@interface DWProfileViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>
 
 @property (nonatomic, weak) IBOutlet UIButton *followingYouButton;
 @property (nonatomic, weak) IBOutlet UIButton *followingButton;
@@ -38,7 +39,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 @property (nonatomic, weak) IBOutlet UIImageView *headerImageView;
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *usernameLabel;
-@property (nonatomic, weak) IBOutlet TTTAttributedLabel *bioLabel;
+@property (nonatomic, weak) IBOutlet ActiveLabel *bioLabel;
 @property (nonatomic, weak) IBOutlet UILabel *postCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel *followingCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel *followerCountLabel;
@@ -417,11 +418,26 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
         [self.tableView setRefreshControl:refreshControl];
     }
     
-    self.bioLabel.delegate = self;
-    self.bioLabel.enabledTextCheckingTypes = NSTextCheckingTypeLink;
-    self.bioLabel.linkAttributes = @{(id)kCTForegroundColorAttributeName: DW_LINK_TINT_COLOR};
-    self.bioLabel.activeLinkAttributes = @{(id)kCTForegroundColorAttributeName: DW_BASE_ICON_TINT_COLOR};
-    self.bioLabel.inactiveLinkAttributes = @{(id)kCTForegroundColorAttributeName: DW_BASE_ICON_TINT_COLOR};
+    [self.bioLabel customize:^(ActiveLabel *label) {
+        label.mentionColor = DW_LINK_TINT_COLOR;
+        label.mentionSelectedColor =  DW_BASE_ICON_TINT_COLOR;
+        label.hashtagColor = DW_LINK_TINT_COLOR;
+        label.hashtagSelectedColor = DW_BASE_ICON_TINT_COLOR;
+        label.URLColor = DW_LINK_TINT_COLOR;
+        label.URLSelectedColor = DW_BASE_ICON_TINT_COLOR;
+        
+        [label handleURLTap:^(NSURL *url) {
+            [self openWebURL:url];
+        }];
+        
+        [label handleHashtagTap:^(NSString *tag) {
+            DWTimelineViewController *hashtagController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"HashtagController"];
+            hashtagController.hashtag = tag;
+            DWNavigationViewController *navController = [[DWNavigationViewController alloc] initWithRootViewController:hashtagController];
+            
+            [[[UIApplication sharedApplication] topController] presentViewController:navController animated:YES completion:nil];
+        }];
+    }];
     
     [self configureData];
 }
@@ -807,14 +823,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 }
 
 - (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectURL:(NSURL *)url
-{
-    [self openWebURL:url];
-}
-
-
-#pragma mark - TTTAttributedLabel Delegate Methods
-
-- (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url
 {
     [self openWebURL:url];
 }

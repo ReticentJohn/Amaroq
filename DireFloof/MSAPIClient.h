@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <AFOAuth2Manager/AFOAuth2Manager.h>
-#import <AFHTTPRequestSerializer+OAuth2.h>
+#import <AFOAuth2Manager/AFHTTPRequestSerializer+OAuth2.h>
 
 @interface MSAPIClient : AFHTTPSessionManager
 

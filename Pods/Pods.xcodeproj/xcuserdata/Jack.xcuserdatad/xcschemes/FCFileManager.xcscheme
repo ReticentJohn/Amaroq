@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EB3966843ED9D2AE018CD372F624137B'
+               BlueprintIdentifier = '10E0DE7052ED3ABE7A4237D196E9822D'
                BlueprintName = 'FCFileManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libFCFileManager.a'>
+               BuildableName = 'FCFileManager.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

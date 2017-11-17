@@ -3,14 +3,14 @@
 
 target 'DireFloof' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
 
   # Pods for DireFloof
   pod 'AFNetworking', '~> 3.0'
   pod 'AFOAuth2Manager', '~> 3.0'
   pod 'DateTools', git: 'https://github.com/ReticentJohn/DateTools.git', branch: 'master'
   pod 'SDWebImage', '3.8.2'
-  pod 'TTTAttributedLabel'
+  #pod 'TTTAttributedLabel'
   pod 'AnimatedGIFImageSerialization'
   pod 'TPKeyboardAvoiding'
   pod 'GMImagePicker', git: 'https://github.com/ReticentJohn/GMImagePicker.git', branch: 'iOS10-Support'
@@ -26,6 +26,7 @@ target 'DireFloof' do
   pod 'EmojiOne', podspec: 'DireFloof/Vendor/Emojione/emojione.podspec'
   pod 'RMPickerViewController', '~> 2.2.1'
   pod 'OAuth2', git: 'https://github.com/ReticentJohn/OAuth2-for-iOS.git', branch: 'master'
+  pod 'ActiveLabel'
 
 post_install do | installer |
     require 'fileutils'
