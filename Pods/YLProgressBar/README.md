@@ -2,16 +2,19 @@
   <img src="https://github.com/YannickL/YLProgressBar/raw/master/web/ylprogressbar_header.png" alt="YLProgressBar" />
 </p>
 
-[![Supported Platforms](https://cocoapod-badges.herokuapp.com/p/YLProgressBar/badge.svg)](http://cocoadocs.org/docsets/YLProgressBar/) [![Version](https://cocoapod-badges.herokuapp.com/v/YLProgressBar/badge.svg)](http://cocoadocs.org/docsets/YLProgressBar/)
+<p align="center">
+  <a href="http://cocoadocs.org/docsets/YLProgressBar/"><img alt="Supported Platforms" src="https://cocoapod-badges.herokuapp.com/p/YLProgressBar/badge.svg"/></a>
+  <a href="http://cocoadocs.org/docsets/YLProgressBar/"><img alt="Version" src="https://cocoapod-badges.herokuapp.com/v/YLProgressBar/badge.svg"/></a>
+</p>
 
-The `YLProgressBar` is an UIProgressView replacement with an highly and fully customizable animated progress bar in pure Core Graphics
+The **YLProgressBar** is an UIProgressView replacement with an highly and fully customizable animated progress bar in pure Core Graphics
 
 ![](https://github.com/YannickL/YLProgressBar/raw/master/web/YLProgressBar.gif)
 
 It has been implemented using the Core Graphics framework without any images. So it can be customize freely and independently the platform.
 
 <p align="center">
-    <a href="#usage">Usage</a> • <a href="#installation">Installation</a> • <a href="#contact">Contact</a> • <a href="#license">License</a>
+    <a href="#usage">Usage</a> • <a href="#installation">Installation</a> • <a href="#contribution">Contribution</a> • <a href="#contact">Contact</a> • <a href="#license-mit">License</a>
 </p>
 
 ## Usage
@@ -79,7 +82,7 @@ $ touch Podfile
 $ edit Podfile
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios
-pod 'YLProgressBar', '~> 3.10.1'
+pod 'YLProgressBar', '~> 3.10.2'
 ```
 
 Install into your project:
@@ -98,13 +101,17 @@ $ open MyProject.xcworkspace
 
 [Download](https://github.com/YannickL/YLProgressBar/archive/master.zip) the project and copy the `YLProgressBar` folder into your project and then simply `#import "YLProgressBar.h"` in the file(s) you would like to use it in.
 
+## Contribution
+
+Contributions are welcomed and encouraged *♡*.
+
 ## Contact
 
 Yannick Loriot
+ - [https://21.co/yannickl/](https://21.co/yannickl/)
  - [https://twitter.com/yannickloriot](https://twitter.com/yannickloriot)
- - [contact@yannickloriot.com](mailto:contact@yannickloriot.com)
 
-## License
+## License (MIT)
 Copyright 2012 - present, Yannick Loriot.
 http://yannickloriot.com
 

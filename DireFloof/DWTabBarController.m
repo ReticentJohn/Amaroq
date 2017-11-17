@@ -206,8 +206,8 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         
         [self.tabBar addSubview:self.centerTabOverlay];
         [self.centerTabOverlay autoSetDimensionsToSize:CGSizeMake(self.tabBar.bounds.size.width/5.0f, self.tabBar.bounds.size.height)];
+        [self.centerTabOverlay autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self.tabBar];
         [self.centerTabOverlay autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar];
-        [self.centerTabOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar];
     }
     
     if (!self.avatarImageView) {

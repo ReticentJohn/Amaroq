@@ -25,7 +25,7 @@ target 'DireFloof' do
   pod 'Firebase/Messaging'
   pod 'EmojiOne', podspec: 'DireFloof/Vendor/Emojione/emojione.podspec'
   pod 'RMPickerViewController', '~> 2.2.1'
-  pod 'OAuth2'
+  pod 'OAuth2', git: 'https://github.com/ReticentJohn/OAuth2-for-iOS.git', branch: 'master'
 
 post_install do | installer |
     require 'fileutils'

@@ -1169,6 +1169,7 @@
 		3F2D81E3FCA211B7F739F5ED7A9577FF /* MHGallerySharedManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MHGallerySharedManager.m; path = MHVideoPhotoGallery/MMHVideoPhotoGallery/MHGallerySharedManager/MHGallerySharedManager.m; sourceTree = "<group>"; };
 		3F59BA7B0B6A79B56748FE97BAFE9740 /* GPUImageStretchDistortionFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageStretchDistortionFilter.m; path = framework/Source/GPUImageStretchDistortionFilter.m; sourceTree = "<group>"; };
 		403F5AC892235E0127BCD89ADA490DCF /* GPUImageTwoPassFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageTwoPassFilter.m; path = framework/Source/GPUImageTwoPassFilter.m; sourceTree = "<group>"; };
+		40700B4C180AA8D8AFB396663E5FF35C /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		4076A3F67430B9FF396BF4C19CEFFC96 /* GPUImageLuminanceThresholdFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageLuminanceThresholdFilter.h; path = framework/Source/GPUImageLuminanceThresholdFilter.h; sourceTree = "<group>"; };
 		40EAE330CBC86D276F8260EF01E2D160 /* GPUImageFramebufferCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageFramebufferCache.h; path = framework/Source/GPUImageFramebufferCache.h; sourceTree = "<group>"; };
 		40ED7BD3BDBCF8E49E144607A3E1AA2B /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
@@ -1347,7 +1348,6 @@
 		73217EFA5FF5031E4B5E18AD2312215B /* GPUImageLinearBurnBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageLinearBurnBlendFilter.h; path = framework/Source/GPUImageLinearBurnBlendFilter.h; sourceTree = "<group>"; };
 		733C81A8C80AE562E187534DDCFF6CE7 /* GPUImageToneCurveFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageToneCurveFilter.h; path = framework/Source/GPUImageToneCurveFilter.h; sourceTree = "<group>"; };
 		73D8E19EFA4E94C22D8302F53792D181 /* lookup.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = lookup.png; path = framework/Resources/lookup.png; sourceTree = "<group>"; };
-		740396368CC985F8BC1C0CD2D0CA72D2 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		74721BBBE3D88AC811FC831BDFC32698 /* GPBProtocolBuffers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBProtocolBuffers.h; path = objectivec/GPBProtocolBuffers.h; sourceTree = "<group>"; };
 		74883E42BD68354BA34A30C9EBEADEDD /* FieldMask.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FieldMask.pbobjc.h; path = objectivec/google/protobuf/FieldMask.pbobjc.h; sourceTree = "<group>"; };
 		74CEEB9036F632F7DC030C98EA6F6402 /* GMAlbumsViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GMAlbumsViewCell.m; path = GMImagePicker/GMAlbumsViewCell.m; sourceTree = "<group>"; };
@@ -1524,7 +1524,6 @@
 		A8179CB48F0DC8B87C0CAAB5D39A3B91 /* GPUImageHarrisCornerDetectionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageHarrisCornerDetectionFilter.h; path = framework/Source/GPUImageHarrisCornerDetectionFilter.h; sourceTree = "<group>"; };
 		A8422F68071CEF5906FE0CDE492240FC /* GPUImageAverageColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageAverageColor.m; path = framework/Source/GPUImageAverageColor.m; sourceTree = "<group>"; };
 		A85285E90B413D6D8C723320B98076DB /* GPUImageLevelsFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageLevelsFilter.m; path = framework/Source/GPUImageLevelsFilter.m; sourceTree = "<group>"; };
-		A8FF75AC83802B0D0973773EF23830A7 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
 		A95F81DF1ACC3A92473A32FA8DA6B973 /* GPBDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBDescriptor.m; path = objectivec/GPBDescriptor.m; sourceTree = "<group>"; };
 		A9802CE8E5C48D36808532D677B6CF40 /* GPUImageDarkenBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageDarkenBlendFilter.m; path = framework/Source/GPUImageDarkenBlendFilter.m; sourceTree = "<group>"; };
 		A9A2048C10C0E1AD6E113BBBA56D1072 /* GPUImageStillCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageStillCamera.h; path = framework/Source/GPUImageStillCamera.h; sourceTree = "<group>"; };
@@ -1599,7 +1598,6 @@
 		C0FBDC0DB3F07798B6E2E0E4F0FD87FC /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		C13F47D2BF8E880D6268CD3A53A7F0FD /* GPUImageFASTCornerDetectionFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageFASTCornerDetectionFilter.h; path = framework/Source/GPUImageFASTCornerDetectionFilter.h; sourceTree = "<group>"; };
 		C1512D7A6B9991FF59C62B7DDBD5F02F /* OAuthRequestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OAuthRequestController.m; path = Pod/Classes/OAuthRequestController.m; sourceTree = "<group>"; };
-		C20F463935FF80471D095329430D5377 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		C21F9B3BE7422B08845C0E92A3B19CB4 /* Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = Pod/Classes/Base64/Base64.m; sourceTree = "<group>"; };
 		C2213908A1BBEE4B2B4DA6115201BC34 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		C41896695FAA1A3AB9CB6C7E44552F30 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
@@ -1680,7 +1678,6 @@
 		D79A407AFA39956DEA9EA4E79DF23849 /* GPUImageTransformFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageTransformFilter.m; path = framework/Source/GPUImageTransformFilter.m; sourceTree = "<group>"; };
 		D79C068A316259436FBDDBDF8F531846 /* GPUImageBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageBuffer.m; path = framework/Source/GPUImageBuffer.m; sourceTree = "<group>"; };
 		D7CE53678E4B805363AE3DE994F266E2 /* Wrappers.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Wrappers.pbobjc.h; path = objectivec/google/protobuf/Wrappers.pbobjc.h; sourceTree = "<group>"; };
-		D815BF4FDB142C2D56497350B498159A /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		D8977EB1B60C84D80BB97EE9A68AEB9D /* GPUImageLineGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageLineGenerator.m; path = framework/Source/GPUImageLineGenerator.m; sourceTree = "<group>"; };
 		D8CE8A69864AF89A88286376337AFE05 /* MHTransitionPresentMHGallery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MHTransitionPresentMHGallery.m; path = MHVideoPhotoGallery/MMHVideoPhotoGallery/Transitions/MHTransitionPresentMHGallery.m; sourceTree = "<group>"; };
 		D96FF0E605178ECBABF89F4EBD1781B2 /* GPUImageDissolveBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageDissolveBlendFilter.m; path = framework/Source/GPUImageDissolveBlendFilter.m; sourceTree = "<group>"; };
@@ -1693,6 +1690,7 @@
 		DB795C519FD992786E82A3D7F4BCC927 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Frameworks/FirebaseMessaging.framework; sourceTree = "<group>"; };
 		DB87DB4CBE718C5995157276C610F95A /* MHGallery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MHGallery.h; path = MHVideoPhotoGallery/MMHVideoPhotoGallery/MHGallery/MHGallery.h; sourceTree = "<group>"; };
 		DC10E5B8A87F0BA2BA44F8531AFDEC37 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DC25998935DEACB8F243F81B535D2D25 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
 		DC58F70A8F8AC2CAED4FD7CE6A020F6D /* MHTransitionShowDetail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MHTransitionShowDetail.m; path = MHVideoPhotoGallery/MMHVideoPhotoGallery/Transitions/MHTransitionShowDetail.m; sourceTree = "<group>"; };
 		DC769A8CB06605B33E3284C30A80D653 /* MHVideoPhotoGallery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MHVideoPhotoGallery.xcconfig; sourceTree = "<group>"; };
 		DCBB737B3F448B434A1AAB62DD86F501 /* GPUImageChromaKeyBlendFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageChromaKeyBlendFilter.h; path = framework/Source/GPUImageChromaKeyBlendFilter.h; sourceTree = "<group>"; };
@@ -1770,6 +1768,7 @@
 		F1D11C06C55D2223684770DC034386A3 /* GPUImageContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageContext.m; path = framework/Source/iOS/GPUImageContext.m; sourceTree = "<group>"; };
 		F1EC1655ECA7064F1340462963636066 /* GPUImageLuminosityBlendFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImageLuminosityBlendFilter.m; path = framework/Source/GPUImageLuminosityBlendFilter.m; sourceTree = "<group>"; };
 		F22F2047DFE2FA7987A9A16656BE2A31 /* GPUImagePosterizeFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPUImagePosterizeFilter.m; path = framework/Source/GPUImagePosterizeFilter.m; sourceTree = "<group>"; };
+		F28BEAA7AD31EB61E2F5A4AB47F85696 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		F3B4AD248DD8FF8D6262DC4BDC2E9F51 /* GPUImagePixellateFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImagePixellateFilter.h; path = framework/Source/GPUImagePixellateFilter.h; sourceTree = "<group>"; };
 		F4223A5756E723CAED88A37397D6D106 /* Pods-DireFloofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DireFloofUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F49AACA86E4FB5087B64CC7F04C48B96 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
@@ -1787,6 +1786,7 @@
 		F7B1183B263825A93C0E68C4B751825A /* GPUImageTwoPassFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageTwoPassFilter.h; path = framework/Source/GPUImageTwoPassFilter.h; sourceTree = "<group>"; };
 		F7F58F11BAFB6BBC2FC5AF60CE93B274 /* GPUImageBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageBuffer.h; path = framework/Source/GPUImageBuffer.h; sourceTree = "<group>"; };
 		F836B4B1397838F7C1E5590060517B32 /* Api.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Api.pbobjc.m; path = objectivec/google/protobuf/Api.pbobjc.m; sourceTree = "<group>"; };
+		F8C86B83D8E57240151EBDDEA2D643CE /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		F8CBDF84BA5E4153FBF50558E2AD8F9C /* GPUImageiOSBlurFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageiOSBlurFilter.h; path = framework/Source/GPUImageiOSBlurFilter.h; sourceTree = "<group>"; };
 		F8D82A9CDD76C32A05D87E8E623C59A7 /* GPUImageSharpenFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageSharpenFilter.h; path = framework/Source/GPUImageSharpenFilter.h; sourceTree = "<group>"; };
 		F95B7C3298A2FFB6940DEE95D3E316EE /* Struct.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Struct.pbobjc.h; path = objectivec/google/protobuf/Struct.pbobjc.h; sourceTree = "<group>"; };
@@ -2148,6 +2148,15 @@
 				AE6EEBF7F81E2C957E94DA9041665E17 /* UIView+WebCacheOperation.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		1440D050C111DA771CC930E9E7616B30 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				92F6C5887EC5BB54C648733F8B34098D /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
 		1B3274F1463F57C76BCAB247BA2A39F6 /* Support Files */ = {
@@ -2589,6 +2598,14 @@
 			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
+		335964CED39A36D48BA37F3D17EECDD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40700B4C180AA8D8AFB396663E5FF35C /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		347AB657CA3D181903B5D69B5C35890C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2643,8 +2660,8 @@
 				669C52BEABB5914A3B4C2DA312464498 /* EmojiOne */,
 				E9E6B07445899B24F07C07557D216EEC /* FCFileManager */,
 				D1B605AF411DDE16B7F8808FD784B692 /* Firebase */,
-				8A8F3DF391DE83BF686E3CB142118D3D /* FirebaseAnalytics */,
-				966F09E9A9D2AC8093CDD84857CF2288 /* FirebaseCore */,
+				1440D050C111DA771CC930E9E7616B30 /* FirebaseAnalytics */,
+				96241357ADFCD4F921E5D294C32D09F4 /* FirebaseCore */,
 				D82BD380408B040C0D44D0A7E49A92BA /* FirebaseInstanceID */,
 				AD18E1123D80929E2CE7F33D1B56C23B /* FirebaseMessaging */,
 				239FC10E39101175783CC479D98D891D /* GMImagePicker */,
@@ -2771,14 +2788,6 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		445321B05B025B3FFE60CBE8962FA042 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C20F463935FF80471D095329430D5377 /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		49BF608A9E9215EC452716E6DF108A8B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2855,16 +2864,6 @@
 			children = (
 			);
 			name = encode;
-			sourceTree = "<group>";
-		};
-		600E9EE8820778B61F231D7157DA0B82 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				740396368CC985F8BC1C0CD2D0CA72D2 /* FirebaseCore.framework */,
-				D815BF4FDB142C2D56497350B498159A /* FirebaseCoreDiagnostics.framework */,
-				A8FF75AC83802B0D0973773EF23830A7 /* FirebaseNanoPB.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		669C52BEABB5914A3B4C2DA312464498 /* EmojiOne */ = {
@@ -2974,15 +2973,6 @@
 			path = "../Target Support Files/GMImagePicker";
 			sourceTree = "<group>";
 		};
-		8A8F3DF391DE83BF686E3CB142118D3D /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				445321B05B025B3FFE60CBE8962FA042 /* Frameworks */,
-			);
-			name = FirebaseAnalytics;
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
 		8E27E930B472B93A2D581620FDE60D1B /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
@@ -3000,10 +2990,20 @@
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
-		966F09E9A9D2AC8093CDD84857CF2288 /* FirebaseCore */ = {
+		92F6C5887EC5BB54C648733F8B34098D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				600E9EE8820778B61F231D7157DA0B82 /* Frameworks */,
+				F8C86B83D8E57240151EBDDEA2D643CE /* FirebaseAnalytics.framework */,
+				F28BEAA7AD31EB61E2F5A4AB47F85696 /* FirebaseCoreDiagnostics.framework */,
+				DC25998935DEACB8F243F81B535D2D25 /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96241357ADFCD4F921E5D294C32D09F4 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				335964CED39A36D48BA37F3D17EECDD8 /* Frameworks */,
 			);
 			name = FirebaseCore;
 			path = FirebaseCore;
