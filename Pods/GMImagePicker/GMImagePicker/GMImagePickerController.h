@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Guillermo Muntaner Perelló. All rights reserved.
 //
 
-@import UIKit;
-@import Photos;
+#import <UIKit/UIKit.h>
+#import <Photos/Photos.h>
 
 
 //This is the default image picker size!
@@ -41,7 +41,7 @@ static CGSize const kPopoverContentSize = {480, 720};
 
 /**
  *  Determines which smart collections are displayed (int array of enum: PHAssetCollectionSubtypeSmartAlbum)
- *  The default smart collections are: 
+ *  The default smart collections are:
  *  - Favorites
  *  - RecentlyAdded
  *  - Videos
@@ -122,6 +122,11 @@ static CGSize const kPopoverContentSize = {480, 720};
 @property (nonatomic, assign) BOOL autoSelectCameraImages;
 
 /**
+ * If set, the user is allowed to edit captured still images
+ */
+@property (nonatomic, assign) BOOL allowsEditingCameraImages;
+
+/**
  *  Grid customizations:
  *
  *  - colsInPortrait: Number of columns in portrait (3 by default)
@@ -151,6 +156,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  * - pickerFontHeaderSize: The size of the custom font for album names. Defaults to 17.0f
  * - pickerStatusBarsStyle: On iPhones this will matter if custom navigation bar colours are being used. Defaults to UIStatusBarStyleDefault
  * - useCustomFontForNavigationBar: True to use the custom font (or it's default) in the navigation bar, false to leave to iOS Defaults.
+ * - arrangeSmartCollectionsFirst: True will put the users smart collections above their albums, false will set it opposite. Default is NO.
  */
 @property (nonatomic, strong) UIColor *pickerBackgroundColor;
 @property (nonatomic, strong) UIColor *pickerTextColor;
@@ -168,6 +174,7 @@ static CGSize const kPopoverContentSize = {480, 720};
 @property (nonatomic) CGFloat pickerFontHeaderSize;
 @property (nonatomic) UIStatusBarStyle pickerStatusBarStyle;
 @property (nonatomic) BOOL useCustomFontForNavigationBar;
+@property (nonatomic) BOOL arrangeSmartCollectionsFirst;
 
 /**
  * A reference to the navigation controller used to manage the whole picking process
@@ -258,8 +265,8 @@ static CGSize const kPopoverContentSize = {480, 720};
 /**
  *  Tells the delegate that the asset was selected.
  *
- *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that was selected.
+ *  @param picker   The controller object managing the assets picker interface.
+ *  @param asset    The asset that was selected.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didSelectAsset:(PHAsset *)asset;
@@ -279,7 +286,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  *  Tells the delegate that the item at the specified path was deselected.
  *
  *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that was deselected.
+ *  @param asset The asset that was deselected.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didDeselectAsset:(PHAsset *)asset;
@@ -304,7 +311,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  *  Tells the delegate that asset was highlighted.
  *
  *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that was highlighted.
+ *  @param asset The asset that was highlighted.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didHighlightAsset:(PHAsset *)asset;
@@ -314,7 +321,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  *  Tells the delegate that the highlight was removed from the asset.
  *
  *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that had its highlight removed.
+ *  @param asset The asset that had its highlight removed.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didUnhighlightAsset:(PHAsset *)asset;

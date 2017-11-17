@@ -9,7 +9,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "GMImagePickerController.h"
 #import "GMAlbumsViewController.h"
-@import Photos;
+#import <Photos/Photos.h>
 
 @interface GMImagePickerController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIAlertViewDelegate>
 
@@ -60,10 +60,12 @@
         _pickerBoldFontName = @"HelveticaNeue-Bold";
         _pickerFontNormalSize = 14.0f;
         _pickerFontHeaderSize = 17.0f;
-       
+        
+        _navigationBarBackgroundColor = [UIColor whiteColor];
         _navigationBarTextColor = [UIColor darkTextColor];
         _navigationBarTintColor = [UIColor darkTextColor];
         
+        _toolbarBarTintColor = [UIColor whiteColor];
         _toolbarTextColor = [UIColor darkTextColor];
         _toolbarTintColor = [UIColor darkTextColor];
         
@@ -82,14 +84,11 @@
     self.view.backgroundColor = _pickerBackgroundColor;
 
     _navigationController.toolbar.translucent = YES;
-    _navigationController.toolbar.backgroundColor = _toolbarBackgroundColor;
     _navigationController.toolbar.barTintColor = _toolbarBarTintColor;
     _navigationController.toolbar.tintColor = _toolbarTintColor;
     
     _navigationController.navigationBar.backgroundColor = _navigationBarBackgroundColor;
-    _navigationController.navigationBar.barTintColor = _navigationBarBarTintColor;
     _navigationController.navigationBar.tintColor = _navigationBarTintColor;
-   
     NSDictionary *attributes;
     if (_useCustomFontForNavigationBar) {
         attributes = @{NSForegroundColorAttributeName : _navigationBarTextColor,
@@ -114,14 +113,22 @@
     GMAlbumsViewController *albumsViewController = [[GMAlbumsViewController alloc] init];
     _navigationController = [[UINavigationController alloc] initWithRootViewController:albumsViewController];
     _navigationController.delegate = self;
-    
-    _navigationController.navigationBar.translucent = YES;
-    
+    [_navigationController.navigationBar setTranslucent:NO];
     [_navigationController willMoveToParentViewController:self];
     [_navigationController.view setFrame:self.view.frame];
     [self.view addSubview:_navigationController.view];
+    [self addConstraintsToChildViewControllersView:_navigationController.view];
     [self addChildViewController:_navigationController];
     [_navigationController didMoveToParentViewController:self];
+}
+
+- (void)addConstraintsToChildViewControllersView:(UIView *)view {
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    NSArray * hConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|" options:0 metrics:0 views:NSDictionaryOfVariableBindings(view)];
+    NSLayoutConstraint * topConstraint = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.topLayoutGuide attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+    NSLayoutConstraint * bottomConstraint = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:view.superview attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+    [view.superview addConstraints:@[topConstraint,bottomConstraint]];
+    [view.superview addConstraints:hConstraints];
 }
 
 
@@ -284,7 +291,7 @@
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     picker.mediaTypes = @[(NSString *)kUTTypeImage];
-    picker.allowsEditing = NO;
+    picker.allowsEditing = self.allowsEditingCameraImages;
     picker.delegate = self;
     picker.modalPresentationStyle = UIModalPresentationPopover;
     
@@ -351,7 +358,7 @@
 
     NSString *mediaType = info[UIImagePickerControllerMediaType];
     if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
-        UIImage *image = info[UIImagePickerControllerOriginalImage];
+        UIImage *image = info[UIImagePickerControllerEditedImage] ? : info[UIImagePickerControllerOriginalImage];
         UIImageWriteToSavedPhotosAlbum(image,
                                        self,
                                        @selector(image:finishedSavingWithError:contextInfo:),

@@ -44,7 +44,6 @@ PODS:
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - Protobuf (~> 3.1)
-  - FRHyperLabel (1.0.4)
   - GMImagePicker (0.0.2)
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/Logger (2.1.3):
@@ -87,8 +86,7 @@ DEPENDENCIES:
   - FCFileManager
   - Firebase/Core
   - Firebase/Messaging
-  - FRHyperLabel
-  - GMImagePicker (from `https://github.com/ReticentJohn/GMImagePicker.git`, branch `iOS10-Support`)
+  - GMImagePicker (from `https://github.com/ReticentJohn/GMImagePicker.git`, branch `master`)
   - GPUImage (from `https://github.com/ReticentJohn/GPUImage.git`, branch `master`)
   - MHVideoPhotoGallery (from `https://github.com/ReticentJohn/MHVideoPhotoGallery.git`, branch `Audio-Dismiss-Fix`)
   - OAuth2 (from `https://github.com/ReticentJohn/OAuth2-for-iOS.git`, branch `master`)
@@ -106,7 +104,7 @@ EXTERNAL SOURCES:
   EmojiOne:
     :podspec: DireFloof/Vendor/Emojione/emojione.podspec
   GMImagePicker:
-    :branch: iOS10-Support
+    :branch: master
     :git: https://github.com/ReticentJohn/GMImagePicker.git
   GPUImage:
     :branch: master
@@ -128,7 +126,7 @@ CHECKOUT OPTIONS:
     :commit: 233b51f39209579ee35290734195dbf5494637d4
     :git: https://github.com/ReticentJohn/emojione.git
   GMImagePicker:
-    :commit: c807268d90724cfc3a5aa66fbd40230bce3893c2
+    :commit: ef7dc757006503e6787538b086ff33a14f66a57e
     :git: https://github.com/ReticentJohn/GMImagePicker.git
   GPUImage:
     :commit: c513dd7b5aa9ab52747070049710f32b5234222f
@@ -157,7 +155,6 @@ SPEC CHECKSUMS:
   FirebaseCore: 2a946ece8fbe3ce1fdeeb55324f273caade22df9
   FirebaseInstanceID: 24958382a1011bba5aaff37e334e7a650b9118f5
   FirebaseMessaging: 75d83375b0f7a9911568d7bdd1a1a8261cbcbdef
-  FRHyperLabel: f4a127d5f8ffb211040554615e93f936d5a576a6
   GMImagePicker: 6438a6764d6280b1dbf19b59140313f5a73daeeb
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GPUImage: bd7e201b9aa91e85f401ed7a6d9867a07a404693
@@ -175,6 +172,6 @@ SPEC CHECKSUMS:
   twitter-text: 7041d00e0f61ed58ab9413e72950f098de858b5c
   YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: 3a0a0a7a2c239e316f5bd98545c9be6d4669f774
+PODFILE CHECKSUM: bf13560d6851a03846ca4a1e51ba5645cb231f56
 
 COCOAPODS: 1.3.1
