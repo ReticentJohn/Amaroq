@@ -73,6 +73,14 @@
     [self.overViewViewController.collectionView reloadData];
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAllButUpsideDown;
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
 @end
 
 

@@ -14,6 +14,7 @@
 #import "DWAboutViewController.h"
 #import "DWConstants.h"
 #import "DWNotificationStore.h"
+#import "UIApplication+TopController.h"
 
 @interface DWLoginViewController () <UITextFieldDelegate>
 
@@ -126,17 +127,23 @@
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? UIInterfaceOrientationMaskPortrait : [topController supportedInterfaceOrientations];
 }
 
 
 - (BOOL)shouldAutorotate
 {
-    if (!UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
-        return YES;
-    }
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
     
-    return NO;
+    return topController == self ? NO : [topController shouldAutorotate];
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 

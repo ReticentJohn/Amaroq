@@ -17,6 +17,7 @@
 #import "DWTimelineViewController.h"
 #import "DWProfileViewController.h"
 #import "DWSettingStore.h"
+#import "UIApplication+TopController.h"
 
 typedef NS_ENUM(NSUInteger, DWSearchSectionType) {
     DWSearchSectionTypeAccounts          = 0,
@@ -71,15 +72,24 @@ typedef NS_ENUM(NSUInteger, DWSearchSectionType) {
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? UIInterfaceOrientationMaskPortrait : [topController supportedInterfaceOrientations];
 }
 
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? NO : [topController shouldAutorotate];
 }
 
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
 
 
 - (void)didReceiveMemoryWarning {

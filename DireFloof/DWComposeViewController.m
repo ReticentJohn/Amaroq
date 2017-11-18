@@ -19,6 +19,7 @@
 #import "DWSettingStore.h"
 #import "DWSearchTableViewCell.h"
 #import "DWDraftStore.h"
+#import "UIApplication+TopController.h"
 
 typedef NS_ENUM(NSUInteger, DWPrivacyType) {
     DWPrivacyTypeDirect        = 0,
@@ -323,15 +324,24 @@ static NSInteger mediaUploadLimit = 4;
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? UIInterfaceOrientationMaskPortrait : [topController supportedInterfaceOrientations];
 }
 
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? NO : [topController shouldAutorotate];
 }
 
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
 
 
 - (void)didReceiveMemoryWarning {

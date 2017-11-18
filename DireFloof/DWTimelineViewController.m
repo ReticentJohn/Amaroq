@@ -19,6 +19,7 @@
 #import "UIViewController+NearestNavigationController.h"
 #import "DWSettingStore.h"
 #import "UIViewController+WebNavigation.h"
+#import "UIApplication+TopController.h"
 
 IB_DESIGNABLE
 @interface DWTimelineViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>
@@ -137,13 +138,23 @@ IB_DESIGNABLE
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? UIInterfaceOrientationMaskPortrait : [topController supportedInterfaceOrientations];
 }
 
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? NO : [topController shouldAutorotate];
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 

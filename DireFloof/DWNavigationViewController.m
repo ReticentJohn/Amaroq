@@ -10,7 +10,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #import "DWNavigationViewController.h"
-
+#import "UIApplication+TopController.h"
 
 @interface InteractivePopGestureDelegate : NSObject <UIGestureRecognizerDelegate>
 
@@ -70,13 +70,23 @@
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? UIInterfaceOrientationMaskPortrait : [topController supportedInterfaceOrientations];
 }
 
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? NO : [topController shouldAutorotate];
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 

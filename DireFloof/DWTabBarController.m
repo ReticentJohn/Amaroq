@@ -19,6 +19,7 @@
 #import "DWNotificationsViewController.h"
 #import "DWAppearanceProxies.h"
 #import "DWSettingStore.h"
+#import "UIApplication+TopController.h"
 
 typedef NS_ENUM(NSUInteger, DWTabItem) {
     DWTabItemHome = 0,
@@ -81,13 +82,23 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? UIInterfaceOrientationMaskPortrait : [topController supportedInterfaceOrientations];
 }
 
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    UIViewController *topController = [[UIApplication sharedApplication] topController];
+    
+    return topController == self ? NO : [topController shouldAutorotate];
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 
