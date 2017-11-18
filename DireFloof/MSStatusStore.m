@@ -312,16 +312,16 @@ static NSUInteger maxUploadSize = 8 * 1024 * 1024;
                     self.progressBlock(totalProgress);
                 }
                 
-                NSString *extension = @"";
+                /*NSString *extension = @"";
                 if ([info objectForKey:@"PHImageFileURLKey"]) {
                     NSURL *path = [info objectForKey:@"PHImageFileURLKey"];
                     extension = [path pathExtension];
-                }
+                }*/
                 
                 NSString *filename = @"file";
-                if (extension.length) {
+                /*if (extension.length) {
                     filename = [filename stringByAppendingPathExtension:extension];
-                }
+                }*/
                 NSString *MIME = @"image/jpeg"; // We're doing our own image optimization which is going to muck around and turn everything into jpegs, as much as it pains me //(__bridge NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)dataUTI, kUTTagClassMIMEType);
                 
                 UIImage *imageToUpload = [[UIImage imageWithData:imageData] resizedImageToFitInSize:CGSizeMake(1024.0f, 1024.0f) scaleIfSmaller:NO];
