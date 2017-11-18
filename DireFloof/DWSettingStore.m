@@ -194,7 +194,8 @@
     
     [urlCache removeAllCachedResponses];
     [imageDownloader.imageCache removeAllImages];
-    [[SDImageCache sharedImageCache] clearDisk];
+    [[SDImageCache sharedImageCache] clearMemory];
+    [[SDImageCache sharedImageCache] clearDiskOnCompletion:nil];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_PURGE_CACHE_NOTIFICATION object:nil];
 }

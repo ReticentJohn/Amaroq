@@ -48,6 +48,7 @@
 @property (nonatomic, strong) MHBarButtonItem          *leftBarButton;
 @property (nonatomic, strong) MHBarButtonItem          *rightBarButton;
 @property (nonatomic, strong) MHBarButtonItem          *playStopBarButton;
+@property (nonatomic)         BOOL                     shouldReactOnArrows;
 @end
 
 @implementation MHGalleryImageViewerViewController
@@ -56,6 +57,7 @@
     [super viewDidAppear:animated];
     
     self.navigationController.delegate = self;
+	self.shouldReactOnArrows = YES;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -176,7 +178,11 @@
     [self.toolbar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.view.mas_left);
         make.right.mas_equalTo(self.view.mas_right);
-        make.bottom.mas_equalTo(self.view.mas_bottom);
+		if (@available(iOS 11.0, *)) {
+			make.bottom.mas_equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+		} else {
+			make.bottom.mas_equalTo(self.view.mas_bottom);
+		}
     }];
     
     self.topSuperView = [MHGradientView.alloc initWithDirection:MHGradientDirectionBottomToTop andCustomization:self.UICustomization];
@@ -282,7 +288,11 @@
     [self.toolbar mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.view.mas_left);
         make.right.mas_equalTo(self.view.mas_right);
-        make.bottom.mas_equalTo(self.view.mas_bottom);
+		if (@available(iOS 11.0, *)) {
+			make.bottom.mas_equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+		} else {
+			make.bottom.mas_equalTo(self.view.mas_bottom);
+		}
     }];
     [self.bottomSuperView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(self.toolbar.mas_top);
@@ -597,6 +607,9 @@
 }
 
 -(void)leftPressed:(id)sender{
+	if (!self.shouldReactOnArrows) { return; }
+	self.shouldReactOnArrows = NO;
+	
     self.rightBarButton.enabled = YES;
     
     MHImageViewController *theCurrentViewController = self.pageViewController.viewControllers.firstObject;
@@ -612,6 +625,7 @@
         self.leftBarButton.enabled = NO;
     }
     if (!imageViewController) {
+		self.shouldReactOnArrows = YES;
         return;
     }
     
@@ -621,10 +635,14 @@
         weakSelf.pageIndex = imageViewController.pageIndex;
         [weakSelf updateToolBarForItem:[weakSelf itemForIndex:weakSelf.pageIndex]];
         [weakSelf showCurrentIndex:weakSelf.pageIndex];
+		weakSelf.shouldReactOnArrows = YES;
     }];
 }
 
 -(void)rightPressed:(id)sender{
+	if (!self.shouldReactOnArrows) { return; }
+	self.shouldReactOnArrows = NO;
+
     self.leftBarButton.enabled =YES;
     
     MHImageViewController *theCurrentViewController = self.pageViewController.viewControllers.firstObject;
@@ -640,6 +658,7 @@
         self.rightBarButton.enabled = NO;
     }
     if (!imageViewController) {
+		self.shouldReactOnArrows = YES;
         return;
     }
     
@@ -649,6 +668,7 @@
         weakSelf.pageIndex = imageViewController.pageIndex;
         [weakSelf updateToolBarForItem:[weakSelf itemForIndex:weakSelf.pageIndex]];
         [weakSelf showCurrentIndex:weakSelf.pageIndex];
+		weakSelf.shouldReactOnArrows = YES;
     }];
 }
 

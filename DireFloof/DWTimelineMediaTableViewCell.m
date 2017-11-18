@@ -16,6 +16,7 @@
 #import <CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "DWTimelineMediaTableViewCell.h"
 #import "DWMediaCollectionViewCell.h"
 #import "DWIntrinsicCollectionView.h"
@@ -207,10 +208,9 @@
                 mediaURL = [cachedURL absoluteString];
             }
         }
-        
-
 
         MHGalleryItem *photo = [MHGalleryItem itemWithURL:mediaURL galleryType:media.type == MSMediaTypeImage ? MHGalleryTypeImage : MHGalleryTypeVideo];
+        photo.thumbnailURL = media.preview_url;
         [photos addObject:photo];
     }
     
@@ -342,7 +342,7 @@
 
     cell.mediaImageView.accessibilityLabel = media._description;
     cell.mediaImageView.isAccessibilityElement = media._description ? YES : NO;
-    [cell.mediaImageView setImageWithURL:[NSURL URLWithString:media.preview_url ? media.preview_url : media.remote_url] placeholderImage:[[DWMediaStore sharedStore] placeholderImage]];
+    [cell.mediaImageView sd_setImageWithURL:[NSURL URLWithString:media.preview_url ? media.preview_url : media.remote_url] placeholderImage:[[DWMediaStore sharedStore] placeholderImage]];
 }
 
 @end
