@@ -26,6 +26,7 @@ target 'DireFloof' do
   pod 'RMPickerViewController', '~> 2.2.1'
   pod 'OAuth2', git: 'https://github.com/ReticentJohn/OAuth2-for-iOS.git', branch: 'master'
   pod 'ActiveLabel'
+  pod 'UIImage-Resize'
 
 post_install do | installer |
     require 'fileutils'

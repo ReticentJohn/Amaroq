@@ -10,6 +10,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #import <Photos/Photos.h>
+#import <UIImage_Resize/UIImage+Resize.h>
 #import "MSStatusStore.h"
 #import "MSAPIClient.h"
 #import "MSAppStore.h"
@@ -321,68 +322,87 @@ static NSUInteger maxUploadSize = 8 * 1024 * 1024;
                 if (extension.length) {
                     filename = [filename stringByAppendingPathExtension:extension];
                 }
-                NSString *MIME = (__bridge NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)dataUTI, kUTTagClassMIMEType);
+                NSString *MIME = @"image/jpeg"; // We're doing our own image optimization which is going to muck around and turn everything into jpegs, as much as it pains me //(__bridge NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)dataUTI, kUTTagClassMIMEType);
                 
-                [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:@"media" parameters:@{@"description": mediaDescription} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+                UIImage *imageToUpload = [[UIImage imageWithData:imageData] resizedImageToFitInSize:CGSizeMake(1024.0f, 1024.0f) scaleIfSmaller:NO];
+                CGFloat compressionRate = 1.0f;
+                NSData *optimizedImageData = UIImageJPEGRepresentation(imageToUpload, compressionRate);
+                
+                while (optimizedImageData.length > maxUploadSize) {
+                    compressionRate = compressionRate - 0.1f;
+                    optimizedImageData = UIImageJPEGRepresentation(imageToUpload, compressionRate);
                     
-                    [formData appendPartWithFileData:imageData name:@"file" fileName:filename mimeType:MIME];
-                } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                    
-                    totalProgress += 1.0f/(CGFloat)numberToUpload * 0.5f;
-                    
-                    if (self.progressBlock) {
-                        self.progressBlock(totalProgress);
+                    if (compressionRate <= 0.0f) {
+                        break;
                     }
-                    
-                    numberUploaded += 1;
-                    
-                    if (mediaIds.count > uploadIndex) {
-                        [mediaIds insertObject:[responseObject objectForKey:@"id"] atIndex:uploadIndex];
-                        [mediaUrls insertObject:[responseObject objectForKey:@"text_url"] atIndex:uploadIndex];
+                }
+                
+                if (compressionRate <= 0.0f) {
+                    if (completion != nil) {
+                        completion(NO, nil, nil);
                     }
-                    else
-                    {
-                        [mediaIds addObject:[responseObject objectForKey:@"id"]];
-                        [mediaUrls addObject:[responseObject objectForKey:@"text_url"]];
-                    }
-                    
-                    if (numberUploaded + numberFailed >= numberToUpload) {
-                        if (numberFailed > 0) {
-                            if (completion != nil) {
-                                completion(NO, nil, nil);
-                            }
+                }
+                else
+                {
+                    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:@"media" parameters:@{@"description": mediaDescription} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+                        
+                        [formData appendPartWithFileData:optimizedImageData name:@"file" fileName:filename mimeType:MIME];
+                    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                        
+                        totalProgress += 1.0f/(CGFloat)numberToUpload * 0.5f;
+                        
+                        if (self.progressBlock) {
+                            self.progressBlock(totalProgress);
+                        }
+                        
+                        numberUploaded += 1;
+                        
+                        if (mediaIds.count > uploadIndex) {
+                            [mediaIds insertObject:[responseObject objectForKey:@"id"] atIndex:uploadIndex];
+                            [mediaUrls insertObject:[responseObject objectForKey:@"text_url"] atIndex:uploadIndex];
                         }
                         else
                         {
-                            if (completion != nil) {
-                                completion(YES, mediaIds, mediaUrls);
+                            [mediaIds addObject:[responseObject objectForKey:@"id"]];
+                            [mediaUrls addObject:[responseObject objectForKey:@"text_url"]];
+                        }
+                        
+                        if (numberUploaded + numberFailed >= numberToUpload) {
+                            if (numberFailed > 0) {
+                                if (completion != nil) {
+                                    completion(NO, nil, nil);
+                                }
+                            }
+                            else
+                            {
+                                if (completion != nil) {
+                                    completion(YES, mediaIds, mediaUrls);
+                                }
                             }
                         }
-                    }
-                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                    
-                    numberFailed += 1;
-                    
-                    if (numberUploaded + numberFailed >= numberToUpload) {
-                        if (numberFailed > 0) {
-                            if (completion != nil) {
-                                completion(NO, nil, nil);
+                    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                        
+                        numberFailed += 1;
+                        
+                        if (numberUploaded + numberFailed >= numberToUpload) {
+                            if (numberFailed > 0) {
+                                if (completion != nil) {
+                                    completion(NO, nil, nil);
+                                }
+                            }
+                            else
+                            {
+                                if (completion != nil) {
+                                    completion(YES, mediaIds, mediaUrls);
+                                }
                             }
                         }
-                        else
-                        {
-                            if (completion != nil) {
-                                completion(YES, mediaIds, mediaUrls);
-                            }
-                        }
-                    }
-                }];
-                
+                    }];
+                }
             }];
         }
         else
         {
-        
             PHVideoRequestOptions *options = [PHVideoRequestOptions new];
             options.version = PHVideoRequestOptionsVersionCurrent;
             options.deliveryMode = PHVideoRequestOptionsDeliveryModeAutomatic;

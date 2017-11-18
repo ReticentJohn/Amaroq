@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28585B7041AAE797AF9DC0EE039F0CF7"
-               BuildableName = "twitter_text.framework"
-               BlueprintName = "twitter-text"
+               BlueprintIdentifier = "524DF53D4611C9928BF87F1A727A6275"
+               BuildableName = "UIImage_Resize.framework"
+               BlueprintName = "UIImage-Resize"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28585B7041AAE797AF9DC0EE039F0CF7"
-            BuildableName = "twitter_text.framework"
-            BlueprintName = "twitter-text"
+            BlueprintIdentifier = "524DF53D4611C9928BF87F1A727A6275"
+            BuildableName = "UIImage_Resize.framework"
+            BlueprintName = "UIImage-Resize"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

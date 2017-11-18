@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A39605FA17AB903460BF41D9D05444DE'
+               BlueprintIdentifier = '89990D847217E1B8F03FC6A878C101D3'
                BlueprintName = 'RMPickerViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'RMPickerViewController.framework'>
