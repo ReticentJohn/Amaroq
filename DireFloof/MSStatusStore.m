@@ -22,6 +22,10 @@
 
 @implementation MSStatusStore
 
+#pragma mark - Constants
+
+static NSUInteger maxUploadSize = 8 * 1024 * 1024;
+
 #pragma mark - Class Methods
 
 + (MSStatusStore *)sharedStore
@@ -286,7 +290,12 @@
     NSMutableArray *mediaIds = [@[] mutableCopy];
     NSMutableArray *mediaUrls = [@[] mutableCopy];
     
-    for (PHAsset *mediaObject in media) {
+    for (NSDictionary *mediaDict in media) {
+        
+        PHAsset *mediaObject = [mediaDict objectForKey:MS_MEDIA_ATTACHMENT_MEDIA_KEY];
+        NSString *mediaDescription = [mediaDict objectForKey:MS_MEDIA_ATTACHMENT_DESCRIPTION_KEY];
+        
+        NSUInteger uploadIndex = [media indexOfObject:mediaDict];
         
         if (mediaObject.mediaType == PHAssetMediaTypeImage) {
             PHImageRequestOptions *options = [PHImageRequestOptions new];
@@ -314,7 +323,7 @@
                 }
                 NSString *MIME = (__bridge NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)dataUTI, kUTTagClassMIMEType);
                 
-                [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:@"media" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+                [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:@"media" parameters:@{@"description": mediaDescription} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                     
                     [formData appendPartWithFileData:imageData name:@"file" fileName:filename mimeType:MIME];
                 } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -326,8 +335,16 @@
                     }
                     
                     numberUploaded += 1;
-                    [mediaIds addObject:[responseObject objectForKey:@"id"]];
-                    [mediaUrls addObject:[responseObject objectForKey:@"text_url"]];
+                    
+                    if (mediaIds.count > uploadIndex) {
+                        [mediaIds insertObject:[responseObject objectForKey:@"id"] atIndex:uploadIndex];
+                        [mediaUrls insertObject:[responseObject objectForKey:@"text_url"] atIndex:uploadIndex];
+                    }
+                    else
+                    {
+                        [mediaIds addObject:[responseObject objectForKey:@"id"]];
+                        [mediaUrls addObject:[responseObject objectForKey:@"text_url"]];
+                    }
                     
                     if (numberUploaded + numberFailed >= numberToUpload) {
                         if (numberFailed > 0) {

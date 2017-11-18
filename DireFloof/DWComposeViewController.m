@@ -45,6 +45,11 @@ typedef NS_ENUM(NSUInteger, DWPrivacyType) {
 @property (nonatomic, weak) IBOutlet UIImageView *image3;
 @property (nonatomic, weak) IBOutlet UIImageView *image4;
 
+@property (nonatomic, weak) IBOutlet UITextField *image1DescriptionField;
+@property (nonatomic, weak) IBOutlet UITextField *image2DescriptionField;
+@property (nonatomic, weak) IBOutlet UITextField *image3DescriptionField;
+@property (nonatomic, weak) IBOutlet UITextField *image4DescriptionField;
+
 @property (nonatomic, weak) IBOutlet YLProgressBar *progressBar;
 
 @property (nonatomic, weak) IBOutlet UIView *replyToView;
@@ -83,6 +88,7 @@ typedef NS_ENUM(NSUInteger, DWPrivacyType) {
 #pragma mark - Constants
 
 static NSInteger contentLengthLimit = 500;
+static NSInteger descriptionLengthLimit = 420;
 static NSInteger mediaUploadLimit = 4;
 
 #pragma mark - Actions
@@ -109,7 +115,25 @@ static NSInteger mediaUploadLimit = 4;
     self.progressBar.hidden = NO;
     [self.statusUploadingIndicator startAnimating];
     
-    [[MSStatusStore sharedStore] postStatusWithText:self.contentField.text inReplyToId:self.replyToStatus ? self.replyToStatus._id : nil withMedia:(self.imagesToUpload.count ? self.imagesToUpload : nil) isSensitive:(self.sensitiveMediaSwitch.on && !self.sensitiveMediaSwitch.superview.hidden) withVisibility:self.privacyState andSpoilerText:(self.contentWarningSwitch.on ? self.contentWarningField.text : nil) withProgress:^(CGFloat progress) {
+    // Construct a different array to hold both images being uploaded and their associated description
+    NSMutableArray *media = [NSMutableArray array];
+    if (!self.image1.superview.isHidden) {
+        [media addObject:@{MS_MEDIA_ATTACHMENT_MEDIA_KEY:[self.imagesToUpload objectAtIndex:0], MS_MEDIA_ATTACHMENT_DESCRIPTION_KEY: self.image1DescriptionField.text ? self.image1DescriptionField.text : @""}];
+    }
+    
+    if (!self.image2.superview.isHidden) {
+        [media addObject:@{MS_MEDIA_ATTACHMENT_MEDIA_KEY:[self.imagesToUpload objectAtIndex:1], MS_MEDIA_ATTACHMENT_DESCRIPTION_KEY: self.image2DescriptionField.text ? self.image2DescriptionField.text : @""}];
+    }
+    
+    if (!self.image3.superview.isHidden) {
+        [media addObject:@{MS_MEDIA_ATTACHMENT_MEDIA_KEY:[self.imagesToUpload objectAtIndex:2], MS_MEDIA_ATTACHMENT_DESCRIPTION_KEY: self.image3DescriptionField.text ? self.image3DescriptionField.text : @""}];
+    }
+    
+    if (!self.image4.superview.isHidden) {
+        [media addObject:@{MS_MEDIA_ATTACHMENT_MEDIA_KEY:[self.imagesToUpload objectAtIndex:3], MS_MEDIA_ATTACHMENT_DESCRIPTION_KEY: self.image4DescriptionField.text ? self.image4DescriptionField.text : @""}];
+    }
+    
+    [[MSStatusStore sharedStore] postStatusWithText:self.contentField.text inReplyToId:self.replyToStatus ? self.replyToStatus._id : nil withMedia:(media.count ? media : nil) isSensitive:(self.sensitiveMediaSwitch.on && !self.sensitiveMediaSwitch.superview.hidden) withVisibility:self.privacyState andSpoilerText:(self.contentWarningSwitch.on ? self.contentWarningField.text : nil) withProgress:^(CGFloat progress) {
     
         [self.progressBar setProgress:progress animated:YES];
         
@@ -404,9 +428,15 @@ static NSInteger mediaUploadLimit = 4;
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    NSInteger charactersRemaining = contentLengthLimit - [self lengthOfToot:self.contentField.text] - (self.contentWarningSwitch.on ? [[textField.text stringByReplacingCharactersInRange:range withString:string] length] : 0);
-    
-    self.contentLengthLabel.text = [NSString stringWithFormat:@"%li", (long)charactersRemaining];
+    if (textField == self.contentWarningField) {
+        NSInteger charactersRemaining = contentLengthLimit - [self lengthOfToot:self.contentField.text] - (self.contentWarningSwitch.on ? [[textField.text stringByReplacingCharactersInRange:range withString:string] length] : 0);
+        
+        self.contentLengthLabel.text = [NSString stringWithFormat:@"%li", (long)charactersRemaining];
+    }
+    else {
+        // We're looking at a media description field, which have their own independent limit
+        return [[textField.text stringByReplacingCharactersInRange:range withString:string] length] <= descriptionLengthLimit;
+    }
     
     return YES;
 }
@@ -653,7 +683,11 @@ static NSInteger mediaUploadLimit = 4;
     self.replyToDisplayNameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
     self.warningLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     self.contentWarningField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    
+    self.image1DescriptionField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.image2DescriptionField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.image3DescriptionField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.image4DescriptionField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+
     self.privacyButton.titleLabel.numberOfLines = 2;
     self.contentWarningField.text = @"";
     self.contentField.text = @"";
