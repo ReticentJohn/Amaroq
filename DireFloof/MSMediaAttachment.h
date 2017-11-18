@@ -19,6 +19,7 @@
 @property (nonatomic, strong, readonly) NSString *url;
 @property (nonatomic, strong, readonly) NSString *preview_url;
 @property (nonatomic, strong, readonly) NSString *remote_url;
+@property (nonatomic, strong, readonly) NSString *_description;
 @property (nonatomic, assign, readonly) MSMediaType type;
 
 

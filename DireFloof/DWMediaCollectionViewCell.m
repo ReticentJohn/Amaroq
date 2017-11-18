@@ -35,12 +35,14 @@
     [super prepareForReuse];
     
     self.mediaImageView.image = nil;
+    self.mediaImageView.accessibilityLabel = nil;
     self.playImageView.hidden = YES;
     
     if (self.gpuVideoImageView) {
         [self.gpuVideo removeTarget:self.gpuVideoImageView];
         [self.gpuVideo cancelProcessing];
         
+        self.gpuVideoImageView.accessibilityLabel = nil;
         self.gpuVideoImageView.backgroundColor = [UIColor clearColor];
         [self.gpuVideoImageView setBackgroundColorRed:0 green:0 blue:0 alpha:0];
         self.gpuVideoImageView.hidden = YES;

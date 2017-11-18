@@ -17,6 +17,7 @@
 @property (nonatomic, strong, readwrite) NSString *url;
 @property (nonatomic, strong, readwrite) NSString *preview_url;
 @property (nonatomic, strong, readwrite) NSString *remote_url;
+@property (nonatomic, strong, readwrite) NSString *_description;
 @property (nonatomic, assign, readwrite) MSMediaType type;
 
 @end
@@ -37,6 +38,7 @@
         
         self.preview_url = [params objectForKey:@"preview_url"];
         self.remote_url = [params objectForKey:@"remote_url"];
+        self._description = [params objectForKey:@"description"];
         
         NSString *type = [params objectForKey:@"type"];
         

@@ -298,6 +298,8 @@
                         
                         GPUImageView *gifVideoView = [[GPUImageView alloc] initWithFrame:cell.mediaImageView.frame];
                         gifVideoView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
+                        gifVideoView.accessibilityLabel = media._description;
+                        gifVideoView.isAccessibilityElement = media._description ? YES : NO;
                         
                         GPUImageMovie *gifVideo = [[GPUImageMovie alloc] initWithURL:localURL];
                         gifVideo.shouldRepeat = YES;
@@ -338,7 +340,8 @@
         [cell.contentView bringSubviewToFront:cell.playImageView];
     }
 
-    
+    cell.mediaImageView.accessibilityLabel = media._description;
+    cell.mediaImageView.isAccessibilityElement = media._description ? YES : NO;
     [cell.mediaImageView setImageWithURL:[NSURL URLWithString:media.preview_url ? media.preview_url : media.remote_url] placeholderImage:[[DWMediaStore sharedStore] placeholderImage]];
 }
 
