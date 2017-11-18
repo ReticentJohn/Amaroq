@@ -29,6 +29,7 @@ IB_DESIGNABLE
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *pageLoadingView;
+@property (nonatomic, weak) IBOutlet UIButton *scrollToTopButton;
 
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *publicTimelineSwitch;
 @property (nonatomic, weak) IBOutlet UINavigationItem *publicTimelineNavigationItem;
@@ -54,6 +55,10 @@ IB_DESIGNABLE
 {
     if ([self.tableView numberOfRowsInSection:0]) {
         [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    }
+    
+    if (!self.scrollToTopButton.hidden) {
+        [self hideScrollToTopButton];
     }
 }
 
@@ -95,6 +100,7 @@ IB_DESIGNABLE
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveCleanupNotification:) name:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(adjustFonts) name:UIContentSizeCategoryDidChangeNotification object:nil];
 }
 
 
@@ -117,13 +123,8 @@ IB_DESIGNABLE
 {
     [super viewDidAppear:animated];
     
-    if ([[self.tableView indexPathsForVisibleRows] containsObject:[NSIndexPath indexPathForRow:0 inSection:0]]) {
-        [self refreshData];
-    }
-    else
-    {
-        [self.tableView reloadData];
-    }
+    [self.tableView reloadData];
+
 }
 
 
@@ -397,6 +398,15 @@ IB_DESIGNABLE
 }
 
 
+#pragma mark - UIScrollView Delegate Methods
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    if (!self.scrollToTopButton.hidden) {
+        [self hideScrollToTopButton];
+    }
+}
+
+
 #pragma mark - DWTimelineTableViewCell Delegate Methods
 
 - (void)timelineCell:(DWTimelineTableViewCell *)cell didDeleteStatus:(MSStatus *)status
@@ -510,6 +520,14 @@ IB_DESIGNABLE
         self.publicTimelineSwitch.accessibilityLabel = NSLocalizedString(@"Local timeline", @"Local timeline");
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
     }
+    
+    [self.scrollToTopButton setTitle:[[DWSettingStore sharedStore] awooMode] ? NSLocalizedString(@"See new awoos", @"See new awoos") : NSLocalizedString(@"See new toots", @"See new toots") forState:UIControlStateNormal];
+}
+
+
+- (void)adjustFonts
+{
+    self.scrollToTopButton.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
 }
 
 
@@ -533,6 +551,7 @@ IB_DESIGNABLE
                 
                 if (success) {
                     BOOL firstLoad = self.timeline == nil;
+                    MSStatus *firstStatus = firstLoad ? nil : self.timeline.statuses.firstObject;
                     self.timeline = timeline;
                     [self.tableView reloadData];
                     
@@ -541,6 +560,20 @@ IB_DESIGNABLE
                         [self.tableView beginUpdates];
                         [self.tableView endUpdates];
                         [UIView setAnimationsEnabled:YES];
+                    }
+                    else if (firstStatus)
+                    {
+                        NSInteger indexOfLastStatus = [self.timeline.statuses indexOfObjectPassingTest:^BOOL(MSStatus  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                            return [obj._id isEqualToString:firstStatus._id];
+                        }];
+                        
+                        if (indexOfLastStatus != NSNotFound) {
+                            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexOfLastStatus inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+                            
+                            if (indexOfLastStatus != 0) {
+                                [self showScrollToTopButton];
+                            }
+                        }
                     }
                     
                 }
@@ -635,6 +668,7 @@ IB_DESIGNABLE
                 
                 if (success) {
                     BOOL firstLoad = self.timeline == nil;
+                    MSStatus *firstStatus = firstLoad ? nil : self.timeline.statuses.firstObject;
                     self.timeline = timeline;
                     [self.tableView reloadData];
                     
@@ -643,6 +677,20 @@ IB_DESIGNABLE
                         [self.tableView beginUpdates];
                         [self.tableView endUpdates];
                         [UIView setAnimationsEnabled:YES];
+                    }
+                    else if (firstStatus)
+                    {
+                        NSInteger indexOfLastStatus = [self.timeline.statuses indexOfObjectPassingTest:^BOOL(MSStatus  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                            return [obj._id isEqualToString:firstStatus._id];
+                        }];
+                        
+                        if (indexOfLastStatus != NSNotFound) {
+                            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexOfLastStatus inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+                            
+                            if (indexOfLastStatus != 0) {
+                                [self showScrollToTopButton];
+                            }
+                        }
                     }
                     
                 }
@@ -702,6 +750,31 @@ IB_DESIGNABLE
         }];
     }
     
+}
+
+
+- (void)showScrollToTopButton {
+    
+    if (!self.scrollToTopButton.hidden) {
+        return;
+    }
+    
+    self.scrollToTopButton.alpha = 0.0f;
+    self.scrollToTopButton.hidden = NO;
+    
+    [UIView animateWithDuration:0.7f animations:^{
+        self.scrollToTopButton.alpha = 1.0f;
+    }];
+}
+
+
+- (void)hideScrollToTopButton {
+    
+    [UIView animateWithDuration:0.35f animations:^{
+        self.scrollToTopButton.alpha = 0.0f;
+    } completion:^(BOOL finished) {
+        self.scrollToTopButton.hidden = YES;
+    }];
 }
 
 @end
