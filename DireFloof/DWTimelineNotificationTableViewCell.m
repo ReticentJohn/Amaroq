@@ -61,6 +61,7 @@
     self.notificationAuthorLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
 }
 
+
 #pragma mark - Getter/Setter Methods
 
 - (void)setNotification:(MSNotification *)notification

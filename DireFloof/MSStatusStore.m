@@ -26,6 +26,7 @@
 #pragma mark - Constants
 
 static NSUInteger maxUploadSize = 8 * 1024 * 1024;
+static CGFloat maxDimensions = 1024.0f;
 
 #pragma mark - Class Methods
 
@@ -312,19 +313,10 @@ static NSUInteger maxUploadSize = 8 * 1024 * 1024;
                     self.progressBlock(totalProgress);
                 }
                 
-                /*NSString *extension = @"";
-                if ([info objectForKey:@"PHImageFileURLKey"]) {
-                    NSURL *path = [info objectForKey:@"PHImageFileURLKey"];
-                    extension = [path pathExtension];
-                }*/
-                
                 NSString *filename = @"file";
-                /*if (extension.length) {
-                    filename = [filename stringByAppendingPathExtension:extension];
-                }*/
-                NSString *MIME = @"image/jpeg"; // We're doing our own image optimization which is going to muck around and turn everything into jpegs, as much as it pains me //(__bridge NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)dataUTI, kUTTagClassMIMEType);
+                NSString *MIME = @"image/jpeg"; // We're doing our own image optimization which is going to muck around and turn everything into jpegs, as much as it pains me
                 
-                UIImage *imageToUpload = [[UIImage imageWithData:imageData] resizedImageToFitInSize:CGSizeMake(1024.0f, 1024.0f) scaleIfSmaller:NO];
+                UIImage *imageToUpload = [[UIImage imageWithData:imageData] resizedImageToFitInSize:CGSizeMake(maxDimensions, maxDimensions) scaleIfSmaller:NO];
                 CGFloat compressionRate = 1.0f;
                 NSData *optimizedImageData = UIImageJPEGRepresentation(imageToUpload, compressionRate);
                 
@@ -500,11 +492,8 @@ static NSUInteger maxUploadSize = 8 * 1024 * 1024;
                                 }
                             }
                         }];
-
-                        
                     });
                 }];
-                
             }];
         }
     }

@@ -134,7 +134,6 @@
                         }
                     }];
                 }
-                
             }];
         }
         else
@@ -176,7 +175,6 @@
                                 }
                             }];
                         }
-                        
                     }];
                 }
                 else
@@ -207,7 +205,6 @@
                 }
             }];
         }
-        
     }
     else if (self.isBlocked)
     {
@@ -262,10 +259,8 @@
                 [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                 [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];
             }
-            
         }];
     }
-    
 }
 
 
@@ -347,8 +342,6 @@
                 [self.followerAvatarImageView stopAnimating];
             }
         } failure:nil];
-        
-       // [self.followerAvatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? follower.avatar_static : follower.avatar] placeholderImage:nil];
     }
     
     if (follower.display_name) {

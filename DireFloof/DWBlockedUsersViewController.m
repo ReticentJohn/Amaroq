@@ -58,6 +58,7 @@
     }];
 }
 
+
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
@@ -188,7 +189,6 @@
     refreshControl.tintColor = [UIColor whiteColor];
     refreshControl.tag = 9001;
     [refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
-    
     
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
         [self.tableView addSubview:refreshControl];
@@ -351,7 +351,6 @@
                 }
             }];
         }
-        
     }
 }
 

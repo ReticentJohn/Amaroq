@@ -474,6 +474,7 @@ IB_DESIGNABLE
     }];
 }
 
+
 - (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectURL:(NSURL *)url
 {
     [self openWebURL:url];
@@ -501,7 +502,6 @@ IB_DESIGNABLE
 - (void)configureViews
 {
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    //self.tableView.estimatedRowHeight = 96.0f*6.0f; // 96.0 is the original estimated height, for whatever reason iOS11 has become a hell of a lot more sensitive to a smaller estimated height, causing the scrollview offset to jump on page loads if there's a number of cells larger than 96.0. Usually excessive media posts.
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [UIColor whiteColor];
@@ -586,7 +586,6 @@ IB_DESIGNABLE
                             }
                         }
                     }
-                    
                 }
                 else
                 {
@@ -620,7 +619,6 @@ IB_DESIGNABLE
                         [self.tableView endUpdates];
                         [UIView setAnimationsEnabled:YES];
                     }
-                    
                 }
                 else
                 {
@@ -654,7 +652,6 @@ IB_DESIGNABLE
                         [self.tableView endUpdates];
                         [UIView setAnimationsEnabled:YES];
                     }
-                    
                 }
                 else
                 {
@@ -703,13 +700,11 @@ IB_DESIGNABLE
                             }
                         }
                     }
-                    
                 }
                 else
                 {
                 }
             });
-           
         }];
     }
 }
@@ -725,6 +720,7 @@ IB_DESIGNABLE
     {
         [self.tableView.refreshControl beginRefreshing];
     }
+    
     [self configureData];
 }
 
@@ -757,10 +753,8 @@ IB_DESIGNABLE
                 {
                 }
             });
-            
         }];
     }
-    
 }
 
 
@@ -788,4 +782,5 @@ IB_DESIGNABLE
     }];
 }
 
+// !
 @end

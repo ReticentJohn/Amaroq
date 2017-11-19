@@ -357,7 +357,6 @@
 - (void)configureViews
 {
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    //self.tableView.estimatedRowHeight = 96.0f*6.0f; // 96.0 is the original estimated height, for whatever reason iOS11 has become a hell of a lot more sensitive to a smaller estimated height, causing the scrollview offset to jump on page loads if there's a number of cells larger than 96.0. Usually excessive media posts.
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [UIColor whiteColor];
@@ -404,6 +403,7 @@
     {
         [self.tableView.refreshControl beginRefreshing];
     }
+    
     [[MSNotificationStore sharedStore] getNotificationsSinceId:nil withCompletion:^(BOOL success, MSTimeline *notifications, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
@@ -455,10 +455,8 @@
                 {
                 }
             });
-            
         }];
     }
-    
 }
 
 @end

@@ -94,8 +94,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
         
         if ([self.account.username isEqualToString:self.account.acct]) {
             [[MSUserStore sharedStore] followUserWithId:self.account._id withCompletion:^(BOOL success, NSError *error) {
-                
-                
                 if (success) {
                     self.loadedFollowedStatus = YES;
 
@@ -130,7 +128,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                         }
                     }];
                 }
-                
             }];
         }
         else
@@ -172,7 +169,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                                 }
                             }];
                         }
-                        
                     }];
                 }
                 else
@@ -204,7 +200,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 }
             }];
         }
-        
     }
     else
     {
@@ -228,7 +223,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                 [self presentViewController:alertController animated:YES completion:nil];
             }
-            
         }];
     }
 }
@@ -276,7 +270,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                             self.muting = YES;
                             [[NSNotificationCenter defaultCenter] postNotificationName:DW_NEEDS_STATUS_CLEANUP_NOTIFICATION object:self.account];
                         });
-                        
                     }
                     else
                     {
@@ -367,16 +360,13 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                         [self presentViewController:alertController animated:YES completion:nil];
                     }
                 }];
-                
             }]];
         }
-
     }
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel") style:UIAlertActionStyleCancel handler:nil]];
     
     [[[UIApplication sharedApplication] topController] presentViewController:optionController animated:YES completion:nil];
-
 }
 
 
@@ -403,7 +393,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(adjustFonts) name:UIContentSizeCategoryDidChangeNotification object:nil];
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    //self.tableView.estimatedRowHeight = 96.0f*6.0f; // 96.0 is the original estimated height, for whatever reason iOS11 has become a hell of a lot more sensitive to a smaller estimated height, causing the scrollview offset to jump on page loads if there's a number of cells larger than 96.0. Usually excessive media posts.
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [UIColor whiteColor];
@@ -554,7 +543,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             if (success && [[self.tableView indexPathsForVisibleRows] containsObject:[NSIndexPath indexPathForRow:0 inSection:0]]) {
                 [self refreshData];
             }
-            
         };
     }
     else if ([segue.identifier isEqualToString:@"ReplySegue"])
@@ -574,7 +562,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             if (success && [[self.tableView indexPathsForVisibleRows] containsObject:[NSIndexPath indexPathForRow:0 inSection:0]]) {
                 [self refreshData];
             }
-            
         };
     }
     else if ([segue.identifier isEqualToString:@"ReportSegue"])
@@ -650,7 +637,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             if (success && [[self.tableView indexPathsForVisibleRows] containsObject:[NSIndexPath indexPathForRow:0 inSection:0]]) {
                 [self refreshData];
             }
-            
         };
     }
 }
@@ -750,7 +736,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
         default:
             break;
     }
-
 }
 
 
@@ -832,6 +817,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     }];
 }
 
+
 - (void)timelineCell:(DWTimelineTableViewCell *)cell didSelectURL:(NSURL *)url
 {
     [self openWebURL:url];
@@ -858,7 +844,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             [self.avatarImageView stopAnimating];
         }
     } failure:nil];
-    //[self.avatarImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? self.account.avatar_static : self.account.avatar]];
     
     [self.headerImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? self.account.header_static : self.account.header]] placeholderImage:nil success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
         self.headerImageView.image = image;
@@ -866,8 +851,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             [self.headerImageView stopAnimating];
         }
     } failure:nil];
-    
-    //[self.headerImageView setImageWithURL:[NSURL URLWithString:[[DWSettingStore sharedStore] disableGifPlayback] ? self.account.header_static : self.account.header]];
     
     self.displayNameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle3];
     self.usernameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
@@ -985,8 +968,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             {
             }
         });
-        
-        
     }];
     
     [[MSTimelineStore sharedStore] getStatusesForUserId:self.account._id withCompletion:^(BOOL success, MSTimeline *statuses, NSError *error) {
@@ -1005,14 +986,12 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                         [self.tableView endUpdates];
                         [UIView setAnimationsEnabled:YES];
                     }
-                    
                 }
             }
             else
             {
             }
         });
-        
     }];
     
     [[MSUserStore sharedStore] getFollowersForUserWithId:self.account._id withCompletion:^(BOOL success, NSArray *followers, NSString *nextPageUrl, NSError *error) {
@@ -1030,7 +1009,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             {
             }
         });
-
     }];
     
     [[MSUserStore sharedStore] getFollowingForUserWithId:self.account._id withCompletion:^(BOOL success, NSArray *following, NSString *nextPageUrl, NSError *error) {
@@ -1048,7 +1026,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             {
             }
         });
-        
     }];
 }
 
@@ -1063,6 +1040,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     {
         [self.tableView.refreshControl beginRefreshing];
     }
+    
     [self configureData];
 }
 
@@ -1090,7 +1068,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                         {
                         }
                     });
-                    
                 }];
             }
         }
@@ -1120,7 +1097,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                         {
                         }
                     });
-                    
                 }];
             }
         }
@@ -1150,7 +1126,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                         {
                         }
                     });
-                    
                 }];
             }
         }
@@ -1222,7 +1197,6 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             cell.delegate = self;
             
             return cell;
-            
         }
     }
 }
@@ -1239,4 +1213,5 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     return cell;
 }
 
+// !!!!!!
 @end

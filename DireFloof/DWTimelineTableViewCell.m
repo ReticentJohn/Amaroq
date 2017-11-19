@@ -215,7 +215,6 @@
     }
     else
     {
-        
         [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Mention", @"Mention") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
             [self.delegate timelineCell:self didMentionUser:status.account.acct];
@@ -276,7 +275,6 @@
             
         }]];
     }
-    
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel") style:UIAlertActionStyleCancel handler:nil]];
     

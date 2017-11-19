@@ -150,39 +150,6 @@
 }
 
 
-/*- (void)getMentionsTimelineWithCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
-{
-    NSDictionary *params = nil;
-    
-    if (self.firstId) {
-        params = @{@"since_id": self.firstId};
-    }
-    else if (self.lastId)
-    {
-        params = @{@"max_id": self.lastId};
-    }
-    
-    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"timelines/mention" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        self.firstId = nil;
-        self.lastId = nil;
-        
-        NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
-        NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
-        
-        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject nextPageUrl:nextPageUrl];
-        
-        if (completion != nil) {
-            completion(YES, timeline, nil);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (completion != nil) {
-            completion(NO, nil, error);
-        }
-    }];
-}*/
-
-
 - (void)getHashtagTimelineForHashtag:(NSString *)hashtag withCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
 {
     NSDictionary *params = nil;

@@ -318,7 +318,6 @@
                         [[NSNotificationCenter defaultCenter] addObserver:cell.gpuVideo selector:@selector(cancelProcessing) name:DW_WILL_PURGE_CACHE_NOTIFICATION object:nil];
                         [[NSNotificationCenter defaultCenter] addObserver:cell.gpuVideo selector:@selector(removeAllTargets) name:DW_WILL_PURGE_CACHE_NOTIFICATION object:nil];
                     }
-                    
                 }
                 else
                 {
@@ -332,7 +331,6 @@
             [cell.contentView bringSubviewToFront:cell.mediaImageView];
             [cell.contentView bringSubviewToFront:cell.playImageView];
         }
-
     }
     else
     {

@@ -43,7 +43,6 @@
     
     // Kicks the notification store to initialize the notification delegate on launch
     [DWNotificationStore sharedStore];
-    [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     
     return YES;
 }
@@ -108,7 +107,6 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
     completionHandler(UIBackgroundFetchResultNoData);
-    //[[DWNotificationStore sharedStore] checkForNotificationsWithCompletionHandler:completionHandler];
 }
 
 

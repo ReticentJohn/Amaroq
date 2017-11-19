@@ -24,6 +24,7 @@
 @property (nonatomic, strong, readonly) NSString *instance;
 @property (nonatomic, strong, readonly) NSArray *availableInstances;
 
+
 #pragma mark - Class Methods
 
 + (MSAppStore *)sharedStore;

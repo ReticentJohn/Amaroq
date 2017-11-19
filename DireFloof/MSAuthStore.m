@@ -427,33 +427,6 @@
     [[[UIApplication sharedApplication] topController] presentViewController:oauthController animated:YES completion:^{
         
     }];
-    
-    /*NSString *body = [NSString stringWithFormat:@"client_id=%@&client_secret=%@&grant_type=password&scope=read write follow", [[MSAppStore sharedStore] client_id], [[MSAppStore sharedStore] client_secret]];
-    
-    self.loginRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@oauth/token", [[MSAppStore sharedStore] base_url_string]]]];
-    [self.loginRequest setHTTPMethod:@"POST"];
-    [self.loginRequest setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
-    
-    if (!self.cancelButton) {
-        self.cancelButton = [[UIButton alloc] initWithFrame:CGRectMake([UIApplication sharedApplication].keyWindow.bounds.size.width - 79, 0, 79, 79)];
-        self.cancelButton.tintColor = [UIColor whiteColor];
-        [self.cancelButton setImage:[UIImage imageNamed:@"CloseIcon"] forState:UIControlStateNormal];
-        [self.cancelButton addTarget:self action:@selector(cancelWebviewLogin) forControlEvents:UIControlEventTouchUpInside];
-    }
-    
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
-    webView.delegate = self;
-    
-    webView.alpha = 0.0f;
-    self.cancelButton.alpha = 0.0f;
-    webView.tag = 1337;
-    webView.scrollView.bounces = NO;
-    [[[[UIApplication sharedApplication] topController] view] addSubview:webView];
-    [[[[UIApplication sharedApplication] topController] view] bringSubviewToFront:webView];
-    [[[[UIApplication sharedApplication] topController] view] addSubview:self.cancelButton];
-    [[[[UIApplication sharedApplication] topController] view] bringSubviewToFront:self.cancelButton];
-    
-    [webView loadRequest:self.loginRequest];*/
 }
 
 

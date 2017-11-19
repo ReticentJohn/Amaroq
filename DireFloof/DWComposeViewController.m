@@ -236,7 +236,6 @@ static NSInteger mediaUploadLimit = 4;
     if (status == PHAuthorizationStatusAuthorized || status == PHAuthorizationStatusRestricted) {
         [self presentImagePicker];
     }
-
 }
 
 
@@ -451,6 +450,7 @@ static NSInteger mediaUploadLimit = 4;
     return YES;
 }
 
+
 - (NSInteger)lengthOfToot:(NSString *)text {
     
     NSError *detectorError;
@@ -458,7 +458,7 @@ static NSInteger mediaUploadLimit = 4;
     
     // This shouldn't happen but we'll spit out some kind of warning
     if (detectorError != nil) {
-        NSLog(@"WARNING: Length of toot link data detector failed: %@", detectorError.description);
+        //NSLog(@"WARNING: Length of toot link data detector failed: %@", detectorError.description);
         return text.length;
     }
     
@@ -472,6 +472,7 @@ static NSInteger mediaUploadLimit = 4;
     
     return text.length - subtractedLength;
 }
+
 
 #pragma mark - GMImagePickerController Delegate Methods
 
@@ -951,4 +952,5 @@ static NSInteger mediaUploadLimit = 4;
     [self presentViewController:picker animated:YES completion:nil];
 }
 
+// !!!
 @end
