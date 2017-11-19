@@ -39,6 +39,7 @@ IB_DESIGNABLE
 @property (nonatomic, assign) BOOL loadingNextPage;
 
 @property (nonatomic, strong) NSMutableDictionary *cachedEstimatedHeights;
+@property (nonatomic, strong) NSDate *lastRefreshDate;
 
 @end
 
@@ -94,6 +95,7 @@ IB_DESIGNABLE
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.cachedEstimatedHeights = [NSMutableDictionary dictionary];
+    self.lastRefreshDate = [NSDate date];
     
     [self configureViews];
     [self configureData];
@@ -124,15 +126,19 @@ IB_DESIGNABLE
 {
     [super viewDidAppear:animated];
     
-    [self.tableView reloadData];
-
+    if (fabs([self.lastRefreshDate timeIntervalSinceNow]) > DW_MIN_REFRESH_SPAN) {
+        [self refreshData];
+    }
+    else
+    {
+        [self.tableView reloadData];
+    }
 }
 
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
 }
 
 
@@ -561,8 +567,11 @@ IB_DESIGNABLE
                 [self.pageLoadingView stopAnimating];
                 
                 if (success) {
+                    self.lastRefreshDate = [NSDate date];
                     BOOL firstLoad = self.timeline == nil;
-                    MSStatus *firstStatus = firstLoad ? nil : self.timeline.statuses.firstObject;
+                    MSTimeline *previousTimeline = self.timeline;
+                    NSIndexPath *lastVisibleStatusIndex = [[self.tableView indexPathsForVisibleRows] firstObject];
+                    
                     self.timeline = timeline;
                     [self.tableView reloadData];
                     
@@ -572,18 +581,23 @@ IB_DESIGNABLE
                         [self.tableView endUpdates];
                         [UIView setAnimationsEnabled:YES];
                     }
-                    else if (firstStatus)
+                    else if (previousTimeline)
                     {
-                        NSInteger indexOfLastStatus = [self.timeline.statuses indexOfObjectPassingTest:^BOOL(MSStatus  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                            return [obj._id isEqualToString:firstStatus._id];
+                        MSStatus *firstStatus = previousTimeline.statuses.firstObject;
+                        MSStatus *lastVisibleStatus = [previousTimeline.statuses objectAtIndex:lastVisibleStatusIndex.row];
+                        MSStatus *firstUpdatedStatus = self.timeline.statuses.firstObject;
+                        
+                        BOOL statusesAvailable = ![firstStatus._id isEqualToString:firstUpdatedStatus._id];
+                        
+                        // See if we can find the position of the last visible status
+                        NSInteger indexOfLastVisibleStatus = [self.timeline.statuses indexOfObjectPassingTest:^BOOL(MSStatus  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                            return [obj._id isEqualToString:lastVisibleStatus._id];
                         }];
                         
-                        if (indexOfLastStatus != NSNotFound) {
-                            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexOfLastStatus inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
-                            
-                            if (indexOfLastStatus != 0) {
-                                [self showScrollToTopButton];
-                            }
+                        // If we know new statuses are available and the last visible was found we can display indication and maintain our position
+                        if (statusesAvailable && indexOfLastVisibleStatus != NSNotFound) {
+                            [self showScrollToTopButton];
+                            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexOfLastVisibleStatus inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
                         }
                     }
                 }
@@ -609,6 +623,7 @@ IB_DESIGNABLE
                 [self.pageLoadingView stopAnimating];
                 
                 if (success) {
+                    self.lastRefreshDate = [NSDate date];
                     BOOL firstLoad = self.timeline == nil;
                     self.timeline = favoriteStatuses;
                     [self.tableView reloadData];
@@ -642,6 +657,7 @@ IB_DESIGNABLE
                 [self.pageLoadingView stopAnimating];
                 
                 if (success) {
+                    self.lastRefreshDate = [NSDate date];
                     BOOL firstLoad = self.timeline == nil;
                     self.timeline = statusThread;
                     [self.tableView reloadData];
@@ -675,8 +691,11 @@ IB_DESIGNABLE
                 [self.pageLoadingView stopAnimating];
                 
                 if (success) {
+                    self.lastRefreshDate = [NSDate date];
                     BOOL firstLoad = self.timeline == nil;
-                    MSStatus *firstStatus = firstLoad ? nil : self.timeline.statuses.firstObject;
+                    MSTimeline *previousTimeline = self.timeline;
+                    NSIndexPath *lastVisibleStatusIndex = [[self.tableView indexPathsForVisibleRows] firstObject];
+                    
                     self.timeline = timeline;
                     [self.tableView reloadData];
                     
@@ -686,18 +705,23 @@ IB_DESIGNABLE
                         [self.tableView endUpdates];
                         [UIView setAnimationsEnabled:YES];
                     }
-                    else if (firstStatus)
+                    else if (previousTimeline)
                     {
-                        NSInteger indexOfLastStatus = [self.timeline.statuses indexOfObjectPassingTest:^BOOL(MSStatus  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                            return [obj._id isEqualToString:firstStatus._id];
+                        MSStatus *firstStatus = previousTimeline.statuses.firstObject;
+                        MSStatus *lastVisibleStatus = [previousTimeline.statuses objectAtIndex:lastVisibleStatusIndex.row];
+                        MSStatus *firstUpdatedStatus = self.timeline.statuses.firstObject;
+                        
+                        BOOL statusesAvailable = ![firstStatus._id isEqualToString:firstUpdatedStatus._id];
+                        
+                        // See if we can find the position of the last visible status
+                        NSInteger indexOfLastVisibleStatus = [self.timeline.statuses indexOfObjectPassingTest:^BOOL(MSStatus  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                            return [obj._id isEqualToString:lastVisibleStatus._id];
                         }];
                         
-                        if (indexOfLastStatus != NSNotFound) {
-                            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexOfLastStatus inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
-                            
-                            if (indexOfLastStatus != 0) {
-                                [self showScrollToTopButton];
-                            }
+                        // If we know new statuses are available and the last visible was found we can display indication and maintain our position
+                        if (statusesAvailable && indexOfLastVisibleStatus != NSNotFound) {
+                            [self showScrollToTopButton];
+                            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexOfLastVisibleStatus inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
                         }
                     }
                 }
@@ -782,5 +806,5 @@ IB_DESIGNABLE
     }];
 }
 
-// !
+// !!
 @end
