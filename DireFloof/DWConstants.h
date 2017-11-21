@@ -20,8 +20,6 @@
 #define DW_BAR_TINT_COLOR                                   [UIColor colorWithRed:0.19f green:0.21f blue:0.26f alpha:1.0f]
 #define DW_SEARCH_HEADER_BACKGROUND_COLOR                   [UIColor colorWithRed:0.61f green:0.68f blue:0.78f alpha:1.0f]
 
-#define DW_MIN_REFRESH_SPAN                                 300.0f
-
 #define DW_NOTIFICATIONS_AVAILABLE_IDENTIFIER               @"DW_NOTIFICATIONS_AVAILABLE"
 #define DW_NEEDS_STATUS_CLEANUP_NOTIFICATION                @"DW_NEEDS_STATUS_CLEANUP_NOTIFICATION"
 #define DW_NEEDS_REFRESH_NOTIFICATION                       @"DW_NEEDS_REFRESH_NOTIFICATION"
