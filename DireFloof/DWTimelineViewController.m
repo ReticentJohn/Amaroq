@@ -20,6 +20,7 @@
 #import "DWSettingStore.h"
 #import "UIViewController+WebNavigation.h"
 #import "UIApplication+TopController.h"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 IB_DESIGNABLE
 @interface DWTimelineViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>

@@ -24,6 +24,7 @@
 #import "DWSettingStore.h"
 #import "UIViewController+WebNavigation.h"
 #import "DWNavigationViewController.h"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     DWProfileSectionTypePosts                = 0,

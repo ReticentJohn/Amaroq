@@ -14,6 +14,7 @@
 #import "DWConstants.h"
 #import "UIApplication+TopController.h"
 #import "DWSettingStore.h"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 @interface DWTimelineFollowTableViewCell ()
 

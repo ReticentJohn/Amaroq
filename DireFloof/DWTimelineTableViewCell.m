@@ -20,6 +20,7 @@
 #import "DWNavigationViewController.h"
 #import "DWSettingStore.h"
 #import "InlineImageHelpers.h"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 @interface DWTimelineTableViewCell ()
 
@@ -75,14 +76,22 @@
     }
     else
     {
-        self.retootButton.tintColor = DW_BLUE_COLOR;
-        [[MSStatusStore sharedStore] reblogStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
-            if (success) {
-                status.reblogged = YES;
-                self.retootButton.tintColor = DW_BLUE_COLOR;
-                [[NSNotificationCenter defaultCenter] postNotificationName:DW_STATUS_BOOSTED_NOTIFICATION object:status._id];
-            }
-        }];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Boost", @"Boost") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            self.retootButton.tintColor = DW_BLUE_COLOR;
+            [[MSStatusStore sharedStore] reblogStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
+                if (success) {
+                    status.reblogged = YES;
+                    self.retootButton.tintColor = DW_BLUE_COLOR;
+                    [[NSNotificationCenter defaultCenter] postNotificationName:DW_STATUS_BOOSTED_NOTIFICATION object:status._id];
+                }
+            }];
+        }]];
+        
+        [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel") style:UIAlertActionStyleCancel handler:nil]];
+        
+        [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];
     }
 }
 

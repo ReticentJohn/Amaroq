@@ -81,6 +81,7 @@
 		04C9350B1E4BB520004376F3 /* MSStatusStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9350A1E4BB520004376F3 /* MSStatusStore.m */; };
 		04C935101E4C25D1004376F3 /* MSNotificationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9350F1E4C25D1004376F3 /* MSNotificationStore.m */; };
 		04DA37F81E665F0B0059A2A6 /* DWBlockedUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA37F71E665F0B0059A2A6 /* DWBlockedUsersViewController.m */; };
+		04DBE7F81FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DBE7F71FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.m */; };
 		04E6A2461E7480F200838130 /* UIImage+color.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A2451E7480F200838130 /* UIImage+color.m */; };
 		04E9F09D1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F09C1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m */; };
 		04EC13F11E46A966000E15A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC13F01E46A966000E15A6 /* main.m */; };
@@ -289,6 +290,8 @@
 		04C9350F1E4C25D1004376F3 /* MSNotificationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSNotificationStore.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		04DA37F61E665F0B0059A2A6 /* DWBlockedUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBlockedUsersViewController.h; sourceTree = "<group>"; };
 		04DA37F71E665F0B0059A2A6 /* DWBlockedUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBlockedUsersViewController.m; sourceTree = "<group>"; };
+		04DBE7F61FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SupportedInterfaceOrientations.h"; sourceTree = "<group>"; };
+		04DBE7F71FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SupportedInterfaceOrientations.m"; sourceTree = "<group>"; };
 		04E6A2441E7480F200838130 /* UIImage+color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+color.h"; sourceTree = "<group>"; };
 		04E6A2451E7480F200838130 /* UIImage+color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+color.m"; sourceTree = "<group>"; };
 		04E9F09B1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTimelineNotificationTableViewCell.h; sourceTree = "<group>"; };
@@ -604,6 +607,8 @@
 				040C612E1E7090E300509F32 /* NSString+Awoo.m */,
 				04E6A2441E7480F200838130 /* UIImage+color.h */,
 				04E6A2451E7480F200838130 /* UIImage+color.m */,
+				04DBE7F61FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.h */,
+				04DBE7F71FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.m */,
 				048902EF1FBE77F900ED07A6 /* InlineImageHelpers.h */,
 				048902F01FBE77F900ED07A6 /* InlineImageHelpers.m */,
 			);
@@ -955,7 +960,7 @@
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 				"${PODS_ROOT}/OAuth2/Pod/Classes/OAuthRequestController.xib",
-				"$PODS_CONFIGURATION_BUILD_DIR/OAuth2/OAuth2.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/OAuth2/OAuth2.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1174,6 +1179,7 @@
 				043154EC1E50EB3D0066C511 /* MSStatus.m in Sources */,
 				0431552E1E540EB40066C511 /* DWTabItemViewController.m in Sources */,
 				043155321E540FF90066C511 /* DWAppearanceProxies.m in Sources */,
+				04DBE7F81FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.m in Sources */,
 				04095B0D1E4A5E880082401A /* MSAPIClient.m in Sources */,
 				04EC13F11E46A966000E15A6 /* main.m in Sources */,
 				047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */,

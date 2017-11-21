@@ -20,6 +20,7 @@
 #import "DWSearchTableViewCell.h"
 #import "DWDraftStore.h"
 #import "UIApplication+TopController.h"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 typedef NS_ENUM(NSUInteger, DWPrivacyType) {
     DWPrivacyTypeDirect        = 0,

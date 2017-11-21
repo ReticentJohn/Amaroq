@@ -16,6 +16,7 @@
 #import "UIView+Supercell.h"
 #import "DWConstants.h"
 #import "DWMenuTableViewCell.h"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 @interface DWBlockedUsersViewController () <UITableViewDelegate, UITableViewDataSource>
 

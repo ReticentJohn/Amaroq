@@ -21,6 +21,7 @@
 #import "DWTimelineViewController.h"
 #import "DWNotificationStore.h"
 #import "UIViewController+WebNavigation.m"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 @interface DWNotificationsViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>
 

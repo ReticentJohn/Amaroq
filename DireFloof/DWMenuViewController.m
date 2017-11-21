@@ -19,6 +19,7 @@
 #import "DWConstants.h"
 #import "DWMenuTableViewCell.h"
 #import "UIViewController+WebNavigation.h"
+#import "UIAlertController+SupportedInterfaceOrientations.h"
 
 #define DW_MENU_ITEM_TITLE_KEY @"title"
 #define DW_MENU_ITEM_IMAGE_KEY @"image"
