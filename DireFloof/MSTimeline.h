@@ -19,18 +19,20 @@
 #pragma mark - Properties
 
 @property (nonatomic, strong, readonly) NSMutableArray *statuses;
-@property (nonatomic, strong, readonly) NSString *nextPageUrl;
+@property (nonatomic, strong, readonly) NSString *olderPageUrl;
+@property (nonatomic, strong, readonly) NSString *newerPageUrl;
 
 
 #pragma mark - Initializers
 
-- (id)initWithStatuses:(NSArray *)statuses nextPageUrl:(NSString *)url;
-- (id)initWithNotifications:(NSArray *)notifications nextPageUrl:(NSString *)url;
+- (id)initWithStatuses:(NSArray *)statuses olderPageUrl:(NSString *)older newerPageUrl:(NSString *)newer;
+- (id)initWithNotifications:(NSArray *)notifications olderPageUrl:(NSString *)older newerPageUrl:(NSString *)newer;
 
 
 #pragma mark - Instance Methods
 
-- (void)loadNextPageWithCompletion:(void (^)(BOOL success, NSError *error))completion;
+- (void)loadOlderStatusesWithCompletion:(void (^)(BOOL success, NSInteger count, NSError *error))completion;
+- (void)loadNewerStatusesWithCompletion:(void (^)(BOOL success, NSInteger count, NSError *error))completion;
 - (void)purgeLocalStatus:(MSStatus *)deletedStatus;
 - (void)purgeLocalStatusesByUser:(MSAccount *)blockedUser;
 - (void)filterForNotificationSettings;

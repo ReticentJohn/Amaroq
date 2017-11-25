@@ -44,8 +44,9 @@
         
         NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
         NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        NSString *prevPageUrl = [MSAPIClient getPreviousPageFromResponse:response];
         
-        MSTimeline *timeline = [[MSTimeline alloc] initWithNotifications:responseObject nextPageUrl:nextPageUrl];
+        MSTimeline *timeline = [[MSTimeline alloc] initWithNotifications:responseObject olderPageUrl:nextPageUrl newerPageUrl:prevPageUrl];
         
         if (timeline.statuses.count) {
             [[NSUserDefaults standardUserDefaults] setObject:[[timeline.statuses firstObject] _id] forKey:MS_LAST_NOTIFICATION_ID_KEY];

@@ -715,7 +715,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             MSStatus *status = [self.timeline.statuses objectAtIndex:indexPath.row];
             [self.cachedEstimatedHeights setObject:@(cell.bounds.size.height) forKey:status._id];
             
-            if (indexPath.row >= self.timeline.statuses.count - 10 && self.timeline.nextPageUrl) {
+            if (indexPath.row >= self.timeline.statuses.count - 10 && self.timeline.olderPageUrl) {
                 [self loadNextPage];
             }
         }
@@ -1056,7 +1056,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 
                 [self.pageLoadingView startAnimating];
                 
-                [self.timeline loadNextPageWithCompletion:^(BOOL success, NSError *error) {
+                [self.timeline loadOlderStatusesWithCompletion:^(BOOL success, NSInteger count, NSError *error) {
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [self.pageLoadingView stopAnimating];

@@ -797,7 +797,7 @@
 				TargetAttributes = {
 					04EC13EB1E46A966000E15A6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8ZUY53AC3;
+						DevelopmentTeam = 986C4Z2SX9;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1393,7 +1393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
-				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				DEVELOPMENT_TEAM = 986C4Z2SX9;
 				INFOPLIST_FILE = DireFloof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1523,7 +1523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
-				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				DEVELOPMENT_TEAM = 986C4Z2SX9;
 				INFOPLIST_FILE = DireFloof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1538,7 +1538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
-				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				DEVELOPMENT_TEAM = 986C4Z2SX9;
 				INFOPLIST_FILE = DireFloof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

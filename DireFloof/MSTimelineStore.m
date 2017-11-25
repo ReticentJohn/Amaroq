@@ -18,9 +18,6 @@
 @property (nonatomic, assign) MSTimelineType timelineType;
 @property (nonatomic, strong) NSString *hashtag;
 
-@property (nonatomic, strong) NSString *firstId;
-@property (nonatomic, strong) NSString *lastId;
-
 @end
 
 @implementation MSTimelineStore
@@ -81,25 +78,14 @@
 
 - (void)getHomeTimelineWithCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
 {
-    NSDictionary *params = nil;
     
-    if (self.firstId) {
-        params = @{@"since_id": self.firstId};
-    }
-    else if (self.lastId)
-    {
-        params = @{@"max_id": self.lastId};
-    }
-    
-    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"timelines/home" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-
-        self.firstId = nil;
-        self.lastId = nil;
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"timelines/home" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
         NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        NSString *prevPageUrl = [MSAPIClient getPreviousPageFromResponse:response];
         
-        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject nextPageUrl:nextPageUrl];
+        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject olderPageUrl:nextPageUrl newerPageUrl:prevPageUrl];
         
         if (completion != nil) {
             completion(YES, timeline, nil);
@@ -118,26 +104,17 @@
 {
     NSDictionary *params = nil;
     
-    if (self.firstId) {
-        params = @{@"since_id": self.firstId};
-    }
-    else if (self.lastId)
-    {
-        params = @{@"max_id": self.lastId};
-    }
-    
     if (isLocal) {
         params = @{@"local": @(YES)};
     }
     
     [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"timelines/public" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        self.firstId = nil;
-        self.lastId = nil;
         
         NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
         NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        NSString *prevPageUrl = [MSAPIClient getPreviousPageFromResponse:response];
         
-        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject nextPageUrl:nextPageUrl];
+        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject olderPageUrl:nextPageUrl newerPageUrl:prevPageUrl];
         
         if (completion != nil) {
             completion(YES, timeline, nil);
@@ -152,27 +129,15 @@
 
 - (void)getHashtagTimelineForHashtag:(NSString *)hashtag withCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
 {
-    NSDictionary *params = nil;
-    
-    if (self.firstId) {
-        params = @{@"since_id": self.firstId};
-    }
-    else if (self.lastId)
-    {
-        params = @{@"max_id": self.lastId};
-    }
-    
     NSString *requestUrl = [[NSString stringWithFormat:@"timelines/tag/%@", hashtag] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
     
-    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:requestUrl parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        self.firstId = nil;
-        self.lastId = nil;
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
         NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        NSString *prevPageUrl = [MSAPIClient getPreviousPageFromResponse:response];
         
-        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject nextPageUrl:nextPageUrl];
+        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject olderPageUrl:nextPageUrl newerPageUrl:prevPageUrl];
         
         if (completion != nil) {
             completion(YES, timeline, nil);
@@ -192,8 +157,9 @@
     [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:requestUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
         NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        NSString *prevPageUrl = [MSAPIClient getPreviousPageFromResponse:response];
         
-        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject nextPageUrl:nextPageUrl];
+        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject olderPageUrl:nextPageUrl newerPageUrl:prevPageUrl];
         
         if (completion != nil) {
             completion(YES, timeline, nil);
@@ -211,8 +177,9 @@
     [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"favourites" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
         NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
+        NSString *prevPageUrl = [MSAPIClient getPreviousPageFromResponse:response];
         
-        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject nextPageUrl:nextPageUrl];
+        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:responseObject olderPageUrl:nextPageUrl newerPageUrl:prevPageUrl];
         
         if (completion != nil) {
             completion(YES, timeline, nil);
@@ -237,7 +204,7 @@
         [statuses addObject:[status toJSON]];
         [statuses addObjectsFromArray:[responseObject objectForKey:@"descendants"]];
         
-        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:statuses nextPageUrl:nil];
+        MSTimeline *timeline = [[MSTimeline alloc] initWithStatuses:statuses olderPageUrl:nil newerPageUrl:nil];
         
         if (completion != nil) {
             completion(YES, timeline, nil);

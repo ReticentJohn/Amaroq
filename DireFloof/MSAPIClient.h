@@ -24,5 +24,6 @@
 
 + (MSAPIClient *)sharedClientWithBaseAPI:(NSString *)baseAPI;
 + (NSString *)getNextPageFromResponse:(NSHTTPURLResponse *)response;
++ (NSString *)getPreviousPageFromResponse:(NSHTTPURLResponse *)response;
 
 @end

@@ -18,7 +18,8 @@
 @interface MSTimeline ()
 
 @property (nonatomic, strong, readwrite) NSMutableArray *statuses;
-@property (nonatomic, strong, readwrite) NSString *nextPageUrl;
+@property (nonatomic, strong, readwrite) NSString *olderPageUrl;
+@property (nonatomic, strong, readwrite) NSString *newerPageUrl;
 @property (nonatomic, assign) BOOL isNotificationTimeline;
 
 @end
@@ -27,7 +28,7 @@
 
 #pragma mark - Initializers
 
-- (id)initWithStatuses:(NSArray *)statuses nextPageUrl:(NSString *)url
+- (id)initWithStatuses:(NSArray *)statuses olderPageUrl:(NSString *)older newerPageUrl:(NSString *)newer
 {
     self = [super init];
     
@@ -41,14 +42,15 @@
             [self.statuses addObject:status];
         }
         
-        self.nextPageUrl = url ? [url stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""] : nil;
+        self.olderPageUrl = older ? [older stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""] : nil;
+        self.newerPageUrl = newer ? [newer stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""]: nil;
     }
     
     return self;
 }
 
 
-- (id)initWithNotifications:(NSArray *)notifications nextPageUrl:(NSString *)url
+- (id)initWithNotifications:(NSArray *)notifications olderPageUrl:(NSString *)older newerPageUrl:(NSString *)newer
 {
     self = [super init];
     
@@ -62,7 +64,8 @@
             [self.statuses addObject:status];
         }
         
-        self.nextPageUrl = [url stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""];
+        self.olderPageUrl = [older stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""];
+        self.newerPageUrl = [newer stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""];
         
         self.isNotificationTimeline = YES;
     }
@@ -73,12 +76,13 @@
 
 #pragma mark - Instance Methods
 
-- (void)loadNextPageWithCompletion:(void (^)(BOOL, NSError *))completion
+- (void) loadOlderStatusesWithCompletion:(void (^)(BOOL, NSInteger, NSError *))completion
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:self.nextPageUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:self.olderPageUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+                NSInteger count = 0;
                 for (NSDictionary *statusJSON in responseObject) {
                     
                     if (self.isNotificationTimeline) {
@@ -90,25 +94,25 @@
                         MSStatus *status = [[MSStatus alloc] initWithParams:statusJSON];
                         [self.statuses addObject:status];
                     }
+                    
+                    count++;
                 }
                 
                 NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
-                NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
-                
-                if (nextPageUrl) {
+                NSString *olderPageUrl = [MSAPIClient getNextPageFromResponse:response];
+                if (olderPageUrl) {
+                    olderPageUrl = [olderPageUrl stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""];
                     
-                    nextPageUrl = [nextPageUrl stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""];
-                    
-                    self.nextPageUrl = [nextPageUrl isEqualToString:self.nextPageUrl] ? nil : nextPageUrl;
+                    self.olderPageUrl = [olderPageUrl isEqualToString:self.olderPageUrl] ? nil : olderPageUrl;
                 }
                 else
                 {
-                    self.nextPageUrl = nil;
+                    self.olderPageUrl = nil;
                 }
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (completion != nil) {
-                        completion(YES, nil);
+                        completion(YES, count, nil);
                     }
                 });
             });
@@ -117,14 +121,62 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (completion != nil) {
-                    completion(NO, error);
+                    completion(NO, 0, error);
                 }
             });
-
+            
         }];
     });
 }
 
+- (void) loadNewerStatusesWithCompletion:(void (^)(BOOL, NSInteger, NSError *))completion
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:self.newerPageUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+                NSInteger count = 0;
+                for (NSDictionary *statusJSON in responseObject) {
+                    
+                    if (self.isNotificationTimeline) {
+                        MSNotification *status = [[MSNotification alloc] initWithParams:statusJSON];
+                        [self.statuses insertObject:status atIndex:count];
+                    }
+                    else
+                    {
+                        MSStatus *status = [[MSStatus alloc] initWithParams:statusJSON];
+                        [self.statuses insertObject:status atIndex:count];
+                    }
+                    
+                    count++;
+                }
+                
+                NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
+                NSString *newerPageUrl = [MSAPIClient getPreviousPageFromResponse:response];
+                if (newerPageUrl) {
+                    newerPageUrl = [newerPageUrl stringByReplacingOccurrencesOfString:[[MSAppStore sharedStore] base_api_url_string] withString:@""];
+                    
+                    self.newerPageUrl = newerPageUrl;
+                }
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (completion != nil) {
+                        completion(YES, count, nil);
+                    }
+                });
+            });
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (completion != nil) {
+                    completion(NO, 0, error);
+                }
+            });
+            
+        }];
+    });
+}
 
 - (void)purgeLocalStatus:(MSStatus *)deletedStatus
 {

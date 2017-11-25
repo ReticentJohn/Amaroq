@@ -80,26 +80,37 @@
 
 + (NSString *)getNextPageFromResponse:(NSHTTPURLResponse *)response
 {
+    return [MSAPIClient getLinkFromResponse:response key:@"next"];
+}
+
++ (NSString *)getPreviousPageFromResponse:(NSHTTPURLResponse *)response
+{
+    return [MSAPIClient getLinkFromResponse:response key:@"prev"];
+}
+
+# pragma mark - Private Class Methods
+
++ (NSString *)getLinkFromResponse:(NSHTTPURLResponse *)response key:(NSString *)key
+{
     NSDictionary *headers = [response allHeaderFields];
-    NSString *nextPageUrl = nil;
+    NSString *url = nil;
     
     if ([headers objectForKey:@"Link"]) {
-        
+
         NSArray *components = [[headers objectForKey:@"Link"] componentsSeparatedByString:@", "];
         
-        if ([[components firstObject] containsString:@"next"]) {
-            
-            NSString *component = [components firstObject];
-            NSRange beginningTrim = [component rangeOfString:@"<"];
-            NSRange endingTrim = [component rangeOfString:@">"];
-            NSRange nextPageRange = NSMakeRange(beginningTrim.location + beginningTrim.length, endingTrim.location - beginningTrim.location - beginningTrim.length);
-            
-            nextPageUrl = [component substringWithRange:nextPageRange];
+        for (NSString *component in components) {
+            if ([component containsString:key]) {
+                NSRange beginningTrim = [component rangeOfString:@"<"];
+                NSRange endingTrim = [component rangeOfString:@">"];
+                NSRange urlRange = NSMakeRange(beginningTrim.location + beginningTrim.length, endingTrim.location - beginningTrim.location - beginningTrim.length);
+                
+                url = [component substringWithRange:urlRange];
+            }
         }
-        
     }
     
-    return nextPageUrl;
+    return url;
 }
 
 @end

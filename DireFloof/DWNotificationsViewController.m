@@ -281,7 +281,7 @@
     MSNotification *notification = [[[DWNotificationStore sharedStore] notificationTimeline].statuses objectAtIndex:indexPath.row];
     [self.cachedEstimatedHeights setObject:@(cell.bounds.size.height) forKey:notification._id];
     
-    if (indexPath.row >= [[DWNotificationStore sharedStore] notificationTimeline].statuses.count - 10 && [[DWNotificationStore sharedStore] notificationTimeline].nextPageUrl) {
+    if (indexPath.row >= [[DWNotificationStore sharedStore] notificationTimeline].statuses.count - 10 && [[DWNotificationStore sharedStore] notificationTimeline].olderPageUrl) {
         [self loadNextPage];
     }
 }
@@ -443,7 +443,7 @@
         self.loadingNextPage = YES;
         [self.pageLoadingView startAnimating];
         
-        [[[DWNotificationStore sharedStore] notificationTimeline] loadNextPageWithCompletion:^(BOOL success, NSError *error) {
+        [[[DWNotificationStore sharedStore] notificationTimeline] loadOlderStatusesWithCompletion:^(BOOL success, NSInteger count, NSError *error) {
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.pageLoadingView stopAnimating];
