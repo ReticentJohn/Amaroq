@@ -41,15 +41,20 @@
 
 - (void)getTimelineForTimelineType:(MSTimelineType)timelineType withCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
 {
+    [self getTimelineForTimelineType:timelineType startingAt:nil withCompletion:completion];
+}
+
+-(void)getTimelineForTimelineType:(MSTimelineType)timelineType startingAt:(NSString *)statusId withCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
+{
     self.timelineType = timelineType;
     
     switch (timelineType) {
         case MSTimelineTypeHome:
-            [self getHomeTimelineWithCompletion:completion];
+            [self getHomeTimelineStartingAt:statusId WithCompletion:completion];
             break;
         case MSTimelineTypePublic:
         case MSTimelineTypeLocal:
-            [self getPublicTimeline:timelineType == MSTimelineTypeLocal withCompletion:completion];
+            [self getPublicTimeline:timelineType == MSTimelineTypeLocal StartingAt:statusId withCompletion:completion];
             break;
         case MSTimelineTypeHashtag:
             [self getHashtagTimelineForHashtag:self.hashtag withCompletion:completion];
@@ -76,10 +81,15 @@
 
 #pragma mark - Private Methods
 
-- (void)getHomeTimelineWithCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
+- (void)getHomeTimelineStartingAt:(NSString *)statusId WithCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
 {
+    NSDictionary *params = nil;
     
-    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"timelines/home" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    if (statusId) {
+        params = @{@"max_id": statusId};
+    }
+    
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"timelines/home" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSHTTPURLResponse *response = ((NSHTTPURLResponse *)[task response]);
         NSString *nextPageUrl = [MSAPIClient getNextPageFromResponse:response];
@@ -100,12 +110,16 @@
 }
 
 
-- (void)getPublicTimeline:(BOOL)isLocal withCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
+- (void)getPublicTimeline:(BOOL)isLocal StartingAt:(NSString *)statusId withCompletion:(void (^)(BOOL, MSTimeline *, NSError *))completion
 {
-    NSDictionary *params = nil;
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     
     if (isLocal) {
-        params = @{@"local": @(YES)};
+        [params setObject:@(YES) forKey:@"local"];
+    }
+    
+    if (statusId) {
+        [params setObject:statusId forKey:@"max_id"];
     }
     
     [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"timelines/public" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

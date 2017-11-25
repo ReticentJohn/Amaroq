@@ -38,6 +38,7 @@ IB_DESIGNABLE
 
 @property (nonatomic, strong) MSTimeline *timeline;
 @property (nonatomic, assign) BOOL loadingNextPage;
+@property (nonatomic, assign) BOOL loadingPreviousPage;
 
 @property (nonatomic, strong) NSMutableDictionary *cachedEstimatedHeights;
 
@@ -662,51 +663,35 @@ IB_DESIGNABLE
     }
     else
     {
-        [[MSTimelineStore sharedStore] getTimelineForTimelineType:(self.isPublic ? ([[DWSettingStore sharedStore] showLocalTimeline] ? MSTimelineTypeLocal : MSTimelineTypePublic) : MSTimelineTypeHome) withCompletion:^(BOOL success, MSTimeline *timeline, NSError *error) {
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-                    UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
-                    [refreshControl endRefreshing];
-                }
-                else
-                {
-                    [self.tableView.refreshControl endRefreshing];
-                }
-                [self.pageLoadingView stopAnimating];
-                
-                if (success) {
-                    BOOL firstLoad = self.timeline == nil;
-                    MSStatus *firstStatus = firstLoad ? nil : self.timeline.statuses.firstObject;
+        if (self.timeline == nil) {
+            // TODO: store the starting at somewhere
+            [[MSTimelineStore sharedStore] getTimelineForTimelineType:(self.isPublic ? ([[DWSettingStore sharedStore] showLocalTimeline] ? MSTimelineTypeLocal : MSTimelineTypePublic) : MSTimelineTypeHome) startingAt:@"99060566341960311" withCompletion:^(BOOL success, MSTimeline *timeline, NSError *error) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                        UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                        [refreshControl endRefreshing];
+                    }
+                    else
+                    {
+                        [self.tableView.refreshControl endRefreshing];
+                    }
+                    [self.pageLoadingView stopAnimating];
+                    
+                    if (!success) {
+                        return;
+                    }
+                    
                     self.timeline = timeline;
                     [self.tableView reloadData];
-                    
-                    if (firstLoad) {
-                        [UIView setAnimationsEnabled:NO];
-                        [self.tableView beginUpdates];
-                        [self.tableView endUpdates];
-                        [UIView setAnimationsEnabled:YES];
-                    }
-                    else if (firstStatus)
-                    {
-                        NSInteger indexOfLastStatus = [self.timeline.statuses indexOfObjectPassingTest:^BOOL(MSStatus  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                            return [obj._id isEqualToString:firstStatus._id];
-                        }];
-                        
-                        if (indexOfLastStatus != NSNotFound) {
-                            [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexOfLastStatus inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
-                            
-                            if (indexOfLastStatus != 0) {
-                                [self showScrollToTopButton];
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                }
-            });
-        }];
+                    [UIView setAnimationsEnabled:NO];
+                    [self.tableView beginUpdates];
+                    [self.tableView endUpdates];
+                    [UIView setAnimationsEnabled:YES];
+                });
+            }];
+        } else {
+            [self loadPreviousPage];
+        }
     }
 }
 
@@ -737,6 +722,7 @@ IB_DESIGNABLE
 - (void)loadNextPage
 {
     if (!self.loadingNextPage) {
+        return; // TODO: figure out what to do here instead of a full reload
         self.loadingNextPage = YES;
         [self.pageLoadingView startAnimating];
         
@@ -758,6 +744,45 @@ IB_DESIGNABLE
     }
 }
 
+- (void)loadPreviousPage
+{
+    if (!self.loadingPreviousPage) {
+        self.loadingPreviousPage = YES;
+        [self.pageLoadingView startAnimating];
+        
+        [self.timeline loadNewerStatusesWithCompletion:^(BOOL success, NSInteger count, NSError *error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+                    UIRefreshControl *refreshControl = [self.tableView viewWithTag:9001];
+                    [refreshControl endRefreshing];
+                }
+                else
+                {
+                    [self.tableView.refreshControl endRefreshing];
+                }
+                [self.pageLoadingView stopAnimating];
+                self.loadingPreviousPage = NO;
+                
+                if (!success) {
+                    return;
+                }
+                
+                if (!count) {
+                    return;
+                }
+                
+                NSMutableArray *paths = [[NSMutableArray alloc] init];
+                for (NSInteger i = 0; i < count; i++) {
+                    [paths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+                }
+                
+                [self.tableView beginUpdates];
+                [self.tableView insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationAutomatic];
+                [self.tableView endUpdates];
+            });
+        }];
+    }
+}
 
 - (void)showScrollToTopButton {
     

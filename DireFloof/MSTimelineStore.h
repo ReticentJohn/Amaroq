@@ -23,6 +23,7 @@
 #pragma mark - Instance Methods
 
 - (void)getTimelineForTimelineType:(MSTimelineType)timelineType withCompletion:(void (^)(BOOL success, MSTimeline *timeline, NSError *error))completion;
+- (void)getTimelineForTimelineType:(MSTimelineType)timelineType startingAt:(NSString *)statusId withCompletion:(void (^)(BOOL success, MSTimeline *timeline, NSError *error))completion;
 - (void)getHashtagTimelineWithHashtag:(NSString *)hashtag withCompletion:(void (^)(BOOL success, MSTimeline *timeline, NSError *error))completion;
 - (void)getStatusesForUserId:(NSString *)userId withCompletion:(void (^)(BOOL success, MSTimeline *statuses, NSError *error))completion;
 - (void)getFavoriteStatusesWithCompletion:(void (^)(BOOL success, MSTimeline *favoriteStatuses, NSError *error))completion;
