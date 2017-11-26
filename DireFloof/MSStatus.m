@@ -56,7 +56,7 @@
         
         params = [params removeNullValues];
         
-        self._id = [params objectForKey:@"id"];
+        self._id = [[params objectForKey:@"id"] isKindOfClass:[NSString class]] ? [params objectForKey:@"id"] : [[params objectForKey:@"id"] stringValue]; // If we're receiving statuses from a pre-2.0 server it'll be a NSNumber - have it dump its stringValue to correct this.
         self.uri = [params objectForKey:@"uri"];
         self.url = [params objectForKey:@"url"];
         self.account = [[MSAccount alloc] initWithParams:[params objectForKey:@"account"]];
