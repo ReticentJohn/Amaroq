@@ -13,7 +13,7 @@ public protocol ActiveLabelDelegate: class {
     func didSelect(_ text: String, type: ActiveType)
 }
 
-public typealias ConfigureLinkAttribute = (ActiveType, [String : Any], Bool) -> ([String : Any])
+public typealias ConfigureLinkAttribute = (ActiveType, [NSAttributedStringKey : Any], Bool) -> ([NSAttributedStringKey : Any])
 typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveType)
 
 @IBDesignable open class ActiveLabel: UILabel {
@@ -60,7 +60,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
     @IBInspectable public var highlightFontName: String? = nil {
         didSet { updateTextStorage(parseText: false) }
     }
-    @IBInspectable public var highlightFontSize: CGFloat? = nil {
+    public var highlightFontSize: CGFloat? = nil {
         didSet { updateTextStorage(parseText: false) }
     }
     
@@ -71,15 +71,15 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
     }
 
     // MARK: - public methods
-    open func handleMentionTap(_ handler: @escaping (String) -> ()) {
+    @objc open func handleMentionTap(_ handler: @escaping (String) -> ()) {
         mentionTapHandler = handler
     }
 
-    open func handleHashtagTap(_ handler: @escaping (String) -> ()) {
+    @objc open func handleHashtagTap(_ handler: @escaping (String) -> ()) {
         hashtagTapHandler = handler
     }
     
-    open func handleURLTap(_ handler: @escaping (URL) -> ()) {
+    @objc open func handleURLTap(_ handler: @escaping (URL) -> ()) {
         urlTapHandler = handler
     }
 
@@ -170,7 +170,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
 
     // MARK: - customzation
     @discardableResult
-    open func customize(_ block: (_ label: ActiveLabel) -> ()) -> ActiveLabel {
+    @objc open func customize(_ block: (_ label: ActiveLabel) -> ()) -> ActiveLabel {
         _customizing = true
         block(self)
         _customizing = false
@@ -275,8 +275,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
 
         if parseText {
             clearActiveElements()
-            let newString = parseTextAndExtractActiveElements(mutAttrString)
-            mutAttrString.mutableString.setString(newString)
+            let _ = parseTextAndExtractActiveElements(mutAttrString)
         }
 
         addLinkAttribute(mutAttrString)
@@ -306,23 +305,23 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
         var range = NSRange(location: 0, length: 0)
         var attributes = mutAttrString.attributes(at: 0, effectiveRange: &range)
         
-        attributes[NSFontAttributeName] = font!
-        attributes[NSForegroundColorAttributeName] = textColor
+        attributes[NSAttributedStringKey.font] = font!
+        attributes[NSAttributedStringKey.foregroundColor] = textColor
         mutAttrString.addAttributes(attributes, range: range)
 
-        attributes[NSForegroundColorAttributeName] = mentionColor
+        attributes[NSAttributedStringKey.foregroundColor] = mentionColor
 
         for (type, elements) in activeElements {
 
             switch type {
-            case .mention: attributes[NSForegroundColorAttributeName] = mentionColor
-            case .hashtag: attributes[NSForegroundColorAttributeName] = hashtagColor
-            case .url: attributes[NSForegroundColorAttributeName] = URLColor
-            case .custom: attributes[NSForegroundColorAttributeName] = customColor[type] ?? defaultCustomColor
+            case .mention: attributes[NSAttributedStringKey.foregroundColor] = mentionColor
+            case .hashtag: attributes[NSAttributedStringKey.foregroundColor] = hashtagColor
+            case .url: attributes[NSAttributedStringKey.foregroundColor] = URLColor
+            case .custom: attributes[NSAttributedStringKey.foregroundColor] = customColor[type] ?? defaultCustomColor
             }
             
             if let highlightFont = hightlightFont {
-                attributes[NSFontAttributeName] = highlightFont
+                attributes[NSAttributedStringKey.font] = highlightFont
             }
 			
             if let configureLinkAttribute = configureLinkAttribute {
@@ -373,12 +372,12 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
         var range = NSRange(location: 0, length: 0)
         var attributes = mutAttrString.attributes(at: 0, effectiveRange: &range)
         
-        let paragraphStyle = attributes[NSParagraphStyleAttributeName] as? NSMutableParagraphStyle ?? NSMutableParagraphStyle()
+        let paragraphStyle = attributes[NSAttributedStringKey.paragraphStyle] as? NSMutableParagraphStyle ?? NSMutableParagraphStyle()
         paragraphStyle.lineBreakMode = NSLineBreakMode.byWordWrapping
         paragraphStyle.alignment = textAlignment
         paragraphStyle.lineSpacing = lineSpacing
         paragraphStyle.minimumLineHeight = minimumLineHeight > 0 ? minimumLineHeight: self.font.pointSize * 1.14
-        attributes[NSParagraphStyleAttributeName] = paragraphStyle
+        attributes[NSAttributedStringKey.paragraphStyle] = paragraphStyle
         mutAttrString.setAttributes(attributes, range: range)
 
         return mutAttrString
@@ -402,7 +401,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
                 let possibleSelectedColor = customSelectedColor[selectedElement.type] ?? customColor[selectedElement.type]
                 selectedColor = possibleSelectedColor ?? defaultCustomColor
             }
-            attributes[NSForegroundColorAttributeName] = selectedColor
+            attributes[NSAttributedStringKey.foregroundColor] = selectedColor
         } else {
             let unselectedColor: UIColor
             switch type {
@@ -411,11 +410,11 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
             case .url: unselectedColor = URLColor
             case .custom: unselectedColor = customColor[selectedElement.type] ?? defaultCustomColor
             }
-            attributes[NSForegroundColorAttributeName] = unselectedColor
+            attributes[NSAttributedStringKey.foregroundColor] = unselectedColor
         }
         
         if let highlightFont = hightlightFont {
-            attributes[NSFontAttributeName] = highlightFont
+            attributes[NSAttributedStringKey.font] = highlightFont
         }
         
         if let configureLinkAttribute = configureLinkAttribute {

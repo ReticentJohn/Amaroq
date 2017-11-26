@@ -25,10 +25,19 @@ target 'DireFloof' do
   pod 'EmojiOne', podspec: 'DireFloof/Vendor/Emojione/emojione.podspec'
   pod 'RMPickerViewController', '~> 2.2.1'
   pod 'OAuth2', git: 'https://github.com/ReticentJohn/OAuth2-for-iOS.git', branch: 'master'
-  pod 'ActiveLabel'
+  pod 'ActiveLabel', git: 'https://github.com/ReticentJohn/ActiveLabel.swift.git', branch: 'master'
   pod 'UIImage-Resize'
 
 post_install do | installer |
+    
+    installer.pods_project.targets.each do |target|
+        if target.name == 'ActiveLabel'
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+            end
+        end
+    end
+    
     require 'fileutils'
     FileUtils.cp_r('Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-Acknowledgements.plist', 'DireFloof/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
 end
