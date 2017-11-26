@@ -4,7 +4,7 @@
 It's here. You're welcome. :3
 
 ### What is Amaroq written in?
-Amaroq is written entirely in Obj-C. Not apposed to mixing Swift in there if need be, but I like being verbose.
+Amaroq is written entirely in Obj-C. Not opposed to mixing Swift in there if need be, but I like being verbose.
 
 ### Can I beta test Amaroq?
 Yes! If a beta is currently available I will gladly allow anyone to beta test for as long as I have open slots available. Email your Apple ID to amaroq.feedback@gmail.com and I will send invites out when a build is about to be pushed.
