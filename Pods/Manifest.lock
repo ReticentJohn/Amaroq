@@ -134,7 +134,7 @@ CHECKOUT OPTIONS:
     :commit: 233b51f39209579ee35290734195dbf5494637d4
     :git: https://github.com/ReticentJohn/emojione.git
   GMImagePicker:
-    :commit: ef7dc757006503e6787538b086ff33a14f66a57e
+    :commit: 40a70c0398aa8f79b36197ba43f807b9426c022c
     :git: https://github.com/ReticentJohn/GMImagePicker.git
   GPUImage:
     :commit: c513dd7b5aa9ab52747070049710f32b5234222f
