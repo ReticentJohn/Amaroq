@@ -18,21 +18,18 @@
 #import "MSAPIClient.h"
 #import "MSUserStore.h"
 #import "UIApplication+TopController.h"
+#import "UIViewController+WebNavigation.h"
 #import "DWNotificationStore.h"
 #import "DWConstants.h"
 #import "DWLoginViewController.h"
 #import "DWSettingStore.h"
 
-@interface MSAuthStore () <UIWebViewDelegate, OAuthRequestControllerDelegate>
+@interface MSAuthStore () <OAuthRequestControllerDelegate>
 
 @property (nonatomic, assign, readwrite) BOOL isLoggedIn;
 @property (nonatomic, strong, readwrite) NSString *token;
 
 @property (nonatomic, copy) void (^loginBlock)(BOOL success);
-
-@property (nonatomic, strong) NSMutableURLRequest *loginRequest;
-
-@property (nonatomic, strong) UIButton *cancelButton;
 
 @end
 
@@ -177,124 +174,15 @@
 }
 
 
-#pragma mark - UIWebviewDelegate Methods
-
-
-- (void)webViewDidStartLoad:(UIWebView *)webView
-{
-    
-}
-
-
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
-{
-    if ((![request.mainDocumentURL.absoluteString containsString:@"/auth"] && ![request.mainDocumentURL.absoluteString containsString:@"/settings"]) || ([request.mainDocumentURL.absoluteString isEqualToString:[[MSAppStore sharedStore] base_url_string]] && [self isLoggedIn]))
-    {
-        webView.alpha = 0.0f;
-        webView.hidden = YES;
-        self.cancelButton.alpha = 0.0f;
-        self.cancelButton.hidden = YES;
-    }
-    
-    return YES;
-}
-
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView
-{
-    NSString *html = [webView stringByEvaluatingJavaScriptFromString:
-                      @"document.body.innerHTML"];
-    
-    //NSLog(@"%@", webView.request.mainDocumentURL.absoluteString);
-    
-    if ([html containsString:@"access_token"]) {
-        NSArray *components = [html componentsSeparatedByString:@"\""];
-        
-        // lol so stable yo
-        NSString *access_token = [components objectAtIndex:[components indexOfObject:@"access_token"]+2];
-        
-        self.credential = [[AFOAuthCredential alloc] initWithOAuthToken:access_token tokenType:@"Bearer"];
-        [self.credential setExpiration:[NSDate distantFuture]];
-        [AFOAuthCredential storeCredential:self.credential withIdentifier:[[MSAppStore sharedStore] base_api_url_string]];
-        
-        if ([[[[UIApplication sharedApplication] topController] view].subviews containsObject:webView]) {
-            webView.delegate = nil;
-            [webView removeFromSuperview];
-            [self.cancelButton removeFromSuperview];
-        }
-        
-        if (self.loginBlock != nil) {
-            self.loginBlock([self isLoggedIn]);
-        }
-    }
-    else if ([html containsString:@"Throttled"])
-    {
-        if ([[[[UIApplication sharedApplication] topController] view].subviews containsObject:webView]) {
-            webView.delegate = nil;
-            [webView removeFromSuperview];
-            [self.cancelButton removeFromSuperview];
-        }
-        
-        if (self.loginBlock != nil) {
-            self.loginBlock([self isLoggedIn]);
-        }
-    }
-    else if ([webView.request.mainDocumentURL.absoluteString isEqualToString:[[MSAppStore sharedStore] base_url_string]] && [self isLoggedIn])
-    {
-        // we have gone too far
-        if ([[[[UIApplication sharedApplication] topController] view].subviews containsObject:webView]) {
-            webView.delegate = nil;
-            [webView removeFromSuperview];
-            [self.cancelButton removeFromSuperview];
-        }
-    }
-    else if (([webView.request.mainDocumentURL.absoluteString containsString:@"/about"] || [webView.request.mainDocumentURL.absoluteString containsString:@"sign_in"]) && [self isLoggedIn] && !self.loginRequest)
-    {
-        // YOU FOOL YOU'VE LOGGED OUT, well maybe it could be worse, let them relog or cancel
-        
-        if (!self.cancelButton) {
-            self.cancelButton = [[UIButton alloc] initWithFrame:CGRectMake([UIApplication sharedApplication].keyWindow.bounds.size.width - 79, 0, 79, 79)];
-            self.cancelButton.tintColor = [UIColor whiteColor];
-            [self.cancelButton setImage:[UIImage imageNamed:@"CloseIcon"] forState:UIControlStateNormal];
-            [self.cancelButton addTarget:self action:@selector(cancelWebviewLogin) forControlEvents:UIControlEventTouchUpInside];
-        }
-        
-        if (![[[[[UIApplication sharedApplication] topController] view] subviews] containsObject:self.cancelButton]) {
-            [[[[UIApplication sharedApplication] topController] view] addSubview:self.cancelButton];
-        }
-        
-        [[[[UIApplication sharedApplication] topController] view] bringSubviewToFront:self.cancelButton];
-        
-        webView.hidden = NO;
-        self.cancelButton.hidden = NO;
-        webView.alpha = 1.0f;
-        self.cancelButton.alpha = 1.0f;
-    }
-    else if (![webView.request.mainDocumentURL.absoluteString containsString:@"/auth"] && ![webView.request.mainDocumentURL.absoluteString containsString:@"/settings"])
-    {
-        [webView loadRequest:self.loginRequest];
-    }
-    else
-    {
-        webView.hidden = NO;
-        self.cancelButton.hidden = NO;
-        [UIView animateWithDuration:0.2f animations:^{
-            webView.alpha = 1.0f;
-            self.cancelButton.alpha = 1.0f;
-        }];
-    }
-}
-
-
 - (void)requestEditProfile
 {
-    [self performOtherWebviewRequestWithUrl:[NSString stringWithFormat:@"%@settings/profile", [[MSAppStore sharedStore] base_url_string]]];
+    [[[UIApplication sharedApplication] topController] openWebURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@settings/profile", [[MSAppStore sharedStore] base_url_string]]]];
 }
 
 
 - (void)requestPreferences
 {
-    [self performOtherWebviewRequestWithUrl:[NSString stringWithFormat:@"%@settings/preferences", [[MSAppStore sharedStore] base_url_string]]];
+    [[[UIApplication sharedApplication] topController] openWebURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@settings/preferences", [[MSAppStore sharedStore] base_url_string]]]];
 }
 
 
@@ -426,46 +314,6 @@
     oauthController.delegate = self;
     [[[UIApplication sharedApplication] topController] presentViewController:oauthController animated:YES completion:^{
         
-    }];
-}
-
-
-- (void)cancelWebviewLogin
-{
-    UIWebView *webView = [[[[UIApplication sharedApplication] topController] view] viewWithTag:1337];
-    
-    if (webView) {
-        webView.delegate = nil;
-        [webView removeFromSuperview];
-    }
-    
-    [self.cancelButton removeFromSuperview];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
-    
-    if ([[MSAppStore sharedStore] instance] && self.loginRequest) {
-        [[MSAppStore sharedStore] removeMastodonInstance:[[MSAppStore sharedStore] instance]];
-    }
-}
-
-
-- (void)performOtherWebviewRequestWithUrl:(NSString *)url
-{
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
-    webView.delegate = self;
-    
-    webView.alpha = 0.0f;
-    webView.tag = 1337;
-    webView.scrollView.bounces = NO;
-    webView.opaque = NO;
-    webView.backgroundColor = DW_BACKGROUND_COLOR;
-    [[[[UIApplication sharedApplication] topController] view] addSubview:webView];
-    [[[[UIApplication sharedApplication] topController] view] bringSubviewToFront:webView];
-    
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
-    
-    [UIView animateWithDuration:0.3f animations:^{
-        webView.alpha = 1.0f;
     }];
 }
 
