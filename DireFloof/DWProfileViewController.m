@@ -415,6 +415,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
         label.hashtagSelectedColor = DW_BASE_ICON_TINT_COLOR;
         label.URLColor = DW_LINK_TINT_COLOR;
         label.URLSelectedColor = DW_BASE_ICON_TINT_COLOR;
+        label.lineBreakMode = NSLineBreakByWordWrapping;
+        label.numberOfLines = 0;
         
         [label handleURLTap:^(NSURL *url) {
             [self openWebURL:url];
