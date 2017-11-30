@@ -732,8 +732,8 @@ static NSInteger mediaUploadLimit = 4;
     self.progressBar.hidden = YES;
     
     if ([[DWSettingStore sharedStore] awooMode] && !self.reporting) {
-        [self.tootButton setTitle:@"AWOO" forState:UIControlStateNormal];
-        [self.tootButton setTitle:@"AWOO!" forState:UIControlStateSelected];
+        [self.tootButton setTitle:@"EGG" forState:UIControlStateNormal];
+        [self.tootButton setTitle:@"EGG!" forState:UIControlStateSelected];
     }
     
     if (self.replyToStatus) {

@@ -533,7 +533,7 @@ IB_DESIGNABLE
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
     }
     
-    [self.scrollToTopButton setTitle:[[DWSettingStore sharedStore] awooMode] ? NSLocalizedString(@"See new awoos", @"See new awoos") : NSLocalizedString(@"See new toots", @"See new toots") forState:UIControlStateNormal];
+    [self.scrollToTopButton setTitle:[[DWSettingStore sharedStore] awooMode] ? NSLocalizedString(@"See new eggs", @"See new eggs") : NSLocalizedString(@"See new toots", @"See new toots") forState:UIControlStateNormal];
 }
 
 
