@@ -324,7 +324,7 @@ static CGFloat maxDimensions = 1024.0f;
 
                     UIImage *imageToUpload = [[UIImage imageWithData:imageData] resizedImageToFitInSize:CGSizeMake(maxDimensions, maxDimensions) scaleIfSmaller:NO];
                     CGFloat compressionRate = 1.0f;
-                    NSData *optimizedImageData = UIImageJPEGRepresentation(imageToUpload, compressionRate);
+                    optimizedImageData = UIImageJPEGRepresentation(imageToUpload, compressionRate);
                     
                     while (optimizedImageData.length > maxUploadSize) {
                         compressionRate = compressionRate - 0.1f;
