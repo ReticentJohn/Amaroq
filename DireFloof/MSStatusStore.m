@@ -76,18 +76,9 @@ static CGFloat maxDimensions = 1024.0f;
 
     if (media) {
         
-        __block NSString *__status = status;
         [self uploadMedia:media withCompletion:^(BOOL success, NSArray *mediaIds, NSArray *mediaUrls) {
             if (success) {
                 [params setObject:mediaIds forKey:@"media_ids"];
-                
-                for (NSString *url in mediaUrls) {
-                    if (status.length + url.length + 1 < 500) {
-                        __status = [__status stringByAppendingFormat:@"\n%@", url];
-                    }
-                }
-                
-                [params setObject:__status forKey:@"status"];
                 
                 [self postStatusWithParameters:params withCompletion:completion];
             }
