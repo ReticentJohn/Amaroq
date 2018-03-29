@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="DireFloof/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="nl">
+  <file original="DireFloof/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hans">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body/>
   </file>
-  <file original="DireFloof/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="nl">
+  <file original="DireFloof/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hans">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="0B8-3F-mRu.title">
         <source>App Settings</source>
-        <target>App-instellingen</target>
+        <target>App设置</target>
         <note>Class = "UIViewController"; title = "App Settings"; ObjectID = "0B8-3F-mRu";</note>
       </trans-unit>
       <trans-unit id="0FK-Hb-mdQ.text">
@@ -22,7 +22,7 @@
       </trans-unit>
       <trans-unit id="0QU-bc-7sH.title">
         <source>App Settings</source>
-        <target>App-instelling</target>
+        <target>App设置</target>
         <note>Class = "UINavigationItem"; title = "App Settings"; ObjectID = "0QU-bc-7sH";</note>
       </trans-unit>
       <trans-unit id="1H7-Fb-CNb.text">
@@ -46,17 +46,17 @@
       </trans-unit>
       <trans-unit id="2kN-ah-4CU.placeholder">
         <source>Content warning</source>
-        <target>Content waarschuwing</target>
+        <target>内容警告</target>
         <note>Class = "UITextField"; placeholder = "Content warning"; ObjectID = "2kN-ah-4CU";</note>
       </trans-unit>
       <trans-unit id="2wk-Fg-cKQ.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "2wk-Fg-cKQ";</note>
       </trans-unit>
       <trans-unit id="2wk-Fg-cKQ.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "2wk-Fg-cKQ";</note>
       </trans-unit>
       <trans-unit id="3gH-Tw-ONr.text">
@@ -71,7 +71,7 @@
       </trans-unit>
       <trans-unit id="4Am-cK-PJB.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "4Am-cK-PJB";</note>
       </trans-unit>
       <trans-unit id="4Mt-w0-BJS.text">
@@ -81,12 +81,12 @@
       </trans-unit>
       <trans-unit id="4N5-p8-KC5.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "4N5-p8-KC5";</note>
       </trans-unit>
       <trans-unit id="4N5-p8-KC5.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "4N5-p8-KC5";</note>
       </trans-unit>
       <trans-unit id="4pO-Jy-jDk.text">
@@ -126,7 +126,7 @@
       </trans-unit>
       <trans-unit id="6nh-XX-15u.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "6nh-XX-15u";</note>
       </trans-unit>
       <trans-unit id="6o5-6W-XMp.text">
@@ -155,17 +155,17 @@
       </trans-unit>
       <trans-unit id="9WA-oA-2ny.placeholder">
         <source>Search</source>
-        <target>Zoek</target>
+        <target>搜索</target>
         <note>Class = "UISearchBar"; placeholder = "Search"; ObjectID = "9WA-oA-2ny";</note>
       </trans-unit>
       <trans-unit id="9ai-vo-Nq4.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "9ai-vo-Nq4";</note>
       </trans-unit>
       <trans-unit id="9mQ-P9-Kjj.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "9mQ-P9-Kjj";</note>
       </trans-unit>
       <trans-unit id="9qQ-NP-VQx.text">
@@ -185,7 +185,7 @@
       </trans-unit>
       <trans-unit id="10V-B3-wiC.text">
         <source>FOLLOWS</source>
-        <target>VOLGT</target>
+        <target>关注</target>
         <note>Class = "UILabel"; text = "FOLLOWS"; ObjectID = "10V-B3-wiC";</note>
       </trans-unit>
       <trans-unit id="16m-xl-Ak4.text">
@@ -205,17 +205,17 @@
       </trans-unit>
       <trans-unit id="79q-Nl-Dbr.title">
         <source>Menu</source>
-        <target>Menu</target>
+        <target>菜单</target>
         <note>Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "79q-Nl-Dbr";</note>
       </trans-unit>
       <trans-unit id="85G-PL-200.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "85G-PL-200";</note>
       </trans-unit>
       <trans-unit id="935-jO-6OF.title">
         <source>Menu</source>
-        <target>Menu</target>
+        <target>菜单</target>
         <note>Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "935-jO-6OF";</note>
       </trans-unit>
       <trans-unit id="AAl-Jl-kUT.text">
@@ -240,12 +240,12 @@
       </trans-unit>
       <trans-unit id="Aii-Z7-ThC.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "Aii-Z7-ThC";</note>
       </trans-unit>
       <trans-unit id="Aii-Z7-ThC.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "Aii-Z7-ThC";</note>
       </trans-unit>
       <trans-unit id="Am6-x3-fe1.text">
@@ -260,7 +260,7 @@
       </trans-unit>
       <trans-unit id="BPA-eB-mCR.text">
         <source>Hide text behind warning</source>
-        <target>Verberg tekst achter een waarschuwing</target>
+        <target>将文字隐藏在警告后</target>
         <note>Class = "UILabel"; text = "Hide text behind warning"; ObjectID = "BPA-eB-mCR";</note>
       </trans-unit>
       <trans-unit id="Bb0-EI-Ll2.text">
@@ -270,7 +270,7 @@
       </trans-unit>
       <trans-unit id="Bmc-uS-EwS.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "Bmc-uS-EwS";</note>
       </trans-unit>
       <trans-unit id="C2B-wS-Gh4.text">
@@ -284,12 +284,12 @@
       </trans-unit>
       <trans-unit id="C5h-Jy-9VQ.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "C5h-Jy-9VQ";</note>
       </trans-unit>
       <trans-unit id="C5h-Jy-9VQ.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "C5h-Jy-9VQ";</note>
       </trans-unit>
       <trans-unit id="C5m-P3-Aoc.text">
@@ -299,7 +299,7 @@
       </trans-unit>
       <trans-unit id="CIJ-hS-huU.title">
         <source>Favorites</source>
-        <target>Favorieten</target>
+        <target>赞了</target>
         <note>Class = "UIViewController"; title = "Favorites"; ObjectID = "CIJ-hS-huU";</note>
       </trans-unit>
       <trans-unit id="CcB-VU-xOW.text">
@@ -309,17 +309,17 @@
       </trans-unit>
       <trans-unit id="CyJ-KV-d5f.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "CyJ-KV-d5f";</note>
       </trans-unit>
       <trans-unit id="D2e-YU-71m.title">
         <source>Notification Settings</source>
-        <target>Notificatie-instellingen</target>
+        <target>通知设置</target>
         <note>Class = "UINavigationItem"; title = "Notification Settings"; ObjectID = "D2e-YU-71m";</note>
       </trans-unit>
       <trans-unit id="DL6-Pz-Zxu.text">
         <source>Warning Tag</source>
-        <target>Waarschuwingslabel</target>
+        <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "DL6-Pz-Zxu";</note>
       </trans-unit>
       <trans-unit id="DLI-MU-2NY.text">
@@ -329,12 +329,12 @@
       </trans-unit>
       <trans-unit id="DuJ-e8-NnY.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "DuJ-e8-NnY";</note>
       </trans-unit>
       <trans-unit id="DuJ-e8-NnY.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "DuJ-e8-NnY";</note>
       </trans-unit>
       <trans-unit id="DzY-wh-eiA.text">
@@ -349,12 +349,12 @@
       </trans-unit>
       <trans-unit id="ETp-6B-z8P.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "ETp-6B-z8P";</note>
       </trans-unit>
       <trans-unit id="ETp-6B-z8P.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "ETp-6B-z8P";</note>
       </trans-unit>
       <trans-unit id="Eqe-8A-XUJ.text">
@@ -379,12 +379,12 @@
       </trans-unit>
       <trans-unit id="F90-mQ-WXp.normalTitle">
         <source>SUBMIT</source>
-        <target>VERZEND</target>
+        <target>发送</target>
         <note>Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "F90-mQ-WXp";</note>
       </trans-unit>
       <trans-unit id="FRy-sB-TMs.text">
         <source>Warning Tag</source>
-        <target>Waarschuwingslabel</target>
+        <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "FRy-sB-TMs";</note>
       </trans-unit>
       <trans-unit id="Fjl-TP-l3I.title">
@@ -398,7 +398,7 @@
       </trans-unit>
       <trans-unit id="GHf-rN-8KO.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "GHf-rN-8KO";</note>
       </trans-unit>
       <trans-unit id="Gl1-oi-VeZ.text">
@@ -408,17 +408,17 @@
       </trans-unit>
       <trans-unit id="GuV-g4-hLu.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "GuV-g4-hLu";</note>
       </trans-unit>
       <trans-unit id="H73-bm-2lF.text">
         <source>Warning Tag</source>
-        <target>WWaarschuwingslabel</target>
+        <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "H73-bm-2lF";</note>
       </trans-unit>
       <trans-unit id="I8t-xs-eqf.title">
         <source>Hashtag</source>
-        <target>Hashtag</target>
+        <target>话题</target>
         <note>Class = "UIViewController"; title = "Hashtag"; ObjectID = "I8t-xs-eqf";</note>
       </trans-unit>
       <trans-unit id="IGI-ME-0dH.text">
@@ -451,12 +451,12 @@
       </trans-unit>
       <trans-unit id="J9b-bk-mjW.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "J9b-bk-mjW";</note>
       </trans-unit>
       <trans-unit id="JAi-jG-h7h.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "JAi-jG-h7h";</note>
       </trans-unit>
       <trans-unit id="JWr-0E-evS.text">
@@ -476,7 +476,7 @@
       </trans-unit>
       <trans-unit id="K0i-eE-4xG.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "K0i-eE-4xG";</note>
       </trans-unit>
       <trans-unit id="KGv-PL-ypn.accessibilityLabel">
@@ -504,7 +504,7 @@
       </trans-unit>
       <trans-unit id="LIw-6T-r6R.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "LIw-6T-r6R";</note>
       </trans-unit>
       <trans-unit id="LbU-Pp-4SM.text">
@@ -518,7 +518,7 @@
       </trans-unit>
       <trans-unit id="LvM-n9-aZp.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp";</note>
       </trans-unit>
       <trans-unit id="M5t-3n-kwk.text">
@@ -533,22 +533,22 @@
       </trans-unit>
       <trans-unit id="MHd-1A-k9R.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "MHd-1A-k9R";</note>
       </trans-unit>
       <trans-unit id="MHd-1A-k9R.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "MHd-1A-k9R";</note>
       </trans-unit>
       <trans-unit id="MKC-rh-002.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "MKC-rh-002";</note>
       </trans-unit>
       <trans-unit id="MKC-rh-002.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "MKC-rh-002";</note>
       </trans-unit>
       <trans-unit id="MNX-aW-Wrt.text">
@@ -558,22 +558,22 @@
       </trans-unit>
       <trans-unit id="N9I-Vd-eQj.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "N9I-Vd-eQj";</note>
       </trans-unit>
       <trans-unit id="N9I-Vd-eQj.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "N9I-Vd-eQj";</note>
       </trans-unit>
       <trans-unit id="NHJ-pn-iCS.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHJ-pn-iCS";</note>
       </trans-unit>
       <trans-unit id="NHj-8J-Z2C.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHj-8J-Z2C";</note>
       </trans-unit>
       <trans-unit id="NNs-pP-Q8t.text">
@@ -596,7 +596,7 @@
       </trans-unit>
       <trans-unit id="OAS-Mr-yP8.normalTitle">
         <source>FOLLOWS YOU</source>
-        <target>VOLGT JE</target>
+        <target>关注你</target>
         <note>Class = "UIButton"; normalTitle = "FOLLOWS YOU"; ObjectID = "OAS-Mr-yP8";</note>
       </trans-unit>
       <trans-unit id="OXJ-ax-8EG.normalTitle">
@@ -609,17 +609,17 @@
       </trans-unit>
       <trans-unit id="P5a-iM-rWf.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "P5a-iM-rWf";</note>
       </trans-unit>
       <trans-unit id="P5a-iM-rWf.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "P5a-iM-rWf";</note>
       </trans-unit>
       <trans-unit id="PAQ-sp-H4C.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "PAQ-sp-H4C";</note>
       </trans-unit>
       <trans-unit id="PTn-cK-Mj8.text">
@@ -629,12 +629,12 @@
       </trans-unit>
       <trans-unit id="Pcl-ES-eXC.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "Pcl-ES-eXC";</note>
       </trans-unit>
       <trans-unit id="QE0-ao-uwT.text">
         <source>FOLLOWERS</source>
-        <target>VOLGERS</target>
+        <target>粉丝</target>
         <note>Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "QE0-ao-uwT";</note>
       </trans-unit>
       <trans-unit id="QJ6-Tw-gvd.text">
@@ -644,7 +644,7 @@
       </trans-unit>
       <trans-unit id="Qhg-Jh-unk.title">
         <source>Home</source>
-        <target>Thuis</target>
+        <target>主页</target>
         <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "Qhg-Jh-unk";</note>
       </trans-unit>
       <trans-unit id="Qyb-fS-d4v.text">
@@ -654,7 +654,7 @@
       </trans-unit>
       <trans-unit id="ROI-ge-hOO.text">
         <source>POSTS</source>
-        <target>POSTS</target>
+        <target>嘟文</target>
         <note>Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO";</note>
       </trans-unit>
       <trans-unit id="Rhn-c1-Ohh.text">
@@ -664,7 +664,7 @@
       </trans-unit>
       <trans-unit id="SC5-pn-I3A.title">
         <source>Blocked users</source>
-        <target>Geblokkeerde gebruikers</target>
+        <target>黑名单用户</target>
         <note>Class = "UIViewController"; title = "Blocked users"; ObjectID = "SC5-pn-I3A";</note>
       </trans-unit>
       <trans-unit id="SL8-hc-mta.text">
@@ -674,7 +674,7 @@
       </trans-unit>
       <trans-unit id="SWj-wv-bf7.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "SWj-wv-bf7";</note>
       </trans-unit>
       <trans-unit id="TP0-ZC-qMQ.text">
@@ -684,12 +684,12 @@
       </trans-unit>
       <trans-unit id="TbS-Hh-ZI2.normalTitle">
         <source>LOG IN</source>
-        <target>Aanmelden</target>
+        <target>登录</target>
         <note>Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "TbS-Hh-ZI2";</note>
       </trans-unit>
       <trans-unit id="ToH-v6-fqC.text">
         <source>Log into any Mastodon instance!</source>
-        <target>Meld je op iedere Mastodon-server aan!</target>
+        <target>登录到任意Mastodon实例！</target>
         <note>Class = "UILabel"; text = "Log into any Mastodon instance!"; ObjectID = "ToH-v6-fqC";</note>
       </trans-unit>
       <trans-unit id="Tt3-hS-LOv.accessibilityLabel">
@@ -698,27 +698,27 @@
       </trans-unit>
       <trans-unit id="Tya-6c-9UJ.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "Tya-6c-9UJ";</note>
       </trans-unit>
       <trans-unit id="Tya-6c-9UJ.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "Tya-6c-9UJ";</note>
       </trans-unit>
       <trans-unit id="U0R-AN-OS2.normalTitle">
         <source>Unlisted</source>
-        <target>Verborgen</target>
+        <target>不公布</target>
         <note>Class = "UIButton"; normalTitle = "Unlisted"; ObjectID = "U0R-AN-OS2";</note>
       </trans-unit>
       <trans-unit id="U01-1d-dos.normalTitle">
         <source>TOOT</source>
-        <target>TOOT</target>
+        <target>嘟嘟！</target>
         <note>Class = "UIButton"; normalTitle = "TOOT"; ObjectID = "U01-1d-dos";</note>
       </trans-unit>
       <trans-unit id="U01-1d-dos.selectedTitle">
         <source>TOOT!</source>
-        <target>TOOT!</target>
+        <target>嘟嘟！</target>
         <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "U01-1d-dos";</note>
       </trans-unit>
       <trans-unit id="U5S-Ed-nnI.text">
@@ -728,17 +728,17 @@
       </trans-unit>
       <trans-unit id="UDH-Pt-ySX.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "UDH-Pt-ySX";</note>
       </trans-unit>
       <trans-unit id="UDH-Pt-ySX.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "UDH-Pt-ySX";</note>
       </trans-unit>
       <trans-unit id="UgZ-zj-ANn.text">
         <source>This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?</source>
-        <target>Deze status zal afgeleverd worden aan genoemde gebruikers op een of meerdere andere servers. Vertrouw je dat ze je status niet zullen openbaren?</target>
+        <target>这条嘟文将被传送至被@的其他实例用户。确认他们不会泄露您的嘟文吗？</target>
         <note>Class = "UILabel"; text = "This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?"; ObjectID = "UgZ-zj-ANn";</note>
       </trans-unit>
       <trans-unit id="V0f-xA-yAn.text">
@@ -748,12 +748,12 @@
       </trans-unit>
       <trans-unit id="VbQ-Ih-SwT.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "VbQ-Ih-SwT";</note>
       </trans-unit>
       <trans-unit id="VbQ-Ih-SwT.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "VbQ-Ih-SwT";</note>
       </trans-unit>
       <trans-unit id="Vc7-dh-ewO.text">
@@ -773,7 +773,7 @@
       </trans-unit>
       <trans-unit id="Vt2-9J-A4e.title">
         <source>Notification Settings</source>
-        <target>Notificatie-instellingen</target>
+        <target>通知设置</target>
         <note>Class = "UIViewController"; title = "Notification Settings"; ObjectID = "Vt2-9J-A4e";</note>
       </trans-unit>
       <trans-unit id="Vyk-xr-Q4C.text">
@@ -828,7 +828,7 @@
       </trans-unit>
       <trans-unit id="ZVG-ur-eYy.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "ZVG-ur-eYy";</note>
       </trans-unit>
       <trans-unit id="a7k-Fc-wBM.text">
@@ -852,17 +852,17 @@
       </trans-unit>
       <trans-unit id="apg-ib-Pr1.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "apg-ib-Pr1";</note>
       </trans-unit>
       <trans-unit id="arn-Dq-Que.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "arn-Dq-Que";</note>
       </trans-unit>
       <trans-unit id="arn-Dq-Que.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "arn-Dq-Que";</note>
       </trans-unit>
       <trans-unit id="auH-Rs-SrF.text">
@@ -894,17 +894,17 @@
       </trans-unit>
       <trans-unit id="bpa-6G-0UK.title">
         <source>Back</source>
-        <target>Terug</target>
+        <target>返回</target>
         <note>Class = "UIBarButtonItem"; title = "Back"; ObjectID = "bpa-6G-0UK";</note>
       </trans-unit>
       <trans-unit id="cIT-j6-x98.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "cIT-j6-x98";</note>
       </trans-unit>
       <trans-unit id="cIT-j6-x98.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "cIT-j6-x98";</note>
       </trans-unit>
       <trans-unit id="cJ1-eF-Qod.title">
@@ -913,12 +913,12 @@
       </trans-unit>
       <trans-unit id="cjU-gd-4Il.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "cjU-gd-4Il";</note>
       </trans-unit>
       <trans-unit id="cym-bd-fdD.text">
         <source>Mark media as sensitive</source>
-        <target>Markeer media als gevoelig</target>
+        <target>将媒体文件标记为敏感</target>
         <note>Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD";</note>
       </trans-unit>
       <trans-unit id="d7e-VT-75D.text">
@@ -928,7 +928,7 @@
       </trans-unit>
       <trans-unit id="dJe-wm-mbS.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "dJe-wm-mbS";</note>
       </trans-unit>
       <trans-unit id="dPe-vw-PnL.title">
@@ -937,12 +937,12 @@
       </trans-unit>
       <trans-unit id="dUK-lH-2U2.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "dUK-lH-2U2";</note>
       </trans-unit>
       <trans-unit id="dUK-lH-2U2.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "dUK-lH-2U2";</note>
       </trans-unit>
       <trans-unit id="det-mp-6Q0.text">
@@ -957,7 +957,7 @@
       </trans-unit>
       <trans-unit id="fFk-fN-lz7.title">
         <source>Hashtag</source>
-        <target>ハッシュタグ</target>
+        <target>话题</target>
         <note>Class = "UINavigationItem"; title = "Hashtag"; ObjectID = "fFk-fN-lz7";</note>
       </trans-unit>
       <trans-unit id="fNM-WH-WTn.text">
@@ -967,7 +967,7 @@
       </trans-unit>
       <trans-unit id="fQI-2Z-e0M.text">
         <source>Reporting</source>
-        <target>Rapportereb</target>
+        <target>报表</target>
         <note>Class = "UILabel"; text = "Reporting"; ObjectID = "fQI-2Z-e0M";</note>
       </trans-unit>
       <trans-unit id="fVY-zu-rYc.text">
@@ -1030,12 +1030,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="hsg-1n-ke8.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "hsg-1n-ke8";</note>
       </trans-unit>
       <trans-unit id="hsg-1n-ke8.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "hsg-1n-ke8";</note>
       </trans-unit>
       <trans-unit id="i1i-yX-yu7.text">
@@ -1064,7 +1064,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="jeI-4q-Be1.text">
         <source>What is on your mind?</source>
-        <target>Waar denk je op dit moment aan?</target>
+        <target>在想什么？</target>
         <note>Class = "UILabel"; text = "What is on your mind?"; ObjectID = "jeI-4q-Be1";</note>
       </trans-unit>
       <trans-unit id="jfu-2R-0N7.text">
@@ -1074,7 +1074,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="jmn-GI-Die.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "jmn-GI-Die";</note>
       </trans-unit>
       <trans-unit id="k0V-mc-tdV.text">
@@ -1099,22 +1099,22 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="kSi-W1-Ybn.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "kSi-W1-Ybn";</note>
       </trans-unit>
       <trans-unit id="kSi-W1-Ybn.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "kSi-W1-Ybn";</note>
       </trans-unit>
       <trans-unit id="kX5-nY-cOB.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "kX5-nY-cOB";</note>
       </trans-unit>
       <trans-unit id="kX5-nY-cOB.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "kX5-nY-cOB";</note>
       </trans-unit>
       <trans-unit id="kek-Fh-oZh.text">
@@ -1124,17 +1124,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="kls-DA-sj1.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "kls-DA-sj1";</note>
       </trans-unit>
       <trans-unit id="kls-DA-sj1.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "kls-DA-sj1";</note>
       </trans-unit>
       <trans-unit id="ks9-ML-CSt.title">
         <source>Home</source>
-        <target>Thuis</target>
+        <target>主页</target>
         <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "ks9-ML-CSt";</note>
       </trans-unit>
       <trans-unit id="l8E-L6-r01.text">
@@ -1144,7 +1144,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="lYZ-Qb-UgT.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "lYZ-Qb-UgT";</note>
       </trans-unit>
       <trans-unit id="ltF-Mj-5Wb.text">
@@ -1154,17 +1154,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="mKu-wM-hgl.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "mKu-wM-hgl";</note>
       </trans-unit>
       <trans-unit id="mKu-wM-hgl.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "mKu-wM-hgl";</note>
       </trans-unit>
       <trans-unit id="mWy-B9-rVa.text">
         <source>followed you</source>
-        <target>volgt je</target>
+        <target>关注了你</target>
         <note>Class = "UILabel"; text = "followed you"; ObjectID = "mWy-B9-rVa";</note>
       </trans-unit>
       <trans-unit id="mZB-dP-2fB.text">
@@ -1187,7 +1187,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="njG-CO-WZ7.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "njG-CO-WZ7";</note>
       </trans-unit>
       <trans-unit id="nk8-xq-hBR.text">
@@ -1202,7 +1202,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="oBT-7l-gom.title">
         <source>Search</source>
-        <target>Zoek</target>
+        <target>搜索</target>
         <note>Class = "UIBarButtonItem"; title = "Search"; ObjectID = "oBT-7l-gom";</note>
       </trans-unit>
       <trans-unit id="oIN-jw-YDe.text">
@@ -1212,12 +1212,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="oLn-2m-0yg.normalTitle">
         <source>Privacy Policy</source>
-        <target>Privacybeleid</target>
+        <target>隐私协议</target>
         <note>Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "oLn-2m-0yg";</note>
       </trans-unit>
       <trans-unit id="oLn-2m-0yg.selectedTitle">
         <source>About Amaroq</source>
-        <target>Over Amaroq</target>
+        <target>关于Amaroq</target>
         <note>Class = "UIButton"; selectedTitle = "About Amaroq"; ObjectID = "oLn-2m-0yg";</note>
       </trans-unit>
       <trans-unit id="p2l-rG-NAE.accessibilityLabel">
@@ -1245,17 +1245,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="peC-Z9-8oy.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "peC-Z9-8oy";</note>
       </trans-unit>
       <trans-unit id="pf1-ws-wpH.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "pf1-ws-wpH";</note>
       </trans-unit>
       <trans-unit id="pf1-ws-wpH.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "pf1-ws-wpH";</note>
       </trans-unit>
       <trans-unit id="pfp-fF-EQA.text">
@@ -1275,7 +1275,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="qST-R4-uqh.text">
         <source>favourited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "qST-R4-uqh";</note>
       </trans-unit>
       <trans-unit id="qYM-J0-btz.text">
@@ -1290,7 +1290,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="qdw-BL-Qh6.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "qdw-BL-Qh6";</note>
       </trans-unit>
       <trans-unit id="qvb-3d-eGC.text">
@@ -1317,12 +1317,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="rjX-Ma-KFp.normalTitle">
         <source>Privacy Policy</source>
-        <target>Pribacybeleid</target>
+        <target>隐私协议</target>
         <note>Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "rjX-Ma-KFp";</note>
       </trans-unit>
       <trans-unit id="s1z-SI-cBc.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "s1z-SI-cBc";</note>
       </trans-unit>
       <trans-unit id="s8X-8f-cG8.text">
@@ -1351,7 +1351,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="smm-Ui-WXb.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "smm-Ui-WXb";</note>
       </trans-unit>
       <trans-unit id="t7H-2P-vOR.text">
@@ -1361,37 +1361,37 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="t7Z-ba-Vne.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "t7Z-ba-Vne";</note>
       </trans-unit>
       <trans-unit id="t7Z-ba-Vne.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "t7Z-ba-Vne";</note>
       </trans-unit>
       <trans-unit id="t36-72-bYZ.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "t36-72-bYZ";</note>
       </trans-unit>
       <trans-unit id="t36-72-bYZ.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "t36-72-bYZ";</note>
       </trans-unit>
       <trans-unit id="tAJ-lN-D3y.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "tAJ-lN-D3y";</note>
       </trans-unit>
       <trans-unit id="tAJ-lN-D3y.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "tAJ-lN-D3y";</note>
       </trans-unit>
       <trans-unit id="tCB-12-WzG.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "tCB-12-WzG";</note>
       </trans-unit>
       <trans-unit id="tPs-CE-wpY.text">
@@ -1424,17 +1424,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="uol-Ta-62W.text">
         <source>Additional comments</source>
-        <target>extra reacties</target>
+        <target>更多评论</target>
         <note>Class = "UILabel"; text = "Additional comments"; ObjectID = "uol-Ta-62W";</note>
       </trans-unit>
       <trans-unit id="uta-FN-35Y.text">
         <source>favourited your status</source>
-        <target>さんがあなたの投稿をお気に入り登録しました</target>
+        <target>赞了你的嘟文</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "uta-FN-35Y";</note>
       </trans-unit>
       <trans-unit id="v3J-FO-VYz.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "v3J-FO-VYz";</note>
       </trans-unit>
       <trans-unit id="v3S-aW-ZxL.text">
@@ -1449,7 +1449,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="vJm-tQ-6Xd.text">
         <source>13 hours ago</source>
-        <target>13 uur geleden</target>
+        <target>13小时前</target>
         <note>Class = "UILabel"; text = "13 hours ago"; ObjectID = "vJm-tQ-6Xd";</note>
       </trans-unit>
       <trans-unit id="vPp-nb-9cR.text">
@@ -1459,12 +1459,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="xBc-J3-UJK.normalTitle">
         <source>SHOW</source>
-        <target>TOON</target>
+        <target>显示</target>
         <note>Class = "UIButton"; normalTitle = "SHOW"; ObjectID = "xBc-J3-UJK";</note>
       </trans-unit>
       <trans-unit id="xBc-J3-UJK.selectedTitle">
         <source>HIDE</source>
-        <target>VERBERG</target>
+        <target>隐藏</target>
         <note>Class = "UIButton"; selectedTitle = "HIDE"; ObjectID = "xBc-J3-UJK";</note>
       </trans-unit>
       <trans-unit id="xU0-be-BKd.text">
@@ -1521,7 +1521,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="zNY-AT-2Dh.title">
         <source>Notifications</source>
-        <target>Notificaties</target>
+        <target>通知</target>
         <note>Class = "UINavigationItem"; title = "Notifications"; ObjectID = "zNY-AT-2Dh";</note>
       </trans-unit>
       <trans-unit id="zqA-C3-m9y.text">
@@ -1531,12 +1531,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="zsT-Ew-UkL.title">
         <source>Menu</source>
-        <target>Menu</target>
+        <target>菜单</target>
         <note>Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "zsT-Ew-UkL";</note>
       </trans-unit>
     </body>
   </file>
-  <file original="DireFloof/Info.plist" source-language="en" datatype="plaintext" target-language="nl">
+  <file original="DireFloof/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hans">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
@@ -1558,71 +1558,73 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
     </body>
   </file>
-  <file original="DireFloof/Localizable.strings" source-language="en" datatype="plaintext" target-language="nl">
+  <file original="DireFloof/Localizable.strings" source-language="en" datatype="plaintext" target-language="zh-Hans">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id=" or 1 video">
         <source> or 1 video</source>
-        <target>of 1 video</target>
+        <target>或者一部视频</target>
         <note>or 1 video</note>
       </trans-unit>
       <trans-unit id="ACCOUNT">
         <source>ACCOUNT</source>
-        <target>ACCOUNT</target>
+        <target>账号</target>
         <note>ACCOUNT</note>
       </trans-unit>
       <trans-unit id="About Amaroq">
         <source>About Amaroq</source>
-        <target>Over Amaroq</target>
+        <target>关于Amaroq</target>
         <note>About Amaroq</note>
       </trans-unit>
       <trans-unit id="About your Mastodon instance">
         <source>About your Mastodon instance</source>
-        <target>Over jouw Mastodon</target>
+        <target>关于本实例</target>
         <note>About your Mastodon instance</note>
       </trans-unit>
       <trans-unit id="Account preferences">
         <source>Account preferences</source>
-        <target>Account-instellingen</target>
+        <target>账号设定</target>
         <note>Account preferences</note>
       </trans-unit>
       <trans-unit id="Add instance">
         <source>Add instance</source>
-        <target>Voeg een server toe</target>
+        <target>添加实例</target>
         <note>Add instance</note>
       </trans-unit>
       <trans-unit id="Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!">
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
-        <target>Amaroq is ontwikkeld en onderhouden door een liefde aan het idee van Mastodon, die in nood was van een mobiele optie voor iOS-gebruikers. Heb je een suggestie, een bug gevonden of wil je gewoon wat ondersteuning? Je kunt ons bereiken via amaroq.feedback@gmail.com. Je kunt ook de ontwikkelaar via Mastodon bereiken op @eurasierboy op de mastodon.social-server. Veel plezier met tooten!</target>
+        <target>Amaroq是根据因纽特传说中的巨狼命名的，很适合做长毛象的小伙伴。 让我们一起嚎叫吧！
+
+Amaroq是出于对长毛象项目理念的热爱及急需iOS客户端的朋友们共同构建的。意见、建议以及bug，或者需要帮助的话请发邮件至amaroq.feedback@gmail.com。或者@eurasierboy@mastodon.social。嘟嘟愉快！</target>
         <note>Amaroq is named after an Inuit legend of a giant wolf, which is fitting as a companion to our friend the mastodon. May we all howl across the fediverse!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amaroq.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</note>
       </trans-unit>
       <trans-unit id="App settings">
         <source>App settings</source>
-        <target>App-instellingen</target>
+        <target>App设置</target>
         <note>App settings</note>
       </trans-unit>
       <trans-unit id="Are you sure you want to clear all your notifications?">
         <source>Are you sure you want to clear all your notifications?</source>
-        <target>Weet je zeker dat je al je notificaties wilt verwijderen?</target>
+        <target>确定要清除所有通知吗？</target>
         <note>Are you sure you want to clear all your notifications?</note>
       </trans-unit>
       <trans-unit id="Awoo mode">
         <source>Awoo mode</source>
-        <target>Awoo-modus</target>
+        <target>Awoo模式</target>
         <note>Awoo mode</note>
       </trans-unit>
       <trans-unit id="Back">
         <source>Back</source>
-        <target>Terug</target>
+        <target>返回</target>
         <note>Back</note>
       </trans-unit>
       <trans-unit id="Block">
         <source>Block</source>
-        <target>Blokkeer</target>
+        <target>屏蔽</target>
         <note>Block</note>
       </trans-unit>
       <trans-unit id="Block entire domain">
@@ -1639,82 +1641,81 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Blocked users">
         <source>Blocked users</source>
-        <target>Geblokkeerde gebruikers</target>
+        <target>黑名单用户</target>
         <note>Blocked users</note>
       </trans-unit>
       <trans-unit id="Cancel">
         <source>Cancel</source>
-        <target>Annuleer</target>
+        <target>取消</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Change how you receive push notifications">
         <source>Change how you receive push notifications</source>
-        <target>Verander hoe je push notificaties ontvangt</target>
+        <target>改变接受推送通知的方式</target>
         <note>Change how you receive push notifications</note>
       </trans-unit>
       <trans-unit id="Clear cache">
         <source>Clear cache</source>
-        <target>Verwijder tijdelijke bestanden</target>
+        <target>删除缓存</target>
         <note>Clear cache</note>
       </trans-unit>
       <trans-unit id="Copy text">
         <source>Copy text</source>
-        <target>Kopieer tekst</target>
+        <target>复制内容</target>
         <note>Copy text</note>
       </trans-unit>
       <trans-unit id="Currently logged into:">
         <source>Currently logged into:</source>
-        <target>Op dit moment ingelogd bij:</target>
+        <target>目前登录于：</target>
         <note>Currently logged into:</note>
       </trans-unit>
       <trans-unit id="DON'T AWOO $350 PENALTY">
         <source>DON'T AWOO $350 PENALTY</source>
-        <target>HUILEN ALS EEN WOLF = $350 BOETE!</target>
+        <target>Awoo罚350美刀</target>
         <note>DON'T AWOO $350 PENALTY</note>
       </trans-unit>
       <trans-unit id="Default posts to followers-only">
         <source>Default posts to followers-only</source>
-        <target>Maak posts standaard alleen voor volgers zichtbaar</target>
         <note>Default posts to followers-only</note>
       </trans-unit>
       <trans-unit id="Default posts to public">
         <source>Default posts to public</source>
-        <target>Maak posts standaard openbaar</target>
+        <target>默认发送公开嘟文</target>
         <note>Default posts to public</note>
       </trans-unit>
       <trans-unit id="Delete">
         <source>Delete</source>
-        <target>Verwijder</target>
+        <target>删除</target>
         <note>Delete</note>
       </trans-unit>
       <trans-unit id="Direct">
         <source>Direct</source>
-        <target>Direct</target>
+        <target>私信</target>
         <note>Direct</note>
       </trans-unit>
       <trans-unit id="Direct: Only visible to you and @mentioned users">
         <source>Direct: Only visible to you and @mentioned users</source>
-        <target>Direct: Alleen zichtbaar voor jou en je @genoemde gebruikers</target>
+        <target>私信：仅被@的用户可见</target>
         <note>Direct: Only visible to you and @mentioned users</note>
       </trans-unit>
       <trans-unit id="Disable gif auto-playback">
         <source>Disable gif auto-playback</source>
-        <target>Zet het automatisch afpelen van gif-afbeeldingen uit</target>
+        <target>禁止自动播放GIF动图</target>
         <note>Disable gif auto-playback</note>
       </trans-unit>
       <trans-unit id="Done">
         <source>Done</source>
-        <target>Klaar</target>
+        <target>完成</target>
         <note>Done</note>
       </trans-unit>
       <trans-unit id="Edit Profile">
         <source>Edit Profile</source>
-        <target>Wijzig profiel</target>
+        <target>修改资料</target>
         <note>Edit Profile</note>
       </trans-unit>
       <trans-unit id="Error">
         <source>Error</source>
-        <target>Fout</target>
+        <target>错误</target>
         <note>Error</note>
       </trans-unit>
       <trans-unit id="Failed to block domain with error:">
@@ -1723,42 +1724,42 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Failed to block user with error:">
         <source>Failed to block user with error:</source>
-        <target>Het blokkeren is van deze gebruiker is mislukt door deze fout:</target>
+        <target>屏蔽用户失败：</target>
         <note>Failed to block user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to clear notifications with error:">
         <source>Failed to clear notifications with error:</source>
-        <target>Het verwijderen van je notificaties is mislukt door deze fout:</target>
+        <target>清除通知失败：</target>
         <note>Failed to clear notifications with error:</note>
       </trans-unit>
       <trans-unit id="Failed to delete status with error:">
         <source>Failed to delete status with error:</source>
-        <target>Het verwijderen van je status is mislukt door deze fout:</target>
+        <target>删除嘟文失败：</target>
         <note>Failed to delete status with error:</note>
       </trans-unit>
       <trans-unit id="Failed to load user with error:">
         <source>Failed to load user with error:</source>
-        <target>Het laden van deze gebruiker is mislukt door deze fout:</target>
+        <target>读取用户失败：</target>
         <note>Failed to load user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to mute user with error:">
         <source>Failed to mute user with error:</source>
-        <target>Het dempen van de gebruiker is mislukt door deze fout:</target>
+        <target>静音用户失败：</target>
         <note>Failed to mute user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to post status with error:">
         <source>Failed to post status with error:</source>
-        <target>Het posten van je status is mislukt door deze fout:</target>
+        <target>嘟文发送失败：</target>
         <note>Failed to post status with error:</note>
       </trans-unit>
       <trans-unit id="Failed to report status with error:">
         <source>Failed to report status with error:</source>
-        <target>Het rapporteren van de status mislukt door deze fout:</target>
+        <target>发送报告失败：</target>
         <note>Failed to report status with error:</note>
       </trans-unit>
       <trans-unit id="Failed to retrieve your profile with error:">
         <source>Failed to retrieve your profile with error:</source>
-        <target>Het ophalen van je profiel is mislukt door deze fout:</target>
+        <target>获取用户资料失败：</target>
         <note>Failed to retrieve your profile with error:</note>
       </trans-unit>
       <trans-unit id="Failed to unblock domain with error:">
@@ -1767,27 +1768,27 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Failed to unblock user with error:">
         <source>Failed to unblock user with error:</source>
-        <target>Deblokkeren van gebruiker mislukt door deze fout:</target>
+        <target>取消屏蔽失败：</target>
         <note>Failed to unblock user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to unfollow user with error:">
         <source>Failed to unfollow user with error:</source>
-        <target>Stoppen met het volgen van de gebruiker mislukt door deze fout:</target>
+        <target>取消关注失败：</target>
         <note>Failed to unfollow user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to unmute user with error:">
         <source>Failed to unmute user with error:</source>
-        <target>Demping van gebruiker ongedaan maken mislukt door deze fout:</target>
+        <target>取消静音失败：</target>
         <note>Failed to unmute user with error:</note>
       </trans-unit>
       <trans-unit id="Favorites">
         <source>Favorites</source>
-        <target>Favorieten</target>
+        <target>收藏</target>
         <note>Favorites</note>
       </trans-unit>
       <trans-unit id="Federated">
         <source>Federated</source>
-        <target>Globaal</target>
+        <target>跨站</target>
         <note>Federated</note>
       </trans-unit>
       <trans-unit id="Federated timeline">
@@ -1800,32 +1801,32 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Follow requests">
         <source>Follow requests</source>
-        <target>Verzoeken om je te volgen</target>
+        <target>关注请求</target>
         <note>Follow requests</note>
       </trans-unit>
       <trans-unit id="Followers-only">
         <source>Followers-only</source>
-        <target>Alleen volgers</target>
+        <target>仅粉丝</target>
         <note>Followers-only</note>
       </trans-unit>
       <trans-unit id="Followers-only: Only visible to you, @mentioned users, and your followers">
         <source>Followers-only: Only visible to you, @mentioned users, and your followers</source>
-        <target>Alleen volgers: Alleen zichtbaar voor jou, @genoemde gebruikers en je volgers.</target>
+        <target>只有你，你@的人及你的粉丝可见</target>
         <note>Followers-only: Only visible to you, @mentioned users, and your followers</note>
       </trans-unit>
       <trans-unit id="HASHTAG">
         <source>HASHTAG</source>
-        <target>HASHTAG</target>
+        <target>话题</target>
         <note>HASHTAG</note>
       </trans-unit>
       <trans-unit id="Hold to show">
         <source>Hold to show</source>
-        <target>Houd ingedrukt om zichtbaar te maken</target>
+        <target>长按显示</target>
         <note>Hold to show</note>
       </trans-unit>
       <trans-unit id="Local">
         <source>Local</source>
-        <target>Lokaal</target>
+        <target>本地</target>
         <note>Local</note>
       </trans-unit>
       <trans-unit id="Local timeline">
@@ -1834,22 +1835,22 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Login request failed">
         <source>Login request failed</source>
-        <target>Verzoek om in te loggen mislukt</target>
+        <target>登录请求失败</target>
         <note>Login request failed</note>
       </trans-unit>
       <trans-unit id="Logout">
         <source>Logout</source>
-        <target>Uitloggen</target>
+        <target>注销</target>
         <note>Logout</note>
       </trans-unit>
       <trans-unit id="Mention">
         <source>Mention</source>
-        <target>Noem</target>
+        <target>提到</target>
         <note>Mention</note>
       </trans-unit>
       <trans-unit id="Mute">
         <source>Mute</source>
-        <target>Demp</target>
+        <target>静音</target>
         <note>Mute</note>
       </trans-unit>
       <trans-unit id="Mute conversation">
@@ -1858,22 +1859,22 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Muted users">
         <source>Muted users</source>
-        <target>Gedempte gebruikers</target>
+        <target>静音用户</target>
         <note>Muted users</note>
       </trans-unit>
       <trans-unit id="My instances">
         <source>My instances</source>
-        <target>Mijn servers</target>
+        <target>我的实例</target>
         <note>My instances</note>
       </trans-unit>
       <trans-unit id="My profile">
         <source>My profile</source>
-        <target>Mijn profiel</target>
+        <target>我的资料</target>
         <note>My profile</note>
       </trans-unit>
       <trans-unit id="Notification settings">
         <source>Notification settings</source>
-        <target>Notificatie-instellingen</target>
+        <target>通知设定</target>
         <note>Notification settings</note>
       </trans-unit>
       <trans-unit id="OK">
@@ -1882,52 +1883,52 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Only show to followers">
         <source>Only show to followers</source>
-        <target>Alleen volgers krijgen je posts te zien</target>
+        <target>仅粉丝可见</target>
         <note>Only show to followers</note>
       </trans-unit>
       <trans-unit id="Open in Safari">
         <source>Open in Safari</source>
-        <target>Open in Safari</target>
+        <target>在Safari中打开</target>
         <note>Open in Safari</note>
       </trans-unit>
       <trans-unit id="Please keep to videos up to 30 seconds long">
         <source>Please keep to videos up to 30 seconds long</source>
-        <target>Maak video’s niet langer dan 30 seconden</target>
+        <target>请将动画保持在30秒内</target>
         <note>Please keep to videos up to 30 seconds long</note>
       </trans-unit>
       <trans-unit id="Public">
         <source>Public</source>
-        <target>Openbaar</target>
+        <target>公开</target>
         <note>Public</note>
       </trans-unit>
       <trans-unit id="Public: Visible to everyone on local and federated timelines">
         <source>Public: Visible to everyone on local and federated timelines</source>
-        <target>Openbaar: Zichtbaar voor iedereen op lokale en globale tijdlijnen.</target>
+        <target>公开：所有本地及跨站用户可见</target>
         <note>Public: Visible to everyone on local and federated timelines</note>
       </trans-unit>
       <trans-unit id="Receive boost notifications">
         <source>Receive boost notifications</source>
-        <target>Ontvang notificaties wanneer iemand je een boost geeft</target>
+        <target>接收转发通知</target>
         <note>Receive boost notifications</note>
       </trans-unit>
       <trans-unit id="Receive favorite notifications">
         <source>Receive favorite notifications</source>
-        <target>Ontvang een notificatie wanneer iemand je bericht leuk vindt</target>
+        <target>接收点赞通知</target>
         <note>Receive favorite notifications</note>
       </trans-unit>
       <trans-unit id="Receive mention notifications">
         <source>Receive mention notifications</source>
-        <target>Ontvang een notificatie wanneer iemand je noemt</target>
+        <target>接收@通知</target>
         <note>Receive mention notifications</note>
       </trans-unit>
       <trans-unit id="Receive new follower notifications">
         <source>Receive new follower notifications</source>
-        <target>Ontvang notificaties over nieuwe volgers</target>
+        <target>接收新粉丝通知</target>
         <note>Receive new follower notifications</note>
       </trans-unit>
       <trans-unit id="Report">
         <source>Report</source>
-        <target>Rapporteer</target>
+        <target>举报</target>
         <note>Report</note>
       </trans-unit>
       <trans-unit id="See new awoos">
@@ -1940,47 +1941,47 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Select">
         <source>Select</source>
-        <target/>
+        <target>选择</target>
         <note>Select</note>
       </trans-unit>
       <trans-unit id="Select a privacy level">
         <source>Select a privacy level</source>
-        <target>Selecteer een privacy-level</target>
+        <target>选择隐私级别</target>
         <note>Select a privacy level</note>
       </trans-unit>
       <trans-unit id="Sensitive content">
         <source>Sensitive content</source>
-        <target>Gevoelige content</target>
+        <target>敏感内容</target>
         <note>Sensitive content</note>
       </trans-unit>
       <trans-unit id="Share">
         <source>Share</source>
-        <target>Deel</target>
+        <target>分享</target>
         <note>Share</note>
       </trans-unit>
       <trans-unit id="Shows on local/federated timelines">
         <source>Shows on local/federated timelines</source>
-        <target>Zichtbaar op lokale/globale tijdlijnen</target>
+        <target>显示在本地及跨站时间轴上</target>
         <note>Shows on local/federated timelines</note>
       </trans-unit>
       <trans-unit id="This can help older devices">
         <source>This can help older devices</source>
-        <target>Dit kan handig zijn voor oudere apparaten</target>
+        <target>适用于较老设备</target>
         <note>This can help older devices</note>
       </trans-unit>
       <trans-unit id="Translate text">
         <source>Translate text</source>
-        <target>Vertaal tekst</target>
+        <target>翻译</target>
         <note>Translate text</note>
       </trans-unit>
       <trans-unit id="Unable to connect to the Mastodon instance. Please try again later or with a different instance.">
         <source>Unable to connect to the Mastodon instance. Please try again later or with a different instance.</source>
-        <target>Kan geen verbinding maken met de Mastodon-server. Probeer het later opnieuw of met een andere server.</target>
+        <target>无法连接到指定实例。请稍候再试或更换到其他实例。</target>
         <note>Unable to connect to the Mastodon instance. Please try again later or with a different instance.</note>
       </trans-unit>
       <trans-unit id="Unblock">
         <source>Unblock</source>
-        <target>Deblokkeer</target>
+        <target>取消屏蔽</target>
         <note>Unblock</note>
       </trans-unit>
       <trans-unit id="Unfollow">
@@ -1989,17 +1990,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Unlisted">
         <source>Unlisted</source>
-        <target>Verborgen</target>
+        <target>不公布</target>
         <note>Unlisted</note>
       </trans-unit>
       <trans-unit id="Unlisted: Visible to everyone, but not shown on local or federated timelines">
         <source>Unlisted: Visible to everyone, but not shown on local or federated timelines</source>
-        <target>Verborgen: Zichtbaar voor iedereen, maar niet op lokale en globale tijdlijnen.</target>
+        <target>不公布：所有人可见，但不显示在本地或跨站时间轴上</target>
         <note>Unlisted: Visible to everyone, but not shown on local or federated timelines</note>
       </trans-unit>
       <trans-unit id="Unmute">
         <source>Unmute</source>
-        <target>Maak dempen omgedaan</target>
+        <target>取消静音</target>
         <note>Unmute</note>
       </trans-unit>
       <trans-unit id="Unmute conversation">
@@ -2012,62 +2013,62 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="Video too long">
         <source>Video too long</source>
-        <target>Video te lang</target>
+        <target>视频时间太长</target>
         <note>Video too long</note>
       </trans-unit>
       <trans-unit id="You have">
         <source>You have</source>
-        <target/>
+        <target>你有</target>
         <note>You have</note>
       </trans-unit>
       <trans-unit id="boosted">
         <source>boosted</source>
-        <target>boostte</target>
+        <target>转发了</target>
         <note>boosted</note>
       </trans-unit>
       <trans-unit id="boosted your status">
         <source>boosted your status</source>
-        <target>heeft je status geboost</target>
+        <target>转发了你的嘟文</target>
         <note>boosted your status</note>
       </trans-unit>
       <trans-unit id="favorited your status">
         <source>favorited your status</source>
-        <target>vindt je status leuk</target>
+        <target>赞了你的嘟文</target>
         <note>favorited your status</note>
       </trans-unit>
       <trans-unit id="followed you">
         <source>followed you</source>
-        <target>volgde je</target>
+        <target>关注了你</target>
         <note>followed you</note>
       </trans-unit>
       <trans-unit id="image">
         <source>image</source>
-        <target>afbeelding</target>
+        <target>张图片</target>
         <note>image</note>
       </trans-unit>
       <trans-unit id="images">
         <source>images</source>
-        <target>afbeeldingen</target>
+        <target>张图片</target>
         <note>images</note>
       </trans-unit>
       <trans-unit id="mentioned you">
         <source>mentioned you</source>
-        <target>heeft je genoemd</target>
+        <target>提到了你</target>
         <note>mentioned you</note>
       </trans-unit>
       <trans-unit id="new notifications">
         <source>new notifications</source>
-        <target>nieuwe notificaties</target>
+        <target>条新通知</target>
         <note>new notifications</note>
       </trans-unit>
       <trans-unit id="replied">
         <source>replied</source>
-        <target>heeft gereageerd</target>
+        <target>回复了</target>
         <note>replied</note>
       </trans-unit>
       <trans-unit id="replied to">
         <source>replied to</source>
-        <target>heeft gereageerd op</target>
+        <target>回复了</target>
         <note>replied to</note>
       </trans-unit>
     </body>

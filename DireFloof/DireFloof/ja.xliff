@@ -2,13 +2,13 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="DireFloof/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ja">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body/>
   </file>
   <file original="DireFloof/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ja">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="0B8-3F-mRu.title">
@@ -278,6 +278,10 @@
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "C2B-wS-Gh4";</note>
       </trans-unit>
+      <trans-unit id="C3h-fX-UsK.text">
+        <source>John~</source>
+        <note>Class = "UILabel"; text = "John~"; ObjectID = "C3h-fX-UsK";</note>
+      </trans-unit>
       <trans-unit id="C5h-Jy-9VQ.normalTitle">
         <source>SHOW</source>
         <target>表示</target>
@@ -475,6 +479,14 @@
         <target>さんがあなたの投稿をお気に入り登録しました</target>
         <note>Class = "UILabel"; text = "favourited your status"; ObjectID = "K0i-eE-4xG";</note>
       </trans-unit>
+      <trans-unit id="KGv-PL-ypn.accessibilityLabel">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "KGv-PL-ypn";</note>
+      </trans-unit>
+      <trans-unit id="KGv-PL-ypn.placeholder">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "KGv-PL-ypn";</note>
+      </trans-unit>
       <trans-unit id="KH6-XY-QeM.text">
         <source>John~</source>
         <target>John~</target>
@@ -586,6 +598,14 @@
         <source>FOLLOWS YOU</source>
         <target>フォローされています</target>
         <note>Class = "UIButton"; normalTitle = "FOLLOWS YOU"; ObjectID = "OAS-Mr-yP8";</note>
+      </trans-unit>
+      <trans-unit id="OXJ-ax-8EG.normalTitle">
+        <source>See new toots</source>
+        <note>Class = "UIButton"; normalTitle = "See new toots"; ObjectID = "OXJ-ax-8EG";</note>
+      </trans-unit>
+      <trans-unit id="OXJ-ax-8EG.selectedTitle">
+        <source>TOOT!</source>
+        <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "OXJ-ax-8EG";</note>
       </trans-unit>
       <trans-unit id="P5a-iM-rWf.normalTitle">
         <source>SHOW</source>
@@ -855,6 +875,14 @@
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
         <note>Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "bVs-1e-rdN";</note>
       </trans-unit>
+      <trans-unit id="baF-xe-MaI.accessibilityLabel">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "baF-xe-MaI";</note>
+      </trans-unit>
+      <trans-unit id="baF-xe-MaI.placeholder">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "baF-xe-MaI";</note>
+      </trans-unit>
       <trans-unit id="bfJ-yc-2cN.text">
         <source>Warning Tag</source>
         <target>Warning Tag</target>
@@ -986,6 +1014,14 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>Warning Tag</source>
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "hCN-Nu-RJv";</note>
+      </trans-unit>
+      <trans-unit id="hJz-a5-dG0.normalTitle">
+        <source>See new toots</source>
+        <note>Class = "UIButton"; normalTitle = "See new toots"; ObjectID = "hJz-a5-dG0";</note>
+      </trans-unit>
+      <trans-unit id="hJz-a5-dG0.selectedTitle">
+        <source>TOOT!</source>
+        <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "hJz-a5-dG0";</note>
       </trans-unit>
       <trans-unit id="hnO-sI-rxq.text">
         <source>John~</source>
@@ -1136,6 +1172,14 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <target>Warning Tag</target>
         <note>Class = "UILabel"; text = "Warning Tag"; ObjectID = "mZB-dP-2fB";</note>
       </trans-unit>
+      <trans-unit id="mum-mr-J6x.normalTitle">
+        <source>See new toots</source>
+        <note>Class = "UIButton"; normalTitle = "See new toots"; ObjectID = "mum-mr-J6x";</note>
+      </trans-unit>
+      <trans-unit id="mum-mr-J6x.selectedTitle">
+        <source>TOOT!</source>
+        <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "mum-mr-J6x";</note>
+      </trans-unit>
       <trans-unit id="n6A-5e-v6Y.text">
         <source>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</source>
         <target>Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest</target>
@@ -1175,6 +1219,14 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
         <source>About Amaroq</source>
         <target>Amaroqについて</target>
         <note>Class = "UIButton"; selectedTitle = "About Amaroq"; ObjectID = "oLn-2m-0yg";</note>
+      </trans-unit>
+      <trans-unit id="p2l-rG-NAE.accessibilityLabel">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "p2l-rG-NAE";</note>
+      </trans-unit>
+      <trans-unit id="p2l-rG-NAE.placeholder">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "p2l-rG-NAE";</note>
       </trans-unit>
       <trans-unit id="pFj-zL-Wd9.text">
         <source>John~</source>
@@ -1254,6 +1306,14 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       <trans-unit id="rQZ-Ld-pnT.accessibilityLabel">
         <source>Scroll to top</source>
         <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "rQZ-Ld-pnT";</note>
+      </trans-unit>
+      <trans-unit id="rRC-3U-JxA.accessibilityLabel">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "rRC-3U-JxA";</note>
+      </trans-unit>
+      <trans-unit id="rRC-3U-JxA.placeholder">
+        <source>Describe for the visually impaired</source>
+        <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "rRC-3U-JxA";</note>
       </trans-unit>
       <trans-unit id="rjX-Ma-KFp.normalTitle">
         <source>Privacy Policy</source>
@@ -1478,7 +1538,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
   </file>
   <file original="DireFloof/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName">
@@ -1487,14 +1547,20 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       <trans-unit id="CFBundleName">
         <source>$(PRODUCT_NAME)</source>
       </trans-unit>
-      <trans-unit id="CFBundleShortVersionString">
-        <source>1.1.2</source>
+      <trans-unit id="NSCameraUsageDescription">
+        <source>We'd like to access your camera in order to allow you to take a picture to upload</source>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryAddUsageDescription">
+        <source>We'd like access to add to your photo library in order to save images</source>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryUsageDescription">
+        <source>We'd like access to your photo library in order to upload your photo selections</source>
       </trans-unit>
     </body>
   </file>
   <file original="DireFloof/Localizable.strings" source-language="en" datatype="plaintext" target-language="ja">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.2" build-num="9C40b"/>
     </header>
     <body>
       <trans-unit id=" or 1 video">
@@ -1560,6 +1626,18 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>Block</source>
         <target>ブロック</target>
         <note>Block</note>
+      </trans-unit>
+      <trans-unit id="Block entire domain">
+        <source>Block entire domain</source>
+        <note>Block entire domain</note>
+      </trans-unit>
+      <trans-unit id="Blocked domain">
+        <source>Blocked domain</source>
+        <note>Blocked domain</note>
+      </trans-unit>
+      <trans-unit id="Blocked domains">
+        <source>Blocked domains</source>
+        <note>Blocked domains</note>
       </trans-unit>
       <trans-unit id="Blocked users">
         <source>Blocked users</source>
@@ -1640,6 +1718,10 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>エラー</target>
         <note>Error</note>
       </trans-unit>
+      <trans-unit id="Failed to block domain with error:">
+        <source>Failed to block domain with error:</source>
+        <note>Failed to block domain with error:</note>
+      </trans-unit>
       <trans-unit id="Failed to block user with error:">
         <source>Failed to block user with error:</source>
         <target>ユーザーのブロックに失敗しました:</target>
@@ -1679,6 +1761,10 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>Failed to retrieve your profile with error:</source>
         <target>プロフィールの取得に失敗しました:</target>
         <note>Failed to retrieve your profile with error:</note>
+      </trans-unit>
+      <trans-unit id="Failed to unblock domain with error:">
+        <source>Failed to unblock domain with error:</source>
+        <note>Failed to block domain with error:</note>
       </trans-unit>
       <trans-unit id="Failed to unblock user with error:">
         <source>Failed to unblock user with error:</source>
@@ -1767,6 +1853,10 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>ミュート</target>
         <note>Mute</note>
       </trans-unit>
+      <trans-unit id="Mute conversation">
+        <source>Mute conversation</source>
+        <note>Mute conversation</note>
+      </trans-unit>
       <trans-unit id="Muted users">
         <source>Muted users</source>
         <target>ミュートしたユーザー</target>
@@ -1841,6 +1931,14 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>報告</target>
         <note>Report</note>
       </trans-unit>
+      <trans-unit id="See new awoos">
+        <source>See new awoos</source>
+        <note>See new awoos</note>
+      </trans-unit>
+      <trans-unit id="See new toots">
+        <source>See new toots</source>
+        <note>See new toots</note>
+      </trans-unit>
       <trans-unit id="Select">
         <source>Select</source>
         <target/>
@@ -1905,6 +2003,14 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <target>ミュート解除</target>
         <note>Unmute</note>
       </trans-unit>
+      <trans-unit id="Unmute conversation">
+        <source>Unmute conversation</source>
+        <note>Unmute conversation</note>
+      </trans-unit>
+      <trans-unit id="Users of this domain will no longer show in public or local timelines.">
+        <source>Users of this domain will no longer show in public or local timelines.</source>
+        <note>Users of this domain will no longer show in public or local timelines.</note>
+      </trans-unit>
       <trans-unit id="Video too long">
         <source>Video too long</source>
         <target>動画が長すぎます</target>
@@ -1964,32 +2070,6 @@ AmaroqはMastodonの愛あるアイデアで開発され、支えられていま
         <source>replied to</source>
         <target>さんがリプライしました</target>
         <note>replied to</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="DireFloofTests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
-    </header>
-    <body>
-      <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source>
-      </trans-unit>
-      <trans-unit id="CFBundleShortVersionString">
-        <source>1.0</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="DireFloofUITests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
-    </header>
-    <body>
-      <trans-unit id="CFBundleName">
-        <source>$(PRODUCT_NAME)</source>
-      </trans-unit>
-      <trans-unit id="CFBundleShortVersionString">
-        <source>1.0</source>
       </trans-unit>
     </body>
   </file>
