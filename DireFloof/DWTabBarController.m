@@ -179,6 +179,10 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         }
     }
     
+    // Collect the window and determine the true width when we're in portrait mode
+    CGRect windowBounds = [UIApplication sharedApplication].keyWindow.bounds;
+    CGFloat width = MIN(windowBounds.size.height, windowBounds.size.width);
+    
     if (!self.notificationBadge) {
         self.notificationBadge = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
         self.notificationBadge.clipsToBounds = YES;
@@ -191,20 +195,20 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         
         [self.notificationBadge autoSetDimensionsToSize:CGSizeMake(10, 10)];
         [self.notificationBadge autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self.tabBar withOffset:10.0f];
-        [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar withOffset:8.0f + self.tabBar.bounds.size.width/5.0f];
+        [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar withOffset:8.0f + width/5.0f];
         [[DWNotificationStore sharedStore] setNotificationBadge:self.notificationBadge];
     }
     
     if (!self.centerTabOverlay) {
-        self.centerTabOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tabBar.bounds.size.width/5.0f, self.tabBar.bounds.size.height)];
+        self.centerTabOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width/5.0f, 49.0f)];
         self.centerTabOverlay.backgroundColor = [UIColor clearColor];
         
-        UIView *buttonBackground = [[UIView alloc] initWithFrame:CGRectMake(10.0f, 5.0f, self.tabBar.bounds.size.width/5.0f - 20.0f, self.tabBar.bounds.size.height - 10.0f)];
+        UIView *buttonBackground = [[UIView alloc] initWithFrame:CGRectMake(10.0f, 5.0f, width/5.0f - 20.0f, 39.0f)];
         buttonBackground.backgroundColor = DW_BLUE_COLOR;
         buttonBackground.clipsToBounds = YES;
         buttonBackground.layer.cornerRadius = 4.0f;
         [self.centerTabOverlay addSubview:buttonBackground];
-        [buttonBackground autoSetDimensionsToSize:CGSizeMake(self.tabBar.bounds.size.width/5.0f - 20.0f, self.tabBar.bounds.size.height - 10.0f)];
+        [buttonBackground autoSetDimensionsToSize:CGSizeMake(width/5.0f - 20.0f, 39.0f)];
         [buttonBackground autoCenterInSuperview];
         
         UIButton *composeButton = [[UIButton alloc] initWithFrame:self.centerTabOverlay.bounds];
@@ -216,7 +220,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         [composeButton autoPinEdgesToSuperviewEdges];
         
         [self.tabBar addSubview:self.centerTabOverlay];
-        [self.centerTabOverlay autoSetDimensionsToSize:CGSizeMake(self.tabBar.bounds.size.width/5.0f, self.tabBar.bounds.size.height)];
+        [self.centerTabOverlay autoSetDimensionsToSize:CGSizeMake(width/5.0f, 49.0f)];
         [self.centerTabOverlay autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self.tabBar];
         [self.centerTabOverlay autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar];
     }
@@ -240,8 +244,8 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
         [self.tabBar addSubview:menuOverlay];
         [menuOverlay autoSetDimensionsToSize:CGSizeMake(21.0f, 21.0f)];
-        [menuOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.tabBar withOffset:-6.0f];
-        [menuOverlay autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:self.tabBar.bounds.size.width/10.0f - 20.0f];
+        [menuOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.centerTabOverlay withOffset:-6.0f];
+        [menuOverlay autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:width/10.0f - 20.0f];
     }
     
     __weak UIImageView *__avatarImageView = self.avatarImageView;
