@@ -24,7 +24,10 @@
         // Font size
         NSDictionary *attributesForRange = [self attributesAtIndex:range.location effectiveRange:nil];
         UIFont *fontForRange = [attributesForRange valueForKey:NSFontAttributeName];
-        CGSize imageSizeMatchingFontSize = CGSizeMake(inlineImage.size.width * (fontForRange.capHeight / inlineImage.size.height), fontForRange.capHeight);
+        
+        // We want just a bit smaller than the literal cap height because the images will actually kiss the overall line height just enough to trip word wrapping; the intrinsic content size of the label does not know how to account for this
+        CGFloat adjustedCapHeight = fontForRange.capHeight - 1.0f;
+        CGSize imageSizeMatchingFontSize = CGSizeMake(inlineImage.size.width * (adjustedCapHeight / inlineImage.size.height), adjustedCapHeight);
         
         // Some scaling for prettiness
         CGFloat defaultScale = 1.4f;
