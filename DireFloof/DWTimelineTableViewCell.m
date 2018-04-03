@@ -504,10 +504,10 @@
     for (MSEmoji *emoji in status.emojis) {
         
         [[AFImageDownloader defaultInstance] downloadImageForURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:emoji.static_url]] success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull responseObject) {
-            NSAttributedString *contentStringWithImage = [self.contentLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
-            NSAttributedString *warningStringWithImage = [self.warningTagLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
-
             dispatch_async(dispatch_get_main_queue(), ^{
+                NSAttributedString *contentStringWithImage = [self.contentLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
+                NSAttributedString *warningStringWithImage = [self.warningTagLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
+                
                 self.contentLabel.attributedText = contentStringWithImage;
                 self.warningTagLabel.attributedText = warningStringWithImage;
             });
