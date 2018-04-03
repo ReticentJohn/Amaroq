@@ -960,7 +960,7 @@
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 				"${PODS_ROOT}/OAuth2/Pod/Classes/OAuthRequestController.xib",
-				$PODS_CONFIGURATION_BUILD_DIR/OAuth2/OAuth2.bundle,
+				"$PODS_CONFIGURATION_BUILD_DIR/OAuth2/OAuth2.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1002,7 +1002,6 @@
 				"${BUILT_PRODUCTS_DIR}/UIImage-Resize/UIImage_Resize.framework",
 				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-				"${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1030,7 +1029,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImage_Resize.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/twitter_text.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BD23DE19903FF2322542D4E36EF26742'
+               BlueprintIdentifier = '7A4CFCFEBBFBF6411BC48029E911622E'
                BlueprintName = 'RMActionController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'RMActionController.framework'>

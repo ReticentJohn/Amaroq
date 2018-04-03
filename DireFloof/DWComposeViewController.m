@@ -10,7 +10,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #import <RMPickerViewController/RMPickerViewController.h>
-#import <twitter_text/TwitterText.h>
 #import <YLProgressBar/YLProgressBar.h>
 #import <GMImagePicker/GMImagePickerController.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>

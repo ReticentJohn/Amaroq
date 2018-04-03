@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "524DF53D4611C9928BF87F1A727A6275"
+               BlueprintIdentifier = "2F4599BDCF23E92841A38EBE4A2FBC1A"
                BuildableName = "UIImage_Resize.framework"
                BlueprintName = "UIImage-Resize"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "524DF53D4611C9928BF87F1A727A6275"
+            BlueprintIdentifier = "2F4599BDCF23E92841A38EBE4A2FBC1A"
             BuildableName = "UIImage_Resize.framework"
             BlueprintName = "UIImage-Resize"
             ReferencedContainer = "container:Pods.xcodeproj">

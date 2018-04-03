@@ -17,7 +17,6 @@ target 'DireFloof' do
   pod 'CHTCollectionViewWaterfallLayout'
   pod 'PureLayout'
   pod 'MHVideoPhotoGallery', git: 'https://github.com/ReticentJohn/MHVideoPhotoGallery.git', branch: 'Audio-Dismiss-Fix'
-  pod 'twitter-text', podspec: 'https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec'
   pod 'FCFileManager'
   pod 'GPUImage', git: 'https://github.com/ReticentJohn/GPUImage.git', branch: 'master'
   pod 'Firebase/Core'
