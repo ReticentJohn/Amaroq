@@ -159,7 +159,7 @@ static NSInteger mediaUploadLimit = 4;
             self.progressBar.hidden = YES;
             
             
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Failed to post status with error:", @"Failed to post status with error:"), error.localizedFailureReason] preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to post status with error:", @"Failed to post status with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
             
             [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
             
@@ -191,7 +191,7 @@ static NSInteger mediaUploadLimit = 4;
         }
         else
         {
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Failed to report status with error:", @"Failed to report status with error:"), error.localizedFailureReason] preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to report status with error:", @"Failed to report status with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
             
             [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
             [self presentViewController:alertController animated:YES completion:nil];
