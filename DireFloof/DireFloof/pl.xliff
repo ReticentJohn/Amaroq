@@ -43,6 +43,7 @@
       </trans-unit>
       <trans-unit id="2kN-ah-4CU.accessibilityLabel">
         <source>Content warning</source>
+        <target>Ostrożnie</target>
         <note>Class = "UITextField"; accessibilityLabel = "Content warning"; ObjectID = "2kN-ah-4CU";</note>
       </trans-unit>
       <trans-unit id="2kN-ah-4CU.placeholder">
@@ -282,6 +283,7 @@
       </trans-unit>
       <trans-unit id="C3h-fX-UsK.text">
         <source>John~</source>
+        <target>John~</target>
         <note>Class = "UILabel"; text = "John~"; ObjectID = "C3h-fX-UsK";</note>
       </trans-unit>
       <trans-unit id="C5h-Jy-9VQ.normalTitle">
@@ -391,6 +393,7 @@
       </trans-unit>
       <trans-unit id="Fjl-TP-l3I.title">
         <source>Federated</source>
+        <target>Międzymiastowa</target>
         <note>Class = "UINavigationItem"; title = "Federated"; ObjectID = "Fjl-TP-l3I";</note>
       </trans-unit>
       <trans-unit id="G6Y-hr-aDj.text">
@@ -485,10 +488,12 @@
       </trans-unit>
       <trans-unit id="KGv-PL-ypn.accessibilityLabel">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "KGv-PL-ypn";</note>
       </trans-unit>
       <trans-unit id="KGv-PL-ypn.placeholder">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "KGv-PL-ypn";</note>
       </trans-unit>
       <trans-unit id="KH6-XY-QeM.text">
@@ -608,10 +613,12 @@
       </trans-unit>
       <trans-unit id="OXJ-ax-8EG.normalTitle">
         <source>See new toots</source>
+        <target>świeże wiadomości</target>
         <note>Class = "UIButton"; normalTitle = "See new toots"; ObjectID = "OXJ-ax-8EG";</note>
       </trans-unit>
       <trans-unit id="OXJ-ax-8EG.selectedTitle">
         <source>TOOT!</source>
+        <target>TUUT!</target>
         <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "OXJ-ax-8EG";</note>
       </trans-unit>
       <trans-unit id="P5a-iM-rWf.normalTitle">
@@ -851,6 +858,7 @@
       </trans-unit>
       <trans-unit id="aZc-lv-edf.text">
         <source>Subtitle</source>
+        <target>Podpis</target>
         <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "aZc-lv-edf";</note>
       </trans-unit>
       <trans-unit id="aam-jg-MZf.text">
@@ -885,10 +893,12 @@
       </trans-unit>
       <trans-unit id="baF-xe-MaI.accessibilityLabel">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "baF-xe-MaI";</note>
       </trans-unit>
       <trans-unit id="baF-xe-MaI.placeholder">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "baF-xe-MaI";</note>
       </trans-unit>
       <trans-unit id="bfJ-yc-2cN.text">
@@ -898,6 +908,7 @@
       </trans-unit>
       <trans-unit id="blm-y0-hTt.title">
         <source>Home timeline</source>
+        <target>Moje wiadomości</target>
         <note>Class = "UITabBarItem"; title = "Home timeline"; ObjectID = "blm-y0-hTt";</note>
       </trans-unit>
       <trans-unit id="bpa-6G-0UK.title">
@@ -992,6 +1003,7 @@
       </trans-unit>
       <trans-unit id="fin-fd-APT.text">
         <source>Title</source>
+        <target>Tytuł</target>
         <note>Class = "UILabel"; text = "Title"; ObjectID = "fin-fd-APT";</note>
       </trans-unit>
       <trans-unit id="fmy-pu-s9i.text">
@@ -1018,6 +1030,12 @@
         <source>Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!
 
 Amaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!</source>
+        <target>Nazwa programu Amaroq wywodzi się z inuickiej legendy o olbrzymim wilku, który za dawnych czasów towarzyszył przodkom mamutów. Niech wilk zawyje w naszym rozproszonym świecie!
+
+Program Amaroq powstał z pilnej potrzeby zaopatrzenia w narzędzia naszych braci, posługujących się zabawkami z systemem iOS.
+
+Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklepać autora po plecach? Pisz na adres amaroq.feedback@gmail.com. Możesz go też złapać pisząc do @eurasierboy na serwerze mastodon.social. Miłego srututuuu!
+</target>
         <note>Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY";</note>
       </trans-unit>
       <trans-unit id="hCN-Nu-RJv.text">
@@ -1027,10 +1045,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="hJz-a5-dG0.normalTitle">
         <source>See new toots</source>
+        <target>świeże wiadomości</target>
         <note>Class = "UIButton"; normalTitle = "See new toots"; ObjectID = "hJz-a5-dG0";</note>
       </trans-unit>
       <trans-unit id="hJz-a5-dG0.selectedTitle">
         <source>TOOT!</source>
+        <target>TUUT!</target>
         <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "hJz-a5-dG0";</note>
       </trans-unit>
       <trans-unit id="hnO-sI-rxq.text">
@@ -1070,6 +1090,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="izx-3l-fkf.text">
         <source>Title</source>
+        <target>Tytuł</target>
         <note>Class = "UILabel"; text = "Title"; ObjectID = "izx-3l-fkf";</note>
       </trans-unit>
       <trans-unit id="jeI-4q-Be1.text">
@@ -1184,10 +1205,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="mum-mr-J6x.normalTitle">
         <source>See new toots</source>
+        <target>świeże wiadomości</target>
         <note>Class = "UIButton"; normalTitle = "See new toots"; ObjectID = "mum-mr-J6x";</note>
       </trans-unit>
       <trans-unit id="mum-mr-J6x.selectedTitle">
         <source>TOOT!</source>
+        <target>TUUT!</target>
         <note>Class = "UIButton"; selectedTitle = "TOOT!"; ObjectID = "mum-mr-J6x";</note>
       </trans-unit>
       <trans-unit id="n6A-5e-v6Y.text">
@@ -1232,10 +1255,12 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="p2l-rG-NAE.accessibilityLabel">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "p2l-rG-NAE";</note>
       </trans-unit>
       <trans-unit id="p2l-rG-NAE.placeholder">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "p2l-rG-NAE";</note>
       </trans-unit>
       <trans-unit id="pFj-zL-Wd9.text">
@@ -1315,14 +1340,17 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="rQZ-Ld-pnT.accessibilityLabel">
         <source>Scroll to top</source>
+        <target>na samą górę</target>
         <note>Class = "UIButton"; accessibilityLabel = "Scroll to top"; ObjectID = "rQZ-Ld-pnT";</note>
       </trans-unit>
       <trans-unit id="rRC-3U-JxA.accessibilityLabel">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; accessibilityLabel = "Describe for the visually impaired"; ObjectID = "rRC-3U-JxA";</note>
       </trans-unit>
       <trans-unit id="rRC-3U-JxA.placeholder">
         <source>Describe for the visually impaired</source>
+        <target>opisz obrazek dla niewidomych</target>
         <note>Class = "UITextField"; placeholder = "Describe for the visually impaired"; ObjectID = "rRC-3U-JxA";</note>
       </trans-unit>
       <trans-unit id="rjX-Ma-KFp.normalTitle">
@@ -1527,6 +1555,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="zBm-cJ-8j1.text">
         <source>Subtitle</source>
+        <target>Podpis</target>
         <note>Class = "UILabel"; text = "Subtitle"; ObjectID = "zBm-cJ-8j1";</note>
       </trans-unit>
       <trans-unit id="zLO-VU-rhZ.text">
@@ -1564,12 +1593,15 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="NSCameraUsageDescription">
         <source>We'd like to access your camera in order to allow you to take a picture to upload</source>
+        <target>Żeby móc zrobić zdjęcie, potrzebna jest zgoda na skorzystanie z aparatu</target>
       </trans-unit>
       <trans-unit id="NSPhotoLibraryAddUsageDescription">
         <source>We'd like access to add to your photo library in order to save images</source>
+        <target>Żeby móc zapisać obrazak, potrzebna jest zgoda na dostęp do zdjęc</target>
       </trans-unit>
       <trans-unit id="NSPhotoLibraryUsageDescription">
         <source>We'd like access to your photo library in order to upload your photo selections</source>
+        <target>Żeby móc załadować obrazki, potrzebna jest zgoda na dostęp do zdjęc</target>
       </trans-unit>
     </body>
   </file>
@@ -1647,14 +1679,17 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Block entire domain">
         <source>Block entire domain</source>
+        <target>zablokuj cały sajt</target>
         <note>Block entire domain</note>
       </trans-unit>
       <trans-unit id="Blocked domain">
         <source>Blocked domain</source>
+        <target>Zablokowane sajty</target>
         <note>Blocked domain</note>
       </trans-unit>
       <trans-unit id="Blocked domains">
         <source>Blocked domains</source>
+        <target>Zablokowane sajty</target>
         <note>Blocked domains</note>
       </trans-unit>
       <trans-unit id="Blocked users">
@@ -1739,11 +1774,12 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Failed to block domain with error:">
         <source>Failed to block domain with error:</source>
+        <target>Próba zablokowanie sajtu nie powiodła się:</target>
         <note>Failed to block domain with error:</note>
       </trans-unit>
       <trans-unit id="Failed to block user with error:">
         <source>Failed to block user with error:</source>
-        <target>Próba zablokownia nie powiodła się:</target>
+        <target>Próba zablokowania użytkownika nie powiodła się:</target>
         <note>Failed to block user with error:</note>
       </trans-unit>
       <trans-unit id="Failed to clear notifications with error:">
@@ -1783,6 +1819,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Failed to unblock domain with error:">
         <source>Failed to unblock domain with error:</source>
+        <target>Próba odblokowania sajtu nie powiodła się:</target>
         <note>Failed to block domain with error:</note>
       </trans-unit>
       <trans-unit id="Failed to unblock user with error:">
@@ -1817,6 +1854,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Follow">
         <source>Follow</source>
+        <target>obserwuj</target>
         <note>Follow</note>
       </trans-unit>
       <trans-unit id="Follow requests">
@@ -1876,6 +1914,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Mute conversation">
         <source>Mute conversation</source>
+        <target>ignoruj ten wątek</target>
         <note>Mute conversation</note>
       </trans-unit>
       <trans-unit id="Muted users">
@@ -1900,6 +1939,7 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="OK">
         <source>OK</source>
+        <target>OK</target>
         <note>OK</note>
       </trans-unit>
       <trans-unit id="Only show to followers">
@@ -1954,10 +1994,12 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="See new awoos">
         <source>See new awoos</source>
+        <target>Najświeższe odgłosy</target>
         <note>See new awoos</note>
       </trans-unit>
       <trans-unit id="See new toots">
         <source>See new toots</source>
+        <target>świeże wiadomości</target>
         <note>See new toots</note>
       </trans-unit>
       <trans-unit id="Select">
@@ -2027,10 +2069,12 @@ Czy masz jakieś uwagi? Pojawiają się błędy? A może po prostu chcesz poklep
       </trans-unit>
       <trans-unit id="Unmute conversation">
         <source>Unmute conversation</source>
+        <target>przestań ignorować wątek</target>
         <note>Unmute conversation</note>
       </trans-unit>
       <trans-unit id="Users of this domain will no longer show in public or local timelines.">
         <source>Users of this domain will no longer show in public or local timelines.</source>
+        <target>Użytkownicy z tego sajtu nie będą częścią rozmowy miejscowej oraz międzymiastowej</target>
         <note>Users of this domain will no longer show in public or local timelines.</note>
       </trans-unit>
       <trans-unit id="Video too long">
