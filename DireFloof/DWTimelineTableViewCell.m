@@ -474,8 +474,6 @@
     if (status.content) {
         self.contentLabel.text = status.content;
         [self.contentLabel setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];
-        
-        self.dateLabel.accessibilityLabel = [self.dateLabel.accessibilityLabel stringByAppendingFormat:@". %@", status.content];
     }
     
     self.retootButton.enabled = ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_PRIVATE] && ![status.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT];
@@ -491,6 +489,10 @@
     
     self.favoriteButton.tintColor = status.favourited ? DW_FAVORITED_ICON_TINT_COLOR : DW_BASE_ICON_TINT_COLOR;
     self.retootButton.tintColor = status.reblogged ? DW_BLUE_COLOR : DW_BASE_ICON_TINT_COLOR;
+    
+    self.favoriteButton.accessibilityLabel = status.favourited ? NSLocalizedString(@"Unfavorite", @"Unfavorite") : NSLocalizedString(@"Favorite", @"Favorite");
+    self.retootButton.accessibilityLabel = status.reblogged ? NSLocalizedString(@"Unboost", @"Unboost") : NSLocalizedString(@"Boost", @"Boost");
+    
     self.retootCountLabel.text = [NSString stringWithFormat:@"%@ •", status.reblogs_count];
     self.favoriteCountLabel.text = [NSString stringWithFormat:@"%@", status.favourites_count];
     

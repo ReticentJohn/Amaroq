@@ -902,6 +902,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             self.followingButton.tintColor = following ? DW_BLUE_COLOR : DW_BASE_ICON_TINT_COLOR;
             self.followingYouButton.hidden = !followingYou;
             
+            self.followingButton.accessibilityLabel = !following ? NSLocalizedString(@"Follow", @"Follow") : NSLocalizedString(@"Unfollow", @"Unfollow");
+            
             if (requested) {
                 [self.followingButton setImage:[UIImage imageNamed:@"HourglassIcon"] forState:UIControlStateNormal];
             }

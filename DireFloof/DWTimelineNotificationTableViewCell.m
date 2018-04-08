@@ -109,6 +109,7 @@
     {
         if (self.status.reblog) {
             self.notificationAuthorLabel.text = self.status.account.display_name.length ? self.status.account.display_name : self.status.account.acct;
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", NSLocalizedString(@"boosted", @"boosted")];
             
             self.notificationTypeImageView.image = [UIImage imageNamed:@"RetootIcon"];
             self.notificationTypeImageView.tintColor = DW_BASE_ICON_TINT_COLOR;
@@ -128,6 +129,9 @@
             }
             
             self.notificationTypeLabel.text = [NSString stringWithFormat:@"%@ %@", mention ? NSLocalizedString(@"replied to", @"replied to") : NSLocalizedString(@"replied", @"replied"), mention ? mention.acct : @""];
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", [NSString stringWithFormat:@"%@ %@", mention ? NSLocalizedString(@"replied to", @"replied to") : NSLocalizedString(@"replied", @"replied"), mention ? mention.acct : @""]];
+
+
         }
     }
 }
