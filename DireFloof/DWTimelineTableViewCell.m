@@ -531,16 +531,34 @@
         self.warningTagLabel.accessibilityLabel = [self.warningTagLabel.text stringByAppendingFormat:@"%@. ", NSLocalizedString(@"Hidden by a warning tag", @"Hidden by a warning tag")];
     }
     
+    __block NSMutableDictionary *emojis = [@{} mutableCopy];
+    __block NSUInteger emojiLoadCount = 0;
+    
     for (MSEmoji *emoji in status.emojis) {
-        
         [[AFImageDownloader defaultInstance] downloadImageForURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:emoji.static_url]] success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull responseObject) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                NSAttributedString *contentStringWithImage = [self.contentLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
-                NSAttributedString *warningStringWithImage = [self.warningTagLabel.attributedText attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:responseObject scale:0];
+            
+            if (responseObject) {
+                [emojis setObject:responseObject forKey:emoji.shortcode.copy];
+            }
+            
+            emojiLoadCount++;
+            
+            if (emojiLoadCount >= status.emojis.count) {
+                NSAttributedString *contentStringWithImage = self.contentLabel.attributedText;
+                NSAttributedString *warningStringWithImage = self.warningTagLabel.attributedText;
                 
-                self.contentLabel.attributedText = contentStringWithImage;
-                self.warningTagLabel.attributedText = warningStringWithImage;
-            });
+                // This seems really inefficient still but at least we're off the main thread... progress
+                for (MSEmoji *emoji in status.emojis) {
+                    contentStringWithImage = [contentStringWithImage attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:[emojis objectForKey:emoji.shortcode] scale:0];
+                    warningStringWithImage = [warningStringWithImage attributedStringByReplacingOccurancesOfString:emoji.shortcode withInlineImage:[emojis objectForKey:emoji.shortcode] scale:0];
+                }
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    self.contentLabel.attributedText = contentStringWithImage;
+                    self.warningTagLabel.attributedText = warningStringWithImage;
+                });
+            }
+            
         } failure:nil];
     }
     
