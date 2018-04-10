@@ -24,22 +24,22 @@ PODS:
   - DateTools (2.0.0)
   - EmojiOne (2.2.7)
   - FCFileManager (1.0.20)
-  - Firebase/Core (4.11.0):
+  - Firebase/Core (4.12.0):
     - FirebaseAnalytics (= 4.1.0)
-    - FirebaseCore (= 4.0.18)
-  - Firebase/Messaging (4.11.0):
+    - FirebaseCore (= 4.0.19)
+  - Firebase/Messaging (4.12.0):
     - Firebase/Core
-    - FirebaseMessaging (= 2.1.1)
+    - FirebaseMessaging (= 2.2.0)
   - FirebaseAnalytics (4.1.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseCore (4.0.18):
+  - FirebaseCore (4.0.19):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
-  - FirebaseMessaging (2.1.1):
+  - FirebaseMessaging (2.2.0):
     - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -131,7 +131,7 @@ CHECKOUT OPTIONS:
     :commit: 233b51f39209579ee35290734195dbf5494637d4
     :git: https://github.com/ReticentJohn/emojione.git
   GMImagePicker:
-    :commit: d86c248d48eac1d96cb84acc74e32f7ecf8219f0
+    :commit: 950cbf0e4dd77d959202cf68fb5e0687525e57df
     :git: https://github.com/ReticentJohn/GMImagePicker.git
   GPUImage:
     :commit: c513dd7b5aa9ab52747070049710f32b5234222f
@@ -152,11 +152,11 @@ SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   EmojiOne: 2d4072ac074090afdf7af9a1d47a757407a57882
   FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
-  Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
+  Firebase: d7fdf40e4d6c841849c52919f437fd3a0009ded0
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
-  FirebaseCore: b981f47e5254cbcfdeb483355300d743f6fcab2c
+  FirebaseCore: ff49ebb37e0f63a570d78c4f1c1c0befe8659d5c
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
-  FirebaseMessaging: db0e01c52ef7e1f42846431273558107d084ede4
+  FirebaseMessaging: 75cdb862e86c30e0913a2ff307e48d49357c5b73
   GMImagePicker: 6438a6764d6280b1dbf19b59140313f5a73daeeb
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GPUImage: bd7e201b9aa91e85f401ed7a6d9867a07a404693

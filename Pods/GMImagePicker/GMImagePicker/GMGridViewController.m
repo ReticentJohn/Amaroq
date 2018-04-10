@@ -101,6 +101,11 @@ NSString * const GMGridViewCellIdentifier = @"GMGridViewCellIdentifier";
     //Compute the thumbnail pixel size:
     CGFloat scale = [UIScreen mainScreen].scale;
     //NSLog(@"This is @%fx scale device", scale);
+    if(scale >= 3)
+    {
+      scale = 2;
+    }
+      
     AssetGridThumbnailSize = CGSizeMake(layout.itemSize.width * scale, layout.itemSize.height * scale);
     
     self.collectionView.allowsMultipleSelection = picker.allowsMultipleSelection;
