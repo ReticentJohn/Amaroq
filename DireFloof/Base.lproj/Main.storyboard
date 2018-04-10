@@ -327,11 +327,11 @@
                         <viewControllerLayoutGuide type="bottom" id="GZn-ts-vcH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Q1-1V-KRg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tHl-cz-5Tq">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
                                 <color key="backgroundColor" red="0.15623295307159424" green="0.17170935869216919" blue="0.21736863255500793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -3261,7 +3261,7 @@
                                                         <action selector="ellipsesButtonPressed:" destination="7Xl-cZ-Uqg" eventType="touchUpInside" id="XQn-iT-8Dc"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0J-Bp-paX">
+                                                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0J-Bp-paX">
                                                     <rect key="frame" x="10" y="36" width="48" height="48"/>
                                                     <accessibility key="accessibilityConfiguration" label="Profile"/>
                                                     <connections>
@@ -3348,6 +3348,7 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jn-1V-clz">
                                                     <rect key="frame" x="68.000000000000014" y="0.0" width="223.33333333333337" height="44"/>
+                                                    <accessibility key="accessibilityConfiguration" label="Profile"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="rSd-Il-rdu"/>
                                                     </constraints>
@@ -7907,11 +7908,11 @@
                         <viewControllerLayoutGuide type="bottom" id="7gO-Ig-cL8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dby-Q8-Oj5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SXL-16-nfI">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
                                 <color key="backgroundColor" red="0.15623295309999999" green="0.17170935870000001" blue="0.2173686326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.3749178648" green="0.41376155609999998" blue="0.51753836870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -10786,10 +10787,10 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IWd-CB-tep"/>
-        <segue reference="qsd-h2-seO"/>
-        <segue reference="mgK-1g-SjE"/>
+        <segue reference="fAt-kp-Qvw"/>
+        <segue reference="3t3-om-JN6"/>
         <segue reference="UOr-km-Y3e"/>
-        <segue reference="nTy-RL-W87"/>
-        <segue reference="UAX-uw-h68"/>
+        <segue reference="lYx-kT-5gn"/>
+        <segue reference="p34-zw-w3z"/>
     </inferredMetricsTieBreakers>
 </document>

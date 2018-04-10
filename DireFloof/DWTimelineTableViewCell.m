@@ -66,10 +66,12 @@
     if (status.reblogged) {
         
         self.retootButton.tintColor = DW_BASE_ICON_TINT_COLOR;
+        self.retootButton.accessibilityLabel = NSLocalizedString(@"Boost", @"Boost");
         [[MSStatusStore sharedStore] unreblogStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
             if (success) {
                 status.reblogged = NO;
                 self.retootButton.tintColor = DW_BASE_ICON_TINT_COLOR;
+                self.retootButton.accessibilityLabel = NSLocalizedString(@"Boost", @"Boost");
                 [[NSNotificationCenter defaultCenter] postNotificationName:DW_STATUS_UNBOOSTED_NOTIFICATION object:status._id];
             }
         }];
@@ -77,10 +79,12 @@
     else
     {
         self.retootButton.tintColor = DW_BLUE_COLOR;
+        self.retootButton.accessibilityLabel = NSLocalizedString(@"Unboost", @"Unboost");
         [[MSStatusStore sharedStore] reblogStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
             if (success) {
                 status.reblogged = YES;
                 self.retootButton.tintColor = DW_BLUE_COLOR;
+                self.retootButton.accessibilityLabel = NSLocalizedString(@"Unboost", @"Unboost");
                 [[NSNotificationCenter defaultCenter] postNotificationName:DW_STATUS_BOOSTED_NOTIFICATION object:status._id];
             }
         }];
@@ -101,10 +105,12 @@
     if (status.favourited) {
         
         self.favoriteButton.tintColor = DW_BASE_ICON_TINT_COLOR;
+        self.favoriteButton.accessibilityLabel = NSLocalizedString(@"Favorite", @"Favorite");
         [[MSStatusStore sharedStore] unfavoriteStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
             if (success) {
                 status.favourited = NO;
                 self.favoriteButton.tintColor = DW_BASE_ICON_TINT_COLOR;
+                self.favoriteButton.accessibilityLabel = NSLocalizedString(@"Favorite", @"Favorite");
                 [[NSNotificationCenter defaultCenter] postNotificationName:DW_STATUS_UNFAVORITED_NOTIFICATION object:status._id];
             }
         }];
@@ -112,10 +118,12 @@
     else
     {
         self.favoriteButton.tintColor = DW_FAVORITED_ICON_TINT_COLOR;
+        self.favoriteButton.accessibilityLabel = NSLocalizedString(@"Unfavorite", @"Unfavorite");
         [[MSStatusStore sharedStore] favoriteStatusWithId:status._id withCompletion:^(BOOL success, NSError *error) {
             if (success) {
                 status.favourited = YES;
                 self.favoriteButton.tintColor = DW_FAVORITED_ICON_TINT_COLOR;
+                self.favoriteButton.accessibilityLabel = NSLocalizedString(@"Unfavorite", @"Unfavorite");
                 [[NSNotificationCenter defaultCenter] postNotificationName:DW_STATUS_FAVORITED_NOTIFICATION object:status._id];
             }
         }];
@@ -291,6 +299,19 @@
     
     self.warningTagButton.selected = !self.warningTagButton.selected;
     
+    if (self.warningTagButton.selected) {
+        self.contentLabel.accessibilityLabel = self.contentLabel.text;
+        self.warningTagLabel.accessibilityLabel = @"";
+        self.warningTagButton.accessibilityLabel = NSLocalizedString(@"Hide sensitive content", @"Hide sensitive content");
+    }
+    else
+    {
+        self.warningTagLabel.accessibilityLabel = [self.warningTagLabel.text stringByAppendingFormat:@"%@. ", NSLocalizedString(@"Hidden by a warning tag", @"Hidden by a warning tag")];
+        self.contentLabel.accessibilityLabel = @"";
+        self.warningTagButton.accessibilityLabel = NSLocalizedString(@"Show sensitive content", @"Show sensitive content");
+
+    }
+    
     CGFloat warningTagAlpha = self.warningTagButton.selected ? 0.0f : 1.0f;
     
     self.warningTagView.hidden = NO;
@@ -361,6 +382,7 @@
     [self.warningTagButton setTitle:@"" forState:UIControlStateSelected];
     [self.warningTagButton setImage:[[UIImage imageNamed:@"HideIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
     [self.warningTagButton setImage:[[UIImage imageNamed:@"ShowIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateSelected];
+    self.warningTagButton.accessibilityLabel = NSLocalizedString(@"Show sensitive content", @"Show sensitive content");
     
     [self configureForReuse];
 }
@@ -460,10 +482,12 @@
     
     if (author.display_name) {
         self.displayLabel.text = author.display_name.length ? author.display_name : author.username;
+        self.displayLabel.accessibilityLabel = [self.displayLabel.text stringByAppendingFormat:@"%@", [DWSettingStore sharedStore].awooMode ? NSLocalizedString(@"howled", @"howled") : NSLocalizedString(@"tooted", @"tooted")];
     }
     
     if (author.acct) {
         self.usernameLabel.text = [NSString stringWithFormat:@"@%@", author.acct];
+        self.usernameLabel.accessibilityLabel = [NSString stringWithFormat:@"%@ %@", [DWSettingStore sharedStore].awooMode ? NSLocalizedString(@"Howled by", @"Howled by") : NSLocalizedString(@"Tooted by", @"Tooted by"), author.acct];
     }
     
     if (status.created_at) {
@@ -481,10 +505,12 @@
     
     if ([status.visibility isEqualToString:MS_VISIBILITY_TYPE_DIRECT]) {
         [self.retootButton setImage:[UIImage imageNamed:@"DirectMessageIcon"] forState:UIControlStateDisabled];
+        self.retootButton.accessibilityLabel = @"Direct message";
     }
     else
     {
         [self.retootButton setImage:[UIImage imageNamed:@"PrivateIcon"] forState:UIControlStateDisabled];
+        self.retootButton.accessibilityLabel = @"Private";
     }
     
     self.favoriteButton.tintColor = status.favourited ? DW_FAVORITED_ICON_TINT_COLOR : DW_BASE_ICON_TINT_COLOR;
@@ -501,6 +527,8 @@
         self.warningTagView.hidden = NO;
         self.warningTagButton.hidden = NO;
         self.warningTagLabel.text = [NSString stringWithFormat:@"%@\n%@", status.spoiler_text.length ? status.spoiler_text : NSLocalizedString(@"Sensitive content", @"Sensitive content"), NSLocalizedString(@"Hold to show", @"Hold to show")];
+        self.contentLabel.accessibilityLabel = @"";
+        self.warningTagLabel.accessibilityLabel = [self.warningTagLabel.text stringByAppendingFormat:@"%@. ", NSLocalizedString(@"Hidden by a warning tag", @"Hidden by a warning tag")];
     }
     
     for (MSEmoji *emoji in status.emojis) {

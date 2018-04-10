@@ -97,12 +97,17 @@
             self.notificationTypeImageView.image = [UIImage imageNamed:@"RetootIcon"];
             self.notificationTypeImageView.tintColor = DW_BLUE_COLOR;
             self.notificationTypeLabel.text = NSLocalizedString(@"boosted your status", @"boosted your status");
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", NSLocalizedString(@"boosted your status", @"boosted your status")];
+            self.notificationTypeLabel.accessibilityLabel = @"";
+
         }
         else if ([self.notification.type isEqualToString:MS_NOTIFICATION_TYPE_FAVORITE])
         {
             self.notificationTypeImageView.image = [UIImage imageNamed:@"FavoriteIcon"];
             self.notificationTypeImageView.tintColor = DW_FAVORITED_ICON_TINT_COLOR;
             self.notificationTypeLabel.text = NSLocalizedString(@"favorited your status", @"favorited your status");
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", NSLocalizedString(@"favorited your status", @"favorited your status")];
+            self.notificationTypeLabel.accessibilityLabel = @"";
         }
     }
     else
