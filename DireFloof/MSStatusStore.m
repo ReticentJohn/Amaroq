@@ -295,6 +295,7 @@ static CGFloat maxDimensions = 1024.0f;
             options.version = PHImageRequestOptionsVersionCurrent;
             options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
             options.resizeMode = PHImageRequestOptionsResizeModeNone;
+            options.networkAccessAllowed = YES;
             
             [[PHImageManager defaultManager] requestImageDataForAsset:mediaObject options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
                 
