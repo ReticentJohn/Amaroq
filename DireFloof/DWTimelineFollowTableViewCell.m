@@ -62,7 +62,7 @@
                     self.followButton.selected = NO;
                     self.followButton.tintColor = DW_LINK_TINT_COLOR;
                     
-                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                     
                     [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                     [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];
@@ -85,7 +85,7 @@
                     self.followButton.selected = YES;
                     self.followButton.tintColor = DW_BLUE_COLOR;
                     
-                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unmute user with error:", @"Failed to unmute user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unmute user with error:", @"Failed to unmute user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                     
                     [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                     [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];
@@ -232,7 +232,7 @@
             else
             {
                 self.loadedFollowStatus = YES;
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unblock user with error:", @"Failed to unblock user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unblock user with error:", @"Failed to unblock user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                 
                 [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                 [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];
@@ -255,7 +255,7 @@
             }
             else
             {
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unfollow user with error:", @"Failed to unfollow user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unfollow user with error:", @"Failed to unfollow user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                 
                 [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                 [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];

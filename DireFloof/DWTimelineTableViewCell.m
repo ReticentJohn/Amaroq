@@ -211,7 +211,7 @@
                 }
                 else
                 {
-                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to delete status with error:", @"Failed to delete status with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to delete status with error:", @"Failed to delete status with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                     
                     [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                     [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];
@@ -243,7 +243,7 @@
                 else
                 {
 
-                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                     
                     [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                     [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];
@@ -267,7 +267,7 @@
                 }
                 else
                 {
-                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                     
                     [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                     [[[UIApplication sharedApplication] topController] presentViewController:alertController animated:YES completion:nil];

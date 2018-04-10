@@ -219,7 +219,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                 self.followingButton.selected = YES;
                 self.followingButton.tintColor = DW_BLUE_COLOR;
                 
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unfollow user with error:", @"Failed to unfollow user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unfollow user with error:", @"Failed to unfollow user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                 
                 [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                 [self presentViewController:alertController animated:YES completion:nil];
@@ -274,7 +274,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                     }
                     else
                     {
-                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to mute user with error:", @"Failed to mute user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                         
                         [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                         [self presentViewController:alertController animated:YES completion:nil];
@@ -289,7 +289,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                     }
                     else
                     {
-                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unmute user with error:", @"Failed to unmute user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unmute user with error:", @"Failed to unmute user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                         
                         [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                         [self presentViewController:alertController animated:YES completion:nil];
@@ -313,7 +313,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                     }
                     else
                     {
-                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to block user with error:", @"Failed to block user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to block user with error:", @"Failed to block user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                         
                         [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                         [self presentViewController:alertController animated:YES completion:nil];
@@ -328,7 +328,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                     }
                     else
                     {
-                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unblock user with error:", @"Failed to unblock user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to unblock user with error:", @"Failed to unblock user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                         
                         [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                         [self presentViewController:alertController animated:YES completion:nil];
@@ -355,7 +355,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
                     }
                     else
                     {
-                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to block domain with error:", @"Failed to block domain with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to block domain with error:", @"Failed to block domain with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                         
                         [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                         [self presentViewController:alertController animated:YES completion:nil];
@@ -812,7 +812,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
         }
         else
         {
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to load user with error:", @"Failed to load user with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to load user with error:", @"Failed to load user with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
             
             [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
             [self presentViewController:alertController animated:YES completion:nil];

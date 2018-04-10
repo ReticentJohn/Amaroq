@@ -161,7 +161,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
                     }
                     else
                     {
-                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to retrieve your profile with error:", @"Failed to retrieve your profile with error:"), error.code] preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error") message:[NSString stringWithFormat:@"%@ %li", NSLocalizedString(@"Failed to retrieve your profile with error:", @"Failed to retrieve your profile with error:"), (long)error.code] preferredStyle:UIAlertControllerStyleAlert];
                         
                         [alertController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK") style:UIAlertActionStyleCancel handler:nil]];
                         
