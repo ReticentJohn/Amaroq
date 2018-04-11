@@ -281,6 +281,22 @@ static CGFloat maxDimensions = 1024.0f;
     }];
 }
 
+- (BOOL)isHEIFAsset:(PHAsset *)asset {
+    __block bool retVal = false;
+    
+    if (@available(iOS 11.0, *)) {
+        NSArray *resList = [PHAssetResource assetResourcesForAsset: asset];
+        [resList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            PHAssetResource *resource = obj;
+            if ([resource.uniformTypeIdentifier isEqualToString: AVFileTypeHEIF] || [resource.uniformTypeIdentifier isEqualToString: AVFileTypeHEIC]) {
+                retVal = true;
+                *stop = true;
+            }
+        }];
+    }
+    
+    return retVal;
+}
 
 - (void)uploadMedia:(NSArray *)media withCompletion:(void (^)(BOOL success, NSArray *mediaIds, NSArray *mediaUrls))completion
 {
@@ -318,11 +334,18 @@ static CGFloat maxDimensions = 1024.0f;
                 
                 NSString *filename = [NSString stringWithFormat:@"file.%@", isGif ? @"gif" : @"jpeg"];
                 NSData *optimizedImageData = nil;
+                UIImage *imageToUpload = nil;
+                
+                if ([self isHEIFAsset: mediaObject]) {
+                    CIImage *ciImage = [CIImage imageWithData: imageData];
+                    NSDictionary *dict = [[NSDictionary alloc] init];
+                    imageData = [[CIContext contextWithOptions: nil] JPEGRepresentationOfImage: ciImage colorSpace: CGColorSpaceCreateDeviceRGB() options: dict];
+                }
                 
                 if (!isGif) {
                     MIME = @"image/jpeg"; // We're doing our own image optimization which is going to muck around and turn everything into jpegs, as much as it pains me
 
-                    UIImage *imageToUpload = [[UIImage imageWithData:imageData] resizedImageToFitInSize:CGSizeMake(maxDimensions, maxDimensions) scaleIfSmaller:NO];
+                    imageToUpload = [[UIImage imageWithData:imageData] resizedImageToFitInSize:CGSizeMake(maxDimensions, maxDimensions) scaleIfSmaller:NO];
                     CGFloat compressionRate = 1.0f;
                     NSData *optimizedImageData = UIImageJPEGRepresentation(imageToUpload, compressionRate);
                     
