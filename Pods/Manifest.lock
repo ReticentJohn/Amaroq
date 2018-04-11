@@ -33,10 +33,10 @@ PODS:
   - FirebaseAnalytics (4.0.5):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.11):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (2.0.6)
   - FirebaseMessaging (2.0.6):
     - FirebaseAnalytics (~> 4.0)
@@ -48,7 +48,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/Logger (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GPUImage (0.1.7)
   - Masonry (1.1.0)
@@ -98,6 +98,31 @@ DEPENDENCIES:
   - twitter-text (from `https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec`)
   - UIImage-Resize
   - YLProgressBar (~> 3.10.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AFOAuth2Manager
+    - AnimatedGIFImageSerialization
+    - CHTCollectionViewWaterfallLayout
+    - FCFileManager
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleToolboxForMac
+    - Masonry
+    - nanopb
+    - Protobuf
+    - PureLayout
+    - RMActionController
+    - RMPickerViewController
+    - SDWebImage
+    - TPKeyboardAvoiding
+    - TTTAttributedLabel
+    - UIImage-Resize
+    - YLProgressBar
 
 EXTERNAL SOURCES:
   ActiveLabel:
@@ -183,4 +208,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e18122af6279336938683423f1b0d9cbc3781341
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.5.0
