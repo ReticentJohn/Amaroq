@@ -482,7 +482,14 @@
     
     if (author.display_name) {
         self.displayLabel.text = author.display_name.length ? author.display_name : author.username;
-        self.displayLabel.accessibilityLabel = [self.displayLabel.text stringByAppendingFormat:@"%@", [DWSettingStore sharedStore].awooMode ? NSLocalizedString(@"howled", @"howled") : NSLocalizedString(@"tooted", @"tooted")];
+        
+        if (!self.status.in_reply_to_id && !self.status.reblog) {
+            self.displayLabel.accessibilityLabel = [self.displayLabel.text stringByAppendingFormat:@" %@ %@ ", [DWSettingStore sharedStore].awooMode ? NSLocalizedString(@"howled", @"howled") : NSLocalizedString(@"tooted", @"tooted"), self.isThreadStatus ? [NSString stringWithFormat:@" %@ %@ ", [status.created_at formattedDateWithStyle:NSDateFormatterMediumStyle], [status.created_at formattedDateWithFormat:@"HH:mm"]] : [status.created_at timeAgoSinceNow]];
+        }
+        else
+        {
+            self.displayLabel.accessibilityLabel = self.isThreadStatus ? [NSString stringWithFormat:@" %@ %@ ", [status.created_at formattedDateWithStyle:NSDateFormatterMediumStyle], [status.created_at formattedDateWithFormat:@"HH:mm"]] : [status.created_at timeAgoSinceNow];
+        }
     }
     
     if (author.acct) {
@@ -492,7 +499,7 @@
     
     if (status.created_at) {
         self.dateLabel.text = self.isThreadStatus ? [NSString stringWithFormat:@"%@ %@ •%@", [status.created_at formattedDateWithStyle:NSDateFormatterMediumStyle], [status.created_at formattedDateWithFormat:@"HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at shortTimeAgoSinceNow];
-        self.dateLabel.accessibilityLabel = self.isThreadStatus ? [NSString stringWithFormat:@"%@ %@ •%@", [status.created_at formattedDateWithStyle:NSDateFormatterMediumStyle], [status.created_at formattedDateWithFormat:@"HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at timeAgoSinceNow];
+        self.dateLabel.accessibilityLabel = @"";
     }
     
     if (status.content) {

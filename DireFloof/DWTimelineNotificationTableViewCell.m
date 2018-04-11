@@ -97,7 +97,7 @@
             self.notificationTypeImageView.image = [UIImage imageNamed:@"RetootIcon"];
             self.notificationTypeImageView.tintColor = DW_BLUE_COLOR;
             self.notificationTypeLabel.text = NSLocalizedString(@"boosted your status", @"boosted your status");
-            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", NSLocalizedString(@"boosted your status", @"boosted your status")];
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@ ", NSLocalizedString(@"boosted your status", @"boosted your status")];
             self.notificationTypeLabel.accessibilityLabel = @"";
 
         }
@@ -106,15 +106,18 @@
             self.notificationTypeImageView.image = [UIImage imageNamed:@"FavoriteIcon"];
             self.notificationTypeImageView.tintColor = DW_FAVORITED_ICON_TINT_COLOR;
             self.notificationTypeLabel.text = NSLocalizedString(@"favorited your status", @"favorited your status");
-            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", NSLocalizedString(@"favorited your status", @"favorited your status")];
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@ ", NSLocalizedString(@"favorited your status", @"favorited your status")];
             self.notificationTypeLabel.accessibilityLabel = @"";
         }
     }
     else
     {
         if (self.status.reblog) {
+            
+            MSStatus *reblog = self.status.reblog;
+            
             self.notificationAuthorLabel.text = self.status.account.display_name.length ? self.status.account.display_name : self.status.account.acct;
-            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", NSLocalizedString(@"boosted", @"boosted")];
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@ %@ ", NSLocalizedString(@"boosted", @"boosted"), reblog.account.display_name.length ? reblog.account.display_name : reblog.account.acct];
             self.notificationTypeLabel.accessibilityLabel = @"";
             
             self.notificationTypeImageView.image = [UIImage imageNamed:@"RetootIcon"];
@@ -136,7 +139,7 @@
             
             self.notificationTypeLabel.text = [NSString stringWithFormat:@"%@ %@", mention ? NSLocalizedString(@"replied to", @"replied to") : NSLocalizedString(@"replied", @"replied"), mention ? mention.acct : @""];
             self.notificationTypeLabel.accessibilityLabel = @"";
-            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", [NSString stringWithFormat:@"%@ %@", mention ? NSLocalizedString(@"replied to", @"replied to") : NSLocalizedString(@"replied", @"replied"), mention ? mention.acct : @""]];
+            self.notificationAuthorLabel.accessibilityLabel = [self.notificationAuthorLabel.text stringByAppendingFormat:@" %@", [NSString stringWithFormat:@"%@ %@ ", mention ? NSLocalizedString(@"replied to", @"replied to") : NSLocalizedString(@"replied", @"replied"), mention ? mention.acct : @""]];
 
 
         }
