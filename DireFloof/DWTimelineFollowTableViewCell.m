@@ -347,6 +347,7 @@
     
     if (follower.display_name) {
         self.followerLabel.text = follower.display_name.length ? follower.display_name : follower.username;
+        self.followerLabel.accessibilityLabel = @"";
         self.followerDisplayNameLabel.text = follower.display_name.length ? follower.display_name : follower.username;
     }
     
