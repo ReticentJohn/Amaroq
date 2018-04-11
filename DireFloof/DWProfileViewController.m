@@ -54,6 +54,7 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
 
 @property (nonatomic, weak) IBOutlet UINavigationBar *floatingNav;
 @property (nonatomic, weak) IBOutlet UIButton *scrollToTopButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *backButton;
 
 @property (nonatomic, assign) DWProfileSectionType currentSection;
 @property (nonatomic, strong) MSTimeline *timeline;
@@ -864,6 +865,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     self.followsLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
     self.followersLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
     self.postLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
+    
+    self.backButton.accessibilityLabel = NSLocalizedString(@"Back", @"Back");
     
     self.displayNameLabel.text = self.account.display_name.length ? self.account.display_name : self.account.username;
     self.usernameLabel.text = [NSString stringWithFormat:@"@%@", self.account.acct];

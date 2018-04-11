@@ -223,7 +223,7 @@
                         self.followButton.tintColor = following || blocking ? DW_BLUE_COLOR : DW_LINK_TINT_COLOR;
                         [self.followButton setImage:(blocking ? [UIImage imageNamed:@"UnblockIcon"] : [UIImage imageNamed:@"UnfollowUserIcon"]) forState:UIControlStateSelected];
                         [self.followButton setImage:[UIImage imageNamed:@"FollowUserIcon"] forState:UIControlStateNormal];
-                        self.followButton.accessibilityLabel = blocking ? NSLocalizedString(@"Unblock", @"Unblock") : following ? NSLocalizedString(@"Follow", @"Follow") : NSLocalizedString(@"Unfollow", @"Unfollow");
+                        self.followButton.accessibilityLabel = blocking ? NSLocalizedString(@"Unblock", @"Unblock") : following ? NSLocalizedString(@"Unfollow", @"Unfollow") : NSLocalizedString(@"Follow", @"Follow");
 
                         self.loadedFollowStatus = YES;
                     }
@@ -379,7 +379,7 @@
                         self.followButton.selected = following || blocking;
                         self.followButton.tintColor = following || blocking ? DW_BLUE_COLOR : DW_LINK_TINT_COLOR;
                         [self.followButton setImage:(blocking ? [UIImage imageNamed:@"UnblockIcon"] : [UIImage imageNamed:@"UnfollowUserIcon"]) forState:UIControlStateSelected];
-                        self.followButton.accessibilityLabel = blocking ? NSLocalizedString(@"Unblock", @"Unblock") : following ? NSLocalizedString(@"Follow", @"Follow") : NSLocalizedString(@"Unfollow", @"Unfollow");
+                        self.followButton.accessibilityLabel = blocking ? NSLocalizedString(@"Unblock", @"Unblock") : following ? NSLocalizedString(@"Unfollow", @"Unfollow") : NSLocalizedString(@"Follow", @"Follow");
                     }
                     
                     self.loadedFollowStatus = YES;

@@ -29,6 +29,8 @@
 
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *pageLoadingView;
 
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *deleteAllNotificationsButton;
+
 @property (nonatomic, strong) NSMutableDictionary *cachedEstimatedHeights;
 
 @property (nonatomic, assign) BOOL loadingNextPage;
@@ -371,6 +373,8 @@
     {
         [self.tableView setRefreshControl:refreshControl];
     }
+    
+    self.deleteAllNotificationsButton.accessibilityLabel = NSLocalizedString(@"Delete all notifications", @"Delete all notifications");
 }
 
 

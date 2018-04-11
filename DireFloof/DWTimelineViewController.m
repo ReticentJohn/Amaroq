@@ -34,6 +34,8 @@ IB_DESIGNABLE
 @property (nonatomic, weak) IBOutlet UIButton *scrollToTopButton;
 
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *publicTimelineSwitch;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *searchButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *closeButton;
 @property (nonatomic, weak) IBOutlet UINavigationItem *publicTimelineNavigationItem;
 
 @property (nonatomic, strong) MSTimeline *timeline;
@@ -531,6 +533,14 @@ IB_DESIGNABLE
         self.publicTimelineSwitch.image = [UIImage imageNamed:@"LocalIcon"];
         self.publicTimelineSwitch.accessibilityLabel = NSLocalizedString(@"Local timeline", @"Local timeline");
         self.publicTimelineNavigationItem.title = NSLocalizedString(@"Federated", @"Federated");
+    }
+    
+    if (self.searchButton) {
+        self.searchButton.accessibilityLabel = NSLocalizedString(@"Search", @"Search");
+    }
+    
+    if (self.closeButton) {
+        self.closeButton.accessibilityLabel = NSLocalizedString(@"Close", @"Close");
     }
     
     [self.scrollToTopButton setTitle:[[DWSettingStore sharedStore] awooMode] ? NSLocalizedString(@"See new awoos", @"See new awoos") : NSLocalizedString(@"See new toots", @"See new toots") forState:UIControlStateNormal];
