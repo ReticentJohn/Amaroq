@@ -168,7 +168,20 @@
         [allowedCharacters removeCharactersInString:@"/"];
 
         NSString *encodedStatus = [status.content stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
-        NSString *url = [NSString stringWithFormat:@"https://translate.google.com/#auto/auto/%@", encodedStatus];
+        NSString *url = @"";
+        
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+            
+            NSString *language = [NSLocale preferredLanguages].firstObject;
+            NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:language];
+            NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
+            
+            url = [NSString stringWithFormat:@"https://translate.google.com/#auto/%@/%@", languageCode, encodedStatus];
+        }
+        else
+        {
+            url = [NSString stringWithFormat:@"https://translate.google.com/#auto/%@/%@", [NSLocale currentLocale].languageCode, encodedStatus];
+        }
         
         [self.delegate timelineCell:self didSelectURL:[NSURL URLWithString:url]];
     }]];
