@@ -509,6 +509,10 @@
         self.usernameLabel.text = [NSString stringWithFormat:@"@%@", author.acct];
         self.usernameLabel.accessibilityLabel = [NSString stringWithFormat:@"%@ %@", [DWSettingStore sharedStore].awooMode ? NSLocalizedString(@"Howled by", @"Howled by") : NSLocalizedString(@"Tooted by", @"Tooted by"), author.acct];
     }
+    else
+    {
+        self.usernameLabel.accessibilityLabel = @"";
+    }
     
     if (status.created_at) {
         self.dateLabel.text = self.isThreadStatus ? [NSString stringWithFormat:@"%@ %@ •%@", [status.created_at formattedDateWithStyle:NSDateFormatterMediumStyle], [status.created_at formattedDateWithFormat:@"HH:mm"], status.application.name ? [NSString stringWithFormat:@" %@ •", status.application.name] : @""] : [status.created_at shortTimeAgoSinceNow];
@@ -549,6 +553,11 @@
         self.warningTagLabel.text = [NSString stringWithFormat:@"%@\n%@", status.spoiler_text.length ? status.spoiler_text : NSLocalizedString(@"Sensitive content", @"Sensitive content"), NSLocalizedString(@"Hold to show", @"Hold to show")];
         self.contentLabel.accessibilityLabel = @"";
         self.warningTagLabel.accessibilityLabel = [self.warningTagLabel.text stringByAppendingFormat:@"%@. ", NSLocalizedString(@"Hidden by a warning tag", @"Hidden by a warning tag")];
+    }
+    else
+    {
+        self.contentLabel.accessibilityLabel = status.content;
+        self.warningTagLabel.accessibilityLabel = @"";
     }
     
     __block NSMutableDictionary *emojis = [@{} mutableCopy];
