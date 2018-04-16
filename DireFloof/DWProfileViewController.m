@@ -25,6 +25,7 @@
 #import "UIViewController+WebNavigation.h"
 #import "DWNavigationViewController.h"
 #import "UIAlertController+SupportedInterfaceOrientations.h"
+#import "DWAccessibilityAction.h"
 
 typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     DWProfileSectionTypePosts                = 0,
@@ -1155,7 +1156,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaReblogCell"];
             cell.status = status;
             cell.delegate = self;
-            
+            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
             return cell;
         }
         else
@@ -1164,7 +1166,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             
             cell.status = status;
             cell.delegate = self;
-            
+            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
             return cell;
         }
     }
@@ -1174,7 +1177,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaReblogCell"];
             cell.status = status;
             cell.delegate = self;
-            
+            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
             return cell;
         }
         else
@@ -1183,7 +1187,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             
             cell.status = status;
             cell.delegate = self;
-            
+            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
             return cell;
         }
     }
@@ -1194,7 +1199,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaCell"];
             cell.status = status;
             cell.delegate = self;
-            
+            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
             return cell;
         }
         else
@@ -1203,7 +1209,8 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             
             cell.status = status;
             cell.delegate = self;
-            
+            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
             return cell;
         }
     }
@@ -1219,6 +1226,36 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     cell.account = account;
     
     return cell;
+}
+
+
+- (BOOL)cellAccessibilityActionSelected:(DWAccessibilityAction *)sender
+{
+    switch (sender.actionType) {
+        case DWAccessibilityActionTypeOpenHashtag:
+        {
+            DWTimelineViewController *hashtagController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"HashtagController"];
+            hashtagController.hashtag = sender.hashtag;
+            DWNavigationViewController *navController = [[DWNavigationViewController alloc] initWithRootViewController:hashtagController];
+            
+            [[[UIApplication sharedApplication] topController] presentViewController:navController animated:YES completion:nil];
+        }
+            
+            return YES;
+        case DWAccessibilityActionTypeOpenUser:
+            [self timelineCell:nil didSelectUser:sender.user];
+            return YES;
+        case DWAccessibilityActionTypeOpenUrl:
+            [self timelineCell:nil didSelectURL:sender.url];
+            return YES;
+        case DWAccessibilityActionTypeOpenThread:
+            [self tableView:self.tableView didSelectRowAtIndexPath:sender.indexPath];
+            return YES;
+        default:
+            break;
+    }
+    
+    return NO;
 }
 
 // !!!!!!

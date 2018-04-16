@@ -22,6 +22,9 @@
 #import "DWNotificationStore.h"
 #import "UIViewController+WebNavigation.m"
 #import "UIAlertController+SupportedInterfaceOrientations.h"
+#import "DWNavigationViewController.h"
+#import "DWAccessibilityAction.h"
+#import "UIApplication+TopController.h"
 
 @interface DWNotificationsViewController () <UITableViewDelegate, UITableViewDataSource, DWTimelineTableViewCellDelegate>
 
@@ -255,7 +258,7 @@
     
         DWTimelineFollowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FollowCell"];
         cell.notification = notification;
-        
+
         return cell;
     }
     else if ([notification.type isEqualToString:MS_NOTIFICATION_TYPE_MENTION])
@@ -263,7 +266,8 @@
         DWTimelineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MentionCell"];
         cell.notification = notification;
         cell.delegate = self;
-        
+        cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:notification.status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
         return cell;
     }
     else
@@ -271,7 +275,8 @@
         DWTimelineNotificationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NotificationCell"];
         cell.notification = notification;
         cell.delegate = self;
-        
+        cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:notification.status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+
         return cell;
     }
         
@@ -462,6 +467,36 @@
             });
         }];
     }
+}
+
+
+- (BOOL)cellAccessibilityActionSelected:(DWAccessibilityAction *)sender
+{
+    switch (sender.actionType) {
+        case DWAccessibilityActionTypeOpenHashtag:
+        {
+            DWTimelineViewController *hashtagController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"HashtagController"];
+            hashtagController.hashtag = sender.hashtag;
+            DWNavigationViewController *navController = [[DWNavigationViewController alloc] initWithRootViewController:hashtagController];
+            
+            [[[UIApplication sharedApplication] topController] presentViewController:navController animated:YES completion:nil];
+        }
+            
+            return YES;
+        case DWAccessibilityActionTypeOpenUser:
+            [self timelineCell:nil didSelectUser:sender.user];
+            return YES;
+        case DWAccessibilityActionTypeOpenUrl:
+            [self timelineCell:nil didSelectURL:sender.url];
+            return YES;
+        case DWAccessibilityActionTypeOpenThread:
+            [self tableView:self.tableView didSelectRowAtIndexPath:sender.indexPath];
+            return YES;
+        default:
+            break;
+    }
+    
+    return NO;
 }
 
 @end
