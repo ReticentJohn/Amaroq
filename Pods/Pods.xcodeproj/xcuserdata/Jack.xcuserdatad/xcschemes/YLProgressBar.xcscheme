@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F86BDFE77D4C0366CDEAD0C4A9B2CB25'
-               BlueprintName = 'YLProgressBar'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'YLProgressBar.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "47273C1189D063A13EABD6C9BEEF8FEF"
+               BlueprintName = "YLProgressBar"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "YLProgressBar.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

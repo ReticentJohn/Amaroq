@@ -52,6 +52,7 @@
 		043155321E540FF90066C511 /* DWAppearanceProxies.m in Sources */ = {isa = PBXBuildFile; fileRef = 043155311E540FF90066C511 /* DWAppearanceProxies.m */; };
 		04363AF21E5553C30018A564 /* DWTimelineMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04363AF11E5553C30018A564 /* DWTimelineMediaTableViewCell.m */; };
 		044779FD1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044779FC1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m */; };
+		044CAC292083C991006C931C /* DWAccessibilityAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 044CAC282083C991006C931C /* DWAccessibilityAction.m */; };
 		0459AB1D1E6DBBBB0052E722 /* DWMediaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459AB1C1E6DBBBB0052E722 /* DWMediaStore.m */; };
 		0459AB201E6F793F0052E722 /* DWNotificationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459AB1F1E6F793F0052E722 /* DWNotificationStore.m */; };
 		04610BE41E54E1D80023763D /* DWTimelineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04610BE31E54E1D80023763D /* DWTimelineTableViewCell.m */; };
@@ -212,6 +213,8 @@
 		04363AF11E5553C30018A564 /* DWTimelineMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTimelineMediaTableViewCell.m; sourceTree = "<group>"; };
 		044779FB1E56A36000C2F989 /* DWTimelineFollowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTimelineFollowTableViewCell.h; sourceTree = "<group>"; };
 		044779FC1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DWTimelineFollowTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		044CAC272083C991006C931C /* DWAccessibilityAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWAccessibilityAction.h; sourceTree = "<group>"; };
+		044CAC282083C991006C931C /* DWAccessibilityAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWAccessibilityAction.m; sourceTree = "<group>"; };
 		0459AB1B1E6DBBBB0052E722 /* DWMediaStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMediaStore.h; sourceTree = "<group>"; };
 		0459AB1C1E6DBBBB0052E722 /* DWMediaStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMediaStore.m; sourceTree = "<group>"; };
 		0459AB1E1E6F793F0052E722 /* DWNotificationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationStore.h; sourceTree = "<group>"; };
@@ -576,6 +579,8 @@
 				04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */,
 				04174E301E5EBF0600BD5835 /* DWComposeViewController.h */,
 				04174E311E5EBF0600BD5835 /* DWComposeViewController.m */,
+				044CAC272083C991006C931C /* DWAccessibilityAction.h */,
+				044CAC282083C991006C931C /* DWAccessibilityAction.m */,
 				04610BE21E54E1D80023763D /* DWTimelineTableViewCell.h */,
 				04610BE31E54E1D80023763D /* DWTimelineTableViewCell.m */,
 				04363AF01E5553C30018A564 /* DWTimelineMediaTableViewCell.h */,
@@ -733,7 +738,6 @@
 				04EC13EA1E46A966000E15A6 /* Resources */,
 				04DA37F91E666D6F0059A2A6 /* Build Versioning */,
 				6D67C0BB1102B5D415CD37B8 /* [CP] Embed Pods Frameworks */,
-				4381A7DE5A5AEE78DB68D7D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -752,8 +756,6 @@
 				04EC14041E46A966000E15A6 /* Sources */,
 				04EC14051E46A966000E15A6 /* Frameworks */,
 				04EC14061E46A966000E15A6 /* Resources */,
-				94F52F3C563B1D98783E7D36 /* [CP] Embed Pods Frameworks */,
-				D297D8FB7D1786FAD09D00C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -773,8 +775,6 @@
 				04EC140F1E46A966000E15A6 /* Sources */,
 				04EC14101E46A966000E15A6 /* Frameworks */,
 				04EC14111E46A966000E15A6 /* Resources */,
-				93A99AA7687A2856DD2EB238 /* [CP] Embed Pods Frameworks */,
-				2547B88AC0EC2B9633FE24DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -917,60 +917,6 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/bash\n\n#  update_build_number.sh\n#  Usage: `update_build_number.sh [branch]`\n#  Run this script after the 'Copy Bundle Resources' build phase\n#  Ref: http://tgoode.com/2014/06/05/sensible-way-increment-bundle-version-cfbundleversion-xcode/\n\nbranch=${1:-'staging'}\nbuildNumber=$(expr 311 + $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))\necho \"Updating build number to $buildNumber using branch '$branch'.\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ -f \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi";
 		};
-		2547B88AC0EC2B9633FE24DD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4381A7DE5A5AEE78DB68D7D8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-resources.sh",
-				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMEmptyFolder@1x.png",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMEmptyFolder@2x.png",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMSelected.png",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMSelected@2x.png",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMVideoIcon.png",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/GMVideoIcon@2x.png",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/Base.lproj",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/ca.lproj",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/de.lproj",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/en.lproj",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/es.lproj",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/fr.lproj",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/it.lproj",
-				"${PODS_ROOT}/GMImagePicker/GMImagePicker/pt.lproj",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
-				"${PODS_ROOT}/OAuth2/Pod/Classes/OAuthRequestController.xib",
-				"$PODS_CONFIGURATION_BUILD_DIR/OAuth2/OAuth2.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6D67C0BB1102B5D415CD37B8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1002,6 +948,7 @@
 				"${BUILT_PRODUCTS_DIR}/UIImage-Resize/UIImage_Resize.framework",
 				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1029,40 +976,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImage_Resize.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/twitter_text.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93A99AA7687A2856DD2EB238 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94F52F3C563B1D98783E7D36 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEAA9B26D18643F2C4E99A5C /* [CP] Check Pods Manifest.lock */ = {
@@ -1099,21 +1017,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D297D8FB7D1786FAD09D00C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC763765ABC5C1EEDF66F255 /* [CP] Check Pods Manifest.lock */ = {
@@ -1176,6 +1079,7 @@
 				0411D15F1E63815200CED5A6 /* DWSearchTableViewCell.m in Sources */,
 				043154EC1E50EB3D0066C511 /* MSStatus.m in Sources */,
 				0431552E1E540EB40066C511 /* DWTabItemViewController.m in Sources */,
+				044CAC292083C991006C931C /* DWAccessibilityAction.m in Sources */,
 				043155321E540FF90066C511 /* DWAppearanceProxies.m in Sources */,
 				04DBE7F81FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.m in Sources */,
 				04095B0D1E4A5E880082401A /* MSAPIClient.m in Sources */,

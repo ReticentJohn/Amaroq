@@ -26,6 +26,7 @@ target 'DireFloof' do
   pod 'OAuth2', git: 'https://github.com/ReticentJohn/OAuth2-for-iOS.git', branch: 'master'
   pod 'ActiveLabel', git: 'https://github.com/ReticentJohn/ActiveLabel.swift.git', branch: 'master'
   pod 'UIImage-Resize'
+  pod 'twitter-text', podspec: 'https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec'
 
 post_install do | installer |
     

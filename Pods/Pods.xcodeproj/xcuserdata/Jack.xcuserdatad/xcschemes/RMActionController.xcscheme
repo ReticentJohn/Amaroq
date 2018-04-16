@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7A4CFCFEBBFBF6411BC48029E911622E'
-               BlueprintName = 'RMActionController'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RMActionController.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BD23DE19903FF2322542D4E36EF26742"
+               BlueprintName = "RMActionController"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "RMActionController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

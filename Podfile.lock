@@ -24,19 +24,19 @@ PODS:
   - DateTools (2.0.0)
   - EmojiOne (2.2.7)
   - FCFileManager (1.0.20)
-  - Firebase/Core (4.12.0):
-    - FirebaseAnalytics (= 4.1.0)
-    - FirebaseCore (= 4.0.19)
-  - Firebase/Messaging (4.12.0):
+  - Firebase/Core (4.13.0):
+    - FirebaseAnalytics (= 4.2.0)
+    - FirebaseCore (= 4.0.20)
+  - Firebase/Messaging (4.13.0):
     - Firebase/Core
     - FirebaseMessaging (= 2.2.0)
-  - FirebaseAnalytics (4.1.0):
+  - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
-  - FirebaseCore (4.0.19):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (4.0.20):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
   - FirebaseMessaging (2.2.0):
@@ -49,7 +49,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/Logger (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GPUImage (0.1.7)
   - Masonry (1.1.0)
@@ -73,6 +73,7 @@ PODS:
   - SDWebImage/Core (4.3.3)
   - TPKeyboardAvoiding (1.3.2)
   - TTTAttributedLabel (1.13.3)
+  - twitter-text (1.14.3)
   - UIImage-Resize (1.0.1)
   - YLProgressBar (3.10.2)
 
@@ -95,8 +96,34 @@ DEPENDENCIES:
   - RMPickerViewController (~> 2.2.1)
   - SDWebImage
   - TPKeyboardAvoiding
+  - twitter-text (from `https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec`)
   - UIImage-Resize
   - YLProgressBar (~> 3.10.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AFOAuth2Manager
+    - AnimatedGIFImageSerialization
+    - CHTCollectionViewWaterfallLayout
+    - FCFileManager
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleToolboxForMac
+    - Masonry
+    - nanopb
+    - Protobuf
+    - PureLayout
+    - RMActionController
+    - RMPickerViewController
+    - SDWebImage
+    - TPKeyboardAvoiding
+    - TTTAttributedLabel
+    - UIImage-Resize
+    - YLProgressBar
 
 EXTERNAL SOURCES:
   ActiveLabel:
@@ -119,6 +146,8 @@ EXTERNAL SOURCES:
   OAuth2:
     :branch: master
     :git: https://github.com/ReticentJohn/OAuth2-for-iOS.git
+  twitter-text:
+    :podspec: https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec
 
 CHECKOUT OPTIONS:
   ActiveLabel:
@@ -142,6 +171,9 @@ CHECKOUT OPTIONS:
   OAuth2:
     :commit: 5fb15bc6cfcb77226d6c6a9924b891c5751d5127
     :git: https://github.com/ReticentJohn/OAuth2-for-iOS.git
+  twitter-text:
+    :commit: 5a3b8877d6a6637efc14acca0151d9f8c8c1300b
+    :git: https://github.com/ReticentJohn/twitter-text.git
 
 SPEC CHECKSUMS:
   ActiveLabel: c32bb6a81accc4a4c2dcab2d685036fcad537783
@@ -152,9 +184,9 @@ SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   EmojiOne: 2d4072ac074090afdf7af9a1d47a757407a57882
   FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
-  Firebase: d7fdf40e4d6c841849c52919f437fd3a0009ded0
-  FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
-  FirebaseCore: ff49ebb37e0f63a570d78c4f1c1c0befe8659d5c
+  Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
+  FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
+  FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
   FirebaseMessaging: 75cdb862e86c30e0913a2ff307e48d49357c5b73
   GMImagePicker: 6438a6764d6280b1dbf19b59140313f5a73daeeb
@@ -171,9 +203,10 @@ SPEC CHECKSUMS:
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
   TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
+  twitter-text: 7041d00e0f61ed58ab9413e72950f098de858b5c
   UIImage-Resize: fa776860f10e6900bbaf53a73e494bdceaaccc77
   YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: eafcd30cdc6a833e8048d22e34e6a093676af5bf
+PODFILE CHECKSUM: b94a63e9c7d8eb23f8924d5bba5bc4deb5df4799
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.5.0

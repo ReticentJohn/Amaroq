@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7906ADC082735191F676E448A0495AB3'
-               BlueprintName = 'RMPickerViewController'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RMPickerViewController.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "89990D847217E1B8F03FC6A878C101D3"
+               BlueprintName = "RMPickerViewController"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "RMPickerViewController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

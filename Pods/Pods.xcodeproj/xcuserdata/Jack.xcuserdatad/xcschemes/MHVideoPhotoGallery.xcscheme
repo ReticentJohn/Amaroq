@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DECE5CCE346A53998046893E52B61850'
-               BlueprintName = 'MHVideoPhotoGallery'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'MHVideoPhotoGallery.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DECE5CCE346A53998046893E52B61850"
+               BlueprintName = "MHVideoPhotoGallery"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "MHVideoPhotoGallery.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AF057047CDE0B04AEA3C59D702A6796A'
-               BlueprintName = 'EmojiOne'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'EmojiOne.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF057047CDE0B04AEA3C59D702A6796A"
+               BlueprintName = "EmojiOne"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "EmojiOne.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
