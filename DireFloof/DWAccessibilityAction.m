@@ -17,41 +17,49 @@
 
 #pragma mark - Class Actions
 
-+ (NSArray *)accessibilityActionsForStatus:(MSStatus *)status atIndexPath:(NSIndexPath *)indexPath withTarget:(id)target andSelector:(SEL)selector
++ (void)accessibilityActionsForStatus:(MSStatus *)status atIndexPath:(NSIndexPath *)indexPath withTarget:(id)target andSelector:(SEL)selector withCompletion:(void (^)(MSStatus *, NSArray *))completion
 {
-    NSMutableArray *actions = [NSMutableArray new];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSMutableArray *actions = [NSMutableArray new];
+        
+        NSString *content = status.reblog ? status.reblog.content : status.content;
+        
+        NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+        NSArray<NSTextCheckingResult *> *URLs = [detector matchesInString:status.content options:0 range:NSMakeRange(0, content.length)];
+        NSArray *mentions = [TwitterText mentionedScreenNamesInText:content];
+        NSArray *hashtags = [TwitterText hashtagsInText:content checkingURLOverlap:YES];
+        
+        for (NSTextCheckingResult *result in URLs) {
+            DWAccessibilityAction *openURLAction = [[DWAccessibilityAction alloc] initWithName:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Open link", @"Open link"), result.URL.absoluteString] target:target selector:selector];
+            openURLAction.actionType = DWAccessibilityActionTypeOpenUrl;
+            openURLAction.url = result.URL;
+            [actions addObject:openURLAction];
+        }
+        
+        for (TwitterTextEntity *entity in mentions) {
+            NSString *user = [content substringWithRange:entity.range];
+            DWAccessibilityAction *openUserAction = [[DWAccessibilityAction alloc] initWithName:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"View Profile", @"View Profile"), user] target:target selector:selector];
+            openUserAction.actionType = DWAccessibilityActionTypeOpenUser;
+            openUserAction.user = user;
+            [actions addObject:openUserAction];
+        }
+        
+        for (TwitterTextEntity *entity in hashtags) {
+            NSString *hashtag = [content substringWithRange:entity.range];
+            DWAccessibilityAction *openHashtagAction = [[DWAccessibilityAction alloc] initWithName:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"View Hashtag", @"View Hashtag"), hashtag] target:target selector:selector];
+            openHashtagAction.actionType = DWAccessibilityActionTypeOpenHashtag;
+            openHashtagAction.hashtag = [hashtag substringFromIndex:1];
+            [actions addObject:openHashtagAction];
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (completion) {
+                completion(status, actions);
+            }
+        });
+
+    });
     
-    NSString *content = status.reblog ? status.reblog.content : status.content;
-    
-    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
-    NSArray<NSTextCheckingResult *> *URLs = [detector matchesInString:status.content options:0 range:NSMakeRange(0, content.length)];
-    NSArray *mentions = [TwitterText mentionedScreenNamesInText:content];
-    NSArray *hashtags = [TwitterText hashtagsInText:content checkingURLOverlap:YES];
-    
-    for (NSTextCheckingResult *result in URLs) {
-        DWAccessibilityAction *openURLAction = [[DWAccessibilityAction alloc] initWithName:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Open link", @"Open link"), result.URL.absoluteString] target:target selector:selector];
-        openURLAction.actionType = DWAccessibilityActionTypeOpenUrl;
-        openURLAction.url = result.URL;
-        [actions addObject:openURLAction];
-    }
-    
-    for (TwitterTextEntity *entity in mentions) {
-        NSString *user = [content substringWithRange:entity.range];
-        DWAccessibilityAction *openUserAction = [[DWAccessibilityAction alloc] initWithName:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"View Profile", @"View Profile"), user] target:target selector:selector];
-        openUserAction.actionType = DWAccessibilityActionTypeOpenUser;
-        openUserAction.user = user;
-        [actions addObject:openUserAction];
-    }
-    
-    for (TwitterTextEntity *entity in hashtags) {
-        NSString *hashtag = [content substringWithRange:entity.range];
-        DWAccessibilityAction *openHashtagAction = [[DWAccessibilityAction alloc] initWithName:[NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"View Hashtag", @"View Hashtag"), hashtag] target:target selector:selector];
-        openHashtagAction.actionType = DWAccessibilityActionTypeOpenHashtag;
-        openHashtagAction.hashtag = [hashtag substringFromIndex:1];
-        [actions addObject:openHashtagAction];
-    }
-    
-    return actions;
 }
 
 @end

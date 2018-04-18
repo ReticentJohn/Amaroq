@@ -333,7 +333,14 @@ IB_DESIGNABLE
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaReblogCell"];
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
 
             return cell;
         }
@@ -343,7 +350,14 @@ IB_DESIGNABLE
             
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
 
             return cell;
         }
@@ -354,8 +368,15 @@ IB_DESIGNABLE
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaReblogCell"];
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
+            
             return cell;
         }
         else
@@ -364,8 +385,15 @@ IB_DESIGNABLE
             
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
+            
             return cell;
         }
     }
@@ -382,8 +410,15 @@ IB_DESIGNABLE
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:isThreadStatus ? @"TimelineMediaThreadCell" : @"TimelineMediaCell"];
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
+            
             return cell;
         }
         else
@@ -392,8 +427,15 @@ IB_DESIGNABLE
             
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
+            
             return cell;
             
         }

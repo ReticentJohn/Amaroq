@@ -26,6 +26,6 @@
 
 #pragma mark - Class Actions
 
-+ (NSArray *)accessibilityActionsForStatus:(MSStatus *)status atIndexPath:(NSIndexPath *)indexPath withTarget:(id)target andSelector:(SEL)selector;
++ (void)accessibilityActionsForStatus:(MSStatus *)status atIndexPath:(NSIndexPath *)indexPath withTarget:(id)target andSelector:(SEL)selector withCompletion:(void (^)(MSStatus *status, NSArray *actions))completion;
 
 @end

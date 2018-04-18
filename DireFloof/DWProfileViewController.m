@@ -1156,8 +1156,14 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaReblogCell"];
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
             return cell;
         }
         else
@@ -1166,8 +1172,14 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
             return cell;
         }
     }
@@ -1177,8 +1189,14 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaReblogCell"];
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
             return cell;
         }
         else
@@ -1187,8 +1205,14 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
             return cell;
         }
     }
@@ -1199,8 +1223,14 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             DWTimelineMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TimelineMediaCell"];
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
             return cell;
         }
         else
@@ -1209,8 +1239,14 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
             
             cell.status = status;
             cell.delegate = self;
-            cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+            cell.accessibilityCustomActions = nil;
+            
+            NSString *statusId = [status._id copy];
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
             return cell;
         }
     }

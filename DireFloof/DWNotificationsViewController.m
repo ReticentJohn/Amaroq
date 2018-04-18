@@ -266,8 +266,18 @@
         DWTimelineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MentionCell"];
         cell.notification = notification;
         cell.delegate = self;
-        cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:notification.status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
-
+        
+        MSStatus *status = notification.status;
+        
+        cell.accessibilityCustomActions = nil;
+        
+        NSString *statusId = [status._id copy];
+        [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+            if ([status._id isEqualToString:statusId]) {
+                cell.accessibilityCustomActions = actions;
+            }
+        }];
+        
         return cell;
     }
     else
@@ -275,8 +285,18 @@
         DWTimelineNotificationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NotificationCell"];
         cell.notification = notification;
         cell.delegate = self;
-        cell.accessibilityCustomActions = [DWAccessibilityAction accessibilityActionsForStatus:notification.status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:)];
 
+        MSStatus *status = notification.status;
+        
+        cell.accessibilityCustomActions = nil;
+        
+        NSString *statusId = [status._id copy];
+        [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+            if ([status._id isEqualToString:statusId]) {
+                cell.accessibilityCustomActions = actions;
+            }
+        }];
+        
         return cell;
     }
         
