@@ -39,7 +39,7 @@
     [self.loginActivityIndicator startAnimating];
     self.loginButton.hidden = YES;
     
-    if ([self.instanceField.text containsString:@"gab.ai"]) {
+    if ([self.instanceField.text.lowercaseString containsString:@"gab.ai"]) {
         return;
     }
     
