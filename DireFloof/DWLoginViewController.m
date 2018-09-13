@@ -39,6 +39,10 @@
     [self.loginActivityIndicator startAnimating];
     self.loginButton.hidden = YES;
     
+    if ([self.instanceField.text containsString:@"gab.ai"]) {
+        return;
+    }
+    
     [[MSAppStore sharedStore] setMastodonInstance:self.instanceField.text];
     
     [[MSAuthStore sharedStore] login:^(BOOL success) {
