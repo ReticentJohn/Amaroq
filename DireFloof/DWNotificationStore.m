@@ -97,7 +97,12 @@
     if ([[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
         [self connectToFcm];
         
-        [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:[[FIRInstanceID instanceID] token]];
+        [[FIRInstanceID instanceID] instanceIDWithHandler:^(FIRInstanceIDResult * _Nullable result, NSError * _Nullable error) {
+            if (result) {
+                [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:result.token];
+            }
+        }];
+        
     }
     else
     {
@@ -245,6 +250,16 @@
 }
 
 
+- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken {
+    [self connectToFcm];
+    [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:fcmToken];
+}
+
+
+- (void)messaging:(FIRMessaging *)messaging didReceiveMessage:(FIRMessagingRemoteMessage *)remoteMessage {
+    
+}
+
 
 #pragma mark - Observers
 
@@ -258,7 +273,12 @@
     // Connect to FCM since connection may have failed when attempted before having a token.
     [self connectToFcm];
     
-    [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:[[FIRInstanceID instanceID] token]];
+    [[FIRInstanceID instanceID] instanceIDWithHandler:^(FIRInstanceIDResult * _Nullable result, NSError * _Nullable error) {
+        if (result) {
+            [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:result.token];
+        }
+    }];
+    
 }
 
 
@@ -368,14 +388,15 @@
 
 - (void)connectToFcm
 {
-    // Won't connect since there is no token
-    if (![[FIRInstanceID instanceID] token]) {
-        return;
-    }
-    
-    // Disconnect previous FCM connection if it exists.
-    [[FIRMessaging messaging] setShouldEstablishDirectChannel:NO];
-    [[FIRMessaging messaging] setShouldEstablishDirectChannel:YES];
+    [[FIRInstanceID instanceID] instanceIDWithHandler:^(FIRInstanceIDResult * _Nullable result, NSError * _Nullable error) {
+        if (result) {
+            if (result.token) {
+                // Disconnect previous FCM connection if it exists.
+                [[FIRMessaging messaging] setShouldEstablishDirectChannel:NO];
+                [[FIRMessaging messaging] setShouldEstablishDirectChannel:YES];
+            }
+        }
+    }];
 }
 
 @end

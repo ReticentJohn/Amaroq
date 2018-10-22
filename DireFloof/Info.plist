@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.11</string>
+	<string>1.1.12</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -46,6 +46,8 @@
 		</array>
 	</dict>
 	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>FirebaseScreenReportingEnabled</key>
 	<false/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>

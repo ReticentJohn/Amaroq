@@ -11,7 +11,6 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import <Firebase/Firebase.h>
-#import <GoogleToolboxForMac/GTMDefines.h>
 #import "AppDelegate.h"
 #import "DWAppearanceProxies.h"
 #import "DWNotificationStore.h"
@@ -100,7 +99,12 @@
     // With swizzling disabled you must set the APNs token here.
     
     [[FIRMessaging messaging] setAPNSToken:deviceToken type:FIRMessagingAPNSTokenTypeUnknown];
-    [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:[[FIRInstanceID instanceID] token]];
+    
+    [[FIRInstanceID instanceID] instanceIDWithHandler:^(FIRInstanceIDResult * _Nullable result, NSError * _Nullable error) {
+        if (result) {
+            [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:result.token];
+        }
+    }];
 }
 
 

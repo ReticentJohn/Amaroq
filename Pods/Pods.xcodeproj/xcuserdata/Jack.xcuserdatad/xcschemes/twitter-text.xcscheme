@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28585B7041AAE797AF9DC0EE039F0CF7"
+               BlueprintIdentifier = "109480CC9917F60659729CF82BF088AC"
                BuildableName = "twitter_text.framework"
                BlueprintName = "twitter-text"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28585B7041AAE797AF9DC0EE039F0CF7"
+            BlueprintIdentifier = "109480CC9917F60659729CF82BF088AC"
             BuildableName = "twitter_text.framework"
             BlueprintName = "twitter-text"
             ReferencedContainer = "container:Pods.xcodeproj">
