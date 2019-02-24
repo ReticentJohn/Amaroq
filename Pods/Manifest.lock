@@ -24,80 +24,21 @@ PODS:
   - DateTools (2.0.0)
   - EmojiOne (2.2.7)
   - FCFileManager (1.0.20)
-  - Firebase/Core (5.10.0):
-    - Firebase/CoreOnly
-    - FirebaseAnalytics (= 5.2.0)
-  - Firebase/CoreOnly (5.10.0):
-    - FirebaseCore (= 5.1.5)
-  - Firebase/Messaging (5.10.0):
-    - Firebase/CoreOnly
-    - FirebaseMessaging (= 3.2.0)
-  - FirebaseAnalytics (5.2.0):
-    - FirebaseCore (~> 5.1)
-    - FirebaseInstanceID (~> 3.2)
-    - GoogleAppMeasurement (~> 5.2)
-    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
-    - GoogleUtilities/MethodSwizzler (~> 5.2)
-    - GoogleUtilities/Network (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
-    - nanopb (~> 0.3)
-  - FirebaseCore (5.1.5):
-    - GoogleUtilities/Logger (~> 5.2)
-  - FirebaseInstanceID (3.2.2):
-    - FirebaseCore (~> 5.1)
-    - GoogleUtilities/Environment (~> 5.3)
-    - GoogleUtilities/UserDefaults (~> 5.3)
-  - FirebaseMessaging (3.2.0):
-    - FirebaseCore (~> 5.0)
-    - FirebaseInstanceID (~> 3.0)
-    - GoogleUtilities/Environment (~> 5.2)
-    - GoogleUtilities/Reachability (~> 5.2)
-    - Protobuf (~> 3.1)
   - GMImagePicker (0.0.2)
-  - GoogleAppMeasurement (5.2.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
-    - GoogleUtilities/MethodSwizzler (~> 5.2)
-    - GoogleUtilities/Network (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
-    - nanopb (~> 0.3)
-  - GoogleUtilities/AppDelegateSwizzler (5.3.3):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (5.3.3)
-  - GoogleUtilities/Logger (5.3.3):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (5.3.3):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (5.3.3):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (5.3.3)"
-  - GoogleUtilities/Reachability (5.3.3):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (5.3.3):
-    - GoogleUtilities/Logger
   - GPUImage (0.1.7)
   - Masonry (1.1.0)
   - MHVideoPhotoGallery (2.1.5):
     - Masonry
     - SDWebImage
     - TTTAttributedLabel (= 1.13.3)
-  - nanopb (0.3.8):
-    - nanopb/decode (= 0.3.8)
-    - nanopb/encode (= 0.3.8)
-  - nanopb/decode (0.3.8)
-  - nanopb/encode (0.3.8)
   - OAuth2 (0.2.2)
-  - Protobuf (3.6.1)
-  - PureLayout (3.1.2)
+  - PureLayout (3.1.4)
   - RMActionController (1.2.1)
   - RMPickerViewController (2.2.1):
     - RMActionController (~> 1.2.1)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - SDWebImage (4.4.5):
+    - SDWebImage/Core (= 4.4.5)
+  - SDWebImage/Core (4.4.5)
   - TPKeyboardAvoiding (1.3.2)
   - TTTAttributedLabel (1.13.3)
   - twitter-text (1.14.3)
@@ -113,8 +54,6 @@ DEPENDENCIES:
   - DateTools (from `https://github.com/ReticentJohn/DateTools.git`, branch `master`)
   - EmojiOne (from `DireFloof/Vendor/Emojione/emojione.podspec`)
   - FCFileManager
-  - Firebase/Core
-  - Firebase/Messaging
   - GMImagePicker (from `https://github.com/ReticentJohn/GMImagePicker.git`, branch `master`)
   - GPUImage (from `https://github.com/ReticentJohn/GPUImage.git`, branch `master`)
   - MHVideoPhotoGallery (from `https://github.com/ReticentJohn/MHVideoPhotoGallery.git`, branch `Audio-Dismiss-Fix`)
@@ -134,16 +73,7 @@ SPEC REPOS:
     - AnimatedGIFImageSerialization
     - CHTCollectionViewWaterfallLayout
     - FCFileManager
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseCore
-    - FirebaseInstanceID
-    - FirebaseMessaging
-    - GoogleAppMeasurement
-    - GoogleUtilities
     - Masonry
-    - nanopb
-    - Protobuf
     - PureLayout
     - RMActionController
     - RMPickerViewController
@@ -212,30 +142,21 @@ SPEC CHECKSUMS:
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   EmojiOne: 2d4072ac074090afdf7af9a1d47a757407a57882
   FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
-  Firebase: 6691d47562a780c26281ce8464518faafc90c610
-  FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
-  FirebaseCore: c6079de64c1a87000e52e9b408dddcadc901177f
-  FirebaseInstanceID: 78ba376fcd5b94c001f9999b2cbd3d1f1e56e78d
-  FirebaseMessaging: 000b32447b461b34b6b912b23ec11be20b503b5b
   GMImagePicker: 6438a6764d6280b1dbf19b59140313f5a73daeeb
-  GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
-  GoogleUtilities: 8208aee3e97a1ae93d44c57e96c476a5a3b03f0a
   GPUImage: bd7e201b9aa91e85f401ed7a6d9867a07a404693
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MHVideoPhotoGallery: 4c885305a43abd837de8483703aa51a6bea5a6b7
-  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   OAuth2: a1af0c7574ce10e4afb03a277643a2bdb9ba3ff8
-  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  PureLayout: 4634d0b61e3b5021166e8ec7c18e9e0ca0720c8b
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
   RMActionController: e516bc0651a61d675abb5eaf09ee79a92ae6155c
   RMPickerViewController: f2925d34875f63840ea1c2eeda9f6f1fc8a3afd4
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
   TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
   twitter-text: 7041d00e0f61ed58ab9413e72950f098de858b5c
   UIImage-Resize: fa776860f10e6900bbaf53a73e494bdceaaccc77
   YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: b94a63e9c7d8eb23f8924d5bba5bc4deb5df4799
+PODFILE CHECKSUM: 82993cf6babfa918abcdd268bfb8871cf1101a2d
 
 COCOAPODS: 1.5.3

@@ -127,7 +127,7 @@
     if (!token || ![self isLoggedIn]) {
         return;
     }
-    
+        
     NSDictionary *params = @{@"instance_url": [[MSAppStore sharedStore] base_url_string],
                              @"access_token": self.credential.accessToken,
                              @"device_token": token,
@@ -159,18 +159,7 @@
         return;
     }
     
-    NSDictionary *params = @{@"instance_url": [[MSAppStore sharedStore] base_url_string],
-                             @"access_token": self.credential.accessToken};
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
-    
-    [manager POST:[NSString stringWithFormat:@"%@unregister", MS_APNS_URL_STRING] parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //NSLog(@"unRegistered for APNS!");
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //NSLog(@"Failed to unregister for APNS!");
-    }];
+    [[MSNotificationStore sharedStore] unsubscribePushNotifications];
 }
 
 
@@ -301,7 +290,7 @@
     [dictService setObject:[[MSAppStore sharedStore] client_id] forKey:kOAuth_ClientId];
     [dictService setObject:[[MSAppStore sharedStore] client_secret] forKey:kOAuth_Secret];
     [dictService setObject:@"amaroq://authorize" forKey:kOAuth_Callback];
-    [dictService setObject:@"read write follow" forKey:kOAuth_Scope];
+    [dictService setObject:@"read write follow push" forKey:kOAuth_Scope];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
     

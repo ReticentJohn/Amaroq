@@ -17,6 +17,7 @@
 #define MS_BASE_MEDIA_URL_STRING                        @"https://files.mastodon.social/"
 #define MS_CLIENT_ID_KEY                                @"MS_CLIENT_ID_KEY"
 #define MS_CLIENT_SECRET_KEY                            @"MS_CLIENT_SECRET_KEY"
+#define MS_CLIENT_NOTIFICATION_STATE_KEY                @"MS_CLIENT_NOTIFICATION_STATE_KEY"
 #define MS_BASE_URL_STRING_KEY                          @"MS_BASE_URL_STRING_KEY"
 #define MS_BASE_API_URL_STRING_KEY                      @"MS_BASE_API_URL_STRING_KEY"
 #define MS_BASE_MEDIA_URL_STRING_KEY                    @"MS_BASE_MEDIA_URL_STRING_KEY"

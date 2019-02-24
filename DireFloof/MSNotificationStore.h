@@ -12,6 +12,8 @@
 #import <Foundation/Foundation.h>
 #import "MSTimeline.h"
 
+@class MSPushNotificationStore;
+
 @interface MSNotificationStore : NSObject
 
 #pragma mark - Class Methods
@@ -23,6 +25,7 @@
 
 - (void)getNotificationsSinceId:(NSString *)notificationId withCompletion:(void (^)(BOOL success, MSTimeline *notifications, NSError *error))completion;
 - (void)clearNotificationsWithCompletion:(void (^)(BOOL success, NSError *error))completion;
-
+- (void)subscribePushNotificationsWithDeviceToken:(NSData *)deviceToken withCompletion:(void (^)(BOOL, NSError *))completion;
+- (void)unsubscribePushNotifications;
 
 @end

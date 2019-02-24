@@ -29,7 +29,5 @@
 
 - (void)stopNotificationRefresh;
 - (void)registerForNotifications;
-- (void)checkForNotificationsWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
-- (void)connectToFcm;
 
 @end

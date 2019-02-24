@@ -57,7 +57,6 @@
 		0459AB201E6F793F0052E722 /* DWNotificationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459AB1F1E6F793F0052E722 /* DWNotificationStore.m */; };
 		04610BE41E54E1D80023763D /* DWTimelineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04610BE31E54E1D80023763D /* DWTimelineTableViewCell.m */; };
 		04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 04610BEB1E54F1190023763D /* NSString+HtmlStrip.m */; };
-		0469EA781E75B50200492AF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0469EA771E75B50200492AF5 /* GoogleService-Info.plist */; };
 		046A4C761E8D62BC00F54E15 /* DWNotificationSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A4C751E8D62BC00F54E15 /* DWNotificationSettingsViewController.m */; };
 		046BF20D1E7712EE00F01C50 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2031E7712EE00F01C50 /* OpenSans-Bold.ttf */; };
 		046BF20E1E7712EE00F01C50 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF2041E7712EE00F01C50 /* OpenSans-BoldItalic.ttf */; };
@@ -74,6 +73,20 @@
 		0485B97D1E55685F0063B2B8 /* DWIntrinsicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */; };
 		048902EE1FBE6F3700ED07A6 /* MSEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 048902ED1FBE6F3700ED07A6 /* MSEmoji.m */; };
 		048902F11FBE77F900ED07A6 /* InlineImageHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 048902F01FBE77F900ED07A6 /* InlineImageHelpers.m */; };
+		0491925B2222FCA4007BD8BA /* Decode85.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192542222FCA2007BD8BA /* Decode85.swift */; };
+		0491925C2222FCA4007BD8BA /* PushNotificationReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192552222FCA2007BD8BA /* PushNotificationReceiver.swift */; };
+		0491925D2222FCA4007BD8BA /* DecryptNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192562222FCA3007BD8BA /* DecryptNotification.swift */; };
+		0491925E2222FCA4007BD8BA /* SwiftGCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192572222FCA3007BD8BA /* SwiftGCM.swift */; };
+		0491925F2222FCA4007BD8BA /* PushNotificationDataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192582222FCA3007BD8BA /* PushNotificationDataObjects.swift */; };
+		04919263222317C3007BD8BA /* MSPushNotificationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04919262222317C3007BD8BA /* MSPushNotificationStore.swift */; };
+		0491926B222346E5007BD8BA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491926A222346E5007BD8BA /* NotificationService.swift */; };
+		0491926F222346E5007BD8BA /* Amaroq Push.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04919268222346E4007BD8BA /* Amaroq Push.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0491927522234769007BD8BA /* Decode85.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192542222FCA2007BD8BA /* Decode85.swift */; };
+		0491927622234769007BD8BA /* DecryptNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192562222FCA3007BD8BA /* DecryptNotification.swift */; };
+		0491927722234769007BD8BA /* PushNotificationDataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192582222FCA3007BD8BA /* PushNotificationDataObjects.swift */; };
+		0491927822234769007BD8BA /* PushNotificationReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192552222FCA2007BD8BA /* PushNotificationReceiver.swift */; };
+		0491927A22234769007BD8BA /* SwiftGCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049192572222FCA3007BD8BA /* SwiftGCM.swift */; };
+		0491927F22234E15007BD8BA /* NSString+HtmlStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 04610BEB1E54F1190023763D /* NSString+HtmlStrip.m */; };
 		0499677E1EAE94AE0091D17B /* DWMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499677D1EAE94AE0091D17B /* DWMenuTableViewCell.m */; };
 		04AAFB6A1E726029009E15B2 /* PrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 04AAFB691E726029009E15B2 /* PrivacyPolicy.html */; };
 		04AE6A9F1EA9437C00E64477 /* DWInstancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6A9E1EA9437C00E64477 /* DWInstancesViewController.m */; };
@@ -99,6 +112,7 @@
 		04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F425CE1E566DBD001A11C0 /* DWNotificationsViewController.m */; };
 		04F56C3F1F0051D50053FC84 /* DWDraftStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F56C3E1F0051D50053FC84 /* DWDraftStore.m */; };
 		04FE35F91E627E5600E34407 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FE35F81E627E5600E34407 /* Settings.bundle */; };
+		1AEFB361F8564B773E572394 /* Pods_Amaroq_Push.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5A11D73B41DDBB26DC2D94 /* Pods_Amaroq_Push.framework */; };
 		22B3306B1EC6002B0022BB78 /* UIViewController+WebNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */; };
 		22B3306D1EC600590022BB78 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3306C1EC600590022BB78 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		27A353FD7A3B9282A0D71F49 /* Pods_DireFloofUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1BFD1C11A0545006ADFCA3 /* Pods_DireFloofUITests.framework */; };
@@ -107,6 +121,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0491926D222346E5007BD8BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EC13E41E46A966000E15A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04919267222346E4007BD8BA;
+			remoteInfo = "Amaroq Push";
+		};
 		04EC14091E46A966000E15A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04EC13E41E46A966000E15A6 /* Project object */;
@@ -122,6 +143,20 @@
 			remoteInfo = DireFloof;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04919274222346E5007BD8BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0491926F222346E5007BD8BA /* Amaroq Push.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0408CABD1E7208B3009A893D /* DWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAboutViewController.h; sourceTree = "<group>"; };
@@ -224,7 +259,6 @@
 		04610BE51E54E8720023763D /* DWConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWConstants.h; sourceTree = "<group>"; };
 		04610BEA1E54F1190023763D /* NSString+HtmlStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HtmlStrip.h"; sourceTree = "<group>"; };
 		04610BEB1E54F1190023763D /* NSString+HtmlStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HtmlStrip.m"; sourceTree = "<group>"; };
-		0469EA771E75B50200492AF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0469EA791E75B63800492AF5 /* DireFloof.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DireFloof.entitlements; sourceTree = "<group>"; };
 		046A4C741E8D62BC00F54E15 /* DWNotificationSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNotificationSettingsViewController.h; sourceTree = "<group>"; };
 		046A4C751E8D62BC00F54E15 /* DWNotificationSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNotificationSettingsViewController.m; sourceTree = "<group>"; };
@@ -260,6 +294,19 @@
 		048902ED1FBE6F3700ED07A6 /* MSEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSEmoji.m; sourceTree = "<group>"; };
 		048902EF1FBE77F900ED07A6 /* InlineImageHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InlineImageHelpers.h; sourceTree = "<group>"; };
 		048902F01FBE77F900ED07A6 /* InlineImageHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InlineImageHelpers.m; sourceTree = "<group>"; };
+		049192522222FCA1007BD8BA /* DireFloof-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DireFloof-Bridging-Header.h"; sourceTree = "<group>"; };
+		049192532222FCA1007BD8BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		049192542222FCA2007BD8BA /* Decode85.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decode85.swift; sourceTree = "<group>"; };
+		049192552222FCA2007BD8BA /* PushNotificationReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationReceiver.swift; sourceTree = "<group>"; };
+		049192562222FCA3007BD8BA /* DecryptNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptNotification.swift; sourceTree = "<group>"; };
+		049192572222FCA3007BD8BA /* SwiftGCM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGCM.swift; sourceTree = "<group>"; };
+		049192582222FCA3007BD8BA /* PushNotificationDataObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationDataObjects.swift; sourceTree = "<group>"; };
+		04919262222317C3007BD8BA /* MSPushNotificationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPushNotificationStore.swift; sourceTree = "<group>"; };
+		04919268222346E4007BD8BA /* Amaroq Push.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Amaroq Push.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0491926A222346E5007BD8BA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		0491926C222346E5007BD8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0491927D22234811007BD8BA /* Amaroq Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amaroq Push.entitlements"; sourceTree = "<group>"; };
+		0491927E22234AB3007BD8BA /* Amaroq-Push-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amaroq-Push-Bridging-Header.h"; sourceTree = "<group>"; };
 		049967761EAE53770091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
 		049967771EAE53780091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		049967781EAE53790091D17B /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -336,6 +383,7 @@
 		04F56C3D1F0051D50053FC84 /* DWDraftStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDraftStore.h; sourceTree = "<group>"; };
 		04F56C3E1F0051D50053FC84 /* DWDraftStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWDraftStore.m; sourceTree = "<group>"; };
 		04FE35F81E627E5600E34407 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		18F5DF1AA31716D2A1C69B93 /* Pods-Amaroq Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaroq Push.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaroq Push/Pods-Amaroq Push.debug.xcconfig"; sourceTree = "<group>"; };
 		22B330691EC6002B0022BB78 /* UIViewController+WebNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WebNavigation.h"; sourceTree = "<group>"; };
 		22B3306A1EC6002B0022BB78 /* UIViewController+WebNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WebNavigation.m"; sourceTree = "<group>"; };
 		22B3306C1EC600590022BB78 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -351,15 +399,26 @@
 		5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B1BFD1C11A0545006ADFCA3 /* Pods_DireFloofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770CBB42E4136BF25294E8D6 /* Pods_DireFloofTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloofTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7987E95A420ACCF333C1E3A8 /* Pods-Amaroq Push.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaroq Push.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-Amaroq Push/Pods-Amaroq Push.adhoc.xcconfig"; sourceTree = "<group>"; };
 		93D851A76E1374683F33CF17 /* Pods_DireFloof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A855AC4855853CC23E2334AF /* Pods-DireFloof.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.adhoc.xcconfig"; sourceTree = "<group>"; };
 		C448DA33BB8B254F9A8757CE /* Pods-DireFloof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof.debug.xcconfig"; sourceTree = "<group>"; };
 		D5461B0E07A4CFC6E2ADF2E3 /* Pods-DireFloofUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		D7C335A521992C48767534F0 /* Pods-DireFloofTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE7F5C7AE99DCFC52266FFD9 /* Pods-Amaroq Push.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaroq Push.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amaroq Push/Pods-Amaroq Push.release.xcconfig"; sourceTree = "<group>"; };
 		E4A0332E3C43DB011FC8E4DF /* Pods-DireFloofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE5A11D73B41DDBB26DC2D94 /* Pods_Amaroq_Push.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaroq_Push.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		04919265222346E4007BD8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEFB361F8564B773E572394 /* Pods_Amaroq_Push.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04EC13E91E46A966000E15A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +464,7 @@
 				04C9350A1E4BB520004376F3 /* MSStatusStore.m */,
 				04C9350E1E4C25D1004376F3 /* MSNotificationStore.h */,
 				04C9350F1E4C25D1004376F3 /* MSNotificationStore.m */,
+				04919262222317C3007BD8BA /* MSPushNotificationStore.swift */,
 				043154E11E5005D20066C511 /* MSUserStore.h */,
 				043154E21E5005D20066C511 /* MSUserStore.m */,
 				043154ED1E50EBFD0066C511 /* MSAccount.h */,
@@ -620,12 +680,37 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		049192512222FC76007BD8BA /* Toot-Relay */ = {
+			isa = PBXGroup;
+			children = (
+				049192542222FCA2007BD8BA /* Decode85.swift */,
+				049192562222FCA3007BD8BA /* DecryptNotification.swift */,
+				049192582222FCA3007BD8BA /* PushNotificationDataObjects.swift */,
+				049192552222FCA2007BD8BA /* PushNotificationReceiver.swift */,
+				049192532222FCA1007BD8BA /* README.md */,
+				049192572222FCA3007BD8BA /* SwiftGCM.swift */,
+			);
+			name = "Toot-Relay";
+			sourceTree = "<group>";
+		};
+		04919269222346E5007BD8BA /* Amaroq Push */ = {
+			isa = PBXGroup;
+			children = (
+				0491927D22234811007BD8BA /* Amaroq Push.entitlements */,
+				0491926A222346E5007BD8BA /* NotificationService.swift */,
+				0491926C222346E5007BD8BA /* Info.plist */,
+				0491927E22234AB3007BD8BA /* Amaroq-Push-Bridging-Header.h */,
+			);
+			path = "Amaroq Push";
+			sourceTree = "<group>";
+		};
 		04EC13E31E46A966000E15A6 = {
 			isa = PBXGroup;
 			children = (
 				04EC13EE1E46A966000E15A6 /* DireFloof */,
 				04EC140B1E46A966000E15A6 /* DireFloofTests */,
 				04EC14161E46A966000E15A6 /* DireFloofUITests */,
+				04919269222346E5007BD8BA /* Amaroq Push */,
 				04EC13ED1E46A966000E15A6 /* Products */,
 				5A954BE4F904688F678B3383 /* Pods */,
 				4C62D2E833405E60BF6DE307 /* Frameworks */,
@@ -638,6 +723,7 @@
 				04EC13EC1E46A966000E15A6 /* DireFloof.app */,
 				04EC14081E46A966000E15A6 /* DireFloofTests.xctest */,
 				04EC14131E46A966000E15A6 /* DireFloofUITests.xctest */,
+				04919268222346E4007BD8BA /* Amaroq Push.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -653,6 +739,7 @@
 				04095B091E4A5C3B0082401A /* Mastodon */,
 				0411D5C51E66024C00CED5A6 /* Menu */,
 				043155281E540A400066C511 /* Navigation */,
+				049192512222FC76007BD8BA /* Toot-Relay */,
 				0411D1591E6380FA00CED5A6 /* Search */,
 				0459AB1A1E6DBB8D0052E722 /* Stores */,
 				0431552F1E540FCA0066C511 /* Styling */,
@@ -668,10 +755,10 @@
 			children = (
 				04F0D6F51EABD0A100DFF8BB /* Localizable.strings */,
 				04F0D6E61EABD09F00DFF8BB /* InfoPlist.strings */,
-				0469EA771E75B50200492AF5 /* GoogleService-Info.plist */,
 				04EC14031E46A966000E15A6 /* Info.plist */,
 				04EC13F01E46A966000E15A6 /* main.m */,
 				04610BE51E54E8720023763D /* DWConstants.h */,
+				049192522222FCA1007BD8BA /* DireFloof-Bridging-Header.h */,
 				04FE35F81E627E5600E34407 /* Settings.bundle */,
 				04AAFB691E726029009E15B2 /* PrivacyPolicy.html */,
 			);
@@ -705,6 +792,7 @@
 				93D851A76E1374683F33CF17 /* Pods_DireFloof.framework */,
 				770CBB42E4136BF25294E8D6 /* Pods_DireFloofTests.framework */,
 				5B1BFD1C11A0545006ADFCA3 /* Pods_DireFloofUITests.framework */,
+				EE5A11D73B41DDBB26DC2D94 /* Pods_Amaroq_Push.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -721,6 +809,9 @@
 				E4A0332E3C43DB011FC8E4DF /* Pods-DireFloofUITests.debug.xcconfig */,
 				4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */,
 				D5461B0E07A4CFC6E2ADF2E3 /* Pods-DireFloofUITests.adhoc.xcconfig */,
+				18F5DF1AA31716D2A1C69B93 /* Pods-Amaroq Push.debug.xcconfig */,
+				DE7F5C7AE99DCFC52266FFD9 /* Pods-Amaroq Push.release.xcconfig */,
+				7987E95A420ACCF333C1E3A8 /* Pods-Amaroq Push.adhoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -728,6 +819,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		04919267222346E4007BD8BA /* Amaroq Push */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04919270222346E5007BD8BA /* Build configuration list for PBXNativeTarget "Amaroq Push" */;
+			buildPhases = (
+				2EBE52E61EBAFC1D8CD466FA /* [CP] Check Pods Manifest.lock */,
+				04919264222346E4007BD8BA /* Sources */,
+				04919265222346E4007BD8BA /* Frameworks */,
+				04919266222346E4007BD8BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amaroq Push";
+			productName = "Amaroq Push";
+			productReference = 04919268222346E4007BD8BA /* Amaroq Push.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		04EC13EB1E46A966000E15A6 /* DireFloof */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04EC141C1E46A966000E15A6 /* Build configuration list for PBXNativeTarget "DireFloof" */;
@@ -738,10 +847,12 @@
 				04EC13EA1E46A966000E15A6 /* Resources */,
 				04DA37F91E666D6F0059A2A6 /* Build Versioning */,
 				6D67C0BB1102B5D415CD37B8 /* [CP] Embed Pods Frameworks */,
+				04919274222346E5007BD8BA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0491926E222346E5007BD8BA /* PBXTargetDependency */,
 			);
 			name = DireFloof;
 			productName = DireFloof;
@@ -792,14 +903,29 @@
 		04EC13E41E46A966000E15A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Keyboard Floofs";
 				TargetAttributes = {
-					04EC13EB1E46A966000E15A6 = {
-						CreatedOnToolsVersion = 8.2.1;
+					04919267222346E4007BD8BA = {
+						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = J8ZUY53AC3;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					04EC13EB1E46A966000E15A6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J8ZUY53AC3;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -839,11 +965,19 @@
 				04EC13EB1E46A966000E15A6 /* DireFloof */,
 				04EC14071E46A966000E15A6 /* DireFloofTests */,
 				04EC14121E46A966000E15A6 /* DireFloofUITests */,
+				04919267222346E4007BD8BA /* Amaroq Push */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		04919266222346E4007BD8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04EC13EA1E46A966000E15A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -880,7 +1014,6 @@
 				043155161E52945B0066C511 /* Roboto-Black.ttf in Resources */,
 				046BF2161E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				04F0D6E41EABD09F00DFF8BB /* InfoPlist.strings in Resources */,
-				0469EA781E75B50200492AF5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,6 +1050,28 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/bash\n\n#  update_build_number.sh\n#  Usage: `update_build_number.sh [branch]`\n#  Run this script after the 'Copy Bundle Resources' build phase\n#  Ref: http://tgoode.com/2014/06/05/sensible-way-increment-bundle-version-cfbundleversion-xcode/\n\nbranch=${1:-'staging'}\nbuildNumber=$(expr 311 + $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))\necho \"Updating build number to $buildNumber using branch '$branch'.\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ -f \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi";
 		};
+		2EBE52E61EBAFC1D8CD466FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amaroq Push-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6D67C0BB1102B5D415CD37B8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -934,11 +1089,9 @@
 				"${BUILT_PRODUCTS_DIR}/FCFileManager/FCFileManager.framework",
 				"${BUILT_PRODUCTS_DIR}/GMImagePicker/GMImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MHVideoPhotoGallery/MHVideoPhotoGallery.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuth2/OAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework",
 				"${BUILT_PRODUCTS_DIR}/RMPickerViewController/RMPickerViewController.framework",
@@ -947,7 +1100,6 @@
 				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/UIImage-Resize/UIImage_Resize.framework",
 				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -962,11 +1114,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCFileManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MHVideoPhotoGallery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMActionController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMPickerViewController.framework",
@@ -975,7 +1125,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImage_Resize.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/twitter_text.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1040,6 +1189,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04919264222346E4007BD8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0491927522234769007BD8BA /* Decode85.swift in Sources */,
+				0491927722234769007BD8BA /* PushNotificationDataObjects.swift in Sources */,
+				0491927F22234E15007BD8BA /* NSString+HtmlStrip.m in Sources */,
+				0491926B222346E5007BD8BA /* NotificationService.swift in Sources */,
+				0491927A22234769007BD8BA /* SwiftGCM.swift in Sources */,
+				0491927822234769007BD8BA /* PushNotificationReceiver.swift in Sources */,
+				0491927622234769007BD8BA /* DecryptNotification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04EC13E81E46A966000E15A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1073,18 +1236,22 @@
 				040C612C1E707E0900509F32 /* DWSettingStore.m in Sources */,
 				04095B101E4A63C90082401A /* MSAuthStore.m in Sources */,
 				04095B141E4A6D2D0082401A /* MSAppStore.m in Sources */,
+				0491925C2222FCA4007BD8BA /* PushNotificationReceiver.swift in Sources */,
 				0459AB201E6F793F0052E722 /* DWNotificationStore.m in Sources */,
 				044779FD1E56A36000C2F989 /* DWTimelineFollowTableViewCell.m in Sources */,
 				043154FE1E517B290066C511 /* NSDictionary+Sanitation.m in Sources */,
+				0491925E2222FCA4007BD8BA /* SwiftGCM.swift in Sources */,
 				0411D15F1E63815200CED5A6 /* DWSearchTableViewCell.m in Sources */,
 				043154EC1E50EB3D0066C511 /* MSStatus.m in Sources */,
 				0431552E1E540EB40066C511 /* DWTabItemViewController.m in Sources */,
 				044CAC292083C991006C931C /* DWAccessibilityAction.m in Sources */,
 				043155321E540FF90066C511 /* DWAppearanceProxies.m in Sources */,
+				0491925D2222FCA4007BD8BA /* DecryptNotification.swift in Sources */,
 				04DBE7F81FC3BF8D00240367 /* UIAlertController+SupportedInterfaceOrientations.m in Sources */,
 				04095B0D1E4A5E880082401A /* MSAPIClient.m in Sources */,
 				04EC13F11E46A966000E15A6 /* main.m in Sources */,
 				047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */,
+				0491925F2222FCA4007BD8BA /* PushNotificationDataObjects.swift in Sources */,
 				04F56C3F1F0051D50053FC84 /* DWDraftStore.m in Sources */,
 				04E6A2461E7480F200838130 /* UIImage+color.m in Sources */,
 				04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */,
@@ -1094,7 +1261,9 @@
 				04DA37F81E665F0B0059A2A6 /* DWBlockedUsersViewController.m in Sources */,
 				0411D1621E6397B600CED5A6 /* DWTimelineViewController.m in Sources */,
 				04E9F09D1E5694F600D4EE73 /* DWTimelineNotificationTableViewCell.m in Sources */,
+				0491925B2222FCA4007BD8BA /* Decode85.swift in Sources */,
 				043154EF1E50EBFD0066C511 /* MSAccount.m in Sources */,
+				04919263222317C3007BD8BA /* MSPushNotificationStore.swift in Sources */,
 				0411D1651E639D2100CED5A6 /* UIApplication+TopController.m in Sources */,
 				04F425CF1E566DBD001A11C0 /* DWNotificationsViewController.m in Sources */,
 				0411D15C1E63813900CED5A6 /* DWSearchViewController.m in Sources */,
@@ -1122,6 +1291,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0491926E222346E5007BD8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04919267222346E4007BD8BA /* Amaroq Push */;
+			targetProxy = 0491926D222346E5007BD8BA /* PBXContainerItemProxy */;
+		};
 		04EC140A1E46A966000E15A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04EC13EB1E46A966000E15A6 /* DireFloof */;
@@ -1248,6 +1422,113 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		04919271222346E5007BD8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F5DF1AA31716D2A1C69B93 /* Pods-Amaroq Push.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Amaroq Push/Amaroq Push.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Amaroq Push/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardfloofs.amarok.Amaroq-Push";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amaroq Push/Amaroq-Push-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04919272222346E5007BD8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7F5C7AE99DCFC52266FFD9 /* Pods-Amaroq Push.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Amaroq Push/Amaroq Push.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Amaroq Push/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardfloofs.amarok.Amaroq-Push";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amaroq Push/Amaroq-Push-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04919273222346E5007BD8BA /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7987E95A420ACCF333C1E3A8 /* Pods-Amaroq Push.adhoc.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Amaroq Push/Amaroq Push.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Amaroq Push/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardfloofs.amarok.Amaroq-Push";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amaroq Push/Amaroq-Push-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Adhoc;
+		};
 		04DA37FA1E6671170059A2A6 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1282,7 +1563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1293,14 +1574,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A855AC4855853CC23E2334AF /* Pods-DireFloof.adhoc.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				INFOPLIST_FILE = DireFloof/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DireFloof/DireFloof-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Adhoc;
 		};
@@ -1308,6 +1594,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A2379964B2057680274665D /* Pods-DireFloofTests.adhoc.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = PVMKAYEWNU;
 				INFOPLIST_FILE = DireFloofTests/Info.plist;
@@ -1322,6 +1609,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5461B0E07A4CFC6E2ADF2E3 /* Pods-DireFloofUITests.adhoc.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PVMKAYEWNU;
 				INFOPLIST_FILE = DireFloofUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1371,7 +1659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1412,7 +1700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1423,14 +1711,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C448DA33BB8B254F9A8757CE /* Pods-DireFloof.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				INFOPLIST_FILE = DireFloof/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DireFloof/DireFloof-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1438,14 +1732,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA8B4A3626D6C8622613371 /* Pods-DireFloof.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				INFOPLIST_FILE = DireFloof/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DireFloof/DireFloof-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1453,6 +1752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = PVMKAYEWNU;
 				INFOPLIST_FILE = DireFloofTests/Info.plist;
@@ -1467,6 +1767,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7C335A521992C48767534F0 /* Pods-DireFloofTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = PVMKAYEWNU;
 				INFOPLIST_FILE = DireFloofTests/Info.plist;
@@ -1481,6 +1782,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4A0332E3C43DB011FC8E4DF /* Pods-DireFloofUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PVMKAYEWNU;
 				INFOPLIST_FILE = DireFloofUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1494,6 +1796,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PVMKAYEWNU;
 				INFOPLIST_FILE = DireFloofUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1506,6 +1809,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04919270222346E5007BD8BA /* Build configuration list for PBXNativeTarget "Amaroq Push" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04919271222346E5007BD8BA /* Debug */,
+				04919272222346E5007BD8BA /* Release */,
+				04919273222346E5007BD8BA /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04EC13E71E46A966000E15A6 /* Build configuration list for PBXProject "DireFloof" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

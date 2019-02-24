@@ -19,8 +19,6 @@ target 'DireFloof' do
   pod 'MHVideoPhotoGallery', git: 'https://github.com/ReticentJohn/MHVideoPhotoGallery.git', branch: 'Audio-Dismiss-Fix'
   pod 'FCFileManager'
   pod 'GPUImage', git: 'https://github.com/ReticentJohn/GPUImage.git', branch: 'master'
-  pod 'Firebase/Core'
-  pod 'Firebase/Messaging'
   pod 'EmojiOne', podspec: 'DireFloof/Vendor/Emojione/emojione.podspec'
   pod 'RMPickerViewController', '~> 2.2.1'
   pod 'OAuth2', git: 'https://github.com/ReticentJohn/OAuth2-for-iOS.git', branch: 'master'
@@ -50,6 +48,10 @@ end
   target 'DireFloofUITests' do
     inherit! :search_paths
     # Pods for testing
+  end
+  
+  target 'Amaroq Push' do
+      inherit! :search_paths
   end
 
 end

@@ -10,7 +10,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #import <AFNetworking/AFNetworking.h>
-#import <Firebase/Firebase.h>
 #import "AppDelegate.h"
 #import "DWAppearanceProxies.h"
 #import "DWNotificationStore.h"
@@ -35,8 +34,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [FIRApp configure];
-    
     [DWAppearanceProxies configureAppearanceProxies];
     [[DWSettingStore sharedStore] performSettingMaintenance];
     
@@ -57,7 +54,6 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     [[NSNotificationCenter defaultCenter] postNotificationName:DW_WILL_PURGE_CACHE_NOTIFICATION object:nil];
-    [[FIRMessaging messaging] setShouldEstablishDirectChannel:NO];
 }
 
 
@@ -89,20 +85,15 @@
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
     completionHandler(UIBackgroundFetchResultNoData);
-    //[[DWNotificationStore sharedStore] checkForNotificationsWithCompletionHandler:completionHandler];
 }
 
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    //NSLog(@"APNs token retrieved: %@", deviceToken);
     
-    // With swizzling disabled you must set the APNs token here.
-    
-    [[FIRMessaging messaging] setAPNSToken:deviceToken type:FIRMessagingAPNSTokenTypeUnknown];
-    
-    [[FIRInstanceID instanceID] instanceIDWithHandler:^(FIRInstanceIDResult * _Nullable result, NSError * _Nullable error) {
-        if (result) {
-            [[MSAuthStore sharedStore] registerForRemoteNotificationsWithToken:result.token];
+    [[MSNotificationStore sharedStore] subscribePushNotificationsWithDeviceToken:deviceToken withCompletion:^(BOOL success, NSError *error) {
+        if (success) {
+        }
+        else {
         }
     }];
 }

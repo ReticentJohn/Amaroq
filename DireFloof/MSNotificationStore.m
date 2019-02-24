@@ -12,6 +12,7 @@
 #import "MSNotificationStore.h"
 #import "MSAPIClient.h"
 #import "MSAppStore.h"
+#import "DireFloof-Swift.h"
 
 @implementation MSNotificationStore
 
@@ -75,6 +76,22 @@
             completion(NO, error);
         }
     }];
+}
+
+
+- (void)subscribePushNotificationsWithDeviceToken:(NSData *)deviceToken withCompletion:(void (^)(BOOL, NSError *))completion
+{
+    [[MSPushNotificationStore sharedStore] subscribePushNotifications:deviceToken completion:^(BOOL success, NSError * _Nullable error) {
+        if (completion != nil) {
+            completion(success, error);
+        }
+    }];
+}
+
+
+- (void)unsubscribePushNotifications
+{
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] DELETE:@"push/subscription" parameters:nil success:nil failure:nil];
 }
 
 @end

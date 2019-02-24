@@ -25,6 +25,7 @@
 #import "MSTimeline.h"
 #import "MSNotification.h"
 #import "MSAppStore.h"
+#import "MSAPIClient.h"
 #import "MSEmoji.h"
 
 #endif /* Mastodon_h */

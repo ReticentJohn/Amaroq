@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5E93CEB14074DA0AC58470F9749ED587"
+               BlueprintIdentifier = "3A3947194942B8B97975AAF7B10EEECD"
                BlueprintName = "GMImagePicker"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "GMImagePicker.framework">

@@ -213,7 +213,7 @@
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:DW_MAINTENANCE_FLAG_1_1_6]) {
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:DW_MAINTENANCE_FLAG_1_1_13]) {
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentsDirectory = [paths firstObject];
@@ -227,7 +227,7 @@
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_BASE_MEDIA_URL_STRING_KEY];
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_INSTANCE_KEY];
         
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DW_MAINTENANCE_FLAG_1_1_6];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DW_MAINTENANCE_FLAG_1_1_13];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }

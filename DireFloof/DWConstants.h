@@ -45,6 +45,7 @@
 
 #define DW_MAINTENANCE_FLAG_1_1_4                           @"DW_MAINTENANCE_FLAG_1_1_4"
 #define DW_MAINTENANCE_FLAG_1_1_6                           @"DW_MAINTENANCE_FLAG_1_1_6"
+#define DW_MAINTENANCE_FLAG_1_1_13                          @"DW_MAINTENANCE_FLAG_1_1_13"
 
 #define DW_PRIVACY_URL                                      @"http://www.iubenda.com/api/privacy-policy/8066189/no-markup"
 

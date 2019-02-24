@@ -189,7 +189,7 @@
     {
         NSDictionary *params = @{@"client_name": @"Amaroq",
                                  @"redirect_uris": @"amaroq://authorize",
-                                 @"scopes": @"read write follow",
+                                 @"scopes": @"read write follow push",
                                  @"website": @"https://appsto.re/us/OfFxib.i"};
         
         NSString *requestUrl = [NSString stringWithFormat:@"%@%@", self.base_api_url_string, @"apps"];
