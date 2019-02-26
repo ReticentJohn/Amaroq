@@ -5,6 +5,9 @@
 //  Created by John Gabelmann on 2/24/19.
 //  Copyright © 2019 Keyboard Floofs. All rights reserved.
 //
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 import UIKit
 
@@ -32,11 +35,14 @@ class MSPushNotificationStore: NSObject {
         let requestToken = PushNotificationDeviceToken(deviceToken: deviceToken as Data)
         
         let alerts = PushNotificationAlerts(favourite: DWSettingStore.shared()?.favoriteNotifications ?? false, follow: DWSettingStore.shared()?.newFollowerNotifications ?? false, mention: DWSettingStore.shared()?.mentionNotifications ?? false, reblog: DWSettingStore.shared()?.boostNotifications ?? false)
-        let subscription = PushNotificationSubscription(endpoint: URL(string:"https://amaroq-apns.herokuapp.com/relay-to/production/\(token)")!, alerts: alerts)
-        let receiver = try! PushNotificationReceiver()
-        state = PushNotificationState(receiver: receiver, subscription: subscription, deviceToken: requestToken)
         
-        let params = PushNotificationSubscriptionRequest(endpoint: "https://amaroq-apns.herokuapp.com/relay-to/production/\(token)", receiver: receiver, alerts: alerts)
+        if state == nil {
+            let subscription = PushNotificationSubscription(endpoint: URL(string:"https://amaroq-apns.herokuapp.com/relay-to/production/\(token)")!, alerts: alerts)
+            let receiver = try! PushNotificationReceiver()
+            state = PushNotificationState(receiver: receiver, subscription: subscription, deviceToken: requestToken)
+        }
+        
+        let params = PushNotificationSubscriptionRequest(endpoint: "https://amaroq-apns.herokuapp.com/relay-to/production/\(token)", receiver: state!.receiver, alerts: alerts)
         
         guard let baseAPI = MSAppStore.shared()?.base_api_url_string else {
             if let completion = completion {

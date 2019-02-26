@@ -122,37 +122,6 @@
 }
 
 
-- (void)registerForRemoteNotificationsWithToken:(NSString *)token
-{
-    if (!token || ![self isLoggedIn]) {
-        return;
-    }
-        
-    NSDictionary *params = @{@"instance_url": [[MSAppStore sharedStore] base_url_string],
-                             @"access_token": self.credential.accessToken,
-                             @"device_token": token,
-                             @"followers": @([[DWSettingStore sharedStore] newFollowerNotifications]),
-                             @"favorites": @([[DWSettingStore sharedStore] favoriteNotifications]),
-                             @"mentions": @([[DWSettingStore sharedStore] mentionNotifications]),
-                             @"boosts": @([[DWSettingStore sharedStore] boostNotifications])
-                             };
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
-
-    [manager POST:[NSString stringWithFormat:@"%@register", MS_APNS_URL_STRING] parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //NSLog(@"Registered for APNS!");
-        
-        [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:MS_LAST_APNS_REFRESH_KEY];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //NSLog(@"Failed to register for APNS!");
-    }];
-}
-
-
 - (void)unregisterForRemoteNotifications
 {
     if (![[MSAppStore sharedStore] base_url_string] || !self.credential.accessToken) {

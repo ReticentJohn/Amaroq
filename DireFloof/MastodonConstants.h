@@ -28,7 +28,7 @@
 #define MS_CURRENT_USER_KEY                             @"MS_CURRENT_USER_KEY"
 #define MS_MEDIA_ATTACHMENT_MEDIA_KEY                   @"MS_MEDIA_ATTACHMENT_MEDIA_KEY"
 #define MS_MEDIA_ATTACHMENT_DESCRIPTION_KEY             @"MS_MEDIA_ATTACHMENT_DESCRIPTION_KEY"
-#define MS_APNS_URL_STRING                              @"https://amarok-apns.herokuapp.com/"
+#define MS_APNS_URL_STRING                              @"https://amaroq-apns.herokuapp.com/relay-to/development/"
 
 #define MS_VISIBILITY_TYPE_DIRECT           @"direct"
 #define MS_VISIBILITY_TYPE_PRIVATE          @"private"
