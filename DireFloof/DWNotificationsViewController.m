@@ -291,11 +291,13 @@
         cell.accessibilityCustomActions = nil;
         
         NSString *statusId = [status._id copy];
-        [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
-            if ([status._id isEqualToString:statusId]) {
-                cell.accessibilityCustomActions = actions;
-            }
-        }];
+        if (status != nil) {
+            [DWAccessibilityAction accessibilityActionsForStatus:status atIndexPath:indexPath withTarget:self andSelector:@selector(cellAccessibilityActionSelected:) withCompletion:^(MSStatus *status, NSArray *actions) {
+                if ([status._id isEqualToString:statusId]) {
+                    cell.accessibilityCustomActions = actions;
+                }
+            }];
+        }
         
         return cell;
     }
