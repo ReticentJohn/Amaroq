@@ -56,9 +56,7 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
     
     
     self.previousSelectedIndex = 0;
-    
-    [[DWNotificationStore sharedStore] registerForNotifications];
-    
+        
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(configureViews) name:DW_DID_SWITCH_INSTANCES_NOTIFICATION object:nil];
 }
 

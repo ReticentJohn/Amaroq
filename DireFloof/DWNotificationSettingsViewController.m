@@ -112,7 +112,6 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     
     [self.tableView reloadData];
     
-    [[DWNotificationStore sharedStore] stopNotificationRefresh];
     [[DWNotificationStore sharedStore] registerForNotifications];
 }
 

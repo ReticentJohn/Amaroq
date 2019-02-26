@@ -61,6 +61,7 @@
                 }
                 else
                 {
+                    [[DWNotificationStore sharedStore] registerForNotifications];
                     [self performSegueWithIdentifier:@"LoginSegue" sender:self];
                 }
             }

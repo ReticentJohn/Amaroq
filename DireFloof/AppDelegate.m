@@ -67,7 +67,6 @@
     [DWAppearanceProxies configureAppearanceProxies];
     
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
-    [[DWNotificationStore sharedStore] registerForNotifications];
     
     // Kicks the login screen if we're resuming from suspension
     if ([[[UIApplication sharedApplication] topController] isKindOfClass:[DWLoginViewController class]]) {
