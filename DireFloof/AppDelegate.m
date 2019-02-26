@@ -101,7 +101,9 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-    completionHandler(UIBackgroundFetchResultNoData);
+    [DWNotificationStore sharedStore].notificationBadge.hidden = NO;
+
+    completionHandler(UIBackgroundFetchResultNewData);
 }
 
 
