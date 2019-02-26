@@ -34,15 +34,13 @@ class MSPushNotificationStore: NSObject {
         let token = (deviceToken as Data).map { String(format: "%02.2hhx", $0) }.joined()
         let requestToken = PushNotificationDeviceToken(deviceToken: deviceToken as Data)
         
+        // TODO: Think of a better way to only update the notification state on token change, this will have notification decryption problems on network failure
         let alerts = PushNotificationAlerts(favourite: DWSettingStore.shared()?.favoriteNotifications ?? false, follow: DWSettingStore.shared()?.newFollowerNotifications ?? false, mention: DWSettingStore.shared()?.mentionNotifications ?? false, reblog: DWSettingStore.shared()?.boostNotifications ?? false)
+        let subscription = PushNotificationSubscription(endpoint: URL(string:"https://amaroq-apns.herokuapp.com/relay-to/production/\(token)")!, alerts: alerts)
+        let receiver = try! PushNotificationReceiver()
+        state = PushNotificationState(receiver: receiver, subscription: subscription, deviceToken: requestToken)
         
-        if state == nil {
-            let subscription = PushNotificationSubscription(endpoint: URL(string:"https://amaroq-apns.herokuapp.com/relay-to/production/\(token)")!, alerts: alerts)
-            let receiver = try! PushNotificationReceiver()
-            state = PushNotificationState(receiver: receiver, subscription: subscription, deviceToken: requestToken)
-        }
-        
-        let params = PushNotificationSubscriptionRequest(endpoint: "https://amaroq-apns.herokuapp.com/relay-to/production/\(token)", receiver: state!.receiver, alerts: alerts)
+        let params = PushNotificationSubscriptionRequest(endpoint: "https://amaroq-apns.herokuapp.com/relay-to/production/\(token)", receiver: receiver, alerts: alerts)
         
         guard let baseAPI = MSAppStore.shared()?.base_api_url_string else {
             if let completion = completion {
