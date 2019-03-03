@@ -27,9 +27,46 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
+    if (url.pathComponents.count > 1) {
+        NSString *const host = url.host;
+        // amaroq://user/[fully qualified account name]
+        // For example: amaroq://user/timonus@mastodon.technology
+        if ([host isEqualToString:@"user"]) {
+            NSString *const username = url.pathComponents[1]; // First path component is "/", second path component is the username.
+            NSString *const sanitizedUsername = [username.lowercaseString stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"@"]];
+            [[MSUserStore sharedStore] searchForUsersWithQuery:sanitizedUsername withCompletion:^(BOOL success, NSArray *users, NSError *error) {
+                MSAccount *account = nil;
+                for (MSAccount *candidateAccount in users) {
+                    // We construct the username from the URL to ensure the host is present.
+                    // For accounts on our same instance, acct won't contain the host.
+                    NSString *const candidateFullUsername = [NSString stringWithFormat:@"%@@%@", candidateAccount.username, [NSURL URLWithString:candidateAccount.url].host];
+                    NSString *const sanitizedCandidateUsername = candidateFullUsername.lowercaseString;
+                    if ([sanitizedCandidateUsername isEqualToString:sanitizedUsername]) {
+                        account = candidateAccount;
+                        break;
+                    }
+                }
+                if (account) {
+                    [[self viewControllerForPerfomingDeepLinkSegues] performSegueWithIdentifier:@"ProfileSegue" sender:account];
+                }
+            }];
+        }
+    }
     return YES;
 }
 
+- (UIViewController *)viewControllerForPerfomingDeepLinkSegues
+{
+    UIViewController *viewController = [[UIApplication sharedApplication] topController];
+    while ([viewController isKindOfClass:[UITabBarController class]] || [viewController isKindOfClass:[UINavigationController class]]) {
+        if ([viewController isKindOfClass:[UITabBarController class]]) {
+            viewController = [(UITabBarController *)viewController selectedViewController];
+        } else if ([viewController isKindOfClass:[UINavigationController class]]) {
+            viewController = [(UINavigationController *)viewController topViewController];
+        }
+    }
+    return viewController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
