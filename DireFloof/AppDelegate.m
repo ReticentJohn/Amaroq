@@ -17,6 +17,9 @@
 #import "UIApplication+TopController.h"
 #import "DWLoginViewController.h"
 #import "DWSettingStore.h"
+#import "DWProfileViewController.h"
+#import "Mastodon.h"
+#import "DWTimelineViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,29 +30,54 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
-    if (url.pathComponents.count > 1) {
-        NSString *const host = url.host;
-        // amaroq://user/[fully qualified account name]
-        // For example: amaroq://user/timonus@mastodon.technology
-        if ([host isEqualToString:@"user"]) {
-            NSString *const username = url.pathComponents[1]; // First path component is "/", second path component is the username.
-            NSString *const sanitizedUsername = [username.lowercaseString stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"@"]];
-            [[MSUserStore sharedStore] searchForUsersWithQuery:sanitizedUsername withCompletion:^(BOOL success, NSArray *users, NSError *error) {
-                MSAccount *account = nil;
-                for (MSAccount *candidateAccount in users) {
-                    // We construct the username from the URL to ensure the host is present.
-                    // For accounts on our same instance, acct won't contain the host.
-                    NSString *const candidateFullUsername = [NSString stringWithFormat:@"%@@%@", candidateAccount.username, [NSURL URLWithString:candidateAccount.url].host];
-                    NSString *const sanitizedCandidateUsername = candidateFullUsername.lowercaseString;
-                    if ([sanitizedCandidateUsername isEqualToString:sanitizedUsername]) {
-                        account = candidateAccount;
-                        break;
+    if ([[MSAuthStore sharedStore] isLoggedIn]) {
+        if (url.pathComponents.count > 1) {
+            NSString *const host = url.host;
+            // amaroq://user/[fully qualified account name]
+            // For example: amaroq://user/timonus@mastodon.technology
+            if ([host isEqualToString:@"user"]) {
+                NSString *const username = url.pathComponents[1]; // First path component is "/", second path component is the username.
+                NSString *const sanitizedUsername = [username.lowercaseString stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"@"]];
+                [[MSUserStore sharedStore] searchForUsersWithQuery:sanitizedUsername withCompletion:^(BOOL success, NSArray *users, NSError *error) {
+                    MSAccount *account = nil;
+                    for (MSAccount *candidateAccount in users) {
+                        // We construct the username from the URL to ensure the host is present.
+                        // For accounts on our same instance, acct won't contain the host.
+                        NSString *const candidateFullUsername = [NSString stringWithFormat:@"%@@%@", candidateAccount.username, [NSURL URLWithString:candidateAccount.url].host];
+                        NSString *const sanitizedCandidateUsername = candidateFullUsername.lowercaseString;
+                        if ([sanitizedCandidateUsername isEqualToString:sanitizedUsername]) {
+                            account = candidateAccount;
+                            break;
+                        }
                     }
-                }
-                if (account) {
-                    [[self viewControllerForPerfomingDeepLinkSegues] performSegueWithIdentifier:@"ProfileSegue" sender:account];
-                }
-            }];
+                    if (account) {
+                        DWProfileViewController *profileViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ProfileViewController"];
+                        profileViewController.account = account;
+                        
+                        UINavigationController *navController = [[self viewControllerForPerfomingDeepLinkSegues] navigationController];
+                        
+                        if (navController) {
+                            [navController pushViewController:profileViewController animated:YES];
+                        }
+                    }
+                }];
+            }
+            else if ([host isEqualToString:@"status"]) {
+                NSString *statusUrl = [url.path substringFromIndex:1];
+                
+                [[MSStatusStore sharedStore] searchStatusWithUrl:statusUrl withCompletion:^(BOOL success, MSStatus *status, NSError *error) {
+                    if (status) {
+                        DWTimelineViewController *threadViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"StatusViewController"];
+                        threadViewController.threadStatus = status;
+                        
+                        UINavigationController *navController = [[self viewControllerForPerfomingDeepLinkSegues] navigationController];
+                        
+                        if (navController) {
+                            [navController pushViewController:threadViewController animated:YES];
+                        }
+                    }
+                }];
+            }
         }
     }
     return YES;

@@ -32,4 +32,5 @@
 - (void)reportStatus:(MSStatus *)status withComments:(NSString *)comments withCompletion:(void (^)(BOOL success, NSError *error))completion;
 - (void)muteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL success, NSError *error))completion;
 - (void)unmuteStatusWithId:(NSString *)statusId withCompletion:(void (^)(BOOL success, NSError *error))completion;
+- (void)searchStatusWithUrl:(NSString *)searchUrl withCompletion:(void (^)(BOOL success, MSStatus *status, NSError *error))completion;
 @end
