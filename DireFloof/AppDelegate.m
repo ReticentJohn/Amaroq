@@ -31,52 +31,77 @@
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
     if ([[MSAuthStore sharedStore] isLoggedIn]) {
-        if (url.pathComponents.count > 1) {
-            NSString *const host = url.host;
+        NSString *const host = url.host;
+        if ([host isEqualToString:@"user"] && url.pathComponents.count > 1) {
             // amaroq://user/[fully qualified account name]
             // For example: amaroq://user/timonus@mastodon.technology
-            if ([host isEqualToString:@"user"]) {
-                NSString *const username = url.pathComponents[1]; // First path component is "/", second path component is the username.
-                NSString *const sanitizedUsername = [username.lowercaseString stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"@"]];
-                [[MSUserStore sharedStore] searchForUsersWithQuery:sanitizedUsername withCompletion:^(BOOL success, NSArray *users, NSError *error) {
-                    MSAccount *account = nil;
-                    for (MSAccount *candidateAccount in users) {
-                        // We construct the username from the URL to ensure the host is present.
-                        // For accounts on our same instance, acct won't contain the host.
-                        NSString *const candidateFullUsername = [NSString stringWithFormat:@"%@@%@", candidateAccount.username, [NSURL URLWithString:candidateAccount.url].host];
-                        NSString *const sanitizedCandidateUsername = candidateFullUsername.lowercaseString;
-                        if ([sanitizedCandidateUsername isEqualToString:sanitizedUsername]) {
-                            account = candidateAccount;
-                            break;
-                        }
+            NSString *const username = url.pathComponents[1]; // First path component is "/", second path component is the username.
+            NSString *const sanitizedUsername = [username.lowercaseString stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"@"]];
+            [[MSUserStore sharedStore] searchForUsersWithQuery:sanitizedUsername withCompletion:^(BOOL success, NSArray *users, NSError *error) {
+                MSAccount *account = nil;
+                for (MSAccount *candidateAccount in users) {
+                    // We construct the username from the URL to ensure the host is present.
+                    // For accounts on our same instance, acct won't contain the host.
+                    NSString *const candidateFullUsername = [NSString stringWithFormat:@"%@@%@", candidateAccount.username, [NSURL URLWithString:candidateAccount.url].host];
+                    NSString *const sanitizedCandidateUsername = candidateFullUsername.lowercaseString;
+                    if ([sanitizedCandidateUsername isEqualToString:sanitizedUsername]) {
+                        account = candidateAccount;
+                        break;
                     }
-                    if (account) {
-                        DWProfileViewController *profileViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ProfileViewController"];
-                        profileViewController.account = account;
-                        
-                        UINavigationController *navController = [[self viewControllerForPerfomingDeepLinkSegues] navigationController];
-                        
-                        if (navController) {
-                            [navController pushViewController:profileViewController animated:YES];
-                        }
+                }
+                if (account) {
+                    DWProfileViewController *profileViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ProfileViewController"];
+                    profileViewController.account = account;
+                    
+                    UINavigationController *navController = [[self viewControllerForPerfomingDeepLinkSegues] navigationController];
+                    
+                    if (navController) {
+                        [navController pushViewController:profileViewController animated:YES];
                     }
-                }];
+                }
+            }];
+        }
+        else if ([host isEqualToString:@"open"]) {
+            // amaroq://open?url=[URL to a Mastodon account or status]
+            // For example:
+            // amaroq://open?url=https%3A%2F%2Fmastodon.social%2F%40Gargron%2F101927228503810895
+            // amaroq://open?url=https%3A%2F%2Ftoot.cafe%2F%40chartier
+            NSURLComponents *const components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:YES];
+            NSString *objectURLString = nil;
+            for (NSURLQueryItem *const queryItem in components.queryItems) {
+                if ([queryItem.name isEqual:@"url"]) {
+                    objectURLString = queryItem.value;
+                    break;
+                }
             }
-            else if ([host isEqualToString:@"status"]) {
-                NSString *statusUrl = [url.path substringFromIndex:1];
+            
+            if (objectURLString) {
+                NSDictionary *params = @{@"q": objectURLString, @"resolve": @YES};
                 
-                [[MSStatusStore sharedStore] searchStatusWithUrl:statusUrl withCompletion:^(BOOL success, MSStatus *status, NSError *error) {
-                    if (status) {
-                        DWTimelineViewController *threadViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"StatusViewController"];
-                        threadViewController.threadStatus = status;
-                        
-                        UINavigationController *navController = [[self viewControllerForPerfomingDeepLinkSegues] navigationController];
-                        
-                        if (navController) {
-                            [navController pushViewController:threadViewController animated:YES];
+                [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"search" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                    UIViewController *viewControllerToPresent = nil;
+                    if (responseObject != nil) {
+                        NSDictionary *const statusDictionary = [[responseObject objectForKey:@"statuses"] firstObject];
+                        if (statusDictionary) {
+                            MSStatus *const status = [[MSStatus alloc] initWithParams:statusDictionary];
+                            DWTimelineViewController *threadViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"StatusViewController"];
+                            threadViewController.threadStatus = status;
+                            viewControllerToPresent = threadViewController;
+                        } else {
+                            NSDictionary *const accountDictionary = [[responseObject objectForKey:@"accounts"] firstObject];
+                            if (accountDictionary) {
+                                MSAccount *const account = [[MSAccount alloc] initWithParams:accountDictionary];
+                                DWProfileViewController *profileViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ProfileViewController"];
+                                profileViewController.account = account;
+                                viewControllerToPresent = profileViewController;
+                            }
                         }
                     }
-                }];
+                    if (viewControllerToPresent) {
+                        UINavigationController *navController = [[self viewControllerForPerfomingDeepLinkSegues] navigationController];
+                        [navController pushViewController:viewControllerToPresent animated:YES];
+                    }
+                } failure:nil];
             }
         }
     }
