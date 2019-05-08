@@ -491,40 +491,6 @@ static CGFloat maxDimensions = 1024.0f;
 }
 
 
-- (void)searchStatusWithUrl:(NSString *)searchUrl withCompletion:(void (^)(BOOL, MSStatus *, NSError *))completion
-{
-    NSDictionary *params = @{@"q":searchUrl, @"resolve": @(true)};
-    
-    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"search" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSMutableArray *statuses = [@[] mutableCopy];
-        
-        if (responseObject != nil) {
-            NSDictionary *statusJSON = [[responseObject objectForKey:@"statuses"] firstObject];
-            
-            if (statusJSON != nil) {
-                MSStatus *status = [[MSStatus alloc] initWithParams:statusJSON];
-                
-                if (completion != nil) {
-                    completion(YES, status, nil);
-                }
-            }
-            else if (completion != nil)
-            {
-                completion(YES, nil, nil);
-            }
-        }
-        else if (completion != nil) {
-            completion(YES, nil, nil);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (completion != nil) {
-            completion(NO, nil, error);
-        }
-    }];
-}
-
-
 - (void)updateProgressOnExportSession:(AVAssetExportSession *)exportSession
 {
     dispatch_async(dispatch_get_main_queue(), ^{
