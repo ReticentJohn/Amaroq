@@ -369,6 +369,13 @@ typedef NS_ENUM(NSUInteger, DWProfileSectionType) {
     
     [optionController addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel") style:UIAlertActionStyleCancel handler:nil]];
     
+    [optionController setModalPresentationStyle:UIModalPresentationPopover];
+    
+    UIPopoverPresentationController *popPresenter = [optionController popoverPresentationController];
+    UIView *view = sender;
+    popPresenter.sourceView = view;
+    popPresenter.sourceRect = view.bounds;
+    
     [[[UIApplication sharedApplication] topController] presentViewController:optionController animated:YES completion:nil];
 }
 
