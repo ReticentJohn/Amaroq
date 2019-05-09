@@ -194,8 +194,9 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         [self.tabBar addSubview:self.notificationBadge];
         
         [self.notificationBadge autoSetDimensionsToSize:CGSizeMake(10, 10)];
-        [self.notificationBadge autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self.tabBar withOffset:10.0f];
-        [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:self.tabBar withOffset:8.0f + width/5.0f];
+        UIView *notificationIconView = [DWTabBarController iconViewForTabInTabBar:self.tabBar withIndex:DWTabItemNotifications];
+        [self.notificationBadge autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:notificationIconView withOffset: -4.0f];
+        [self.notificationBadge autoAlignAxis:ALAxisVertical toSameAxisOfView:notificationIconView withOffset: 12.0f];
         [[DWNotificationStore sharedStore] setNotificationBadge:self.notificationBadge];
     }
     
@@ -244,8 +245,9 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
 
         [self.tabBar addSubview:menuOverlay];
         [menuOverlay autoSetDimensionsToSize:CGSizeMake(21.0f, 21.0f)];
-        [menuOverlay autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.centerTabOverlay withOffset:-6.0f];
-        [menuOverlay autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:width/10.0f - 20.0f];
+        UIView *menuIconView = [DWTabBarController iconViewForTabInTabBar:self.tabBar withIndex:DWTabItemMenu];
+        [self.avatarImageView autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:menuIconView withOffset: -4.0f];
+        [self.avatarImageView autoAlignAxis:ALAxisVertical toSameAxisOfView:menuIconView withOffset: 8.0f];
     }
     
     __weak UIImageView *__avatarImageView = self.avatarImageView;
@@ -271,6 +273,52 @@ typedef NS_ENUM(NSUInteger, DWTabItem) {
         }
         
     }];
+}
+
++ (UIView *)iconViewForTabInTabBar:(UITabBar*)tabBar withIndex:(NSUInteger)index
+{
+    NSMutableArray *tabBarItems = [NSMutableArray arrayWithCapacity:[tabBar.items count]];
+    for (UIView *view in tabBar.subviews) {
+        if ([view isKindOfClass:NSClassFromString(@"UITabBarButton")] && [view respondsToSelector:@selector(frame)]) {
+            // check for the selector -frame to prevent crashes in the very unlikely case that in the future
+            // objects thar don't implement -frame can be subViews of an UIView
+            [tabBarItems addObject:view];
+        }
+    }
+    if ([tabBarItems count] == 0) {
+        // no tabBarItems means either no UITabBarButtons were in the subView, or none responded to -frame
+        // return CGRectZero to indicate that we couldn't figure out the frame
+        return Nil;
+    }
+    
+    // sort by origin.x of the frame because the items are not necessarily in the correct order
+    [tabBarItems sortUsingComparator:^NSComparisonResult(UIView *view1, UIView *view2) {
+        if (view1.frame.origin.x < view2.frame.origin.x) {
+            return NSOrderedAscending;
+        }
+        if (view1.frame.origin.x > view2.frame.origin.x) {
+            return NSOrderedDescending;
+        }
+        NSAssert(NO, @"%@ and %@ share the same origin.x. This should never happen and indicates a substantial change in the framework that renders this method useless.", view1, view2);
+        return NSOrderedSame;
+    }];
+    
+    UIView *view;
+    if (index < [tabBarItems count]) {
+        // viewController is in a regular tab
+        UIView *tabView = tabBarItems[index];
+        if ([tabView respondsToSelector:@selector(frame)]) {
+            view = tabView;
+        }
+    }
+    else {
+        // our target viewController is inside the "more" tab
+        UIView *tabView = [tabBarItems lastObject];
+        if ([tabView respondsToSelector:@selector(frame)]) {
+            view = tabView;
+        }
+    }
+    return view.subviews[0];
 }
 
 @end
