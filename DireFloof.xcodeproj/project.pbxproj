@@ -797,7 +797,7 @@
 				TargetAttributes = {
 					04EC13EB1E46A966000E15A6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8ZUY53AC3;
+						DevelopmentTeam = CNQ74B27V5;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -827,9 +827,20 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
+				ja,
+				da,
+				sv,
+				nb,
+				ko,
+				de,
+				es,
+				pl,
+				ca,
+				nl,
 			);
 			mainGroup = 04EC13E31E46A966000E15A6;
 			productRefGroup = 04EC13ED1E46A966000E15A6 /* Products */;
@@ -1295,11 +1306,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
-				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				DEVELOPMENT_TEAM = CNQ74B27V5;
 				INFOPLIST_FILE = DireFloof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
+				PRODUCT_BUNDLE_IDENTIFIER = one.librem.social;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Adhoc;
@@ -1425,11 +1436,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
-				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				DEVELOPMENT_TEAM = CNQ74B27V5;
 				INFOPLIST_FILE = DireFloof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
+				PRODUCT_BUNDLE_IDENTIFIER = one.librem.social;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1440,11 +1451,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DireFloof/DireFloof.entitlements;
-				DEVELOPMENT_TEAM = J8ZUY53AC3;
+				DEVELOPMENT_TEAM = CNQ74B27V5;
 				INFOPLIST_FILE = DireFloof/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
+				PRODUCT_BUNDLE_IDENTIFIER = one.librem.social;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
