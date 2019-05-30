@@ -954,9 +954,20 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
+				ja,
+				da,
+				sv,
+				nb,
+				ko,
+				de,
+				es,
+				pl,
+				ca,
+				nl,
 			);
 			mainGroup = 04EC13E31E46A966000E15A6;
 			productRefGroup = 04EC13ED1E46A966000E15A6 /* Products */;
