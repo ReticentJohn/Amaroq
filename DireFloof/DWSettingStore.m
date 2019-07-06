@@ -104,6 +104,14 @@
 }
 
 
+- (void)setDiableTootSensitivity:(BOOL)disableTootSensitivity
+{
+    _disableTootSensitivity = disableTootSensitivity;
+    [[NSUserDefaults standardUserDefaults] setBool:disableTootSensitivity forKey:DW_SETTING_TOOT_SENSITIVITY_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
 - (void)setNewFollowerNotifications:(BOOL)newFollowerNotifications
 {
     _newFollowerNotifications = newFollowerNotifications;

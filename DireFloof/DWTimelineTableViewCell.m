@@ -545,8 +545,13 @@
     
     self.retootCountLabel.text = [NSString stringWithFormat:@"%@ •", status.reblogs_count];
     self.favoriteCountLabel.text = [NSString stringWithFormat:@"%@", status.favourites_count];
+  
+  if ([[DWSettingStore sharedStore] disableTootSensitivity]) {
+    self.warningTagView.hidden = YES;
+    self.warningTagButton.hidden = YES;
+    self.contentLabel.accessibilityLabel = @"";
     
-    if (status.spoiler_text.length || (status.sensitive && status.media_attachments.count)) {
+  } else if (status.spoiler_text.length || (status.sensitive && status.media_attachments.count)) {
         
         self.warningTagView.hidden = NO;
         self.warningTagButton.hidden = NO;
