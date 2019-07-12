@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     DWMenuRowTypeNotifications = 0,
     DWMenuRowTypePrivate,
     DWMenuRowTypePublic,
-    DWMenuRowTypeTootSensitivity,
+    DWMenuRowTypeNSFWMode,
     DWMenuRowTypeAwoo,
     DWMenuRowTypeGif,
     DWMenuRowTypeCache,
@@ -121,8 +121,8 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
         case DWMenuRowTypeGif:
             [[DWSettingStore sharedStore] setDisableGifPlayback:![[DWSettingStore sharedStore] disableGifPlayback]];
             break;
-        case DWMenuRowTypeTootSensitivity:
-            [[DWSettingStore sharedStore] setDisableTootSensitivity:![[DWSettingStore sharedStore] disableTootSensitivity]];
+        case DWMenuRowTypeNSFWMode:
+            [[DWSettingStore sharedStore] setNsfwMode:![[DWSettingStore sharedStore] nsfwMode]];
             break;
         case DWMenuRowTypeCache:
             [[DWSettingStore sharedStore] purgeCaches];
@@ -145,7 +145,7 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
     self.menuItems = @[@{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"NotificationsIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Notification settings", @"Notification settings"), DW_MENU_ITEM_SUB_KEY:NSLocalizedString(@"Change how you receive push notifications", @"Change how you receive push notifications")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"PrivateIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Default posts to followers-only", @"Default posts to followers-only"), DW_MENU_ITEM_SUB_KEY:NSLocalizedString(@"Only show to followers", @"Only show to followers")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"PublicIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Default posts to public", @"Default posts to public"), DW_MENU_ITEM_SUB_KEY:NSLocalizedString(@"Shows on local/federated timelines", @"Shows on local/federated timelines")},
-                       @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"VisibilityIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Disable Media Sensitivity", @"Disable Media Sensitivity"), DW_MENU_ITEM_SUB_KEY:NSLocalizedString(@"Shows toots without blurs", @"Shows toots without blurs")},
+                       @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"VisibilityIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Enable NSFW mode globally", @"Enable NSFW mode globally"), DW_MENU_ITEM_SUB_KEY:NSLocalizedString(@"Shows toots without blurs", @"Shows toots without blurs")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"AwooIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Awoo mode", @"Awoo mode"), DW_MENU_ITEM_SUB_KEY:NSLocalizedString(@"DON'T AWOO $350 PENALTY", @"DON'T AWOO $350 PENALTY")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"ImageIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Disable gif auto-playback", @"Disable gif auto-playback"), DW_MENU_ITEM_SUB_KEY:NSLocalizedString(@"This can help older devices", @"This can help older devices")},
                        @{DW_MENU_ITEM_IMAGE_KEY:[UIImage imageNamed:@"DeleteIcon"], DW_MENU_ITEM_TITLE_KEY:NSLocalizedString(@"Clear cache", @"Clear cache"), DW_MENU_ITEM_SUB_KEY:@""}];
@@ -193,8 +193,8 @@ typedef NS_ENUM(NSUInteger, DWMenuRowType) {
         case DWMenuRowTypeGif:
             cell.accessoryType = [[DWSettingStore sharedStore] disableGifPlayback] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
             break;
-        case DWMenuRowTypeTootSensitivity:
-            cell.accessoryType = [[DWSettingStore sharedStore] disableTootSensitivity] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+        case DWMenuRowTypeNSFWMode:
+            cell.accessoryType = [[DWSettingStore sharedStore] nsfwMode] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
             break;
         case DWMenuRowTypeNotifications:
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

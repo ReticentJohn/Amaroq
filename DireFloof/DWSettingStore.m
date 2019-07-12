@@ -45,7 +45,7 @@
         _alwaysPublic = [[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_ALWAYS_PUBLIC_KEY];
         self.awooMode = [[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_AWOO_MODE_KEY];
         self.disableGifPlayback = [[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_GIF_AUTOPLAY_KEY];
-        self.disableTootSensitivity = [[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_TOOT_SENSITIVITY_KEY];
+        self.nsfwMode = [[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_NSFW_MODE_KEY];
         self.newFollowerNotifications = ![[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_NEW_FOLLOWERS_OFF_KEY];
         self.favoriteNotifications = ![[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_FAVORITES_OFF_KEY];
         self.mentionNotifications = ![[NSUserDefaults standardUserDefaults] boolForKey:DW_SETTING_MENTIONS_OFF_KEY];
@@ -105,10 +105,10 @@
 }
 
 
-- (void)setDisableTootSensitivity:(BOOL)disableTootSensitivity
+- (void)setNsfwMode:(BOOL)nsfwMode
 {
-    _disableTootSensitivity = disableTootSensitivity;
-    [[NSUserDefaults standardUserDefaults] setBool:disableTootSensitivity forKey:DW_SETTING_TOOT_SENSITIVITY_KEY];
+    _nsfwMode = nsfwMode;
+    [[NSUserDefaults standardUserDefaults] setBool:nsfwMode forKey:DW_SETTING_NSFW_MODE_KEY];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

@@ -546,7 +546,7 @@
     self.retootCountLabel.text = [NSString stringWithFormat:@"%@ •", status.reblogs_count];
     self.favoriteCountLabel.text = [NSString stringWithFormat:@"%@", status.favourites_count];
   
-  if ([[DWSettingStore sharedStore] disableTootSensitivity]) {
+  if ([[DWSettingStore sharedStore] nsfwMode]) {
     self.warningTagView.hidden = YES;
     self.warningTagButton.hidden = YES;
     self.contentLabel.accessibilityLabel = @"";

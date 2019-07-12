@@ -19,7 +19,7 @@
 @property (nonatomic, assign) BOOL alwaysPublic;
 @property (nonatomic, assign) BOOL awooMode;
 @property (nonatomic, assign) BOOL disableGifPlayback;
-@property (nonatomic, assign) BOOL disableTootSensitivity;
+@property (nonatomic, assign) BOOL nsfwMode;
 @property (nonatomic, assign) BOOL newFollowerNotifications;
 @property (nonatomic, assign) BOOL favoriteNotifications;
 @property (nonatomic, assign) BOOL mentionNotifications;
