@@ -50,7 +50,6 @@
         
         if (timeline.statuses.count) {
             [[NSUserDefaults standardUserDefaults] setObject:[[timeline.statuses firstObject] _id] forKey:MS_LAST_NOTIFICATION_ID_KEY];
-            [[NSUserDefaults standardUserDefaults] synchronize];
         }
         
         if (completion != nil) {

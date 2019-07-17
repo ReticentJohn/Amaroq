@@ -69,7 +69,6 @@
     
     [[NSUserDefaults standardUserDefaults] setBool:_alwaysPrivate forKey:DW_SETTING_ALWAYS_PRIVATE_KEY];
     [[NSUserDefaults standardUserDefaults] setBool:_alwaysPublic forKey:DW_SETTING_ALWAYS_PUBLIC_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -83,7 +82,6 @@
     
     [[NSUserDefaults standardUserDefaults] setBool:_alwaysPrivate forKey:DW_SETTING_ALWAYS_PRIVATE_KEY];
     [[NSUserDefaults standardUserDefaults] setBool:_alwaysPublic forKey:DW_SETTING_ALWAYS_PUBLIC_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
      
 
@@ -92,7 +90,6 @@
     _awooMode = awooMode;
     
     [[NSUserDefaults standardUserDefaults] setBool:awooMode forKey:DW_SETTING_AWOO_MODE_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -101,7 +98,6 @@
     _disableGifPlayback = disableGifPlayback;
     
     [[NSUserDefaults standardUserDefaults] setBool:disableGifPlayback forKey:DW_SETTING_GIF_AUTOPLAY_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -109,7 +105,6 @@
 {
     _nsfwMode = nsfwMode;
     [[NSUserDefaults standardUserDefaults] setBool:nsfwMode forKey:DW_SETTING_NSFW_MODE_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -118,7 +113,6 @@
     _newFollowerNotifications = newFollowerNotifications;
     
     [[NSUserDefaults standardUserDefaults] setBool:!newFollowerNotifications forKey:DW_SETTING_NEW_FOLLOWERS_OFF_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -127,7 +121,6 @@
     _favoriteNotifications = favoriteNotifications;
     
     [[NSUserDefaults standardUserDefaults] setBool:!favoriteNotifications forKey:DW_SETTING_FAVORITES_OFF_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -136,7 +129,6 @@
     _mentionNotifications = mentionNotifications;
     
     [[NSUserDefaults standardUserDefaults] setBool:!mentionNotifications forKey:DW_SETTING_MENTIONS_OFF_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -145,7 +137,6 @@
     _boostNotifications = boostNotifications;
     
     [[NSUserDefaults standardUserDefaults] setBool:!boostNotifications forKey:DW_SETTING_BOOSTS_OFF_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -219,7 +210,6 @@
         }
         
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DW_MAINTENANCE_FLAG_1_1_4];
-        [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:DW_MAINTENANCE_FLAG_1_1_13]) {
@@ -237,7 +227,6 @@
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:MS_INSTANCE_KEY];
         
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DW_MAINTENANCE_FLAG_1_1_13];
-        [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 

@@ -179,7 +179,6 @@
                 [storage deleteCookie:cookie];
             }
         }
-        [[NSUserDefaults standardUserDefaults] synchronize];
         
         [AFOAuthCredential deleteCredentialWithIdentifier:[instanceToRemove objectForKey:MS_BASE_API_URL_STRING_KEY]];
         [[[MSAPIClient sharedClientWithBaseAPI:[instanceToRemove objectForKey:MS_BASE_API_URL_STRING_KEY]] requestSerializer] setAuthorizationHeaderFieldWithCredential:nil];

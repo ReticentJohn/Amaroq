@@ -164,7 +164,6 @@
         [AFOAuthCredential deleteCredentialWithIdentifier:[self base_api_url_string]];
     }
     
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -201,8 +200,7 @@
             
             [[NSUserDefaults standardUserDefaults] setObject:self.client_id forKey:MS_CLIENT_ID_KEY];
             [[NSUserDefaults standardUserDefaults] setObject:self.client_secret forKey:MS_CLIENT_SECRET_KEY];
-            [[NSUserDefaults standardUserDefaults] synchronize];
-            
+          
             NSDictionary *availableInstance = [[self.availableInstances filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"MS_INSTANCE_KEY LIKE[cd] %@", self.instance]] firstObject];
             
             availableInstance = @{MS_CLIENT_ID_KEY: self.client_id,

@@ -73,7 +73,6 @@
         self.currentUser = [[MSAccount alloc] initWithParams:responseObject];
         
         [[NSUserDefaults standardUserDefaults] setObject:self.currentUser.acct forKey:MS_CURRENT_USER_KEY];
-        [[NSUserDefaults standardUserDefaults] synchronize];
 
         if (completion != nil) {
             completion(YES, self.currentUser, nil);
