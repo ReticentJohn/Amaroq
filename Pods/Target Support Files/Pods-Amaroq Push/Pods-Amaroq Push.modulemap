@@ -1,6 +1,0 @@
-framework module Pods_Amaroq_Push {
-  umbrella header "Pods-Amaroq Push-umbrella.h"
-
-  export *
-  module * { export * }
-}

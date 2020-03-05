@@ -1,6 +1,0 @@
-framework module UIImage_Resize {
-  umbrella header "UIImage-Resize-umbrella.h"
-
-  export *
-  module * { export * }
-}

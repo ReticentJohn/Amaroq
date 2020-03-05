@@ -1,6 +1,0 @@
-framework module CHTCollectionViewWaterfallLayout {
-  umbrella header "CHTCollectionViewWaterfallLayout-umbrella.h"
-
-  export *
-  module * { export * }
-}

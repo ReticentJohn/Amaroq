@@ -1,6 +1,0 @@
-framework module twitter_text {
-  umbrella header "twitter-text-umbrella.h"
-
-  export *
-  module * { export * }
-}
