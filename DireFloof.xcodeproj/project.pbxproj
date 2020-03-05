@@ -1108,7 +1108,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DireFloof/Pods-DireFloof-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/AFOAuth2Manager/AFOAuth2Manager.framework",
 				"${BUILT_PRODUCTS_DIR}/ActiveLabel/ActiveLabel.framework",
@@ -1159,7 +1159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DireFloof/Pods-DireFloof-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DireFloof/Pods-DireFloof-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEAA9B26D18643F2C4E99A5C /* [CP] Check Pods Manifest.lock */ = {
