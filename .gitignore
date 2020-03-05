@@ -8,3 +8,5 @@ DireFloof/GoogleService-Info.plist
 /DireFloof.xcodeproj/xcuserdata/Jack.xcuserdatad/xcschemes/xcschememanagement.plist
 /Pods/Pods.xcodeproj/xcuserdata/zombie.xcuserdatad
 /DireFloof.xcodeproj/xcuserdata/zombie.xcuserdatad
+.DS_Store
+Pods/*
