@@ -9,7 +9,7 @@ target 'DireFloof' do
   pod 'AFNetworking', '~> 3.0'
   pod 'AFOAuth2Manager', '~> 3.0'
   pod 'DateTools', git: 'https://github.com/ReticentJohn/DateTools.git', branch: 'master'
-  pod 'SDWebImage'
+  pod 'SDWebImage', '~> 4.0'
   pod 'AnimatedGIFImageSerialization'
   pod 'TPKeyboardAvoiding'
   pod 'GMImagePicker', git: 'https://github.com/ReticentJohn/GMImagePicker.git', branch: 'master'
@@ -31,7 +31,7 @@ post_install do | installer |
     installer.pods_project.targets.each do |target|
         if target.name == 'ActiveLabel'
             target.build_configurations.each do |config|
-                config.build_settings['SWIFT_VERSION'] = '4.0'
+                config.build_settings['SWIFT_VERSION'] = '5.0'
             end
         end
     end

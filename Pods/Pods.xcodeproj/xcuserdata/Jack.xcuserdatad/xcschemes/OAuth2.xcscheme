@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9071A35804C9CAC10776A200B36F390A"
+               BlueprintIdentifier = "73647915C6490C0F4887AD4F30FCDD70"
+               BuildableName = "OAuth2.framework"
                BlueprintName = "OAuth2"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "OAuth2.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

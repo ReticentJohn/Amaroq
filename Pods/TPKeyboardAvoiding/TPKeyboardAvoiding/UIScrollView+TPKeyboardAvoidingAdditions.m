@@ -18,6 +18,7 @@ static NSString * const kUIKeyboardAnimationDurationUserInfoKey = @"UIKeyboardAn
 static const int kStateKey;
 
 #define _UIKeyboardFrameEndUserInfoKey (&UIKeyboardFrameEndUserInfoKey != NULL ? UIKeyboardFrameEndUserInfoKey : @"UIKeyboardBoundsUserInfoKey")
+#define _UIKeyboardFrameBeginUserInfoKey (&UIKeyboardFrameBeginUserInfoKey != NULL ? UIKeyboardFrameBeginUserInfoKey : @"UIKeyboardBoundsUserInfoKey")
 
 @interface TPKeyboardAvoidingState : NSObject
 @property (nonatomic, assign) UIEdgeInsets priorInset;
@@ -51,16 +52,17 @@ static const int kStateKey;
     
     state.animationDuration = [[info objectForKey:kUIKeyboardAnimationDurationUserInfoKey] doubleValue];
 
-    CGRect keyboardRect = [self convertRect:[[info objectForKey:_UIKeyboardFrameEndUserInfoKey] CGRectValue] fromView:nil];
-    if (CGRectIsEmpty(keyboardRect)) {
+    CGRect beginKeyboardRect = [self convertRect:[[info objectForKey:_UIKeyboardFrameBeginUserInfoKey] CGRectValue] fromView:nil];
+    CGRect endKeyboardRect = [self convertRect:[[info objectForKey:_UIKeyboardFrameEndUserInfoKey] CGRectValue] fromView:nil];
+    if (CGRectIsEmpty(endKeyboardRect)) {
         return;
     }
     
-    if ( state.ignoringNotifications ) {
+    if ( CGRectEqualToRect(beginKeyboardRect, endKeyboardRect) && state.ignoringNotifications ) {
         return;
     }
 
-    state.keyboardRect = keyboardRect;
+    state.keyboardRect = endKeyboardRect;
 
     if ( !state.keyboardVisible ) {
         state.priorInset = self.contentInset;
@@ -98,11 +100,10 @@ static const int kStateKey;
         [UIView setAnimationCurve:[[[notification userInfo] objectForKey:UIKeyboardAnimationCurveUserInfoKey] intValue]];
         [UIView setAnimationDuration:[[[notification userInfo] objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue]];
         
+        self.contentInset = [self TPKeyboardAvoiding_contentInsetForKeyboard];
+        
         UIView *firstResponder = [self TPKeyboardAvoiding_findFirstResponderBeneathView:self];
         if ( firstResponder ) {
-            
-            self.contentInset = [self TPKeyboardAvoiding_contentInsetForKeyboard];
-            
             CGFloat viewableHeight = self.bounds.size.height - self.contentInset.top - self.contentInset.bottom;
             [self setContentOffset:CGPointMake(self.contentOffset.x,
                                                [self TPKeyboardAvoiding_idealOffsetForView:firstResponder
@@ -128,14 +129,15 @@ static const int kStateKey;
 }
 
 - (void)TPKeyboardAvoiding_keyboardWillHide:(NSNotification*)notification {
-    CGRect keyboardRect = [self convertRect:[[[notification userInfo] objectForKey:_UIKeyboardFrameEndUserInfoKey] CGRectValue] fromView:nil];
-    if (CGRectIsEmpty(keyboardRect) && !self.keyboardAvoidingState.keyboardAnimationInProgress) {
+    CGRect beginKeyboardRect = [self convertRect:[[[notification userInfo] objectForKey:_UIKeyboardFrameBeginUserInfoKey] CGRectValue] fromView:nil];
+    CGRect endKeyboardRect = [self convertRect:[[[notification userInfo] objectForKey:_UIKeyboardFrameEndUserInfoKey] CGRectValue] fromView:nil];
+    if (CGRectIsEmpty(beginKeyboardRect) && !self.keyboardAvoidingState.keyboardAnimationInProgress) {
         return;
     }
     
     TPKeyboardAvoidingState *state = self.keyboardAvoidingState;
     
-    if ( state.ignoringNotifications ) {
+    if ( CGRectEqualToRect(beginKeyboardRect, endKeyboardRect) && state.ignoringNotifications ) {
         return;
     }
     

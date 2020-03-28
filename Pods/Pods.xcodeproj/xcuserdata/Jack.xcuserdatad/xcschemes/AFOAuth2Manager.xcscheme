@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F3905AF770C0A15007B154802083411"
+               BlueprintIdentifier = "D27AAB10D754F414F3D10804770A1567"
+               BuildableName = "AFOAuth2Manager.framework"
                BlueprintName = "AFOAuth2Manager"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "AFOAuth2Manager.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2155ED79530C038CC64D2DB684465374"
+               BlueprintIdentifier = "DB13B1641D72A72D8C9AE53FF81C8950"
+               BuildableName = "GPUImage.framework"
                BlueprintName = "GPUImage"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "GPUImage.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
