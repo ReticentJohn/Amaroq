@@ -9,7 +9,7 @@ target 'DireFloof' do
   pod 'AFNetworking', '~> 3.0'
   pod 'AFOAuth2Manager', '~> 3.0'
   pod 'DateTools', git: 'https://github.com/ReticentJohn/DateTools.git', branch: 'master'
-  pod 'SDWebImage'
+  pod 'SDWebImage', '4.4.6'
   pod 'AnimatedGIFImageSerialization'
   pod 'TPKeyboardAvoiding'
   pod 'GMImagePicker', git: 'https://github.com/ReticentJohn/GMImagePicker.git', branch: 'master'
