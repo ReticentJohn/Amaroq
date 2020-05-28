@@ -4,7 +4,7 @@
 It's here. You're welcome. :3
 
 ### What is Amaroq written in?
-Amaroq is written entirely in Obj-C. Not opposed to mixing Swift in there if need be, but I like being verbose.
+Amaroq is written entirely in Objective-C. Not opposed to mixing Swift in there if need be, but I like being verbose.
 
 ### Can I beta test Amaroq?
 Yes! If a beta is currently available I will gladly allow anyone to beta test for as long as I have open slots available. Email your Apple ID to amaroq.feedback@gmail.com and I will send invites out when a build is about to be pushed.
@@ -22,7 +22,7 @@ In the following order you will get the fastest response, but I try to stay on t
 6. Messenger owl
 
 ### Where is the return key in the toot composer?
-Amaroq uses the twitter-style keyboard (yes Apple created a specific system keyboard for twitter). Press the '123' key to get access to the return key.
+Amaroq uses the Twitter-style keyboard (yes Apple created a specific system keyboard for Twitter). Press the '123' key to get access to the return key.
 
 ### Will Amaroq ever support iPad?
 Yes, but not for a long time. Please don't hold your breath!

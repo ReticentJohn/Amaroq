@@ -15,7 +15,18 @@ We may be simple now, but there are many plans ahead! If you got any suggestions
 
 Happy tooting!
 
+## Install dependancies
 
-### [Patchnotes](https://github.com/ReticentJohn/Amaroq/blob/master/Patchnotes.md)
-### [Roadmap](https://github.com/ReticentJohn/Amaroq/blob/master/Roadmap.md)
-### [FAQ](https://github.com/ReticentJohn/Amaroq/blob/master/FAQ.md)
+You need _Bundler_ and _CocoaPods_ to install pods.
+Run the following commands:
+
+```shell
+bundle install
+bundle exec pod install
+```
+
+## Useful links
+
+[Patchnotes](https://github.com/ReticentJohn/Amaroq/blob/master/Patchnotes.md)
+[Roadmap](https://github.com/ReticentJohn/Amaroq/blob/master/Roadmap.md)
+[FAQ](https://github.com/ReticentJohn/Amaroq/blob/master/FAQ.md)
