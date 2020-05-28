@@ -1,0 +1,1503 @@
+
+/* Class = "UILabel"; text = "6"; ObjectID = "057-x5-u8D"; */
+"057-x5-u8D.text" = "6";
+
+/* Class = "UIViewController"; Titre = "App Settings"; ObjectID = "0B8-3F-mRu"; */
+"0B8-3F-mRu.Titre" = "Réglages de l'App";
+
+/* Class = "UILabel"; text = "Titre"; ObjectID = "0FK-Hb-mdQ"; */
+"0FK-Hb-mdQ.text" = "Titre";
+
+/* Class = "UINavigationItem"; Titre = "App Settings"; ObjectID = "0QU-bc-7sH"; */
+"0QU-bc-7sH.Titre" = "Réglages de l'App";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "0j4-m6-nHp"; */
+"0j4-m6-nHp.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "0wE-Du-UPV"; */
+"0wE-Du-UPV.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "0zQ-2v-N60"; */
+"0zQ-2v-N60.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "107-mQ-0Uk"; */
+"107-mQ-0Uk.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "S'abonnerS"; ObjectID = "10V-B3-wiC"; */
+"10V-B3-wiC.text" = "S'abonnerS";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "16m-xl-Ak4"; */
+"16m-xl-Ak4.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "1H7-Fb-CNb"; */
+"1H7-Fb-CNb.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "1Jn-1V-clz"; */
+"1Jn-1V-clz.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "1Sw-0n-lhk"; */
+"1Sw-0n-lhk.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "1aa-Ze-AvU"; */
+"1aa-Ze-AvU.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "1gj-4J-v4g"; */
+"1gj-4J-v4g.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "1kx-6H-zbn"; */
+"1kx-6H-zbn.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "1sA-Vl-WbD"; */
+"1sA-Vl-WbD.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "27e-8A-UWc"; */
+"27e-8A-UWc.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "2KE-kR-RWb"; */
+"2KE-kR-RWb.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "2RS-L3-3V0"; */
+"2RS-L3-3V0.accessibilityLabel" = "Répondre";
+
+/* Class = "UITextField"; accessibilityLabel = "Avertissement sur le contenu"; ObjectID = "2kN-ah-4CU"; */
+"2kN-ah-4CU.accessibilityLabel" = "Avertissement sur le contenu";
+
+/* Class = "UITextField"; placeholder = "Avertissement sur le contenu"; ObjectID = "2kN-ah-4CU"; */
+"2kN-ah-4CU.placeholder" = "Avertissement sur le contenu";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "2wk-Fg-cKQ"; */
+"2wk-Fg-cKQ.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "2wk-Fg-cKQ"; */
+"2wk-Fg-cKQ.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "2wk-Fg-cKQ"; */
+"2wk-Fg-cKQ.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "36S-3i-oms"; */
+"36S-3i-oms.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Approve"; ObjectID = "3du-5K-gRA"; */
+"3du-5K-gRA.accessibilityLabel" = "Approve";
+
+/* Class = "UIButton"; accessibilityLabel = "S'abonner"; ObjectID = "3dw-kO-Rmp"; */
+"3dw-kO-Rmp.accessibilityLabel" = "S'abonner";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "3gH-Tw-ONr"; */
+"3gH-Tw-ONr.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "3wl-9a-M82"; */
+"3wl-9a-M82.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "41l-Hv-njP"; */
+"41l-Hv-njP.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "46b-Kx-C7q"; */
+"46b-Kx-C7q.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "4Am-cK-PJB"; */
+"4Am-cK-PJB.text" = "favourited your status";
+
+/* Class = "UIButton"; accessibilityLabel = "S'abonnerers"; ObjectID = "4JJ-Yl-atQ"; */
+"4JJ-Yl-atQ.accessibilityLabel" = "S'abonnerers";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "4Mt-w0-BJS"; */
+"4Mt-w0-BJS.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "4N5-p8-KC5"; */
+"4N5-p8-KC5.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "4N5-p8-KC5"; */
+"4N5-p8-KC5.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "4N5-p8-KC5"; */
+"4N5-p8-KC5.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Posts"; ObjectID = "4pB-AG-qON"; */
+"4pB-AG-qON.accessibilityLabel" = "Posts";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "4pO-Jy-jDk"; */
+"4pO-Jy-jDk.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "5EO-Fj-BWX"; */
+"5EO-Fj-BWX.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "5LR-56-GYi"; */
+"5LR-56-GYi.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "5Y2-Nq-dW4"; */
+"5Y2-Nq-dW4.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Unblock"; ObjectID = "5Yh-EP-9QJ"; */
+"5Yh-EP-9QJ.accessibilityLabel" = "Unblock";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "5Zj-uu-jgp"; */
+"5Zj-uu-jgp.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "5rl-8A-C4j"; */
+"5rl-8A-C4j.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "5xv-bU-bM3"; */
+"5xv-bU-bM3.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "eurasierboy"; ObjectID = "61c-hL-yoB"; */
+"61c-hL-yoB.text" = "eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "6QE-xt-Aki"; */
+"6QE-xt-Aki.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "6nh-XX-15u"; */
+"6nh-XX-15u.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "6o5-6W-XMp"; */
+"6o5-6W-XMp.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "6vr-iL-y3q"; */
+"6vr-iL-y3q.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "71v-D4-yxS"; */
+"71v-D4-yxS.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "78d-sj-Po2"; */
+"78d-sj-Po2.accessibilityLabel" = "Profil";
+
+/* Class = "UIBarButtonItem"; Titre = "Menu"; ObjectID = "79q-Nl-Dbr"; */
+"79q-Nl-Dbr.Titre" = "Menu";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "7UL-Fo-InP"; */
+"7UL-Fo-InP.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "7vv-FC-uyP"; */
+"7vv-FC-uyP.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "83l-ds-w3G"; */
+"83l-ds-w3G.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "85G-PL-200"; */
+"85G-PL-200.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8E4-Vf-356"; */
+"8E4-Vf-356.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "8Hv-6F-dr5"; */
+"8Hv-6F-dr5.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "8KG-mF-Bn5"; */
+"8KG-mF-Bn5.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "8Ng-Nj-DN3"; */
+"8Ng-Nj-DN3.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "8r0-NT-HD5"; */
+"8r0-NT-HD5.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "8zO-eE-ZhR"; */
+"8zO-eE-ZhR.accessibilityLabel" = "Profil";
+
+/* Class = "UIBarButtonItem"; Titre = "Menu"; ObjectID = "935-jO-6OF"; */
+"935-jO-6OF.Titre" = "Menu";
+
+/* Class = "UIButton"; accessibilityLabel = "Upload Media"; ObjectID = "9EE-GX-Ic3"; */
+"9EE-GX-Ic3.accessibilityLabel" = "Upload Media";
+
+/* Class = "UITabBarItem"; Titre = "Home timeline"; ObjectID = "9Mu-se-m9q"; */
+"9Mu-se-m9q.Titre" = "Home timeline";
+
+/* Class = "UIRechercherBar"; placeholder = "Rechercher"; ObjectID = "9WA-oA-2ny"; */
+"9WA-oA-2ny.placeholder" = "Rechercher";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "9ai-vo-Nq4"; */
+"9ai-vo-Nq4.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Remove Media"; ObjectID = "9h1-RE-i5f"; */
+"9h1-RE-i5f.accessibilityLabel" = "Remove Media";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "9mQ-P9-Kjj"; */
+"9mQ-P9-Kjj.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "50"; ObjectID = "9qQ-NP-VQx"; */
+"9qQ-NP-VQx.text" = "50";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "9ru-jP-1tk"; */
+"9ru-jP-1tk.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "9tR-Gk-auO"; */
+"9tR-Gk-auO.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "9vR-dC-RJP"; */
+"9vR-dC-RJP.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "9xU-mw-wrp"; */
+"9xU-mw-wrp.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "AAl-Jl-kUT"; */
+"AAl-Jl-kUT.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "AKw-Un-AzJ"; */
+"AKw-Un-AzJ.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "AMN-b7-4Zj"; */
+"AMN-b7-4Zj.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "AWD-gj-Zbx"; */
+"AWD-gj-Zbx.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "AXN-qb-ISl"; */
+"AXN-qb-ISl.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "AZD-AL-pHC"; */
+"AZD-AL-pHC.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "Aii-Z7-ThC"; */
+"Aii-Z7-ThC.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "Aii-Z7-ThC"; */
+"Aii-Z7-ThC.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "Aii-Z7-ThC"; */
+"Aii-Z7-ThC.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Am6-x3-fe1"; */
+"Am6-x3-fe1.text" = "John~";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Awh-eD-fRz"; */
+"Awh-eD-fRz.text" = "Label";
+
+/* Class = "UIButton"; accessibilityLabel = "Unblock"; ObjectID = "B7y-Q0-RG9"; */
+"B7y-Q0-RG9.accessibilityLabel" = "Unblock";
+
+/* Class = "UILabel"; text = "CACHER text behind warning"; ObjectID = "BPA-eB-mCR"; */
+"BPA-eB-mCR.text" = "CACHER text behind warning";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Bb0-EI-Ll2"; */
+"Bb0-EI-Ll2.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "Bfd-vC-2me"; */
+"Bfd-vC-2me.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "Bmc-uS-EwS"; */
+"Bmc-uS-EwS.text" = "favourited your status";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "C2B-wS-Gh4"; */
+"C2B-wS-Gh4.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "C3h-fX-UsK"; */
+"C3h-fX-UsK.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "C5h-Jy-9VQ"; */
+"C5h-Jy-9VQ.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "C5h-Jy-9VQ"; */
+"C5h-Jy-9VQ.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "C5h-Jy-9VQ"; */
+"C5h-Jy-9VQ.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "C5m-P3-Aoc"; */
+"C5m-P3-Aoc.text" = "John~";
+
+/* Class = "UIViewController"; Titre = "Favoriss"; ObjectID = "CIJ-hS-huU"; */
+"CIJ-hS-huU.Titre" = "Favoriss";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "CMd-Pc-QfK"; */
+"CMd-Pc-QfK.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Remove Media"; ObjectID = "CNF-f8-czx"; */
+"CNF-f8-czx.accessibilityLabel" = "Remove Media";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "CcB-VU-xOW"; */
+"CcB-VU-xOW.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "Cy6-4F-ftW"; */
+"Cy6-4F-ftW.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "CyJ-KV-d5f"; */
+"CyJ-KV-d5f.text" = "favourited your status";
+
+/* Class = "UINavigationItem"; Titre = "Notification Settings"; ObjectID = "D2e-YU-71m"; */
+"D2e-YU-71m.Titre" = "Notification Settings";
+
+/* Class = "UIButton"; accessibilityLabel = "S'abonner"; ObjectID = "D4M-YG-ZQM"; */
+"D4M-YG-ZQM.accessibilityLabel" = "S'abonner";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "D5Z-9m-whr"; */
+"D5Z-9m-whr.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "DL6-Pz-Zxu"; */
+"DL6-Pz-Zxu.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "DLI-MU-2NY"; */
+"DLI-MU-2NY.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "DuJ-e8-NnY"; */
+"DuJ-e8-NnY.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "DuJ-e8-NnY"; */
+"DuJ-e8-NnY.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "DuJ-e8-NnY"; */
+"DuJ-e8-NnY.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "DzY-wh-eiA"; */
+"DzY-wh-eiA.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "EGI-V6-mw6"; */
+"EGI-V6-mw6.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "ETp-6B-z8P"; */
+"ETp-6B-z8P.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "ETp-6B-z8P"; */
+"ETp-6B-z8P.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "ETp-6B-z8P"; */
+"ETp-6B-z8P.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "Ejz-TF-JSt"; */
+"Ejz-TF-JSt.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "Eqe-8A-XUJ"; */
+"Eqe-8A-XUJ.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "*floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs*"; ObjectID = "F2M-wt-Xn3"; */
+"F2M-wt-Xn3.text" = "*floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs**floofs*";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "F42-jL-fOm"; */
+"F42-jL-fOm.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "F4c-TG-HLb"; */
+"F4c-TG-HLb.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "F7g-Es-wD6"; */
+"F7g-Es-wD6.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Submit"; ObjectID = "F90-mQ-WXp"; */
+"F90-mQ-WXp.accessibilityLabel" = "Submit";
+
+/* Class = "UIButton"; normalTitre = "SUBMIT"; ObjectID = "F90-mQ-WXp"; */
+"F90-mQ-WXp.normalTitre" = "SUBMIT";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "FLQ-Tz-CJ9"; */
+"FLQ-Tz-CJ9.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "FRy-sB-TMs"; */
+"FRy-sB-TMs.text" = "Warning Tag";
+
+/* Class = "UINavigationItem"; Titre = "Federated"; ObjectID = "Fjl-TP-l3I"; */
+"Fjl-TP-l3I.Titre" = "Federated";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "FqT-KT-TcY"; */
+"FqT-KT-TcY.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "G6Y-hr-aDj"; */
+"G6Y-hr-aDj.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "GHf-rN-8KO"; */
+"GHf-rN-8KO.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "GOG-mB-H3D"; */
+"GOG-mB-H3D.accessibilityLabel" = "Favoris";
+
+/* Class = "UITextField"; text = "mastodon.social"; ObjectID = "Gl1-oi-VeZ"; */
+"Gl1-oi-VeZ.text" = "mastodon.social";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "GuV-g4-hLu"; */
+"GuV-g4-hLu.text" = "favourited your status";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "H11-6k-dZW"; */
+"H11-6k-dZW.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "H73-bm-2lF"; */
+"H73-bm-2lF.text" = "Warning Tag";
+
+/* Class = "UIViewController"; Titre = "Hashtag"; ObjectID = "I8t-xs-eqf"; */
+"I8t-xs-eqf.Titre" = "Hashtag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "IGI-ME-0dH"; */
+"IGI-ME-0dH.text" = "John~";
+
+/* Class = "UITabBarItem"; Titre = "Notifications"; ObjectID = "IUN-9p-nd2"; */
+"IUN-9p-nd2.Titre" = "Notifications";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "IYS-fn-TAY"; */
+"IYS-fn-TAY.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "IeS-ex-7Ue"; */
+"IeS-ex-7Ue.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "IfX-ak-Ifc"; */
+"IfX-ak-Ifc.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "IgO-E5-1Bu"; */
+"IgO-E5-1Bu.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "IkI-y1-N2S"; */
+"IkI-y1-N2S.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "Titre"; ObjectID = "J6K-ac-ptQ"; */
+"J6K-ac-ptQ.text" = "Titre";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "J9b-bk-mjW"; */
+"J9b-bk-mjW.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "JAi-jG-h7h"; */
+"JAi-jG-h7h.text" = "favourited your status";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "JJi-Wh-EmT"; */
+"JJi-Wh-EmT.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "JWG-KW-pn2"; */
+"JWG-KW-pn2.accessibilityLabel" = "Répondre";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "JWr-0E-evS"; */
+"JWr-0E-evS.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "Jpg-Pi-oGX"; */
+"Jpg-Pi-oGX.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "K0W-Wq-7bO"; */
+"K0W-Wq-7bO.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "K0i-eE-4xG"; */
+"K0i-eE-4xG.text" = "favourited your status";
+
+/* Class = "UITextField"; accessibilityLabel = "Décrire pour les personnes malvoyantes"; ObjectID = "KGv-PL-ypn"; */
+"KGv-PL-ypn.accessibilityLabel" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UITextField"; placeholder = "Décrire pour les personnes malvoyantes"; ObjectID = "KGv-PL-ypn"; */
+"KGv-PL-ypn.placeholder" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "KH6-XY-QeM"; */
+"KH6-XY-QeM.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "KW7-Ar-h36"; */
+"KW7-Ar-h36.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Kag-4G-y2a"; */
+"Kag-4G-y2a.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "KpN-Ua-Tyx"; */
+"KpN-Ua-Tyx.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "LIw-6T-r6R"; */
+"LIw-6T-r6R.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "LMr-DX-fKh"; */
+"LMr-DX-fKh.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "LbU-Pp-4SM"; */
+"LbU-Pp-4SM.text" = "Warning Tag";
+
+/* Class = "UIView"; accessibilityLabel = "Rechercher"; ObjectID = "LlD-0o-d3D"; */
+"LlD-0o-d3D.accessibilityLabel" = "Rechercher";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "LvM-n9-aZp"; */
+"LvM-n9-aZp.text" = "favourited your status";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "M4m-QV-bei"; */
+"M4m-QV-bei.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "M5t-3n-kwk"; */
+"M5t-3n-kwk.text" = "John~";
+
+/* Class = "UILabel"; text = "451"; ObjectID = "MEd-N4-Ivt"; */
+"MEd-N4-Ivt.text" = "451";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "MHd-1A-k9R"; */
+"MHd-1A-k9R.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "MHd-1A-k9R"; */
+"MHd-1A-k9R.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "MHd-1A-k9R"; */
+"MHd-1A-k9R.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "MKC-rh-002"; */
+"MKC-rh-002.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "MKC-rh-002"; */
+"MKC-rh-002.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "MKC-rh-002"; */
+"MKC-rh-002.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "MNX-aW-Wrt"; */
+"MNX-aW-Wrt.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "N68-9j-jdd"; */
+"N68-9j-jdd.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "N9I-Vd-eQj"; */
+"N9I-Vd-eQj.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "N9I-Vd-eQj"; */
+"N9I-Vd-eQj.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "N9I-Vd-eQj"; */
+"N9I-Vd-eQj.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHJ-pn-iCS"; */
+"NHJ-pn-iCS.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "NHj-8J-Z2C"; */
+"NHj-8J-Z2C.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "NLW-NF-qfL"; */
+"NLW-NF-qfL.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "Titre"; ObjectID = "NNs-pP-Q8t"; */
+"NNs-pP-Q8t.text" = "Titre";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Nb0-tl-aQV"; */
+"Nb0-tl-aQV.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "Npn-R5-GGf"; */
+"Npn-R5-GGf.text" = "@eurasierboy";
+
+/* Class = "UITabBarItem"; Titre = "Notifications"; ObjectID = "NsL-fZ-ToP"; */
+"NsL-fZ-ToP.Titre" = "Notifications";
+
+/* Class = "UIButton"; normalTitre = "S'abonnerS YOU"; ObjectID = "OAS-Mr-yP8"; */
+"OAS-Mr-yP8.normalTitre" = "S'abonnerS YOU";
+
+/* Class = "UIButton"; accessibilityLabel = "Voir de nouveaux pouets"; ObjectID = "OXJ-ax-8EG"; */
+"OXJ-ax-8EG.accessibilityLabel" = "Voir de nouveaux pouets";
+
+/* Class = "UIButton"; normalTitre = "Voir de nouveaux pouets"; ObjectID = "OXJ-ax-8EG"; */
+"OXJ-ax-8EG.normalTitre" = "Voir de nouveaux pouets";
+
+/* Class = "UIButton"; selectedTitre = "POUET !"; ObjectID = "OXJ-ax-8EG"; */
+"OXJ-ax-8EG.selectedTitre" = "POUET !";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "Oaf-Ke-EOn"; */
+"Oaf-Ke-EOn.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "P5a-iM-rWf"; */
+"P5a-iM-rWf.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "P5a-iM-rWf"; */
+"P5a-iM-rWf.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "P5a-iM-rWf"; */
+"P5a-iM-rWf.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "PAQ-sp-H4C"; */
+"PAQ-sp-H4C.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "PTn-cK-Mj8"; */
+"PTn-cK-Mj8.text" = "John~";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "Pcl-ES-eXC"; */
+"Pcl-ES-eXC.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "PzN-f1-FXn"; */
+"PzN-f1-FXn.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "S'abonnerERS"; ObjectID = "QE0-ao-uwT"; */
+"QE0-ao-uwT.text" = "S'abonnerERS";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "QJ6-Tw-gvd"; */
+"QJ6-Tw-gvd.text" = "@eurasierboy";
+
+/* Class = "UITabBarItem"; Titre = "Home"; ObjectID = "Qhg-Jh-unk"; */
+"Qhg-Jh-unk.Titre" = "Home";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "Qtp-s9-bED"; */
+"Qtp-s9-bED.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "Qtu-lb-gvC"; */
+"Qtu-lb-gvC.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Qyb-fS-d4v"; */
+"Qyb-fS-d4v.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "RJQ-Gz-jGi"; */
+"RJQ-Gz-jGi.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "POSTS"; ObjectID = "ROI-ge-hOO"; */
+"ROI-ge-hOO.text" = "POSTS";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "RdC-Qf-DaN"; */
+"RdC-Qf-DaN.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Rhn-c1-Ohh"; */
+"Rhn-c1-Ohh.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "S38-IZ-86W"; */
+"S38-IZ-86W.accessibilityLabel" = "Répondre";
+
+/* Class = "UIViewController"; Titre = "Blocked users"; ObjectID = "SC5-pn-I3A"; */
+"SC5-pn-I3A.Titre" = "Blocked users";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "SL8-hc-mta"; */
+"SL8-hc-mta.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "SWj-wv-bf7"; */
+"SWj-wv-bf7.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "SYI-7b-4YG"; */
+"SYI-7b-4YG.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "SeI-Jm-Iiu"; */
+"SeI-Jm-Iiu.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "Stq-1P-GNl"; */
+"Stq-1P-GNl.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "T2I-hL-zW6"; */
+"T2I-hL-zW6.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "T3A-mU-20L"; */
+"T3A-mU-20L.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "TN5-gB-Vm7"; */
+"TN5-gB-Vm7.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "Amaroq"; ObjectID = "TP0-ZC-qMQ"; */
+"TP0-ZC-qMQ.text" = "Amaroq";
+
+/* Class = "UIButton"; accessibilityLabel = "Log In"; ObjectID = "TbS-Hh-ZI2"; */
+"TbS-Hh-ZI2.accessibilityLabel" = "Log In";
+
+/* Class = "UIButton"; normalTitre = "LOG IN"; ObjectID = "TbS-Hh-ZI2"; */
+"TbS-Hh-ZI2.normalTitre" = "LOG IN";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "TkX-vZ-MdF"; */
+"TkX-vZ-MdF.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "Log into any Mastodon instance!"; ObjectID = "ToH-v6-fqC"; */
+"ToH-v6-fqC.text" = "Log into any Mastodon instance!";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "Tsx-HK-hAI"; */
+"Tsx-HK-hAI.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Fermer"; ObjectID = "Tt3-hS-LOv"; */
+"Tt3-hS-LOv.accessibilityLabel" = "Fermer";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "Tya-6c-9UJ"; */
+"Tya-6c-9UJ.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "Tya-6c-9UJ"; */
+"Tya-6c-9UJ.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "Tya-6c-9UJ"; */
+"Tya-6c-9UJ.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Toot"; ObjectID = "U01-1d-dos"; */
+"U01-1d-dos.accessibilityLabel" = "Toot";
+
+/* Class = "UIButton"; normalTitre = "TOOT"; ObjectID = "U01-1d-dos"; */
+"U01-1d-dos.normalTitre" = "TOOT";
+
+/* Class = "UIButton"; selectedTitre = "POUET !"; ObjectID = "U01-1d-dos"; */
+"U01-1d-dos.selectedTitre" = "POUET !";
+
+/* Class = "UIButton"; normalTitre = "Unlisted"; ObjectID = "U0R-AN-OS2"; */
+"U0R-AN-OS2.normalTitre" = "Unlisted";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "U5S-Ed-nnI"; */
+"U5S-Ed-nnI.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "UDH-Pt-ySX"; */
+"UDH-Pt-ySX.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "UDH-Pt-ySX"; */
+"UDH-Pt-ySX.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "UDH-Pt-ySX"; */
+"UDH-Pt-ySX.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "Ubo-oe-VmG"; */
+"Ubo-oe-VmG.accessibilityLabel" = "Répondre";
+
+/* Class = "UILabel"; text = "This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?"; ObjectID = "UgZ-zj-ANn"; */
+"UgZ-zj-ANn.text" = "This status will be delivered to mentioned users on other instance(s). Do you trust them to not leak your status?";
+
+/* Class = "UIImageView"; accessibilityLabel = "Profil"; ObjectID = "Uth-bn-Qdx"; */
+"Uth-bn-Qdx.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "V0f-xA-yAn"; */
+"V0f-xA-yAn.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "V7p-yA-zXg"; */
+"V7p-yA-zXg.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "Vb0-dc-I5M"; */
+"Vb0-dc-I5M.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "VbQ-Ih-SwT"; */
+"VbQ-Ih-SwT.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "VbQ-Ih-SwT"; */
+"VbQ-Ih-SwT.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "VbQ-Ih-SwT"; */
+"VbQ-Ih-SwT.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Vc7-dh-ewO"; */
+"Vc7-dh-ewO.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Vcl-s3-gms"; */
+"Vcl-s3-gms.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "Vcw-cT-YLQ"; */
+"Vcw-cT-YLQ.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "Vd2-nI-8MS"; */
+"Vd2-nI-8MS.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "VlJ-i3-ds6"; */
+"VlJ-i3-ds6.accessibilityLabel" = "Profil";
+
+/* Class = "UIViewController"; Titre = "Notification Settings"; ObjectID = "Vt2-9J-A4e"; */
+"Vt2-9J-A4e.Titre" = "Notification Settings";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "Vyk-xr-Q4C"; */
+"Vyk-xr-Q4C.text" = "John~";
+
+/* Class = "UILabel"; text = "Mar 02, 2017, 13:32 • Web •"; ObjectID = "WJY-1v-Bfg"; */
+"WJY-1v-Bfg.text" = "Mar 02, 2017, 13:32 • Web •";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "WLw-av-3AX"; */
+"WLw-av-3AX.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "WS7-He-uip"; */
+"WS7-He-uip.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "X6b-dT-DWh"; */
+"X6b-dT-DWh.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "X9K-Re-Na8"; */
+"X9K-Re-Na8.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "50"; ObjectID = "XDD-bM-ob9"; */
+"XDD-bM-ob9.text" = "50";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "XEH-JW-AGT"; */
+"XEH-JW-AGT.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "XIf-4m-Ejf"; */
+"XIf-4m-Ejf.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "XLW-GT-pSq"; */
+"XLW-GT-pSq.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "XOB-dc-ThW"; */
+"XOB-dc-ThW.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "XdS-9l-Z53"; */
+"XdS-9l-Z53.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "Xir-yL-tTD"; */
+"Xir-yL-tTD.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Remove Media"; ObjectID = "Y5P-mV-ucS"; */
+"Y5P-mV-ucS.accessibilityLabel" = "Remove Media";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "YJn-Yb-RJl"; */
+"YJn-Yb-RJl.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Disapprove"; ObjectID = "YLE-Xk-erM"; */
+"YLE-Xk-erM.accessibilityLabel" = "Disapprove";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "YPv-kM-gTe"; */
+"YPv-kM-gTe.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "YQ3-g1-jeJ"; */
+"YQ3-g1-jeJ.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "YbP-9l-Ey0"; */
+"YbP-9l-Ey0.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "Yia-wZ-WSk"; */
+"Yia-wZ-WSk.text" = "6";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "ZVG-ur-eYy"; */
+"ZVG-ur-eYy.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "a7k-Fc-wBM"; */
+"a7k-Fc-wBM.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "aI4-ho-Fbg"; */
+"aI4-ho-Fbg.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "aL7-Pr-Z0o"; */
+"aL7-Pr-Z0o.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "Sous-titre"; ObjectID = "aZc-lv-edf"; */
+"aZc-lv-edf.text" = "Sous-titre";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "aam-jg-MZf"; */
+"aam-jg-MZf.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "al9-HL-OIE"; */
+"al9-HL-OIE.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "apg-ib-Pr1"; */
+"apg-ib-Pr1.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "arn-Dq-Que"; */
+"arn-Dq-Que.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "arn-Dq-Que"; */
+"arn-Dq-Que.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "arn-Dq-Que"; */
+"arn-Dq-Que.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "v1.0.0 (1)"; ObjectID = "auH-Rs-SrF"; */
+"auH-Rs-SrF.text" = "v1.0.0 (1)";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "ava-XZ-n6U"; */
+"ava-XZ-n6U.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "b9D-t6-v2i"; */
+"b9D-t6-v2i.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "bVs-1e-rdN"; */
+"bVs-1e-rdN.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "bZs-HI-bJq"; */
+"bZs-HI-bJq.accessibilityLabel" = "Répondre";
+
+/* Class = "UITextField"; accessibilityLabel = "Décrire pour les personnes malvoyantes"; ObjectID = "baF-xe-MaI"; */
+"baF-xe-MaI.accessibilityLabel" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UITextField"; placeholder = "Décrire pour les personnes malvoyantes"; ObjectID = "baF-xe-MaI"; */
+"baF-xe-MaI.placeholder" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "bcg-pg-Voh"; */
+"bcg-pg-Voh.accessibilityLabel" = "Répondre";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "bfJ-yc-2cN"; */
+"bfJ-yc-2cN.text" = "Warning Tag";
+
+/* Class = "UITabBarItem"; Titre = "Home timeline"; ObjectID = "blm-y0-hTt"; */
+"blm-y0-hTt.Titre" = "Home timeline";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "blp-n8-gYu"; */
+"blp-n8-gYu.accessibilityLabel" = "Boost";
+
+/* Class = "UIBarButtonItem"; Titre = "Back"; ObjectID = "bpa-6G-0UK"; */
+"bpa-6G-0UK.Titre" = "Back";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "c8I-Jh-tfa"; */
+"c8I-Jh-tfa.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "cIT-j6-x98"; */
+"cIT-j6-x98.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "cIT-j6-x98"; */
+"cIT-j6-x98.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "cIT-j6-x98"; */
+"cIT-j6-x98.selectedTitre" = "CACHER";
+
+/* Class = "UITabBarItem"; Titre = "Compose status"; ObjectID = "cJ1-eF-Qod"; */
+"cJ1-eF-Qod.Titre" = "Compose status";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "cLY-w4-lmi"; */
+"cLY-w4-lmi.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "cO8-x4-CwV"; */
+"cO8-x4-CwV.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "cYz-zi-gyb"; */
+"cYz-zi-gyb.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "cfz-Uu-mp4"; */
+"cfz-Uu-mp4.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "cjU-gd-4Il"; */
+"cjU-gd-4Il.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "cl8-bg-z5V"; */
+"cl8-bg-z5V.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "Mark media as sensitive"; ObjectID = "cym-bd-fdD"; */
+"cym-bd-fdD.text" = "Mark media as sensitive";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "d7e-VT-75D"; */
+"d7e-VT-75D.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "dEj-zG-srC"; */
+"dEj-zG-srC.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "dIP-V6-Y4G"; */
+"dIP-V6-Y4G.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "dJe-wm-mbS"; */
+"dJe-wm-mbS.text" = "13 hours ago";
+
+/* Class = "UITabBarItem"; Titre = "Public timeline"; ObjectID = "dPe-vw-PnL"; */
+"dPe-vw-PnL.Titre" = "Public timeline";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "dUK-lH-2U2"; */
+"dUK-lH-2U2.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "dUK-lH-2U2"; */
+"dUK-lH-2U2.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "dUK-lH-2U2"; */
+"dUK-lH-2U2.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "0 •"; ObjectID = "det-mp-6Q0"; */
+"det-mp-6Q0.text" = "0 •";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "eDL-iU-GeH"; */
+"eDL-iU-GeH.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "eT2-1M-hPA"; */
+"eT2-1M-hPA.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "ebv-uf-E83"; */
+"ebv-uf-E83.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "fEs-ss-mJR"; */
+"fEs-ss-mJR.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "fFC-sX-rQy"; */
+"fFC-sX-rQy.accessibilityLabel" = "Boost";
+
+/* Class = "UINavigationItem"; Titre = "Hashtag"; ObjectID = "fFk-fN-lz7"; */
+"fFk-fN-lz7.Titre" = "Hashtag";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "fNM-WH-WTn"; */
+"fNM-WH-WTn.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "Reporting"; ObjectID = "fQI-2Z-e0M"; */
+"fQI-2Z-e0M.text" = "Reporting";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "fVY-zu-rYc"; */
+"fVY-zu-rYc.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Mar 02, 2017, 13:32 • Web •"; ObjectID = "fb7-h8-3PG"; */
+"fb7-h8-3PG.text" = "Mar 02, 2017, 13:32 • Web •";
+
+/* Class = "UILabel"; text = "Titre"; ObjectID = "fin-fd-APT"; */
+"fin-fd-APT.text" = "Titre";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "fmy-pu-s9i"; */
+"fmy-pu-s9i.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "frn-zx-RKJ"; */
+"frn-zx-RKJ.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "fvY-A3-MLi"; */
+"fvY-A3-MLi.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "g1A-sT-Nl6"; */
+"g1A-sT-Nl6.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "gYv-Wi-qBj"; */
+"gYv-Wi-qBj.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "gbl-iI-RfG"; */
+"gbl-iI-RfG.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "ghd-Sf-5m7"; */
+"ghd-Sf-5m7.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "gqV-f1-KkY"; */
+"gqV-f1-KkY.accessibilityLabel" = "Répondre";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "gu4-Uv-TNQ"; */
+"gu4-Uv-TNQ.text" = "@eurasierboy";
+
+/* Class = "UITextView"; text = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!"; ObjectID = "h78-Az-YOY"; */
+"h78-Az-YOY.text" = "Amaroq is named after an Inuit legend of a giant wolf, which is fitting for a companion to our friend the mastodon. May we all howl across the federated space!\n\nAmaroq is built and maintained by a love of the Mastodon idea, which sorely has needed a mobile outlet for our iOS friends. Got a suggestion, found a bug, or just want to voice some support? You can reach us at amarok.feedback@gmail.com. Or hit up the dev, @eurasierboy on the mastodon.social instance. Happy tooting!";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "h9o-Bw-4J3"; */
+"h9o-Bw-4J3.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "hCN-Nu-RJv"; */
+"hCN-Nu-RJv.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Voir de nouveaux pouets"; ObjectID = "hJz-a5-dG0"; */
+"hJz-a5-dG0.accessibilityLabel" = "Voir de nouveaux pouets";
+
+/* Class = "UIButton"; normalTitre = "Voir de nouveaux pouets"; ObjectID = "hJz-a5-dG0"; */
+"hJz-a5-dG0.normalTitre" = "Voir de nouveaux pouets";
+
+/* Class = "UIButton"; selectedTitre = "POUET !"; ObjectID = "hJz-a5-dG0"; */
+"hJz-a5-dG0.selectedTitre" = "POUET !";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "hnO-sI-rxq"; */
+"hnO-sI-rxq.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "hsg-1n-ke8"; */
+"hsg-1n-ke8.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "hsg-1n-ke8"; */
+"hsg-1n-ke8.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "hsg-1n-ke8"; */
+"hsg-1n-ke8.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "hxe-gy-lMk"; */
+"hxe-gy-lMk.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "i1i-yX-yu7"; */
+"i1i-yX-yu7.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "iBV-0P-yE7"; */
+"iBV-0P-yE7.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "iGb-ZS-4cX"; */
+"iGb-ZS-4cX.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "iOl-rQ-XFO"; */
+"iOl-rQ-XFO.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "iZ2-pR-esE"; */
+"iZ2-pR-esE.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "isa-YX-xaJ"; */
+"isa-YX-xaJ.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "Titre"; ObjectID = "izx-3l-fkf"; */
+"izx-3l-fkf.text" = "Titre";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "jFA-gb-qru"; */
+"jFA-gb-qru.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "What is on your mind?"; ObjectID = "jeI-4q-Be1"; */
+"jeI-4q-Be1.text" = "What is on your mind?";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "jfu-2R-0N7"; */
+"jfu-2R-0N7.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "jh1-nd-GPx"; */
+"jh1-nd-GPx.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "jhA-zG-eLp"; */
+"jhA-zG-eLp.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "jlz-j8-KbZ"; */
+"jlz-j8-KbZ.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "jmn-GI-Die"; */
+"jmn-GI-Die.text" = "favourited your status";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "k0V-mc-tdV"; */
+"k0V-mc-tdV.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "k7X-HD-8aK"; */
+"k7X-HD-8aK.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "kBm-Du-SWq"; */
+"kBm-Du-SWq.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "kMe-1a-7DV"; */
+"kMe-1a-7DV.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "kPM-wv-aCd"; */
+"kPM-wv-aCd.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "kSi-W1-Ybn"; */
+"kSi-W1-Ybn.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "kSi-W1-Ybn"; */
+"kSi-W1-Ybn.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "kSi-W1-Ybn"; */
+"kSi-W1-Ybn.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "kX5-nY-cOB"; */
+"kX5-nY-cOB.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "kX5-nY-cOB"; */
+"kX5-nY-cOB.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "kX5-nY-cOB"; */
+"kX5-nY-cOB.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "kek-Fh-oZh"; */
+"kek-Fh-oZh.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "kls-DA-sj1"; */
+"kls-DA-sj1.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "kls-DA-sj1"; */
+"kls-DA-sj1.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "kls-DA-sj1"; */
+"kls-DA-sj1.selectedTitre" = "CACHER";
+
+/* Class = "UITabBarItem"; Titre = "Home"; ObjectID = "ks9-ML-CSt"; */
+"ks9-ML-CSt.Titre" = "Home";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "l8E-L6-r01"; */
+"l8E-L6-r01.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "l8N-wd-MYY"; */
+"l8N-wd-MYY.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "lP8-Kd-EVQ"; */
+"lP8-Kd-EVQ.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "lYZ-Qb-UgT"; */
+"lYZ-Qb-UgT.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Dérouler jusqu'en haut"; ObjectID = "lmz-Fw-xqY"; */
+"lmz-Fw-xqY.accessibilityLabel" = "Dérouler jusqu'en haut";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "ltF-Mj-5Wb"; */
+"ltF-Mj-5Wb.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "m9i-1t-JqY"; */
+"m9i-1t-JqY.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "mKu-wM-hgl"; */
+"mKu-wM-hgl.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "mKu-wM-hgl"; */
+"mKu-wM-hgl.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "mKu-wM-hgl"; */
+"mKu-wM-hgl.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "S'abonnered you"; ObjectID = "mWy-B9-rVa"; */
+"mWy-B9-rVa.text" = "S'abonnered you";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "mYX-2F-ZMo"; */
+"mYX-2F-ZMo.accessibilityLabel" = "Répondre";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "mZB-dP-2fB"; */
+"mZB-dP-2fB.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "mqu-d3-b9K"; */
+"mqu-d3-b9K.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Voir de nouveaux pouets"; ObjectID = "mum-mr-J6x"; */
+"mum-mr-J6x.accessibilityLabel" = "Voir de nouveaux pouets";
+
+/* Class = "UIButton"; normalTitre = "Voir de nouveaux pouets"; ObjectID = "mum-mr-J6x"; */
+"mum-mr-J6x.normalTitre" = "Voir de nouveaux pouets";
+
+/* Class = "UIButton"; selectedTitre = "POUET !"; ObjectID = "mum-mr-J6x"; */
+"mum-mr-J6x.selectedTitre" = "POUET !";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "mxe-AV-I2q"; */
+"mxe-AV-I2q.accessibilityLabel" = "Profil";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "n0J-Bp-paX"; */
+"n0J-Bp-paX.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "n6A-5e-v6Y"; */
+"n6A-5e-v6Y.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "njG-CO-WZ7"; */
+"njG-CO-WZ7.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "nk8-xq-hBR"; */
+"nk8-xq-hBR.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "oAN-DB-XkU"; */
+"oAN-DB-XkU.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIBarButtonItem"; Titre = "Rechercher"; ObjectID = "oBT-7l-gom"; */
+"oBT-7l-gom.Titre" = "Rechercher";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "oED-Q6-GIa"; */
+"oED-Q6-GIa.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "oEj-VX-Cpe"; */
+"oEj-VX-Cpe.accessibilityLabel" = "Profil";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "oIN-jw-YDe"; */
+"oIN-jw-YDe.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Politique de Confidentialité"; ObjectID = "oLn-2m-0yg"; */
+"oLn-2m-0yg.accessibilityLabel" = "Politique de Confidentialité";
+
+/* Class = "UIButton"; normalTitre = "Politique de Confidentialité"; ObjectID = "oLn-2m-0yg"; */
+"oLn-2m-0yg.normalTitre" = "Politique de Confidentialité";
+
+/* Class = "UIButton"; selectedTitre = "À propos d'Amaroq"; ObjectID = "oLn-2m-0yg"; */
+"oLn-2m-0yg.selectedTitre" = "À propos d'Amaroq";
+
+/* Class = "UIButton"; accessibilityLabel = "Profil"; ObjectID = "oM3-VD-Ucr"; */
+"oM3-VD-Ucr.accessibilityLabel" = "Profil";
+
+/* Class = "UITextField"; accessibilityLabel = "Décrire pour les personnes malvoyantes"; ObjectID = "p2l-rG-NAE"; */
+"p2l-rG-NAE.accessibilityLabel" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UITextField"; placeholder = "Décrire pour les personnes malvoyantes"; ObjectID = "p2l-rG-NAE"; */
+"p2l-rG-NAE.placeholder" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "pCM-rw-4gS"; */
+"pCM-rw-4gS.accessibilityLabel" = "Répondre";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "pFj-zL-Wd9"; */
+"pFj-zL-Wd9.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "pHi-Ra-ccv"; */
+"pHi-Ra-ccv.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "pSN-zu-1NL"; */
+"pSN-zu-1NL.text" = "John~";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "peC-Z9-8oy"; */
+"peC-Z9-8oy.text" = "favourited your status";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "pf1-ws-wpH"; */
+"pf1-ws-wpH.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "pf1-ws-wpH"; */
+"pf1-ws-wpH.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "pf1-ws-wpH"; */
+"pf1-ws-wpH.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "pfp-fF-EQA"; */
+"pfp-fF-EQA.text" = "@eurasierboy";
+
+/* Class = "UISwitch"; accessibilityLabel = "CACHER text behind warning"; ObjectID = "phn-jE-CY6"; */
+"phn-jE-CY6.accessibilityLabel" = "CACHER text behind warning";
+
+/* Class = "UIButton"; accessibilityLabel = "Back"; ObjectID = "poj-MF-TNF"; */
+"poj-MF-TNF.accessibilityLabel" = "Back";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "qL1-Cc-jhG"; */
+"qL1-Cc-jhG.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "qOR-ZG-qeO"; */
+"qOR-ZG-qeO.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "qST-R4-uqh"; */
+"qST-R4-uqh.text" = "favourited your status";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "qYM-J0-btz"; */
+"qYM-J0-btz.text" = "John~";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "qdH-oc-wQ8"; */
+"qdH-oc-wQ8.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "qdw-BL-Qh6"; */
+"qdw-BL-Qh6.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "qvb-3d-eGC"; */
+"qvb-3d-eGC.text" = "@eurasierboy";
+
+/* Class = "UILabel"; text = "0 •"; ObjectID = "r1g-xo-uUC"; */
+"r1g-xo-uUC.text" = "0 •";
+
+/* Class = "UIButton"; accessibilityLabel = "Fermer"; ObjectID = "rCP-3d-Nkc"; */
+"rCP-3d-Nkc.accessibilityLabel" = "Fermer";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "rPD-J7-Q3i"; */
+"rPD-J7-Q3i.accessibilityLabel" = "Boost";
+
+/* Class = "UIButton"; accessibilityLabel = "Dérouler jusqu'en haut"; ObjectID = "rQZ-Ld-pnT"; */
+"rQZ-Ld-pnT.accessibilityLabel" = "Dérouler jusqu'en haut";
+
+/* Class = "UITextField"; accessibilityLabel = "Décrire pour les personnes malvoyantes"; ObjectID = "rRC-3U-JxA"; */
+"rRC-3U-JxA.accessibilityLabel" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UITextField"; placeholder = "Décrire pour les personnes malvoyantes"; ObjectID = "rRC-3U-JxA"; */
+"rRC-3U-JxA.placeholder" = "Décrire pour les personnes malvoyantes";
+
+/* Class = "UIButton"; accessibilityLabel = "Politique de Confidentialité"; ObjectID = "rjX-Ma-KFp"; */
+"rjX-Ma-KFp.accessibilityLabel" = "Politique de Confidentialité";
+
+/* Class = "UIButton"; normalTitre = "Politique de Confidentialité"; ObjectID = "rjX-Ma-KFp"; */
+"rjX-Ma-KFp.normalTitre" = "Politique de Confidentialité";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "rps-Vw-qWv"; */
+"rps-Vw-qWv.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "s1z-SI-cBc"; */
+"s1z-SI-cBc.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "s8X-8f-cG8"; */
+"s8X-8f-cG8.text" = "Warning Tag";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "sAL-De-fKG"; */
+"sAL-De-fKG.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UITabBarItem"; Titre = "Menu"; ObjectID = "sB4-xf-wkz"; */
+"sB4-xf-wkz.Titre" = "Menu";
+
+/* Class = "UILabel"; text = "@eurasierboy"; ObjectID = "sIR-7z-4Xv"; */
+"sIR-7z-4Xv.text" = "@eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "sSZ-EA-Riz"; */
+"sSZ-EA-Riz.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "sWl-4B-wUq"; */
+"sWl-4B-wUq.text" = "John~";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "sZi-3b-lnb"; */
+"sZi-3b-lnb.accessibilityLabel" = "Favoris";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "smm-Ui-WXb"; */
+"smm-Ui-WXb.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "t36-72-bYZ"; */
+"t36-72-bYZ.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "t36-72-bYZ"; */
+"t36-72-bYZ.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "t36-72-bYZ"; */
+"t36-72-bYZ.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "t7H-2P-vOR"; */
+"t7H-2P-vOR.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "t7Z-ba-Vne"; */
+"t7Z-ba-Vne.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "t7Z-ba-Vne"; */
+"t7Z-ba-Vne.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "t7Z-ba-Vne"; */
+"t7Z-ba-Vne.selectedTitre" = "CACHER";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "tAJ-lN-D3y"; */
+"tAJ-lN-D3y.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "tAJ-lN-D3y"; */
+"tAJ-lN-D3y.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "tAJ-lN-D3y"; */
+"tAJ-lN-D3y.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "tCB-12-WzG"; */
+"tCB-12-WzG.text" = "13 hours ago";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "tJo-Td-ksH"; */
+"tJo-Td-ksH.accessibilityLabel" = "Répondre";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "tPs-CE-wpY"; */
+"tPs-CE-wpY.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "tXV-wF-BW1"; */
+"tXV-wF-BW1.accessibilityLabel" = "Boost";
+
+/* Class = "UITabBarItem"; Titre = "Public timeline"; ObjectID = "tae-bS-eCU"; */
+"tae-bS-eCU.Titre" = "Public timeline";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "tc5-81-C7W"; */
+"tc5-81-C7W.text" = "John~";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "ttQ-Ul-q7w"; */
+"ttQ-Ul-q7w.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "uEv-hI-piT"; */
+"uEv-hI-piT.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Dérouler jusqu'en haut"; ObjectID = "uTQ-ew-25R"; */
+"uTQ-ew-25R.accessibilityLabel" = "Dérouler jusqu'en haut";
+
+/* Class = "UIButton"; accessibilityLabel = "Remove Media"; ObjectID = "umF-QD-5jT"; */
+"umF-QD-5jT.accessibilityLabel" = "Remove Media";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "un5-wW-eie"; */
+"un5-wW-eie.text" = "Label";
+
+/* Class = "UILabel"; text = "Additional comments"; ObjectID = "uol-Ta-62W"; */
+"uol-Ta-62W.text" = "Additional comments";
+
+/* Class = "UILabel"; text = "favourited your status"; ObjectID = "uta-FN-35Y"; */
+"uta-FN-35Y.text" = "favourited your status";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "v28-8Q-zAZ"; */
+"v28-8Q-zAZ.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "v3J-FO-VYz"; */
+"v3J-FO-VYz.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "Amaroq"; ObjectID = "v3S-aW-ZxL"; */
+"v3S-aW-ZxL.text" = "Amaroq";
+
+/* Class = "UILabel"; text = "13 hours ago"; ObjectID = "vJm-tQ-6Xd"; */
+"vJm-tQ-6Xd.text" = "13 hours ago";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "vPp-nb-9cR"; */
+"vPp-nb-9cR.text" = "Warning Tag";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "vuY-5r-05d"; */
+"vuY-5r-05d.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Abonnements"; ObjectID = "vvp-4M-w8S"; */
+"vvp-4M-w8S.accessibilityLabel" = "Abonnements";
+
+/* Class = "UIButton"; accessibilityLabel = "Favoris"; ObjectID = "w8U-n7-Zqg"; */
+"w8U-n7-Zqg.accessibilityLabel" = "Favoris";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "wBf-8T-yaX"; */
+"wBf-8T-yaX.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "wjA-e7-bY5"; */
+"wjA-e7-bY5.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Répondre"; ObjectID = "xAc-en-MIn"; */
+"xAc-en-MIn.accessibilityLabel" = "Répondre";
+
+/* Class = "UIButton"; accessibilityLabel = "Montrer/Cacher"; ObjectID = "xBc-J3-UJK"; */
+"xBc-J3-UJK.accessibilityLabel" = "Montrer/Cacher";
+
+/* Class = "UIButton"; normalTitre = "AFFICHER"; ObjectID = "xBc-J3-UJK"; */
+"xBc-J3-UJK.normalTitre" = "AFFICHER";
+
+/* Class = "UIButton"; selectedTitre = "CACHER"; ObjectID = "xBc-J3-UJK"; */
+"xBc-J3-UJK.selectedTitre" = "CACHER";
+
+/* Class = "UILabel"; text = "eurasierboy"; ObjectID = "xU0-be-BKd"; */
+"xU0-be-BKd.text" = "eurasierboy";
+
+/* Class = "UIButton"; accessibilityLabel = "Dérouler jusqu'en haut"; ObjectID = "xUp-Q0-vli"; */
+"xUp-Q0-vli.accessibilityLabel" = "Dérouler jusqu'en haut";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "xkK-ni-70h"; */
+"xkK-ni-70h.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "Warning Tag"; ObjectID = "xqD-wM-Q8V"; */
+"xqD-wM-Q8V.text" = "Warning Tag";
+
+/* Class = "UITabBarItem"; Titre = "Menu"; ObjectID = "xwi-18-c7c"; */
+"xwi-18-c7c.Titre" = "Menu";
+
+/* Class = "UIButton"; accessibilityLabel = "Fermer"; ObjectID = "yg6-nR-lWU"; */
+"yg6-nR-lWU.accessibilityLabel" = "Fermer";
+
+/* Class = "UISwitch"; accessibilityLabel = "Contenu sensible"; ObjectID = "ywe-BS-zjv"; */
+"ywe-BS-zjv.accessibilityLabel" = "Contenu sensible";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "yyI-bk-cqq"; */
+"yyI-bk-cqq.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "z1H-8a-n5g"; */
+"z1H-8a-n5g.text" = "John~";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "z4r-lb-uhi"; */
+"z4r-lb-uhi.text" = "John~";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "z8r-Dp-U6h"; */
+"z8r-Dp-U6h.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UILabel"; text = "50"; ObjectID = "z9I-DW-y6S"; */
+"z9I-DW-y6S.text" = "50";
+
+/* Class = "UILabel"; text = "Sous-titre"; ObjectID = "zBm-cJ-8j1"; */
+"zBm-cJ-8j1.text" = "Sous-titre";
+
+/* Class = "UILabel"; text = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest"; ObjectID = "zLO-VU-rhZ"; */
+"zLO-VU-rhZ.text" = "Making progress :T Got the tab navigation established, beginning on the timeline displays. Using a dog house for the home icon, dire wolves would totally use them no contest";
+
+/* Class = "UINavigationItem"; Titre = "Notifications"; ObjectID = "zNY-AT-2Dh"; */
+"zNY-AT-2Dh.Titre" = "Notifications";
+
+/* Class = "UIButton"; accessibilityLabel = "Plus d'Options"; ObjectID = "zRY-SZ-PgL"; */
+"zRY-SZ-PgL.accessibilityLabel" = "Plus d'Options";
+
+/* Class = "UIButton"; accessibilityLabel = "Boost"; ObjectID = "zjV-gy-AIu"; */
+"zjV-gy-AIu.accessibilityLabel" = "Boost";
+
+/* Class = "UILabel"; text = "John~"; ObjectID = "zqA-C3-m9y"; */
+"zqA-C3-m9y.text" = "John~";
+
+/* Class = "UIBarButtonItem"; Titre = "Menu"; ObjectID = "zsT-Ew-UkL"; */
+"zsT-Ew-UkL.Titre" = "Menu";
