@@ -130,7 +130,7 @@ CHECKOUT OPTIONS:
     :commit: c513dd7b5aa9ab52747070049710f32b5234222f
     :git: https://github.com/ReticentJohn/GPUImage.git
   MHVideoPhotoGallery:
-    :commit: bd30d65076013736e1efc3613a31a3a96b6f1bb7
+    :commit: 93315708359366daf4e915ba6b78f34b36642b19
     :git: https://github.com/ReticentJohn/MHVideoPhotoGallery.git
   p2.OAuth2:
     :commit: 10b2990b82cd09b4c3a136582da138d24981fbe1
