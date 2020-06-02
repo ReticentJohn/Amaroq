@@ -4,4 +4,5 @@
 #import "CommonCrypto/CommonCrypto.h"
 #import "Mastodon.h"
 #import "DWSettingStore.h"
+#import "UIApplication+TopController.h"
 

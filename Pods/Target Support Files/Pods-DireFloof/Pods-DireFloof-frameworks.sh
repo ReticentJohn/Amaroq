@@ -209,7 +209,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHVideoPhotoGallery/MHVideoPhotoGallery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/OAuth2/OAuth2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMPickerViewController/RMPickerViewController.framework"
@@ -218,6 +217,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UIImage-Resize/UIImage_Resize.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -233,7 +233,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHVideoPhotoGallery/MHVideoPhotoGallery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/OAuth2/OAuth2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMPickerViewController/RMPickerViewController.framework"
@@ -242,6 +241,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UIImage-Resize/UIImage_Resize.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework"
 fi
 if [[ "$CONFIGURATION" == "Adhoc" ]]; then
@@ -257,7 +257,6 @@ if [[ "$CONFIGURATION" == "Adhoc" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHVideoPhotoGallery/MHVideoPhotoGallery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/OAuth2/OAuth2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMPickerViewController/RMPickerViewController.framework"
@@ -266,6 +265,7 @@ if [[ "$CONFIGURATION" == "Adhoc" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UIImage-Resize/UIImage_Resize.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

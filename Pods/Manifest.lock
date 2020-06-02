@@ -31,8 +31,8 @@ PODS:
     - Masonry
     - SDWebImage
     - TTTAttributedLabel (= 1.13.3)
-  - OAuth2 (0.2.2)
-  - PureLayout (3.1.5)
+  - p2.OAuth2 (5.1.0)
+  - PureLayout (3.1.6)
   - RMActionController (1.2.1)
   - RMPickerViewController (2.2.1):
     - RMActionController (~> 1.2.1)
@@ -47,7 +47,7 @@ PODS:
 
 DEPENDENCIES:
   - ActiveLabel (from `https://github.com/ReticentJohn/ActiveLabel.swift.git`, branch `master`)
-  - AFNetworking (~> 3.0)
+  - AFNetworking (from `https://github.com/ReticentJohn/AFNetworking.git`, branch `3.2.1-no-uiwebview`)
   - AFOAuth2Manager (~> 3.0)
   - AnimatedGIFImageSerialization
   - CHTCollectionViewWaterfallLayout
@@ -57,7 +57,7 @@ DEPENDENCIES:
   - GMImagePicker (from `https://github.com/ReticentJohn/GMImagePicker.git`, branch `master`)
   - GPUImage (from `https://github.com/ReticentJohn/GPUImage.git`, branch `master`)
   - MHVideoPhotoGallery (from `https://github.com/ReticentJohn/MHVideoPhotoGallery.git`, branch `Audio-Dismiss-Fix`)
-  - OAuth2 (from `https://github.com/ReticentJohn/OAuth2-for-iOS.git`, branch `master`)
+  - p2.OAuth2 (from `https://github.com/ReticentJohn/OAuth2.git`, branch `ASWebAuthenticationPresentationContextProviding`)
   - PureLayout
   - RMPickerViewController (~> 2.2.1)
   - SDWebImage (~> 4.0)
@@ -68,7 +68,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
     - AFOAuth2Manager
     - AnimatedGIFImageSerialization
     - CHTCollectionViewWaterfallLayout
@@ -87,6 +86,9 @@ EXTERNAL SOURCES:
   ActiveLabel:
     :branch: master
     :git: https://github.com/ReticentJohn/ActiveLabel.swift.git
+  AFNetworking:
+    :branch: 3.2.1-no-uiwebview
+    :git: https://github.com/ReticentJohn/AFNetworking.git
   DateTools:
     :branch: master
     :git: https://github.com/ReticentJohn/DateTools.git
@@ -101,9 +103,10 @@ EXTERNAL SOURCES:
   MHVideoPhotoGallery:
     :branch: Audio-Dismiss-Fix
     :git: https://github.com/ReticentJohn/MHVideoPhotoGallery.git
-  OAuth2:
-    :branch: master
-    :git: https://github.com/ReticentJohn/OAuth2-for-iOS.git
+  p2.OAuth2:
+    :branch: ASWebAuthenticationPresentationContextProviding
+    :git: https://github.com/ReticentJohn/OAuth2.git
+    :submodules: true
   twitter-text:
     :podspec: https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec
 
@@ -111,6 +114,9 @@ CHECKOUT OPTIONS:
   ActiveLabel:
     :commit: 01dd31cbbd1b3fec33b0c024b011e6b932794eff
     :git: https://github.com/ReticentJohn/ActiveLabel.swift.git
+  AFNetworking:
+    :commit: 9c84f432c5308fb2bd7edc1f3cd715b583482b79
+    :git: https://github.com/ReticentJohn/AFNetworking.git
   DateTools:
     :commit: 1e005b3ad6768980507a31629321c2ba22d5d1c0
     :git: https://github.com/ReticentJohn/DateTools.git
@@ -126,9 +132,10 @@ CHECKOUT OPTIONS:
   MHVideoPhotoGallery:
     :commit: bd30d65076013736e1efc3613a31a3a96b6f1bb7
     :git: https://github.com/ReticentJohn/MHVideoPhotoGallery.git
-  OAuth2:
-    :commit: 5fb15bc6cfcb77226d6c6a9924b891c5751d5127
-    :git: https://github.com/ReticentJohn/OAuth2-for-iOS.git
+  p2.OAuth2:
+    :commit: 10b2990b82cd09b4c3a136582da138d24981fbe1
+    :git: https://github.com/ReticentJohn/OAuth2.git
+    :submodules: true
   twitter-text:
     :commit: 5a3b8877d6a6637efc14acca0151d9f8c8c1300b
     :git: https://github.com/ReticentJohn/twitter-text.git
@@ -146,8 +153,8 @@ SPEC CHECKSUMS:
   GPUImage: bd7e201b9aa91e85f401ed7a6d9867a07a404693
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MHVideoPhotoGallery: 4c885305a43abd837de8483703aa51a6bea5a6b7
-  OAuth2: a1af0c7574ce10e4afb03a277643a2bdb9ba3ff8
-  PureLayout: 9b4ad47b2f0388c84ff534af23d96e720c1b875a
+  p2.OAuth2: 9f09fdab4494952c988184e7426f76f97dcf5546
+  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
   RMActionController: e516bc0651a61d675abb5eaf09ee79a92ae6155c
   RMPickerViewController: f2925d34875f63840ea1c2eeda9f6f1fc8a3afd4
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
@@ -157,6 +164,6 @@ SPEC CHECKSUMS:
   UIImage-Resize: fa776860f10e6900bbaf53a73e494bdceaaccc77
   YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: b40483a4b3c11daf7e177b49d7a2a509523d3445
+PODFILE CHECKSUM: ae18c509517a9baab49ace4960ed8e89be4002a9
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.1

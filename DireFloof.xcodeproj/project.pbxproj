@@ -68,6 +68,7 @@
 		046BF2141E7712EE00F01C50 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF20A1E7712EE00F01C50 /* OpenSans-Regular.ttf */; };
 		046BF2151E7712EE00F01C50 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF20B1E7712EE00F01C50 /* OpenSans-Semibold.ttf */; };
 		046BF2161E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 046BF20C1E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf */; };
+		046FAA4B2485900600BE95F9 /* MSAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FAA4A2485900600BE95F9 /* MSAuthStore.swift */; };
 		047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047ACB5F1E73469600CC092B /* DWNavigationViewController.m */; };
 		0485B97A1E5558690063B2B8 /* DWMediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B9791E5558690063B2B8 /* DWMediaCollectionViewCell.m */; };
 		0485B97D1E55685F0063B2B8 /* DWIntrinsicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485B97C1E55685F0063B2B8 /* DWIntrinsicCollectionView.m */; };
@@ -272,6 +273,7 @@
 		046BF20A1E7712EE00F01C50 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		046BF20B1E7712EE00F01C50 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		046BF20C1E7712EE00F01C50 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		046FAA4A2485900600BE95F9 /* MSAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAuthStore.swift; sourceTree = "<group>"; };
 		0474087B1EB97849000ECD0B /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Main.strings; sourceTree = "<group>"; };
 		0474087C1EB9784A000ECD0B /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0474087D1EB9784A000ECD0B /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -458,6 +460,7 @@
 				04095B131E4A6D2D0082401A /* MSAppStore.m */,
 				04095B0E1E4A63C90082401A /* MSAuthStore.h */,
 				04095B0F1E4A63C90082401A /* MSAuthStore.m */,
+				046FAA4A2485900600BE95F9 /* MSAuthStore.swift */,
 				04C935061E4AA9A5004376F3 /* MSTimelineStore.h */,
 				04C935071E4AA9A5004376F3 /* MSTimelineStore.m */,
 				04C935091E4BB520004376F3 /* MSStatusStore.h */,
@@ -1121,7 +1124,6 @@
 				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/MHVideoPhotoGallery/MHVideoPhotoGallery.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuth2/OAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework",
 				"${BUILT_PRODUCTS_DIR}/RMPickerViewController/RMPickerViewController.framework",
@@ -1130,6 +1132,7 @@
 				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/UIImage-Resize/UIImage_Resize.framework",
 				"${BUILT_PRODUCTS_DIR}/YLProgressBar/YLProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/twitter-text/twitter_text.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1146,7 +1149,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MHVideoPhotoGallery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMActionController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMPickerViewController.framework",
@@ -1155,6 +1157,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImage_Resize.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/twitter_text.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1282,6 +1285,7 @@
 				04EC13F11E46A966000E15A6 /* main.m in Sources */,
 				047ACB601E73469600CC092B /* DWNavigationViewController.m in Sources */,
 				0491925F2222FCA4007BD8BA /* PushNotificationDataObjects.swift in Sources */,
+				046FAA4B2485900600BE95F9 /* MSAuthStore.swift in Sources */,
 				04F56C3F1F0051D50053FC84 /* DWDraftStore.m in Sources */,
 				04E6A2461E7480F200838130 /* UIImage+color.m in Sources */,
 				04610BEC1E54F1190023763D /* NSString+HtmlStrip.m in Sources */,
@@ -1474,7 +1478,7 @@
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Amaroq Push/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1511,7 +1515,7 @@
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Amaroq Push/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardfloofs.amarok.Amaroq-Push";
@@ -1546,7 +1550,7 @@
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Amaroq Push/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardfloofs.amarok.Amaroq-Push";
@@ -1593,7 +1597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1611,7 +1615,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				INFOPLIST_FILE = DireFloof/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1689,7 +1693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1730,7 +1734,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1748,7 +1752,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				INFOPLIST_FILE = DireFloof/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1769,7 +1773,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = J8ZUY53AC3;
 				INFOPLIST_FILE = DireFloof/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyboardfloofs.amarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -6,7 +6,7 @@ target 'DireFloof' do
   use_frameworks!
 
   # Pods for DireFloof
-  pod 'AFNetworking', '~> 3.0'
+  pod 'AFNetworking', git: 'https://github.com/ReticentJohn/AFNetworking.git', branch: '3.2.1-no-uiwebview'
   pod 'AFOAuth2Manager', '~> 3.0'
   pod 'DateTools', git: 'https://github.com/ReticentJohn/DateTools.git', branch: 'master'
   pod 'SDWebImage', '~> 4.0'
@@ -21,7 +21,7 @@ target 'DireFloof' do
   pod 'GPUImage', git: 'https://github.com/ReticentJohn/GPUImage.git', branch: 'master'
   pod 'EmojiOne', podspec: 'DireFloof/Vendor/Emojione/emojione.podspec'
   pod 'RMPickerViewController', '~> 2.2.1'
-  pod 'OAuth2', git: 'https://github.com/ReticentJohn/OAuth2-for-iOS.git', branch: 'master'
+  pod 'p2.OAuth2', git: 'https://github.com/ReticentJohn/OAuth2.git', branch: 'ASWebAuthenticationPresentationContextProviding', submodules: true
   pod 'ActiveLabel', git: 'https://github.com/ReticentJohn/ActiveLabel.swift.git', branch: 'master'
   pod 'UIImage-Resize'
   pod 'twitter-text', podspec: 'https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec'
