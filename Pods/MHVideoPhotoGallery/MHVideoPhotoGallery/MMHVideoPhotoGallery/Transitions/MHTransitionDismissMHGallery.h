@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
 #import "MHGallery.h"
 #import "MHUIImageViewContentViewAnimation.h"
 
 @interface MHTransitionDismissMHGallery : UIPercentDrivenInteractiveTransition<UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic,strong)    MPMoviePlayerController *moviePlayer;
+@property (nonatomic,strong)    AVPlayerViewController *moviePlayer;
 @property (nonatomic,strong)    UIImageView *transitionImageView;
 @property (nonatomic,assign)    CGPoint changedPoint;
 @property (nonatomic,assign)    CGFloat orientationTransformBeforeDismiss;
