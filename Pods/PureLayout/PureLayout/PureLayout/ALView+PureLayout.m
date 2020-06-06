@@ -297,7 +297,7 @@
             }
             break;
     }
-    constraint.active = YES;
+    [constraint autoInstall];
     return constraint;
 #else
     return [self autoPinEdgeToSuperviewEdge:edge withInset:inset relation:relation];
@@ -502,7 +502,7 @@
  Pins the given edge of the view to the corresponding margin of its superview with an inset.
  
  @param edge The edge of this view to pin to the corresponding margin of its superview.
- @param @param inset The amount to inset this view's edge from the corresponding margin of its superview edge.
+ @param inset The amount to inset this view's edge from the corresponding margin of its superview edge.
  @return The constraint added.
  */
 - (NSLayoutConstraint *)autoPinEdgeToSuperviewMargin:(ALEdge)edge withInset:(CGFloat)inset
@@ -956,7 +956,7 @@
 #pragma mark Pin to Layout Guides
 
 #if TARGET_OS_IPHONE
-
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_11_0 // Top and bottom layout guides were deprecated in iOS 11
 /**
  Pins the top edge of the view to the top layout guide of the given view controller with an inset.
  For compatibility with iOS 6 (where layout guides do not exist), this method will simply pin the top edge of
@@ -1018,6 +1018,7 @@
     }
 }
 
+#endif /* __IPHONE_OS_VERSION_MIN_REQUIRED */
 #endif /* TARGET_OS_IPHONE */
 
 #pragma mark Internal Methods

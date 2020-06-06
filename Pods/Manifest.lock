@@ -1,5 +1,5 @@
 PODS:
-  - ActiveLabel (0.8.0)
+  - ActiveLabel (1.1.0)
   - AFNetworking (3.2.1):
     - AFNetworking/NSURLSession (= 3.2.1)
     - AFNetworking/Reachability (= 3.2.1)
@@ -17,10 +17,10 @@ PODS:
     - AFNetworking/NSURLSession
   - AFOAuth2Manager (3.0.0):
     - AFNetworking/NSURLSession (~> 3.0)
-  - AnimatedGIFImageSerialization (0.2.0)
-  - CHTCollectionViewWaterfallLayout (0.9.7):
-    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.7)
-  - CHTCollectionViewWaterfallLayout/ObjC (0.9.7)
+  - AnimatedGIFImageSerialization (0.2.3)
+  - CHTCollectionViewWaterfallLayout (0.9.8):
+    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.8)
+  - CHTCollectionViewWaterfallLayout/ObjC (0.9.8)
   - DateTools (2.0.0)
   - EmojiOne (2.2.7)
   - FCFileManager (1.0.20)
@@ -32,14 +32,14 @@ PODS:
     - SDWebImage
     - TTTAttributedLabel (= 1.13.3)
   - OAuth2 (0.2.2)
-  - PureLayout (3.1.4)
+  - PureLayout (3.1.6)
   - RMActionController (1.2.1)
   - RMPickerViewController (2.2.1):
     - RMActionController (~> 1.2.1)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
-  - TPKeyboardAvoiding (1.3.2)
+  - TPKeyboardAvoiding (1.3.3)
   - TTTAttributedLabel (1.13.3)
   - twitter-text (1.14.3)
   - UIImage-Resize (1.0.1)
@@ -60,14 +60,14 @@ DEPENDENCIES:
   - OAuth2 (from `https://github.com/ReticentJohn/OAuth2-for-iOS.git`, branch `master`)
   - PureLayout
   - RMPickerViewController (~> 2.2.1)
-  - SDWebImage
+  - SDWebImage (= 4.4.6)
   - TPKeyboardAvoiding
   - twitter-text (from `https://raw.githubusercontent.com/ReticentJohn/twitter-text/30-Char-Limit/objc/twitter-text.podspec`)
   - UIImage-Resize
   - YLProgressBar (~> 3.10.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - AFOAuth2Manager
     - AnimatedGIFImageSerialization
@@ -109,7 +109,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ActiveLabel:
-    :commit: ede4b486423b20fd1ceacde6cc52bebd0a649b9c
+    :commit: 01dd31cbbd1b3fec33b0c024b011e6b932794eff
     :git: https://github.com/ReticentJohn/ActiveLabel.swift.git
   DateTools:
     :commit: 1e005b3ad6768980507a31629321c2ba22d5d1c0
@@ -134,11 +134,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/ReticentJohn/twitter-text.git
 
 SPEC CHECKSUMS:
-  ActiveLabel: c32bb6a81accc4a4c2dcab2d685036fcad537783
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   AFOAuth2Manager: 0566da1be64883e339813d411229fdc9a84dab7c
-  AnimatedGIFImageSerialization: b0f0cfe71eac1ee45a3d57ae533c23b8e6f29501
-  CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
+  AnimatedGIFImageSerialization: 3550d6373103c768c270603f0363a3efca67f668
+  CHTCollectionViewWaterfallLayout: 5f241d2480ab4939aa0d1ad4981de9eef1fbe60d
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   EmojiOne: 2d4072ac074090afdf7af9a1d47a757407a57882
   FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
@@ -147,16 +147,16 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MHVideoPhotoGallery: 4c885305a43abd837de8483703aa51a6bea5a6b7
   OAuth2: a1af0c7574ce10e4afb03a277643a2bdb9ba3ff8
-  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
   RMActionController: e516bc0651a61d675abb5eaf09ee79a92ae6155c
   RMPickerViewController: f2925d34875f63840ea1c2eeda9f6f1fc8a3afd4
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
-  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+  TPKeyboardAvoiding: 6dd3fe3268b8f2627beb7ff3d82a3cacbdf66a36
   TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
   twitter-text: 7041d00e0f61ed58ab9413e72950f098de858b5c
   UIImage-Resize: fa776860f10e6900bbaf53a73e494bdceaaccc77
   YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: 82993cf6babfa918abcdd268bfb8871cf1101a2d
+PODFILE CHECKSUM: f7f5cdec5b810d51466b3e36a0b39eca003ab9b5
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.2

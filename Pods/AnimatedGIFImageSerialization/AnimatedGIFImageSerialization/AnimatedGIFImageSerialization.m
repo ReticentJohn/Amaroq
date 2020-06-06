@@ -1,6 +1,6 @@
 // AnimatedGIFImageSerialization.m
 //
-// Copyright (c) 2014 Mattt Thompson (http://mattt.me/)
+// Copyright (c) 2014 – 2019 Mattt (http://mat.tt/)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,57 +22,69 @@
 
 #import "AnimatedGIFImageSerialization.h"
 
-#import <ImageIO/ImageIO.h>
-#import <MobileCoreServices/MobileCoreServices.h>
+@import ImageIO;
+@import MobileCoreServices;
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSInteger, AnimatedGifScreenType) {
+    AnimatedGifScreenType480h = 480, // iPhone 1, 2, 3, 4, 4s
+    AnimatedGifScreenType568h = 568, // iPhone 5, iPhone 5s
+    AnimatedGifScreenType667h = 667, // iPhone 6
+    AnimatedGifScreenType736h = 736, // iPhone 6+
+    AnimatedGifScreenTypeUnknown = 0
+};
+
+static NSString * const AnimatedGifScreenTypeSuffix480h = @"";
+static NSString * const AnimatedGifScreenTypeSuffix568h = @"-568h";
+static NSString * const AnimatedGifScreenTypeSuffix667h = @"-667h";
+static NSString * const AnimatedGifScreenTypeSuffix736h = @"-736h";
 
 NSString * const AnimatedGIFImageErrorDomain = @"com.compuserve.gif.image.error";
 
-__attribute__((overloadable)) UIImage * UIImageWithAnimatedGIFData(NSData *data) {
-    return UIImageWithAnimatedGIFData(data, [[UIScreen mainScreen] scale], 0.0f, nil);
+__attribute__((overloadable)) UIImage * _Nullable UIImageWithAnimatedGIFData(NSData *data) {
+    return UIImageWithAnimatedGIFData(data, [[UIScreen mainScreen] scale], 0.0, nil);
 }
 
-__attribute__((overloadable)) UIImage * UIImageWithAnimatedGIFData(NSData *data, CGFloat scale, NSTimeInterval duration, NSError * __autoreleasing *error) {
+__attribute__((overloadable)) UIImage * _Nullable UIImageWithAnimatedGIFData(NSData *data, CGFloat scale, NSTimeInterval duration, NSError * __autoreleasing *error) {
     if (!data) {
         return nil;
     }
 
-    NSDictionary *userInfo = nil;
-    {
-        NSMutableDictionary *mutableOptions = [NSMutableDictionary dictionary];
-        [mutableOptions setObject:@(YES) forKey:(NSString *)kCGImageSourceShouldCache];
-        [mutableOptions setObject:(NSString *)kUTTypeGIF forKey:(NSString *)kCGImageSourceTypeIdentifierHint];
+    NSMutableDictionary<NSString *, id> *mutableOptions = [NSMutableDictionary dictionary];
+    mutableOptions[(__bridge NSString *)kCGImageSourceShouldCache] = @(YES);
+    mutableOptions[(__bridge NSString *)kCGImageSourceTypeIdentifierHint] = (__bridge NSString *)kUTTypeGIF;
 
-        CGImageSourceRef imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)data, (__bridge CFDictionaryRef)mutableOptions);
+    CGImageSourceRef imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)data, (__bridge CFDictionaryRef)mutableOptions);
 
-        size_t numberOfFrames = CGImageSourceGetCount(imageSource);
-        NSMutableArray *mutableImages = [NSMutableArray arrayWithCapacity:numberOfFrames];
+    size_t numberOfFrames = CGImageSourceGetCount(imageSource);
+    NSMutableArray<UIImage *> *mutableImages = [NSMutableArray arrayWithCapacity:numberOfFrames];
 
-        NSTimeInterval calculatedDuration = 0.0f;
-        for (size_t idx = 0; idx < numberOfFrames; idx++) {
-            CGImageRef imageRef = CGImageSourceCreateImageAtIndex(imageSource, idx, (__bridge CFDictionaryRef)mutableOptions);
+    NSTimeInterval calculatedDuration = 0.0;
+    for (size_t idx = 0; idx < numberOfFrames; idx++) {
+        CGImageRef imageRef = CGImageSourceCreateImageAtIndex(imageSource, idx, (__bridge CFDictionaryRef)mutableOptions);
 
-            NSDictionary *properties = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(imageSource, idx, NULL);
-            calculatedDuration += [[[properties objectForKey:(__bridge NSString *)kCGImagePropertyGIFDictionary] objectForKey:(__bridge  NSString *)kCGImagePropertyGIFDelayTime] doubleValue];
+        NSDictionary *properties = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(imageSource, idx, NULL);
+        NSDictionary *gifProperties = properties[(__bridge NSString *)kCGImagePropertyGIFDictionary];
 
-            [mutableImages addObject:[UIImage imageWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp]];
-
-            CGImageRelease(imageRef);
+        NSNumber *delay = gifProperties[(__bridge NSString *)kCGImagePropertyGIFUnclampedDelayTime];
+        if (!delay) {
+            delay = gifProperties[(__bridge NSString *)kCGImagePropertyGIFDelayTime];
         }
 
-        CFRelease(imageSource);
+        calculatedDuration += [delay doubleValue];
 
-        if (numberOfFrames == 1 || [[NSUserDefaults standardUserDefaults] boolForKey:@"DW_SETTING_GIF_AUTOPLAY_KEY"]) {
-            return [mutableImages firstObject];
-        } else {
-            return [UIImage animatedImageWithImages:mutableImages duration:(duration <= 0.0f ? calculatedDuration : duration)];
-        }
+        [mutableImages addObject:[UIImage imageWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp]];
+
+        CGImageRelease(imageRef);
     }
-    _error: {
-        if (error) {
-            *error = [[NSError alloc] initWithDomain:AnimatedGIFImageErrorDomain code:-1 userInfo:userInfo];
-        }
 
-        return nil;
+    CFRelease(imageSource);
+
+    if (numberOfFrames == 1) {
+        return [mutableImages firstObject];
+    } else {
+        return [UIImage animatedImageWithImages:mutableImages duration:(duration <= 0.0 ? calculatedDuration : duration)];
     }
 }
 
@@ -86,38 +98,47 @@ static BOOL AnimatedGifDataIsValid(NSData *data) {
     return NO;
 }
 
-__attribute__((overloadable)) NSData * UIImageAnimatedGIFRepresentation(UIImage *image) {
-    return UIImageAnimatedGIFRepresentation(image, 0.0f, 0, nil);
+__attribute__((overloadable)) NSData * _Nullable UIImageAnimatedGIFRepresentation(UIImage *image) {
+    return UIImageAnimatedGIFRepresentation(image, 0.0, 0, nil);
 }
 
-__attribute__((overloadable)) NSData * UIImageAnimatedGIFRepresentation(UIImage *image, NSTimeInterval duration, NSUInteger loopCount, NSError * __autoreleasing *error) {
-    if (!image.images) {
+__attribute__((overloadable)) NSData * _Nullable UIImageAnimatedGIFRepresentation(UIImage *image, NSTimeInterval duration, NSUInteger loopCount, NSError * __autoreleasing *error) {
+    if (!image) {
         return nil;
+    }
+
+    NSArray<UIImage *> *images = image.images;
+    if (!images) {
+        images = @[image];
     }
 
     NSDictionary *userInfo = nil;
     {
-        size_t frameCount = image.images.count;
+        size_t frameCount = images.count;
         NSTimeInterval frameDuration = (duration <= 0.0 ? image.duration / frameCount : duration / frameCount);
-        NSDictionary *frameProperties = @{
-                                          (__bridge NSString *)kCGImagePropertyGIFDictionary: @{
-                                                  (__bridge NSString *)kCGImagePropertyGIFDelayTime: @(frameDuration)
-                                                  }
-                                          };
+        NSUInteger frameDelayCentiseconds = (NSUInteger)lrint(frameDuration * 100);
+        NSDictionary<NSString *, id> *frameProperties = @{
+                                                          (__bridge NSString *)kCGImagePropertyGIFDictionary: @{
+                                                                (__bridge NSString *)kCGImagePropertyGIFDelayTime: @(frameDelayCentiseconds)
+                                                            }
+                                                         };
 
         NSMutableData *mutableData = [NSMutableData data];
         CGImageDestinationRef destination = CGImageDestinationCreateWithData((__bridge CFMutableDataRef)mutableData, kUTTypeGIF, frameCount, NULL);
 
-        NSDictionary *imageProperties = @{ (__bridge NSString *)kCGImagePropertyGIFDictionary: @{
-                                              (__bridge NSString *)kCGImagePropertyGIFLoopCount: @(loopCount)
-                                            }
-                                    };
+        NSDictionary<NSString *, id> *imageProperties = @{ (__bridge NSString *)kCGImagePropertyGIFDictionary: @{
+                                                                (__bridge NSString *)kCGImagePropertyGIFLoopCount: @(loopCount)
+                                                            }
+                                                         };
         CGImageDestinationSetProperties(destination, (__bridge CFDictionaryRef)imageProperties);
 
-        for (size_t idx = 0; idx < image.images.count; idx++) {
-            CGImageDestinationAddImage(destination, [[image.images objectAtIndex:idx] CGImage], (__bridge CFDictionaryRef)frameProperties);
+        for (size_t idx = 0; idx < images.count; idx++) {
+            CGImageRef _Nullable cgimage = [images[idx] CGImage];
+            if (cgimage) {
+                CGImageDestinationAddImage(destination, (CGImageRef _Nonnull)cgimage, (__bridge CFDictionaryRef)frameProperties);
+            }
         }
-        
+
         BOOL success = CGImageDestinationFinalize(destination);
         CFRelease(destination);
 
@@ -135,49 +156,51 @@ __attribute__((overloadable)) NSData * UIImageAnimatedGIFRepresentation(UIImage 
         if (error) {
             *error = [[NSError alloc] initWithDomain:AnimatedGIFImageErrorDomain code:-1 userInfo:userInfo];
         }
-        
+
         return nil;
     }
 }
 
 @implementation AnimatedGIFImageSerialization
 
-+ (UIImage *)imageWithData:(NSData *)data
++ (UIImage * _Nullable)imageWithData:(NSData *)data
                      error:(NSError * __autoreleasing *)error
 {
-    return [self imageWithData:data scale:1.0f duration:0.0f error:error];
+    return [self imageWithData:data scale:1.0 duration:0.0 error:error];
 }
 
-+ (UIImage *)imageWithData:(NSData *)data
-                     scale:(CGFloat)scale
-                  duration:(NSTimeInterval)duration
-                     error:(NSError * __autoreleasing *)error
++ (UIImage * _Nullable)imageWithData:(NSData *)data
+                               scale:(CGFloat)scale
+                            duration:(NSTimeInterval)duration
+                               error:(NSError * __autoreleasing *)error
 {
     return UIImageWithAnimatedGIFData(data, scale, duration, error);
 }
 
 #pragma mark -
 
-+ (NSData *)animatedGIFDataWithImage:(UIImage *)image
-                               error:(NSError * __autoreleasing *)error
++ (NSData * _Nullable)animatedGIFDataWithImage:(UIImage *)image
+                                         error:(NSError * __autoreleasing *)error
 {
-    return [self animatedGIFDataWithImage:image duration:0.0f loopCount:0 error:error];
+    return [self animatedGIFDataWithImage:image duration:0.0 loopCount:0 error:error];
 }
 
-+ (NSData *)animatedGIFDataWithImage:(UIImage *)image
-                            duration:(NSTimeInterval)duration
-                           loopCount:(NSUInteger)loopCount
-                               error:(NSError *__autoreleasing *)error
++ (NSData * _Nullable)animatedGIFDataWithImage:(UIImage *)image
+                                      duration:(NSTimeInterval)duration
+                                     loopCount:(NSUInteger)loopCount
+                                         error:(NSError *__autoreleasing *)error
 {
     return UIImageAnimatedGIFRepresentation(image, duration, loopCount, error);
 }
 
 @end
 
+NS_ASSUME_NONNULL_END
+
 #pragma mark -
 
 #ifndef ANIMATED_GIF_NO_UIIMAGE_INITIALIZER_SWIZZLING
-#import <objc/runtime.h>
+@import ObjectiveC.runtime;
 
 static inline void animated_gif_swizzleSelector(Class class, SEL originalSelector, SEL swizzledSelector) {
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
@@ -211,14 +234,55 @@ static inline void animated_gif_swizzleSelector(Class class, SEL originalSelecto
 
 #pragma mark -
 
-+ (UIImage *)animated_gif_imageNamed:(NSString *)name __attribute__((objc_method_family(new))) {
-    NSString *path = [[NSBundle mainBundle] pathForResource:[name stringByDeletingPathExtension] ofType:[name pathExtension]];
+NS_ASSUME_NONNULL_BEGIN
+
++ (UIImage * _Nullable)animated_gif_imageNamed:(NSString *)name __attribute__((objc_method_family(new))) {
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+
+    NSString *ratioSuffix = @"";
+    switch ((NSUInteger)screenBounds.size.height) {
+        case AnimatedGifScreenType480h:
+            ratioSuffix = AnimatedGifScreenTypeSuffix480h;
+            break;
+        case AnimatedGifScreenType568h:
+            ratioSuffix = AnimatedGifScreenTypeSuffix568h;
+            break;
+        case AnimatedGifScreenType667h:
+            ratioSuffix = AnimatedGifScreenTypeSuffix667h;
+            break;
+        case AnimatedGifScreenType736h:
+            ratioSuffix = AnimatedGifScreenTypeSuffix736h;
+            break;
+    }
+
+    NSString *scaleSuffix = @"";
+    if (scale >= 3) {
+        scaleSuffix = @"@3x";
+    } else if (scale >= 2) {
+        scaleSuffix = @"@2x";
+    }
+
+    NSString * _Nullable path = nil;
     if (!path) {
-        path = [[NSBundle mainBundle] pathForResource:[[name stringByDeletingPathExtension] stringByAppendingString:@"@2x"] ofType:[name pathExtension]];
+        // e.g. animated-568h@2x.gif
+        NSString *nameWithRatioAndScale = [[[name stringByDeletingPathExtension] stringByAppendingString:ratioSuffix] stringByAppendingString:scaleSuffix];
+        path = [[NSBundle mainBundle] pathForResource:nameWithRatioAndScale ofType:[name pathExtension]];
+    }
+
+    if (!path) {
+        // e.g. animated@2x.gif
+        NSString *nameWithRatio = [[[name stringByDeletingPathExtension] stringByAppendingString:scaleSuffix] stringByAppendingPathExtension:[name pathExtension]];
+        path = [[NSBundle mainBundle] pathForResource:nameWithRatio ofType:[name pathExtension]];
+    }
+
+    if (!path) {
+        // e.g. animated.gif
+        path = [[NSBundle mainBundle] pathForResource:[name stringByDeletingPathExtension] ofType:[name pathExtension]];
     }
 
     if (path) {
-        NSData *data = [NSData dataWithContentsOfFile:path];
+        NSData *data = [NSData dataWithContentsOfFile:(NSString * _Nonnull)path];
         if (AnimatedGifDataIsValid(data)) {
             return UIImageWithAnimatedGIFData(data);
         }
@@ -227,12 +291,14 @@ static inline void animated_gif_swizzleSelector(Class class, SEL originalSelecto
     return [self animated_gif_imageNamed:name];
 }
 
-+ (UIImage *)animated_gif_imageWithContentsOfFile:(NSString *)path __attribute__((objc_method_family(new))) {
++ (UIImage * _Nullable)animated_gif_imageWithContentsOfFile:(NSString *)path {
     if (path) {
         NSData *data = [NSData dataWithContentsOfFile:path];
         if (AnimatedGifDataIsValid(data)) {
-            if ([[path stringByDeletingPathExtension] hasSuffix:@"@2x"]) {
-                return UIImageWithAnimatedGIFData(data, 2.0f, 0.0f, nil);
+            if ([[path stringByDeletingPathExtension] hasSuffix:@"@3x"]) {
+                return UIImageWithAnimatedGIFData(data, 3.0, 0.0, nil);
+            } else if ([[path stringByDeletingPathExtension] hasSuffix:@"@2x"]) {
+                return UIImageWithAnimatedGIFData(data, 2.0, 0.0, nil);
             } else {
                 return UIImageWithAnimatedGIFData(data);
             }
@@ -242,7 +308,7 @@ static inline void animated_gif_swizzleSelector(Class class, SEL originalSelecto
     return [self animated_gif_imageWithContentsOfFile:path];
 }
 
-+ (UIImage *)animated_gif_imageWithData:(NSData *)data __attribute__((objc_method_family(init))) {
++ (UIImage * _Nullable)animated_gif_imageWithData:(NSData *)data {
     if (AnimatedGifDataIsValid(data)) {
         return UIImageWithAnimatedGIFData(data);
     }
@@ -250,11 +316,10 @@ static inline void animated_gif_swizzleSelector(Class class, SEL originalSelecto
     return [self animated_gif_imageWithData:data];
 }
 
-+ (UIImage *)animated_gif_imageWithData:(NSData *)data
-                                  scale:(CGFloat)scale __attribute__((objc_method_family(init)))
-{
++ (UIImage * _Nullable)animated_gif_imageWithData:(NSData *)data
+                                            scale:(CGFloat)scale {
     if (AnimatedGifDataIsValid(data)) {
-        return UIImageWithAnimatedGIFData(data, scale, 0.0f, nil);
+        return UIImageWithAnimatedGIFData(data, scale, 0.0, nil);
     }
 
     return [self animated_gif_imageWithData:data scale:scale];
@@ -262,11 +327,13 @@ static inline void animated_gif_swizzleSelector(Class class, SEL originalSelecto
 
 #pragma mark -
 
-- (id)animated_gif_initWithContentsOfFile:(NSString *)path __attribute__((objc_method_family(init))) {
+- (instancetype)animated_gif_initWithContentsOfFile:(NSString *)path __attribute__((objc_method_family(init))) {
     NSData *data = [NSData dataWithContentsOfFile:path];
     if (AnimatedGifDataIsValid(data)) {
-        if ([[path stringByDeletingPathExtension] hasSuffix:@"@2x"]) {
-            return UIImageWithAnimatedGIFData(data, 2.0, 0.0f, nil);
+        if ([[path stringByDeletingPathExtension] hasSuffix:@"@3x"]) {
+            return UIImageWithAnimatedGIFData(data, 3.0, 0.0, nil);
+        } else if ([[path stringByDeletingPathExtension] hasSuffix:@"@2x"]) {
+            return UIImageWithAnimatedGIFData(data, 2.0, 0.0, nil);
         } else {
             return UIImageWithAnimatedGIFData(data);
         }
@@ -275,7 +342,7 @@ static inline void animated_gif_swizzleSelector(Class class, SEL originalSelecto
     return [self animated_gif_initWithContentsOfFile:path];
 }
 
-- (id)animated_gif_initWithData:(NSData *)data __attribute__((objc_method_family(init))) {
+- (instancetype)animated_gif_initWithData:(NSData *)data __attribute__((objc_method_family(init))) {
     if (AnimatedGifDataIsValid(data)) {
         return UIImageWithAnimatedGIFData(data);
     }
@@ -283,15 +350,18 @@ static inline void animated_gif_swizzleSelector(Class class, SEL originalSelecto
     return [self animated_gif_initWithData:data];
 }
 
-- (id)animated_gif_initWithData:(NSData *)data
-                          scale:(CGFloat)scale __attribute__((objc_method_family(init)))
+- (instancetype)animated_gif_initWithData:(NSData *)data
+                                    scale:(CGFloat)scale __attribute__((objc_method_family(init)))
 {
     if (AnimatedGifDataIsValid(data)) {
-        return UIImageWithAnimatedGIFData(data, scale, 0.0f, nil);
+        return UIImageWithAnimatedGIFData(data, scale, 0.0, nil);
     }
 
     return [self animated_gif_initWithData:data scale:scale];
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
+
 #endif
