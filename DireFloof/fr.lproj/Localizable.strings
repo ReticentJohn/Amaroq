@@ -43,7 +43,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Cancel" = "Annuler";
 
 /* Change how you receive push notifications */
-"Change how you receive push notifications" = "Changez comment vous voulez recevoir les notifications push";
+"Change how you receive push notifications" = "Changer comment vous voulez recevoir les notifications push";
 
 /* Clear cache */
 "Clear cache" = "Nettoyer le cache";
@@ -55,7 +55,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Currently logged into:" = "Actuellement connecté à :";
 
 /* DON'T AWOO $350 PENALTY */
-"DON'T AWOO $350 PENALTY" = "NE PAS FAIRE DE AWOO - 350$";
+"DON'T AWOO $350 PENALTY" = "DON'T AWOO - $350 PENALTY";
 
 /* Default posts to public */
 "Default posts to public" = "Posts publics par défaut";
@@ -133,7 +133,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "HASHTAG" = "HASHTAG";
 
 /* Hold to show */
-"Hold to show" = "Gardez appuyé pour montrer";
+"Hold to show" = "Garder appuyé pour montrer";
 
 /* Local */
 "Local" = "Local";
@@ -169,7 +169,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
 "Open in Safari" = "Ouvrir dans Safari";
 
 /* Please keep to videos up to 30 seconds long */
-"Please keep to videos up to 30 seconds long" = "Merci d'avoir des vidéos d'au plus 30 secondes";
+"Please keep to videos up to 30 seconds long" = "Merci de choisir des vidéos d'au plus 30 secondes";
 
 /* Public */
 "Public" = "Public";

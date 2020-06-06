@@ -2,7 +2,7 @@
 "NSCameraUsageDescription" = "Nous souhaitons avoir accès à votre appareil photo pour vous permettre de prendre des photos à partager";
 
 /* (No Comment) */
-"NSPhotoLibraryAddUsageDescription" = "Nous voudrions avoir le droit d'ajouter des choses dans dans bibliothèque de photos, comme par exemple des images à enregistrer";
+"NSPhotoLibraryAddUsageDescription" = "Nous voudrions avoir le droit d'ajouter des choses dans las bibliothèque de photos, comme par exemple des images à enregistrer";
 
 /* (No Comment) */
 "NSPhotoLibraryUsageDescription" = "Nous voudrions avoir accès à votre bibliothèque de photos pour pouvoir partager votre sélection de photos";

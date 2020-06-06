@@ -396,6 +396,8 @@
 		3C75D7D61F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3C75D7D71F6D9CF0006D4FFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4262CBE7EF38E5503CA7F47D /* Pods-DireFloofUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofUITests/Pods-DireFloofUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51945648248BF40400493173 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		51945649248BF40E00493173 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5385A8BFB3CC7CA2D3EC3C8F /* Pods-DireFloofTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DireFloofTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DireFloofTests/Pods-DireFloofTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B1BFD1C11A0545006ADFCA3 /* Pods_DireFloofUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloofUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770CBB42E4136BF25294E8D6 /* Pods_DireFloofTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DireFloofTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -968,6 +970,7 @@
 				pl,
 				ca,
 				nl,
+				fr,
 			);
 			mainGroup = 04EC13E31E46A966000E15A6;
 			productRefGroup = 04EC13ED1E46A966000E15A6 /* Products */;
@@ -1391,6 +1394,7 @@
 				0474087C1EB9784A000ECD0B /* ca */,
 				041702E61EC28B5C006FD1F3 /* nl */,
 				3C75D7D51F6D9CF0006D4FFD /* zh-Hans */,
+				51945649248BF40E00493173 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1445,6 +1449,7 @@
 				047408801EB9784B000ECD0B /* ca */,
 				041702E91EC28B5D006FD1F3 /* nl */,
 				3C75D7D41F6D9CF0006D4FFD /* zh-Hans */,
+				51945648248BF40400493173 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
