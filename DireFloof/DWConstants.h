@@ -38,6 +38,7 @@
 #define DW_SETTING_AWOO_MODE_KEY                            @"DW_SETTING_AWOO_MODE"
 #define DW_SETTING_GIF_AUTOPLAY_KEY                         @"DW_SETTING_GIF_AUTOPLAY_KEY"
 #define DW_SETTING_NEW_FOLLOWERS_OFF_KEY                    @"DW_SETTING_NEW_FOLLOWERS_OFF_KEY"
+#define DW_SETTING_NSFW_MODE_KEY                            @"DW_SETTING_NSFW_MODE_KEY"
 #define DW_SETTING_FAVORITES_OFF_KEY                        @"DW_SETTING_FAVORITES_OFF_KEY"
 #define DW_SETTING_MENTIONS_OFF_KEY                         @"DW_SETTING_MENTIONS_OFF_KEY"
 #define DW_SETTING_BOOSTS_OFF_KEY                           @"DW_SETTING_BOOSTS_OFF_KEY"

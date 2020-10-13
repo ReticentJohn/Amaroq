@@ -9,6 +9,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+#import <WebKit/WebKit.h>
 #import "DWAboutViewController.h"
 #import "NSString+Awoo.h"
 #import "DWSettingStore.h"
@@ -19,7 +20,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *versionLabel;
 @property (nonatomic, weak) IBOutlet UITextView *textView;
 @property (nonatomic, weak) IBOutlet UIButton *switchButton;
-@property (nonatomic, weak) IBOutlet UIWebView *webView;
+@property (nonatomic, weak) IBOutlet WKWebView *webView;
 
 
 @end

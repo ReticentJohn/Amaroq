@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
 #import "MHGallery.h"
 #import "MHGalleryLabel.h"
 #import "MHScrollViewLabel.h"
@@ -56,7 +57,7 @@
 @property (nonatomic,strong)        UIButton *playButton;
 @property (nonatomic,strong)        UIActivityIndicatorView *act;
 @property (nonatomic,strong)        UIImageView *imageView;
-@property (nonatomic,strong)        MPMoviePlayerController *moviePlayer;
+@property (nonatomic,strong)        AVPlayerViewController *moviePlayer;
 
 @property (nonatomic)               NSInteger pageIndex;
 @property (nonatomic)               NSInteger currentTimeMovie;

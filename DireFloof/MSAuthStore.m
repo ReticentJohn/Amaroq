@@ -11,7 +11,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AFOAuth2Manager/AFHTTPRequestSerializer+OAuth2.h>
-#import <OAuth2/OAuthRequestController.h>
 #import "MSAuthStore.h"
 #import "MastodonConstants.h"
 #import "MSAppStore.h"
@@ -23,8 +22,9 @@
 #import "DWConstants.h"
 #import "DWLoginViewController.h"
 #import "DWSettingStore.h"
+#import "DireFloof-Swift.h"
 
-@interface MSAuthStore () <OAuthRequestControllerDelegate>
+@interface MSAuthStore ()
 
 @property (nonatomic, assign, readwrite) BOOL isLoggedIn;
 @property (nonatomic, strong, readwrite) NSString *token;
@@ -232,46 +232,29 @@
     [[[UIApplication sharedApplication] topController] presentViewController:loginController animated:YES completion:nil];
 }
 
-
-#pragma mark - OAuthRequestController Delegate Methods
-
-- (void)didAuthorized:(NSDictionary *)dictResponse {
-    
-    self.credential = [[AFOAuthCredential alloc] initWithOAuthToken:[dictResponse objectForKey:kOAuth_AccessToken] tokenType:@"Bearer"];
-    [self.credential setExpiration:[NSDate distantFuture]];
-    [AFOAuthCredential storeCredential:self.credential withIdentifier:[[MSAppStore sharedStore] base_api_url_string]];
-    
-    if (self.loginBlock != nil) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            self.loginBlock([self isLoggedIn]);
-        });
-    }
-}
-
-
 #pragma mark - Private Methods
 
 - (void)performWebviewLogin
 {
     NSMutableDictionary *dictService = [NSMutableDictionary dictionary];
-    [dictService setObject:[NSString stringWithFormat:@"%@oauth/authorize", [[MSAppStore sharedStore] base_url_string]] forKey:kOAuth_AuthorizeURL];
-    [dictService setObject:[NSString stringWithFormat:@"%@oauth/token", [[MSAppStore sharedStore] base_url_string]] forKey:kOAuth_TokenURL];
-    [dictService setObject:[[MSAppStore sharedStore] client_id] forKey:kOAuth_ClientId];
-    [dictService setObject:[[MSAppStore sharedStore] client_secret] forKey:kOAuth_Secret];
-    [dictService setObject:@"amaroq://authorize" forKey:kOAuth_Callback];
-    [dictService setObject:@"read write follow push" forKey:kOAuth_Scope];
+    [dictService setObject:[NSString stringWithFormat:@"%@oauth/authorize", [[MSAppStore sharedStore] base_url_string]] forKey:@"authorize_uri"];
+    [dictService setObject:[NSString stringWithFormat:@"%@oauth/token", [[MSAppStore sharedStore] base_url_string]] forKey:@"token_uri"];
+    [dictService setObject:[[MSAppStore sharedStore] client_id] forKey:@"client_id"];
+    [dictService setObject:[[MSAppStore sharedStore] client_secret] forKey:@"client_secret"];
+    [dictService setObject:@[@"amaroq://authorize"] forKey:@"redirect_uris"];
+    [dictService setObject:@"read write follow push" forKey:@"scope"];
+    [dictService setObject:@(NO) forKey:@"keychain"];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
-    
-    OAuthRequestController *oauthController = [[OAuthRequestController alloc] initWithDict:dictService];
-    
-    CGRect frame = [[[[UIApplication sharedApplication] topController] view] frame];
-    frame.origin.y = 20.0f;
-    
-    oauthController.view.frame = frame;
-    oauthController.delegate = self;
-    [[[UIApplication sharedApplication] topController] presentViewController:oauthController animated:YES completion:^{
-        
+    [[MSOAuthStore sharedStore] authorizeWithSettings:dictService completion:^(BOOL success, NSError * _Nullable error) {
+        if (self.loginBlock != nil && success) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.loginBlock([self isLoggedIn]);
+            });
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[NSNotificationCenter defaultCenter] postNotificationName:DW_DID_CANCEL_LOGIN_NOTIFICATION object:nil];
+            });
+        }
     }];
 }
 

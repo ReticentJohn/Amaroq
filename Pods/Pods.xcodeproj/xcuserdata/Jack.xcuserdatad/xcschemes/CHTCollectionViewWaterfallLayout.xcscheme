@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "37CE4F504A74AB4A96E252063EACC6D2"
+               BlueprintIdentifier = "40D185DC913D045063CEAD5E6B1504E7"
+               BuildableName = "CHTCollectionViewWaterfallLayout.framework"
                BlueprintName = "CHTCollectionViewWaterfallLayout"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "CHTCollectionViewWaterfallLayout.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

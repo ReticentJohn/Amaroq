@@ -407,10 +407,10 @@
 
 - (void)getRemoteUserWithLongformUsername:(NSString *)username withCompletion:(void (^)(BOOL, MSAccount *, NSError *))completion
 {
-    NSDictionary *params = @{@"uri": username};
+    NSDictionary *params = @{@"q":username, @"resolves":@"true"};
     
-    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] POST:@"follows" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        MSAccount *user = [[MSAccount alloc] initWithParams:responseObject];
+    [[MSAPIClient sharedClientWithBaseAPI:[[MSAppStore sharedStore] base_api_url_string]] GET:@"accounts/search" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        MSAccount *user = [[MSAccount alloc] initWithParams:[responseObject firstObject]];
         
         if (completion != nil) {
             completion(YES, user, nil);
