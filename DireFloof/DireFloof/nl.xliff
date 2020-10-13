@@ -1317,7 +1317,7 @@ Amaroq is built and maintained by a love of the Mastodon idea, which sorely has 
       </trans-unit>
       <trans-unit id="rjX-Ma-KFp.normalTitle">
         <source>Privacy Policy</source>
-        <target>Pribacybeleid</target>
+        <target>Privacybeleid</target>
         <note>Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "rjX-Ma-KFp";</note>
       </trans-unit>
       <trans-unit id="s1z-SI-cBc.text">
