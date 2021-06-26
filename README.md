@@ -1,3 +1,9 @@
+# On learning of an official client going out and my general lack of ongoing feature development and support, I am opting to make it official that this repo will no longer be supported. I wish all the best to the Mastodon team and I am glad I could be part of its history. 
+
+The app will remain in the store for now, until either the Mastodon API or iOS itself changes in such a way that the app breaks.
+Happy Tooting <3
+- John
+
 # Amaroq
 A floofy Mastodon companion for iOS
 
@@ -10,12 +16,3 @@ Features include but are not limited to:
 * Emoji support for your statuses
 * View and participate in threads
 * Gif and video upload support
-
-We may be simple now, but there are many plans ahead! If you got any suggestions to improve Amaroq feel free to toot [@eurasierboy@mastodon.social](https://mastodon.social/@eurasierboy) or email amaroq.feedback@gmail.com!
-
-Happy tooting!
-
-
-### [Patchnotes](https://github.com/ReticentJohn/Amaroq/blob/master/Patchnotes.md)
-### [Roadmap](https://github.com/ReticentJohn/Amaroq/blob/master/Roadmap.md)
-### [FAQ](https://github.com/ReticentJohn/Amaroq/blob/master/FAQ.md)
